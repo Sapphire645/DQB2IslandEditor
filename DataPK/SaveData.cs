@@ -55,6 +55,21 @@ namespace DQB2IslandEditor.DataPK
         {
             return System.IO.File.Exists(folderPath + "\\AUTOSTGDAT.BIN");
         }
+
+        static public bool ValidCMNDAT(string path)
+        {
+            //Check if exists.
+            if (!System.IO.File.Exists(path)) return false;
+            //Read
+            byte[] headerBytes = new byte[4];
+            using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
+                fs.Read(headerBytes, 0, 4);
+
+            //Check if header start is the same. This is the cmndat identifier.
+            var actualHeader = Encoding.UTF8.GetString(headerBytes);
+            if (CONST_HEADER != actualHeader) return false;
+            return true;
+        }
         public void OpenCMNDATCompressedFile()
         {
             if (!System.IO.Directory.Exists(folderPath)) return;
@@ -77,16 +92,9 @@ namespace DQB2IslandEditor.DataPK
         }
         private byte[] OpenCMNDATFile(string path)
         {
-            //Check if exists.
-            if (!System.IO.File.Exists(path)) return null;
-            //Read
-            var fileBytes = System.IO.File.ReadAllBytes(path);
 
-            //Check if header start is the same. This is the cmndat identifier.
-            var headerBytes = new byte[4];
-            Array.Copy(fileBytes, 0, headerBytes, 0, 4);
-            var actualHeader = Encoding.UTF8.GetString(headerBytes);
-            if (CONST_HEADER != actualHeader) return null;
+            if (!ValidCMNDAT(path)) return null;
+            var fileBytes = System.IO.File.ReadAllBytes(path);
 
             //Now remove the real header. Right now its not used for anything.
             var dataBytes = new byte[fileBytes.Length - CMNDAT_SIZE_HEADER];

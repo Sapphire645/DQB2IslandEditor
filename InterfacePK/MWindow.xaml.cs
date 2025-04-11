@@ -10,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -29,9 +30,10 @@ namespace DQB2IslandEditor.InterfacePK
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CMNDAT_Open(object sender, RoutedEventArgs e)
         {
             viewModel.OpenCMNDATpath();
+            Border.BorderBrush = Brushes.White;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -46,6 +48,33 @@ namespace DQB2IslandEditor.InterfacePK
         private void SelectedIslandRight(object sender, RoutedEventArgs e)
         {
             viewModel.SelectedIslandRotate(1);
+        }
+
+        private void RecalculateSize(object sender, SizeChangedEventArgs e)
+        {
+            var transform = ButtonOfMenu.TransformToVisual(MenuViewbox);
+            Rect bounds = transform.TransformBounds(new Rect(0, 0, ButtonOfMenu.ActualWidth, ButtonOfMenu.ActualHeight));
+
+            ViewBoxCMNDAT.Height = bounds.Height;
+
+            //Caluclate the size of the textbox (pain)
+
+            CMNDATGrid.Width = this.ActualWidth * ButtonOfMenu.ActualHeight / bounds.Height;
+        }
+
+        private void ClickChange(object sender, MouseButtonEventArgs e)
+        {
+            Border.BorderBrush = Brushes.Gold;
+        }
+
+        private void HoverEnter(object sender, MouseEventArgs e)
+        {
+            Transp.Opacity = 0.9;
+        }
+
+        private void HoverLeave(object sender, MouseEventArgs e)
+        {
+            Transp.Opacity = 0.7;
         }
     }
 }

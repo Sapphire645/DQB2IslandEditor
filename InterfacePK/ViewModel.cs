@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
@@ -33,7 +34,24 @@ namespace DQB2IslandEditor.InterfacePK
                 else return Visibility.Visible;
             }
         }
-
+        public Brush ValidCMNDAT { get; set; } = Brushes.Black;
+        public string PublicCMNDATPath
+        {
+            get
+            {
+                return _cmndatPath;
+            }
+            set {
+                _cmndatPath = value;
+                if (!SaveData.ValidCMNDAT(_cmndatPath))
+                    ValidCMNDAT = Brushes.Red;
+                else
+                    ValidCMNDAT = Brushes.Black;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ValidCMNDAT)));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PublicCMNDATPath)));
+            }
+        }
+        private string _cmndatPath = "";
         private Dictionary<byte, BitmapSource> minimapGeneratedImages = new Dictionary<byte, BitmapSource>();
 
         private bool button = false;
@@ -142,12 +160,15 @@ namespace DQB2IslandEditor.InterfacePK
 
                 if (openFileDialog.ShowDialog() == false) return;
 
-                saveData = new SaveData(openFileDialog.FileName);
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SaveDataVisibility)));
-                SelectedIsland = 1;
-                button = true;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ButtonV)));
-
+                if (SaveData.ValidCMNDAT(openFileDialog.FileName))
+                {
+                    saveData = new SaveData(openFileDialog.FileName);
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SaveDataVisibility)));
+                    SelectedIsland = 1;
+                    button = true;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ButtonV)));
+                }
+                PublicCMNDATPath = openFileDialog.FileName;
             }
             catch (Exception ex)
             {

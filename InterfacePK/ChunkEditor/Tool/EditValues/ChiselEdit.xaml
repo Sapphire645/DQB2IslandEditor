@@ -12,14 +12,12 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Grid Background="Transparent">
-                            <Border Name="Border" Background="{TemplateBinding Background}" 
+                        <Border Name="Border" Background="{TemplateBinding Background}" 
         BorderBrush="{TemplateBinding BorderBrush}" 
         BorderThickness="{TemplateBinding BorderThickness}" 
         CornerRadius="17" Padding="2">
-                                <ContentPresenter/>
-                            </Border>
-                        </Grid>
+                            <ContentPresenter/>
+                        </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="False">
                                 <Setter TargetName="Border" Property="Background" Value="Transparent" />
