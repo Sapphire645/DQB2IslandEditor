@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="DQB2IslandEditor.InterfacePK.ChunkEditor.Map.LayerBarUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map"
+             mc:Ignorable="d"
+             d:DesignHeight="800" d:DesignWidth="60">
+    <UserControl.Resources>
+        <Style TargetType="RadioButton" x:Key="RadioButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border Name="rect" Background="{TemplateBinding Foreground}" CornerRadius="2.5" BorderThickness="1.5" BorderBrush="Transparent"/>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="rect" Property="Background" Value="Orange" />
+                                <Setter TargetName="rect" Property="BorderThickness" Value="0"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="rect" Property="Background" Value="Yellow" />
+                                <Setter TargetName="rect" Property="BorderThickness" Value="0" />
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="rect" Property="Background" Value="Orange"/>
+                                <Setter TargetName="rect" Property="BorderThickness" Value="0"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid HorizontalAlignment="Left">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Width="3" Fill="Gray" Grid.Column="1" Margin="0,2"/>
+
+            <UniformGrid Name="Numbers" Columns="1" HorizontalAlignment="Center"/>
+
+            <Viewbox Grid.Column="1">
+                <UniformGrid Name="GridLine" Columns="1">
+                    <!--<RadioButton Style="{StaticResource RadioButtonStyle}"/>-->
+                </UniformGrid>
+            </Viewbox>
+
+            <!--<Image Grid.ZIndex="2" Name="ArrowLayer" Grid.Column="1" Source="/Images/UI/ArrowY.png" Margin="15, 726, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Right" />-->
+        </Grid>
+    </Grid>
+</UserControl>

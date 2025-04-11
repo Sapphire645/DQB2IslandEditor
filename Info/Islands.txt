@@ -1,0 +1,33 @@
+#IslandId	IslandName	SeaLevel
+0	-	
+1	Isle of Awakening	31
+2	Furrowfield	31
+3	Khrumbul-Dun	65
+4	Moonbrooke	21
+5	Malhalla	0
+6	Destroyed Malhalla	
+7	Buildertopia Zheta	
+8	Buildertopia Iota	
+9	Angler's Isle'	31
+10	Skelkatraz	11
+11	Buildertopia Kappa	
+12	Buildertopia Alpha	
+13	Buildertopia Beta	
+14	Battle Atoll	
+15	Tutorial ship	
+16	Buildertopia Gamma	
+17	Buildertopia Delta	
+18	Explorer's Shore	
+19	Overwrite IoA	
+20	Buildertopia Epsilon	
+21	Buildertopia Zeta	
+22	Debug IoA	
+23	Buildertopia Eta	
+24	Generated Furrowfield	
+25	Generated Cantlin	
+26	Generated Khrumbul-dun	
+27	Generated Moonbrooke	
+28	Generated Malhalla	
+29	Debug NPC Small Island	
+30	Debug Room Island	
+31	Debug Big Grass Island	

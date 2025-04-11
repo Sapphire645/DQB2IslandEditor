@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory.FavouriteList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory"
+             xmlns:container="clr-namespace:DQB2IslandEditor.ObjectPK.Container"
+             mc:Ignorable="d">
+    <ScrollViewer Name="ScrollPanel" HorizontalAlignment="Left" Padding="2" VerticalScrollBarVisibility="Auto">
+        <ItemsControl ItemsSource="{Binding favouriteList}" Name="FavouriteObjectHolder" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="1"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </ScrollViewer>
+
+</UserControl>

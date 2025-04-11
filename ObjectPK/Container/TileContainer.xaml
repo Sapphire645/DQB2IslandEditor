@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="DQB2IslandEditor.ObjectPK.Container.TileContainer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DQB2IslandEditor.ObjectPK.Container"
+             mc:Ignorable="d" 
+             d:DesignHeight="32" d:DesignWidth="32" SnapsToDevicePixels="True">
+    <!--<Button Name="Tile">
+            <Button.ToolTip>
+                <ToolTip Background="Transparent" BorderThickness="0">
+                    <local:InventoryInfo objectInfoPanel="{Binding blockInfo.Value}"/>
+                    --><!--Might change to one with instance data--><!--
+                </ToolTip>
+            </Button.ToolTip>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="tile" BorderThickness="0">
+                        <Image Name="Image" Source="{Binding blockInfo.Value.objectMapImage}" Stretch="Fill"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                    <Trigger Property="IsMouseOver" Value="False">
+                        <Setter TargetName="tile" Property="Background" Value="Transparent"/>
+                    </Trigger>
+                    <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="tile" Property="Background" Value="DarkOrange"/>
+                            <Setter TargetName="Image" Property="Opacity" Value="0.5"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="tile" Property="Background" Value="Yellow"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+    </Button>-->
+    <Border Name="Tile">
+        <Border.ToolTip>
+            <ToolTip Background="Transparent" BorderThickness="0">
+                <local:InventoryInfo objectInfoPanel="{Binding blockInfo.Value}"/>
+            </ToolTip>
+        </Border.ToolTip>
+        <Image Name="Image" Source="{Binding blockInfo.Value.objectMapImage}" Stretch="Fill"/>
+    </Border>
+</UserControl>

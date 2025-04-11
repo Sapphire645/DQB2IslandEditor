@@ -1,0 +1,2237 @@
+#ID	IMAGE	X-Y-Z	NAME
+0	0	1x1x1	false	Null
+8	8	1x1x1	false	Tingleweed
+12	12	1x1x1	false	Fibrous Fern
+14	14	1x1x1	false	Pongsettia
+32	32	1x1x1	false	Palm Seedling
+35	35	1x1x1	false	Palm Stump
+36	36	1x1x1	false	Cedar Seedling
+37	37	1x1x1	false	Cedar Sapling
+49	49	1x1x1	false	¿Tattered Banner of Erdrick
+65	0	1x1x1	false	Wall-Mounted Banner [White]
+72	72	1x1x1	false	Steel Doors
+76	76	1x1x1	false	Ridge Tiling
+104	104	1x1x1	false	Grandfather Clock
+112	112	1x1x1	false	Item Display Stand
+127	127	1x1x1	false	Dragonlord’s Standard
+129	129	1x1x1	false	Seal of Erdrick
+130	130	1x1x1	false	Draconic Column
+133	133	1x1x1	false	Beastly Burrow
+136	0	1x1x1	false	Wall-Mounted Banner [Black]
+137	137	1x1x1	false	Pristine Plumberry
+138	0	1x1x1	false	Wall-Mounted Banner [Purple]
+139	0	1x1x1	false	Wall-Mounted Banner [Pink]
+140	0	1x1x1	false	Wall-Mounted Banner [Red]
+141	0	1x1x1	false	Wall-Mounted Banner [Green]
+142	0	1x1x1	false	Wall-Mounted Banner [Yellow]
+143	143	1x1x1	false	Fierce Fountain
+144	0	1x1x1	false	Wall-Mounted Banner [Blue]
+146	146	1x1x1	false	Slime Balloons
+147	147	1x1x1	false	Stone Workbench LV0
+148	148	1x1x1	false	Wooden Workbench LV0
+150	150	1x1x1	false	Colour Wheel
+152	152	1x1x1	false	Hela’s Hammer Sign
+154	154	1x1x1	false	Stickler’s Sifter
+155	155	1x1x1	false	Sewing Station
+156	0	1x1x1	false	Wooden Fortification [White]
+159	159	1x1x1	false	¿Dead Plant
+160	160	1x1x1	false	¿Dead Plant on Pole
+165	165	1x1x1	false	Cantlin Shield
+166	166	1x1x1	false	Holyhock Seedling
+167	0	1x1x1	false	Wooden Fortification [Black]
+171	171	1x1x1	false	¿Pressure Plate
+172	172	1x1x1	false	¿Button
+174	174	1x1x1	false	Magic Cannon
+179	179	1x1x1	false	Colossal Coffer
+181	181	1x1x1	false	¿Armoire
+182	182	1x1x1	false	Equipment Display Stand
+188	188	1x1x1	false	Spiked Metal Minecart
+189	0	1x1x1	false	Criss-Cross Leadlight [White]
+191	0	1x1x1	Half	Criss-Cross Leadlight [Purple]
+192	0	1x1x1	Half	Criss-Cross Leadlight [Pink]
+193	0	1x1x1	Half	Criss-Cross Leadlight [Red]
+194	0	1x1x1	Half	Criss-Cross Leadlight [Green]
+195	0	1x1x1	Half	Criss-Cross Leadlight [Yellow]
+196	0	1x1x1	Half	Criss-Cross Leadlight [Blue]
+197	197	1x1x1	false	Wrecking Ball
+198	198	1x1x1	false	Portrait of a Lady
+199	199	1x1x1	false	Fountain
+200	200	1x1x1	false	¿Water block
+201	201	1x1x1	false	¿Ht Water block
+202	0	1x1x1	false	Wooden Fortification [Purple]
+203	0	1x1x1	false	Wooden Fortification [Pink]
+204	0	1x1x1	false	Wooden Fortification [Red]
+205	205	1x1x1	false	¿Yellow banner
+210	0	1x1x1	false	0
+212	0	1x1x1	false	Wooden Fortification [Yellow]
+213	0	1x1x1	false	Wooden Fortification [Blue]
+214	214	1x1x1	false	Filter Fountain
+217	217	1x1x1	false	¿Terra Incognita
+218	218	1x1x1	false	¿Terra Incognita
+219	219	1x1x1	false	¿Minimedal Stand
+220	220	1x1x1	false	Tiled Window
+223	0	1x1x1	false	Emblematic Clock [White]
+243	243	1x1x1	false	Fish Dish
+244	244	1x1x1	false	Bread Basket
+250	250	1x1x1	false	Healix The Hero
+252	0	1x1x1	false	¿Tattered Banner of Erdrick
+253	253	1x1x1	false	Blighted Branch
+254	254	1x1x1	false	Dragonlord’s Throne
+255	255	1x1x1	false	Four-Square Leadlight [White]
+256	0	1x1x1	false	Four-Square Leadlight [Black]
+257	0	1x1x1	false	Four-Square Leadlight [Purple]
+258	0	1x1x1	false	Four-Square Leadlight [Pink]
+259	0	1x1x1	false	Four-Square Leadlight [Red]
+260	0	1x1x1	false	Four-Square Leadlight [Green]
+261	0	1x1x1	false	Four-Square Leadlight [Yellow]
+262	0	1x1x1	false	Four-Square Leadlight [Blue]
+263	0	1x1x1	false	Plain-Plane Leadlight [White]
+266	0	1x1x1	false	¿Water block
+267	0	1x1x1	Half	Plain-Plane Leadlight [Purple]
+268	0	1x1x1	Half	Plain-Plane Leadlight [Pink]
+270	0	1x1x1	Half	Plain-Plane Leadlight [Green]
+271	0	1x1x1	Half	Plain-Plane Leadlight [Yellow]
+273	0	1x1x1	false	Classy Couch [White]
+274	0	1x1x1	false	Classy Couch [Black]
+276	0	3x2x1	Half	Classy Couch [Pink]
+278	0	3x2x2	Half	Classy Couch [Green]
+279	0	3x2x2	Half	Classy Couch [Yellow]
+280	0	3x2x2	Half	Classy Couch [Blue]
+281	0	1x1x1	false	Tartan Bed [White]
+282	0	1x1x1	false	Tartan Bed [Black]
+283	0	1x1x1	false	Tartan Bed [Purple]
+284	0	1x1x1	false	Tartan Bed [Pink]
+286	0	1x1x1	Half	Tartan Bed [Green]
+287	0	1x1x1	Half	Tartan Bed [Yellow]
+288	0	1x1x1	Half	Tartan Bed [Blue]
+289	0	1x1x1	false	Cooking Pot [White]
+290	0	1x1x1	false	Cooking Pot [Black]
+291	0	1x1x1	false	Cooking Pot [Purple]
+292	0	1x1x1	false	Cooking Pot [Pink]
+293	0	1x1x1	false	Cooking Pot [Red]
+294	0	1x1x1	false	Cooking Pot [Green]
+295	0	1x1x1	false	Cooking Pot [Yellow]
+296	0	1x1x1	false	Cooking Pot [Blue]
+297	0	1x1x1	false	¿TextTablet
+298	0	1x1x1	false	¿TextTablet
+299	0	1x1x1	false	¿TextTablet
+300	0	1x1x1	false	¿TextTablet
+301	0	1x1x1	false	¿TextTablet
+302	0	1x1x1	false	¿TextTablet
+303	0	1x1x1	false	¿TextTablet
+305	0	1x1x1	false	¿TextTablet
+306	0	1x1x1	false	¿TextTablet
+307	0	1x1x1	false	¿TextTablet
+308	0	1x1x1	false	¿TextTablet
+309	0	1x1x1	false	¿TextTablet
+310	0	1x1x1	false	¿TextTablet
+311	0	1x1x1	false	Gravestone
+312	0	1x1x1	false	Grandfather Clock
+313	0	1x1x1	false	¿TextTablet
+314	0	1x1x1	false	¿TextTablet
+315	0	1x1x1	false	Old Note
+316	316	1x1x1	false	Malroth’s Oaken Club
+317	0	1x1x1	false	¿TextTablet
+318	0	1x1x1	false	¿TextTablet
+319	0	1x1x1	false	¿TextTablet
+320	0	1x1x1	false	¿TextTablet
+321	0	1x1x1	false	¿TextTablet
+322	0	1x1x1	false	¿TextTablet
+323	0	1x1x1	false	¿TextTablet
+324	0	1x1x1	false	¿TextTablet
+325	0	1x1x1	false	¿TextTablet
+326	0	1x1x1	false	¿TextTablet
+327	0	1x1x1	false	Emblematic Clock [Black]
+329	0	1x1x1	false	Emblematic Clock [Purple]
+333	0	1x1x1	false	Emblematic Clock [Pink]
+336	336	1x1x1	false	Seaslime Shell
+337	0	1x1x1	false	Emblematic Clock [Red]
+338	0	1x1x1	false	Emblematic Clock [Green]
+339	0	1x1x1	false	Emblematic Clock [Yellow]
+343	343	1x1x1	false	Emblematic Clock [Blue]
+345	0	1x1x1	false	Port and Shot Set [White]
+346	0	1x1x1	false	Port and Shot Set [Black]
+347	0	1x1x1	false	Port and Shot Set [Purple]
+353	0	1x1x1	false	Glass Floor [White]
+355	0	1x1x1	Half	Glass Floor [Purple]
+356	0	1x1x1	Half	Glass Floor [Pink]
+357	0	1x1x1	Half	Glass Floor [Red]
+358	0	1x1x1	Half	Glass Floor [Green]
+359	0	1x1x1	Half	Glass Floor [Yellow]
+360	0	1x1x1	Half	Glass Floor [Blue]
+361	0	1x1x1	false	Port and Shot Set [Pink]
+362	0	1x1x1	false	Port and Shot Set [Red]
+363	0	1x1x1	false	Port and Shot Set [Green]
+364	364	1x1x1	false	Water Lily Flower
+366	0	1x1x1	false	Port and Shot Set [Yellow]
+367	0	1x1x1	false	Port and Shot Set [Blue]
+368	368	1x1x1	false	She-Slimespawn
+369	0	1x1x1	Half	Dressing Table [White]
+370	0	1x1x1	Half	Dressing Table [Black]
+371	0	1x1x1	false	Chic Sunbrella [Pink]
+372	0	1x1x1	false	Chic Sunbrella [Red]
+373	0	1x1x1	false	Chic Sunbrella [Green]
+374	0	1x1x1	false	Chic Sunbrella [Yellow]
+375	0	1x1x1	false	Chic Sunbrella [Blue]
+376	0	1x1x1	false	¿Deitree
+377	0	1x1x1	false	¿Deitree
+378	0	1x1x1	false	¿Deitree blue
+379	0	1x1x1	false	¿Deitree Dead
+380	0	1x1x1	false	¿Deitree smol
+381	0	1x1x1	false	¿Deitree
+382	0	1x1x1	false	0
+384	0	1x1x1	Half	Dressing Table [Purple]
+385	0	1x1x1	Half	Dressing Table [Pink]
+386	386	1x1x1	false	Worm Food
+387	0	1x1x1	false	¿Wheat 0
+388	0	1x1x1	false	¿Wheat 1
+391	0	1x1x1	false	¿Butterbeans 0
+392	0	1x1x1	false	¿Butterbeans 1
+393	0	1x1x1	false	¿Butterbeans 2
+395	0	1x1x1	false	¿Cabbage 0
+400	0	1x1x1	false	¿Buckwheat 0
+401	0	1x1x1	false	¿Buckwheat 1
+402	0	1x1x1	false	¿Buckwheat 2
+404	0	1x1x1	false	¿Sweetcorn 0
+406	0	1x1x1	false	¿Sweetcorn 2
+408	0	1x1x1	false	¿Chilli Pepper 0
+413	0	1x1x1	false	¿Sugar Cane 0
+414	0	1x1x1	false	¿Sugar Cane 1
+415	0	1x1x1	false	¿Sugar Cane 2
+416	416	1x1x1	false	Sugar Cane
+423	0	1x1x1	false	¿Coffee Beans 1
+424	0	1x1x1	false	¿Coffee Beans 2
+426	0	1x1x1	false	¿Leek 0
+427	0	1x1x1	false	¿Leek 1
+428	0	1x1x1	Half	Dressing Table [Red]
+431	0	1x1x1	false	¿Potato 1
+436	0	1x1x1	false	¿Pumpkin 2
+438	438	1x1x1	false	Plumpkin
+439	0	1x1x1	false	¿Tomato 0
+440	0	1x1x1	false	¿Tomato 1
+441	0	1x1x1	false	¿Tomato 2
+443	443	1x1x1	false	Killer Tomato
+444	0	1x1x1	false	¿Aubergette 0
+448	0	1x1x1	Half	Dressing Table [Green]
+449	0	1x1x1	Half	Dressing Table [Yellow]
+450	0	1x1x1	Half	Dressing Table [Blue]
+451	0	1x1x1	Half	Towel Rail [White]
+452	0	1x1x1	false	¿Melon 0
+454	0	1x1x1	false	¿Melon 2
+457	0	1x1x1	false	¿Rice 0
+459	0	1x1x1	false	¿Rice 2
+460	460	1x1x1	false	Rice
+461	0	1x1x1	false	¿Heartroot 0
+462	0	1x1x1	false	¿Heartroot 1
+463	0	1x1x1	false	¿Heartroot 2
+467	0	1x1x1	false	Basic Bunk [White]
+468	0	1x1x1	false	Basic Bunk [Black]
+469	0	1x1x1	false	Basic Bunk [Purple]
+470	0	1x1x1	false	Basic Bunk [Pink]
+472	0	1x1x2	Half	Basic Bunk [Green]
+473	0	1x1x2	Half	Basic Bunk [Yellow]
+474	0	1x1x2	Half	Basic Bunk [Blue]
+475	0	1x1x1	false	Gift-Wrapped Gift [White]
+476	0	1x1x1	false	Gift-Wrapped Gift [Black]
+477	0	1x1x1	false	Gift-Wrapped Gift [Purple]
+478	0	1x1x1	false	Gift-Wrapped Gift [Pink]
+479	0	1x1x1	false	Gift-Wrapped Gift [Red]
+480	0	1x1x1	false	Gift-Wrapped Gift [Green]
+481	0	1x1x1	false	Gift-Wrapped Gift [Yellow]
+482	0	1x1x1	false	Gift-Wrapped Gift [Blue]
+483	0	1x1x1	false	Wooden Pillar [White]
+484	0	1x1x1	false	Wooden Pillar [Black]
+485	0	1x1x1	false	Wooden Pillar [Purple]
+486	0	1x1x1	false	Wooden Pillar [Pink]
+487	0	1x1x1	false	Wooden Pillar [Red]
+488	0	1x1x1	false	Wooden Pillar [Green]
+489	0	1x1x1	false	Wooden Pillar [Yellow]
+490	0	1x1x1	false	Wooden Pillar [Blue]
+491	0	1x1x1	false	Sliding Glass Door [White]
+493	0	1x1x1	Half	Sliding Glass Door [Purple]
+494	0	1x1x1	Half	Sliding Glass Door [Pink]
+495	495	1x1x1	false	Banana
+497	0	1x2x1	Half	Sliding Glass Door [Green]
+498	0	1x2x1	Half	Sliding Glass Door [Yellow]
+499	0	1x2x1	Half	Sliding Glass Door [Blue]
+500	0	1x1x1	false	Angled Window [White]
+504	0	1x1x1	Half	Angled Window [Purple]
+505	0	1x1x1	Half	Angled Window [Pink]
+507	0	1x1x1	Half	Angled Window [Green]
+508	0	1x1x1	Half	Angled Window [Yellow]
+509	0	1x1x1	Half	Angled Window [Blue]
+510	0	1x1x1	false	Rigid Rope [White]
+511	0	1x1x1	false	Rigid Rope [Black]
+512	0	1x1x1	false	Rigid Rope [Purple]
+513	0	1x1x1	false	¿Deitree Dead
+514	0	1x1x1	false	Rigid Rope [Pink]
+515	0	1x1x1	false	Rigid Rope [Red]
+516	0	1x1x1	false	Rigid Rope [Green]
+517	0	1x1x1	false	Rigid Rope [Yellow]
+518	0	1x1x1	false	Rigid Rope [Blue]
+519	0	1x1x1	false	¿Boat
+520	520	1x1x1	false	¿Planter 0
+521	521	1x1x1	false	¿Planter 1
+522	522	1x1x1	false	¿Pencil
+524	524	1x1x1	false	¿seed
+527	0	1x1x1	false	Big Plumberry Tree
+528	0	1x1x1	false	¿Coneconut Tree
+529	0	1x1x1	Half	Towel Rail [Black]
+530	0	1x1x1	Half	Towel Rail [Purple]
+531	0	1x1x1	Half	Towel Rail [Pink]
+533	0	1x1x1	Half	Towel Rail [Red]
+534	0	1x1x1	Half	Towel Rail [Green]
+535	0	1x1x1	Half	Towel Rail [Yellow]
+536	0	1x1x1	Half	Towel Rail [Blue]
+537	0	1x1x1	false	¿Wooden Workbench
+538	0	1x1x1	false	¿Wooden Workbench
+542	0	1x1x1	false	¿seed
+543	0	1x1x1	false	¿Deitree
+544	0	1x1x1	Half	Bookcase [White]
+546	0	1x1x1	false	¿Builder’s Bell
+547	0	1x1x1	false	¿Builder’s Bell
+550	0	1x1x1	Half	Bookcase [Black]
+551	0	1x1x1	Half	Bookcase [Purple]
+553	553	1x1x1	false	Glass Door
+558	0	1x1x1	Half	Bookcase [Pink]
+559	0	1x1x1	Half	Bookcase [Red]
+560	560	1x1x1	false	¿Cloth Rack
+563	0	1x1x1	Half	Bookcase [Green]
+564	0	1x1x1	Half	Bookcase [Yellow]
+565	0	1x1x1	Half	Bookcase [Blue]
+566	0	1x1x1	Half	Chest Of Drawers [White]
+567	0	1x1x1	Half	Chest Of Drawers [Black]
+568	0	1x1x1	false	¿Plant
+570	0	1x1x1	false	¿Wheat
+571	0	1x1x1	Half	Chest Of Drawers [Purple]
+573	0	1x1x1	Half	Chest Of Drawers [Pink]
+574	0	1x1x1	Half	Chest Of Drawers [Red]
+580	0	1x1x1	Half	Chest Of Drawers [Green]
+581	0	1x1x1	Half	Chest Of Drawers [Yellow]
+586	0	1x1x1	Half	Chest Of Drawers [Blue]
+587	0	1x1x1	false	Grandfather Clock [White]
+588	0	1x1x1	false	Grandfather Clock [Black]
+589	0	1x1x1	false	Grandfather Clock [Purple]
+591	0	1x1x1	false	Grandfather Clock [Pink]
+592	592	1x1x1	false	Banana Basket
+593	0	1x1x1	false	Grandfather Clock [Red]
+595	595	1x1x1	false	Enormous Table
+600	0	1x1x1	false	Grandfather Clock [Green]
+603	603	1x1x1	false	Woody Goody
+607	607	1x1x1	false	Fan Fern
+609	0	1x1x1	false	Grandfather Clock [Yellow]
+610	0	1x1x1	false	Grandfather Clock [Blue]
+611	0	1x1x1	Half	Clover Carving [White]
+613	0	1x1x1	Half	Clover Carving [Black]
+614	0	1x1x1	Half	Clover Carving [Purple]
+615	615	1x1x1	false	Curtain
+616	0	1x1x1	false	¿Plant
+617	0	1x1x1	false	¿Plant
+620	0	1x1x1	false	¿Plant
+624	0	1x1x1	Half	Clover Carving [Pink]
+627	0	1x1x1	false	0
+628	0	1x1x1	false	Colossal Chest
+637	0	1x1x1	Half	Clover Carving [Green]
+640	0	1x1x1	Half	Clover Carving [Yellow]
+641	0	1x1x1	Half	Clover Carving [Blue]
+642	642	1x1x1	false	Sliding Door
+644	0	1x1x1	false	Wooden Fortification [Green]
+645	0	1x1x1	Half	Clover Carving [Red]
+646	646	1x1x1	false	Paper Window
+648	0	1x1x1	false	¿seed
+649	0	1x1x1	false	¿seed
+650	0	1x1x1	false	¿seed
+651	0	1x1x1	false	¿seed
+653	0	1x1x1	false	Sleek Shelf [White]
+655	0	1x1x1	false	Sleek Shelf [Black]
+656	0	1x1x1	false	Sleek Shelf [Purple]
+658	0	1x1x1	false	0
+662	0	1x1x1	Half	Wooden Toilet [Purple]
+663	0	1x1x1	Half	Wooden Toilet [Pink]
+664	0	1x1x1	Half	Wooden Toilet [Red]
+665	0	1x1x1	Half	Wooden Toilet [Green]
+666	0	1x1x1	Half	Wooden Toilet [Yellow]
+667	0	1x1x1	Half	Wooden Toilet [Blue]
+671	0	1x1x1	Half	Sleek Shelf [Green]
+672	0	1x1x1	Half	Sleek Shelf [Yellow]
+673	0	1x1x1	Half	Sleek Shelf [Blue]
+674	674	1x1x1	false	Täbel Lâmpe
+675	0	1x1x1	Half	Simple Bed [White]
+676	0	1x1x1	Half	Simple Bed [Black]
+677	0	1x1x1	Half	Simple Bed [Purple]
+678	0	1x1x1	Half	Simple Bed [Pink]
+679	0	1x1x1	Half	Simple Bed [Red]
+680	0	1x1x1	Half	Simple Bed [Green]
+681	0	1x1x1	Half	Simple Bed [Yellow]
+682	0	1x1x1	Half	Simple Bed [Blue]
+683	0	1x1x1	Half	Roof Tiling [White]
+684	0	1x1x1	Half	Roof Tiling [Black]
+685	0	1x1x1	Half	Roof Tiling [Purple]
+686	0	1x1x1	Half	Roof Tiling [Pink]
+687	0	1x1x1	Half	Roof Tiling [Red]
+688	0	1x1x1	Half	Roof Tiling [Green]
+689	0	1x1x1	Half	Roof Tiling [Yellow]
+690	0	1x1x1	Half	Roof Tiling [Blue]
+691	0	1x1x1	Half	Pitched Tiling [White]
+692	0	1x1x1	Half	Pitched Tiling [Black]
+693	0	1x1x1	Half	Pitched Tiling [Purple]
+694	0	1x1x1	Half	Pitched Tiling [Pink]
+695	0	1x1x1	Half	Pitched Tiling [Red]
+696	0	1x1x1	Half	Pitched Tiling [Green]
+697	0	1x1x1	Half	Pitched Tiling [Yellow]
+698	0	1x1x1	Half	Pitched Tiling [Blue]
+699	0	1x1x1	Half	Outer Corner Tiling [White]
+700	0	1x1x1	Half	Outer Corner Tiling [Black]
+701	0	1x1x1	Half	Outer Corner Tiling [Purple]
+702	0	1x1x1	Half	Outer Corner Tiling [Pink]
+703	0	1x1x1	Half	Outer Corner Tiling [Red]
+704	0	1x1x1	Half	Outer Corner Tiling [Green]
+705	0	1x1x1	Half	Outer Corner Tiling [Yellow]
+706	0	1x1x1	Half	Outer Corner Tiling [Blue]
+707	0	1x1x1	Half	Inner Corner Tiling [White]
+708	0	1x1x1	Half	Inner Corner Tiling [Black]
+709	0	1x1x1	Half	Inner Corner Tiling [Purple]
+710	0	1x1x1	Half	Inner Corner Tiling [Pink]
+711	0	1x1x1	Half	Inner Corner Tiling [Red]
+712	0	1x1x1	Half	Inner Corner Tiling [Green]
+713	0	1x1x1	Half	Inner Corner Tiling [Yellow]
+714	0	1x1x1	Half	Inner Corner Tiling [Blue]
+715	0	1x1x1	false	Tiled Window [White]
+716	0	1x1x1	false	Tiled Window [Black]
+717	0	1x1x1	false	Tiled Window [Purple]
+718	0	1x1x1	false	Tiled Window [Pink]
+719	0	1x1x1	false	Tiled Window [Red]
+720	0	1x1x1	false	Tiled Window [Green]
+721	0	1x1x1	false	Tiled Window [Yellow]
+722	0	1x1x1	false	Tiled Window [Blue]
+723	0	2x2x1	Half	Magic Door [White]
+724	0	2x2x1	Half	Magic Door [Black]
+725	0	2x2x1	Half	Magic Door [Purple]
+726	0	2x2x1	Half	Magic Door [Pink]
+727	0	2x2x1	Half	Magic Door [Red]
+728	0	2x2x1	Half	Magic Door [Green]
+729	0	2x2x1	Half	Magic Door [Yellow]
+730	0	2x2x1	Half	Magic Door [Blue]
+731	0	1x1x1	Half	Big Table [White]
+732	0	1x1x1	Half	Big Table [Black]
+733	0	1x1x1	Half	Big Table [Purple]
+734	0	1x1x1	Half	Big Table [Pink]
+735	0	1x1x1	Half	Big Table [Red]
+736	0	1x1x1	Half	Big Table [Green]
+737	0	1x1x1	Half	Big Table [Yellow]
+738	0	1x1x1	Half	Big Table [Blue]
+739	0	1x1x1	Half	Dining Table [White]
+741	0	1x1x1	Half	Dining Table [Purple]
+742	0	1x1x1	Half	Dining Table [Pink]
+743	0	1x1x1	Half	Dining Table [Red]
+744	0	1x1x1	Half	Dining Table [Green]
+745	0	1x1x1	Half	Dining Table [Yellow]
+746	0	1x1x1	Half	Dining Table [Blue]
+747	0	1x1x1	Half	Wooden Stool [White]
+748	0	1x1x1	Half	Wooden Stool [Black]
+749	0	1x1x1	Half	Wooden Stool [Purple]
+750	0	1x1x1	Half	Wooden Stool [Pink]
+751	0	1x1x1	Half	Wooden Stool [Red]
+752	0	1x1x1	Half	Wooden Stool [Green]
+753	0	1x1x1	Half	Wooden Stool [Yellow]
+754	0	1x1x1	Half	Wooden Stool [Blue]
+755	0	1x1x1	Half	Comfy Stool [White]
+756	0	1x1x1	Half	Comfy Stool [Black]
+757	0	1x1x1	Half	Comfy Stool [Purple]
+758	0	1x1x1	Half	Comfy Stool [Pink]
+759	0	1x1x1	Half	Comfy Stool [Red]
+760	0	1x1x1	Half	Comfy Stool [Green]
+761	0	1x1x1	Half	Comfy Stool [Yellow]
+762	0	1x1x1	Half	Comfy Stool [Blue]
+763	0	1x1x1	Half	Decorative Drapery [White]
+764	0	1x1x1	Half	Decorative Drapery [Black]
+766	0	4x1x1	Half	Decorative Drapery [Pink]
+767	0	4x1x1	Half	Decorative Drapery [Red]
+768	0	4x1x1	Half	Decorative Drapery [Green]
+769	0	4x1x1	Half	Decorative Drapery [Yellow]
+771	0	1x1x1	false	Rose [White]
+772	0	1x1x1	false	Rose [Black]
+773	0	1x1x1	false	Rose [Purple]
+774	0	1x1x1	false	Rose [Pink]
+775	0	1x1x1	false	Rose [Red]
+776	0	1x1x1	false	Rose [Green]
+777	0	1x1x1	false	Rose [Yellow]
+778	0	1x1x1	false	Rose [Blue]
+779	0	1x1x1	false	Curtain (open) [White]
+780	0	1x1x1	false	Curtain (open) [Black]
+781	0	1x1x1	false	Curtain (open) [Purple]
+782	0	1x1x1	false	Curtain (open) [Pink]
+783	0	1x1x1	false	Curtain (open) [Red]
+784	0	1x1x1	false	Curtain (open) [Green]
+785	0	1x1x1	false	Curtain (open) [Yellow]
+786	0	1x1x1	false	Curtain (open) [Blue]
+790	0	1x2x1	Half	Curtain (tied) [Pink]
+791	0	1x2x1	Half	Curtain (tied) [Red]
+792	0	1x2x1	Half	Curtain (tied) [Green]
+793	0	1x2x1	Half	Curtain (tied) [Yellow]
+795	0	1x1x1	false	¿Coralily
+796	0	1x1x1	false	Daffodaisy
+798	0	1x1x1	false	0
+799	0	1x1x1	false	0
+802	0	1x1x1	false	¿Deitree
+803	803	1x1x1	false	¿Deitree Blue
+805	0	1x1x1	false	0
+806	0	1x1x1	false	0
+807	0	1x1x1	false	¿Deitree
+810	0	1x1x1	false	0
+811	0	1x1x1	false	0
+812	0	1x1x1	false	0
+813	813	1x1x1	false	Blackbell
+814	814	1x1x1	false	Purplotus
+815	815	1x1x1	false	Scarletulip
+816	816	1x1x1	false	Emeraldahlia
+817	817	1x1x1	false	Ultramarose
+818	0	1x1x1	false	0
+819	0	1x1x1	false	0
+820	0	1x1x1	false	Big Rock
+821	0	1x1x1	false	Big Plumberry Tree
+822	0	1x1x1	false	0
+829	829	1x1x1	false	¿Activator
+830	830	1x1x1	false	Crash Cart
+831	831	1x1x1	false	Metal Minecart
+832	0	1x1x1	false	¿Ball
+833	0	1x1x1	false	0
+834	0	1x1x1	false	0
+835	0	1x1x1	false	¿Null
+837	0	1x1x1	false	0
+838	0	1x1x1	false	0
+839	0	1x1x1	false	¿Deitree Planter
+840	0	1x1x1	false	Drapery Door [White]
+841	0	1x1x1	false	Drapery Door [Black]
+842	0	1x1x1	false	Drapery Door [Purple]
+843	0	1x1x1	false	Drapery Door [Pink]
+845	0	2x2x1	Half	Drapery Door [Green]
+846	0	2x2x1	Half	Drapery Door [Yellow]
+848	0	1x1x1	false	Wall Hanging [White]
+849	0	1x1x1	false	Wall Hanging [Black]
+850	0	1x1x1	false	Wall Hanging [Purple]
+851	0	1x1x1	false	Wall Hanging [Pink]
+852	0	1x1x1	false	Wall Hanging [Red]
+853	0	1x1x1	false	Wall Hanging [Green]
+854	0	1x1x1	false	Wall Hanging [Yellow]
+855	0	1x1x1	false	Wall Hanging [Blue]
+856	0	3x2x2	Half	Comfy Sofa [White]
+857	0	3x2x2	Half	Comfy Sofa [Black]
+860	0	3x2x2	Half	Comfy Sofa [Red]
+861	0	3x2x2	Half	Comfy Sofa [Green]
+862	0	3x2x2	Half	Comfy Sofa [Yellow]
+863	0	3x2x2	Half	Comfy Sofa [Blue]
+864	0	1x1x1	false	Bunting [White]
+865	0	1x1x1	false	Bunting [Black]
+866	0	1x1x1	false	Bunting [Purple]
+867	0	1x1x1	false	Bunting [Pink]
+868	0	1x1x1	false	Bunting [Red]
+869	0	1x1x1	false	Bunting [Green]
+870	0	1x1x1	false	Bunting [Yellow]
+871	0	1x1x1	false	Bunting [Blue]
+872	0	1x1x1	false	Awning [White]
+873	0	1x1x1	false	Awning [Black]
+874	0	1x1x1	false	Awning [Purple]
+875	0	1x1x1	false	Awning [Pink]
+876	0	1x1x1	false	Awning [Red]
+877	0	1x1x1	false	Awning [Green]
+878	0	1x1x1	false	Awning [Yellow]
+879	0	1x1x1	false	Awning [Blue]
+880	0	1x1x1	Half	Diagonal Fencing [White]
+881	0	1x1x1	Half	Diagonal Fencing [Black]
+882	0	1x1x1	Half	Diagonal Fencing [Purple]
+883	0	1x1x1	Half	Diagonal Fencing [Pink]
+884	0	1x1x1	Half	Diagonal Fencing [Red]
+885	0	1x1x1	Half	Diagonal Fencing [Green]
+886	0	1x1x1	Half	Diagonal Fencing [Yellow]
+887	0	1x1x1	Half	Diagonal Fencing [Blue]
+888	0	1x1x1	false	Sunbrella [White]
+889	0	1x1x1	false	Sunbrella [Black]
+890	0	1x1x1	false	Sunbrella [Purple]
+891	0	1x1x1	false	Sunbrella [Pink]
+892	0	1x1x1	false	Sunbrella [Red]
+893	0	1x1x1	false	Sunbrella [Green]
+894	0	1x1x1	false	Sunbrella [Yellow]
+895	0	1x1x1	false	Sunbrella [Blue]
+896	0	1x1x1	false	Deckchair [White]
+897	0	1x1x1	false	Deckchair [Black]
+898	0	1x1x1	false	Deckchair [Purple]
+899	0	1x1x1	false	Deckchair [Pink]
+900	0	1x1x1	false	Deckchair [Red]
+901	0	1x1x1	false	Deckchair [Green]
+902	0	1x1x1	false	Deckchair [Yellow]
+903	0	1x1x1	false	Deckchair [Blue]
+904	0	1x1x1	false	Comfy Cushion [White]
+905	0	1x1x1	false	Comfy Cushion [Black]
+906	0	1x1x1	false	Comfy Cushion [Purple]
+907	0	1x1x1	false	Comfy Cushion [Pink]
+908	0	1x1x1	false	Comfy Cushion [Red]
+909	0	1x1x1	false	Comfy Cushion [Green]
+910	0	1x1x1	false	Comfy Cushion [Yellow]
+911	0	1x1x1	false	Comfy Cushion [Blue]
+912	0	1x1x1	Half	Wooden Gate [White]
+913	0	1x1x1	Half	Wooden Gate [Black]
+914	0	1x1x1	Half	Wooden Gate [Purple]
+915	0	1x1x1	Half	Wooden Gate [Pink]
+916	0	1x1x1	Half	Wooden Gate [Red]
+917	0	1x1x1	Half	Wooden Gate [Green]
+918	0	1x1x1	Half	Wooden Gate [Yellow]
+919	0	1x1x1	Half	Wooden Gate [Blue]
+920	0	1x1x1	Half	Small Table [White]
+921	0	1x1x1	Half	Small Table [Black]
+922	0	1x1x1	Half	Small Table [Purple]
+923	0	1x1x1	Half	Small Table [Pink]
+924	0	1x1x1	Half	Small Table [Red]
+925	0	1x1x1	Half	Small Table [Green]
+926	0	1x1x1	Half	Small Table [Yellow]
+927	0	1x1x1	Half	Small Table [Blue]
+929	0	1x1x1	false	¿Minimedal
+932	932	1x1x1	false	Coral
+933	933	1x1x1	false	Colossal Coral
+934	934	1x1x1	false	¿Activator
+935	935	1x1x1	false	¿Activator
+936	0	2x1x2	Half	King-Sized Bed [White]
+937	0	2x1x2	Half	King-Sized Bed [Black]
+938	0	2x1x2	Half	King-Sized Bed [Purple]
+939	0	2x1x2	Half	King-Sized Bed [Pink]
+941	0	2x1x2	Half	King-Sized Bed [Green]
+942	0	2x1x2	Half	King-Sized Bed [Yellow]
+943	0	2x1x2	Half	King-Sized Bed [Blue]
+944	0	1x1x1	false	Small-Scale Soldier [White]
+945	0	1x1x1	false	Small-Scale Soldier [Black]
+946	0	1x1x1	false	Small-Scale Soldier [Purple]
+947	0	1x1x1	false	Small-Scale Soldier [Pink]
+948	0	1x1x1	false	Small-Scale Soldier [Red]
+949	0	1x1x1	false	Small-Scale Soldier [Green]
+950	0	1x1x1	false	Small-Scale Soldier [Yellow]
+951	0	1x1x1	false	Small-Scale Soldier [Blue]
+952	0	1x1x1	Half	Wooden Steps [White]
+953	0	1x1x1	Half	Wooden Steps [Black]
+954	0	1x1x1	Half	Wooden Steps [Purple]
+955	0	1x1x1	Half	Wooden Steps [Pink]
+956	0	1x1x1	Half	Wooden Steps [Red]
+957	0	1x1x1	Half	Wooden Steps [Green]
+958	0	1x1x1	Half	Wooden Steps [Yellow]
+959	0	1x1x1	Half	Wooden Steps [Blue]
+960	0	1x1x1	false	0
+961	0	1x1x1	false	0
+962	0	1x1x1	false	0
+963	0	1x1x1	false	0
+964	0	1x1x1	false	0
+966	0	1x1x1	false	0
+975	0	1x1x1	false	¿Null
+979	0	1x1x1	false	0
+985	0	1x1x1	false	Big Palm Tree
+986	0	1x1x1	false	Cotton Plant
+987	0	1x1x1	false	Fibrous Fern
+988	988	1x1x1	false	¿deitree bulb
+989	0	1x1x1	false	¿Null
+990	0	1x1x1	false	0
+992	992	1x1x1	false	Siltstone Column Capital
+993	993	1x1x1	false	Siltstone Column Midsection
+994	994	1x1x1	false	Siltstone Column Pedestal
+995	0	1x1x1	false	0
+996	0	1x1x1	false	0
+997	0	1x1x1	false	0
+999	0	1x1x1	false	0
+1004	0	1x1x1	false	Slime Balloons
+1005	0	1x1x1	false	¿deitree bulb
+1007	1007	1x1x1	false	Upwards-Pointing Puller
+1008	1008	1x1x1	false	Downwards-Pointing Puller
+1009	0	1x1x1	false	0
+1010	0	1x1x1	false	0
+1012	1012	1x1x1	false	¿Banana Peel
+1013	0	1x1x1	false	0
+1016	1016	1x1x1	false	King Slime Light
+1017	1017	1x1x1	false	Slimy Eye
+1018	1018	1x1x1	false	Slimy Mouth
+1019	1019	1x1x1	false	¿Teleportal
+1022	1022	1x1x1	false	Upwards-Pointing Pusher
+1023	1023	1x1x1	false	Downwards-Pointing Pusher
+1024	0	1x1x1	false	0
+1026	0	1x1x1	false	¿Null
+1027	0	1x1x1	false	¿Null
+1028	0	1x1x1	false	0
+1029	0	1x1x1	false	0
+1030	0	1x1x1	false	0
+1031	0	1x1x1	false	0
+1032	0	1x1x1	false	0
+1034	0	1x1x1	false	0
+1036	0	1x1x1	false	0
+1038	0	1x1x1	false	0
+1039	0	1x1x1	false	0
+1040	0	1x1x1	false	0
+1041	0	1x1x1	false	0
+1046	0	1x1x1	false	0
+1047	0	1x1x1	false	0
+1048	0	1x1x1	false	Scarecrow
+1049	0	1x1x1	false	0
+1050	0	1x1x1	false	0
+1051	0	1x1x1	false	Simple Supper Set [White]
+1052	0	1x1x1	false	Simple Supper Set [Black]
+1053	0	1x1x1	false	Simple Supper Set [Purple]
+1054	0	1x1x1	false	Simple Supper Set [Pink]
+1055	0	1x1x1	false	Simple Supper Set [Red]
+1056	0	1x1x1	false	Simple Supper Set [Green]
+1057	0	1x1x1	false	Simple Supper Set [Yellow]
+1059	0	1x1x1	false	¿Null
+1060	0	1x1x1	false	¿Pink bulb
+1061	0	1x1x1	false	0
+1066	0	1x1x1	false	Connecting Couch Corner
+1067	0	1x1x1	false	Woöden Lampe [White]
+1068	0	1x1x1	false	Woöden Lampe [Black]
+1069	0	1x1x1	false	Woöden Lampe [Purple]
+1070	0	1x1x1	false	Woöden Lampe [Pink]
+1071	0	1x1x1	false	Woöden Lampe [Red]
+1072	0	1x1x1	false	Woöden Lampe [Green]
+1073	0	1x1x1	false	Woöden Lampe [Yellow]
+1074	0	1x1x1	false	Woöden Lampe [Blue]
+1076	0	1x1x1	false	0
+1077	0	1x1x1	false	0
+1078	0	1x1x1	false	¿deitree bulb
+1083	1083	1x1x1	false	Reeds
+1094	1094	1x1x1	false	Splashing Stone
+1098	0	1x1x1	false	Vertical Log
+1103	1103	1x1x1	false	Brick Border
+1104	0	1x1x1	false	0
+1106	0	1x1x1	false	0
+1114	1114	1x1x1	false	Rustic Desk
+1119	1119	1x1x1	false	Potage Pot
+1125	0	1x1x1	false	Haystack
+1126	1126	1x1x1	false	Stackable Drackyma
+1127	0	1x1x1	false	0
+1128	0	1x1x1	false	0
+1129	0	1x1x1	false	0
+1132	0	1x1x1	false	0
+1135	0	1x1x1	false	0
+1136	0	1x1x1	false	0
+1143	0	1x1x1	false	0
+1144	1144	1x1x1	false	¿Builder’s Workbench
+1146	0	1x1x1	false	¿Builder’s Workbench
+1147	0	1x1x1	false	¿Wooden Workbench
+1148	0	1x1x1	false	¿Stone Workbench
+1149	0	1x1x1	false	0
+1151	0	1x1x1	false	¿Null
+1152	0	1x1x1	false	¿Null
+1153	0	1x1x1	false	Terraforma Tiles
+1155	1155	1x1x1	false	Silver Birch Sapling
+1156	1156	1x1x1	false	Silver Birch Tree
+1163	0	1x1x1	false	¿Null
+1166	0	1x1x1	false	0
+1167	0	1x1x1	false	0
+1168	0	1x1x1	false	¿Boat
+1170	0	1x1x1	false	0
+1171	0	1x1x1	false	0
+1172	0	1x1x1	false	0
+1173	0	1x1x1	false	0
+1174	1174	1x1x1	false	Clam Shell
+1175	0	1x1x1	false	Plumberry Tree
+1176	0	1x1x1	false	Plumberry Tree
+1177	0	1x1x1	false	Plumberry Tree
+1178	0	1x1x1	false	Plumberry Tree
+1179	0	1x1x1	false	Plumberry Tree
+1180	0	1x1x1	false	Plumberry Tree
+1181	0	1x1x1	false	Plumberry Tree
+1182	0	1x1x1	false	Plumberry Tree
+1183	0	1x1x1	false	Plumberry Tree
+1184	1184	1x1x1	false	Picture Frame
+1185	0	1x1x1	false	Picture Frame
+1186	0	1x1x1	false	Picture Frame
+1187	0	1x1x1	false	Picture Frame
+1188	0	1x1x1	false	Picture Frame
+1189	0	1x1x1	false	Picture Frame
+1190	0	1x1x1	false	Picture Frame
+1191	0	1x1x1	false	Picture Frame
+1192	0	1x1x1	false	Picture Frame
+1193	0	1x1x1	false	Picture Frame
+1194	0	1x1x1	false	¿Null
+1199	0	1x1x1	false	¿Naviglobe
+1200	0	1x1x1	false	¿Naviglobe
+1201	0	1x1x1	false	¿Naviglobe
+1202	0	1x1x1	false	¿Naviglobe
+1210	0	1x1x1	false	¿Naviglobe
+1216	0	1x1x1	false	¿Naviglobe
+1217	0	1x1x1	false	¿Naviglobe
+1218	0	1x1x1	false	¿Naviglobe
+1219	0	1x1x1	false	¿Naviglobe
+1220	0	1x1x1	false	¿Naviglobe
+1221	0	1x1x1	false	¿Naviglobe
+1222	0	1x1x1	false	¿Naviglobe
+1223	0	1x1x1	false	¿Naviglobe
+1224	0	1x1x1	false	¿Naviglobe
+1226	0	1x1x1	false	¿Naviglobe
+1227	0	1x1x1	false	¿Naviglobe
+1228	0	1x1x1	false	¿Naviglobe
+1229	0	1x1x1	false	¿Naviglobe
+1230	0	1x1x1	false	¿Naviglobe
+1231	0	1x1x1	false	¿Naviglobe
+1232	0	1x1x1	false	¿Naviglobe
+1233	0	1x1x1	false	¿Naviglobe
+1234	0	1x1x1	false	0
+1235	0	1x1x1	false	0
+1237	0	1x1x1	false	0
+1238	0	1x1x1	false	0
+1239	0	1x1x1	false	0
+1242	0	1x1x1	false	0
+1243	1243	1x1x1	false	Border Boulder
+1244	1244	1x1x1	false	Big Border Boulder
+1245	1245	1x1x1	false	Fun-Sized Fountain
+1246	1246	1x1x1	false	Super Spouter
+1247	1247	1x1x1	false	Iron Stanchion
+1248	1248	1x1x1	false	Awning
+1252	1252	1x1x1	false	Deep-Fried Feast
+1261	0	1x1x1	false	0
+1264	1264	1x1x1	false	Drum Kit
+1265	1265	1x1x1	false	Cello
+1267	1267	1x1x1	false	Fancy Signpost
+1270	0	1x1x1	false	0
+1273	0	1x1x1	false	0
+1279	0	1x1x1	false	0
+1286	1286	1x1x1	false	Sizeable Stalagmite
+1289	0	1x1x1	false	Iron Stanchion
+1290	0	1x1x1	false	Iron Stanchion ·-
+1291	0	1x1x1	false	Iron Stanchion -·-
+1292	0	1x1x1	false	Beastly Burrow Broken
+1293	0	1x1x1	false	¿Null
+1295	0	1x1x1	false	¿Arrow
+1297	0	1x1x1	false	Steel Doors
+1298	0	1x1x1	false	0
+1299	0	1x1x1	false	0
+1300	1300	1x1x1	false	(Golden Lock)
+1301	0	1x1x1	false	0
+1303	0	1x1x1	false	0
+1304	0	1x1x1	false	0
+1306	0	1x1x1	false	Sharpened Log
+1307	0	1x1x1	false	Pestilential Nest
+1308	0	1x1x1	false	Pestilential Nest Broken
+1309	0	1x1x1	false	0
+1315	0	1x1x1	false	Connecting Window
+1320	0	1x1x1	false	Connecting Window
+1322	0	1x1x1	false	Connecting Window
+1323	0	1x1x1	false	Connecting Window
+1325	0	1x1x1	false	0
+1326	0	1x1x1	false	0
+1331	0	1x1x1	false	0
+1336	1336	1x1x1	false	Large Castle Tile
+1338	1338	1x1x1	false	Carpeted Steps Left
+1345	1345	1x1x1	false	Stage Curtain Left
+1346	1346	1x1x1	false	Stage Curtain Right
+1348	1348	1x1x1	false	Wall-Mounted Banner
+1349	1349	1x1x1	false	Brass Bracket
+1351	1351	1x1x1	false	Four-Square Leadlight
+1356	0	1x1x1	false	¿Wooden Pristine Workbench
+1377	1377	1x1x1	false	Small-Scale Slime
+1380	1380	1x1x1	false	Floating Flower Petals
+1381	1381	1x1x1	false	Spa Spout
+1384	0	1x1x1	false	0
+1385	0	1x1x1	false	0
+1386	1386	1x1x1	false	Banner of Erdrick
+1391	0	1x1x1	false	0
+1392	0	1x1x1	false	0
+1393	0	1x1x1	false	0
+1405	0	1x1x1	false	0
+1406	1406	1x1x1	false	¿Moon Sigil
+1407	0	1x1x1	false	0
+1408	1408	1x1x1	false	¿Water Sigil
+1409	1409	1x1x1	false	¿Star Sigil
+1411	0	1x1x1	false	Wooden Door
+1413	0	1x1x1	false	0
+1414	0	1x1x1	false	Colossal Coffer
+1415	0	1x1x1	false	Grandfather Clock
+1416	0	1x1x1	false	Filter Fountain
+1417	0	1x1x1	false	¿Tattered Banner of Erdrick
+1418	1418	1x1x1	false	Salutation Station
+1420	0	1x1x1	false	Long-Stemmed Rose [White]
+1421	0	1x1x1	false	Long-Stemmed Rose [Black]
+1422	0	1x1x1	false	Long-Stemmed Rose [Purple]
+1423	0	1x1x1	false	Long-Stemmed Rose [Pink]
+1424	0	1x1x1	false	Long-Stemmed Rose [Red]
+1425	0	1x1x1	false	Long-Stemmed Rose [Green]
+1426	0	1x1x1	false	Long-Stemmed Rose [Yellow]
+1427	0	1x1x1	false	Long-Stemmed Rose [Blue]
+1428	0	1x1x1	false	0
+1429	0	1x1x1	false	0
+1430	0	1x1x1	false	0
+1431	0	1x1x1	false	0
+1432	0	1x1x1	false	0
+1434	0	1x1x1	false	0
+1436	0	1x1x1	false	¿Milkblossom
+1439	0	1x1x1	false	0
+1440	0	1x1x1	false	0
+1441	0	1x1x1	false	0
+1442	0	1x1x1	false	0
+1456	0	1x1x1	false	¿Stone Workbench
+1458	0	1x1x1	false	0
+1459	0	1x1x1	false	0
+1460	0	1x1x1	false	0
+1461	0	1x1x1	false	0
+1462	0	1x1x1	false	¿Orange Ball
+1463	0	1x1x1	false	¿Blue Ball
+1464	0	1x1x1	false	¿Yellow Ball
+1465	0	1x1x1	false	¿Green Ball
+1466	0	1x1x1	false	¿Red Ball
+1469	1469	1x1x1	false	Brick Border Corner
+1470	0	1x1x1	false	0
+1471	0	1x1x1	false	Stackable Dracky
+1473	1473	1x1x1	false	Stackable Drackolyte
+1475	1475	1x1x1	false	Button
+1476	0	1x1x1	false	¿Altar
+1477	0	1x1x1	false	¿Stained Window Arch
+1478	0	1x1x1	false	¿Stained Window Midsection
+1479	0	1x1x1	false	¿Stained Window Sill
+1481	0	2x2x1	Half	Window [Black]
+1482	0	2x2x1	Half	Window [Purple]
+1483	0	2x2x1	Half	Window [Pink]
+1484	0	2x2x1	Half	Window [Red]
+1485	0	2x2x1	Half	Window [Green]
+1486	0	2x2x1	Half	Window [Yellow]
+1487	0	2x2x1	Half	Window [Blue]
+1489	0	1x1x1	false	Reeds
+1490	0	1x1x1	false	Old Note
+1491	0	1x1x1	false	¿Lock
+1496	0	2x1x1	Half	Picket Gate [White]
+1497	0	2x1x1	Half	Picket Gate [Black]
+1498	0	2x1x1	Half	Picket Gate [Purple]
+1499	0	2x1x1	Half	Picket Gate [Pink]
+1500	0	2x1x1	Half	Picket Gate [Red]
+1501	0	2x1x1	Half	Picket Gate [Green]
+1502	0	2x1x1	Half	Picket Gate [Yellow]
+1503	0	2x1x1	Half	Picket Gate [Blue]
+1504	0	1x1x1	false	Diagonal Fencing
+1505	0	1x1x1	false	Diagonal Fencing
+1506	0	1x1x1	false	Diagonal Fencing
+1507	0	1x1x1	false	Diagonal Fencing
+1508	0	1x1x1	false	Diagonal Fencing
+1509	0	1x1x1	false	Diagonal Fencing
+1510	0	1x1x1	false	Diagonal Fencing
+1511	0	1x1x1	false	Diagonal Fencing
+1512	0	1x1x1	Half	Wooden Fencing [White]
+1513	0	1x1x1	Half	Wooden Fencing [Black]
+1514	0	1x1x1	Half	Wooden Fencing [Purple]
+1515	0	1x1x1	Half	Wooden Fencing [Pink]
+1516	0	1x1x1	Half	Wooden Fencing [Red]
+1517	0	1x1x1	Half	Wooden Fencing [Green]
+1518	0	1x1x1	Half	Wooden Fencing [Yellow]
+1519	0	1x1x1	Half	Wooden Fencing [Blue]
+1520	0	1x1x1	Half	Picket Fencing [White]
+1521	0	1x1x1	Half	Picket Fencing [Black]
+1522	0	1x1x1	Half	Picket Fencing [Purple]
+1523	0	1x1x1	Half	Picket Fencing [Pink]
+1524	0	1x1x1	Half	Picket Fencing [Red]
+1525	0	1x1x1	Half	Picket Fencing [Green]
+1526	0	1x1x1	Half	Picket Fencing [Yellow]
+1527	0	1x1x1	Half	Picket Fencing [Blue]
+1528	0	1x1x1	Half	Wooden Handrail [White]
+1529	0	1x1x1	Half	Wooden Handrail [Black]
+1530	0	1x1x1	Half	Wooden Handrail [Purple]
+1531	0	1x1x1	Half	Wooden Handrail [Pink]
+1532	0	1x1x1	Half	Wooden Handrail [Red]
+1533	0	1x1x1	Half	Wooden Handrail [Green]
+1534	0	1x1x1	Half	Wooden Handrail [Yellow]
+1535	0	1x1x1	Half	Wooden Handrail [Blue]
+1536	0	1x1x1	Half	Plank Pathway [White]
+1537	0	1x1x1	Half	Plank Pathway [Black]
+1538	0	1x1x1	Half	Plank Pathway [Purple]
+1539	0	1x1x1	Half	Plank Pathway [Pink]
+1540	0	1x1x1	Half	Plank Pathway [Red]
+1541	0	1x1x1	Half	Plank Pathway [Green]
+1542	0	1x1x1	Half	Plank Pathway [Yellow]
+1543	0	1x1x1	Half	Plank Pathway [Blue]
+1544	0	1x1x1	false	¿White Block
+1545	0	1x1x1	false	¿White Block
+1546	0	1x1x1	false	¿White Block
+1547	0	1x1x1	false	¿White Block
+1548	0	1x1x1	false	¿White Block
+1549	0	1x1x1	false	¿White Block
+1550	0	1x1x1	false	¿White Block
+1551	0	1x1x1	false	¿White Block
+1552	0	1x1x1	false	¿White Block
+1553	0	1x1x1	false	¿White Block
+1554	0	1x1x1	false	¿White Block
+1555	0	1x1x1	false	¿White Block
+1556	0	1x1x1	false	¿White Block
+1557	0	1x1x1	false	¿White Block
+1558	0	1x1x1	false	¿White Block
+1559	0	1x1x1	false	¿White Block
+1560	0	1x1x1	false	¿White Block
+1561	0	1x1x1	false	¿White Block
+1562	0	1x1x1	false	¿White Block
+1563	0	1x1x1	false	¿White Block
+1564	0	1x1x1	false	¿White Block
+1565	0	1x1x1	false	¿White Block
+1566	0	1x1x1	false	¿White Block
+1567	0	1x1x1	false	¿White Block
+1568	0	1x1x1	false	¿White Block
+1569	0	1x1x1	false	¿White Block
+1570	0	1x1x1	false	¿White Block
+1571	0	1x1x1	false	¿White Block
+1572	0	1x1x1	false	¿White Block
+1573	0	1x1x1	false	¿White Block
+1574	0	1x1x1	false	¿White Block
+1575	0	1x1x1	false	¿White Block
+1576	0	1x1x1	false	Enormous Table [White]
+1577	0	1x1x1	false	Enormous Table [Black]
+1578	0	1x1x1	false	Enormous Table [Purple]
+1579	0	1x1x1	false	Enormous Table [Pink]
+1580	0	1x1x1	false	Enormous Table [Red]
+1581	0	1x1x1	false	Enormous Table [Green]
+1582	0	1x1x1	false	Enormous Table [Yellow]
+1583	0	1x1x1	false	Enormous Table [Blue]
+1584	0	1x1x2	Half	Rustic Bed [White]
+1585	0	1x1x2	Half	Rustic Bed [Black]
+1586	0	1x1x2	Half	Rustic Bed [Purple]
+1587	0	1x1x2	Half	Rustic Bed [Pink]
+1588	0	1x1x2	Half	Rustic Bed [Red]
+1589	0	1x1x2	Half	Rustic Bed [Green]
+1590	0	1x1x2	Half	Rustic Bed [Yellow]
+1592	0	1x1x1	Half	Connecting Couch Midsection [White]
+1593	0	1x1x1	Half	Connecting Couch Midsection [Black]
+1594	0	1x1x1	Half	Connecting Couch Midsection [Purple]
+1595	0	1x1x1	Half	Connecting Couch Midsection [Pink]
+1597	0	1x1x1	Half	Connecting Couch Midsection [Green]
+1598	0	1x1x1	Half	Connecting Couch Midsection [Yellow]
+1600	0	1x1x1	Half	Connecting Couch Left [White]
+1601	0	1x1x1	Half	Connecting Couch Left [Black]
+1602	0	1x1x1	Half	Connecting Couch Left [Purple]
+1603	0	1x1x1	Half	Connecting Couch Left [Pink]
+1605	0	1x1x1	Half	Connecting Couch Left [Green]
+1606	0	1x1x1	Half	Connecting Couch Left [Yellow]
+1608	0	1x1x1	Half	Connecting Couch Right [White]
+1609	0	1x1x1	Half	Connecting Couch Right [Black]
+1610	0	1x1x1	Half	Connecting Couch Right [Purple]
+1611	0	1x1x1	Half	Connecting Couch Right [Pink]
+1613	0	1x1x1	Half	Connecting Couch Right [Green]
+1614	0	1x1x1	Half	Connecting Couch Right [Yellow]
+1616	0	1x1x1	false	Connecting Couch Corner [White]
+1617	0	1x1x1	false	Connecting Couch Corner [Black]
+1618	0	1x1x1	false	Connecting Couch Corner [Purple]
+1619	0	1x1x1	false	Connecting Couch Corner [Pink]
+1620	0	1x1x1	false	Connecting Couch Corner [Red]
+1621	0	1x1x1	false	Connecting Couch Corner [Green]
+1622	0	1x1x1	false	Connecting Couch Corner [Yellow]
+1623	0	1x1x1	false	Connecting Couch Corner [Blue]
+1624	0	1x1x1	false	Carpented Steps Midsection [White]
+1625	0	1x1x1	false	Carpented Steps Midsection [Black]
+1626	0	1x1x1	false	Carpented Steps Midsection [Purple]
+1627	0	1x1x1	false	Carpented Steps Midsection [Pink]
+1628	0	1x1x1	false	Carpented Steps Midsection [Red]
+1629	0	1x1x1	false	Carpented Steps Midsection [Green]
+1630	0	1x1x1	false	Carpented Steps Midsection [Yellow]
+1632	0	1x1x1	false	Carpented Steps Right [White]
+1633	0	1x1x1	false	Carpented Steps Right [Black]
+1634	0	1x1x1	false	Carpented Steps Right [Purple]
+1635	0	1x1x1	false	Carpented Steps Right [Pink]
+1636	0	1x1x1	false	Carpented Steps Right [Red]
+1637	0	1x1x1	false	Carpented Steps Right [Green]
+1638	0	1x1x1	false	Carpented Steps Right [Yellow]
+1640	0	1x1x1	false	Carpented Steps Left [White]
+1641	0	1x1x1	false	Carpented Steps Left [Black]
+1642	0	1x1x1	false	Carpented Steps Left [Purple]
+1643	0	1x1x1	false	Carpented Steps Left [Pink]
+1644	0	1x1x1	false	Carpented Steps Left [Red]
+1645	0	1x1x1	false	Carpented Steps Left [Green]
+1646	0	1x1x1	false	Carpented Steps Left [Yellow]
+1648	0	1x1x1	false	Stage Curtain Left [White]
+1649	0	1x1x1	false	Stage Curtain Left [Black]
+1650	0	1x1x1	false	Stage Curtain Left [Purple]
+1651	0	1x1x1	false	Stage Curtain Left [Pink]
+1652	0	1x1x1	false	Stage Curtain Left [Red]
+1653	0	1x1x1	false	Stage Curtain Left [Green]
+1654	0	1x1x1	false	Stage Curtain Left [Yellow]
+1656	0	1x1x1	false	Stage Curtain Right [White]
+1657	0	1x1x1	false	Stage Curtain Right [Black]
+1658	0	1x1x1	false	Stage Curtain Right [Purple]
+1659	0	1x1x1	false	Stage Curtain Right [Pink]
+1660	0	1x1x1	false	Stage Curtain Right [Red]
+1661	0	1x1x1	false	Stage Curtain Right [Green]
+1662	0	1x1x1	false	Stage Curtain Right [Yellow]
+1663	0	1x1x1	false	Stage Curtain Right [Blue]
+1664	0	1x1x1	Half	Book [White]
+1665	0	1x1x1	Half	Book [Black]
+1666	0	1x1x1	Half	Book [Purple]
+1667	0	1x1x1	Half	Book [Pink]
+1670	0	1x1x1	Half	Book [Yellow]
+1672	0	1x1x1	false	¿Book [White]
+1673	0	1x1x1	false	¿Book [Black]
+1674	0	1x1x1	false	¿Book [Purple]
+1675	0	1x1x1	false	¿Book [Pink]
+1676	0	1x1x1	false	¿Book [Red]
+1677	0	1x1x1	false	¿Book [Green]
+1678	0	1x1x1	false	¿Book [Yellow]
+1679	0	1x1x1	false	¿Book [Blue]
+1680	0	1x1x1	Half	Biblio-Pile [White]
+1681	0	1x1x1	Half	Biblio-Pile [Black]
+1682	0	1x1x1	Half	Biblio-Pile [Purple]
+1683	0	1x1x1	Half	Biblio-Pile [Pink]
+1684	0	1x1x1	Half	Biblio-Pile [Red]
+1685	0	1x1x1	Half	Biblio-Pile [Green]
+1686	0	1x1x1	Half	Biblio-Pile [Yellow]
+1687	0	1x1x1	Half	Biblio-Pile [Blue]
+1688	0	1x1x1	Half	Pot Plant [White]
+1689	0	1x1x1	Half	Pot Plant [Black]
+1690	0	1x1x1	Half	Pot Plant [Purple]
+1691	0	1x1x1	Half	Pot Plant [Pink]
+1693	0	1x1x1	Half	Pot Plant [Green]
+1695	0	1x1x1	Half	Pot Plant [Blue]
+1696	0	1x1x1	Half	Nameplate [White]
+1698	0	1x1x1	Half	Nameplate [Purple]
+1699	0	1x1x1	Half	Nameplate [Pink]
+1701	0	1x1x1	Half	Nameplate [Green]
+1702	0	1x1x1	Half	Nameplate [Yellow]
+1703	0	1x1x1	Half	Nameplate [Blue]
+1704	0	2x2x1	Half	Picture Frame [White]
+1705	0	2x2x1	Half	Picture Frame [Black]
+1706	0	2x2x1	Half	Picture Frame [Purple]
+1707	0	2x2x1	Half	Picture Frame [Pink]
+1708	0	2x2x1	Half	Picture Frame [Red]
+1709	0	2x2x1	Half	Picture Frame [Green]
+1710	0	2x2x1	Half	Picture Frame [Yellow]
+1711	0	2x2x1	Half	Picture Frame [Blue]
+1712	0	2x2x1	Half	Picture Frame [White]
+1713	0	2x2x1	Half	Picture Frame [Black]
+1714	0	2x2x1	Half	Picture Frame [Purple]
+1715	0	2x2x1	Half	Picture Frame [Pink]
+1716	0	2x2x1	Half	Picture Frame [Red]
+1717	0	2x2x1	Half	Picture Frame [Green]
+1718	0	2x2x1	Half	Picture Frame [Yellow]
+1719	0	2x2x1	Half	Picture Frame [Blue]
+1720	0	2x2x1	Half	Picture Frame [White]
+1721	0	2x2x1	Half	Picture Frame [Black]
+1722	0	2x2x1	Half	Picture Frame [Purple]
+1723	0	2x2x1	Half	Picture Frame [Pink]
+1724	0	2x2x1	Half	Picture Frame [Red]
+1725	0	2x2x1	Half	Picture Frame [Green]
+1726	0	2x2x1	Half	Picture Frame [Yellow]
+1727	0	2x2x1	Half	Picture Frame [Blue]
+1728	0	2x2x1	Half	Picture Frame [White]
+1729	0	2x2x1	Half	Picture Frame [Black]
+1730	0	2x2x1	Half	Picture Frame [Purple]
+1731	0	2x2x1	Half	Picture Frame [Pink]
+1732	0	2x2x1	Half	Picture Frame [Red]
+1733	0	2x2x1	Half	Picture Frame [Green]
+1734	0	2x2x1	Half	Picture Frame [Yellow]
+1735	0	2x2x1	Half	Picture Frame [Blue]
+1736	0	2x2x1	Half	Picture Frame [White]
+1737	0	2x2x1	Half	Picture Frame [Black]
+1738	0	2x2x1	Half	Picture Frame [Purple]
+1739	0	2x2x1	Half	Picture Frame [Pink]
+1740	0	2x2x1	Half	Picture Frame [Red]
+1741	0	2x2x1	Half	Picture Frame [Green]
+1742	0	2x2x1	Half	Picture Frame [Yellow]
+1743	0	2x2x1	Half	Picture Frame [Blue]
+1744	0	2x2x1	Half	Picture Frame [White]
+1745	0	2x2x1	Half	Picture Frame [Black]
+1746	0	2x2x1	Half	Picture Frame [Purple]
+1747	0	2x2x1	Half	Picture Frame [Pink]
+1748	0	2x2x1	Half	Picture Frame [Red]
+1749	0	2x2x1	Half	Picture Frame [Green]
+1750	0	2x2x1	Half	Picture Frame [Yellow]
+1751	0	2x2x1	Half	Picture Frame [Blue]
+1752	0	2x2x1	Half	Picture Frame [White]
+1753	0	2x2x1	Half	Picture Frame [Black]
+1754	0	2x2x1	Half	Picture Frame [Purple]
+1755	0	2x2x1	Half	Picture Frame [Pink]
+1756	0	2x2x1	Half	Picture Frame [Red]
+1757	0	2x2x1	Half	Picture Frame [Green]
+1758	0	2x2x1	Half	Picture Frame [Yellow]
+1759	0	2x2x1	Half	Picture Frame [Blue]
+1760	0	2x2x1	Half	Picture Frame [White]
+1761	0	2x2x1	Half	Picture Frame [Black]
+1762	0	2x2x1	Half	Picture Frame [Purple]
+1763	0	2x2x1	Half	Picture Frame [Pink]
+1764	0	2x2x1	Half	Picture Frame [Red]
+1765	0	2x2x1	Half	Picture Frame [Green]
+1766	0	2x2x1	Half	Picture Frame [Yellow]
+1767	0	2x2x1	Half	Picture Frame [Blue]
+1768	0	2x2x1	Half	Picture Frame [White]
+1769	0	2x2x1	Half	Picture Frame [Black]
+1770	0	2x2x1	Half	Picture Frame [Purple]
+1771	0	2x2x1	Half	Picture Frame [Pink]
+1772	0	2x2x1	Half	Picture Frame [Red]
+1773	0	2x2x1	Half	Picture Frame [Green]
+1774	0	2x2x1	Half	Picture Frame [Yellow]
+1775	0	2x2x1	Half	Picture Frame [Blue]
+1776	0	2x2x1	Half	Picture Frame [White]
+1777	0	2x2x1	Half	Picture Frame [Black]
+1778	0	2x2x1	Half	Picture Frame [Purple]
+1779	0	2x2x1	Half	Picture Frame [Pink]
+1780	0	2x2x1	Half	Picture Frame [Red]
+1781	0	2x2x1	Half	Picture Frame [Green]
+1782	0	2x2x1	Half	Picture Frame [Yellow]
+1783	0	2x2x1	Half	Picture Frame [Blue]
+1784	0	3x1x3	Half	Grand Piano [White]
+1785	0	3x1x3	Half	Grand Piano [Black]
+1786	0	3x1x3	Half	Grand Piano [Purple]
+1787	0	3x1x3	Half	Grand Piano [Pink]
+1788	0	3x1x3	Half	Grand Piano [Red]
+1789	0	3x1x3	Half	Grand Piano [Green]
+1790	0	3x1x3	Half	Grand Piano [Yellow]
+1791	0	3x1x3	Half	Grand Piano [Blue]
+1792	0	1x1x1	false	High Heels [White]
+1793	0	1x1x1	false	High Heels [Black]
+1794	0	1x1x1	false	High Heels [Purple]
+1795	0	1x1x1	false	High Heels [Pink]
+1796	0	1x1x1	false	High Heels [Red]
+1797	0	1x1x1	false	High Heels [Green]
+1798	0	1x1x1	false	High Heels [Yellow]
+1799	0	1x1x1	false	High Heels [Blue]
+1800	0	1x1x1	false	Distinguished Deckchair [White]
+1801	0	1x1x1	false	Distinguished Deckchair [Black]
+1802	0	1x1x1	false	Distinguished Deckchair [Purple]
+1803	0	1x1x1	false	Distinguished Deckchair [Pink]
+1804	0	1x1x1	false	Distinguished Deckchair [Red]
+1805	0	1x1x1	false	Distinguished Deckchair [Green]
+1806	0	1x1x1	false	Distinguished Deckchair [Yellow]
+1807	0	1x1x1	false	Distinguished Deckchair [Blue]
+1808	0	1x1x1	false	Classy Canopy [White]
+1809	0	1x1x1	false	Classy Canopy [Black]
+1810	0	1x1x1	false	Classy Canopy [Purple]
+1811	0	1x1x1	false	Classy Canopy [Pink]
+1812	0	1x1x1	false	Classy Canopy [Red]
+1813	0	1x1x1	false	Classy Canopy [Green]
+1814	0	1x1x1	false	Classy Canopy [Yellow]
+1815	0	1x1x1	false	Classy Canopy [Blue]
+1816	0	1x1x1	false	Fancy Signpost [White]
+1817	0	1x1x1	false	Fancy Signpost [Black]
+1818	0	1x1x1	false	Fancy Signpost [Purple]
+1819	0	1x1x1	false	Fancy Signpost [Pink]
+1820	0	1x1x1	false	Fancy Signpost [Red]
+1821	0	1x1x1	false	Fancy Signpost [Green]
+1822	0	1x1x1	false	Fancy Signpost [Yellow]
+1823	0	1x1x1	false	Fancy Signpost [Blue]
+1824	0	1x1x1	false	White Coral Colony
+1825	0	1x1x1	false	Black Coral Colony
+1826	0	1x1x1	false	Purple Coral Colony
+1827	0	1x1x1	false	Colossal Coral
+1828	0	1x1x1	false	Red Coral Colony
+1829	0	1x1x1	false	Green Coral Colony
+1830	0	1x1x1	false	Yellow Coral Colony
+1831	0	1x1x1	false	Blue Coral Colony
+1832	0	1x1x1	false	White Coral
+1833	0	1x1x1	false	Black Coral
+1834	0	1x1x1	false	Purple Coral
+1835	0	1x1x1	false	Coral
+1836	0	1x1x1	false	Red Coral
+1837	0	1x1x1	false	Green Coral
+1838	0	1x1x1	false	Yellow Coral
+1839	0	1x1x1	false	Blue Coral
+1844	0	1x1x1	false	0
+1845	0	1x1x1	false	Connecting Window NC [White]
+1847	0	1x1x1	Half	Connecting Window NC [Purple]
+1848	0	1x1x1	Half	Connecting Window NC [Pink]
+1849	0	1x1x1	Half	Connecting Window NC [Red]
+1850	0	1x1x1	Half	Connecting Window NC [Green]
+1851	0	1x1x1	Half	Connecting Window NC [Yellow]
+1852	0	1x1x1	Half	Connecting Window NC [Blue]
+1855	0	1x1x1	Half	Connecting Window CE1 [Purple]
+1856	0	1x1x1	Half	Connecting Window CE1 [Pink]
+1857	0	1x1x1	Half	Connecting Window CE1 [Red]
+1858	0	1x1x1	Half	Connecting Window CE1 [Green]
+1859	0	1x1x1	Half	Connecting Window CE1 [Yellow]
+1860	0	1x1x1	Half	Connecting Window CE1 [Blue]
+1863	0	1x1x1	Half	Connecting Window CE2A [Purple]
+1864	0	1x1x1	Half	Connecting Window CE2A [Pink]
+1865	0	1x1x1	Half	Connecting Window CE2A [Red]
+1866	0	1x1x1	Half	Connecting Window CE2A [Green]
+1867	0	1x1x1	Half	Connecting Window CE2A [Yellow]
+1868	0	1x1x1	Half	Connecting Window CE2A [Blue]
+1869	0	1x1x1	false	Connecting Window CE2C_O0 [White]
+1870	0	1x1x1	false	Connecting Window CE2C_O0 [Black]
+1871	0	1x1x1	false	Connecting Window CE2C_O0 [Purple]
+1872	0	1x1x1	false	Connecting Window CE2C_O0 [Pink]
+1873	0	1x1x1	false	Connecting Window CE2C_O0 [Red]
+1874	0	1x1x1	false	Connecting Window CE2C_O0 [Green]
+1875	0	1x1x1	false	Connecting Window CE2C_O0 [Yellow]
+1876	0	1x1x1	false	Connecting Window CE2C_O0 [Blue]
+1879	0	1x1x1	Half	Connecting Window CE2C_O1 [Purple]
+1880	0	1x1x1	Half	Connecting Window CE2C_O1 [Pink]
+1881	0	1x1x1	Half	Connecting Window CE2C_O1 [Red]
+1882	0	1x1x1	Half	Connecting Window CE2C_O1 [Green]
+1883	0	1x1x1	Half	Connecting Window CE2C_O1 [Yellow]
+1884	0	1x1x1	Half	Connecting Window CE2C_O1 [Blue]
+1885	0	1x1x1	false	Connecting Window CE3C_O0 [White]
+1886	0	1x1x1	false	Connecting Window CE3C_O0 [Black]
+1887	0	1x1x1	false	Connecting Window CE3C_O0 [Purple]
+1888	0	1x1x1	false	Connecting Window CE3C_O0 [Pink]
+1889	0	1x1x1	false	Connecting Window CE3C_O0 [Red]
+1890	0	1x1x1	false	Connecting Window CE3C_O0 [Green]
+1891	0	1x1x1	false	Connecting Window CE3C_O0 [Yellow]
+1892	0	1x1x1	false	Connecting Window CE3C_O0 [Blue]
+1893	0	1x1x1	false	Connecting Window CE3C_O1 [White]
+1895	0	1x1x1	Half	Connecting Window CE3C_O1 [Purple]
+1896	0	1x1x1	Half	Connecting Window CE3C_O1 [Pink]
+1897	0	1x1x1	Half	Connecting Window CE3C_O1 [Red]
+1898	0	1x1x1	Half	Connecting Window CE3C_O1 [Green]
+1899	0	1x1x1	Half	Connecting Window CE3C_O1 [Yellow]
+1900	0	1x1x1	Half	Connecting Window CE3C_O1 [Blue]
+1901	0	1x1x1	false	Connecting Window CE3C_O2 [White]
+1903	0	1x1x1	Half	Connecting Window CE3C_O2 [Purple]
+1904	0	1x1x1	Half	Connecting Window CE3C_O2 [Pink]
+1905	0	1x1x1	Half	Connecting Window CE3C_O2 [Red]
+1906	0	1x1x1	Half	Connecting Window CE3C_O2 [Green]
+1907	0	1x1x1	Half	Connecting Window CE3C_O2 [Yellow]
+1908	0	1x1x1	Half	Connecting Window CE3C_O2 [Blue]
+1911	0	1x1x1	Half	Connecting Window CE3C_O3 [Purple]
+1912	0	1x1x1	Half	Connecting Window CE3C_O3 [Pink]
+1913	0	1x1x1	Half	Connecting Window CE3C_O3 [Red]
+1914	0	1x1x1	Half	Connecting Window CE3C_O3 [Green]
+1915	0	1x1x1	Half	Connecting Window CE3C_O3 [Yellow]
+1916	0	1x1x1	Half	Connecting Window CE3C_O3 [Blue]
+1917	0	1x1x1	false	Connecting Window CE4_O0 [White]
+1918	0	1x1x1	false	Connecting Window CE4_O0 [Black]
+1919	0	1x1x1	false	Connecting Window CE4_O0 [Purple]
+1920	0	1x1x1	false	Connecting Window CE4_O0 [Pink]
+1921	0	1x1x1	false	Connecting Window CE4_O0 [Red]
+1922	0	1x1x1	false	Connecting Window CE4_O0 [Green]
+1923	0	1x1x1	false	Connecting Window CE4_O0 [Yellow]
+1924	0	1x1x1	false	Connecting Window CE4_O0 [Blue]
+1925	0	1x1x1	false	Connecting Window CE4_O1 [White]
+1926	0	1x1x1	false	Connecting Window CE4_O1 [Black]
+1927	0	1x1x1	false	Connecting Window CE4_O1 [Purple]
+1928	0	1x1x1	false	Connecting Window CE4_O1 [Pink]
+1929	0	1x1x1	false	Connecting Window CE4_O1 [Red]
+1930	0	1x1x1	false	Connecting Window CE4_O1 [Green]
+1931	0	1x1x1	false	Connecting Window CE4_O1 [Yellow]
+1932	0	1x1x1	false	Connecting Window CE4_O1 [Blue]
+1933	0	1x1x1	false	Connecting Window CE4_O2C [White]
+1934	0	1x1x1	false	Connecting Window CE4_O2C [Black]
+1935	0	1x1x1	false	Connecting Window CE4_O2C [Purple]
+1936	0	1x1x1	false	Connecting Window CE4_O2C [Pink]
+1937	0	1x1x1	false	Connecting Window CE4_O2C [Red]
+1938	0	1x1x1	false	Connecting Window CE4_O2C [Green]
+1939	0	1x1x1	false	Connecting Window CE4_O2C [Yellow]
+1940	0	1x1x1	false	Connecting Window CE4_O2C [Blue]
+1941	0	1x1x1	false	Connecting Window CE4_O2A [White]
+1942	0	1x1x1	false	Connecting Window CE4_O2A [Black]
+1943	0	1x1x1	false	Connecting Window CE4_O2A [Purple]
+1944	0	1x1x1	false	Connecting Window CE4_O2A [Pink]
+1945	0	1x1x1	false	Connecting Window CE4_O2A [Red]
+1946	0	1x1x1	false	Connecting Window CE4_O2A [Green]
+1947	0	1x1x1	false	Connecting Window CE4_O2A [Yellow]
+1948	0	1x1x1	false	Connecting Window CE4_O2A [Blue]
+1949	0	1x1x1	false	Connecting Window CE4_O3 [White]
+1950	0	1x1x1	false	Connecting Window CE4_O3 [Black]
+1951	0	1x1x1	false	Connecting Window CE4_O3 [Purple]
+1952	0	1x1x1	false	Connecting Window CE4_O3 [Pink]
+1953	0	1x1x1	false	Connecting Window CE4_O3 [Red]
+1954	0	1x1x1	false	Connecting Window CE4_O3 [Green]
+1955	0	1x1x1	false	Connecting Window CE4_O3 [Yellow]
+1956	0	1x1x1	false	Connecting Window CE4_O3 [Blue]
+1957	0	1x1x1	false	Connecting Window CA [White]
+1959	0	1x1x1	Half	Connecting Window CA [Purple]
+1960	0	1x1x1	Half	Connecting Window CA [Pink]
+1961	0	1x1x1	Half	Connecting Window CA [Red]
+1962	0	1x1x1	Half	Connecting Window CA [Green]
+1963	0	1x1x1	Half	Connecting Window CA [Yellow]
+1964	0	1x1x1	Half	Connecting Window CA [Blue]
+1966	0	1x1x1	false	0
+1967	0	1x1x1	false	0
+1968	0	1x1x1	false	0
+1969	0	1x1x1	false	0
+1970	0	1x1x1	false	0
+1971	1971	1x1x1	false	Dragon Quest Logo
+1973	1973	1x1x1	false	Stackable Slime
+1974	0	1x1x1	false	¿White Block
+1975	0	1x1x1	false	Bigonia
+1976	1976	1x1x1	false	Ornamental Chimaera Wing
+1978	0	1x1x1	false	Stackable Slime [White]
+1979	0	1x1x1	false	Stackable Slime [Black]
+1980	0	1x1x1	false	Stackable Slime [Purple]
+1981	0	1x1x1	false	Stackable Slime [Pink]
+1982	0	1x1x1	false	Stackable Slime [Red]
+1983	0	1x1x1	false	Stackable Slime [Green]
+1984	0	1x1x1	false	Stackable Slime [Yellow]
+1985	0	1x1x1	false	Stackable Slime [Blue]
+1987	0	1x1x1	Half	Wooden Bracket [White]
+1988	0	1x1x1	Half	Wooden Bracket [Black]
+1989	0	1x1x1	Half	Wooden Bracket [Purple]
+1990	0	1x1x1	Half	Wooden Bracket [Pink]
+1991	0	1x1x1	Half	Wooden Bracket [Red]
+1992	0	1x1x1	Half	Wooden Bracket [Green]
+1993	0	1x1x1	Half	Wooden Bracket [Yellow]
+1994	0	1x1x1	Half	Wooden Bracket [Blue]
+1995	0	1x1x1	false	¿White Block
+1996	0	1x1x1	false	¿White Block
+1997	0	1x1x1	false	¿White Block
+1998	0	1x1x1	false	¿White Block
+1999	0	1x1x1	false	¿White Block
+2000	0	1x1x1	false	¿White Block
+2001	0	1x1x1	false	¿White Block
+2002	0	1x1x1	false	¿White Block
+2003	0	1x1x1	false	Pixelated Protagonist
+2004	0	1x1x1	false	Pixelated Prince
+2005	0	1x1x1	false	Pixelated Princess
+2007	0	1x1x1	false	Iron Workbench Lv1
+2009	0	1x1x1	false	Iron Workbench Lv3
+2011	0	1x1x1	false	¿Deitree Planter ZERO
+2012	0	1x1x1	false	0
+2013	0	1x1x1	false	Magic Cannon
+2014	0	1x1x1	false	0
+2016	0	1x1x1	false	¿Deitree Remains
+2017	0	1x1x1	false	¿Deitree 1 2
+2018	0	1x1x1	false	¿Deitree 1 3
+2022	0	1x1x1	false	Fancy Inner Corner Roofing
+2023	0	1x1x1	false	Fancy Roof Window
+2024	0	1x1x1	false	Fancy Roof Ridge
+2027	0	1x1x1	Half	Simple Door [White]
+2029	0	1x2x1	Half	Simple Door [Purple]
+2030	0	1x2x1	Half	Simple Door [Pink]
+2031	0	1x2x1	Half	Simple Door [Red]
+2032	0	1x2x1	Half	Simple Door [Green]
+2033	0	1x2x1	Half	Simple Door [Yellow]
+2034	0	1x2x1	Half	Simple Door [Blue]
+2035	0	1x1x1	false	Simple Door Double [White]
+2036	0	1x1x1	false	Simple Door Double [Black]
+2037	0	1x1x1	false	Simple Door Double [Purple]
+2038	0	1x1x1	false	Simple Door Double [Pink]
+2039	0	1x1x1	false	Simple Door Double [Red]
+2040	0	1x1x1	false	Simple Door Double [Green]
+2041	0	1x1x1	false	Simple Door Double [Yellow]
+2042	0	1x1x1	false	Simple Door Double [Blue]
+2043	0	1x1x1	false	Supersized Skull
+2046	0	1x1x1	false	0
+2051	0	1x1x1	false	Plumberry Tree
+2052	0	1x1x1	false	Plumberry Tree
+2053	0	1x1x1	false	Plumberry Tree
+2054	0	1x1x1	Half	Flat Fancy Roofing [White]
+2055	0	1x1x1	Half	Flat Fancy Roofing [Black]
+2056	0	1x1x1	Half	Flat Fancy Roofing [Purple]
+2057	0	1x1x1	Half	Flat Fancy Roofing [Pink]
+2058	0	1x1x1	Half	Flat Fancy Roofing [Red]
+2059	0	1x1x1	Half	Flat Fancy Roofing [Green]
+2060	0	1x1x1	Half	Flat Fancy Roofing [Yellow]
+2061	0	1x1x1	Half	Flat Fancy Roofing [Blue]
+2062	0	1x1x1	Half	Pitched Fancy Roofing [White]
+2063	0	1x1x1	Half	Pitched Fancy Roofing [Black]
+2064	0	1x1x1	Half	Pitched Fancy Roofing [Purple]
+2065	0	1x1x1	Half	Pitched Fancy Roofing [Pink]
+2066	0	1x1x1	Half	Pitched Fancy Roofing [Red]
+2067	0	1x1x1	Half	Pitched Fancy Roofing [Green]
+2068	0	1x1x1	Half	Pitched Fancy Roofing [Yellow]
+2069	0	1x1x1	Half	Pitched Fancy Roofing [Blue]
+2070	0	1x1x1	Half	Fancy Outer Corner Roofing [White]
+2071	0	1x1x1	Half	Fancy Outer Corner Roofing [Black]
+2072	0	1x1x1	Half	Fancy Outer Corner Roofing [Purple]
+2073	0	1x1x1	Half	Fancy Outer Corner Roofing [Pink]
+2074	0	1x1x1	Half	Fancy Outer Corner Roofing [Red]
+2075	0	1x1x1	Half	Fancy Outer Corner Roofing [Green]
+2076	0	1x1x1	Half	Fancy Outer Corner Roofing [Yellow]
+2077	0	1x1x1	Half	Fancy Outer Corner Roofing [Blue]
+2078	0	1x1x1	false	Fancy Inner Corner Roofing [White]
+2079	0	1x1x1	false	Fancy Inner Corner Roofing [Black]
+2080	0	1x1x1	false	Fancy Inner Corner Roofing [Purple]
+2081	0	1x1x1	false	Fancy Inner Corner Roofing [Pink]
+2082	0	1x1x1	false	Fancy Inner Corner Roofing [Red]
+2083	0	1x1x1	false	Fancy Inner Corner Roofing [Green]
+2084	0	1x1x1	false	Fancy Inner Corner Roofing [Yellow]
+2085	0	1x1x1	false	Fancy Inner Corner Roofing [Blue]
+2086	0	1x1x1	false	Fancy Roof Window [White]
+2087	0	1x1x1	false	Fancy Roof Window [Black]
+2088	0	1x1x1	false	Fancy Roof Window [Purple]
+2089	0	1x1x1	false	Fancy Roof Window [Pink]
+2090	0	1x1x1	false	Fancy Roof Window [Red]
+2091	0	1x1x1	false	Fancy Roof Window [Green]
+2092	0	1x1x1	false	Fancy Roof Window [Yellow]
+2093	0	1x1x1	false	Fancy Roof Window [Blue]
+2094	0	1x1x1	false	Fancy Roof Ridge [White]
+2095	0	1x1x1	false	Fancy Roof Ridge [Black]
+2096	0	1x1x1	false	Fancy Roof Ridge [Purple]
+2097	0	1x1x1	false	Fancy Roof Ridge [Pink]
+2098	0	1x1x1	false	Fancy Roof Ridge [Red]
+2099	0	1x1x1	false	Fancy Roof Ridge [Green]
+2100	0	1x1x1	false	Fancy Roof Ridge [Yellow]
+2101	0	1x1x1	false	Fancy Roof Ridge [Blue]
+2102	0	1x1x1	false	0
+2104	0	1x1x1	false	Twisting Tail
+2106	2106	1x1x1	false	Upwards-Pointing Activator
+2107	2107	1x1x1	false	Downwards-Pointing Activator
+2108	0	1x1x1	false	0
+2109	0	1x1x1	false	0
+2110	0	1x1x1	Half	Pressure Plate [White]
+2111	0	1x1x1	Half	Pressure Plate [Black]
+2112	0	1x1x1	Half	Pressure Plate [Purple]
+2113	0	1x1x1	Half	Pressure Plate [Pink]
+2114	0	1x1x1	Half	Pressure Plate [Red]
+2115	0	1x1x1	Half	Pressure Plate [Green]
+2116	0	1x1x1	Half	Pressure Plate [Yellow]
+2117	0	1x1x1	Half	Pressure Plate [Blue]
+2118	0	1x1x1	Half	Activator [White]
+2119	0	1x1x1	Half	Activator [Black]
+2120	0	1x1x1	Half	Activator [Purple]
+2121	0	1x1x1	Half	Activator [Pink]
+2122	0	1x1x1	Half	Activator [Red]
+2123	0	1x1x1	Half	Activator [Green]
+2124	0	1x1x1	Half	Activator [Yellow]
+2125	0	1x1x1	Half	Activator [Blue]
+2126	0	1x1x1	false	Button [White]
+2127	0	1x1x1	false	Button [Black]
+2128	0	1x1x1	false	Button [Purple]
+2129	0	1x1x1	false	Button [Pink]
+2130	0	1x1x1	false	Button [Red]
+2131	0	1x1x1	false	Button [Green]
+2132	0	1x1x1	false	Button [Yellow]
+2133	0	1x1x1	false	Button [Blue]
+2134	0	1x1x1	false	Upwards-Pointing Activator [White]
+2135	0	1x1x1	false	Upwards-Pointing Activator [Black]
+2136	0	1x1x1	false	Upwards-Pointing Activator [Purple]
+2137	0	1x1x1	false	Upwards-Pointing Activator [Pink]
+2138	0	1x1x1	false	Upwards-Pointing Activator [Red]
+2139	0	1x1x1	false	Upwards-Pointing Activator [Green]
+2140	0	1x1x1	false	Upwards-Pointing Activator [Yellow]
+2141	0	1x1x1	false	Upwards-Pointing Activator [Blue]
+2142	0	1x1x1	false	Downwards-Pointing Activator [White]
+2143	0	1x1x1	false	Downwards-Pointing Activator [Black]
+2144	0	1x1x1	false	Downwards-Pointing Activator [Purple]
+2145	0	1x1x1	false	Downwards-Pointing Activator [Pink]
+2146	0	1x1x1	false	Downwards-Pointing Activator [Red]
+2147	0	1x1x1	false	Downwards-Pointing Activator [Green]
+2148	0	1x1x1	false	Downwards-Pointing Activator [Yellow]
+2149	0	1x1x1	false	Downwards-Pointing Activator [Blue]
+2150	0	1x1x1	false	Infernal Workbench Lv0
+2151	0	1x1x1	false	Infernal Workbench Lv1
+2153	0	1x1x1	false	Worn-Out Workbench
+2162	0	1x1x1	false	¿Gold Erdrick Trophee
+2166	2166	1x1x1	false	¿Gold Star Trophy
+2167	2167	1x1x1	false	¿Silver Star Trophy
+2168	2168	1x1x1	false	¿Bronze Star Trophy
+2169	2169	1x1x1	false	¿Bronze Star Trophy 2
+2170	2170	1x1x1	false	¿Gold Trophee
+2171	2171	1x1x1	false	¿Silver Trophee
+2172	2172	1x1x1	false	¿Bronze Trophee
+2180	0	1x1x1	false	0
+2181	0	1x1x1	false	0
+2182	0	1x1x1	false	Ridge Tiling [White]
+2183	0	1x1x1	false	Ridge Tiling [Black]
+2184	0	1x1x1	false	Ridge Tiling [Purple]
+2185	0	1x1x1	false	Ridge Tiling [Pink]
+2186	0	1x1x1	false	Ridge Tiling [Red]
+2187	0	1x1x1	false	Ridge Tiling [Green]
+2188	0	1x1x1	false	Ridge Tiling [Yellow]
+2189	0	1x1x1	false	Ridge Tiling [Blue]
+2190	0	1x1x1	false	Question
+2191	0	1x1x1	false	Big Cedar Tree
+2192	0	1x1x1	false	Big Snowy Cedar
+2193	0	1x1x1	false	Big Silver Birch Tree
+2194	0	1x1x1	Half	Wooden Grating [White]
+2196	0	1x1x1	Half	Wooden Grating [Purple]
+2197	0	1x1x1	Half	Wooden Grating [Pink]
+2198	0	1x1x1	Half	Wooden Grating [Red]
+2199	0	1x1x1	Half	Wooden Grating [Green]
+2200	0	1x1x1	Half	Wooden Grating [Yellow]
+2201	0	1x1x1	Half	Wooden Grating [Blue]
+2202	0	1x1x1	Half	Ladder [White]
+2203	0	1x1x1	Half	Ladder [Black]
+2204	0	1x1x1	Half	Ladder [Purple]
+2205	0	1x1x1	Half	Ladder [Pink]
+2206	0	1x1x1	Half	Ladder [Red]
+2207	0	1x1x1	Half	Ladder [Green]
+2208	0	1x1x1	Half	Ladder [Yellow]
+2209	0	1x1x1	Half	Ladder [Blue]
+2223	0	1x1x1	false	Cross Pipe
+2244	0	1x1x1	false	Rusty Wrecking Ball
+2245	0	1x1x1	false	Citadel Spike
+2249	0	1x1x1	false	¿Star trophy
+2257	0	1x1x1	false	Ra’s Mirror
+2258	0	1x1x1	false	¿
+2259	0	1x1x1	false	¿Dead Plant
+2261	0	1x1x1	false	¿Dead Plant
+2262	0	1x1x1	false	¿Dead Plant
+2263	0	1x1x1	false	¿Dead Plant
+2264	0	1x1x1	false	¿Dead Plant
+2265	0	1x1x1	false	¿Dead Plant on pole
+2266	0	1x1x1	false	¿Dead Plant
+2267	0	1x1x1	false	¿Dead Plant on pole
+2268	0	1x1x1	false	¿Dead Plant
+2269	0	1x1x1	false	¿Dead Plant
+2270	0	1x1x1	false	0
+2272	0	1x1x1	false	¿Dead Plant
+2273	0	1x1x1	false	¿Dead Plant
+2274	0	1x1x1	false	¿Dead Plant
+2275	0	1x1x1	false	¿Dead Plant
+2276	0	1x1x1	false	¿Dead Plant
+2277	0	1x1x1	false	¿Dead Plant
+2278	0	1x1x1	false	¿Dead Plant
+2279	0	1x1x1	false	¿Dead Plant
+2280	2280	1x1x1	false	¿Gold Erdrick Trophee Red
+2281	2281	1x1x1	false	¿Gold Erdrick Trophee Gold
+2282	2282	1x1x1	false	¿Gold Erdrick Trophee Green
+2283	2283	1x1x1	false	¿Gold Erdrick Trophee Cyan
+2284	2284	1x1x1	false	¿Gold Erdrick Trophee Blue
+2285	2285	1x1x1	false	¿Gold Erdrick Trophee Dark Blue
+2286	2286	1x1x1	false	¿Gold Erdrick Trophee Purple
+2287	2287	1x1x1	false	¿Gold Erdrick Trophee Magenta
+2288	2288	1x1x1	false	¿Gold Erdrick Trophee Pink
+2289	2289	1x1x1	false	¿Gold Erdrick Trophee White
+2290	2290	1x1x1	false	¿Gold Erdrick Trophee Dark Red
+2291	0	1x1x1	false	¿Dead Plant
+2292	0	1x1x1	false	¿Dead Plant
+2293	0	1x1x1	false	¿Dead Plant
+2294	0	1x1x1	false	¿Dead Plant
+2295	0	1x1x1	false	¿Dead Plant
+2296	0	1x1x1	false	¿Dead Plant
+2297	0	1x1x1	false	¿Dead Plant
+2298	0	1x1x1	false	¿Dead Plant
+2299	0	1x1x1	false	¿Dead Plant
+2300	0	1x1x1	false	¿Dead Plant on pole
+2301	0	1x1x1	false	¿Dead Plant on pole
+2302	0	1x1x1	false	¿Dead Plant on pole
+2303	0	1x1x1	false	¿Dead Plant on pole
+2304	0	1x1x1	false	¿Dead Plant on pole
+2305	0	1x1x1	false	¿Dead Plant on pole
+2306	0	1x1x1	false	¿Dead Plant on pole
+2307	0	1x1x1	false	¿Dead Plant on pole
+2308	0	1x1x1	false	¿Dead Plant on pole
+2309	0	1x1x1	false	¿Dead Plant on pole
+2310	0	1x1x1	false	¿Dead Plant on pole
+2311	0	1x1x1	false	¿Dead Plant on pole
+2312	0	1x1x1	false	¿Dead Plant on pole
+2313	0	1x1x1	false	¿Dead Plant on pole
+2314	0	1x1x1	false	¿Dead Plant on pole
+2315	0	1x1x1	false	¿Dead Plant on pole
+2316	0	1x1x1	false	¿Dead Plant on pole
+2317	0	1x1x1	false	¿Dead Plant on pole
+2318	0	1x1x1	false	¿Dead Plant on pole
+2319	0	1x1x1	false	¿Dead Plant on pole
+2320	0	1x1x1	false	¿Dead Plant on pole
+2321	0	1x1x1	false	¿Dead Plant on pole
+2322	0	1x1x1	false	¿Dead Plant on pole
+2323	0	1x1x1	false	¿Dead Plant on pole
+2324	0	1x1x1	false	¿Dead Plant
+2325	0	1x1x1	false	¿Dead Plant
+2326	0	1x1x1	false	¿Dead Plant
+2327	0	1x1x1	false	¿Dead Plant
+2328	0	1x1x1	false	¿Dead Plant
+2329	0	1x1x1	false	¿Dead Plant
+2330	0	1x1x1	false	¿Dead Plant on pole
+2331	0	1x1x1	false	¿Dead Plant on pole
+2332	0	1x1x1	false	¿Dead Plant on pole
+2333	0	1x1x1	false	¿Dead Plant on pole
+2334	0	1x1x1	false	¿Dead Plant on pole
+2335	0	1x1x1	false	¿Dead Plant on pole
+2336	0	1x1x1	false	Goldinoggin
+2340	0	1x1x1	false	¿Dead Plant
+2341	0	1x1x1	false	¿Dead Plant on pole
+2342	0	1x1x1	false	Babs Statue
+2343	0	1x1x1	false	¿
+2344	0	1x1x1	false	Fright Bulb
+2345	0	1x1x1	false	Hydrangea
+2348	0	1x1x1	false	Treasure Pile
+2349	0	1x1x1	false	Emblematic Clock
+2350	0	1x1x1	false	Supersized Steak Set
+2352	0	1x1x1	false	Soup and Salad Set
+2357	0	1x1x1	false	Crested Viper Fountain
+2358	0	1x1x1	false	¿Dead Plant
+2359	0	1x1x1	false	¿Dead Plant on pole
+2366	0	1x1x1	false	Rubber Ring
+2370	0	1x1x1	false	Sunflowers
+2372	0	1x1x1	false	Plumberry Tree
+2375	0	1x1x1	false	¿
+2376	0	1x1x1	false	¿
+2378	0	1x1x1	Half	Shelf [White]
+2380	0	1x1x1	Half	Shelf [Purple]
+2381	0	1x1x1	Half	Shelf [Pink]
+2382	0	1x1x1	Half	Shelf [Red]
+2383	0	1x1x1	Half	Shelf [Green]
+2384	0	1x1x1	Half	Shelf [Yellow]
+2385	0	1x1x1	Half	Shelf [Blue]
+2386	0	1x1x1	false	Glass Door [White]
+2387	0	1x1x1	false	Glass Door [Black]
+2388	0	1x1x1	false	Glass Door [Purple]
+2389	0	1x1x1	false	Glass Door [Pink]
+2390	0	1x1x1	false	Glass Door [Red]
+2391	0	1x1x1	false	Glass Door [Green]
+2392	0	1x1x1	false	Glass Door [Yellow]
+2393	0	1x1x1	false	Glass Door [Blue]
+2394	0	1x1x1	false	Choo-Choo Train Carriage
+2395	0	1x1x1	false	Choo-Choo Train Engine
+2396	0	1x1x1	Half	Bathing Stool [White]
+2397	0	1x1x1	Half	Bathing Stool [Black]
+2398	0	1x1x1	Half	Bathing Stool [Purple]
+2399	0	1x1x1	Half	Bathing Stool [Pink]
+2400	0	1x1x1	Half	Bathing Stool [Red]
+2401	0	1x1x1	Half	Bathing Stool [Green]
+2402	0	1x1x1	Half	Bathing Stool [Yellow]
+2403	0	1x1x1	Half	Bathing Stool [Blue]
+2404	0	2x2x1	Half	Castle Fanlight [White]
+2405	0	2x2x1	Half	Castle Fanlight [Black]
+2406	0	2x2x1	Half	Castle Fanlight [Purple]
+2407	0	2x2x1	Half	Castle Fanlight [Pink]
+2408	0	2x2x1	Half	Castle Fanlight [Red]
+2409	0	2x2x1	Half	Castle Fanlight [Green]
+2410	0	2x2x1	Half	Castle Fanlight [Yellow]
+2411	0	2x2x1	Half	Castle Fanlight [Blue]
+2412	0	1x1x1	false	¿
+2413	0	1x1x1	false	¿
+2414	0	1x1x1	false	¿
+2415	0	1x1x1	false	0
+2416	0	1x1x1	false	¿Dead Plant
+2417	0	1x1x1	false	¿Dead Plant on pole
+2418	0	1x1x1	false	¿Seed
+2419	0	1x1x1	false	¿Seed on pole
+2420	0	1x1x1	false	0
+2421	0	1x1x1	false	Beacon of Erdrick
+2428	0	1x1x1	false	Plumberry Tree
+2429	0	1x1x1	false	Plumberry Tree
+2430	0	1x1x1	false	Plumberry Tree
+2431	0	1x1x1	false	Plumberry Tree
+2437	0	1x1x1	false	Beacon of Erdrick
+2438	0	1x1x1	false	0
+2439	0	1x1x1	false	Plumberry Tree
+2440	0	1x1x1	false	¿
+2441	0	1x1x1	false	¿
+2442	0	1x1x1	false	¿
+2443	0	1x1x1	false	¿
+2444	0	2x1x1	Half	Spaceship Corner Capital [White]
+2445	0	2x1x1	Half	Spaceship Corner Capital [Black]
+2446	0	2x1x1	Half	Spaceship Corner Capital [Purple]
+2447	0	2x1x1	Half	Spaceship Corner Capital [Pink]
+2448	0	2x1x1	Half	Spaceship Corner Capital [Red]
+2449	0	2x1x1	Half	Spaceship Corner Capital [Green]
+2450	0	2x1x1	Half	Spaceship Corner Capital [Yellow]
+2451	0	2x1x1	Half	Spaceship Corner Capital [Blue]
+2452	0	1x1x1	Half	Spaceship Corner Midsection [White]
+2453	0	1x1x1	Half	Spaceship Corner Midsection [Black]
+2454	0	1x1x1	Half	Spaceship Corner Midsection [Purple]
+2455	0	1x1x1	Half	Spaceship Corner Midsection [Pink]
+2456	0	1x1x1	Half	Spaceship Corner Midsection [Red]
+2457	0	1x1x1	Half	Spaceship Corner Midsection [Green]
+2458	0	1x1x1	Half	Spaceship Corner Midsection [Yellow]
+2459	0	1x1x1	Half	Spaceship Corner Midsection [Blue]
+2460	0	2x1x1	Half	Spaceship Corner Foundation [White]
+2461	0	2x1x1	Half	Spaceship Corner Foundation [Black]
+2462	0	2x1x1	Half	Spaceship Corner Foundation [Purple]
+2463	0	2x1x1	Half	Spaceship Corner Foundation [Pink]
+2464	0	2x1x1	Half	Spaceship Corner Foundation [Red]
+2465	0	2x1x1	Half	Spaceship Corner Foundation [Green]
+2466	0	2x1x1	Half	Spaceship Corner Foundation [Yellow]
+2467	0	2x1x1	Half	Spaceship Corner Foundation [Blue]
+2468	0	1x1x1	Half	Spaceship Capital [White]
+2469	0	1x1x1	Half	Spaceship Capital [Black]
+2470	0	1x1x1	Half	Spaceship Capital [Purple]
+2471	0	1x1x1	Half	Spaceship Capital [Pink]
+2472	0	1x1x1	Half	Spaceship Capital [Red]
+2473	0	1x1x1	Half	Spaceship Capital [Green]
+2474	0	1x1x1	Half	Spaceship Capital [Yellow]
+2475	0	1x1x1	Half	Spaceship Capital [Blue]
+2476	0	1x1x1	Half	Spaceship Foundation [White]
+2478	0	1x1x1	Half	Spaceship Foundation [Purple]
+2479	0	1x1x1	Half	Spaceship Foundation [Pink]
+2481	0	1x1x1	Half	Spaceship Foundation [Green]
+2482	0	1x1x1	Half	Spaceship Foundation [Yellow]
+2483	0	1x1x1	Half	Spaceship Foundation [Blue]
+2484	0	1x1x1	false	Plumberry Tree
+2485	0	1x1x1	false	¿
+2487	0	1x1x1	false	¿
+2488	0	1x1x1	false	¿
+2489	0	1x1x1	false	¿
+2491	0	1x1x1	false	Brazier
+2492	0	1x1x1	false	Candlestick
+2493	0	1x1x1	false	Ice Lolly
+2494	0	1x1x1	false	Plumberry Tree
+2495	0	1x1x1	false	Plumberry Tree
+2496	0	1x1x1	false	Plumberry Tree
+2497	0	1x1x1	false	Plumberry Tree
+2498	0	1x1x1	false	Plumberry Tree
+2499	0	1x1x1	false	Great Sabrecat Statue
+2500	0	1x1x1	false	Knight Abhorrent Statue
+2501	0	1x1x1	false	Ghost Statue
+2502	0	1x1x1	false	Liquid Metal Soup
+2503	0	1x1x1	false	Merman Model
+2504	0	1x1x1	false	Medal King Slime’s Crown
+2505	0	1x1x1	false	Pocus Poppet Statue
+2506	0	1x1x1	false	Goodybag Statue
+2507	0	1x1x1	false	¿
+2508	0	1x1x1	false	Berserker Statue
+2509	0	1x1x1	false	Lush Leaves
+2511	0	1x1x1	false	¿
+2512	0	1x1x1	false	Plumberry Tree
+2513	0	1x1x1	false	Plumberry Tree
+2514	0	1x1x1	false	¿
+2515	0	1x1x1	false	¿
+2516	0	1x1x1	false	¿
+2517	0	1x1x1	false	¿Ship
+2518	0	1x1x1	false	¿
+2522	0	1x1x1	false	¿
+2524	0	1x1x1	false	Plumberry Tree
+2525	0	1x1x1	false	Plumberry Tree
+2526	0	1x1x1	false	Plumberry Tree
+2527	0	1x1x1	Half	Porched Window [White]
+2528	0	1x1x1	Half	Porched Window [Black]
+2529	0	1x1x1	Half	Porched Window [Purple]
+2530	0	1x1x1	Half	Porched Window [Pink]
+2531	0	1x1x1	Half	Porched Window [Red]
+2532	0	1x1x1	Half	Porched Window [Green]
+2533	0	1x1x1	Half	Porched Window [Yellow]
+2534	0	1x1x1	Half	Porched Window [Blue]
+2535	0	1x1x1	Half	Arched Window [White]
+2536	0	1x1x1	Half	Arched Window [Black]
+2537	0	1x1x1	Half	Arched Window [Purple]
+2538	0	1x1x1	Half	Arched Window [Pink]
+2539	0	1x1x1	Half	Arched Window [Red]
+2540	0	1x1x1	Half	Arched Window [Green]
+2541	0	1x1x1	Half	Arched Window [Yellow]
+2542	0	1x1x1	Half	Arched Window [Blue]
+2544	0	1x1x1	false	Plumberry Tree
+2545	0	1x1x1	false	Plumberry Tree
+2546	0	1x1x1	false	Plumberry Tree
+2547	0	1x1x1	false	Plumberry Tree
+2548	0	1x1x1	false	Rubber Ring [White]
+2549	0	1x1x1	false	Rubber Ring [Black]
+2550	0	1x1x1	false	Rubber Ring [Purple]
+2551	0	1x1x1	false	Rubber Ring [Pink]
+2552	0	1x1x1	false	Rubber Ring [Red]
+2553	0	1x1x1	false	Rubber Ring [Green]
+2554	0	1x1x1	false	Rubber Ring [Yellow]
+2555	0	1x1x1	false	Rubber Ring [Blue]
+2556	0	1x1x1	false	Slimespawn
+2557	0	1x1x1	false	Plumberry Tree
+2558	0	1x1x1	false	Plumberry Tree
+2559	0	1x1x1	false	Plumberry Tree
+2560	0	1x1x1	false	Plumberry Tree
+2561	0	1x1x1	false	Plumberry Tree
+2562	0	1x1x1	false	Plumberry Tree
+2564	0	1x1x1	false	¿Green Garden Tablet Lv1
+2566	0	1x1x1	false	¿Cerulean Steppe Tablet Lv1
+2568	0	1x1x1	false	¿Scarlet Sands Tablet Lv1
+2570	0	1x1x1	false	Holyhock Sprout 
+2571	0	1x1x1	false	Holyhock Bud
+2572	0	1x1x1	false	Holyhock
+2573	0	1x1x1	false	¿Dead Plant
+2574	0	1x1x1	false	¿Dead Plant on pole
+2575	0	1x1x1	false	Leaves
+2576	0	1x1x1	false	¿
+2577	0	1x1x1	false	Plumberry Tree
+2578	0	1x1x1	Half	Pet Bowl [White]
+2579	0	1x1x1	Half	Pet Bowl [Black]
+2580	0	1x1x1	Half	Pet Bowl [Purple]
+2581	0	1x1x1	Half	Pet Bowl [Pink]
+2582	0	1x1x1	Half	Pet Bowl [Red]
+2583	0	1x1x1	Half	Pet Bowl [Green]
+2584	0	1x1x1	Half	Pet Bowl [Yellow]
+2585	0	1x1x1	Half	Pet Bowl [Blue]
+2586	0	1x1x1	Half	Stone Handrail [White]
+2587	0	1x1x1	Half	Stone Handrail [Black]
+2588	0	1x1x1	Half	Stone Handrail [Purple]
+2589	0	1x1x1	Half	Stone Handrail [Pink]
+2590	0	1x1x1	Half	Stone Handrail [Red]
+2591	0	1x1x1	Half	Stone Handrail [Green]
+2592	0	1x1x1	Half	Stone Handrail [Yellow]
+2593	0	1x1x1	Half	Stone Handrail [Blue]
+2594	0	2x2x1	Half	Rustic Door [White]
+2595	0	2x2x1	Half	Rustic Door [Black]
+2596	0	2x2x1	Half	Rustic Door [Purple]
+2597	0	2x2x1	Half	Rustic Door [Pink]
+2598	0	2x2x1	Half	Rustic Door [Red]
+2599	0	2x2x1	Half	Rustic Door [Green]
+2600	0	2x2x1	Half	Rustic Door [Yellow]
+2601	0	2x2x1	Half	Rustic Door [Blue]
+2602	0	1x1x1	Half	Saloon Door [White]
+2603	0	1x1x1	Half	Saloon Door [Black]
+2604	0	1x1x1	Half	Saloon Door [Purple]
+2605	0	1x1x1	Half	Saloon Door [Pink]
+2606	0	1x1x1	Half	Saloon Door [Red]
+2607	0	1x1x1	Half	Saloon Door [Green]
+2608	0	1x1x1	Half	Saloon Door [Yellow]
+2609	0	1x1x1	Half	Saloon Door [Blue]
+2610	0	4x4x4	Half	Castle Belvedere [White]
+2611	0	4x4x4	Half	Castle Belvedere [Black]
+2612	0	4x4x4	Half	Castle Belvedere [Purple]
+2613	0	4x4x4	Half	Castle Belvedere [Pink]
+2614	0	4x4x4	Half	Castle Belvedere [Red]
+2615	0	4x4x4	Half	Castle Belvedere [Green]
+2616	0	4x4x4	Half	Castle Belvedere [Yellow]
+2617	0	4x4x4	Half	Castle Belvedere [Blue]
+2618	0	4x3x1	Half	Throne Room Door [White]
+2619	0	4x3x1	Half	Throne Room Door [Black]
+2620	0	4x3x1	Half	Throne Room Door [Purple]
+2621	0	4x3x1	Half	Throne Room Door [Pink]
+2622	0	4x3x1	Half	Throne Room Door [Red]
+2623	0	4x3x1	Half	Throne Room Door [Green]
+2624	0	4x3x1	Half	Throne Room Door [Yellow]
+2625	0	4x3x1	Half	Throne Room Door [Blue]
+2626	0	1x1x1	false	Floating Flower Petals [White]
+2627	0	1x1x1	false	Floating Flower Petals [Black]
+2628	0	1x1x1	false	Floating Flower Petals [Purple]
+2629	0	1x1x1	false	Floating Flower Petals [Pink]
+2630	0	1x1x1	false	Floating Flower Petals [Red]
+2631	0	1x1x1	false	Floating Flower Petals [Green]
+2632	0	1x1x1	false	Floating Flower Petals [Yellow]
+2633	0	1x1x1	false	Floating Flower Petals [Blue]
+2634	0	5x1x2	Half	Royal Dining Table [White]
+2635	0	5x1x2	Half	Royal Dining Table [Black]
+2636	0	5x1x2	Half	Royal Dining Table [Purple]
+2637	0	5x1x2	Half	Royal Dining Table [Pink]
+2638	0	5x1x2	Half	Royal Dining Table [Red]
+2639	0	5x1x2	Half	Royal Dining Table [Green]
+2640	0	5x1x2	Half	Royal Dining Table [Yellow]
+2642	0	1x1x1	false	Rustic Desk [White]
+2643	0	1x1x1	false	Rustic Desk [Black]
+2644	0	1x1x1	false	Rustic Desk [Purple]
+2645	0	1x1x1	false	Rustic Desk [Pink]
+2646	0	1x1x1	false	Rustic Desk [Red]
+2647	0	1x1x1	false	Rustic Desk [Green]
+2648	0	1x1x1	false	Rustic Desk [Yellow]
+2650	0	1x1x1	Half	Column Crown [White]
+2651	0	1x1x1	Half	Column Crown [Black]
+2652	0	1x1x1	Half	Column Crown [Purple]
+2653	0	1x1x1	Half	Column Crown [Pink]
+2654	0	1x1x1	Half	Column Crown [Red]
+2655	0	1x1x1	Half	Column Crown [Green]
+2656	0	1x1x1	Half	Column Crown [Yellow]
+2657	0	1x1x1	Half	Column Crown [Blue]
+2658	0	1x1x1	false	Fierce Fountain [White]
+2659	0	1x1x1	false	Fierce Fountain [Black]
+2660	0	1x1x1	false	Fierce Fountain [Purple]
+2661	0	1x1x1	false	Fierce Fountain [Pink]
+2662	0	1x1x1	false	Fierce Fountain [Red]
+2663	0	1x1x1	false	Fierce Fountain [Green]
+2664	0	1x1x1	false	Fierce Fountain [Yellow]
+2665	0	1x1x1	false	Fierce Fountain [Blue]
+2666	0	1x1x1	Half	Bench [White]
+2667	0	1x1x1	Half	Bench [Black]
+2669	0	2x1x1	Half	Bench [Pink]
+2670	0	2x1x1	Half	Bench [Red]
+2671	0	2x1x1	Half	Bench [Green]
+2672	0	2x1x1	Half	Bench [Yellow]
+2673	0	2x1x1	Half	Bench [Blue]
+2674	0	1x1x1	Half	Chic Chair [White]
+2675	0	1x1x1	Half	Chic Chair [Black]
+2676	0	1x1x1	Half	Chic Chair [Purple]
+2677	0	1x1x1	Half	Chic Chair [Pink]
+2678	0	1x1x1	Half	Chic Chair [Red]
+2679	0	1x1x1	Half	Chic Chair [Green]
+2680	0	1x1x1	Half	Chic Chair [Yellow]
+2682	0	2x1x3	Half	Princess-Sized Bed [White]
+2683	0	2x1x3	Half	Princess-Sized Bed [Black]
+2686	0	2x1x1	Half	Princess-Sized Bed [Red]
+2687	0	2x1x1	Half	Princess-Sized Bed [Green]
+2688	0	2x1x1	Half	Princess-Sized Bed [Yellow]
+2690	0	1x1x3	Half	Extravagant Table [White]
+2691	0	1x1x3	Half	Extravagant Table [Black]
+2694	0	3x1x1	Half	Extravagant Table [Red]
+2695	0	3x1x1	Half	Extravagant Table [Green]
+2696	0	3x1x1	Half	Extravagant Table [Yellow]
+2697	0	3x1x1	Half	Extravagant Table [Blue]
+2698	0	1x1x1	Half	Plant Pot [White]
+2699	0	1x1x1	Half	Plant Pot [Black]
+2700	0	1x1x1	Half	Plant Pot [Purple]
+2701	0	1x1x1	Half	Plant Pot [Pink]
+2702	0	1x1x1	Half	Plant Pot [Red]
+2703	0	1x1x1	Half	Plant Pot [Green]
+2704	0	1x1x1	Half	Plant Pot [Yellow]
+2705	0	1x1x1	Half	Plant Pot [Blue]
+2706	0	1x1x1	Half	Stone Steps [White]
+2708	0	1x1x1	Half	Stone Steps [Purple]
+2709	0	1x1x1	Half	Stone Steps [Pink]
+2711	0	1x1x1	Half	Stone Steps [Green]
+2712	0	1x1x1	Half	Stone Steps [Yellow]
+2713	0	1x1x1	Half	Stone Steps [Blue]
+2714	0	2x2x1	Half	Magic Door [White]
+2715	0	2x2x1	Half	Magic Door [Black]
+2716	0	2x2x1	Half	Magic Door [Purple]
+2717	0	2x2x1	Half	Magic Door [Pink]
+2718	0	2x2x1	Half	Magic Door [Red]
+2719	0	2x2x1	Half	Magic Door [Green]
+2720	0	2x2x1	Half	Magic Door [Yellow]
+2722	0	1x1x1	Half	Wooden Gate [White]
+2723	0	1x1x1	Half	Wooden Gate [Black]
+2724	0	1x1x1	Half	Wooden Gate [Purple]
+2725	0	1x1x1	Half	Wooden Gate [Pink]
+2726	0	1x1x1	Half	Wooden Gate [Red]
+2727	0	1x1x1	Half	Wooden Gate [Green]
+2728	0	1x1x1	Half	Wooden Gate [Yellow]
+2729	0	1x1x1	Half	Wooden Gate [Blue]
+2730	0	1x1x1	false	Steel Doors [White]
+2731	0	1x1x1	false	Steel Doors [Black]
+2732	0	1x1x1	false	Steel Doors [Purple]
+2733	0	1x1x1	false	Steel Doors [Pink]
+2734	0	1x1x1	false	Steel Doors [Red]
+2735	0	1x1x1	false	Steel Doors [Green]
+2738	0	1x2x1	Half	Bold Banner [White]
+2739	0	1x2x1	Half	Bold Banner [Black]
+2740	0	1x2x1	Half	Bold Banner [Purple]
+2741	0	1x2x1	Half	Bold Banner [Pink]
+2742	0	1x2x1	Half	Bold Banner [Red]
+2743	0	1x2x1	Half	Bold Banner [Green]
+2744	0	1x2x1	Half	Bold Banner [Yellow]
+2746	0	1x3x1	Half	Big Bold Banner [White]
+2747	0	1x3x1	Half	Big Bold Banner [Black]
+2748	0	1x3x1	Half	Big Bold Banner [Purple]
+2749	0	1x3x1	Half	Big Bold Banner [Pink]
+2750	0	1x3x1	Half	Big Bold Banner [Red]
+2751	0	1x3x1	Half	Big Bold Banner [Green]
+2752	0	1x3x1	Half	Big Bold Banner [Yellow]
+2754	0	1x1x1	false	Plumberry Tree
+2755	0	1x1x1	false	Buggy Buggy LV1
+2756	0	1x1x1	false	Buggy Buggy LV2
+2757	0	1x1x1	false	N04H
+2758	0	1x1x1	false	Plumberry Tree
+2759	0	1x1x1	false	¿
+2760	0	1x1x1	false	Large Castle Tile [White]
+2761	0	1x1x1	false	Large Castle Tile [Black]
+2762	0	1x1x1	false	Large Castle Tile [Purple]
+2763	0	1x1x1	false	Large Castle Tile [Pink]
+2764	0	1x1x1	false	Large Castle Tile [Red]
+2765	0	1x1x1	false	Large Castle Tile [Green]
+2766	0	1x1x1	false	Large Castle Tile [Yellow]
+2767	0	1x1x1	false	Large Castle Tile [Blue]
+2768	0	1x1x1	false	Plumberry Tree
+2770	0	1x1x1	false	Plumberry Tree
+2771	0	1x1x1	false	Plumberry Tree
+2772	0	1x1x1	false	Plumberry Tree
+2773	0	1x1x1	false	Plumberry Tree
+2774	0	1x1x1	false	Plumberry Tree
+2777	0	1x1x1	false	Community Chest
+2778	0	1x1x1	false	Plumberry Tree
+2779	0	1x1x1	false	Plumberry Tree
+2780	0	1x1x1	false	Plumberry Tree
+2781	0	1x1x1	false	Plumberry Tree
+2782	0	1x1x1	false	Plumberry Tree
+2783	0	1x1x1	false	Plumberry Tree
+2785	0	1x1x1	false	Plumberry Tree
+2786	0	1x1x1	false	Celebratory Soup
+2787	0	1x1x1	false	Ornate Adornment
+2788	0	1x1x1	false	Lattice Wall
+2789	0	1x1x1	false	Lattice Wall [White]
+2790	0	1x1x1	false	Lattice Wall [Black]
+2791	0	1x1x1	false	Lattice Wall [Purple]
+2792	0	1x1x1	false	Lattice Wall [Pink]
+2793	0	1x1x1	false	Lattice Wall [Red]
+2794	0	1x1x1	false	Lattice Wall [Green]
+2795	0	1x1x1	false	Lattice Wall [Yellow]
+2796	0	1x1x1	false	Lattice Wall [Blue]
+2797	0	1x1x1	false	Hanging Picture
+2798	0	1x1x1	false	Hanging Picture
+2799	0	1x1x1	false	Hanging Picture
+2800	0	1x1x1	false	Hanging Picture
+2801	0	1x1x1	false	Hanging Picture
+2802	0	1x1x1	false	Hanging Picture
+2803	0	1x1x1	false	Hanging Picture
+2804	0	1x1x1	false	Hanging Picture
+2805	0	1x1x1	false	Hanging Picture
+2806	0	1x1x1	false	Hanging Picture
+2807	0	1x1x1	false	Hanging Picture
+2808	0	1x1x1	false	Rice Sack
+2809	0	1x1x1	false	Rice Dumpling Arrangement
+2810	0	1x1x1	false	Rope Ladder
+2811	0	1x1x1	false	Stone Lantern
+2812	0	1x1x1	false	Rice Ball Arrangement
+2813	0	1x1x1	false	Paper Lantern
+2814	0	1x1x1	false	Big Bronze Bell
+2816	0	1x1x1	false	Paper Lantern [White]
+2817	0	1x1x1	false	Paper Lantern [Black]
+2818	0	1x1x1	false	Paper Lantern [Purple]
+2819	0	1x1x1	false	Paper Lantern [Pink]
+2820	0	1x1x1	false	Paper Lantern [Red]
+2821	0	1x1x1	false	Paper Lantern [Green]
+2822	0	1x1x1	false	Paper Lantern [Yellow]
+2823	0	1x1x1	false	Paper Lantern [Blue]
+2824	0	1x1x1	false	Pine Sapling
+2825	0	1x1x1	false	Pine Seed
+2826	0	1x1x1	false	Pine Tree
+2827	0	1x1x1	false	0
+2828	0	1x1x1	false	0
+2829	0	1x1x1	false	¿Dead Plant
+2830	0	1x1x1	false	¿Dead Plant on pole
+2831	0	1x1x1	false	Paper Sliding Door
+2832	0	1x1x1	false	Monster Monument
+2833	0	1x1x1	false	Toasty Table
+2834	0	1x1x1	false	Wooden Sliding Door
+2835	0	1x1x1	false	Waterwheel
+2839	0	1x1x1	false	Bamboo Shot
+2840	0	1x1x1	false	Indefinite Donking Device
+2841	0	1x1x1	false	Wooden Cabinet
+2842	0	1x1x1	false	Flat Tegulae Tiling
+2843	0	1x1x1	false	Pitched Tegulae Tiling
+2844	0	1x1x1	false	Tegulae Outer Corner Tiling
+2845	0	1x1x1	false	Tegulae Inner Corner Tiling
+2846	0	1x1x1	false	Ridge Tegulae Tiling
+2847	0	1x1x1	false	Carved Mural
+2848	0	1x1x1	false	Gruesome Gargoyle
+2849	0	1x1x1	false	Fancy Futon
+2850	0	1x1x1	false	Coffee Table
+2851	0	1x1x1	false	Sandals
+2852	0	1x1x1	false	Paper Sliding Door [White]
+2853	0	1x1x1	false	Paper Sliding Door [Black]
+2854	0	1x1x1	false	Paper Sliding Door [Purple]
+2855	0	1x1x1	false	Paper Sliding Door [Pink]
+2856	0	1x1x1	false	Paper Sliding Door [Red]
+2857	0	1x1x1	false	Paper Sliding Door [Green]
+2858	0	1x1x1	false	Paper Sliding Door [Yellow]
+2859	0	1x1x1	false	Paper Sliding Door [Blue]
+2860	0	1x1x1	false	Fancy Futon [White]
+2861	0	1x1x1	false	Fancy Futon [Black]
+2862	0	1x1x1	false	Fancy Futon [Purple]
+2863	0	1x1x1	false	Fancy Futon [Pink]
+2864	0	1x1x1	false	Fancy Futon [Red]
+2865	0	1x1x1	false	Fancy Futon [Green]
+2866	0	1x1x1	false	Fancy Futon [Yellow]
+2867	0	1x1x1	false	Fancy Futon [Blue]
+2868	0	1x1x1	false	Carved Mural [White]
+2869	0	1x1x1	false	Carved Mural [Black]
+2870	0	1x1x1	false	Carved Mural [Purple]
+2871	0	1x1x1	false	Carved Mural [Pink]
+2872	0	1x1x1	false	Carved Mural [Red]
+2873	0	1x1x1	false	Carved Mural [Green]
+2874	0	1x1x1	false	Carved Mural [Yellow]
+2875	0	1x1x1	false	Carved Mural [Blue]
+2876	0	1x1x1	false	Waterwheel [White]
+2877	0	1x1x1	false	Waterwheel [Black]
+2878	0	1x1x1	false	Waterwheel [Purple]
+2879	0	1x1x1	false	Waterwheel [Pink]
+2880	0	1x1x1	false	Waterwheel [Red]
+2881	0	1x1x1	false	Waterwheel [Green]
+2882	0	1x1x1	false	Waterwheel [Yellow]
+2883	0	1x1x1	false	Waterwheel [Blue]
+2884	0	1x1x1	false	Toasty Table [White]
+2885	0	1x1x1	false	Toasty Table [Black]
+2886	0	1x1x1	false	Toasty Table [Purple]
+2887	0	1x1x1	false	Toasty Table [Pink]
+2888	0	1x1x1	false	Toasty Table [Red]
+2889	0	1x1x1	false	Toasty Table [Green]
+2890	0	1x1x1	false	Toasty Table [Yellow]
+2891	0	1x1x1	false	Toasty Table [Blue]
+2892	0	1x1x1	false	Red Seagrass
+2893	0	1x1x1	false	Anemone
+2894	0	1x1x1	false	Flame-Grilled Fish
+2895	0	1x1x1	false	Pillar Coral
+2896	0	1x1x1	false	Netting
+2897	0	1x1x1	false	Seagrass
+2898	0	1x1x1	false	Basalt Blob
+2899	0	1x1x1	false	Marine Monument
+2900	0	1x1x1	false	Fancy Fresh Fish Platter
+2902	0	1x1x1	false	White Anemone
+2903	0	1x1x1	false	Black Anemone
+2904	0	1x1x1	false	Purple Anemone
+2905	0	1x1x1	false	Pink Anemone
+2906	0	1x1x1	false	Red Anemone
+2907	0	1x1x1	false	Green Anemone
+2908	0	1x1x1	false	Yellow Anemone
+2909	0	1x1x1	false	Blue Anemone
+2910	0	1x1x1	false	Plumberry Tree
+2911	0	1x1x1	false	Floor Lampe
+2914	0	1x1x1	false	Lampe Lait
+2915	0	1x1x1	false	Lampe Holden
+2916	0	1x1x1	false	Lampe Basen
+2917	0	1x1x1	false	Linken Lampe
+2922	0	1x1x1	false	Plumberry Tree
+2923	0	1x1x1	false	Plumberry Tree
+2925	0	1x1x1	false	Trendy Triptych
+2930	0	1x1x1	false	Fansi Tabel
+2932	0	1x1x1	false	¿Dead Plant
+2933	0	1x1x1	false	¿Dead Plant on pole
+2940	0	1x1x1	Half	Fansi Dor [Purple]
+2941	0	1x1x1	Half	Fansi Dor [Pink]
+2942	0	1x1x1	Half	Fansi Dor [Red]
+2943	0	1x1x1	Half	Fansi Dor [Green]
+2944	0	1x1x1	Half	Fansi Dor [Yellow]
+2945	0	1x1x1	Half	Fansi Dor [Blue]
+2947	0	1x1x1	Half	Coloured Cup [Black]
+2948	0	1x1x1	Half	Coloured Cup [Purple]
+2949	0	1x1x1	Half	Coloured Cup [Pink]
+2950	0	1x1x1	Half	Coloured Cup [Red]
+2951	0	1x1x1	Half	Coloured Cup [Green]
+2952	0	1x1x1	Half	Coloured Cup [Yellow]
+2953	0	1x1x1	Half	Coloured Cup [Blue]
+2954	0	1x1x1	Half	Chaer [White]
+2955	0	1x1x1	Half	Chaer [Black]
+2956	0	1x1x1	Half	Chaer [Purple]
+2959	0	1x1x1	Half	Chaer [Green]
+2960	0	1x1x1	Half	Chaer [Yellow]
+2961	0	1x1x1	Half	Chaer [Blue]
+2962	0	1x1x1	false	Fansi Tabel [White]
+2963	0	1x1x1	false	Fansi Tabel [Black]
+2964	0	1x1x1	false	Fansi Tabel [Purple]
+2965	0	1x1x1	false	Fansi Tabel [Pink]
+2967	0	1x1x1	Half	Fansi Tabel [Green]
+2968	0	1x1x1	Half	Fansi Tabel [Yellow]
+2969	0	1x1x1	Half	Fansi Tabel [Blue]
+2970	0	3x4x1	Half	Biig Dor [White]
+2971	0	3x4x1	Half	Biig Dor [Black]
+2972	0	3x4x1	Half	Biig Dor [Purple]
+2973	0	3x4x1	Half	Biig Dor [Pink]
+2974	0	3x4x1	Half	Biig Dor [Red]
+2975	0	3x4x1	Half	Biig Dor [Green]
+2976	0	3x4x1	Half	Biig Dor [Yellow]
+2977	0	3x4x1	Half	Biig Dor [Blue]
+2979	0	2x1x1	Half	Wooden Blind Headrail [Black]
+2980	0	2x1x1	Half	Wooden Blind Headrail [Purple]
+2981	0	2x1x1	Half	Wooden Blind Headrail [Pink]
+2982	0	2x1x1	Half	Wooden Blind Headrail [Red]
+2983	0	2x1x1	Half	Wooden Blind Headrail [Green]
+2984	0	2x1x1	Half	Wooden Blind Headrail [Yellow]
+2987	0	2x1x1	Half	Wooden Blind Body [Black]
+2988	0	2x1x1	Half	Wooden Blind Body [Purple]
+2989	0	2x1x1	Half	Wooden Blind Body [Pink]
+2990	0	2x1x1	Half	Wooden Blind Body [Red]
+2991	0	2x1x1	Half	Wooden Blind Body [Green]
+2993	0	2x1x1	Half	Wooden Blind Body [Blue]
+2994	0	1x1x1	false	Classy Couch
+2996	0	1x2x2	Half	Sofa [White]
+2997	0	1x2x2	Half	Sofa [Black]
+2998	0	1x2x2	Half	Sofa [Purple]
+2999	0	1x2x2	Half	Sofa [Pink]
+3001	0	3x2x2	Half	Sofa [Green]
+3002	0	3x2x2	Half	Sofa [Yellow]
+3003	0	3x2x2	Half	Sofa [Blue]
+3008	0	1x1x1	false	Omletti Spaghetti
+3011	0	1x1x1	false	Tartan Bed
+3013	0	1x1x1	Half	Alarm Clock [White]
+3014	0	1x1x1	Half	Alarm Clock [Black]
+3015	0	1x1x1	Half	Alarm Clock [Purple]
+3016	0	1x1x1	Half	Alarm Clock [Pink]
+3017	0	1x1x1	Half	Alarm Clock [Red]
+3018	0	1x1x1	Half	Alarm Clock [Green]
+3019	0	1x1x1	Half	Alarm Clock [Yellow]
+3020	0	1x1x1	Half	Alarm Clock [Blue]
+3026	0	1x1x1	false	Gramophone
+3028	0	1x1x1	false	Display Hook
+3029	0	1x1x1	false	Display Frame
+3032	0	1x1x1	false	Display Hook [White]
+3033	0	1x1x1	false	Display Hook [Black]
+3034	0	1x1x1	false	Display Hook [Purple]
+3035	0	1x1x1	false	Display Hook [Pink]
+3036	0	1x1x1	false	Display Hook [Red]
+3037	0	1x1x1	false	Display Hook [Green]
+3038	0	1x1x1	false	Display Hook [Yellow]
+3039	0	1x1x1	false	Display Hook [Blue]
+3040	0	1x1x1	false	Display Frame [White]
+3041	0	1x1x1	false	Display Frame [Black]
+3042	0	1x1x1	false	Display Frame [Purple]
+3043	0	1x1x1	false	Display Frame [Pink]
+3044	0	1x1x1	false	Display Frame [Red]
+3045	0	1x1x1	false	Display Frame [Green]
+3046	0	1x1x1	false	Display Frame [Yellow]
+3047	0	1x1x1	false	Display Frame [Blue]
+3048	0	1x1x1	Half	Stylish Staircase [White]
+3049	0	1x1x1	Half	Stylish Staircase [Black]
+3050	0	1x1x1	Half	Stylish Staircase [Purple]
+3051	0	1x1x1	Half	Stylish Staircase [Pink]
+3052	0	1x1x1	Half	Stylish Staircase [Red]
+3053	0	1x1x1	Half	Stylish Staircase [Green]
+3054	0	1x1x1	Half	Stylish Staircase [Yellow]
+3055	0	1x1x1	Half	Stylish Staircase [Blue]
+3057	0	1x1x1	false	Trendy Triptych
+3058	0	1x1x1	false	Trendy Triptych
+3059	0	1x1x1	false	Trendy Triptych
+3060	0	1x1x1	false	Trendy Triptych
+3061	0	1x1x1	false	Trendy Triptych
+3062	0	1x1x1	false	Trendy Triptych
+3063	0	1x1x1	false	Trendy Triptych
+3064	0	1x1x1	false	Trendy Triptych
+3065	0	1x1x1	false	Trendy Triptych
+3066	0	1x1x1	false	Trendy Triptych
+3067	0	1x1x1	false	Modern Art
+3068	0	1x1x1	false	Modern Art
+3069	0	1x1x1	false	Modern Art
+3070	0	1x1x1	false	Modern Art
+3071	0	1x1x1	false	Modern Art
+3072	0	1x1x1	false	Modern Art
+3073	0	1x1x1	false	Modern Art
+3074	0	1x1x1	false	Modern Art
+3075	0	1x1x1	false	Modern Art
+3076	0	1x1x1	false	Modern Art
+3080	0	1x1x1	false	Classy Canopy
+3081	0	1x3x1	Half	Chic Sunbrella [White]
+3082	0	1x3x1	Half	Chic Sunbrella [Black]
+3083	0	1x3x1	Half	Chic Sunbrella [Purple]

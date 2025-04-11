@@ -1,0 +1,280 @@
+﻿<UserControl x:Class="DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView.ChunkBlockGrid"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView"
+             xmlns:layer="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="800" SnapsToDevicePixels="True">
+    <UserControl.Resources>
+        <Style TargetType="Button" x:Key="ButtonGridOptions">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="Border" Background="{TemplateBinding Background}" 
+            BorderBrush="{TemplateBinding BorderBrush}" 
+            BorderThickness="{TemplateBinding BorderThickness}" 
+            CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="Orange" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#A8A8A8" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ToggleButton" x:Key="ToggleButtonGridOptions">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border Name="Border" Background="{TemplateBinding Background}" 
+    BorderBrush="{TemplateBinding BorderBrush}" 
+    BorderThickness="{TemplateBinding BorderThickness}" 
+    CornerRadius="4">
+                            <ContentPresenter Name="Content" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="Orange" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#A8A8A8" />
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter TargetName="Content" Property="Opacity" Value="0.5" />
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#B09000" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Width="800" Height="800">
+        <Border BorderBrush="#232337" BorderThickness="4" Background="Black" Padding="8" CornerRadius="15">
+            <Border BorderBrush="Yellow" BorderThickness="2" Padding="12" CornerRadius="10">
+                <Grid>
+                    <UniformGrid Name="TileGrid" Columns="32" Rows="32" Background="{Binding SeaBrush}"/>
+                    <Border BorderBrush="White" BorderThickness="1" Margin="-1">
+                        <Grid IsHitTestVisible="False">
+                            <Viewbox>
+                                <Canvas Name="FullGrid" Visibility="{Binding ShowFullGridVisibility}" Width="480" Height="480" Opacity="0.5">
+                                    <Line X1="15" Y1="480" X2="15" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="30" Y1="480" X2="30" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="45" Y1="480" X2="45" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="60" Y1="480" X2="60" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="75" Y1="480" X2="75" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="90" X2="90" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="105" X2="105" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="120" X2="120" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="135" X2="135" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="150" X2="150" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="165" X2="165" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="180" X2="180" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="195" X2="195" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="210" X2="210" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="225" X2="225" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="240" X2="240" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="255" X2="255" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="270" X2="270" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="285" X2="285" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="300" X2="300" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="315" Y1="480" X2="315" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="330" Y1="480" X2="330" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="345" Y1="480" X2="345" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="360" Y1="480" X2="360" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="375" Y1="480" X2="375" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="390" X2="390" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="405" X2="405" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="420" X2="420" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="435" X2="435" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="450" X2="450" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line X1="465" X2="465" Y1="480" Y2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+
+                                    <Line Y1="15" X1="480" Y2="15" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="30" X1="480" Y2="30" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="45" X1="480" Y2="45" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="60" X1="480" Y2="60" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="75" X1="480" Y2="75" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="90" Y2="90" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="105" Y2="105" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="120" Y2="120" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="135" Y2="135" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="150" Y2="150" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="165" Y2="165" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="180" Y2="180" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="195" Y2="195" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="210" Y2="210" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="225" Y2="225" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="240" Y2="240" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="255" Y2="255" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="270" Y2="270" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="285" Y2="285" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="300" Y2="300" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="315" X1="480" Y2="315" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="330" X1="480" Y2="330" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="345" X1="480" Y2="345" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="360" X1="480" Y2="360" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="375" X1="480" Y2="375" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="390" Y2="390" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="405" Y2="405" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="420" Y2="420" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="435" Y2="435" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="450" Y2="450" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                    <Line Y1="465" Y2="465" X1="480" X2="0" Stroke="White" StrokeThickness="1" StrokeDashArray="5,4"/>
+                                </Canvas>
+                            </Viewbox>
+                            <UniformGrid Columns="4" Rows="4" Visibility="{Binding ShowMinimapGridVisibility}">
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                                <Border BorderBrush="White" BorderThickness="1"/>
+                            </UniformGrid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+        </Border>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Yellow" VerticalAlignment="Top" HorizontalAlignment="Center" Height="25" Tag="u" Click="ChangeChunk">
+            <Image Source="/Images/UI/arrow.png" Margin="10,0"/>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Orange" VerticalAlignment="Center" HorizontalAlignment="Right" Height="25" Width="25" Tag="-1" Click="ChangeLayer" Margin="0,90,0,0">
+            <Polygon Points="1,4 18,4 9.5,16" Fill="Orange" Stroke="Black" StrokeThickness="1"/>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Orange" VerticalAlignment="Center" HorizontalAlignment="Right" Height="25" Width="25" Tag="1" Click="ChangeLayer" Margin="0,0,0,90">
+            <Polygon Points="1,11 18,11 9.5,-1" Fill="Orange" Stroke="Black" StrokeThickness="1"/>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Yellow" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="25" Tag="d" Click="ChangeChunk">
+            <Image Source="/Images/UI/arrow.png" Margin="10,0" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Yellow" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Tag="l" Click="ChangeChunk" RenderTransformOrigin="0.5,0.5" Margin="-17,0,0,0">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image Source="/Images/UI/arrow.png" Margin="10,0"/>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Yellow" VerticalAlignment="Center" HorizontalAlignment="Right" Height="25" Tag="r" Click="ChangeChunk" RenderTransformOrigin="0.5,0.5" Margin="0,0,-17,0">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image Source="/Images/UI/arrow.png" Margin="10,0"/>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Yellow" VerticalAlignment="Top" HorizontalAlignment="Left" Height="28" Tag="ul" Click="ChangeChunk">
+            <Image Source="/Images/UI/arrowD.png" Margin="6,6,0,0"/>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Yellow" VerticalAlignment="Top" HorizontalAlignment="Right" Height="28" Tag="ur" Click="ChangeChunk">
+            <Button.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.LayoutTransform>
+            <Image Source="/Images/UI/arrowD.png" Margin="6,6,0,0"/>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Yellow" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="28" Tag="dr" Click="ChangeChunk">
+            <Button.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.LayoutTransform>
+            <Image Source="/Images/UI/arrowD.png" Margin="6,6,0,0"/>
+        </Button>
+        <Button Style="{StaticResource ButtonGridOptions}" Background="Black" BorderThickness="2" BorderBrush="Yellow" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="28" Tag="dl" Click="ChangeChunk">
+            <Button.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.LayoutTransform>
+            <Image Source="/Images/UI/arrowD.png" Margin="6,6,0,0"/>
+        </Button>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="30,0" Height="25">
+            <ToggleButton Style="{StaticResource ToggleButtonGridOptions}" Margin="2,0" IsChecked="{Binding ShowMinimapGrid}" Background="Black" BorderThickness="1" BorderBrush="Yellow">
+                <Image Source="/Images/UI/BigGrid.png" Margin="2.5,2.5,2,2"/>
+            </ToggleButton>
+            <ToggleButton Style="{StaticResource ToggleButtonGridOptions}" Margin="2,0" IsChecked="{Binding ShowFullGrid}" Background="Black" BorderThickness="1" BorderBrush="Yellow">
+                <Image Source="/Images/UI/SmallGrid.png" Margin="2,2,2,2" >
+                    <Image.Effect>
+                        <DropShadowEffect BlurRadius="0" Direction="-45" ShadowDepth="0.5" Color="Black"/>
+                    </Image.Effect>
+                </Image>
+            </ToggleButton>
+            <ToggleButton Content="New" Margin="2,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="40,2" Height="21" HorizontalAlignment="Right">
+            <Border BorderBrush="Yellow" BorderThickness="1" Padding="12,0" Margin="1,0"  CornerRadius="5" Background="Black">
+                <TextBlock Foreground="White" VerticalAlignment="Center" FontWeight="DemiBold"  Margin="0,-2,0,0">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="Chunk: {0}  [x: {1} ,y: {2}]">
+                            <Binding Path="CurrentChunk"/>
+                            <Binding Path="CurrentChunkX"/>
+                            <Binding Path="CurrentChunkY"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                    <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="0" Direction="-45" ShadowDepth="1"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+            </Border>
+            <Border BorderBrush="Yellow" BorderThickness="1" Padding="12,0" Margin="1,0" CornerRadius="5" Background="Black">
+                <TextBlock Foreground="White" VerticalAlignment="Center" FontWeight="DemiBold"  Margin="0,-2,0,0">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="Layer: {0}">
+                            <Binding Path="CurrentLayer"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                    <TextBlock.Effect>
+                        <DropShadowEffect BlurRadius="0" Direction="-45" ShadowDepth="1"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+    </Grid>
+</UserControl>

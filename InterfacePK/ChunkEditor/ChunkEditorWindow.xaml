@@ -1,0 +1,187 @@
+﻿<Window x:Class="DQB2IslandEditor.InterfacePK.ChunkEditor.ChunkEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK"
+        xmlns:chunkMap="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView"
+        xmlns:layer="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map"
+        xmlns:inventory="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory"
+        xmlns:tools="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Tool"
+        mc:Ignorable="d" 
+        SnapsToDevicePixels="True"
+        Title="MainWindow" Height="800" Width="1500" SizeChanged="RecalculateSize" MinHeight="800" MinWidth="1500">
+    <Window.Resources>
+        <Style TargetType="TabItem" x:Key="InventoryHeader">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Grid Background="Black" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                            <Border Name="Border" Width="100" Height="25" CornerRadius="5" Margin="8,0,2,0"  Padding="2" Background="{TemplateBinding Background}" BorderThickness="0" HorizontalAlignment="Right">
+                                <Image Source="/Images/UI/Inventory.png"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="Gold" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="TabItem" x:Key="MapHeader">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Grid Background="Black" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                            <Border Name="Border" Width="100" Height="25" Margin="2,0,8,0" CornerRadius="5" Padding="2" Background="{TemplateBinding Background}"  BorderThickness="0" HorizontalAlignment="Left">
+                                <Image Source="/Images/UI/Map.png"/>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="Gold" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="MenuItem">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="MenuItem">
+                        <Border Name="borderM" BorderThickness="1" Margin="2,0" Padding="{TemplateBinding Padding}">
+                            <Grid>
+                                <ContentPresenter ContentSource="Header"/>
+                                <Popup Name="PART_Popup" IsOpen="{Binding IsSubmenuOpen, RelativeSource={RelativeSource TemplatedParent}}" HorizontalOffset="-6" >
+                                    <Border Background="#13131A" BorderBrush="Gray" BorderThickness="1">
+                                        <StackPanel Margin="6,2">
+                                            <ItemsPresenter />
+                                        </StackPanel>
+                                    </Border>
+                                </Popup>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="borderM" Property="Background" Value="#232337"/>
+                                <Setter TargetName="borderM" Property="BorderBrush" Value="Gray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <DockPanel Background="#202020">
+        <DockPanel DockPanel.Dock="Right">
+            <Viewbox  DockPanel.Dock="Left" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Column="0">
+                <chunkMap:ChunkBlockGrid x:Name="chunkBlockGrid"/>
+            </Viewbox>
+            <layer:LayerBarUI x:Name="LayerBar" Grid.Column="1" Margin="0,8"/>
+        </DockPanel>
+
+        <Menu VerticalAlignment="Top" DockPanel.Dock="Top" Background="Black" Foreground="White" Padding="3">
+            <MenuItem Header="Island File" Padding="4,0" FontWeight="Bold">
+                <MenuItem Header="Open STGDAT.bin" Click="OpenSTGDAT" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="Save STGDAT.bin" Click="SaveSTGDAT" Padding="18,2" FontWeight="Normal"/>
+                <Grid Margin="3,1" IsHitTestVisible="False">
+                    <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Left"/>
+                    <Rectangle Fill="LightGray" VerticalAlignment="Center" Height="1" />
+                    <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Right"/>
+                </Grid>
+                <MenuItem Header="Import STGDAT.bin" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="Export STGDAT.bin" Padding="18,2" FontWeight="Normal"/>
+            </MenuItem>
+            <MenuItem Header="Minimap" Background="Black"  Padding="4,0" FontWeight="Bold">
+                <MenuItem Header="Open CMNDAT.bin" Padding="18,2" FontWeight="Normal"/>
+                <Grid Margin="3,1" IsHitTestVisible="False">
+                    <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Left"/>
+                    <Rectangle Fill="LightGray" VerticalAlignment="Center" Height="1" />
+                    <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Right"/>
+                </Grid>
+                <MenuItem Header="Export minimap as .png" Padding="18,2" FontWeight="Normal"/>
+            </MenuItem>
+            <MenuItem Header="Chunk Grid" Padding="4,0" FontWeight="Bold">
+                <MenuItem Header="Edit Chunk Grid / Virtual Chunks" Padding="18,2" FontWeight="Normal"/>
+            </MenuItem>
+            <MenuItem Header="Data" Padding="4,0" FontWeight="Bold">
+                <MenuItem Header="Count all blocks in island" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="Count all items in island" Padding="18,2" FontWeight="Normal"/>
+            </MenuItem>
+        </Menu>
+        <Rectangle DockPanel.Dock="Top" Fill="#232337" Height="3"/>
+        <UniformGrid Rows="2">
+            <Border BorderThickness="2" CornerRadius="12" Margin="8" Background="Black" Padding="2" BorderBrush="#232337">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Margin="0,-3,0,0" Text="···················································································" VerticalAlignment="Top" Foreground="Gray" HorizontalAlignment="Center" FontSize="22" FontWeight="ExtraLight"/>
+                    <TabControl Background="Transparent" BorderThickness="0">
+                        <TabControl.Resources>
+                            <Style TargetType="TabPanel">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </TabControl.Resources>
+                        <TabItem Background="Transparent" Style="{StaticResource InventoryHeader}" >
+                            <!--Change style-->
+                            <inventory:InventoryMenu x:Name="inventoryMenu" Margin="10,10,10,5"/>
+                        </TabItem>
+                        <TabItem Background="Black" Style="{StaticResource MapHeader}">
+                        </TabItem>
+                    </TabControl>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <inventory:SelectedObject x:Name="selectedObject"/>
+                        <inventory:FavouriteList x:Name="favouriteList" Grid.Row="1"/>
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border BorderThickness="2" CornerRadius="12" Margin="8" Background="Black" Padding="2" BorderBrush="#232337">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <tools:ToolMenu x:Name="toolMenu"/>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="90"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border Background="DarkGray" CornerRadius="15" Margin="6" Width="68" Height="68" VerticalAlignment="Top">
+                            <Image Name="Tool_Current" Source="{Binding SelectedToolImage}" Margin="5"/>
+                        </Border>
+                        <TextBlock Text="{Binding SelectedToolName}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,38,0,0" Foreground="White" />
+                        <UniformGrid Grid.Row="1" Rows="1" Columns="2" Margin="5,10,5,15">
+                            <Border Background="#232337" CornerRadius="7" Width="15"/>
+                            <Border Background="#232337" CornerRadius="7" Width="15"/>
+                        </UniformGrid>
+                        <UniformGrid Grid.Row="1" Columns="2" Rows="5" Margin="5,10,5,15">
+                            <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
+                                <Image Name="Tool_Select_0" Source="{Binding ToolImageZero}"/>
+                            </Button>
+                            <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
+                                <Image Name="Tool_Area_1" Source="{Binding ToolImageOne}"/>
+                            </Button>
+                            <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
+                                <Image Name="Tool_Paint_2" Source="{Binding ToolImageTwo}"/>
+                            </Button>
+                            <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
+                                <Image Name="Tool_Chisel_3" Source="{Binding ToolImageThree}"/>
+                            </Button>
+                        </UniformGrid>
+                    </Grid>
+                </Grid>
+            </Border>
+        </UniformGrid>
+    </DockPanel>
+</Window>

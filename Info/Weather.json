@@ -1,0 +1,127 @@
+{
+    "Weather": [
+      {
+        "Id": 0,
+        "Name": "Invalid"
+      },
+      {
+        "Id": 1,
+        "Name": "Sunny"
+      },
+      {
+        "Id": 2,
+        "Name": "Cloudy"
+      },
+      {
+        "Id": 3,
+        "Name": "Rain"
+      },
+      {
+        "Id": 4,
+        "Name": "Snow"
+      },
+      {
+        "Id": 5,
+        "Name": "Green Mist"
+      },
+      {
+        "Id": 6,
+        "Name": "[Furrowfield] Ill Wind"
+      },
+      {
+        "Id": 7,
+        "Name": "Post Malhalla Darkness"
+      },
+      {
+        "Id": 8,
+        "Name": "[Furrowfield] Sunny"
+      },
+      {
+        "Id": 9,
+        "Name": "[Furrowfield] Cloudy"
+      },
+      {
+        "Id": 10,
+        "Name": "[Furrowfield] Rain"
+      },
+      {
+        "Id": 11,
+        "Name": "Thunderstorm"
+      },
+      {
+        "Id": 12,
+        "Name": "[Khrumbul-dun] Sunny"
+      },
+      {
+        "Id": 13,
+        "Name": "[Moonbroke] Sun rays through clouds"
+      },
+      {
+        "Id": 14,
+        "Name": "[Moonbrooke] Cloudy"
+      },
+      {
+        "Id": 15,
+        "Name": "[Moonbrooke] Rain"
+      },
+      {
+        "Id": 16,
+        "Name": "[Moonbrooke] Snow"
+      },
+      {
+        "Id": 17,
+        "Name": "[Tutorial Ship] Rain"
+      },
+      {
+        "Id": 18,
+        "Name": "[Tutorial Ship] Sunny"
+      },
+      {
+        "Id": 19,
+        "Name": "[Malhalla] Sunny"
+      },
+      {
+        "Id": 20,
+        "Name": "[Tutorial] Thunderstorm"
+      },
+      {
+        "Id": 21,
+        "Name": "[Tutorial] Cloudy"
+      },
+      {
+        "Id": 22,
+        "Name": "[Malhalla] Pitch Black"
+      },
+      {
+        "Id": 23,
+        "Name": "Purple Mist"
+      },
+      {
+        "Id": 24,
+        "Name": "[Moonbrooke] Sunny"
+      },
+      {
+        "Id": 25,
+        "Name": "[Moonbrooke] Thunderstorm"
+      },
+      {
+        "Id": 26,
+        "Name": "[Malhalla] 'Light' (?)"
+      },
+      {
+        "Id": 27,
+        "Name": "[Khrumbul-dun] Base attack (?)"
+      },
+      {
+        "Id": 28,
+        "Name": "[Post Final Battle] Darkness"
+      },
+      {
+        "Id": 29,
+        "Name": "[Furrowfield] Destroyed Deitree Mist"
+      },
+      {
+        "Id": 30,
+        "Name": "[Furrowfield] Final scene Sunny"
+      }]
+}

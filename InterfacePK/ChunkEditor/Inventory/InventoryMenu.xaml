@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory.InventoryMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="TabItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Grid Background="Black" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                            <Border Name="Border" Width="60" Height="60" CornerRadius="50" Background="Black" BorderBrush="#A8A8A8" BorderThickness="2"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#A8A8A8" />
+                                <Setter TargetName="Border" Property="BorderThickness" Value="0" />
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="Orange" />
+                                <Setter TargetName="Border" Property="BorderThickness" Value="0" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Name="gridInventory" Height="300">
+        <TabControl Name="BlocksTabs" TabStripPlacement="Left" Background="Black" BorderThickness="0">
+            <TabItem Background="Black" BorderThickness="0" Padding="0" Margin="0" Width="65" Height="100">
+                <local:InventoryGrid x:Name="inventoryGridBlock"/>
+            </TabItem>
+            <TabItem Background="Black" BorderThickness="0" Padding="0" Margin="0" Width="65" Height="100">
+                <local:InventoryGrid x:Name="inventoryGridLiquid"/>
+            </TabItem>
+            <TabItem Background="Black" BorderThickness="0" Padding="0" Margin="0" Width="65" Height="100">
+                <local:InventoryGrid x:Name="inventoryGridItem"/>
+            </TabItem>
+        </TabControl>
+        <UniformGrid Rows="3" HorizontalAlignment="Left" Margin="12,3,0,-3" IsHitTestVisible="False">
+            <Image Source="/Images/UI/Block.png" Width="45"/>
+            <Image Source="/Images/UI/Liquid.png" Width="45"/>
+            <Image Source="/Images/UI/Item.png" Width="45"/>
+        </UniformGrid>
+        </Grid>
+</UserControl>

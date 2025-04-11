@@ -1,0 +1,119 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Subsystem>console</Subsystem>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TestingSave\NX6400000-02-GAME\**" />
+    <EmbeddedResource Remove="TestingSave\NX6400000-02-GAME\**" />
+    <None Remove="TestingSave\NX6400000-02-GAME\**" />
+    <Page Remove="TestingSave\NX6400000-02-GAME\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Chisel\00.png" />
+    <None Remove="Images\Chisel\01.png" />
+    <None Remove="Images\Chisel\02.png" />
+    <None Remove="Images\Chisel\03.png" />
+    <None Remove="Images\Chisel\04.png" />
+    <None Remove="Images\Chisel\05.png" />
+    <None Remove="Images\Chisel\06.png" />
+    <None Remove="Images\Chisel\07.png" />
+    <None Remove="Images\Chisel\08.png" />
+    <None Remove="Images\Chisel\09.png" />
+    <None Remove="Images\Chisel\10.png" />
+    <None Remove="Images\Chisel\11.png" />
+    <None Remove="Images\Chisel\12.png" />
+    <None Remove="Images\Chisel\13.png" />
+    <None Remove="Images\Chisel\14.png" />
+    <None Remove="Images\Inventory\B-0001.png" />
+    <None Remove="Images\Inventory\BlockSheetOne.png" />
+    <None Remove="Images\Inventory\BlockSheetTwo.png" />
+    <None Remove="Images\Inventory\SheetChunky.png" />
+    <None Remove="Images\Inventory\SheetRetro.png" />
+    <None Remove="Images\Inventory\T-0001.png" />
+    <None Remove="Images\Inventory\TileSheetOne.png" />
+    <None Remove="Images\Inventory\TileSheetTwo.png" />
+    <None Remove="Images\UI\arrow.png" />
+    <None Remove="Images\UI\arrowD.png" />
+    <None Remove="Images\UI\ArrowY.png" />
+    <None Remove="Images\UI\BigGrid.png" />
+    <None Remove="Images\UI\Block.png" />
+    <None Remove="Images\UI\Inventory.png" />
+    <None Remove="Images\UI\Item.png" />
+    <None Remove="Images\UI\Liquid.png" />
+    <None Remove="Images\UI\Map.png" />
+    <None Remove="Images\UI\Select.png" />
+    <None Remove="Images\UI\SelectedTool.png" />
+    <None Remove="Images\UI\SmallGrid.png" />
+    <None Remove="Images\UI\toolsheet.png" />
+    <None Remove="Images\UI\YLayer.png" />
+    <None Remove="info\0002.png" />
+    <None Remove="Info\BlockExtra.txt" />
+    <None Remove="Info\BlockParity.txt" />
+    <None Remove="Info\Blocks.txt" />
+    <None Remove="info\islands.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="info\0002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Info\BlockExtra.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\Inventory\SheetChunky.png" />
+    <Resource Include="Images\Inventory\SheetRetro.png" />
+    <Resource Include="Info\Blocks.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="info\islands.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Chisel\00.png" />
+    <Resource Include="Images\Chisel\01.png" />
+    <Resource Include="Images\Chisel\02.png" />
+    <Resource Include="Images\Chisel\03.png" />
+    <Resource Include="Images\Chisel\04.png" />
+    <Resource Include="Images\Chisel\05.png" />
+    <Resource Include="Images\Chisel\06.png" />
+    <Resource Include="Images\Chisel\07.png" />
+    <Resource Include="Images\Chisel\08.png" />
+    <Resource Include="Images\Chisel\09.png" />
+    <Resource Include="Images\Chisel\10.png" />
+    <Resource Include="Images\Chisel\11.png" />
+    <Resource Include="Images\Chisel\12.png" />
+    <Resource Include="Images\Chisel\13.png" />
+    <Resource Include="Images\Chisel\14.png" />
+    <Resource Include="Images\Inventory\B-0001.png" />
+    <Resource Include="Images\Inventory\BlockSheetOne.png" />
+    <Resource Include="Images\Inventory\BlockSheetTwo.png" />
+    <Resource Include="Images\Inventory\T-0001.png" />
+    <Resource Include="Images\Inventory\TileSheetOne.png" />
+    <Resource Include="Images\Inventory\TileSheetTwo.png" />
+    <Resource Include="Images\UI\arrow.png" />
+    <Resource Include="Images\UI\arrowD.png" />
+    <Resource Include="Images\UI\ArrowY.png" />
+    <Resource Include="Images\UI\BigGrid.png" />
+    <Resource Include="Images\UI\Block.png" />
+    <Resource Include="Images\UI\Inventory.png" />
+    <Resource Include="Images\UI\Item.png" />
+    <Resource Include="Images\UI\Liquid.png" />
+    <Resource Include="Images\UI\Map.png" />
+    <Resource Include="Images\UI\SelectedTool.png" />
+    <Resource Include="Images\UI\SmallGrid.png" />
+    <Resource Include="Images\UI\toolsheet.png" />
+    <Resource Include="Images\UI\YLayer.png" />
+    <Resource Include="Info\BlockParity.txt" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory.SelectedObject"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory"
+             xmlns:container="clr-namespace:DQB2IslandEditor.ObjectPK.Container"
+             mc:Ignorable="d" 
+             d:DesignHeight="64" d:DesignWidth="64">
+    <Grid Background="Black">
+        <Button Name="SelButton" Background="#232337" BorderThickness="2" Margin="6" ToolTipService.InitialShowDelay="5" BorderBrush="Orange">
+            <Button.ToolTip>
+                <ToolTip Background="Transparent" BorderThickness="0">
+                    <container:InventoryInfo objectInfoPanel="{Binding SelectedBlock}"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="Border" Background="{TemplateBinding Background}" 
+                        BorderBrush="{TemplateBinding BorderBrush}" 
+                        BorderThickness="{TemplateBinding BorderThickness}" 
+                        CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="Orange" />
+                            <Setter TargetName="Border" Property="BorderThickness" Value="0" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="#A8A8A8" />
+                            <Setter TargetName="Border" Property="BorderThickness" Value="0" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Source="{Binding SelectedBlock.objectInventoryImage}" Margin="6"/>
+        </Button>
+        <Border Background="{Binding SelectedBlock.colourBrush}" Visibility="{Binding SelectedBlock.colourTag, FallbackValue=Collapsed}" 
+        BorderBrush="black" BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="14" Height="23" CornerRadius="4" Margin="5"/>
+    </Grid>
+</UserControl>

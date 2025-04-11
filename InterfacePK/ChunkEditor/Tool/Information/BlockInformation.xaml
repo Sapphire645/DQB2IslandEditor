@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.Information.BlockInformation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.Information"
+             mc:Ignorable="d">
+    <Viewbox>
+        <Grid>
+            <Border Background="Black" BorderBrush="Cyan" BorderThickness="1.5" CornerRadius="5" Padding="8" Margin="0,12,0,0" MinWidth="550">
+                <DockPanel>
+                    <Grid Margin="0,4,0,0" DockPanel.Dock="Top">
+                        <StackPanel Grid.Column="3" Orientation="Horizontal">
+                            <Border Name="b1" Background="#232337" CornerRadius="10" Margin="4" Height="64" Width="64">
+                                <Image Source="{Binding SelectedBlock.objectInventoryImage}" IsHitTestVisible="False" Margin="4"/>
+                            </Border>
+                            <Border Background="#232337" CornerRadius="10" Margin="4" Grid.Column="1" Height="64" Width="64">
+                                <Image Source="{Binding SelectedBlock.objectMapImage}" IsHitTestVisible="False" Margin="8" />
+                            </Border>
+                            <Border Background="{Binding SelectedBlock.colourBrush}" Visibility="{Binding SelectedBlock.colourTag}" CornerRadius="10" Margin="4" Grid.Column="2" BorderThickness="4" Height="64" Width="32"/>
+                            <StackPanel Grid.Column="3" Margin="5" >
+                                <TextBlock Text="{Binding SelectedBlock.name}" Foreground="White" FontWeight="SemiBold" FontSize="16" TextWrapping="WrapWithOverflow"/>
+                                <TextBlock Text="{Binding SelectedBlock.objectIdDisplay, StringFormat=Block ID: {0}, Mode=OneWay}" FontSize="14" Foreground="Gold"/>
+                                <TextBlock Text="{Binding SelectedBlock.colour, StringFormat=Colour: {0}}" Foreground="{Binding SelectedBlock.colourBrushLight}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Margin="6">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Game Description:" Foreground="White" FontSize="14" TextWrapping="WrapWithOverflow" FontWeight="SemiBold" />
+                        <TextBlock Text="{Binding SelectedBlock.gameDescription, StringFormat={}                                 {0}}" Foreground="White" FontSize="14" TextWrapping="WrapWithOverflow"/>
+                        <TextBlock Text="Notes:" Foreground="Yellow" FontSize="14" TextWrapping="WrapWithOverflow" FontWeight="SemiBold" Grid.Row="1" Margin="75,0,0,0"/>
+                        <TextBlock Text="{Binding SelectedBlock.description,StringFormat={}                                 {0}}" Foreground="Yellow" FontSize="14" TextWrapping="WrapWithOverflow" Grid.Row="1"/>
+                        <TextBlock Text="Broken by:" Foreground="Cyan"  TextWrapping="WrapWithOverflow" FontWeight="SemiBold" Grid.Row="2" Margin="57,0,0,0"/>
+                        <TextBlock Text="{Binding SelectedBlock.hardness}" Foreground="White"  Grid.Row="2" Margin="125,0,0,0"/>
+                        <TextBlock Text="Normal drop:" Foreground="Cyan"  TextWrapping="WrapWithOverflow" FontWeight="SemiBold" Grid.Row="3" Margin="42,0,0,0"/>
+                        <TextBlock Text="{Binding SelectedBlock.normalDrop}" Foreground="White"  Grid.Row="3" Margin="125,0,0,0"/>
+                        <TextBlock Text="Ultiallet drop:" Foreground="Cyan"  TextWrapping="WrapWithOverflow" FontWeight="SemiBold" Grid.Row="4" Margin="40,0,0,0"/>
+                        <TextBlock Text="{Binding SelectedBlock.ultimalletDrop}" Foreground="White"  Grid.Row="4" Margin="125,0,0,0"/>
+                    </Grid>
+                </DockPanel>
+            </Border>
+            <Border Background="Black" BorderBrush="Cyan" BorderThickness="1.5" CornerRadius="8" Margin="4,0" Padding="12,4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24">
+                <TextBlock Text="Block Information" Foreground="White" Margin="8,-2,8,0" FontWeight="SemiBold"  FontSize="12">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="0" />
+                    </TextBlock.Effect>
+                </TextBlock>
+            </Border>
+        </Grid>
+    </Viewbox>
+</UserControl>
