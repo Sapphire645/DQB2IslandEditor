@@ -10,7 +10,7 @@ This program will feature 3(pending) separate editing tools combined into one.
 
 On top of that, there'll be a minimap export tool included, and a tool that will create a full island top view that can also be exported.
 ### Credits:
-The Chunk Editor program is based on the now deprecated [Chunk Editor +](https://github.com/Sapphire645/DQB2ChunkEditorPlus), and consecuently on [Mufago](https://github.com/Mugafo)'s [Chunk Editor](https://github.com/Mugafo/DQB2ChunkEditor), and also consecuently, on [Turtle Insect](https://github.com/turtle-insect)'s [Map flattener](https://github.com/turtle-insect/DQB2).
+The Chunk Editor program is based on the now deprecated [Chunk Editor +](https://github.com/Sapphire645/DQB2ChunkEditorPlus), and consecuently on [Mugafo](https://github.com/Mugafo)'s [Chunk Editor](https://github.com/Mugafo/DQB2ChunkEditor), and also consecuently, on [Turtle Insect](https://github.com/turtle-insect)'s [Map flattener](https://github.com/turtle-insect/DQB2).
 
 The Minimap Editor program will be based on [Sapphire645](https://github.com/Sapphire645)'s [Minimap Export Tool](https://github.com/Sapphire645/DQB2MinimapExporter) (That's me!).
 
@@ -19,7 +19,7 @@ The Values editor may borrow from [Turtle Insect](https://github.com/turtle-inse
 There will be specific minimap/full map export options for [Default Krammer](https://github.com/default-kramer)'s [Hermit's Heresy](https://github.com/default-kramer/HermitsHeresy) to use as templates.
 ### Special thanks:
 - [Turtle Insect](https://github.com/turtle-insect) (Who made the original save editors and reversed engineered basically everything)
-- [Mufago](https://github.com/Mugafo) (Original chunk editor and item research)
+- [Mugafo](https://github.com/Mugafo) (Original chunk editor and item research)
 - [Default Krammer](https://github.com/default-kramer) (Item and chunk research)
 # IE Chunk Editor:
 This tool will open and edit the respective STGDAT.
