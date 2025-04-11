@@ -16,6 +16,11 @@ The Minimap Editor program will be based on [Sapphire645](https://github.com/Sap
 
 The Values editor may borrow from [Turtle Insect](https://github.com/turtle-insect)'s [STGDAT editor](https://github.com/turtle-insect/DQB2) for storage and the [Chunk Editor +](https://github.com/Sapphire645/DQB2ChunkEditorPlus) for text editing.
 
+There will be specific minimap/full map export options for [Default Krammer](https://github.com/default-kramer)'s [Hermit's Heresy](https://github.com/default-kramer/HermitsHeresy) to use as templates.
+### Special thanks:
+- [Turtle Insect](https://github.com/turtle-insect) (Who made the original save editors and reversed engineered basically everything)
+- [Mufago](https://github.com/Mugafo) (Original chunk editor and item research)
+- [Default Krammer](https://github.com/default-kramer) (Item and chunk research)
 # IE Chunk Editor:
 This tool will open and edit the respective STGDAT.
 
