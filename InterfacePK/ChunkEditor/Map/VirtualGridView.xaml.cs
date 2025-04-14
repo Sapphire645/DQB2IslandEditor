@@ -51,7 +51,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
                     {
                         Border empty = new Border()
                         {
-                            Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55555555")),
+                            Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#A0555555")),
                             BorderBrush = new SolidColorBrush(Colors.Gray),
                             BorderThickness = new Thickness(1),
                             Tag = (ushort)1000
@@ -99,8 +99,17 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
         private void MouseLeaveChunk(Border chunk)
         {
             //Set the color of the border
-            chunk.Background = new SolidColorBrush(Colors.Transparent);
-            chunk.BorderBrush = new SolidColorBrush(Colors.Gray);
+            if(chunk == selectedchunk)
+            {
+                chunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF4000"));
+                chunk.BorderBrush = new SolidColorBrush(Colors.OrangeRed);
+            }
+            else
+            {
+                chunk.Background = new SolidColorBrush(Colors.Transparent);
+                chunk.BorderBrush = new SolidColorBrush(Colors.Gray);
+            }
+                
         }
         private void MouseClickChunk(Border chunk)
         {
@@ -115,21 +124,24 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
 
         public void UpdateChunk(ushort vChunk)
         {
-            if(selectedchunk !=null)
-                if ((ushort)selectedchunk.Tag == 1000)
+            if (selectedchunk != null)
+            {
+                if ((ushort)selectedchunk.Tag != 1000)
                 {
                     selectedchunk.Background = new SolidColorBrush(Colors.Transparent);
                     selectedchunk.BorderBrush = new SolidColorBrush(Colors.Gray);
                 }
-                else { 
-                    selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55555555"));
+                else
+                {
+                    selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#A0555555"));
                     selectedchunk.BorderBrush = new SolidColorBrush(Colors.Gray);
                 }
+            }
             if(allChunks != null)
             {
                 selectedchunk = allChunks[vChunk];
-                selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FFB000"));
-                selectedchunk.BorderBrush = new SolidColorBrush(Colors.Orange);
+                selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF4000"));
+                selectedchunk.BorderBrush = new SolidColorBrush(Colors.OrangeRed);
             }
         }
     }

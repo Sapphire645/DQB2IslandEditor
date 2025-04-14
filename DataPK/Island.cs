@@ -36,14 +36,17 @@ namespace DQB2IslandEditor.DataPK
         public byte[] STGDATHeader { get; private set; }
         public byte[] STGDATBody { get; private set; }
 
+        public string STGDATPath { get; private set; }
+
 
         private Chunk[] chunks = new Chunk[GRID_DIMENSION * GRID_DIMENSION];
 
-        public Island(byte[] headerBytes, byte[] fileBytes,byte TYPE, IslandShell shell) //Type: I cannot make multiple ones because they have the same args
+        public Island(byte[] headerBytes, byte[] fileBytes,byte TYPE, IslandShell shell, string sTGDATPath) //Type: I cannot make multiple ones because they have the same args
         {
             STGDATHeader = headerBytes;
             STGDATBody = fileBytes;
             this.shell = shell;
+            this.STGDATPath = STGDATPath;
             //Island Number:
             islandNumber = fileBytes[OFF_ISLAND_NUMBER];
 
@@ -57,12 +60,14 @@ namespace DQB2IslandEditor.DataPK
                     break;
             }
             Console.WriteLine(ToString());
+            STGDATPath = sTGDATPath;
         }
 
-        public Island(byte[] headerBytes, byte[] fileBytes, byte TYPE, Dictionary<byte,IslandShell> shell) //Type: I cannot make multiple ones because they have the same args
+        public Island(byte[] headerBytes, byte[] fileBytes, byte TYPE, Dictionary<byte,IslandShell> shell, string sTGDATPath) //Type: I cannot make multiple ones because they have the same args
         {
             STGDATHeader = headerBytes;
             STGDATBody = fileBytes;
+            this.STGDATPath = STGDATPath;
             //Island Number:
             islandNumber = fileBytes[OFF_ISLAND_NUMBER];
             this.shell = shell[islandNumber];

@@ -96,8 +96,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             {
                 if (_pathToSTGDAT == null)
 
-                //Rn auto breaks it...
-                saveData.SaveSTGDATCompressedFile(saveData.FolderPath + "STGDAT" + saveData.Island.islandNumber.ToString("D2") + ".BIN");
+                saveData.SaveSTGDATCompressedFile(saveData.Island.STGDATPath);
 
             }
             catch (Exception ex)

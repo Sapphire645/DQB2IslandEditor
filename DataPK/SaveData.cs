@@ -117,7 +117,7 @@ namespace DQB2IslandEditor.DataPK
             var uncompressedFileBytes = UncompressBytes(compressedFileBytes.Item2);
 
             //Now we load in the data
-            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata[island]);
+            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata[island], folderPath + "\\STGDAT" + island.ToString("D2") + ".BIN");
         }
         public void OpenSTGDATCompressedFile() //AutoSTGDAT
         {
@@ -131,7 +131,7 @@ namespace DQB2IslandEditor.DataPK
             var uncompressedFileBytes = UncompressBytes(compressedFileBytes.Item2);
 
             //Now we load in the data
-            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata); //Oh no. This would be on auto cmndat... 
+            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata, folderPath + "\\AUTOSTGDAT.BIN"); //Oh no. This would be on auto cmndat... 
         }
         public void OpenSTGDATCompressedFile(string path)
         {
@@ -144,7 +144,7 @@ namespace DQB2IslandEditor.DataPK
             var uncompressedFileBytes = UncompressBytes(compressedFileBytes.Item2);
 
             //Now we load in the data
-            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata);
+            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata, path);
         }
 
         /*
