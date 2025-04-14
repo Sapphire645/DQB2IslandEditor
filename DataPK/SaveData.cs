@@ -89,7 +89,7 @@ namespace DQB2IslandEditor.DataPK
             foreach (var islandMinimapOffset in MINIMAP_CORRESPONDANCE)
             {
                 var minimapBytes = new byte[SIZE_MINIMAP_IMAGE];
-                Array.Copy(uncompressedFileBytes, OFF_MINIMAP_IMAGE + islandMinimapOffset.Item1*SIZE_MINIMAP_IMAGE + 4* islandMinimapOffset.Item1, minimapBytes, 0, SIZE_MINIMAP_IMAGE);
+                Array.Copy(uncompressedFileBytes, OFF_MINIMAP_IMAGE + islandMinimapOffset.Item1*(SIZE_MINIMAP_IMAGE+4), minimapBytes, 0, SIZE_MINIMAP_IMAGE);
                 islandCMNDATdata[islandMinimapOffset.Item2] = new IslandShell(islandMinimapOffset.Item2, minimapBytes);
             }
         }

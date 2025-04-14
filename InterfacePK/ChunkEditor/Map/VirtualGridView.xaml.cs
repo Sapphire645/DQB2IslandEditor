@@ -21,7 +21,9 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
     /// </summary>
     public partial class VirtualGridView : UserControl
     {
-        private ChunkEditorViewModel ViewModel;
+        private ChunkEditorViewModel viewModel;
+        private Border selectedchunk;
+        private Dictionary<ushort, Border> allChunks;
         public VirtualGridView()
         {
             InitializeComponent();
@@ -29,7 +31,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
 
         public void Init(Island island, ChunkEditorViewModel ViewModel)
         {
-            this.ViewModel = ViewModel;
+            allChunks = new Dictionary<ushort, Border>();
+            this.viewModel = ViewModel;
             var dimensions = island.ChunkGridFrame();
 
             if(dimensions.X0 > 1) dimensions.X0 -= 1;
@@ -50,9 +53,11 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
                         {
                             Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55555555")),
                             BorderBrush = new SolidColorBrush(Colors.Gray),
-                            BorderThickness = new Thickness(1)
+                            BorderThickness = new Thickness(1),
+                            Tag = (ushort)1000
                         };
                         ChunkGridButtons.Children.Add(empty);
+                        allChunks[(ushort)(x + (64 * y))] = empty;
                     }
                     else
                     {
@@ -67,11 +72,16 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
                         chunk.MouseLeave += (s, e) => MouseLeaveChunk(chunk);
                         chunk.MouseLeftButtonUp += (s, e) => MouseClickChunk(chunk);
                         ChunkGridButtons.Children.Add(chunk);
+                        allChunks[(ushort)(x + (64 * y))] = chunk;
                     }
+
 
                 }
             }
             //Scale for minimap
+            //I think i need the sum
+            if (dimensions.X1 < Island.GRID_DIMENSION - 1) dimensions.X1 += 1;
+            if (dimensions.Y1 < Island.GRID_DIMENSION - 1) dimensions.Y1 += 1;
 
             dimensions.X0 = dimensions.X0 * Minimap.MINIMAP_DIMENSION_IN_CHUNK;
             dimensions.X1 = dimensions.X1 * Minimap.MINIMAP_DIMENSION_IN_CHUNK;
@@ -97,10 +107,30 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
             //Get the chunk number
             ushort chunkNumber = (ushort)chunk.Tag;
             //Set the chunk data to the selected one
-            ViewModel.CurrentChunk = chunkNumber;
+            viewModel.CurrentChunk = chunkNumber;
             //Set the color of the border
             chunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF9000"));
             chunk.BorderBrush = new SolidColorBrush(Colors.Yellow);
+        }
+
+        public void UpdateChunk(ushort vChunk)
+        {
+            if(selectedchunk !=null)
+                if ((ushort)selectedchunk.Tag == 1000)
+                {
+                    selectedchunk.Background = new SolidColorBrush(Colors.Transparent);
+                    selectedchunk.BorderBrush = new SolidColorBrush(Colors.Gray);
+                }
+                else { 
+                    selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55555555"));
+                    selectedchunk.BorderBrush = new SolidColorBrush(Colors.Gray);
+                }
+            if(allChunks != null)
+            {
+                selectedchunk = allChunks[vChunk];
+                selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FFB000"));
+                selectedchunk.BorderBrush = new SolidColorBrush(Colors.Orange);
+            }
         }
     }
 }

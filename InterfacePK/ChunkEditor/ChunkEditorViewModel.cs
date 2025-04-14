@@ -74,6 +74,7 @@ namespace DQB2IslandEditor.InterfacePK
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentChunkX)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentChunkY)));
                 LoadLayer(_currentLayer, _currentChunk);
+                chunkEditorWindow.virtualGridView.UpdateChunk(_currentChunk);
             } 
         }
         public byte CurrentLayer

@@ -52,7 +52,7 @@ namespace DQB2IslandEditor.DataPK
             }
             var frame = new CoordinateFrame(chunkLeftCoord, (ushort)(chunkRightCoord + 8), ChunkUpCoord, (ushort)(chunkDownCoord + 8));
             if (frame.X1 >= MINIMAP_DIMENSION) frame.X1 =(ushort)(MINIMAP_DIMENSION-1); //Shit's wack
-            if (frame.Y1 >= MINIMAP_DIMENSION) frame.Y1 =(ushort)(MINIMAP_DIMENSION - 1);
+            if (frame.Y1 >= MINIMAP_DIMENSION) frame.Y1 =(ushort)(MINIMAP_DIMENSION-1);
             return frame;
         }
         public RenderTargetBitmap MinimapImage(byte explored, bool chunky, bool limit = true) //0 covered, 1 half seen, 2 invisible
