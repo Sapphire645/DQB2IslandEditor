@@ -135,7 +135,7 @@
                 <MenuItem Header="x Count all blocks in island" Padding="18,2" FontWeight="Normal"/>
                 <MenuItem Header="x Count all items in island" Padding="18,2" FontWeight="Normal"/>
             </MenuItem>
-            <TextBlock Name="SavedText" Text="Island Saved!" Foreground="Lime" FontStyle="Italic" Opacity="0" IsHitTestVisible="False"/>
+            <TextBlock Name="SavedText" Text="Loading... Please wait." Foreground="Gold" FontStyle="Italic" IsHitTestVisible="False"/>
         </Menu>
         <Rectangle DockPanel.Dock="Top" Fill="#232337" Height="3"/>
         <UniformGrid Rows="2">
@@ -187,8 +187,8 @@
                         <Border Background="DarkGray" CornerRadius="15" Margin="6" Width="68" Height="68" VerticalAlignment="Top">
                             <Image Name="Tool_Current" Source="{Binding SelectedToolImage}" Margin="5"/>
                         </Border>
-                        <Viewbox Margin="0,38,0,0">
-                            <text:OutlinedTextControl Text="{Binding SelectedToolName}" Fill="White" StrokeThickness="4"/>
+                        <Viewbox Margin="6,38,6,6">
+                            <text:OutlinedTextControl Text="{Binding SelectedToolName}" Fill="White" StrokeThickness="4" MinWidth="20" MinHeight="25" FontSize="11"/>
                         </Viewbox>
                         <UniformGrid Grid.Row="1" Rows="1" Columns="2" Margin="5,10,5,15">
                             <Border Background="#232337" CornerRadius="7" Width="15"/>

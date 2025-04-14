@@ -48,7 +48,6 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             virtualGridView.Init(saveData.Island, viewModel);
 
             LayerBar.UpdateSeaLevel(30); //Change
-
         }
         public async Task<ushort> ReadFile(SaveData saveData, byte island)
         {
