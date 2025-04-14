@@ -73,9 +73,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="info\0002.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Info\BlockExtra.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
