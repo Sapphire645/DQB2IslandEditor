@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK"
         xmlns:text="clr-namespace:DQB2IslandEditor.InterfacePK.Resources"
         mc:Ignorable="d"
-        Title="MWindow" Height="800" Width="1300" SizeChanged="RecalculateSize">
+        Title="MWindow" Height="800" Width="1300" 
+        SizeChanged="RecalculateSize"
+        MouseMove="MouseMove_Paralax">
     <Window.Resources>
         <Style TargetType="Button" x:Key="MenuButton">
             <Setter Property="Template">
@@ -53,12 +55,14 @@
                     <GradientStop Color="#90000090" Offset="1" />
                 </LinearGradientBrush>
             </Grid.OpacityMask>
-            <Viewbox Stretch="UniformToFill" VerticalAlignment="Center" >
-                <Image Name="MinimapBackgroundOld" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-            </Viewbox>
-            <Viewbox Stretch="UniformToFill" VerticalAlignment="Center">
-                <Image Name="MinimapBackground" Source="{Binding CurrentMinimapBackground}" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-            </Viewbox>
+            <Grid Name="ParalaxGrid" Margin="-20">
+                <Viewbox Stretch="UniformToFill" VerticalAlignment="Center" >
+                    <Image Name="MinimapBackgroundOld" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                </Viewbox>
+                <Viewbox Stretch="UniformToFill" VerticalAlignment="Center">
+                    <Image Name="MinimapBackground" Source="{Binding CurrentMinimapBackground}" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                </Viewbox>
+            </Grid>
         </Grid>
         <Grid Grid.ColumnSpan="2" Margin="30">
             <Grid.ColumnDefinitions>

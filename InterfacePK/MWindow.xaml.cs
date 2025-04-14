@@ -76,5 +76,21 @@ namespace DQB2IslandEditor.InterfacePK
         {
             Transp.Opacity = 0.7;
         }
+
+        private void MouseMove_Paralax(object sender, MouseEventArgs e)
+        {
+            Point localPosition = e.GetPosition(this);
+
+            double GridWidth = this.ActualWidth;
+            double GridHeight = this.ActualHeight;
+
+            double parallaxFactor = -0.02; 
+
+            double offsetX = (localPosition.X - GridWidth / 2) * parallaxFactor;
+            double offsetY = (localPosition.Y - GridHeight / 2) * parallaxFactor;
+
+            // Apply the calculated offset to the background image
+            ParalaxGrid.RenderTransform = new TranslateTransform(offsetX, offsetY);
+        }
     }
 }

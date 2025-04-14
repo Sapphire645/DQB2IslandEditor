@@ -72,9 +72,6 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
                 }
             }
             //Scale for minimap
-            //I think i need the sum
-            if (dimensions.X1 < Island.GRID_DIMENSION - 1) dimensions.X1 += 1;
-            if (dimensions.Y1 < Island.GRID_DIMENSION - 1) dimensions.Y1 += 1;
 
             dimensions.X0 = dimensions.X0 * Minimap.MINIMAP_DIMENSION_IN_CHUNK;
             dimensions.X1 = dimensions.X1 * Minimap.MINIMAP_DIMENSION_IN_CHUNK;

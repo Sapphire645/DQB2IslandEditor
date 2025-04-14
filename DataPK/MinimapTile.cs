@@ -45,6 +45,7 @@ namespace DQB2IslandEditor.DataPK
         public bool IsEmpty()
         {
             if(_type == 0 && _decorator == 0 && !_height) return true;
+            if (_type == 4 && _decorator == 0 && !_height) return true; //Malhalla
             return false;
         }
         public MinimapTile(byte[] bytes)
