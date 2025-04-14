@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK"
+        xmlns:text="clr-namespace:DQB2IslandEditor.InterfacePK.Resources"
         xmlns:chunkMap="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView"
         xmlns:layer="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map"
         xmlns:inventory="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory"
@@ -186,7 +187,9 @@
                         <Border Background="DarkGray" CornerRadius="15" Margin="6" Width="68" Height="68" VerticalAlignment="Top">
                             <Image Name="Tool_Current" Source="{Binding SelectedToolImage}" Margin="5"/>
                         </Border>
-                        <TextBlock Text="{Binding SelectedToolName}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,38,0,0" Foreground="White" />
+                        <Viewbox Margin="0,38,0,0">
+                            <text:OutlinedTextControl Text="{Binding SelectedToolName}" Fill="White" StrokeThickness="4"/>
+                        </Viewbox>
                         <UniformGrid Grid.Row="1" Rows="1" Columns="2" Margin="5,10,5,15">
                             <Border Background="#232337" CornerRadius="7" Width="15"/>
                             <Border Background="#232337" CornerRadius="7" Width="15"/>
