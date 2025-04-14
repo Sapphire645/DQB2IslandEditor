@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK"
         xmlns:text="clr-namespace:DQB2IslandEditor.InterfacePK.Resources"
         mc:Ignorable="d"
-        Title="MWindow" Height="800" Width="1300" 
+        Title="DQB2 Island Editor" Height="800" Width="1300" 
         SizeChanged="RecalculateSize"
         MouseMove="MouseMove_Paralax">
     <Window.Resources>

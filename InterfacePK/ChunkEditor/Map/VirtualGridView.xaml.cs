@@ -139,9 +139,17 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
             }
             if(allChunks != null)
             {
-                selectedchunk = allChunks[vChunk];
-                selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF4000"));
-                selectedchunk.BorderBrush = new SolidColorBrush(Colors.OrangeRed);
+                if (allChunks.ContainsKey(vChunk))
+                {
+                    selectedchunk = allChunks[vChunk];
+                    selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF4000"));
+                    selectedchunk.BorderBrush = new SolidColorBrush(Colors.OrangeRed);
+                }
+                else
+                {
+                    selectedchunk = null;
+                }
+               
             }
         }
     }

@@ -10,7 +10,7 @@
         xmlns:tools="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Tool"
         mc:Ignorable="d" 
         SnapsToDevicePixels="True"
-        Title="MainWindow" Height="800" Width="1500" SizeChanged="RecalculateSize" MinHeight="800" MinWidth="1500">
+        Title="DQB2 Island Editor: Chunk Editor" Height="800" Width="1500" SizeChanged="RecalculateSize" MinHeight="800" MinWidth="1500">
     <Window.Resources>
 
         <Style TargetType="TabItem" x:Key="InventoryHeader">
