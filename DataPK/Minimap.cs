@@ -15,7 +15,7 @@ namespace DQB2IslandEditor.DataPK
     public class Minimap
     {
         public static readonly ushort MINIMAP_DIMENSION = 256;
-        public static readonly byte MINIMAP_DIMENSION_IN_CHUNK = 8;
+        public static readonly byte MINIMAP_DIMENSION_IN_CHUNK = 4;
         public static readonly byte TILE_SIZE = 2;
         private MinimapTile[] tiles = new MinimapTile[MINIMAP_DIMENSION* MINIMAP_DIMENSION];
         public Minimap(byte[] minimapBytes) { 
@@ -25,9 +25,9 @@ namespace DQB2IslandEditor.DataPK
             }
         }
 
-        private (ushort, ushort, ushort, ushort) CalculateLimit()
+        private CoordinateFrame CalculateLimit()
         {
-            ushort ChunkUpCoord = 256, chunkDownCoord = 0, chunkLeftCoord = 256, chunkRightCoord = 0;
+            ushort ChunkUpCoord = 252, chunkDownCoord = 0, chunkLeftCoord = 252, chunkRightCoord = 0;
             for (int i = MINIMAP_DIMENSION_IN_CHUNK; i < MINIMAP_DIMENSION; i+= MINIMAP_DIMENSION_IN_CHUNK) //Skip this because it has garbage data somatimes.
             {
                 for (int j = 0; j < MINIMAP_DIMENSION; j+= MINIMAP_DIMENSION_IN_CHUNK)
@@ -48,34 +48,44 @@ namespace DQB2IslandEditor.DataPK
                             }
                         }
                     }
-
                 }
             }
-            return (ChunkUpCoord, (ushort)(chunkDownCoord+8), chunkLeftCoord, (ushort)(chunkRightCoord+8));
+            return new CoordinateFrame(chunkLeftCoord, (ushort)(chunkRightCoord+4), ChunkUpCoord, (ushort)(chunkDownCoord+4));
         }
         public RenderTargetBitmap MinimapImage(byte explored, bool chunky, bool limit = true) //0 covered, 1 half seen, 2 invisible
         {
-            (ushort, ushort, ushort, ushort) tileLimits = (0,256,0,256);
+            CoordinateFrame tileLimits = new CoordinateFrame(0, 256, 0, 256);
             if (limit) tileLimits = CalculateLimit();
+            
+            return MinimapImageConstruct(explored, chunky, tileLimits);
+        }
+        public RenderTargetBitmap MinimapImage(byte explored, bool chunky, CoordinateFrame tileLimits) //0 covered, 1 half seen, 2 invisible
+        {
+            return MinimapImageConstruct(explored, chunky, tileLimits);
+        }
+        private RenderTargetBitmap MinimapImageConstruct(byte explored, bool chunky, CoordinateFrame tileLimits) //0 covered, 1 half seen, 2 invisible
+        {
             float size = DataBaseReading.GetTileSize(chunky);
+
+            Console.WriteLine(tileLimits.X0 + ", " + tileLimits.X1 + ", " + tileLimits.Y0+", "+tileLimits.Y1);
 
             DrawingVisual drawingVisual = new DrawingVisual();
             using (DrawingContext context = drawingVisual.RenderOpen())
             {
-                for (ushort i = tileLimits.Item1; i < tileLimits.Item2; i++)
+                for (uint i = tileLimits.Y0; i <= tileLimits.Y1; i++)
                 {
-                    for (int j = tileLimits.Item3; j < tileLimits.Item4; j++)
+                    for (uint j = tileLimits.X0; j <= tileLimits.X1; j++)
                     {
                         CroppedBitmap[] tile = DataBaseReading.GetTileImage(tiles[i * MINIMAP_DIMENSION + j], explored, chunky);
-                        foreach(var t in tile)
+                        foreach (var t in tile)
                         {
-                            if(t == null) continue;
-                            context.DrawImage(t, new Rect((j - tileLimits.Item3) * size, (i- tileLimits.Item1) * size, size, size));
+                            if (t == null) continue;
+                            context.DrawImage(t, new Rect((j - tileLimits.X0) * size, (i - tileLimits.Y0) * size, size, size));
                         }
                     }
                 }
             }
-            RenderTargetBitmap image = new RenderTargetBitmap((int)((tileLimits.Item4-tileLimits.Item3) * size), (int)((tileLimits.Item2 - tileLimits.Item1) * size), 96, 96, PixelFormats.Pbgra32);
+            RenderTargetBitmap image = new RenderTargetBitmap((int)((tileLimits.X1 - tileLimits.X0) * size), (int)((tileLimits.Y1 - tileLimits.Y0) * size), 96, 96, PixelFormats.Pbgra32);
             image.Render(drawingVisual);
             return image;
         }

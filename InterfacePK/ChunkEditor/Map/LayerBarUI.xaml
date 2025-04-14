@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map"
              mc:Ignorable="d"
-             d:DesignHeight="800" d:DesignWidth="60">
+             d:DesignHeight="800" d:DesignWidth="60"
+             PreviewMouseWheel="ScrollUpdate">
     <UserControl.Resources>
         <Style TargetType="RadioButton" x:Key="RadioButtonStyle">
             <Setter Property="Template">
@@ -31,7 +32,7 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    <Grid>
+    <Grid Background="#202020">
         <Grid HorizontalAlignment="Left">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20"/>

@@ -32,20 +32,40 @@ namespace DQB2IslandEditor.DataPK
         public byte islandNumber { get; private set; }
         private ushort virtualChunkCount;
         private ushort realChunkCount;
-
+        public IslandShell shell { get; private set; }
         public byte[] STGDATHeader { get; private set; }
         public byte[] STGDATBody { get; private set; }
 
 
         private Chunk[] chunks = new Chunk[GRID_DIMENSION * GRID_DIMENSION];
 
-        public Island(byte[] headerBytes, byte[] fileBytes,byte TYPE) //Type: I cannot make multiple ones because they have the same args
+        public Island(byte[] headerBytes, byte[] fileBytes,byte TYPE, IslandShell shell) //Type: I cannot make multiple ones because they have the same args
+        {
+            STGDATHeader = headerBytes;
+            STGDATBody = fileBytes;
+            this.shell = shell;
+            //Island Number:
+            islandNumber = fileBytes[OFF_ISLAND_NUMBER];
+
+            //
+            switch (TYPE)
+            {
+                case 0: //The chunk editor reading
+                    ConstructChunkData(fileBytes);
+                    break;
+                default:
+                    break;
+            }
+            Console.WriteLine(ToString());
+        }
+
+        public Island(byte[] headerBytes, byte[] fileBytes, byte TYPE, Dictionary<byte,IslandShell> shell) //Type: I cannot make multiple ones because they have the same args
         {
             STGDATHeader = headerBytes;
             STGDATBody = fileBytes;
             //Island Number:
             islandNumber = fileBytes[OFF_ISLAND_NUMBER];
-
+            this.shell = shell[islandNumber];
             //
             switch (TYPE)
             {
@@ -155,6 +175,28 @@ namespace DQB2IslandEditor.DataPK
             foreach (Chunk chunk in chunks)
                 if (!chunk.IsEmpty()) return chunk.chunkPosition;
             return 0; //Oh no
+        }
+
+        public bool IsChunkEmpty(ushort vChunk)
+        {
+            return chunks[vChunk].IsEmpty();
+        }
+
+        public CoordinateFrame ChunkGridFrame()
+        {
+            byte x0 = GRID_DIMENSION;
+            byte x1 = 0;
+            byte y0 = GRID_DIMENSION;
+            byte y1 = 0;
+            for(uint i = 0; i < chunks.Length; i++)
+                if (!chunks[i].IsEmpty())
+                {
+                    if(i % GRID_DIMENSION < x0) x0 = (byte)(i % GRID_DIMENSION);
+                    if (i % GRID_DIMENSION > x1) x1 = (byte)(i % GRID_DIMENSION);
+                    if (i / GRID_DIMENSION < y0) y0 = (byte)(i / GRID_DIMENSION);
+                    if (i / GRID_DIMENSION > y1) y1 = (byte)(i / GRID_DIMENSION);
+                }
+            return new CoordinateFrame(x0, x1, y0, y1);
         }
 
         public (byte[], byte[]) CommitChangesToFile()

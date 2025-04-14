@@ -89,6 +89,7 @@ namespace DQB2IslandEditor.DataPK
         }
         public void SetBlockFromCoords(BlockInstance blockInstance, byte x, byte z, byte layer)
         {
+            if (blockBytes == null) return;
             var bytes = blockInstance.GetBytes();
             var offset = layer * SIZE_LAYER + z * X_DIMENSION * 2 + x * 2;
             blockBytes[offset] = bytes[0];

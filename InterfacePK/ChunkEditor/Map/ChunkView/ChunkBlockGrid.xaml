@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView"
              xmlns:layer="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Map"
              mc:Ignorable="d" 
-             d:DesignHeight="800" d:DesignWidth="800" SnapsToDevicePixels="True">
+             d:DesignHeight="800" d:DesignWidth="800" SnapsToDevicePixels="True"
+             PreviewMouseWheel="ScrollUpdate">
     <UserControl.Resources>
         <Style TargetType="Button" x:Key="ButtonGridOptions">
             <Setter Property="Template">

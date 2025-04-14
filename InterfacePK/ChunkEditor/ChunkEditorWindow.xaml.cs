@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 using System.Net.WebSockets;
 using Microsoft.Win32;
 using System.ComponentModel;
+using DQB2IslandEditor.InterfacePK.ChunkEditor.Map;
 
 
 namespace DQB2IslandEditor.InterfacePK.ChunkEditor
@@ -20,6 +21,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
     {
         private ChunkEditorViewModel viewModel;
         private SaveData saveData;
+
+        private string _pathToSTGDAT = null;
         public ChunkEditorWindow(SaveData saveData, byte island)
         {
             Task<ushort> readFileTask = Task.Run(() => ReadFile(saveData, island));
@@ -41,6 +44,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             viewModel.CreateInventory();
             Console.WriteLine("WAIT FOR ASYNC\n");
             viewModel.CurrentChunk = readFileTask.Result;
+            virtualGridView.Init(saveData.Island, viewModel);
 
             LayerBar.UpdateSeaLevel(30); //Change
 
@@ -90,10 +94,26 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
         {
             try
             {
+                if (_pathToSTGDAT == null)
+
+                //Rn auto breaks it...
+                saveData.SaveSTGDATCompressedFile(saveData.FolderPath + "STGDAT" + saveData.Island.islandNumber.ToString("D2") + ".BIN");
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                MessageBox.Show(ex.Message, "Failed to save file", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void SaveSTGDATAs(object sender, RoutedEventArgs e)
+        {
+            try
+            {
                 var saveFileDialog = new SaveFileDialog
                 {
                     Filter = "STGDAT.BIN|STGDAT*.BIN|AUTOSTGDAT.BIN|AUTOSTGDAT.BIN",
-                    FileName = "STGDAT"+ saveData.Island.islandNumber.ToString("D2") + ".BIN",
+                    FileName = "STGDAT" + saveData.Island.islandNumber.ToString("D2") + ".BIN",
 
                 };
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,6 +33,8 @@ namespace DQB2IslandEditor.DataPK
 
         private string folderPath;
         private string CMNDATpath;
+
+        public string FolderPath => folderPath;
 
         public Island Island;
         public Dictionary<byte, IslandShell> islandCMNDATdata;
@@ -114,7 +117,7 @@ namespace DQB2IslandEditor.DataPK
             var uncompressedFileBytes = UncompressBytes(compressedFileBytes.Item2);
 
             //Now we load in the data
-            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0);
+            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata[island]);
         }
         public void OpenSTGDATCompressedFile() //AutoSTGDAT
         {
@@ -128,7 +131,7 @@ namespace DQB2IslandEditor.DataPK
             var uncompressedFileBytes = UncompressBytes(compressedFileBytes.Item2);
 
             //Now we load in the data
-            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0);
+            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata); //Oh no. This would be on auto cmndat... 
         }
         public void OpenSTGDATCompressedFile(string path)
         {
@@ -141,7 +144,7 @@ namespace DQB2IslandEditor.DataPK
             var uncompressedFileBytes = UncompressBytes(compressedFileBytes.Item2);
 
             //Now we load in the data
-            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0);
+            Island = new Island(compressedFileBytes.Item1, uncompressedFileBytes, 0, islandCMNDATdata);
         }
 
         /*

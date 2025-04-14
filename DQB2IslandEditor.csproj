@@ -40,6 +40,17 @@
     <None Remove="Images\Inventory\T-0001.png" />
     <None Remove="Images\Inventory\TileSheetOne.png" />
     <None Remove="Images\Inventory\TileSheetTwo.png" />
+    <None Remove="Images\Islands\01.png" />
+    <None Remove="Images\Islands\02.png" />
+    <None Remove="Images\Islands\03.png" />
+    <None Remove="Images\Islands\04.png" />
+    <None Remove="Images\Islands\05.png" />
+    <None Remove="Images\Islands\09.png" />
+    <None Remove="Images\Islands\10.png" />
+    <None Remove="Images\Islands\12.png" />
+    <None Remove="Images\Islands\13.png" />
+    <None Remove="Images\Islands\14.png" />
+    <None Remove="Images\Islands\16.png" />
     <None Remove="Images\UI\arrow.png" />
     <None Remove="Images\UI\arrowD.png" />
     <None Remove="Images\UI\ArrowY.png" />
@@ -70,6 +81,17 @@
     </Content>
     <Resource Include="Images\Inventory\SheetChunky.png" />
     <Resource Include="Images\Inventory\SheetRetro.png" />
+    <Resource Include="Images\Islands\01.png" />
+    <Resource Include="Images\Islands\02.png" />
+    <Resource Include="Images\Islands\03.png" />
+    <Resource Include="Images\Islands\04.png" />
+    <Resource Include="Images\Islands\05.png" />
+    <Resource Include="Images\Islands\09.png" />
+    <Resource Include="Images\Islands\10.png" />
+    <Resource Include="Images\Islands\12.png" />
+    <Resource Include="Images\Islands\13.png" />
+    <Resource Include="Images\Islands\14.png" />
+    <Resource Include="Images\Islands\16.png" />
     <Resource Include="Info\Blocks.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

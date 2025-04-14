@@ -83,11 +83,11 @@ namespace DQB2IslandEditor.InterfacePK
             }
         }
 
-        public string CurrentIslandName
+        public ImageSource CurrentIslandName
         {
             get
             {
-                return DataBaseReading.GetIslandName(_selectedIsland);
+                return DataBaseReading.GetIslandNameImage(_selectedIsland);
             }
         }
 
@@ -101,17 +101,17 @@ namespace DQB2IslandEditor.InterfacePK
 
         public void SelectedIslandRotate(int movement)
         {
-            byte newIsland = SelectedIsland;
+            int newIsland = SelectedIsland;
             do
             {
-                newIsland = (byte)(newIsland + movement);
+                newIsland = newIsland + movement;
                 //From 01 to 32
                 if (newIsland == 33) newIsland = 0;
                 else if (newIsland < 0) newIsland = 32;
                 //if (newIsland == 0) saveData.ValidSTGDAT(); //Needs more work.
                 //else 
-            } while (!saveData.ValidSTGDAT(newIsland));
-            SelectedIsland = newIsland;
+            } while (!saveData.ValidSTGDAT((byte)newIsland));
+            SelectedIsland = (byte)newIsland;
         }
 
         private async void CreateMinimap()

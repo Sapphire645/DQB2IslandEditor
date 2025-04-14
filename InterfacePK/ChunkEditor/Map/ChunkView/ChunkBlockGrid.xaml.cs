@@ -61,6 +61,28 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
         {
             viewModel.CurrentLayer = (byte)(viewModel.CurrentLayer + short.Parse((sender as Button).Tag.ToString()));
         }
-        
+
+        //For more intuitive movement.
+        private void ScrollUpdate(object sender, MouseWheelEventArgs e)
+        {
+            if (e.Delta != 0)
+            {
+                Point localPosition = e.GetPosition(this);
+                Point relativePosition = new Point((localPosition.X / ActualWidth) - 0.5, (localPosition.Y / ActualHeight) - 0.5);
+                //If the difference is too low then dont move.
+                if (Math.Abs(Math.Abs(relativePosition.X) - Math.Abs(relativePosition.Y)) < 0.08) return;
+
+                if (Math.Abs(relativePosition.X) > Math.Abs(relativePosition.Y))
+                    if (e.Delta > 0)
+                        viewModel.ChangeChunk("r");
+                    else
+                        viewModel.ChangeChunk("l");
+                else
+                    if (e.Delta > 0)
+                        viewModel.ChangeChunk("u");
+                    else
+                        viewModel.ChangeChunk("d");
+            }
+        }
     }
 }

@@ -88,29 +88,50 @@
             <MenuItem Header="Island File" Padding="4,0" FontWeight="Bold">
                 <MenuItem Header="Open STGDAT.bin" Click="OpenSTGDAT" Padding="18,2" FontWeight="Normal"/>
                 <MenuItem Header="Save STGDAT.bin" Click="SaveSTGDAT" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="Save STGDAT.bin as..." Click="SaveSTGDATAs" Padding="18,2" FontWeight="Normal"/>
                 <Grid Margin="3,1" IsHitTestVisible="False">
                     <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Left"/>
                     <Rectangle Fill="LightGray" VerticalAlignment="Center" Height="1" />
                     <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Right"/>
                 </Grid>
-                <MenuItem Header="Import STGDAT.bin" Padding="18,2" FontWeight="Normal"/>
-                <MenuItem Header="Export STGDAT.bin" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Import STGDAT.bin" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Export STGDAT.bin" Padding="18,2" FontWeight="Normal"/>
             </MenuItem>
-            <MenuItem Header="Minimap" Background="Black"  Padding="4,0" FontWeight="Bold">
-                <MenuItem Header="Open CMNDAT.bin" Padding="18,2" FontWeight="Normal"/>
+            <MenuItem Header="Map tools" Background="Black"  Padding="4,0" FontWeight="Bold">
+                <MenuItem Header="x Use 'Top View Map' in 'Map' tab" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Use generated minimap in 'Map' tab" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Use game's minimap in 'Map' tab" Padding="18,2" FontWeight="Normal"/>
                 <Grid Margin="3,1" IsHitTestVisible="False">
                     <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Left"/>
                     <Rectangle Fill="LightGray" VerticalAlignment="Center" Height="1" />
                     <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Right"/>
                 </Grid>
-                <MenuItem Header="Export minimap as .png" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Replace game minimap with generated minimap" Padding="18,2" FontWeight="Normal"/>
+                <Grid Margin="3,1" IsHitTestVisible="False">
+                    <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Left"/>
+                    <Rectangle Fill="LightGray" VerticalAlignment="Center" Height="1" />
+                    <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Right"/>
+                </Grid>
+                <MenuItem Header="x Export 'Top View Map' as .png..." Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Export generated minimap as .png..." Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Export game minimap as .png..." Padding="18,2" FontWeight="Normal"/>
             </MenuItem>
             <MenuItem Header="Chunk Grid" Padding="4,0" FontWeight="Bold">
-                <MenuItem Header="Edit Chunk Grid / Virtual Chunks" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Edit Chunk Grid / Virtual Chunks" Padding="18,2" FontWeight="Normal"/>
+            </MenuItem>
+            <MenuItem Header="Edit" Padding="4,0" FontWeight="Bold">
+                <MenuItem Header="x Pattern..." Padding="18,2" FontWeight="Normal"/>
+                <Grid Margin="3,1" IsHitTestVisible="False">
+                    <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Left"/>
+                    <Rectangle Fill="LightGray" VerticalAlignment="Center" Height="1" />
+                    <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Right"/>
+                </Grid>
+                <MenuItem Header="x Flatten Island" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Superflat options..." Padding="18,2" FontWeight="Normal"/>
             </MenuItem>
             <MenuItem Header="Data" Padding="4,0" FontWeight="Bold">
-                <MenuItem Header="Count all blocks in island" Padding="18,2" FontWeight="Normal"/>
-                <MenuItem Header="Count all items in island" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Count all blocks in island" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="x Count all items in island" Padding="18,2" FontWeight="Normal"/>
             </MenuItem>
         </Menu>
         <Rectangle DockPanel.Dock="Top" Fill="#232337" Height="3"/>
@@ -133,6 +154,9 @@
                             <inventory:InventoryMenu x:Name="inventoryMenu" Margin="10,10,10,5"/>
                         </TabItem>
                         <TabItem Background="Black" Style="{StaticResource MapHeader}">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Foreground="Black" >
+                                <layer:VirtualGridView x:Name="virtualGridView"/>
+                            </ScrollViewer>
                         </TabItem>
                     </TabControl>
                     <Grid Grid.Column="1">

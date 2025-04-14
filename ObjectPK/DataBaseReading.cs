@@ -1,6 +1,7 @@
 ﻿using DQB2IslandEditor.DataPK;
 using System.IO;
 using System.Windows;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Resources;
 
@@ -115,6 +116,19 @@ namespace DQB2IslandEditor.ObjectPK
         public static string GetIslandName(byte island)
         {
             return _islands[island];
+        }
+
+        public static ImageSource GetIslandNameImage(byte island)
+        {
+            try
+            {
+                return new BitmapImage(new Uri($"pack://application:,,,/Images/Islands/{island:00}.png"));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
         }
         public static float GetTileSize(bool chunky)
         {

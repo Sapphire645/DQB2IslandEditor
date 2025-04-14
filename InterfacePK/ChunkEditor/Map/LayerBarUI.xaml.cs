@@ -120,5 +120,20 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
         //    UpButton.Margin = new Thickness(YLayerLine.ActualWidth / 2, RadioButtonPosition.Y - (7 * YLayerLine.ActualHeight / 960) - 20, 0, 0);
         //    DownButton.Margin = new Thickness(YLayerLine.ActualWidth / 2, RadioButtonPosition.Y - (7 * YLayerLine.ActualHeight / 960) + 20, 0, 0);
         }
+
+        private void ScrollUpdate(object sender, System.Windows.Input.MouseWheelEventArgs e)
+        {
+            if (e.Delta != 0)
+            {
+                if (e.Delta > 0)
+                {
+                    ((ChunkEditorViewModel)DataContext).CurrentLayer += 1;
+                }
+                else
+                {
+                    ((ChunkEditorViewModel)DataContext).CurrentLayer -= 1;
+                }
+            }
+        }
     }
 }
