@@ -40,6 +40,10 @@ namespace DQB2IslandEditor.InterfacePK
         {
             viewModel.OpenSTGDAT();
         }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            (sender as Button).Content= "Not Implemented yet";
+        }
 
         private void SelectedIslandLeft(object sender, RoutedEventArgs e)
         {

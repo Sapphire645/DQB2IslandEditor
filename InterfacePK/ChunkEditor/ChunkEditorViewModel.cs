@@ -64,7 +64,6 @@ namespace DQB2IslandEditor.InterfacePK
         private ushort _currentChunk = 0;
         private byte _currentLayer = 0;
 
-
         public ushort CurrentChunk { get {
                 return _currentChunk;
             }
@@ -152,12 +151,24 @@ namespace DQB2IslandEditor.InterfacePK
 
         private byte _selectedTool;
 
+        private byte _paintToolSize = 1;
+
         public byte SelectedTool { get { return _selectedTool; }
             set {
                 _selectedTool = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedTool)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedToolImage)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedToolName)));
+            }
+        }
+
+        public byte PaintToolSize
+        {
+            get { return _paintToolSize; }
+            set
+            {
+                _paintToolSize = value;
+                SelectedTool = 2;
             }
         }
         public string SelectedToolName => _selectedTool == 0 ? "Select" : _selectedTool == 1 ? "Area" : _selectedTool == 2 ? "Paint" : "Chisel";
@@ -280,26 +291,69 @@ namespace DQB2IslandEditor.InterfacePK
 
         private void TileAura_Create(ushort offset)
         {
-            if (offset % 32 != 0) //Left
-                chunkLayer[offset - 1].IsHovered();
-            if (offset % 32 != 31) //Right
-                chunkLayer[offset + 1].IsHovered();
-            if (offset / 32 != 0) //Up
-                chunkLayer[offset - 32].IsHovered();
-            if (offset / 32 != 31) //Down
-                chunkLayer[offset + 32].IsHovered();
+            if(_paintToolSize > 0)
+            {
+                if (offset % 32 != 0) //Left
+                    chunkLayer[offset - 1].IsHovered();
+                if (offset % 32 != 31) //Right
+                    chunkLayer[offset + 1].IsHovered();
+                if (offset / 32 != 0) //Up
+                    chunkLayer[offset - 32].IsHovered();
+                if (offset / 32 != 31) //Down
+                    chunkLayer[offset + 32].IsHovered();
+            }
+            if(_paintToolSize > 1)
+            {
+                if (offset % 32 != 0) //Left
+                {
+                    if (offset / 32 != 0) //Up
+                        chunkLayer[offset - 33].IsHovered();
+                    if (offset / 32 != 31) //Down
+                        chunkLayer[offset + 31].IsHovered();
+                }
+                if (offset % 32 != 31) //right
+                {
+                    if (offset / 32 != 0) //Up
+                        chunkLayer[offset - 31].IsHovered();
+                    if (offset / 32 != 31) //Down
+                        chunkLayer[offset + 33].IsHovered();
+                }
+            }
+
         }
         private void TileAura_SetBlock(ushort offset)
         {
             Offset_SetBlock(offset);
-            if (offset % 32 != 0)
-                Offset_SetBlock((ushort)(offset-1));
-            if (offset % 32 != 31)
-                Offset_SetBlock((ushort)(offset+1));
-            if (offset / 32 != 0)
-                Offset_SetBlock((ushort)(offset -32));
-            if (offset / 32 != 31)
-                Offset_SetBlock((ushort)(offset + 32));
+            if (_paintToolSize > 0)
+            {
+                if (offset % 32 != 0)
+                    Offset_SetBlock((ushort)(offset - 1));
+                if (offset % 32 != 31)
+                    Offset_SetBlock((ushort)(offset + 1));
+                if (offset / 32 != 0)
+                    Offset_SetBlock((ushort)(offset - 32));
+                if (offset / 32 != 31)
+                    Offset_SetBlock((ushort)(offset + 32));
+            }
+            if (_paintToolSize > 1)
+            {
+                if (offset % 32 != 0) //Left
+                {
+                    if (offset / 32 != 0) //Up
+                        Offset_SetBlock((ushort)(offset - 33));
+                    if (offset / 32 != 31) //Down
+                        Offset_SetBlock((ushort)(offset +31));
+                }
+                if (offset % 32 != 31) //right
+                {
+                    if (offset / 32 != 0) //Up
+                        Offset_SetBlock((ushort)(offset - 31));
+                    if (offset / 32 != 31) //Down
+                        Offset_SetBlock((ushort)(offset + 33));
+                }
+            }
+           
+           
         }
         private void Offset_SetBlock(ushort offset)
         {
@@ -311,14 +365,34 @@ namespace DQB2IslandEditor.InterfacePK
 
         private void TileAura_Destroy(ushort offset)
         {
-            if (offset % 32 != 0) //Left
-                chunkLayer[offset - 1].IsUnHovered();
-            if (offset % 32 != 31) //Right
-                chunkLayer[offset + 1].IsUnHovered();
-            if (offset / 32 != 0) //Up
-                chunkLayer[offset - 32].IsUnHovered();
-            if (offset / 32 != 31) //Down
-                chunkLayer[offset + 32].IsUnHovered();
+            if (_paintToolSize > 0)
+            {
+                if (offset % 32 != 0) //Left
+                    chunkLayer[offset - 1].IsUnHovered();
+                if (offset % 32 != 31) //Right
+                    chunkLayer[offset + 1].IsUnHovered();
+                if (offset / 32 != 0) //Up
+                    chunkLayer[offset - 32].IsUnHovered();
+                if (offset / 32 != 31) //Down
+                    chunkLayer[offset + 32].IsUnHovered();
+            }
+            if (_paintToolSize > 1)
+            {
+                if (offset % 32 != 0) //Left
+                {
+                    if (offset / 32 != 0) //Up
+                        chunkLayer[offset - 33].IsUnHovered();
+                    if (offset / 32 != 31) //Down
+                        chunkLayer[offset + 31].IsUnHovered();
+                }
+                if (offset % 32 != 31) //right
+                {
+                    if (offset / 32 != 0) //Up
+                        chunkLayer[offset - 31].IsUnHovered();
+                    if (offset / 32 != 31) //Down
+                        chunkLayer[offset + 33].IsUnHovered();
+                }
+            }
         }
         //Update favourite -> Right clicking anything on the inventory, right click dropicking a chunk tile 
         public void UpdateFavouriteObject(ObjectInfo selectedObject)

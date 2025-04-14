@@ -72,7 +72,7 @@
             <Viewbox Name="MenuViewbox" Stretch="Uniform" Margin="10,0">
                 <StackPanel VerticalAlignment="Center" >
                     <Button Name="ButtonOfMenu" Style="{StaticResource MenuButton}" Content="Open Chunk Editor" Click="Button_Click_1" IsEnabled="{Binding ButtonV}" Margin="3"/>
-                    <Button Style="{StaticResource MenuButton}" Content="Open Minimap Editor" IsEnabled="{Binding ButtonV}" Margin="3"/>
+                    <Button Style="{StaticResource MenuButton}" Content="Open Minimap Editor" IsEnabled="{Binding ButtonV}" Click="Button_Click_2" Margin="3"/>
                 </StackPanel>
             </Viewbox>
             <Grid Grid.Column="1"  Visibility="{Binding SaveDataVisibility}">

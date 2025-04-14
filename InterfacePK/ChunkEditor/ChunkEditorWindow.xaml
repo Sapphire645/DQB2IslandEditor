@@ -12,6 +12,7 @@
         SnapsToDevicePixels="True"
         Title="MainWindow" Height="800" Width="1500" SizeChanged="RecalculateSize" MinHeight="800" MinWidth="1500">
     <Window.Resources>
+
         <Style TargetType="TabItem" x:Key="InventoryHeader">
             <Setter Property="Template">
                 <Setter.Value>
@@ -133,6 +134,7 @@
                 <MenuItem Header="x Count all blocks in island" Padding="18,2" FontWeight="Normal"/>
                 <MenuItem Header="x Count all items in island" Padding="18,2" FontWeight="Normal"/>
             </MenuItem>
+            <TextBlock Name="SavedText" Text="Island Saved!" Foreground="Lime" FontStyle="Italic" Opacity="0" IsHitTestVisible="False"/>
         </Menu>
         <Rectangle DockPanel.Dock="Top" Fill="#232337" Height="3"/>
         <UniformGrid Rows="2">
@@ -196,13 +198,25 @@
                             <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
                                 <Image Name="Tool_Area_1" Source="{Binding ToolImageOne}"/>
                             </Button>
-                            <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
-                                <Image Name="Tool_Paint_2" Source="{Binding ToolImageTwo}"/>
-                            </Button>
+                            <ToggleButton Name="Paint_tool" Background="Transparent" Height="40" BorderThickness="0">
+                                <Image Name="Tool_Paint_2" Source="{Binding ToolImageTwo}" IsHitTestVisible="False"/>
+                            </ToggleButton>
                             <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
                                 <Image Name="Tool_Chisel_3" Source="{Binding ToolImageThree}"/>
                             </Button>
                         </UniformGrid>
+                        <Popup Name="PaintPopup" PlacementTarget="{Binding ElementName=Paint_tool}"
+                           Placement="Bottom"
+                           IsOpen="{Binding IsChecked, ElementName=Paint_tool}"
+                           StaysOpen="False">
+                            <Border Background="Black" BorderBrush="#232337" BorderThickness="1" Padding="5">
+                                <StackPanel Orientation="Vertical">
+                                <Button Background="Transparent" BorderThickness="0" Content="1x1"  Foreground="White" Padding="5" Click="ToolChange1"/>
+                                <Button Background="Transparent" BorderThickness="0" Content="3x3 ⬤"  Foreground="White" Padding="5" Click="ToolChange2"/>
+                                <Button Background="Transparent" BorderThickness="0" Content="3x3 ■"  Foreground="White" Padding="5" Click="ToolChange3"/>
+                                </StackPanel>
+                            </Border>
+                        </Popup>
                     </Grid>
                 </Grid>
             </Border>

@@ -10,6 +10,9 @@ using System.Net.WebSockets;
 using Microsoft.Win32;
 using System.ComponentModel;
 using DQB2IslandEditor.InterfacePK.ChunkEditor.Map;
+using System.Windows.Media.Animation;
+using System.Windows.Media;
+using DQB2IslandEditor.ObjectPK.Container;
 
 
 namespace DQB2IslandEditor.InterfacePK.ChunkEditor
@@ -21,8 +24,6 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
     {
         private ChunkEditorViewModel viewModel;
         private SaveData saveData;
-
-        private string _pathToSTGDAT = null;
         public ChunkEditorWindow(SaveData saveData, byte island)
         {
             Task<ushort> readFileTask = Task.Run(() => ReadFile(saveData, island));
@@ -94,10 +95,10 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
         {
             try
             {
-                if (_pathToSTGDAT == null)
-
-                saveData.SaveSTGDATCompressedFile(saveData.Island.STGDATPath);
-
+                SavedText.Opacity = 1;
+                SavedText.Text = "Saving...";
+                SavedText.Foreground = Brushes.Gold;
+                Task save = Task.Run(() => SaveSTGDATAsync(saveData.Island.STGDATPath));
             }
             catch (Exception ex)
             {
@@ -117,9 +118,10 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
                 };
 
                 if (saveFileDialog.ShowDialog() == false) return;
-
-                //Thread this
-                saveData.SaveSTGDATCompressedFile(saveFileDialog.FileName);
+                SavedText.Opacity = 1;
+                SavedText.Text = "Saving...";
+                SavedText.Foreground = Brushes.Gold;
+                Task save = Task.Run(() => SaveSTGDATAsync(saveFileDialog.FileName));
 
             }
             catch (Exception ex)
@@ -129,11 +131,47 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             }
         }
 
+        private async void SaveSTGDATAsync(string path)
+        {
+            //I think this should wooork....
+            saveData.SaveSTGDATCompressedFile(path);
+
+            Application.Current.Dispatcher.Invoke(new Action(() =>
+            {
+                SavedText.Text = "Island Saved!";
+                SavedText.Foreground = Brushes.Lime;
+                var fadeIn = new DoubleAnimation
+                {
+                    From = 1,
+                    To = 0,
+                    BeginTime = TimeSpan.FromSeconds(2),
+                    Duration = TimeSpan.FromSeconds(2),
+                    EasingFunction = new QuadraticEase { EasingMode = EasingMode.EaseInOut }
+                };
+                SavedText.BeginAnimation(UIElement.OpacityProperty, fadeIn);
+            }));
+        }
 
         private void ToolClick(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
             viewModel.SelectedTool = byte.Parse((button.Content as Image).Name.Split("_").Last());
+        }
+
+        private void ToolChange1(object sender, RoutedEventArgs e)
+        {
+            viewModel.PaintToolSize = 0;
+            PaintPopup.IsOpen = false;
+        }
+        private void ToolChange2(object sender, RoutedEventArgs e)
+        {
+            viewModel.PaintToolSize = 1;
+            PaintPopup.IsOpen = false;
+        }
+        private void ToolChange3(object sender, RoutedEventArgs e)
+        {
+            viewModel.PaintToolSize = 2;
+            PaintPopup.IsOpen = false;
         }
     }
 }
