@@ -176,8 +176,17 @@ namespace DQB2IslandEditor.ObjectPK
                     }
                     else
                     {
-                        layers[0] = new CroppedBitmap(_minimapSheetRetro,
+                        try
+                        {
+                            layers[0] = new CroppedBitmap(_minimapSheetRetro,
                                   new Int32Rect((tile.Type % MINIMAP_SHEET_DIMENSION) * size, (tile.Type / MINIMAP_SHEET_DIMENSION) * size, size, size));
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Error: " + tile.Type);
+                            layers[0] = new CroppedBitmap(_minimapSheetRetro,
+                                  new Int32Rect(0, 0, size, size));
+                        }
                         _minimapStorageRetro[tile.Type] = layers[0];
                         _minimapStorageRetro[tile.Type].Freeze();
                     }
