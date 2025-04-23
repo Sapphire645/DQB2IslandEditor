@@ -1,9 +1,12 @@
 ﻿using DQB2IslandEditor.DataPK;
+using System.Drawing;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Resources;
+using System.Xml.Linq;
 
 namespace DQB2IslandEditor.ObjectPK
 {
@@ -35,6 +38,10 @@ namespace DQB2IslandEditor.ObjectPK
         private const byte MINIMAP_RETRO_TILE_SIZE = 16;
         private const byte MINIMAP_CHUNKY_TILE_SIZE = 1;
         private const byte MINIMAP_SHEET_DIMENSION = 32;
+
+        public static Dictionary<uint, BlockInfo> BLOCK_INFO_DICTIONARY;
+
+        public static Dictionary<uint, ItemInfo> ITEM_INFO_DICTIONARY;
 
         private static readonly Dictionary<byte,byte> _mountain = new Dictionary<byte, byte>()
         {
@@ -116,6 +123,11 @@ namespace DQB2IslandEditor.ObjectPK
         public static string GetIslandName(byte island)
         {
             return _islands[island];
+        }
+
+        public static ImageSource ValueChiselImage(Chisel chisel)
+        {
+            return new BitmapImage(new Uri($"pack://application:,,,/Images/Chisel/{(byte)chisel:00}.png"));
         }
 
         public static ImageSource GetIslandNameImage(byte island)
@@ -202,7 +214,7 @@ namespace DQB2IslandEditor.ObjectPK
         }
 
 
-        public static Dictionary<uint, BlockInfo> ReadBlockFile(string filepath)
+        public static void ReadBlockFile()
         {
             //Loads sheets
             _sheetOneBlock = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_BLOCK_ONE_PATH));
@@ -217,7 +229,7 @@ namespace DQB2IslandEditor.ObjectPK
             _sheetTwoTile.Freeze();
 
             var blockList = new Dictionary<uint, BlockInfo>();
-            if (!System.IO.File.Exists(BLOCK_EXTRA_PATH)) return null; //Crash lmao
+            if (!System.IO.File.Exists(BLOCK_EXTRA_PATH)) return; //Crash lmao
 
             String[] blockLines = ReadEmbeddedResource(BLOCK_PATH).Split("\n");
             CroppedBitmap blockIcon;
@@ -282,8 +294,19 @@ namespace DQB2IslandEditor.ObjectPK
                     blockList[uint.Parse(values[0])].UpdateExtraData(values[1], values[2], values[3], "This is a block, holy shit.", values[4]);
                 }
             }
-            return blockList;
+            BLOCK_INFO_DICTIONARY =  blockList;
         }
+        public static void ReadItemFile()
+        {
+            var itemList = new Dictionary<uint, ItemInfo>();
+            //I'll do a placeholder item for now.
+            itemList.Add(0, new ItemInfo(0,0,0,Colour.Plain,"Placeholder", 
+                new BitmapImage(new Uri("pack://application:,,,/Images/Inventory/placeholder.png")),
+                new BitmapImage(new Uri("pack://application:,,,/Images/Inventory/placeholder.png"))
+                ));
+            ITEM_INFO_DICTIONARY = itemList;
+        }
+
         public static List<(uint, uint)> BlockParity()
         {
             var blockList = new List<(uint, uint)>();

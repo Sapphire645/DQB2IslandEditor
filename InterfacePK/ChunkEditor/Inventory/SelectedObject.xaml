@@ -11,7 +11,7 @@
         <Button Name="SelButton" Background="#232337" BorderThickness="2" Margin="6" ToolTipService.InitialShowDelay="5" BorderBrush="Orange">
             <Button.ToolTip>
                 <ToolTip Background="Transparent" BorderThickness="0">
-                    <container:InventoryInfo objectInfoPanel="{Binding SelectedBlock}"/>
+                    <container:InventoryInfo objectInfoPanel="{Binding SelectedObject}"/>
                 </ToolTip>
             </Button.ToolTip>
             <Button.Template>
@@ -34,9 +34,9 @@
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Button.Template>
-            <Image Source="{Binding SelectedBlock.objectInventoryImage}" Margin="6"/>
+            <Image Source="{Binding SelectedObject.objectInventoryImage}" Margin="6"/>
         </Button>
-        <Border Background="{Binding SelectedBlock.colourBrush}" Visibility="{Binding SelectedBlock.colourTag, FallbackValue=Collapsed}" 
+        <Border Background="{Binding SelectedObject.colourBrush}" Visibility="{Binding SelectedObject.colourTag, FallbackValue=Collapsed}" 
         BorderBrush="black" BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="14" Height="23" CornerRadius="4" Margin="5"/>
     </Grid>
 </UserControl>

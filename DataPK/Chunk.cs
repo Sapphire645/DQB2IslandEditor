@@ -88,8 +88,6 @@ namespace DQB2IslandEditor.DataPK
         public void AddItem(ItemInstance item)
         {
             itemInstances.Add(item);
-            //Lemme do a print of the item here as debbuging
-            Console.WriteLine(item.ToString());
         }
         public void SetBlockFromCoords(BlockInstance blockInstance, byte x, byte z, byte layer)
         {

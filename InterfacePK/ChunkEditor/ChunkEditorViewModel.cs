@@ -7,12 +7,14 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 
@@ -22,33 +24,40 @@ namespace DQB2IslandEditor.InterfacePK
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        public event PropertyChangedEventHandler? CreationTabValueChanged;
+
         private SaveData saveData;
 
         private ChunkEditorWindow chunkEditorWindow;
         private TileContainer[] chunkLayer;
 
-        private ObjectInfo _selectedObject = null;
+        //--------------------------------------------------------- Creation tab ----------------------------------------------------------------------
 
-        private BlockInfo _selectedBlock = null;
-        private ItemInfo _selectedItem = null;
-
-        //Extender values
+        private ObjectInfo _selectedObject = null; //This is the one you will set.
         private Chisel _editValuesChisel;
         private bool _editValuesBuilderPlaced;
+        public ObjectInfo SelectedObject
+        {
+            get
+            {
+                return _selectedObject;
+            }
+            set
+            {
+                _selectedObject = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedObject)));
+            }
+        }
         public Chisel ValueChisel
         {
             get
             { return _editValuesChisel;  }
             set
-            { _editValuesChisel = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ValueChisel)));
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ValueChiselImage)));
+            { _editValuesChisel = value; 
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ValueChisel)));
+                CreationTabValueChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ValueChisel)));
             }
         }
-        public string ValueChiselImage
-        {
-            get { return $"/Images/Chisel/{(byte)_editValuesChisel:00}.png"; }
-        }
-            
         public bool ValueBuilderPlaced
         {
             get
@@ -56,6 +65,71 @@ namespace DQB2IslandEditor.InterfacePK
             set
             { _editValuesBuilderPlaced = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ValueBuilderPlaced))); }
         }
+
+        //--------------------------------------------------------- Editing tab ----------------------------------------------------------------------
+        private ushort _selectedTileOffset = 0;
+
+        public ushort SelectedTileOffset
+        {
+            get
+            {
+                return _selectedTileOffset;
+            }
+            private set
+            {
+                _selectedTileOffset = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EditingBlockInfo)));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EditingValueChisel)));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EditingValueOverflow)));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItems)));
+            }
+        }
+        //Block Info
+        public BlockInfo EditingBlockInfo
+        {
+            get
+            { return chunkLayer[_selectedTileOffset].blockInfo.Value; }
+            set
+            {
+                chunkLayer[_selectedTileOffset].blockInstance.UpdateBlock(value.objectId);
+                chunkLayer[_selectedTileOffset].blockInfo.Value = value;
+
+                saveData.Island.SetBlock(_currentChunk, _currentLayer, (byte)(_selectedTileOffset % Chunk.X_DIMENSION), 
+                    (byte)(_selectedTileOffset / Chunk.Z_DIMENSION), chunkLayer[_selectedTileOffset].blockInstance);
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EditingBlockInfo)));
+            }
+        }
+        //Chisel 
+        public Chisel EditingValueChisel
+        {
+            get
+            { return chunkLayer[_selectedTileOffset].blockInstance.publicChiselID; }
+            set
+            {
+                chunkLayer[_selectedTileOffset].blockInstance.UpdateBlock(value);
+
+                saveData.Island.SetBlock(_currentChunk, _currentLayer, (byte)(_selectedTileOffset % Chunk.X_DIMENSION),
+                    (byte)(_selectedTileOffset / Chunk.Z_DIMENSION), chunkLayer[_selectedTileOffset].blockInstance);
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EditingValueChisel)));
+            }
+        }
+        //Overflow
+        public bool EditingValueOverflow
+        {
+            get
+            { return chunkLayer[_selectedTileOffset].blockInstance.publicBuilderPlaced; }
+            set
+            {
+                chunkLayer[_selectedTileOffset].blockInstance.UpdateBlock(value);
+
+                saveData.Island.SetBlock(_currentChunk, _currentLayer, (byte)(_selectedTileOffset % Chunk.X_DIMENSION),
+                    (byte)(_selectedTileOffset / Chunk.Z_DIMENSION), chunkLayer[_selectedTileOffset].blockInstance);
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EditingValueOverflow)));
+            }
+        }
+        public ItemInstance[] SelectedItems => chunkEditorWindow.chunkBlockGrid.GetItemsInOffset(_selectedTileOffset);
+
+        //-----------------------------------------------------------------------------------------------------------------
 
         private bool _showMinimapGrid = true;
         private bool _showFullGrid = false;
@@ -93,38 +167,7 @@ namespace DQB2IslandEditor.InterfacePK
         }
         public byte CurrentChunkX => (byte)(_currentChunk % Island.GRID_DIMENSION);
         public byte CurrentChunkY => (byte)(_currentChunk / Island.GRID_DIMENSION);
-        public Dictionary<uint, BlockInfo> fullBlockList { get; set; }
-        public ObjectInfo SelectedObject { get {
-                return _selectedObject;
-            } set {
-                _selectedObject = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedObject)));
-            } 
-        }
-        public BlockInfo SelectedBlock
-        {
-            get
-            {
-                return _selectedBlock;
-            }
-            set
-            {
-                _selectedBlock = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedBlock)));
-            }
-        }
-        public ItemInfo SelectedItem
-        {
-            get
-            {
-                return _selectedItem;
-            }
-            set
-            {
-                _selectedItem = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
-            }
-        }
+      
         public bool ShowMinimapGrid { get { return _showMinimapGrid; } set {
                 _showMinimapGrid = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowMinimapGrid)));
@@ -182,14 +225,11 @@ namespace DQB2IslandEditor.InterfacePK
         public ChunkEditorViewModel(ChunkEditorWindow mainWindow, SaveData saveData) {
             this.chunkEditorWindow = mainWindow;
             this.saveData = saveData;
-
-            fullBlockList = DataBaseReading.ReadBlockFile("a"); //Temporal
-
             Console.WriteLine("0");
         }
         public void CreateInventory()
         {
-            IDictionary<uint, ObjectInfo> objectDic = fullBlockList.ToDictionary(kvp => kvp.Key, kvp => (ObjectInfo)kvp.Value);
+            IDictionary<uint, ObjectInfo> objectDic = DataBaseReading.BLOCK_INFO_DICTIONARY.ToDictionary(kvp => kvp.Key, kvp => (ObjectInfo)kvp.Value);
             chunkEditorWindow.inventoryMenu.CreateInventory(objectDic, chunkEditorWindow);
 
             chunkEditorWindow.selectedObject.SelButton.Click += (_, _) => { UpdateSelectedObject(_selectedObject); };
@@ -207,17 +247,25 @@ namespace DQB2IslandEditor.InterfacePK
                 tile.Tile.MouseLeave += (_, _) => { BlockTile_TileLeave(tile.offset); };
                 tile.Tile.MouseLeftButtonUp += (_, _) => { BlockTile_Release(tile.offset); };
             }
-           
+            //This is a little bit of a mess not gonna lie, lets just delegate the second part to the grid itself
+            //Yeet.
+            chunkEditorWindow.chunkBlockGrid.SetActions(ItemTile_TileEnter, ItemTile_TileLeave, ItemTile_LeftClick, ItemTile_Release);
         }
 
-        //Change selected object -> Selecting anything on the inventory, dropicking a chunk tile
+        //Change selected object -> Selecting anything on the inventory
         public void UpdateSelectedObject(ObjectInfo selectedObject)
         {
             SelectedObject = selectedObject;
-            if(selectedObject is BlockInfo)
-                SelectedBlock = selectedObject as BlockInfo;
-            else
-                SelectedItem = selectedObject as ItemInfo;
+
+            if(chunkEditorWindow.toolMenu.CurrentTab == 1)
+                if (selectedObject is BlockInfo)
+                    EditingBlockInfo = selectedObject as BlockInfo;
+                else
+                {
+                    chunkEditorWindow.chunkBlockGrid.AddItemToOffset(_selectedTileOffset, selectedObject as ItemInfo);
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItems)));
+                }
+                    
         }
         public void BlockTile_LeftClick(ushort offset, uint blockID)
         {
@@ -225,8 +273,9 @@ namespace DQB2IslandEditor.InterfacePK
             switch (SelectedTool)
             {
                 case 0: //Select
-                    SelectedObject = fullBlockList[blockID];
-                    SelectedBlock = fullBlockList[blockID];
+                    //This is what happens when you click a block.
+                    SelectedObject = DataBaseReading.BLOCK_INFO_DICTIONARY[blockID];
+                    SelectedTileOffset = offset;
                     //Block
                     ValueChisel = chunkLayer[offset].blockInstance.publicChiselID;
                     ValueBuilderPlaced = chunkLayer[offset].blockInstance.publicBuilderPlaced;
@@ -243,8 +292,8 @@ namespace DQB2IslandEditor.InterfacePK
                     saveData.Island.SetBlock(_currentChunk, _currentLayer, (byte)(offset % Chunk.X_DIMENSION), (byte)(offset / Chunk.Z_DIMENSION), chunkLayer[offset].blockInstance);
                     break;
             }
-           
         }
+
         public void BlockTile_TileEnter(ushort offset)
         {
             switch (SelectedTool)
@@ -287,6 +336,52 @@ namespace DQB2IslandEditor.InterfacePK
         public void BlockTile_Release(ushort offset)
         {
              chunkLayer[offset].IsHovered();
+        }
+        public void ItemTile_TileEnter(ItemContainer target)
+        {
+            //This will actually be a problem for compatibility between paint block and paint item
+            //Oh no, what do you mean I should have used the state pattern oh noo
+            //If you dont say anything then I wont say anything either wink wink
+            switch (SelectedTool)
+            {
+                default:
+                    if (Mouse.LeftButton != System.Windows.Input.MouseButtonState.Pressed)
+                        target.IsHovered();
+                    else
+                        target.IsClicked();
+                    break;
+            }
+        }
+        public void ItemTile_TileLeave(ItemContainer target)
+        {
+            switch (SelectedTool)
+            {
+                default:
+                    target.IsUnHovered();
+                    break;
+            }
+        }
+
+        public void ItemTile_LeftClick(ItemContainer target)
+        {
+            target.IsClicked();
+            switch (SelectedTool)
+            {
+                default:
+                case 0: //Select
+                    //When the items are hoverable, this is when the block underneath will always be selected to the xyz.
+                    //Or, at least the xz
+                    SelectedObject = DataBaseReading.ITEM_INFO_DICTIONARY[0];
+                    SelectedTileOffset = target.offset;
+                    //Block (Hmmmmm)
+                    ValueChisel = chunkLayer[target.offset].blockInstance.publicChiselID;
+                    ValueBuilderPlaced = chunkLayer[target.offset].blockInstance.publicBuilderPlaced;
+                    break;
+            }
+        }
+        public void ItemTile_Release(ItemContainer target)
+        {
+            target.IsHovered();
         }
 
         private void TileAura_Create(ushort offset)
@@ -357,10 +452,14 @@ namespace DQB2IslandEditor.InterfacePK
         }
         private void Offset_SetBlock(ushort offset)
         {
-            if (SelectedBlock == null) return;
-            chunkLayer[offset].blockInfo.Value = SelectedBlock;
-            chunkLayer[offset].blockInstance.UpdateBlock(ValueBuilderPlaced, SelectedBlock.objectId, ValueChisel);
-            saveData.Island.SetBlock(_currentChunk, _currentLayer, (byte)(offset % Chunk.X_DIMENSION), (byte)(offset / Chunk.Z_DIMENSION), chunkLayer[offset].blockInstance);
+            if (SelectedObject == null) return;
+            if(SelectedObject is BlockInfo)
+            {
+                BlockInfo SelectedBlock = SelectedObject as BlockInfo;
+                chunkLayer[offset].blockInfo.Value = SelectedBlock;
+                chunkLayer[offset].blockInstance.UpdateBlock(ValueBuilderPlaced, SelectedBlock.objectId, ValueChisel);
+                saveData.Island.SetBlock(_currentChunk, _currentLayer, (byte)(offset % Chunk.X_DIMENSION), (byte)(offset / Chunk.Z_DIMENSION), chunkLayer[offset].blockInstance);
+            }
         }
 
         private void TileAura_Destroy(ushort offset)
@@ -406,13 +505,10 @@ namespace DQB2IslandEditor.InterfacePK
             for (int i = 0; i < 1024; i++)
             {
                 chunkLayer[i].blockInstance = blockInstances[i];
-                chunkLayer[i].blockInfo.Value = fullBlockList[blockInstances[i].publicBlockID];
             }
             var itemInstances = saveData.Island.GetItemsFromLayer(vChunk, layer);
-            foreach(var item in itemInstances)
-            {
-                Console.WriteLine(item.ToString());
-            }
+            //should have delegated the block one to the chunk block grid as well but ah.
+            chunkEditorWindow.chunkBlockGrid.UpdateItemsOnGrid(itemInstances);
         }
 
         public void ChangeChunk(string command)

@@ -53,8 +53,8 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <TextBlock Text="Chisel Value:" Foreground="White" FontSize="16" TextWrapping="WrapWithOverflow" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
-                        <Image Grid.Row="1" Source="{Binding ValueChiselImage}" Stretch="UniformToFill" Margin="25,5"/>
-                        <TextBlock Grid.Row="2" Text="{Binding ValueChisel}" Foreground="White" FontSize="14" FontWeight="DemiBold" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                        <Image Name="ChiselImage" Grid.Row="1" Stretch="UniformToFill" Margin="25,5"/>
+                        <TextBlock Name="TBlock" Grid.Row="2" Foreground="White" FontSize="14" FontWeight="DemiBold" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Center"/>
                         </Grid>
                     <UniformGrid Grid.Column="1" Rows="3" Columns="5" Margin="8">
                         <Button Click="ChangeChisel" Tag="0">

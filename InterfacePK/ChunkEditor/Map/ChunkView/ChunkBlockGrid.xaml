@@ -65,6 +65,9 @@
             <Border BorderBrush="Yellow" BorderThickness="2" Padding="12" CornerRadius="10">
                 <Grid>
                     <UniformGrid Name="TileGrid" Columns="32" Rows="32" Background="{Binding SeaBrush}"/>
+                    <Viewbox>
+                        <Grid Name="ItemGrid" Width="1024" Height="1024"/>
+                    </Viewbox>
                     <Border BorderBrush="White" BorderThickness="1" Margin="-1">
                         <Grid IsHitTestVisible="False">
                             <Viewbox>
@@ -152,6 +155,7 @@
                                 <Border BorderBrush="White" BorderThickness="1"/>
                                 <Border BorderBrush="White" BorderThickness="1"/>
                             </UniformGrid>
+                            
                         </Grid>
                     </Border>
                 </Grid>

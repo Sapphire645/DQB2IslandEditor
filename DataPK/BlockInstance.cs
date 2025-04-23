@@ -53,5 +53,13 @@ namespace DQB2IslandEditor.DataPK
         {
             this.chiselID = chiselID;
         }
+        public void UpdateBlock(ushort id)
+        {
+            blockID = id;
+        }
+        public void UpdateBlock(bool overflow)
+        {
+            builderPlaced = overflow;
+        }
     }
 }

@@ -1,7 +1,9 @@
 ﻿using DQB2IslandEditor.ObjectPK;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,14 +23,41 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.EditValues
     /// </summary>
     public partial class ChiselEdit : UserControl
     {
-        public ChiselEdit()
+        private ChunkEditorViewModel viewModel;
+
+        private string nameOfBind;
+        private PropertyInfo propertyInfo; //What im binding to, sheesh...
+        //what a mess
+        public ChiselEdit(string Value, ChunkEditorViewModel viewModel)
         {
+            nameOfBind = Value;
+            viewModel.CreationTabValueChanged += PropertyChanged;
+
+            this.viewModel = viewModel;
+
+            Binding binding = new Binding(Value)
+            {
+                Source = viewModel,
+                Mode = BindingMode.TwoWay,
+                UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged
+            };
             InitializeComponent();
+            TBlock.SetBinding(TextBox.TextProperty, binding);
+
+            propertyInfo = viewModel.GetType().GetProperty(nameOfBind);
+            
         }
 
         private void ChangeChisel(object sender, RoutedEventArgs e)
         {
-            ((ChunkEditorViewModel)DataContext).ValueChisel = (Chisel)byte.Parse(((Button)sender).Tag.ToString());
+            propertyInfo.SetValue(viewModel, (Chisel)byte.Parse(((Button)sender).Tag.ToString()));
+        }
+        private void PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameOfBind)  // BLOCKINFO CHANGE
+            {
+                ChiselImage.Source = DataBaseReading.ValueChiselImage((Chisel)propertyInfo.GetValue(viewModel));
+            }
         }
     }
 }

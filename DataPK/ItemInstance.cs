@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Automation;
 using System.Windows.Media.Imaging;
 using System.Windows.Media.Media3D;
@@ -15,6 +16,7 @@ namespace DQB2IslandEditor.DataPK
 
         private byte[] bytes;
 
+        public ushort publicItemId => itemId;
         private ushort itemId;
         private byte x;
         private byte y;
@@ -22,7 +24,8 @@ namespace DQB2IslandEditor.DataPK
 
         private byte rotation;
 
-        public ItemInfo itemInfo { get; set; } //Shit
+        public ItemInfo itemInfo => DataBaseReading.ITEM_INFO_DICTIONARY[itemId]; //I need this for the margins.
+        public ushort worldOffset => (ushort)(x + z * 32);
 
         public static bool IsThisEntryEmpty(byte[] bytes)
         {
@@ -34,7 +37,8 @@ namespace DQB2IslandEditor.DataPK
             return false;
         }
         public ItemInstance(byte[] bytes) {
-            this.bytes = bytes;
+            this.bytes = new byte[24]; 
+            Array.Copy(bytes, this.bytes, bytes.Length);
 
             itemId = bytes[8];
             var tmp = bytes[9] & 0x1F;
@@ -75,6 +79,12 @@ namespace DQB2IslandEditor.DataPK
         public bool IsInLayer(byte y) { 
             if (this.y == y) return true; //Change
             return false;
+        }
+
+        public Thickness CoordinateMargin(byte tileSize)
+        {
+            //This will tell the UI where to place the item.
+            return new Thickness(x * tileSize, z * tileSize, 0, 0);
         }
 
         public override string ToString()

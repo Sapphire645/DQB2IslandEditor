@@ -22,7 +22,17 @@ namespace DQB2IslandEditor.ObjectPK.Container
     /// </summary>
     public partial class TileContainer : UserControl
     {
-        public BlockInstance blockInstance { get; set; }
+        public BlockInstance blockInstance
+        {
+            get { return _blockInstance; }
+            set
+            { if (_blockInstance != null && _blockInstance.publicBlockID == value.publicBlockID) return; //Try to reduce cycles?
+              _blockInstance = value;
+              var a = blockInfo; //Get some cycles
+              blockInfo.Value = DataBaseReading.BLOCK_INFO_DICTIONARY[_blockInstance.publicBlockID];}
+        }
+
+        private BlockInstance _blockInstance;
 
         public ObservableProperty<BlockInfo> blockInfo { get; set; } = new ObservableProperty<BlockInfo> { };
 

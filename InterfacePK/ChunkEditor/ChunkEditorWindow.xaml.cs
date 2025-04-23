@@ -27,6 +27,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
         public ChunkEditorWindow(SaveData saveData, byte island)
         {
             Task<ushort> readFileTask = Task.Run(() => ReadFile(saveData, island));
+            DataBaseReading.ReadBlockFile();
+            DataBaseReading.ReadItemFile();
             Console.WriteLine("CREATING VIEW MODEL\n");
             viewModel = new ChunkEditorViewModel(this, saveData);
             viewModel.SelectedTool = 0;
