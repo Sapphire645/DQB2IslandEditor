@@ -408,6 +408,11 @@ namespace DQB2IslandEditor.InterfacePK
                 chunkLayer[i].blockInstance = blockInstances[i];
                 chunkLayer[i].blockInfo.Value = fullBlockList[blockInstances[i].publicBlockID];
             }
+            var itemInstances = saveData.Island.GetItemsFromLayer(vChunk, layer);
+            foreach(var item in itemInstances)
+            {
+                Console.WriteLine(item.ToString());
+            }
         }
 
         public void ChangeChunk(string command)

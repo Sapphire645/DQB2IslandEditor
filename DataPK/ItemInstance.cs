@@ -16,8 +16,6 @@ namespace DQB2IslandEditor.DataPK
         private byte[] bytes;
 
         private ushort itemId;
-        private ushort chunk;
-
         private byte x;
         private byte y;
         private byte z;
@@ -26,8 +24,15 @@ namespace DQB2IslandEditor.DataPK
 
         public ItemInfo itemInfo { get; set; } //Shit
 
-        public short chunkX => (short)(chunk / Island.GRID_DIMENSION);
-        public short chunkY => (short)(chunk % Island.GRID_DIMENSION);
+        public static bool IsThisEntryEmpty(byte[] bytes)
+        {
+            //This is placeholder for now
+            if (bytes[0] == 0 && bytes[1] == 0 && bytes[2] == 0 && bytes[3] == 0 && bytes[4] == 0 && bytes[5] == 0)
+            {
+                return true;
+            }
+            return false;
+        }
         public ItemInstance(byte[] bytes) {
             this.bytes = bytes;
 
@@ -62,13 +67,21 @@ namespace DQB2IslandEditor.DataPK
             return bytes;
         }
 
-        public bool IsInChunkLayer(ushort chunk, byte layer) {
-            if (y == y && this.chunk == chunk) return true; //Change
-            return false;
+        //Used to calculate if the item is in a contiguous chunk.
+        public bool DoIOverflow(bool north, bool south, bool east, bool west)
+        {
+            return false; //Change
         }
         public bool IsInLayer(byte y) { 
             if (this.y == y) return true; //Change
             return false;
+        }
+
+        public override string ToString()
+        {
+            string a = "";
+            foreach(byte b in bytes) a += b.ToString("X2") + " ";
+            return $"ID: {itemId} - Y:{y},X:{x},Z:{z} - {rotation} |"+ a+"\n";
         }
     }
 }

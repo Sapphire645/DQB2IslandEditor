@@ -19,15 +19,19 @@ namespace DQB2IslandEditor.DataPK
 
         private const uint OFF_VCHUNK_COUNT = 0x24E7C5;
         private const uint SIZE_VCHUNK_COUNT = 2;
+        public static readonly byte GRID_DIMENSION = 64;
 
         private const uint OFF_VCHUNK_GRID = 0x24C7C1;
         private const uint SIZE_VCHUNK_GRID = 0x2000;
 
+        private const uint SIZE_ITEM_ALLOCATION = 0xC8000;
+        private const uint OFF_ITEM_DATA = 0x24E7D1;
+        private const uint SIZE_ITEM_DATA = 24;
+        private const uint OFF_ITEM_ENTRY = 0x150E7D1;
+        private const uint SIZE_ITEM_ENTRY = 4;
+
         private const uint OFF_BLOCK_DATA = 0x183FEF0;
-
         private const uint SIZE_CHUNK = 0x30000;
-
-        public static readonly byte GRID_DIMENSION = 64;
 
         public byte islandNumber { get; private set; }
         private ushort virtualChunkCount;
@@ -55,6 +59,7 @@ namespace DQB2IslandEditor.DataPK
             {
                 case 0: //The chunk editor reading
                     ConstructChunkData(fileBytes);
+                    ConstructItemData(fileBytes);
                     break;
                 default:
                     break;
@@ -125,6 +130,35 @@ namespace DQB2IslandEditor.DataPK
             realChunkCount = BitConverter.ToUInt16(bufferOne, 0);
         }
 
+        private void ConstructItemData(byte[] fileBytes)
+        {
+            byte[] bufferItemData = new byte[SIZE_ITEM_DATA];
+            //Lets iterate through all of the item entries.
+            //The format for the entry is CC OC OO OO where C is chunk and O is the offset to the item data.
+            //With this, we'll place the item instance inside its chunk.
+            for (uint i = 0; i < SIZE_ITEM_ALLOCATION; i++)
+            {
+                //Pointer
+                uint entryPointer = (uint)(OFF_ITEM_ENTRY + (i * SIZE_ITEM_ENTRY));
+
+                //Extract the information.
+                ushort chunk = (ushort)(fileBytes[entryPointer] + ((fileBytes[entryPointer+1] & 0x0F) << 8));
+                uint relativeDataPointer = (uint)(((fileBytes[entryPointer + 1] & 0xF0) >> 4) + 
+                    (fileBytes[entryPointer + 2] << 4) + (fileBytes[entryPointer + 3] << 12));
+                //Now lets extract the item data.
+
+                uint dataPointer = (uint)(OFF_ITEM_DATA + (relativeDataPointer * SIZE_ITEM_DATA));
+                Array.Copy(fileBytes, dataPointer, bufferItemData, 0, 24);
+
+                //First lets see what the item class thinks of this entry, is it empty?
+                if (ItemInstance.IsThisEntryEmpty(bufferItemData)) continue;
+
+                //Since it is now, We can now create the item instance inside of the chunk.
+                Console.WriteLine($"Item Entry: {i} {entryPointer} Chunk: {chunk} Offset: {relativeDataPointer}");
+                chunks[chunk].AddItem(new ItemInstance(bufferItemData));
+                //Yay.
+            }
+        }
         private void CommitChunkDataToFile()
         {
             //VIRTUAL CHUNK COUNT: HOLD OFF ON THAT ONE FOR NOW. 
@@ -159,7 +193,6 @@ namespace DQB2IslandEditor.DataPK
 
         public BlockInstance[] GetBlocksFromLayer(ushort vChunk, byte layer)
         {
-            Console.WriteLine(chunks[vChunk].IsEmpty());
             BlockInstance[] blocks = chunks[vChunk].GetBlocksFromLayer(layer);
             //This is to fill the area when no block data exists.
             if (blocks == null) { //Set water when gottrn
@@ -167,6 +200,11 @@ namespace DQB2IslandEditor.DataPK
                 for (int i = 0; i < Chunk.X_DIMENSION * Chunk.Z_DIMENSION; i++) blocks[i] = new BlockInstance(0, 0);
             }
             return blocks;
+        }
+
+        public List<ItemInstance> GetItemsFromLayer(ushort vChunk, byte layer)
+        {
+            return chunks[vChunk].GetItemsFromLayer(layer);
         }
 
         public void SetBlock(ushort vChunk, byte layer, byte x, byte z, BlockInstance block)

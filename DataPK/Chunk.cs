@@ -31,7 +31,7 @@ namespace DQB2IslandEditor.DataPK
             }
             this.blockBytes = blockBytes;
             this.chunkPosition = chunkPosition;
-
+            itemInstances = new List<ItemInstance>();
         }
 
         public bool IsEmpty() { return blockBytes == null; }
@@ -64,17 +64,20 @@ namespace DQB2IslandEditor.DataPK
 
             foreach (var item in itemInstances)
             {
-                if (item.IsInLayer(layer)) layerItems.Append(item);
+                if (item.IsInLayer(layer))
+                {
+                    layerItems.Add(item);
+                }
             }
             return layerItems;
         }
-        public List<ItemInstance> GetItemsForOverflowChunk(ushort chunk, byte layer)
+        public List<ItemInstance> GetItemsForOverflowChunk(bool north, bool south, bool east, bool west, byte layer)
         {
             List<ItemInstance> layerItems = new List<ItemInstance>();
 
             foreach (var item in itemInstances)
             {
-                if (item.IsInChunkLayer(chunk, layer)) layerItems.Append(item);
+                if (item.DoIOverflow(north, south, east, west) && item.IsInLayer(layer)) layerItems.Append(item);
             }
             return layerItems;
         }
@@ -84,8 +87,9 @@ namespace DQB2IslandEditor.DataPK
         }
         public void AddItem(ItemInstance item)
         {
-            //add code
             itemInstances.Add(item);
+            //Lemme do a print of the item here as debbuging
+            Console.WriteLine(item.ToString());
         }
         public void SetBlockFromCoords(BlockInstance blockInstance, byte x, byte z, byte layer)
         {
