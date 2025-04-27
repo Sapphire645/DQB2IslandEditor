@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -92,6 +93,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
             dimensions.Y0 = dimensions.Y0 * Minimap.MINIMAP_DIMENSION_IN_CHUNK;
             dimensions.Y1 = dimensions.Y1 * Minimap.MINIMAP_DIMENSION_IN_CHUNK;
             MinimapImage.Source = island.shell.pMinimap.MinimapImage(2, false, dimensions);
+
+            UpdateChunks(null, null);
         }
 
         private void MouseEnterChunk(Border chunk)

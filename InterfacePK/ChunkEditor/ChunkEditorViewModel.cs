@@ -57,6 +57,7 @@ namespace DQB2IslandEditor.InterfacePK
                 _currentLayer = value;
                 LayerUpdateNotification?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentLayer)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentLayer)));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SeaBrush)));
             }
         }
         public ushort[] CurrentChunks => chunkEditorWindow.chunkBlockGrid.ChunkList;
