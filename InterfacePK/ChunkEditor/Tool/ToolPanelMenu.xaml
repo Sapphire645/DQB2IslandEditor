@@ -31,10 +31,10 @@
    </UserControl.Resources>
    <Grid>
        <Grid.RowDefinitions>
-           <RowDefinition Height="35"/>
+            <RowDefinition Height="Auto"/>
            <RowDefinition Height="*"/>
        </Grid.RowDefinitions>
-        <Viewbox>
+        <Viewbox Margin="0,4,0,0">
             <StackPanel Name="FilterToggleStack" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="16,4">
                <TextBlock Margin="0,-3,0,0" Text="···············" VerticalAlignment="Top" Foreground="Gray" HorizontalAlignment="Center" FontSize="22" FontWeight="ExtraLight"/>
                <RadioButton Background="Black" Content="Create &amp; Place" GroupName="ToolTabs" Checked="EditPanel" IsChecked="True" Width="135"/>
