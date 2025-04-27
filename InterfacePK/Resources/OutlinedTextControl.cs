@@ -31,6 +31,10 @@ namespace DQB2IslandEditor.InterfacePK.Resources
             DependencyProperty.Register(nameof(StrokeThickness), typeof(double), typeof(OutlinedTextControl),
                 new FrameworkPropertyMetadata(1.0, FrameworkPropertyMetadataOptions.AffectsRender));
 
+        public static readonly DependencyProperty TextWeightProperty =
+    DependencyProperty.Register(nameof(TextWeight), typeof(FontWeight), typeof(OutlinedTextControl),
+        new FrameworkPropertyMetadata(FontWeights.DemiBold, FrameworkPropertyMetadataOptions.AffectsRender));
+
         public string Text
         {
             get => (string)GetValue(TextProperty);
@@ -41,6 +45,11 @@ namespace DQB2IslandEditor.InterfacePK.Resources
         {
             get => (double)GetValue(FontSizeProperty);
             set => SetValue(FontSizeProperty, value);
+        }
+        public FontWeight TextWeight
+        {
+            get => (FontWeight) GetValue(TextWeightProperty);
+            set => SetValue(TextWeightProperty, value);
         }
 
         public FontFamily FontFamily
@@ -69,7 +78,7 @@ namespace DQB2IslandEditor.InterfacePK.Resources
 
         private List<FormattedText> GetFormattedTextLines(double availableWidth, string Text)
         {
-            var typeface = new Typeface(FontFamily, FontStyles.Normal, FontWeights.DemiBold, FontStretches.Normal);
+            var typeface = new Typeface(FontFamily, FontStyles.Normal, TextWeight, FontStretches.Normal);
             var lines = new List<FormattedText>();
             string[] words = Text.Split(' ');
 

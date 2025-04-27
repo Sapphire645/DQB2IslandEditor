@@ -28,7 +28,6 @@ namespace DQB2IslandEditor.ObjectPK.Container
             set
             { if (_blockInstance != null && _blockInstance.publicBlockID == value.publicBlockID) return; //Try to reduce cycles?
               _blockInstance = value;
-              var a = blockInfo; //Get some cycles
               blockInfo.Value = DataBaseReading.BLOCK_INFO_DICTIONARY[_blockInstance.publicBlockID];}
         }
 
@@ -37,10 +36,16 @@ namespace DQB2IslandEditor.ObjectPK.Container
         public ObservableProperty<BlockInfo> blockInfo { get; set; } = new ObservableProperty<BlockInfo> { };
 
         public ushort offset;
-        public TileContainer()
+        public TileContainer(ushort offset, Action<ushort>? enter, Action<ushort>? leave, Action<ushort>? click, Action<ushort>? release)
         {
             InitializeComponent();
             DataContext = this;
+            this.offset = offset;
+
+            Tile.PreviewMouseDown += (_, _) => { click(offset); };
+            Tile.MouseEnter += (_, _) => { enter(offset); };
+            Tile.MouseLeave += (_, _) => { leave(offset); };
+            Tile.MouseLeftButtonUp += (_, _) => { release(offset); };
         }
 
         public void IsHovered() {

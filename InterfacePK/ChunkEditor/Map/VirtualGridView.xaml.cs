@@ -1,6 +1,7 @@
 ﻿using DQB2IslandEditor.DataPK;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,8 +23,10 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
     public partial class VirtualGridView : UserControl
     {
         private ChunkEditorViewModel viewModel;
-        private Border selectedchunk;
+
         private Dictionary<ushort, Border> allChunks;
+
+        private List<Border> selectedChunks = new List<Border>();
         public VirtualGridView()
         {
             InitializeComponent();
@@ -33,6 +36,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
         {
             allChunks = new Dictionary<ushort, Border>();
             this.viewModel = ViewModel;
+            viewModel.ChunkUpdateNotification += UpdateChunks;
             var dimensions = island.ChunkGridFrame();
 
             if(dimensions.X0 > 1) dimensions.X0 -= 1;
@@ -99,7 +103,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
         private void MouseLeaveChunk(Border chunk)
         {
             //Set the color of the border
-            if(chunk == selectedchunk)
+            if (selectedChunks.Contains(chunk))
             {
                 chunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF4000"));
                 chunk.BorderBrush = new SolidColorBrush(Colors.OrangeRed);
@@ -109,47 +113,41 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
                 chunk.Background = new SolidColorBrush(Colors.Transparent);
                 chunk.BorderBrush = new SolidColorBrush(Colors.Gray);
             }
-                
         }
         private void MouseClickChunk(Border chunk)
         {
             //Get the chunk number
             ushort chunkNumber = (ushort)chunk.Tag;
             //Set the chunk data to the selected one
-            viewModel.CurrentChunk = chunkNumber;
-            //Set the color of the border
-            chunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF9000"));
-            chunk.BorderBrush = new SolidColorBrush(Colors.Yellow);
+            //This will do a circle and end up notifying me.
+            viewModel.ChangeChunk(chunkNumber);
         }
 
-        public void UpdateChunk(ushort vChunk)
+        public void UpdateChunks(object sender, PropertyChangedEventArgs e)
         {
-            if (selectedchunk != null)
-            {
-                if ((ushort)selectedchunk.Tag != 1000)
+            var newList = viewModel.CurrentChunks;
+
+            foreach (var chunk in selectedChunks) {
+                if ((ushort)chunk.Tag != 1000)
                 {
-                    selectedchunk.Background = new SolidColorBrush(Colors.Transparent);
-                    selectedchunk.BorderBrush = new SolidColorBrush(Colors.Gray);
+                    chunk.Background = new SolidColorBrush(Colors.Transparent);
+                    chunk.BorderBrush = new SolidColorBrush(Colors.Gray);
                 }
                 else
                 {
-                    selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#A0555555"));
-                    selectedchunk.BorderBrush = new SolidColorBrush(Colors.Gray);
+                    chunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#A0555555"));
+                    chunk.BorderBrush = new SolidColorBrush(Colors.Gray);
                 }
             }
-            if(allChunks != null)
+            selectedChunks.Clear();
+            foreach (var chunk in newList)
             {
-                if (allChunks.ContainsKey(vChunk))
+                if (allChunks.ContainsKey(chunk))
                 {
-                    selectedchunk = allChunks[vChunk];
-                    selectedchunk.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF4000"));
-                    selectedchunk.BorderBrush = new SolidColorBrush(Colors.OrangeRed);
+                    selectedChunks.Add(allChunks[chunk]);
+                    allChunks[chunk].Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FF4000"));
+                    allChunks[chunk].BorderBrush = new SolidColorBrush(Colors.OrangeRed);
                 }
-                else
-                {
-                    selectedchunk = null;
-                }
-               
             }
         }
     }

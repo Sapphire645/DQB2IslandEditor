@@ -178,7 +178,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="80"/>
                     </Grid.ColumnDefinitions>
-                    <tools:ToolMenu x:Name="toolMenu"/>
+                    <tools:ToolPanelMenu x:Name="toolMenu"/>
                     <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="90"/>

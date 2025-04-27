@@ -154,7 +154,7 @@ namespace DQB2IslandEditor.DataPK
                 if (ItemInstance.IsThisEntryEmpty(bufferItemData)) continue;
 
                 //Since it is now, We can now create the item instance inside of the chunk.
-                Console.WriteLine($"Item Entry: {i} {entryPointer} Chunk: {chunk} Offset: {relativeDataPointer}");
+                //Console.WriteLine($"Item Entry: {i} {entryPointer} Chunk: {chunk} Offset: {relativeDataPointer}");
                 chunks[chunk].AddItem(new ItemInstance(bufferItemData));
                 //Yay.
             }
@@ -190,26 +190,9 @@ namespace DQB2IslandEditor.DataPK
 
             //Do real chunk count later.
         }
-
-        public BlockInstance[] GetBlocksFromLayer(ushort vChunk, byte layer)
+        public Chunk GetChunk(ushort vChunk)
         {
-            BlockInstance[] blocks = chunks[vChunk].GetBlocksFromLayer(layer);
-            //This is to fill the area when no block data exists.
-            if (blocks == null) { //Set water when gottrn
-                blocks = new BlockInstance[Chunk.X_DIMENSION * Chunk.Z_DIMENSION];
-                for (int i = 0; i < Chunk.X_DIMENSION * Chunk.Z_DIMENSION; i++) blocks[i] = new BlockInstance(0, 0);
-            }
-            return blocks;
-        }
-
-        public List<ItemInstance> GetItemsFromLayer(ushort vChunk, byte layer)
-        {
-            return chunks[vChunk].GetItemsFromLayer(layer);
-        }
-
-        public void SetBlock(ushort vChunk, byte layer, byte x, byte z, BlockInstance block)
-        {
-            chunks[vChunk].SetBlockFromCoords(block, x, z, layer);
+            return chunks[vChunk];
         }
 
         //For loading in the island for the first time.

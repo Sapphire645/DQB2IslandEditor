@@ -31,7 +31,6 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.EditValues
         public ChiselEdit(string Value, ChunkEditorViewModel viewModel)
         {
             nameOfBind = Value;
-            viewModel.CreationTabValueChanged += PropertyChanged;
 
             this.viewModel = viewModel;
 

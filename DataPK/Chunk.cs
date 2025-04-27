@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DQB2IslandEditor.DataPK
 {
-    internal class Chunk
+    public class Chunk
     {
         public static readonly byte X_DIMENSION = 32;
         public static readonly byte Y_DIMENSION = 96;
@@ -48,13 +48,14 @@ namespace DQB2IslandEditor.DataPK
         //Trying to make as fast as possible
         public BlockInstance[] GetBlocksFromLayer(byte layer)
         {
-            if(blockBytes == null) return null;
             BlockInstance[] layerBlocks = new BlockInstance[X_DIMENSION * Z_DIMENSION];
-            var offset =  layer * SIZE_LAYER;
-            for (var i = 0; i < X_DIMENSION * Z_DIMENSION; i ++)
-            {
-                layerBlocks[i] = new BlockInstance(blockBytes[offset + i * 2], blockBytes[offset + i * 2 + 1]);
+            if (blockBytes == null) {
+                //Set water when gottrn
+                    for (int i = 0; i < Chunk.X_DIMENSION * Chunk.Z_DIMENSION; i++) layerBlocks[i] = new BlockInstance(0, 0);
+                    return layerBlocks;
             }
+            var offset = layer * SIZE_LAYER;
+            for (var i = 0; i < X_DIMENSION * Z_DIMENSION; i ++) layerBlocks[i] = new BlockInstance(blockBytes[offset + i * 2], blockBytes[offset + i * 2 + 1]);
             return layerBlocks;
         }
 

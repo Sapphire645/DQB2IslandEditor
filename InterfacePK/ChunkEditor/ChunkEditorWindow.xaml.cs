@@ -40,13 +40,14 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             InitializeComponent();
             inventoryMenu.shareViewModel(viewModel);
             favouriteList.shareViewModel(viewModel);
+            chunkBlockGrid.ShareViewModel(viewModel);
             toolMenu.UpdateContext(viewModel);
 
             Console.WriteLine("CREATING INVENTORY\n");
-            viewModel.SetChunkTileContainers(chunkBlockGrid.CreateTiles(viewModel));
+            chunkBlockGrid.SetChunk(readFileTask.Result);
+
             viewModel.CreateInventory();
             Console.WriteLine("WAIT FOR ASYNC\n");
-            viewModel.CurrentChunk = readFileTask.Result;
             virtualGridView.Init(saveData.Island, viewModel);
 
             LayerBar.UpdateSeaLevel(30); //Change
@@ -83,7 +84,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
                 if (openFileDialog.ShowDialog() == false) return;
 
                 saveData.OpenSTGDATCompressedFile(openFileDialog.FileName);
-                viewModel.CurrentChunk = saveData.Island.GetFirstChunk();
+                //viewModel.CurrentChunk = saveData.Island.GetFirstChunk();
 
             }
             catch (Exception ex)

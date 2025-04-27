@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolPanelMenu"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Tool"
+            xmlns:resources="clr-namespace:DQB2IslandEditor.InterfacePK.Resources"
+            mc:Ignorable="d" >
+   <UserControl.Resources>
+       <Style TargetType="RadioButton">
+       <Setter Property="Template">
+           <Setter.Value>
+               <ControlTemplate TargetType="ToggleButton">
+                        <Border Name="Border" Background="{TemplateBinding Background}" CornerRadius="4" Margin="2,0" Padding="2,0">
+                            <Grid HorizontalAlignment="Center" Margin="-10,-10,-9,-10">
+                                <resources:OutlinedTextControl Text="{TemplateBinding Content}" TextWeight = "Bold"  FontSize="16" StrokeThickness="3" Width="{TemplateBinding Width}" Height="20" Fill="White"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                       <Trigger Property="IsMouseOver" Value="True">
+                           <Setter TargetName="Border" Property="Background" Value="#A8A8A8" />
+                       </Trigger>
+                       <Trigger Property="IsChecked" Value="True">
+                           <Setter TargetName="Border" Property="Background" Value="Gold" />
+                       </Trigger>
+                   </ControlTemplate.Triggers>
+               </ControlTemplate>
+           </Setter.Value>
+       </Setter>
+   </Style>
+   </UserControl.Resources>
+   <Grid>
+       <Grid.RowDefinitions>
+           <RowDefinition Height="35"/>
+           <RowDefinition Height="*"/>
+       </Grid.RowDefinitions>
+        <Viewbox>
+            <StackPanel Name="FilterToggleStack" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="16,4">
+               <TextBlock Margin="0,-3,0,0" Text="···············" VerticalAlignment="Top" Foreground="Gray" HorizontalAlignment="Center" FontSize="22" FontWeight="ExtraLight"/>
+               <RadioButton Background="Black" Content="Create &amp; Place" GroupName="ToolTabs" Checked="EditPanel" IsChecked="True" Width="135"/>
+                <RadioButton Background="Black" Content="Editing" GroupName="ToolTabs" Checked="InfoPanel" Width="95"/>
+                <RadioButton Background="Black" Content="Selection" GroupName="ToolTabs" Checked="AreaPanel" Width="95"/>
+                <RadioButton Background="Black" Content="Advanced" GroupName="ToolTabs" Checked="ReplacePanel" Width="95"/>
+               <TextBlock Margin="0,-3,0,0" Text="···············" VerticalAlignment="Top" Foreground="Gray" HorizontalAlignment="Center" FontSize="22" FontWeight="ExtraLight"/>
+           </StackPanel>
+        </Viewbox>
+        <ScrollViewer Grid.Row="1" Margin="15,6" VerticalScrollBarVisibility="Auto">
+           <StackPanel>
+               <ItemsControl ItemsSource="{Binding RelativeSource={RelativeSource AncestorType=UserControl}, Path=PanelsToDisplay}" Name="InventoryBlockHolder" Margin="6">
+                   <ItemsControl.ItemsPanel>
+                       <ItemsPanelTemplate>
+                           <StackPanel/>
+                       </ItemsPanelTemplate>
+                   </ItemsControl.ItemsPanel>
+               </ItemsControl>
+           </StackPanel>
+       </ScrollViewer>
+   </Grid>
+</UserControl>

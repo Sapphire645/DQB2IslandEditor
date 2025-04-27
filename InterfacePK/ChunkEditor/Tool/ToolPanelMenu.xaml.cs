@@ -12,7 +12,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool
     /// <summary>
     /// Interaction logic for ToolMenu.xaml
     /// </summary>
-    public partial class ToolMenu : UserControl
+    public partial class ToolPanelMenu : UserControl
     {
         private ChunkEditorViewModel viewModel;
         public ObservableCollection<UserControl> PanelsToDisplay { get; set; } = new ObservableCollection<UserControl> ();
@@ -24,7 +24,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool
         public List<UserControl> CreateItemBasics = new List<UserControl>();
 
 
-        public ToolMenu()
+        public ToolPanelMenu()
         {
             InitializeComponent();
             
@@ -35,8 +35,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool
             viewModel.PropertyChanged += PropertyChanged;
             PanelsToDisplay.Clear();
 
-            CreateBlockBasics.Append(new BlockInformation());
-            CreateBlockBasics.Append(new ChiselEdit(nameof(viewModel.ValueChisel), viewModelGive));
+            CreateBlockBasics.Add(new BlockInformation());
+            //CreateBlockBasics.Add(new ChiselEdit(nameof(viewModel.ValueChisel), viewModelGive));
         }
 
         private void EditPanel(object sender, RoutedEventArgs e)

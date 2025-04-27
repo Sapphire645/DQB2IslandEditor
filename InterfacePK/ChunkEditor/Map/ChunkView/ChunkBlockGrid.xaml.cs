@@ -4,6 +4,7 @@ using DQB2IslandEditor.ObjectPK.Container;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,55 +26,90 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
     {
         private ChunkEditorViewModel viewModel;
 
+        private List<ChunkView> chunkViews = new List<ChunkView>();
+
+        public ushort[] ChunkList
+        {
+            get
+            {
+                var li = new ushort[chunkViews.Count];
+                for(byte i = 0; i < chunkViews.Count; i++) {
+                    li[i] = chunkViews[i].ChunkIndex;
+                }
+                return li;
+            }
+            private set{
+                //I wont check here, I'll check down.
+                for (byte i = 0; i < chunkViews.Count; i++)
+                {
+                    if(chunkViews[i].ChunkIndex != value[i])
+                        chunkViews[i].ChunkIndex = value[i];
+                }
+                viewModel.UpdatedChunks();
+            }
+        }
+
+        public ushort FirstChunk => chunkViews[0].ChunkIndex;
         //Get delegated idiot
         private Action<ItemContainer>? enter;
         private Action<ItemContainer>? leave;
         private Action<ItemContainer>? click;
         private Action<ItemContainer>? release;
-
-        public Dictionary<ushort, List<ItemContainer>> itemContainerGrid = new Dictionary<ushort, List<ItemContainer>>();
         public ChunkBlockGrid()
         {
             InitializeComponent();
         }
-        public void SetActions(Action<ItemContainer> enter, Action<ItemContainer> leave, Action<ItemContainer> click, Action<ItemContainer> release)
-        {
-            this.enter = enter;
-            this.leave = leave;
-            this.click = click;
-            this.release = release;
-        }
 
-        public TileContainer[] CreateTiles(ChunkEditorViewModel viewModel)
+        public void ShareViewModel(ChunkEditorViewModel viewModel)
         {
             this.viewModel = viewModel;
-            try
-            {
-                TileContainer[] tileContainers = new TileContainer[1024]; // layers are 32x32
-
-                for (ushort i = 0; i < 1024; i++) 
-                {
-                    tileContainers[i] = new TileContainer
-                    {
-                        offset = i
-                    };
-
-                    TileGrid.Children.Add(tileContainers[i]);
-                }
-                return tileContainers;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-                return null;
-            }
+            var cv = new ChunkView(viewModel);
+            chunkViews.Add(cv);
+            ChunkDisplay.Children.Add(cv);
         }
 
+        public void SetChunk(ushort vChunk)
+        {
+            ChunkList = ChunkChangeProcess((short)(vChunk - chunkViews[0].ChunkIndex), ChunkList);
+        }
         private void ChangeChunk(object sender, RoutedEventArgs e)
         {
-            string tag = (sender as Button).Tag.ToString();
-            viewModel.ChangeChunk(tag);
+            string command = (sender as Button).Tag.ToString();
+
+            ChangeChunk(command);
         }
+
+        private void ChangeChunk(string command)
+        {
+            var chunkIdList = ChunkList;
+
+            short Movement = 0;
+
+            if (command.Contains("l")) //Left
+                chunkIdList = ChunkChangeProcess(-1, chunkIdList);
+            if (command.Contains("r")) //Right
+                chunkIdList = ChunkChangeProcess(1, chunkIdList);
+            if (command.Contains("u")) //Up
+                chunkIdList = ChunkChangeProcess((short)-Island.GRID_DIMENSION, chunkIdList);
+            if (command.Contains("d")) //Down
+                chunkIdList = ChunkChangeProcess(Island.GRID_DIMENSION, chunkIdList);
+
+            ChunkList = chunkIdList;
+        }
+
+        //This is to check, if one is invalid then the next one gets porcessed.
+        private ushort[] ChunkChangeProcess(short movement, ushort[] list)
+        {
+            ushort[] newList = (ushort[])list.Clone();
+            for(byte i = 0; i < newList.Length; i++)
+            {
+                if ((short)newList[i] + movement < 0) return list;
+                newList[i] = (ushort)(newList[i] + movement);
+                if (newList[i] >= Island.GRID_DIMENSION * Island.GRID_DIMENSION) return list; //Invalid
+            }
+            return newList;
+        }
+
         private void ChangeLayer(object sender, RoutedEventArgs e)
         {
             viewModel.CurrentLayer = (byte)(viewModel.CurrentLayer + short.Parse((sender as Button).Tag.ToString()));
@@ -89,59 +125,18 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
                 //If the difference is too low then dont move.
                 if (Math.Abs(Math.Abs(relativePosition.X) - Math.Abs(relativePosition.Y)) < 0.08) return;
 
+                //Change for later since the scrolling will be smoother.
                 if (Math.Abs(relativePosition.X) > Math.Abs(relativePosition.Y))
                     if (e.Delta > 0)
-                        viewModel.ChangeChunk("r");
+                        ChangeChunk("r");
                     else
-                        viewModel.ChangeChunk("l");
+                        ChangeChunk("l");
                 else
                     if (e.Delta > 0)
-                        viewModel.ChangeChunk("u");
+                        ChangeChunk("u");
                     else
-                        viewModel.ChangeChunk("d");
+                        ChangeChunk("d");
             }
-        }
-
-        public void UpdateItemsOnGrid(List<ItemInstance> items)
-        {
-            ItemGrid.Children.Clear();
-            itemContainerGrid.Clear();
-            foreach (var item in items)
-            {
-                Console.WriteLine(item.ToString());
-                ItemContainer itemContainer = new ItemContainer(item, 32); //  1024/32
-
-                itemContainer.ItemBorder.PreviewMouseDown += (_, _) => { click(itemContainer); };
-                itemContainer.ItemBorder.MouseEnter += (_, _) => { enter(itemContainer); };
-                itemContainer.ItemBorder.MouseLeave += (_, _) => { leave(itemContainer); };
-                itemContainer.ItemBorder.MouseLeftButtonUp += (_, _) => { release(itemContainer); };
-
-                ItemGrid.Children.Add(itemContainer);
-                //Alright, here comes the funky stuff
-                //You can have multiple items in the same tile, meaning, chaos
-                //This will create the need to have multiple item panels for each item in that tile
-                //I will also have to keep track of every item in the tile
-                //So, the dictionary holds the offset (x + z*32), with a list of all the items on the offset
-                //That is all.
-                if(!itemContainerGrid.ContainsKey(item.worldOffset))
-                    itemContainerGrid[item.worldOffset] = new List<ItemContainer>();
-                itemContainerGrid[item.worldOffset].Append(itemContainer);
-                //Hope this doesnt tank the performance tbh
-            }
-        }
-
-        public ItemInstance[] GetItemsInOffset(ushort offset)
-        {
-            if (!itemContainerGrid.ContainsKey(offset)) return null;
-            var items = itemContainerGrid[offset];
-            ItemInstance[] list = new ItemInstance[items.Count];
-            for(int i = 0; i < items.Count; i++) list[i] = items.ElementAt(i).itemInstance;
-
-            return list;
-        }
-        public void AddItemToOffset(ushort offset, ItemInfo Item)
-        {
-            //Not implemented yet.
         }
     }
 }
