@@ -197,7 +197,7 @@ namespace DQB2IslandEditor.DataPK
             file = new byte[fileBytes.Item1.Length + compressedFileBytes.Length];
             Array.Copy(fileBytes.Item1, 0, file, 0, STGDAT_SIZE_HEADER);
             Array.Copy(compressedFileBytes, 0, file, STGDAT_SIZE_HEADER, compressedFileBytes.Length);
-            
+
             System.IO.File.WriteAllBytes(path, file);
         }
 

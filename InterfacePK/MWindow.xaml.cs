@@ -1,6 +1,7 @@
 ﻿using DQB2IslandEditor.DataPK;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,9 +62,8 @@ namespace DQB2IslandEditor.InterfacePK
 
             ViewBoxCMNDAT.Height = bounds.Height;
 
-            //Caluclate the size of the textbox (pain)
-
-            CMNDATGrid.Width = this.ActualWidth * ButtonOfMenu.ActualHeight / bounds.Height;
+           //Caluclate the size of the textbox (pain)
+           CMNDATGrid.Width = this.ActualWidth * ButtonOfMenu.ActualHeight / bounds.Height;
         }
 
         private void ClickChange(object sender, MouseButtonEventArgs e)
