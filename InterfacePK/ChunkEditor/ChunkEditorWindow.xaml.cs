@@ -192,6 +192,29 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
                 new BlockInstance(8, 0),
                 new BlockInstance(19, 0));
         }
+
+
+        private void UpdateMapSize(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+            double newZoom = e.NewValue;
+            double oldZoom = ((ScaleTransform)virtualGridView.LayoutTransform).ScaleX; // Assuming uniform scaling
+
+            ushort[] coords = virtualGridView.getCoords();
+
+            // Optional: get center before zoom
+            Point scrollCenter = new Point(
+                MapScrollViewer.HorizontalOffset + MapScrollViewer.ViewportWidth * ((double)(coords[0]) / 64),
+                MapScrollViewer.VerticalOffset + MapScrollViewer.ViewportHeight * ((double)(coords[1]) / 64));
+
+            // Update zoom
+            ((ScaleTransform)virtualGridView.LayoutTransform).ScaleX = newZoom;
+            ((ScaleTransform)virtualGridView.LayoutTransform).ScaleY = newZoom;
+
+            // Optional: re-center after zoom
+            MapScrollViewer.ScrollToHorizontalOffset((scrollCenter.X) * newZoom / oldZoom - MapScrollViewer.ViewportWidth * ((double)(coords[0]) / 64));
+            MapScrollViewer.ScrollToVerticalOffset((scrollCenter.Y) * newZoom / oldZoom - MapScrollViewer.ViewportHeight * ((double)(coords[1]) / 64));
+        }
         ///////STATIC
 
         //The reason for this is because I dont want to have 5000000 of this object, so 
@@ -207,5 +230,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             infoPanel.objectInfo = data;
             request.Children.Add(infoPanel);
         }
+
+        
     }
 }

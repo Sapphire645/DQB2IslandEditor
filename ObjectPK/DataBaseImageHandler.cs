@@ -20,6 +20,7 @@ namespace DQB2IslandEditor.ObjectPK
         private bool tile;
         private Dictionary<ushort, WeakReference<CroppedBitmap>> _storage = new Dictionary<ushort, WeakReference<CroppedBitmap>>();
         private readonly object _lock = new object();
+        private readonly object _lockStorage = new object();
         private Dictionary<ushort, object> _storageLoading = new Dictionary<ushort, object>();
 
         public DataBaseImageHandler(BitmapImage _sheetOne,
@@ -53,19 +54,22 @@ namespace DQB2IslandEditor.ObjectPK
             lock (currentLock)
             {
                 //Check the storage.
-                if (_storage.ContainsKey((ushort)ImageID))
-                    if (_storage[(ushort)ImageID].TryGetTarget(out CroppedBitmap IconDone))
-                    {
-                        //If suceeded then go ahead.
-                        Application.Current.Dispatcher.Invoke(new Action(() =>
+                lock (_lockStorage)
+                {
+                    if (_storage.ContainsKey((ushort)ImageID))
+                        if (_storage[(ushort)ImageID].TryGetTarget(out CroppedBitmap IconDone))
                         {
-                            if (!tile)
-                                parent.objectInventoryImage = IconDone;
-                            else
-                                parent.objectMapImage = IconDone;
-                        }));
-                        return;
-                    }
+                            //If suceeded then go ahead.
+                            Application.Current.Dispatcher.Invoke(new Action(() =>
+                            {
+                                if (!tile)
+                                    parent.objectInventoryImage = IconDone;
+                                else
+                                    parent.objectMapImage = IconDone;
+                            }));
+                            return;
+                        }
+                }
                 //No success, we have to create it.
                 CroppedBitmap Icon;
                 try
@@ -86,11 +90,13 @@ namespace DQB2IslandEditor.ObjectPK
                 }
                 Icon.Freeze();
 
-                if (_storage.ContainsKey((ushort)ImageID))
-                    _storage[(ushort)ImageID].SetTarget(Icon);
-                else
-                    _storage.Add((ushort)ImageID, new WeakReference<CroppedBitmap>(Icon));
-
+                lock (_lockStorage)
+                {
+                    if (_storage.ContainsKey((ushort)ImageID))
+                        _storage[(ushort)ImageID].SetTarget(Icon);
+                    else
+                        _storage.Add((ushort)ImageID, new WeakReference<CroppedBitmap>(Icon));
+                }
                 Application.Current.Dispatcher.Invoke(new Action(() =>
                 {
                     if (!tile)
