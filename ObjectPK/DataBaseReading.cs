@@ -233,9 +233,6 @@ namespace DQB2IslandEditor.ObjectPK
             }
                 return layers;
         }
-        
-
-
         public static async void GetObjectInventoryImage(ObjectInfo parent)
         {
             CroppedBitmap blockIcon;

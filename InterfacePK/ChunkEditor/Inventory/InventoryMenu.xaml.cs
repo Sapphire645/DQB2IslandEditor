@@ -63,13 +63,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
             {
                ((TabItem)item).Height = height/3;
             }
-            height = height - 54;
-            if (height < 0) height = 0;
-            inventoryGridBlock.ScrollPanel.Height = height;
             inventoryGridBlock.Resize(inventoryGridBlock.ActualWidth);
-            inventoryGridLiquid.ScrollPanel.Height = height;
             inventoryGridLiquid.Resize(inventoryGridBlock.ActualWidth);
-            inventoryGridItem.ScrollPanel.Height = height;
             inventoryGridItem.Resize(inventoryGridBlock.ActualWidth);
         }
     }

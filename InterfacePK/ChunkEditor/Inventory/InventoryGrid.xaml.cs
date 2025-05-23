@@ -189,7 +189,6 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
             width = width - 20;
             Columns.Value = (int)width / 56;
             InventoryBlockHolder.Width = ((int)width / 56) * 56;
-            //ScrollPanel.Width = (((int)width / 56) * 56)+20;
         }
 
         private void TextChange(string filterText)
