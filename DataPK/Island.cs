@@ -236,6 +236,15 @@ namespace DQB2IslandEditor.DataPK
             return (STGDATHeader, STGDATBody);
         }
 
+
+        public void CoverGroundWith(BlockInstance source, BlockInstance newindex)
+        {
+            foreach (var chunk in chunks) { 
+                if(chunk.IsEmpty()) continue;
+                chunk.CoverGroundWith(source, newindex);
+            }
+        }
+
         public override string ToString()
         {
             StringBuilder output = new StringBuilder("ISLAND = {\n\tIsland ID : ");

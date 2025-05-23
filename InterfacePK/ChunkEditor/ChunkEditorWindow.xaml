@@ -123,6 +123,7 @@
             </MenuItem>
             <MenuItem Header="Edit" Padding="4,0" FontWeight="Bold">
                 <MenuItem Header="x Pattern..." Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="Cover with grass" Padding="18,2" FontWeight="Normal" Click="CoverGroundWith" />
                 <Grid Margin="3,1" IsHitTestVisible="False">
                     <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Left"/>
                     <Rectangle Fill="LightGray" VerticalAlignment="Center" Height="1" />

@@ -175,5 +175,17 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             viewModel.PaintToolSize = 2;
             PaintPopup.IsOpen = false;
         }
+
+
+        private void CoverGroundWith(object sender, RoutedEventArgs e)
+        {
+            saveData.Island.CoverGroundWith(
+                new BlockInstance(209,0),
+                new BlockInstance(4, 0));
+
+            saveData.Island.CoverGroundWith(
+                new BlockInstance(8, 0),
+                new BlockInstance(19, 0));
+        }
     }
 }
