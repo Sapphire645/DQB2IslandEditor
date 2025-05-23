@@ -5,36 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DQB2IslandEditor.ObjectPK.Container"
              mc:Ignorable="d" 
-             d:DesignHeight="56" d:DesignWidth="56">
-    <UserControl.Resources>
-        <Style TargetType="Button" x:Key="ColourRect">
-            <Setter Property="BorderBrush" Value="#232337"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="VerticalAlignment" Value="Bottom"/>
-            <Setter Property="HorizontalAlignment" Value="Right"/>
-            <Setter Property="Margin" Value="4"/>
-            <Setter Property="Content">
-                <Setter.Value>
-                    <UniformGrid Rows="1" Width="46" Height="8" Margin="-4">
-                        <Border Background="White" BorderBrush="black" BorderThickness="0.4"/>
-                        <Border Background="#404040" BorderBrush="black" BorderThickness="0.4"/>
-                        <Border Background="DarkMagenta" BorderBrush="black" BorderThickness="0.4"/>
-                        <Border Background="#FFFF0094" BorderBrush="black" BorderThickness="0.4"/>
-                        <Border Background="Red" BorderBrush="black" BorderThickness="0.4"/>
-                        <Border Background="Lime" BorderBrush="black" BorderThickness="0.4"/>
-                        <Border Background="Yellow" BorderBrush="black" BorderThickness="0.4"/>
-                        <Border Background="Blue" BorderBrush="black" BorderThickness="0.4"/>
-                    </UniformGrid>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </UserControl.Resources>
-    <Grid Name="g" Background="Black" Width="56" Height="56">
-        <Button Background="#232337" BorderThickness="0" Margin="4" Name="SlotButton" ToolTipService.InitialShowDelay="5">
+             d:DesignHeight="56" d:DesignWidth="56" Loaded="LoadImage">
+    <Grid Name="g" Background="Black" Width="56" Height="56" >
+        <Button Background="#232337" BorderBrush="#232337" BorderThickness="0" Margin="4" Name="SlotButton" ToolTipService.InitialShowDelay="5"
+                Click="ButtonClicked" MouseRightButtonUp="ButtonRightClicked">
             <Button.ToolTip>
                 <ToolTip Background="Transparent" BorderThickness="0">
-                    <local:InventoryInfo objectInfoPanel="{Binding objectInfo}"/>
+                    <local:InventoryInfo x:Name="ToolTipObject" />
                 </ToolTip>
             </Button.ToolTip>
             <Button.Template>
@@ -55,7 +32,8 @@
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Button.Template>
-            <Image Source="{Binding objectInfo.objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
+            <Image Name="ImageObject" Height="38" Width="38" IsHitTestVisible="False"/>
         </Button>
+        
     </Grid>
 </UserControl>

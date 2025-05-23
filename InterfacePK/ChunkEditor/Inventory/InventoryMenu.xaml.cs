@@ -36,7 +36,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
 
         public async void CreateInventory(IDictionary<uint, ObjectInfo> fullBlockList, ChunkEditorWindow chunkEditorWindow)
         {
-            Task<List<(uint, uint)>> parityBlocks = Task.Run(() => DataBaseReading.BlockParity());
+            Task<IDictionary<uint, List<uint>>> parityBlocks = Task.Run(() => DataBaseReading.BlockParity());
 
             inventoryGridBlock.CreateFilterButtons(new List<string> { "Used", "Unused", "Indestructible", "Item shells", "NULL" },new byte[3] { 0, 1, 2 });
             inventoryGridLiquid.CreateFilterButtons(new List<string> { "Scoopable", "Unscoopable", "Item shells", "Unused" }, new byte[2] { 0, 1, });

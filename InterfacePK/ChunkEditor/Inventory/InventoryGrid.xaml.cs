@@ -77,8 +77,10 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
 
             }
         }
-        public async void CreateInventory(IDictionary<uint, ObjectInfo> fullBlockList, bool isItem, bool liquidCompare, List<(uint, uint)> parity)
+        public async void CreateInventory(IDictionary<uint, ObjectInfo> fullBlockList, bool isItem, bool liquidCompare,
+            IDictionary<uint, List<uint>> parity)
         {
+            //Gotta change this later.
             if (!_loaded)
             {
                 Application.Current.Dispatcher.Invoke(new Action(() =>
@@ -96,9 +98,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                         {
                             var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
                             {
-                                InventoryContainer inventoryItem = new InventoryContainer(item);
-                                inventoryItem.SlotButton.Click += (_, _) => { ObjectClicked(inventoryItem.objectInfo); };
-                                inventoryItem.SlotButton.MouseRightButtonDown += (_, _) => { ObjectRightClicked(inventoryItem.objectInfo); };
+                                InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
                                 inventoryItemsAll.Add(item.objectId, inventoryItem);
                             }));
                             sendingBlocks.Add(send);
@@ -110,20 +110,19 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                 {
                     send.Wait();
                 }
-                //Now, store the colour objects on their containers.
-                foreach (var parityMerge in parity)
+
+                //Nos create the colour submenus
+                foreach (var parityMerge in parity.Keys)
                 {
-                    if (!inventoryItemsAll.ContainsKey((ushort)parityMerge.Item2)) continue;
+                    if (!inventoryItemsAll.ContainsKey((ushort)parityMerge)) continue;
+                    List<ObjectInfo> values = new List<ObjectInfo>();
+                    foreach (var index in parity[parityMerge])
+                        values.Add(fullBlockList[index]);
+
                     Application.Current.Dispatcher.Invoke(new Action(() =>
-                {
-                    InventoryContainer inventoryItem = inventoryItemsAll[(ushort)parityMerge.Item2];
-                    inventoryItem.AddColour(fullBlockList[parityMerge.Item1]);
-                    if (inventoryItem.selectedColourFunct != ObjectClicked) //Try to add if not added yet.
                     {
-                        inventoryItem.selectedColourFunct = ObjectClicked;
-                        inventoryItem.rightClickColourFunct = ObjectRightClicked;
-                    }
-                }));
+                        inventoryItemsAll[(ushort)parityMerge].createSubMenu(true, 0, values);
+                    }));
                 }
                 _loaded = true;
                 Application.Current.Dispatcher.Invoke(new Action(() =>
@@ -143,7 +142,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
             foreach (var itemInventoryPair in inventoryItemsAll)
             {
                 var itemInventory = itemInventoryPair.Value;
-                var obinfo = itemInventory.objectInfo; //Me save 5 clock cycles. me smart me optimize (joke).
+                var obinfo = itemInventory.CurrentObject; //Me save 5 clock cycles. me smart me optimize (joke).
                 if (toggleFilter[obinfo.tab])
                 {
 
@@ -154,15 +153,16 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                     }
                     else
                     {
-                        if (itemInventory.alternateColours != null)
+                        if (itemInventory.hasSubmenu)
                         {
-                            foreach (var obvarinfo in itemInventory.alternateColours)
-                            {
-                                if (obvarinfo.Value.fullName.ToLower().Contains(_filterText) || obvarinfo.Value.objectId.ToString().Contains(_filterText))
-                                {
-                                        inventoryFilteredItems.Add(itemInventory);
-                                }
-                            }
+                            //itemInventory.filter;
+                            //foreach (var obvarinfo in itemInventory.alternateColours)
+                            //{
+                            //    if (obvarinfo.Value.fullName.ToLower().Contains(_filterText) || obvarinfo.Value.objectId.ToString().Contains(_filterText))
+                            //    {
+                            //            inventoryFilteredItems.Add(itemInventory);
+                            //    }
+                            //}
                         }
                     }
 

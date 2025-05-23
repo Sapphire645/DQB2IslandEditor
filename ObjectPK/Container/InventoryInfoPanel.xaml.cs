@@ -1,5 +1,4 @@
-﻿using DQB2IslandEditor.InterfacePK.ChunkEditor;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -18,30 +17,42 @@ using System.Windows.Shapes;
 namespace DQB2IslandEditor.ObjectPK.Container
 {
     /// <summary>
-    /// Interaction logic for InventoryInfo.xaml
+    /// Interaction logic for InventoryInfoPanel.xaml
     /// </summary>
-    public partial class InventoryInfo : UserControl
+    public partial class InventoryInfoPanel : UserControl
     {
         public static readonly DependencyProperty ObjectInfoProperty =
         DependencyProperty.Register(
-            "objectInfoPanel",
+            "objectInfo",
             typeof(ObjectInfo),
             typeof(InventoryInfo),
             new PropertyMetadata(null));
 
-        public ObjectInfo objectInfoPanel
+        public ObjectInfo objectInfo
         {
             get { return (ObjectInfo)GetValue(ObjectInfoProperty); }
-            set {SetValue(ObjectInfoProperty, value); }
+            set
+            {
+                if (objectInfo != null)
+                    objectInfo.InventoryImageChanged -= updateImage;
+                SetValue(ObjectInfoProperty, value); DataContext = value;
+                value.InventoryImageChanged += updateImage;
+            }
         }
-        public InventoryInfo()
+        public InventoryInfoPanel()
         {
             InitializeComponent();
         }
-
-        private void LoadInformation(object sender, RoutedEventArgs e)
+        private void updateImage(object sender, PropertyChangedEventArgs e)
         {
-            ChunkEditorWindow.openInfoPanel(InformationGrid, objectInfoPanel);
+            if (IsLoaded)
+                Darn.Source = objectInfo.objectInventoryImage;
+        }
+
+        private void LoaddImage(object sender, RoutedEventArgs e)
+        {
+            if (IsLoaded)
+                Darn.Source = objectInfo.objectInventoryImage;
         }
     }
 }

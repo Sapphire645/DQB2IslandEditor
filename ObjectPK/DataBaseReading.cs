@@ -103,6 +103,18 @@ namespace DQB2IslandEditor.ObjectPK
             _minimapDecoratorsRetro[11].Freeze();
             _minimapSheetChunky.Freeze();
             _minimapSheetRetro.Freeze();
+
+            //Loads sheets
+            _sheetOneBlock = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_BLOCK_ONE_PATH));
+            _sheetTwoBlock = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_BLOCK_TWO_PATH));
+            _sheetOneTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_ONE_PATH));
+            _sheetTwoTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_TWO_PATH));
+
+            //Helps performance
+            _sheetOneBlock.Freeze();
+            _sheetTwoBlock.Freeze();
+            _sheetOneTile.Freeze();
+            _sheetTwoTile.Freeze();
         }
         public static CroppedBitmap toolImage(byte tool, bool active)
         {
@@ -128,6 +140,10 @@ namespace DQB2IslandEditor.ObjectPK
         public static ImageSource ValueChiselImage(Chisel chisel)
         {
             return new BitmapImage(new Uri($"pack://application:,,,/Images/Chisel/{(byte)chisel:00}.png"));
+        }
+        public static ImageSource GetInventoryIcon(byte type)
+        {
+            return new BitmapImage(new Uri($"pack://application:,,,/Images/Inventory/icon{(byte)type:0}.png"));
         }
 
         public static ImageSource GetIslandNameImage(byte island)
@@ -213,27 +229,72 @@ namespace DQB2IslandEditor.ObjectPK
                 return layers;
         }
 
+        private async static void GetObjectImage(ObjectInfo parent,
+            BitmapImage _sheetOneBlock, BitmapImage _sheetTwoBlock,
+            byte SIZE, String ERR_PATH)
+        {
+            int ImageID = parent.imageId;
+            CroppedBitmap IconRet = await Task.Run(() =>
+            {
+                CroppedBitmap Icon;
+                try
+                {
+                    if (ImageID >= SHEET_DIMENSION * SHEET_DIMENSION)
+                    {
+                        ImageID = ImageID % (SHEET_DIMENSION * SHEET_DIMENSION);
+                        _sheetOneBlock = _sheetTwoBlock;
+                    }
+                    Icon = new CroppedBitmap(_sheetOneBlock, new Int32Rect((ImageID % SHEET_DIMENSION) * SIZE, (ImageID / SHEET_DIMENSION) * SIZE, SIZE, SIZE));
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine(ImageID);
+                    Icon = new CroppedBitmap(new BitmapImage(new Uri("pack://application:,,,/" + ERR_PATH)), new Int32Rect(0, 0, SIZE, SIZE));
+                }
+
+                Icon.Freeze();
+                return Icon;
+            });
+            Application.Current.Dispatcher.Invoke(new Action(() =>
+            {
+                if (ERR_PATH == BLOCK_ERR_PATH)
+                    parent.objectInventoryImage = IconRet;
+                else
+                    parent.objectMapImage = IconRet;
+            }));
+        }
+
+        public static async void GetObjectInventoryImage(ObjectInfo parent)
+        {
+            CroppedBitmap blockIcon;
+            if (parent is BlockInfo)
+                GetObjectImage(parent, _sheetOneBlock, _sheetTwoBlock, BLOCK_SIZE, BLOCK_ERR_PATH);
+            else
+                Application.Current.Dispatcher.Invoke(new Action(() =>
+                {
+                    parent.objectInventoryImage = new BitmapImage(new Uri("pack://application:,,,/Images/Inventory/placeholder.png"));
+                }));
+            
+        }
+        public static async void GetObjectMapImage(ObjectInfo parent)
+        {
+            CroppedBitmap blockIcon;
+            if (parent is BlockInfo)
+                GetObjectImage(parent, _sheetOneTile, _sheetTwoTile, TILE_SIZE, TILE_ERR_PATH);
+            else
+                Application.Current.Dispatcher.Invoke(new Action(() =>
+                {
+                    parent.objectMapImage = new BitmapImage(new Uri("pack://application:,,,/Images/Inventory/placeholder.png"));
+                }));
+        }
 
         public static void ReadBlockFile()
         {
-            //Loads sheets
-            _sheetOneBlock = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_BLOCK_ONE_PATH));
-            _sheetTwoBlock = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_BLOCK_TWO_PATH));
-            _sheetOneTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_ONE_PATH));
-            _sheetTwoTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_TWO_PATH));
-
-            //Helps performance
-            _sheetOneBlock.Freeze();
-            _sheetTwoBlock.Freeze();
-            _sheetOneTile.Freeze();
-            _sheetTwoTile.Freeze();
-
             var blockList = new Dictionary<uint, BlockInfo>();
             if (!System.IO.File.Exists(BLOCK_EXTRA_PATH)) return; //Crash lmao
 
             String[] blockLines = ReadEmbeddedResource(BLOCK_PATH).Split("\n");
-            CroppedBitmap blockIcon;
-            CroppedBitmap tileIcon;
 
             foreach (String line in blockLines)
             {
@@ -246,35 +307,11 @@ namespace DQB2IslandEditor.ObjectPK
                 if (values.Length < 6) continue;
 
                 var ImageID = short.Parse(values[1]);
-                try
-                {
-                    if (ImageID < SHEET_DIMENSION * SHEET_DIMENSION)  //Do I create all images here or do I get them dinamically? Ponder
-                    {
-                        blockIcon = new CroppedBitmap(_sheetOneBlock, new Int32Rect((ImageID % SHEET_DIMENSION) * BLOCK_SIZE, (ImageID / SHEET_DIMENSION) * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE));
-                        tileIcon = new CroppedBitmap(_sheetOneTile, new Int32Rect((ImageID % SHEET_DIMENSION) * TILE_SIZE, (ImageID / SHEET_DIMENSION) * TILE_SIZE, TILE_SIZE, TILE_SIZE));
-                    }
-                    else
-                    {
-                        var ImageIDTemp = ImageID % (SHEET_DIMENSION * SHEET_DIMENSION);
-                        blockIcon = new CroppedBitmap(_sheetTwoBlock, new Int32Rect((ImageIDTemp % SHEET_DIMENSION) * BLOCK_SIZE, (ImageIDTemp / SHEET_DIMENSION) * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE));
-                        tileIcon = new CroppedBitmap(_sheetTwoTile, new Int32Rect((ImageIDTemp % SHEET_DIMENSION) * TILE_SIZE, (ImageIDTemp / SHEET_DIMENSION) * TILE_SIZE, TILE_SIZE, TILE_SIZE));
-                    }
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                    Console.WriteLine(ImageID);
-                    blockIcon = new CroppedBitmap(new BitmapImage(new Uri("pack://application:,,,/" + BLOCK_ERR_PATH)), new Int32Rect(0, 0, BLOCK_SIZE, BLOCK_SIZE));
-                    tileIcon = new CroppedBitmap(new BitmapImage(new Uri("pack://application:,,,/" + TILE_ERR_PATH)), new Int32Rect(0, 0, TILE_SIZE, TILE_SIZE));
-                }
-                blockIcon.Freeze();
-                tileIcon.Freeze();
 
                 blockList.Add(ushort.Parse(values[0]), new BlockInfo(
                     ushort.Parse(values[0]), ImageID,
                     values[2] == "1", byte.Parse(values[3]),
-                    (Colour)byte.Parse(values[4]), values[5].Trim(),
-                    blockIcon, tileIcon));
+                    (Colour)byte.Parse(values[4]), values[5].Trim()));
 
             }
 
@@ -300,16 +337,14 @@ namespace DQB2IslandEditor.ObjectPK
         {
             var itemList = new Dictionary<uint, ItemInfo>();
             //I'll do a placeholder item for now.
-            itemList.Add(0, new ItemInfo(0,0,0,Colour.Plain,"Placeholder", 
-                new BitmapImage(new Uri("pack://application:,,,/Images/Inventory/placeholder.png")),
-                new BitmapImage(new Uri("pack://application:,,,/Images/Inventory/placeholder.png"))
-                ));
+            itemList.Add(0, new ItemInfo(0,0,0,Colour.Plain,"Placeholder")
+                );
             ITEM_INFO_DICTIONARY = itemList;
         }
 
-        public static List<(uint, uint)> BlockParity()
+        public static IDictionary<uint, List<uint>> BlockParity()
         {
-            var blockList = new List<(uint, uint)>();
+            var blockList = new Dictionary<uint, List<uint>>();
             String[] blockLines = ReadEmbeddedResource(BLOCK_PARITY_PATH).Split("\n");
             foreach (String line in blockLines)
             {
@@ -317,10 +352,12 @@ namespace DQB2IslandEditor.ObjectPK
                 String[] values = line.Split('\t');
                 if (values.Length < 2) continue;
                 uint ID = uint.Parse(values[0]);
+                var lis = new List<uint>();
                 foreach (String id in values[1].Split(','))
                 {
-                    blockList.Add((uint.Parse(id), ID));
+                    lis.Add(uint.Parse(id));
                 }
+                blockList.Add(ID, lis);
             }
             return blockList;
         }
