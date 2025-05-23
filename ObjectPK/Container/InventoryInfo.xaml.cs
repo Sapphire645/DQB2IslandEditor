@@ -41,7 +41,8 @@ namespace DQB2IslandEditor.ObjectPK.Container
 
         private void LoadInformation(object sender, RoutedEventArgs e)
         {
-            ChunkEditorWindow.openInfoPanel(InformationGrid, objectInfoPanel);
+            if(objectInfoPanel != null)
+                ChunkEditorWindow.openInfoPanel(InformationGrid, objectInfoPanel);
         }
     }
 }

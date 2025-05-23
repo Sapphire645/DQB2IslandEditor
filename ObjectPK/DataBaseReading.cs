@@ -72,6 +72,8 @@ namespace DQB2IslandEditor.ObjectPK
         private static Dictionary<ushort, CroppedBitmap> _minimapStorageRetro = new Dictionary<ushort, CroppedBitmap>();
 
         private const int TOOL_SIZE = 80;
+
+        private static DataBaseImageHandler[] ImageDatabase = new DataBaseImageHandler[4];
         public static void InitStaticElements()
         {
             _toolSheet = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TOOLS));
@@ -115,6 +117,9 @@ namespace DQB2IslandEditor.ObjectPK
             _sheetTwoBlock.Freeze();
             _sheetOneTile.Freeze();
             _sheetTwoTile.Freeze();
+
+            ImageDatabase[0] = new DataBaseImageHandler(_sheetOneBlock, _sheetTwoBlock,BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
+            ImageDatabase[1] = new DataBaseImageHandler(_sheetOneTile, _sheetTwoTile, TILE_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
         }
         public static CroppedBitmap toolImage(byte tool, bool active)
         {
@@ -228,48 +233,14 @@ namespace DQB2IslandEditor.ObjectPK
             }
                 return layers;
         }
+        
 
-        private async static void GetObjectImage(ObjectInfo parent,
-            BitmapImage _sheetOneBlock, BitmapImage _sheetTwoBlock,
-            byte SIZE, String ERR_PATH)
-        {
-            int ImageID = parent.imageId;
-            CroppedBitmap IconRet = await Task.Run(() =>
-            {
-                CroppedBitmap Icon;
-                try
-                {
-                    if (ImageID >= SHEET_DIMENSION * SHEET_DIMENSION)
-                    {
-                        ImageID = ImageID % (SHEET_DIMENSION * SHEET_DIMENSION);
-                        _sheetOneBlock = _sheetTwoBlock;
-                    }
-                    Icon = new CroppedBitmap(_sheetOneBlock, new Int32Rect((ImageID % SHEET_DIMENSION) * SIZE, (ImageID / SHEET_DIMENSION) * SIZE, SIZE, SIZE));
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                    Console.WriteLine(ImageID);
-                    Icon = new CroppedBitmap(new BitmapImage(new Uri("pack://application:,,,/" + ERR_PATH)), new Int32Rect(0, 0, SIZE, SIZE));
-                }
-
-                Icon.Freeze();
-                return Icon;
-            });
-            Application.Current.Dispatcher.Invoke(new Action(() =>
-            {
-                if (ERR_PATH == BLOCK_ERR_PATH)
-                    parent.objectInventoryImage = IconRet;
-                else
-                    parent.objectMapImage = IconRet;
-            }));
-        }
 
         public static async void GetObjectInventoryImage(ObjectInfo parent)
         {
             CroppedBitmap blockIcon;
             if (parent is BlockInfo)
-                GetObjectImage(parent, _sheetOneBlock, _sheetTwoBlock, BLOCK_SIZE, BLOCK_ERR_PATH);
+                ImageDatabase[0].GetObjectImage(parent);
             else
                 Application.Current.Dispatcher.Invoke(new Action(() =>
                 {
@@ -281,7 +252,7 @@ namespace DQB2IslandEditor.ObjectPK
         {
             CroppedBitmap blockIcon;
             if (parent is BlockInfo)
-                GetObjectImage(parent, _sheetOneTile, _sheetTwoTile, TILE_SIZE, TILE_ERR_PATH);
+                ImageDatabase[1].GetObjectImage(parent);
             else
                 Application.Current.Dispatcher.Invoke(new Action(() =>
                 {
