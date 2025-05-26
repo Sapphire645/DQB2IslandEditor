@@ -1,5 +1,6 @@
 ﻿using DQB2IslandEditor.DataPK;
 using DQB2IslandEditor.InterfacePK.ChunkEditor;
+using DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass;
 using DQB2IslandEditor.ObjectPK;
 using DQB2IslandEditor.ObjectPK.Container;
 using Microsoft.Win32;
@@ -30,6 +31,9 @@ namespace DQB2IslandEditor.InterfacePK
         public Island CurrentIsland => saveData.Island;
         private ChunkEditorWindow chunkEditorWindow;
 
+
+
+        //-------------------------UPDATE CHUNK------------------------------
         //Colective Layer value.
 
         public void UpdatedChunks()
@@ -66,6 +70,7 @@ namespace DQB2IslandEditor.InterfacePK
         public int CurrentChunkY => CurrentChunk / Island.GRID_DIMENSION;
 
 
+        //------------------------------------HUD-----------------------------
         //Colective hud stuffs
         private bool _showMinimapGrid = true;
         private bool _showFullGrid = false;
@@ -92,28 +97,35 @@ namespace DQB2IslandEditor.InterfacePK
         public Visibility ShowMinimapGridVisibility { get { return ShowMinimapGrid ? Visibility.Visible : Visibility.Hidden; } }
         public Visibility ShowFullGridVisibility { get { return ShowFullGrid ? Visibility.Visible : Visibility.Hidden; } }
 
+
+        //----------------------------------------------------------------------------------------------------------------
         //TOOL HANDELING:
 
         private byte _selectedTool;
 
-        private byte _paintToolSize = 1;
+        public byte auraSize = 1;
+        public bool auraSquare = false;
+
+        private ITool _currentTool; //Handler of the current tool.
 
         public byte SelectedTool { get { return _selectedTool; }
             set {
+                if(_selectedTool != value)
+                {
+                    switch (value)
+                    {
+                        case 0:
+                            _currentTool = new SelectionTool(this, chunkEditorWindow.chunkBlockGrid);
+                            break;
+                        case 2:
+                            _currentTool = new TrowelTool(this, chunkEditorWindow.chunkBlockGrid);
+                            break;
+                    }
+                }
                 _selectedTool = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedTool)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedToolImage)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedToolName)));
-            }
-        }
-
-        public byte PaintToolSize
-        {
-            get { return _paintToolSize; }
-            set
-            {
-                _paintToolSize = value;
-                SelectedTool = 2;
             }
         }
 
@@ -129,13 +141,16 @@ namespace DQB2IslandEditor.InterfacePK
         //----------------------------------------------------------------------------------------------------------------
 
         //Selected Tile:
-
+        //This will get a rework, do not worry.
         private ushort _selectedTileChunk;
         private ushort _selectedTileLayer;
         private ushort _selectedTileOffset;
 
-
         private ObjectInfo _selectedObject;
+
+        private Chisel _currentChisel;
+        private bool _currentBuilderPlaced;
+
 
         public ObjectInfo SelectedObject
         {
@@ -149,10 +164,48 @@ namespace DQB2IslandEditor.InterfacePK
                 return _selectedObject;
             }
         }
+
+        public BlockInstance currentBlockInstance
+        {
+            get
+            {
+                if (SelectedObject == null) return new BlockInstance(0, 0);
+                if (SelectedObject is BlockInfo blockInfo)
+                {
+                    return new BlockInstance(blockInfo.objectId, Chisel.Full, false);
+                }
+                else if (SelectedObject is ItemInfo itemInfo)
+                {
+                    return null;
+                }
+                return new BlockInstance(0, 0); //Default case
+            }
+        }
+        //Change selected object -> Selecting anything on the inventory
+        public void UpdateSelectedObject(ObjectInfo selectedObject)
+        {
+            SelectedObject = selectedObject;
+        }
+
+        public void UpdateSelectedTile(ushort chunk, ushort tile)
+        {
+            _selectedTileChunk = chunk;
+            _selectedTileOffset = tile;
+            _selectedTileLayer = CurrentLayer;
+        }
+
+        //Update favourite -> Right clicking anything on the inventory, right click dropicking a chunk tile 
+        public void UpdateFavouriteObject(ObjectInfo selectedObject)
+        {
+            chunkEditorWindow.favouriteList.UpdateFavourite(selectedObject); //Update favourite
+        }
+
+        //--------------------CREATION------------------------------
         public ChunkEditorViewModel(ChunkEditorWindow mainWindow, SaveData saveData) {
             this.chunkEditorWindow = mainWindow;
             this.saveData = saveData;
             Console.WriteLine("Created View Model");
+            
         }
         public void CreateInventory()
         {
@@ -161,15 +214,15 @@ namespace DQB2IslandEditor.InterfacePK
 
             chunkEditorWindow.selectedObject.SelButton.Click += (_, _) => { UpdateSelectedObject(_selectedObject); };
             chunkEditorWindow.selectedObject.SelButton.MouseRightButtonDown += (_, _) => { UpdateFavouriteObject(_selectedObject); };
+
+            _currentTool = new SelectionTool(this, chunkEditorWindow.chunkBlockGrid); //Default tool is select.
         }
 
-        //Change selected object -> Selecting anything on the inventory
-        public void UpdateSelectedObject(ObjectInfo selectedObject)
-        {
-            SelectedObject = selectedObject;
-        }
+
+        //--------------------------- Chunk view inputs ----------------------------
         public void BlockTile_LeftClick(ushort offset, ushort chunk)
         {
+            _currentTool.BlockInstance_MouseLeftClick(offset, chunk);
             /*
             chunkLayer[offset].IsClicked();
             switch (SelectedTool)
@@ -200,6 +253,7 @@ namespace DQB2IslandEditor.InterfacePK
 
         public void BlockTile_TileEnter(ushort offset, ushort chunk)
         {
+            _currentTool.BlockInstance_MouseEnter(offset, chunk);
             /*
             switch (SelectedTool)
             {
@@ -227,6 +281,7 @@ namespace DQB2IslandEditor.InterfacePK
 
         public void BlockTile_TileLeave(ushort offset, ushort chunk)
         {
+            _currentTool.BlockInstance_MouseLeave(offset, chunk);
             /*
             switch (SelectedTool)
             {
@@ -243,6 +298,7 @@ namespace DQB2IslandEditor.InterfacePK
 
         public void BlockTile_Release(ushort offset, ushort chunk)
         {
+            _currentTool.BlockInstance_MouseRelease(offset, chunk);
             /*
              chunkLayer[offset].IsHovered();
             */
@@ -294,13 +350,6 @@ namespace DQB2IslandEditor.InterfacePK
         public void ItemTile_Release(ItemContainer target)
         {
             target.IsHovered();
-        }
-
-
-        //Update favourite -> Right clicking anything on the inventory, right click dropicking a chunk tile 
-        public void UpdateFavouriteObject(ObjectInfo selectedObject)
-        {
-            chunkEditorWindow.favouriteList.UpdateFavourite(selectedObject); //Update favourite
         }
         
     }

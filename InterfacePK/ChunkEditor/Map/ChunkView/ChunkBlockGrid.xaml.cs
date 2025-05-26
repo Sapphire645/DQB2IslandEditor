@@ -138,5 +138,55 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
                         ChangeChunk("d");
             }
         }
+
+
+
+
+        public void TileAura_Create(ushort[] offsets, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if(chunkViews[i].ChunkIndex == chunk) chunkViews[i].TileAura_Create(offsets);
+            }
+        }
+        public void TileAura_SetBlock(ushort[] offsets, BlockInstance bi, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if (chunkViews[i].ChunkIndex == chunk) chunkViews[i].TileAura_SetBlock(offsets, bi);
+            }
+        }
+
+        public void TileAura_Destroy(ushort[] offsets, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if (chunkViews[i].ChunkIndex == chunk) chunkViews[i].TileAura_Destroy(offsets);
+            }
+        }
+
+        public void Tile_Click(ushort offset, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if (chunkViews[i].ChunkIndex == chunk) chunkViews[i].Tile_Click(offset);
+            }
+        }
+        public void Tile_Unclick(ushort offset, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if (chunkViews[i].ChunkIndex == chunk) chunkViews[i].Tile_Unclick(offset);
+            }
+        }
+
+        public BlockInfo GetBlockInfo(ushort offset, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if (chunkViews[i].ChunkIndex == chunk) return chunkViews[i].GetBlockInfoInOffset(offset);
+            }
+            return null;
+        }
     }
 }

@@ -167,17 +167,22 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
 
         private void ToolChange1(object sender, RoutedEventArgs e)
         {
-            viewModel.PaintToolSize = 0;
+            viewModel.auraSize = 0;
+            viewModel.SelectedTool = 2;
             PaintPopup.IsOpen = false;
         }
         private void ToolChange2(object sender, RoutedEventArgs e)
         {
-            viewModel.PaintToolSize = 1;
+            viewModel.auraSize = 2;
+            viewModel.auraSquare = false;
+            viewModel.SelectedTool = 2;
             PaintPopup.IsOpen = false;
         }
         private void ToolChange3(object sender, RoutedEventArgs e)
         {
-            viewModel.PaintToolSize = 2;
+            viewModel.auraSize = 2;
+            viewModel.SelectedTool = 2;
+            viewModel.auraSquare = true;
             PaintPopup.IsOpen = false;
         }
 

@@ -142,14 +142,14 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
 
         //--------------------------------------------------------------------
         //Asthetic:
-        private void TileAura_Create(ushort[] offsets)
+        public void TileAura_Create(ushort[] offsets)
         {
             foreach (var offset in offsets)
             {
                 tiles[offset].IsHovered();
             }
         }
-        private void TileAura_SetBlock(ushort[] offsets,BlockInstance bi)
+        public void TileAura_SetBlock(ushort[] offsets,BlockInstance bi)
         {
             foreach (var offset in offsets)
             {
@@ -157,7 +157,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
             }
         }
 
-        private void TileAura_Destroy(ushort[] offsets)
+        public void TileAura_Destroy(ushort[] offsets)
         {
             foreach (var offset in offsets)
             {
@@ -165,9 +165,18 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
             }
         }
 
+        public void Tile_Click(ushort offset)
+        {
+            tiles[offset].IsClicked();
+        }
+        public void Tile_Unclick(ushort offset)
+        {
+            tiles[offset].IsUnClicked();
+        }
+
         private void Offset_SetBlock(ushort offset, BlockInstance bi)
         {
-            displayedChunk.SetBlockFromCoords(bi, (byte)(offset % Chunk.X_DIMENSION), (byte)(offset % Chunk.Z_DIMENSION), viewModel.CurrentLayer);
+            displayedChunk.SetBlockFromCoords(bi, (byte)(offset % Chunk.X_DIMENSION), (byte)(offset / Chunk.Z_DIMENSION), viewModel.CurrentLayer);
             tiles[offset].blockInstance = bi;
         }
 
