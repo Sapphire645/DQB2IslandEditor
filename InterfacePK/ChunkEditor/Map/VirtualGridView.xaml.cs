@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -153,5 +154,22 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map
                 }
             }
         }
+
+
+        public ushort[] getCoords()
+        {
+            ushort[] c = new ushort[2];
+            ushort key = 0;
+            if (allChunks == null) return c;  
+            foreach (var chunk in allChunks)
+            {
+                key = (ushort)selectedChunks[0].Tag;
+                if (key != 1000) break;
+            }
+            c[0] = (ushort)(key % 64);
+            c[1] = (ushort)(key /64);
+            return c;
+        }
+
     }
 }

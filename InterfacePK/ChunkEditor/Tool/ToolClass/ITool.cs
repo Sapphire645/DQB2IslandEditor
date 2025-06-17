@@ -17,7 +17,6 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass
         public void BlockInstance_MouseLeave(ushort offset, ushort chunk);
         public void BlockInstance_MouseLeftClick(ushort offset, ushort chunk);
         public void BlockInstance_MouseRelease(ushort offset, ushort chunk);
-
         public void ItemInstance_MouseEnter(ushort offset, ushort chunk, byte itemLocationInArray);
         public void ItemInstance_MouseLeave(ushort offset, ushort chunk, byte itemLocationInArray);
         public void ItemInstance_MouseLeftClick(ushort offset, ushort chunk, byte itemLocationInArray);

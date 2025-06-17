@@ -229,7 +229,7 @@ namespace DQB2IslandEditor.DataPK
             {
                 using (var output = new MemoryStream())
                 {
-                    using (var zlib = new System.IO.Compression.ZLibStream(output, System.IO.Compression.CompressionLevel.Fastest))
+                    using (var zlib = new System.IO.Compression.ZLibStream(output, System.IO.Compression.CompressionLevel.Optimal))
                     {
                         input.CopyTo(zlib);
                         zlib.Flush();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -97,6 +98,23 @@ namespace DQB2IslandEditor.DataPK
             var offset = layer * SIZE_LAYER + z * X_DIMENSION * 2 + x * 2;
             blockBytes[offset] = bytes[0];
             blockBytes[offset+1] = bytes[1];
+        }
+
+
+        public void CoverGroundWith(BlockInstance source, BlockInstance newindex)
+        {
+            if (blockBytes == null) return;
+
+            for (byte x = 0; x< X_DIMENSION; x++)
+                for (byte z = 0; z < Z_DIMENSION; z++)
+                    for (byte y = (byte)(Y_DIMENSION - 1); y < 255 ; y--)
+                    {
+                        BlockInstance curr = GetBlockFromCoords(x, z, y);
+
+                        if (curr.publicBlockID == source.publicBlockID)
+                            SetBlockFromCoords(newindex, x,z,y);
+                        if (curr.publicBlockID != 0) break;
+                    }
         }
 
         override public string ToString()

@@ -35,6 +35,13 @@ namespace DQB2IslandEditor.DataPK
             chiselID = (Chisel)(blockByteTwo >> 4);
         }
 
+        public BlockInstance(uint blockID, Chisel chiselID, bool overflow)
+        {
+            this.blockID = blockID;
+            this.builderPlaced = overflow;
+            this.chiselID = chiselID;
+        }
+
         public byte[] GetBytes()
         {
             var bytes = new byte[2];

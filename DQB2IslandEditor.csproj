@@ -35,6 +35,7 @@
     <None Remove="Images\Inventory\B-0001.png" />
     <None Remove="Images\Inventory\BlockSheetOne.png" />
     <None Remove="Images\Inventory\BlockSheetTwo.png" />
+    <None Remove="Images\Inventory\icon0.png" />
     <None Remove="Images\Inventory\placeholder.png" />
     <None Remove="Images\Inventory\SheetChunky.png" />
     <None Remove="Images\Inventory\SheetRetro.png" />
@@ -77,6 +78,7 @@
     <Content Include="Info\BlockExtra.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\Inventory\icon0.png" />
     <Resource Include="Images\Inventory\placeholder.png" />
     <Resource Include="Images\Inventory\SheetChunky.png" />
     <Resource Include="Images\Inventory\SheetRetro.png" />
@@ -135,6 +137,10 @@
     <Resource Include="Images\UI\toolsheet.png" />
     <Resource Include="Images\UI\YLayer.png" />
     <Resource Include="Info\BlockParity.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ObjectPK\Container\InventoryMenus\" />
   </ItemGroup>
 
 </Project>

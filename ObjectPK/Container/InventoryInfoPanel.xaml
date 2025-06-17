@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="DQB2IslandEditor.ObjectPK.Container.InventoryInfoPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DQB2IslandEditor.ObjectPK.Container"
+             mc:Ignorable="d" Loaded="LoaddImage" >
+    <Border Background="Black" BorderBrush="White" BorderThickness="1.5" CornerRadius="5" Padding="8">
+        <UniformGrid Rows="2">
+            <DockPanel Name="size">
+                <Border Background="#232337"  CornerRadius="10" Margin="4" DockPanel.Dock="Left">
+                    <Grid>
+                        <Image Name="Darn" Source="{Binding objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False" Margin="4"/>
+                        <Border Background="{Binding colourBrush}" Visibility="{Binding colourTag}" 
+                                BorderBrush="black" BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="13" Height="23" CornerRadius="4" Margin="1"/>
+                    </Grid>
+                </Border>
+                <TextBlock Text="{Binding name}" Foreground="White" FontWeight="SemiBold" Margin="2,5" FontSize="16" DockPanel.Dock="Top"/>
+                <TextBlock Margin="2,0" Text="{Binding objectIdDisplay, StringFormat=ID: {0}, Mode=OneWay}" Foreground="Gold"/>
+                <TextBlock Text="{Binding colour, StringFormat=Colour: {0}}" Foreground="{Binding colourBrushLight}" Margin="8,0" />
+            </DockPanel>
+            <StackPanel MaxWidth="400" Margin="2,5">
+                <TextBlock Text="{Binding gameDescription}" Foreground="White" TextWrapping="WrapWithOverflow" />
+                <TextBlock Text="{Binding description}" Foreground="Yellow" TextWrapping="WrapWithOverflow" />
+            </StackPanel>
+        </UniformGrid>
+    </Border>
+</UserControl>

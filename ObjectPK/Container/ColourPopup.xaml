@@ -5,114 +5,51 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DQB2IslandEditor.ObjectPK.Container"
              mc:Ignorable="d">
-    <UserControl.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Name="Border" Background="{TemplateBinding Background}" 
-                BorderBrush="{TemplateBinding BorderBrush}" 
-                BorderThickness="{TemplateBinding BorderThickness}" 
-                CornerRadius="15">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="Border" Property="Background" Value="Orange" />
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="Border" Property="Background" Value="#A8A8A8" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <Style TargetType="Border" x:Key="ColourRect">
-            <Setter Property="CornerRadius" Value="4"/>
-            <Setter Property="BorderBrush" Value="Black"/>
-            <Setter Property="BorderThickness" Value="2"/>
-            <Setter Property="Margin" Value="36,27,5,5"/>
-        </Style>
-    </UserControl.Resources>
     <Border BorderBrush="#232337" BorderThickness="2" CornerRadius="5" Padding="20,10">
-        <Grid>
-            <UniformGrid Columns="4" Rows="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="112" Width="224">
-                <Button Name="White" Background="#232337" BorderThickness="0" Margin="4" ToolTipService.InitialShowDelay="5">
-                    <Button.ToolTip>
-                        <ToolTip Background="Transparent" BorderThickness="0">
-                            <local:InventoryInfo objectInfoPanel="{Binding alternateColours[1]}"/>
-                        </ToolTip>
-                    </Button.ToolTip>
-                    <Image Source="{Binding alternateColours[1].objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
-                </Button>
-                <Button Name="Black" Background="#232337" BorderThickness="0" Margin="4" ToolTipService.InitialShowDelay="5">
-                    <Button.ToolTip>
-                        <ToolTip Background="Transparent" BorderThickness="0">
-                            <local:InventoryInfo objectInfoPanel="{Binding alternateColours[2]}"/>
-                        </ToolTip>
-                    </Button.ToolTip>
-                    <Image Source="{Binding alternateColours[2].objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
-                </Button>
-                <Button Name="Purple" Background="#232337" BorderThickness="0" Margin="4" ToolTipService.InitialShowDelay="5">
-                    <Button.ToolTip>
-                        <ToolTip Background="Transparent" BorderThickness="0">
-                            <local:InventoryInfo objectInfoPanel="{Binding alternateColours[3]}"/>
-                        </ToolTip>
-                    </Button.ToolTip>
-                    <Image Source="{Binding alternateColours[3].objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
-                </Button>
-                <Button Name="Pink" Background="#232337" BorderThickness="0" Margin="4" ToolTipService.InitialShowDelay="5">
-                    <Button.ToolTip>
-                        <ToolTip Background="Transparent" BorderThickness="0">
-                            <local:InventoryInfo objectInfoPanel="{Binding alternateColours[4]}"/>
-                        </ToolTip>
-                    </Button.ToolTip>
-                    <Image Source="{Binding alternateColours[4].objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
-                </Button>
-                <Button Name="Red" Background="#232337" BorderThickness="0" Margin="4" ToolTipService.InitialShowDelay="5">
-                    <Button.ToolTip>
-                        <ToolTip Background="Transparent" BorderThickness="0">
-                            <local:InventoryInfo objectInfoPanel="{Binding alternateColours[5]}"/>
-                        </ToolTip>
-                    </Button.ToolTip>
-                    <Image Source="{Binding alternateColours[5].objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
-                </Button>
-                <Button Name="Green" Background="#232337" BorderThickness="0" Margin="4" ToolTipService.InitialShowDelay="5">
-                    <Button.ToolTip>
-                        <ToolTip Background="Transparent" BorderThickness="0">
-                            <local:InventoryInfo objectInfoPanel="{Binding alternateColours[6]}"/>
-                        </ToolTip>
-                    </Button.ToolTip>
-                    <Image Source="{Binding alternateColours[6].objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
-                </Button>
-                <Button Name="Yellow" Background="#232337" BorderThickness="0" Margin="4" ToolTipService.InitialShowDelay="5">
-                    <Button.ToolTip>
-                        <ToolTip Background="Transparent" BorderThickness="0">
-                            <local:InventoryInfo objectInfoPanel="{Binding alternateColours[7]}"/>
-                        </ToolTip>
-                    </Button.ToolTip>
-                    <Image Source="{Binding alternateColours[7].objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
-                </Button>
-                <Button Name="Blue" Background="#232337" BorderThickness="0" Margin="4" ToolTipService.InitialShowDelay="5">
-                    <Button.ToolTip>
-                        <ToolTip Background="Transparent" BorderThickness="0">
-                            <local:InventoryInfo objectInfoPanel="{Binding alternateColours[8]}"/>
-                        </ToolTip>
-                    </Button.ToolTip>
-                    <Image Source="{Binding alternateColours[8].objectInventoryImage}" Height="38" Width="38" IsHitTestVisible="False"/>
-                </Button>
-            </UniformGrid>
-            <UniformGrid Columns="4" Rows="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="112" Width="224" IsHitTestVisible="False">
-                <Border Background="White" Style="{StaticResource ColourRect}"/>
-                <Border Background="#404040" Style="{StaticResource ColourRect}"/>
-                <Border Background="DarkMagenta" Style="{StaticResource ColourRect}"/>
-                <Border Background="#FFFF0094" Style="{StaticResource ColourRect}"/>
-                <Border Background="Red" Style="{StaticResource ColourRect}"/>
-                <Border Background="Lime" Style="{StaticResource ColourRect}"/>
-                <Border Background="Yellow" Style="{StaticResource ColourRect}"/>
-                <Border Background="Blue" Style="{StaticResource ColourRect}"/>
-            </UniformGrid>
-        </Grid>
+        <ListBox ItemsSource="{Binding RelativeSource={RelativeSource AncestorType=UserControl}, Path=objects}" 
+                 Background="Transparent" BorderThickness="0"
+                 PreviewMouseLeftButtonDown="SelectedItem"
+                 PreviewMouseRightButtonDown="SelectedRightItem">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Padding" Value="0"/>
+                    <Setter Property="Margin" Value="0"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Button BorderThickness="2" Background="{Binding colourBrush}" BorderBrush="#232337" Height="40" Width="30" 
+                            ToolTipService.InitialShowDelay="0" ToolTipService.BetweenShowDelay="0">
+                        <Button.ToolTip>
+                            <ToolTip Background="Transparent" BorderThickness="0">
+                                <local:InventoryInfo objectInfoPanel="{Binding .}"/>
+                            </ToolTip>
+                        </Button.ToolTip>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Name="Border" Background="{TemplateBinding Background}" 
+                                                        BorderBrush="{TemplateBinding BorderBrush}" 
+                                                        BorderThickness="{TemplateBinding BorderThickness}" 
+                                                        CornerRadius="2">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="Border" Property="Background" Value="{Binding colourBrushLight}" />
+                                        <Setter TargetName="Border" Property="BorderBrush" Value="{Binding colourBrush}" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Border>
 </UserControl>

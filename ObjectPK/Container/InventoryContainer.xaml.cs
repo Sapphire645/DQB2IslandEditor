@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.IO;
+using System.Windows.Media;
+using System.Windows.Input;
+using System.ComponentModel;
+
 
 namespace DQB2IslandEditor.ObjectPK.Container
 {
@@ -21,63 +15,142 @@ namespace DQB2IslandEditor.ObjectPK.Container
     /// </summary>
     public partial class InventoryContainer : UserControl
     {
-        public ObjectInfo objectInfo { get; private set; }
+        public ObjectInfo CurrentObject
+        { get { return _currentObject; }
+            private set {
+                if(_currentObject != null)
+                    _currentObject.InventoryImageChanged -= updateImage;
+                _currentObject = value;
+                _currentObject.InventoryImageChanged += updateImage;
+                if(IsLoaded)
+                    ImageObject.Source = _currentObject.objectInventoryImage;
+                ToolTipObject.objectInfoPanel = _currentObject;
+            } }
 
-        public Dictionary<Colour, ObjectInfo> alternateColours { get; private set; } = null ;
+        private void updateImage(object sender, PropertyChangedEventArgs e)
+        {
+            if(IsLoaded)
+                ImageObject.Source = _currentObject.objectInventoryImage;
+        }
+
+        private ObjectInfo _currentObject;
+        private UserControl _submenu = null;
+
+        private Action<ObjectInfo> _selectBlock;
+        private Action<ObjectInfo> _favouriteBlock;
+
+        public bool hasSubmenu => _submenu != null;
         private Popup colourPopup = null;
-        private Button colourButton = null;
-
-        public Action<ObjectInfo>? selectedColourFunct;
-        public Action<ObjectInfo>? rightClickColourFunct;
-        public InventoryContainer(ObjectInfo objectInfo)
+        private Border colourBorder = null;
+        private bool _isPopupOpen = false;
+        public InventoryContainer(ObjectInfo objectInfo, Action<ObjectInfo> selectBlock, Action<ObjectInfo> favouriteBlock)
         {
             DataContext = this;
-            this.objectInfo = objectInfo;
+            
+            _selectBlock = selectBlock;
+            _favouriteBlock = favouriteBlock;
+
             InitializeComponent();
+            CurrentObject = objectInfo;
         }
+        // 0 = Colour
 
-        public void AddColour(ObjectInfo objectInfo)
+        public void createSubMenu(bool colour, byte type, List<ObjectInfo> subInfos)
         {
-            //If no colours have been added
-            if (alternateColours == null)
+            Image icon = new Image()
             {
-                alternateColours = new();
-                if (FindResource("ColourRect") is Style ColourRect)
-                {
-                    //Create the button for opening the colour menu
-                    colourButton = new Button
-                    {
-                        Width = 48,
-                        Height = 10,
-                        Style = ColourRect
-                    };
-                    colourButton.Click += (_, _) => { ColourPopup(colourButton); };
-                    g.Children.Add(colourButton);
-                }
-            }
-            alternateColours.Add(objectInfo.colour, objectInfo);
-        }
+                Width = 20,
+                Height = 20,
+                VerticalAlignment = VerticalAlignment.Bottom,
+                HorizontalAlignment = HorizontalAlignment.Left,
+                IsHitTestVisible = false
+            };
+            icon.Source = DataBaseReading.GetInventoryIcon(type);
+            g.Children.Add(icon);
+            switch (type)
+            {
+                case 0: //Colour menu
+                    if (colour)
+                        _submenu = new ColourPopup(SelectedItem, _favouriteBlock, _currentObject, subInfos);
+                    break;
 
-        private void ColourPopup(Button colourButton)
+            }
+        }
+        private void ColourPopup()
         {
-            if(colourPopup == null)
+            if (colourPopup == null)
             {
                 colourPopup = new Popup
                 {
-                    PlacementTarget = colourButton,
-                    Placement = PlacementMode.Bottom,
+                    PlacementTarget = this,
+                    Placement = PlacementMode.Center,
+                    VerticalOffset = this.ActualHeight,
                     StaysOpen = false
                 };
-                var cPInterior = new ColourPopup(selectedColourFunct, rightClickColourFunct, this);
-                colourPopup.Child = cPInterior;
+                colourPopup.Child = _submenu;
                 colourPopup.MouseLeave += Popup_MouseLeave;
             }
-            colourPopup.IsOpen = !colourPopup.IsOpen;
+            _isPopupOpen = !_isPopupOpen;
+            colourPopup.IsOpen = _isPopupOpen;
+            if (_isPopupOpen) SlotButton.Background = Brushes.Gold;
         }
         private void Popup_MouseLeave(object sender, MouseEventArgs e)
         {
-            if(!colourButton.IsMouseDirectlyOver)
-                colourPopup.IsOpen = false; // Close when the mouse leaves the popup
+            if (!this.IsMouseOver)
+            {
+                _isPopupOpen = !_isPopupOpen;
+            }
+            SlotButton.Background = SlotButton.BorderBrush;
+        }
+
+        private void ButtonRightClicked(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            _favouriteBlock.Invoke(_currentObject);
+        }
+
+        private void ButtonClicked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if(_submenu == null)
+                _selectBlock.Invoke(_currentObject);
+            else
+            {
+                ColourPopup();
+            }
+        }
+
+        private void SelectedItem(ObjectInfo selected)
+        {
+            colourPopup.IsOpen = false;
+            CurrentObject = selected;
+            _selectBlock.Invoke(_currentObject);
+            if(_currentObject.colour != Colour.Plain)
+            {
+                if (colourBorder == null)
+                {
+                    colourBorder = new Border
+                    {
+                        BorderBrush = Brushes.Black,
+                        BorderThickness = new Thickness(1),
+                        HorizontalAlignment = HorizontalAlignment.Right,
+                        VerticalAlignment = VerticalAlignment.Bottom,
+                        Width = 14,
+                        Height = 23,
+                        CornerRadius = new CornerRadius(4),
+                        Margin = new Thickness(5),
+                        IsHitTestVisible = false
+                    };
+                    g.Children.Add(colourBorder);
+                }
+                colourBorder.Background = _currentObject.colourBrush;
+                colourBorder.Visibility = Visibility.Visible;
+            }
+            else
+                if (colourBorder != null) colourBorder.Visibility = Visibility.Collapsed;
+        }
+
+        private void LoadImage(object sender, RoutedEventArgs e)
+        {
+            ImageObject.Source = _currentObject.objectInventoryImage;
         }
     }
 }

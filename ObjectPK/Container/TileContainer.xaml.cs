@@ -62,5 +62,11 @@ namespace DQB2IslandEditor.ObjectPK.Container
             Tile.Background = Brushes.Yellow;
             Image.Opacity = 0.5;
         }
+
+        public void IsUnClicked()
+        {
+            if (this.IsMouseOver) IsHovered();
+            else IsUnHovered();
+        }
     }
 }
