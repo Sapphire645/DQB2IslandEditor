@@ -133,6 +133,7 @@ namespace DQB2IslandEditor.DataPK
         private void ConstructItemData(byte[] fileBytes)
         {
             byte[] bufferItemData = new byte[SIZE_ITEM_DATA];
+            ushort itemCount = 0;
             //Lets iterate through all of the item entries.
             //The format for the entry is CC OC OO OO where C is chunk and O is the offset to the item data.
             //With this, we'll place the item instance inside its chunk.
@@ -152,12 +153,14 @@ namespace DQB2IslandEditor.DataPK
 
                 //First lets see what the item class thinks of this entry, is it empty?
                 if (ItemInstance.IsThisEntryEmpty(bufferItemData)) continue;
+                itemCount++;
 
                 //Since it is now, We can now create the item instance inside of the chunk.
                 //Console.WriteLine($"Item Entry: {i} {entryPointer} Chunk: {chunk} Offset: {relativeDataPointer}");
                 chunks[chunk].AddItem(new ItemInstance(bufferItemData));
                 //Yay.
             }
+            Console.WriteLine("!! ITEM COUNT:" + itemCount);
         }
         private void CommitChunkDataToFile()
         {
