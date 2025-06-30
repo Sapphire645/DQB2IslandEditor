@@ -12,6 +12,9 @@
                 <local:InventoryInfo x:Name="IInfo" objectInfoPanel="{Binding itemInfo.Value}"/>
             </ToolTip>
         </Border.ToolTip>
-        <Image Name="Image" Source="{Binding itemInfo.Value.objectMapImage}" Stretch="Fill"/>
+        <Grid>
+            <Image Name="Image" Source="{Binding itemInfo.Value.objectMapImage}" Stretch="Fill"/>
+            <TextBlock Text="{Binding itemInstance.publicItemId}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        </Grid>
     </Border>
 </UserControl>

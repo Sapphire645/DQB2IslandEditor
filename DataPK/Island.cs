@@ -81,6 +81,7 @@ namespace DQB2IslandEditor.DataPK
             {
                 case 0: //The chunk editor reading
                     ConstructChunkData(fileBytes);
+                    ConstructItemData(fileBytes);
                     break;
                 default:
                     break;
@@ -155,7 +156,10 @@ namespace DQB2IslandEditor.DataPK
 
                 //Since it is now, We can now create the item instance inside of the chunk.
                 //Console.WriteLine($"Item Entry: {i} {entryPointer} Chunk: {chunk} Offset: {relativeDataPointer}");
-                chunks[chunk].AddItem(new ItemInstance(bufferItemData));
+                var item = new ItemInstance(bufferItemData);
+                item.tempDataOff = dataPointer;
+                item.tempEntryOff = entryPointer;
+                chunks[chunk].AddItem(item);
                 //Yay.
             }
         }
@@ -180,8 +184,15 @@ namespace DQB2IslandEditor.DataPK
                     //Set the offset to the current block pointer, then copy the chunks at the end
                     STGDATBody[currentGridPointer] = (byte)(chunkCount & 0xFF);
                     STGDATBody[currentGridPointer + 1] = (byte)((chunkCount >> 8) & 0xFF);
-
-                    Array.Copy(chunk.GetBytes(), 0, STGDATBody, currentBlockPointer, SIZE_CHUNK);
+                    try
+                    {
+                        Array.Copy(chunk.GetBytes(), 0, STGDATBody, currentBlockPointer, SIZE_CHUNK);
+                    }
+                    catch
+                    {
+                        Array.Copy(chunk.GetBytes(), 0, STGDATBody, currentBlockPointer, STGDATBody.Length - currentBlockPointer);
+                    }
+                    
                     currentBlockPointer += SIZE_CHUNK;
                     chunkCount++;
                 }
@@ -190,6 +201,45 @@ namespace DQB2IslandEditor.DataPK
 
             //Do real chunk count later.
         }
+
+        private void CommitItemDataToFile()
+        {
+            //Iterate through all chunks.
+            for (int i = 0; i < chunks.Length; i++)
+            {
+                var chunk = chunks[i].chunkPosition;
+                var items = chunks[i].GetAllItems();
+                //Iterate through all items in the chunk.
+                foreach(ItemInstance item in items)
+                {
+                    if (item.HasBeenChanged() || item.IsValidEntry()) //debug purposes
+                    {
+                        if (item.IsValidEntry())
+                        {
+                            var offset = item.GetEntryOffset();
+                            //Pointer
+                            uint entryPointer = (uint)(OFF_ITEM_ENTRY + (offset * SIZE_ITEM_ENTRY));
+                            //Edit the chunk:
+                            STGDATBody[entryPointer] = (byte)(chunk & 0xFF);
+                            STGDATBody[entryPointer + 1] &= 0xF0;
+                            STGDATBody[entryPointer + 1] |= (byte)((chunk >> 8) & 0x0F);
+
+                            uint relativeDataPointer = (uint)(((STGDATBody[entryPointer + 1] & 0xF0) >> 4) + (STGDATBody[entryPointer + 2] << 4) + (STGDATBody[entryPointer + 3] << 12));
+
+                            uint dataPointer = (uint)(OFF_ITEM_DATA + (relativeDataPointer * SIZE_ITEM_DATA));
+                            Array.Copy(item.GetByteFormat(), 0, STGDATBody, dataPointer, 24);
+                            Console.WriteLine("Saved item "+ entryPointer.ToString("X") + " / " + dataPointer.ToString("X") + " OLD -> " +
+                                 item.tempEntryOff.ToString("X") + " / " + item.tempDataOff.ToString("X"));
+
+                        }
+                        
+                    }
+                }
+
+
+            }
+        }
+
         public Chunk GetChunk(ushort vChunk)
         {
             return chunks[vChunk];
@@ -228,6 +278,7 @@ namespace DQB2IslandEditor.DataPK
         public (byte[], byte[]) CommitChangesToFile()
         {
             CommitChunkDataToFile();
+            CommitItemDataToFile();
             return (STGDATHeader, STGDATBody);
         }
 
