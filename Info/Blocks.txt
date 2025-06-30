@@ -17,7 +17,7 @@
 15	15	0	0	0	Ash
 16	16	0	1	0	Witchgrassy Earth*
 17	17	0	0	0	Poisonous Peat
-18	18	0	0	0	Snow Cover
+18	18	0	0	0	Powder Snow
 19	19	0	0	0	Snow
 20	20	0	0	0	Ice
 21	21	0	0	0	Clodstone
