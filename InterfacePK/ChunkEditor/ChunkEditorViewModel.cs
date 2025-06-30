@@ -209,7 +209,7 @@ namespace DQB2IslandEditor.InterfacePK
             get
             {
                 if (_selectedBlock == null) return new BlockInstance(0, 0);
-                return new BlockInstance(_selectedBlock.objectId, Chisel.Full, false);
+                return new BlockInstance(_selectedBlock.objectId, _currentChisel, _currentBuilderPlaced);
             }
         }
 

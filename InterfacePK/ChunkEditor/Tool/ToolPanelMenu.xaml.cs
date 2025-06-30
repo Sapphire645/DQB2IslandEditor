@@ -1,5 +1,4 @@
-﻿using DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.EditValues;
-using DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.Information;
+﻿using DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Reflection;

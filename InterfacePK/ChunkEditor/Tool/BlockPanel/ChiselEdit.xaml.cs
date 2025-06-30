@@ -16,7 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.EditValues
+namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
 {
     /// <summary>
     /// Interaction logic for ChiselEdit.xaml
@@ -71,11 +71,13 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.EditValues
                 {
                     this.Visibility = Visibility.Visible;
                     ChiselImage.Source = chiselImages[viewModel.Chisel];
+                    TBlock.Text = viewModel.Chisel.ToString().Replace('_',' ');
                 }
             }
             if (e.PropertyName == nameof(viewModel.Chisel))  // BLOCKINFO CHANGE
             {
                 ChiselImage.Source = chiselImages[viewModel.Chisel];
+                TBlock.Text = viewModel.Chisel.ToString().Replace('_', ' ');
             }
         }
     }

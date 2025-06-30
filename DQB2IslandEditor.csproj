@@ -140,6 +140,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="InterfacePK\ChunkEditor\Tool\EditValues\" />
     <Folder Include="ObjectPK\Container\InventoryMenus\" />
   </ItemGroup>
 
