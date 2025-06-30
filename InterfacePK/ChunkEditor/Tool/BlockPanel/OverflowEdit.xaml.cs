@@ -18,9 +18,9 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
     /// <summary>
     /// Interaction logic for BlockValues.xaml
     /// </summary>
-    public partial class BlockValues : UserControl
+    public partial class OverflowEdit : UserControl
     {
-        public BlockValues()
+        public OverflowEdit()
         {
             InitializeComponent();
         }

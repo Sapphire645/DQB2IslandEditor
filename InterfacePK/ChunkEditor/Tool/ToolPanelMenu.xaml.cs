@@ -36,6 +36,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool
 
             CreateBlockBasics.Add(new BlockInformation(viewModelGive));
             CreateBlockBasics.Add(new ChiselEdit(viewModelGive));
+            CreateBlockBasics.Add(new OverflowEdit());
             //CreateBlockBasics.Add(new ChiselEdit(nameof(viewModel.ValueChisel), viewModelGive));
             BlockPanel(null, null);
         }
