@@ -212,7 +212,7 @@ namespace DQB2IslandEditor.DataPK
                 //Iterate through all items in the chunk.
                 foreach(ItemInstance item in items)
                 {
-                    if (item.HasBeenChanged() || item.IsValidEntry()) //debug purposes
+                    if (item.HasBeenChanged())
                     {
                         if (item.IsValidEntry())
                         {
