@@ -56,7 +56,7 @@
                         <Image Name="ChiselImage" Grid.Row="1" Stretch="UniformToFill" Margin="25,5"/>
                         <TextBlock Name="TBlock" Grid.Row="2" Foreground="White" FontSize="14" FontWeight="DemiBold" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" HorizontalAlignment="Center"/>
                         </Grid>
-                    <UniformGrid Grid.Column="1" Rows="3" Columns="5" Margin="8">
+                    <UniformGrid Name="ButtonGrid" Grid.Column="1" Rows="3" Columns="5" Margin="8">
                         <Button Click="ChangeChisel" Tag="0">
                             <Grid>
                                 <Image Source="/Images/Chisel/00.png"/>

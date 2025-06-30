@@ -11,7 +11,7 @@
         xmlns:tools="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Tool"
         mc:Ignorable="d" 
         SnapsToDevicePixels="True"
-        Title="DQB2 Island Editor: Chunk Editor" Height="800" Width="1500" SizeChanged="RecalculateSize" MinHeight="800" MinWidth="1200">
+        Title="DQB2 Island Editor: Chunk Editor" Height="800" Width="1500" SizeChanged="RecalculateSize" >
     <Window.Resources>
         <Style TargetType="TabItem" x:Key="InventoryHeader">
             <Setter Property="Template">
@@ -77,7 +77,10 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <DockPanel Background="#202020">
+    <DockPanel Background="#202020" MinHeight="800" MinWidth="1500">
+        <DockPanel.LayoutTransform >
+            <ScaleTransform x:Name="WindowScale" ScaleX="1" ScaleY="1"/>
+        </DockPanel.LayoutTransform>
         <DockPanel DockPanel.Dock="Right">
             <Viewbox  DockPanel.Dock="Left" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Column="0">
                 <chunkMap:ChunkBlockGrid x:Name="chunkBlockGrid"/>

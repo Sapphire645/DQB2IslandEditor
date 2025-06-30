@@ -37,10 +37,10 @@
         <Viewbox Margin="0,4,0,0">
             <StackPanel Name="FilterToggleStack" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="16,4">
                <TextBlock Margin="0,-3,0,0" Text="···············" VerticalAlignment="Top" Foreground="Gray" HorizontalAlignment="Center" FontSize="22" FontWeight="ExtraLight"/>
-               <RadioButton Background="Black" Content="Create &amp; Place" GroupName="ToolTabs" Checked="EditPanel" IsChecked="True" Width="135"/>
-                <RadioButton Background="Black" Content="Editing" GroupName="ToolTabs" Checked="InfoPanel" Width="95"/>
-                <RadioButton Background="Black" Content="Selection" GroupName="ToolTabs" Checked="AreaPanel" Width="95"/>
-                <RadioButton Background="Black" Content="Advanced" GroupName="ToolTabs" Checked="ReplacePanel" Width="95"/>
+                <RadioButton Background="Black" Content="Block Edit" GroupName="ToolTabs" Checked="BlockPanel" IsChecked="True" Width="95"/>
+                <RadioButton Background="Black" Content="Item Edit" GroupName="ToolTabs" Checked="ItemPanel" Width="95"/>
+                <RadioButton Background="Black" Content="Area Panel" GroupName="ToolTabs" Checked="AreaPanel" Width="105"/>
+                <RadioButton Background="Black" Content="Advanced" GroupName="ToolTabs" Checked="OtherPanel" Width="95"/>
                <TextBlock Margin="0,-3,0,0" Text="···············" VerticalAlignment="Top" Foreground="Gray" HorizontalAlignment="Center" FontSize="22" FontWeight="ExtraLight"/>
            </StackPanel>
         </Viewbox>

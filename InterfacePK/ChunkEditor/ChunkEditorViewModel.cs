@@ -1,5 +1,6 @@
 ﻿using DQB2IslandEditor.DataPK;
 using DQB2IslandEditor.InterfacePK.ChunkEditor;
+using DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory;
 using DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass;
 using DQB2IslandEditor.ObjectPK;
 using DQB2IslandEditor.ObjectPK.Container;
@@ -142,15 +143,13 @@ namespace DQB2IslandEditor.InterfacePK
 
         //Selected Tile:
         //This will get a rework, do not worry.
-        private ushort _selectedTileChunk;
-        private ushort _selectedTileLayer;
-        private ushort _selectedTileOffset;
 
-        private ObjectInfo _selectedObject;
+        private ObjectInfo _selectedObject; //In the inventory menu.
 
+        //Selected block data.
+        private BlockInfo _selectedBlock; 
         private Chisel _currentChisel;
         private bool _currentBuilderPlaced;
-
 
         public ObjectInfo SelectedObject
         {
@@ -158,40 +157,73 @@ namespace DQB2IslandEditor.InterfacePK
             {
                 _selectedObject = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedObject)));
+                if (value is BlockInfo blockInfo)
+                {
+                    SelectedBlock = blockInfo;
+                }
             }
-            get { 
-            
+            get
+            {
+
                 return _selectedObject;
             }
         }
+
+        public BlockInfo SelectedBlock
+        {
+            set
+            {
+                _selectedBlock = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedBlock)));
+            }
+            get
+            {
+
+                return _selectedBlock;
+            }
+        }
+
+        public Chisel Chisel
+        {
+            set
+            {
+                _currentChisel = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Chisel)));
+            }
+            get
+            {
+
+                return _currentChisel;
+            }
+        }
+        public bool BuilderPlaced
+        {
+            set{
+                _currentBuilderPlaced = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(BuilderPlaced))); }
+            get
+            { return _currentBuilderPlaced; }}
 
         public BlockInstance currentBlockInstance
         {
             get
             {
-                if (SelectedObject == null) return new BlockInstance(0, 0);
-                if (SelectedObject is BlockInfo blockInfo)
-                {
-                    return new BlockInstance(blockInfo.objectId, Chisel.Full, false);
-                }
-                else if (SelectedObject is ItemInfo itemInfo)
-                {
-                    return null;
-                }
-                return new BlockInstance(0, 0); //Default case
+                if (_selectedBlock == null) return new BlockInstance(0, 0);
+                return new BlockInstance(_selectedBlock.objectId, Chisel.Full, false);
             }
         }
+
         //Change selected object -> Selecting anything on the inventory
         public void UpdateSelectedObject(ObjectInfo selectedObject)
         {
             SelectedObject = selectedObject;
         }
 
-        public void UpdateSelectedTile(ushort chunk, ushort tile)
+        //Change selected block -> Selecting a tile on the map
+        public void UpdateSelectedBlock(BlockInstance selectedBlock)
         {
-            _selectedTileChunk = chunk;
-            _selectedTileOffset = tile;
-            _selectedTileLayer = CurrentLayer;
+            Chisel = selectedBlock.publicChiselID;
+            BuilderPlaced = selectedBlock.publicBuilderPlaced;
         }
 
         //Update favourite -> Right clicking anything on the inventory, right click dropicking a chunk tile 

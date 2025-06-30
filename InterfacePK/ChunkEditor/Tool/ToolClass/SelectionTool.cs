@@ -13,7 +13,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass
         {
             base.BlockInstance_MouseLeftClick(offset, chunk);
             viewModel.UpdateSelectedObject(chunkDisplays.GetBlockInfo(offset, chunk));
-            viewModel.UpdateSelectedTile(chunk,offset);
+            viewModel.UpdateSelectedBlock(chunkDisplays.GetBlockInstance(offset, chunk));
         }
 
     }
