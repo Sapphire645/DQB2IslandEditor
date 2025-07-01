@@ -262,16 +262,16 @@
 260	1351	1x1x1	0	0	6	Four-Square Leadlight 
 261	1351	1x1x1	0	0	7	Four-Square Leadlight 
 262	1351	1x1x1	0	0	8	Four-Square Leadlight 
-263	0	1x1x1	0	0	1	Plain-Plane Leadlight 
-264	0	1x1x1	0	0	2	Plain-Plane Leadlight 
+263	1352	1x1x1	0	0	1	Plain-Pane Leadlight 
+264	1352	1x1x1	0	0	2	Plain-Pane Leadlight 
 265	0	1x1x1	0	0	0	Anvil
 266	0	1x1x1	0	0	0	¿Water block
-267	0	1x1x1	0	0	3	Plain-Plane Leadlight 
-268	0	1x1x1	0	0	4	Plain-Plane Leadlight 
-269	0	1x1x1	0	0	5	Plain-Plane Leadlight 
-270	0	1x1x1	0	0	6	Plain-Plane Leadlight 
-271	0	1x1x1	0	0	7	Plain-Plane Leadlight 
-272	0	1x1x1	0	0	8	Plain-Plane Leadlight 
+267	1352	1x1x1	0	0	3	Plain-Pane Leadlight 
+268	1352	1x1x1	0	0	4	Plain-Pane Leadlight 
+269	1352	1x1x1	0	0	5	Plain-Pane Leadlight 
+270	1352	1x1x1	0	0	6	Plain-Pane Leadlight 
+271	1352	1x1x1	0	0	7	Plain-Pane Leadlight 
+272	1352	1x1x1	0	0	8	Plain-Pane Leadlight 
 273	0	1x1x1	0	0	1	Classy Couch 
 274	0	1x1x1	0	0	2	Classy Couch 
 275	0	3x2x1	0	0	3	Classy Couch 
@@ -344,9 +344,9 @@
 342	342	1x1x1	0	0	0	Dry Ivy
 343	0	1x1x1	0	0	8	Emblematic Clock 
 344	0	1x1x1	0	0	0	Pampas Grass
-345	0	1x1x1	0	0	1	Port and Shot Set 
-346	0	1x1x1	0	0	2	Port and Shot Set 
-347	0	1x1x1	0	0	3	Port and Shot Set 
+345	0	1x1x1	0	0	1	Pot and Shot Set 
+346	0	1x1x1	0	0	2	Pot and Shot Set 
+347	0	1x1x1	0	0	3	Pot and Shot Set 
 348	348	1x1x1	0	0	0	Broken Masonry
 349	349	1x1x1	0	0	0	Classical Column Midsection
 350	350	1x1x1	0	0	0	Classical Column Pedestal
@@ -360,13 +360,13 @@
 358	552	1x1x1	0	0	6	Glass Floor 
 359	552	1x1x1	0	0	7	Glass Floor 
 360	552	1x1x1	0	0	8	Glass Floor 
-361	0	1x1x1	0	0	4	Port and Shot Set 
-362	0	1x1x1	0	0	5	Port and Shot Set 
-363	0	1x1x1	0	0	6	Port and Shot Set 
+361	0	1x1x1	0	0	4	Pot and Shot Set 
+362	0	1x1x1	0	0	5	Pot and Shot Set 
+363	0	1x1x1	0	0	6	Pot and Shot Set 
 364	364	1x1x1	0	0	0	Water Lily Flower
 365	365	1x1x1	0	0	0	Lily Pad
-366	0	1x1x1	0	0	7	Port and Shot Set 
-367	0	1x1x1	0	0	8	Port and Shot Set 
+366	0	1x1x1	0	0	7	Pot and Shot Set 
+367	0	1x1x1	0	0	8	Pot and Shot Set 
 368	368	1x1x1	0	0	0	She-Slimespawn
 369	89	1x1x1	0	0	1	Dressing Table 
 370	89	1x1x1	0	0	2	Dressing Table 
@@ -1184,58 +1184,58 @@
 1182	0	1x1x1	0	0	0	Plumberry Tree
 1183	0	1x1x1	0	0	0	Plumberry Tree
 1184	1184	1x1x1	0	0	0	Picture Frame
-1185	0	1x1x1	0	0	0	Picture Frame
-1186	0	1x1x1	0	0	0	Picture Frame
-1187	0	1x1x1	0	0	0	Picture Frame
-1188	0	1x1x1	0	0	0	Picture Frame
-1189	0	1x1x1	0	0	0	Picture Frame
-1190	0	1x1x1	0	0	0	Picture Frame
-1191	0	1x1x1	0	0	0	Picture Frame
-1192	0	1x1x1	0	0	0	Picture Frame
-1193	0	1x1x1	0	0	0	Picture Frame
+1185	1184	1x1x1	0	0	0	Picture Frame
+1186	1184	1x1x1	0	0	0	Picture Frame
+1187	1184	1x1x1	0	0	0	Picture Frame
+1188	1184	1x1x1	0	0	0	Picture Frame
+1189	1184	1x1x1	0	0	0	Picture Frame
+1190	1184	1x1x1	0	0	0	Picture Frame
+1191	1184	1x1x1	0	0	0	Picture Frame
+1192	1184	1x1x1	0	0	0	Picture Frame
+1193	1184	1x1x1	0	0	0	Picture Frame
 1194	0	1x1x1	0	0	0	¿Null
-1195	0	1x1x1	0	0	0	¿Naviglobe
-1196	0	1x1x1	0	0	0	¿Naviglobe
-1197	0	1x1x1	0	0	0	¿Naviglobe
-1198	0	1x1x1	0	0	0	¿Naviglobe
-1199	0	1x1x1	0	0	0	¿Naviglobe
-1200	0	1x1x1	0	0	0	¿Naviglobe
-1201	0	1x1x1	0	0	0	¿Naviglobe
-1202	0	1x1x1	0	0	0	¿Naviglobe
-1203	0	1x1x1	0	0	0	¿Naviglobe
-1204	0	1x1x1	0	0	0	¿Naviglobe
-1205	0	1x1x1	0	0	0	¿Naviglobe
-1206	0	1x1x1	0	0	0	¿Naviglobe
-1207	0	1x1x1	0	0	0	¿Naviglobe
-1208	0	1x1x1	0	0	0	¿Naviglobe
-1209	0	1x1x1	0	0	0	¿Naviglobe
-1210	0	1x1x1	0	0	0	¿Naviglobe
-1211	0	1x1x1	0	0	0	¿Naviglobe
-1212	0	1x1x1	0	0	0	¿Naviglobe
-1213	0	1x1x1	0	0	0	¿Naviglobe
-1214	0	1x1x1	0	0	0	¿Naviglobe
-1215	0	1x1x1	0	0	0	¿Naviglobe
-1216	0	1x1x1	0	0	0	¿Naviglobe
-1217	0	1x1x1	0	0	0	¿Naviglobe
-1218	0	1x1x1	0	0	0	¿Naviglobe
-1219	0	1x1x1	0	0	0	¿Naviglobe
-1220	0	1x1x1	0	0	0	¿Naviglobe
-1221	0	1x1x1	0	0	0	¿Naviglobe
-1222	0	1x1x1	0	0	0	¿Naviglobe
-1223	0	1x1x1	0	0	0	¿Naviglobe
-1224	0	1x1x1	0	0	0	¿Naviglobe
-1225	0	1x1x1	0	0	0	¿Naviglobe
-1226	0	1x1x1	0	0	0	¿Naviglobe
-1227	0	1x1x1	0	0	0	¿Naviglobe
-1228	0	1x1x1	0	0	0	¿Naviglobe
-1229	0	1x1x1	0	0	0	¿Naviglobe
-1230	0	1x1x1	0	0	0	¿Naviglobe
-1231	0	1x1x1	0	0	0	¿Naviglobe
-1232	0	1x1x1	0	0	0	¿Naviglobe
-1233	0	1x1x1	0	0	0	¿Naviglobe
+1195	1169	1x1x1	0	0	0	¿Naviglobe
+1196	1169	1x1x1	0	0	0	¿Naviglobe
+1197	1169	1x1x1	0	0	0	¿Naviglobe
+1198	1169	1x1x1	0	0	0	¿Naviglobe
+1199	1169	1x1x1	0	0	0	¿Naviglobe
+1200	1169	1x1x1	0	0	0	¿Naviglobe
+1201	1169	1x1x1	0	0	0	¿Naviglobe
+1202	1169	1x1x1	0	0	0	¿Naviglobe
+1203	1169	1x1x1	0	0	0	¿Naviglobe
+1204	1169	1x1x1	0	0	0	¿Naviglobe
+1205	1169	1x1x1	0	0	0	¿Naviglobe
+1206	1169	1x1x1	0	0	0	¿Naviglobe
+1207	1169	1x1x1	0	0	0	¿Naviglobe
+1208	1169	1x1x1	0	0	0	¿Naviglobe
+1209	1169	1x1x1	0	0	0	¿Naviglobe
+1210	1169	1x1x1	0	0	0	¿Naviglobe
+1211	1169	1x1x1	0	0	0	¿Naviglobe
+1212	1169	1x1x1	0	0	0	¿Naviglobe
+1213	1169	1x1x1	0	0	0	¿Naviglobe
+1214	1169	1x1x1	0	0	0	¿Naviglobe
+1215	1169	1x1x1	0	0	0	¿Naviglobe
+1216	1169	1x1x1	0	0	0	¿Naviglobe
+1217	1169	1x1x1	0	0	0	¿Naviglobe
+1218	1169	1x1x1	0	0	0	¿Naviglobe
+1219	1169	1x1x1	0	0	0	¿Naviglobe
+1220	1169	1x1x1	0	0	0	¿Naviglobe
+1221	1169	1x1x1	0	0	0	¿Naviglobe
+1222	1169	1x1x1	0	0	0	¿Naviglobe
+1223	1169	1x1x1	0	0	0	¿Naviglobe
+1224	1169	1x1x1	0	0	0	¿Naviglobe
+1225	1169	1x1x1	0	0	0	¿Naviglobe
+1226	1169	1x1x1	0	0	0	¿Naviglobe
+1227	1169	1x1x1	0	0	0	¿Naviglobe
+1228	1169	1x1x1	0	0	0	¿Naviglobe
+1229	1169	1x1x1	0	0	0	¿Naviglobe
+1230	1169	1x1x1	0	0	0	¿Naviglobe
+1231	1169	1x1x1	0	0	0	¿Naviglobe
+1232	1169	1x1x1	0	0	0	¿Naviglobe
+1233	1169	1x1x1	0	0	0	¿Naviglobe
 1234	0	1x1x1	0	1	0	0
 1235	0	1x1x1	0	1	0	0
-1236	0	2x2x1	0	0	0	Picture Frame
+1236	1184	2x2x1	0	0	0	Picture Frame
 1237	0	1x1x1	0	1	0	0
 1238	0	1x1x1	0	1	0	0
 1239	0	1x1x1	0	1	0	0
@@ -1310,20 +1310,20 @@
 1308	0	1x1x1	0	0	0	Pestilential Nest Broken
 1309	0	1x1x1	0	1	0	0
 1310	1310	1x1x1	0	0	0	Connecting Window
-1311	0	1x1x1	0	0	0	Connecting Window
-1312	0	1x1x1	0	0	0	Connecting Window
-1313	0	1x1x1	0	0	0	Connecting Window
-1314	0	1x1x1	0	0	0	Connecting Window
-1315	0	1x1x1	0	0	0	Connecting Window
-1316	0	1x1x1	0	0	0	Connecting Window
-1317	0	1x1x1	0	0	0	Connecting Window
-1318	0	1x1x1	0	0	0	Connecting Window
-1319	0	1x1x1	0	0	0	Connecting Window
-1320	0	1x1x1	0	0	0	Connecting Window
-1321	0	1x1x1	0	0	0	Connecting Window
-1322	0	1x1x1	0	0	0	Connecting Window
-1323	0	1x1x1	0	0	0	Connecting Window
-1324	0	1x1x1	0	0	0	Connecting Window
+1311	1310	1x1x1	0	0	0	Connecting Window
+1312	1310	1x1x1	0	0	0	Connecting Window
+1313	1310	1x1x1	0	0	0	Connecting Window
+1314	1310	1x1x1	0	0	0	Connecting Window
+1315	1310	1x1x1	0	0	0	Connecting Window
+1316	1310	1x1x1	0	0	0	Connecting Window
+1317	1310	1x1x1	0	0	0	Connecting Window
+1318	1310	1x1x1	0	0	0	Connecting Window
+1319	1310	1x1x1	0	0	0	Connecting Window
+1320	1310	1x1x1	0	0	0	Connecting Window
+1321	1310	1x1x1	0	0	0	Connecting Window
+1322	1310	1x1x1	0	0	0	Connecting Window
+1323	1310	1x1x1	0	0	0	Connecting Window
+1324	1310	1x1x1	0	0	0	Connecting Window
 1325	0	1x1x1	0	1	0	0
 1326	0	1x1x1	0	1	0	0
 1327	0	1x1x2	0	0	0	¿Null

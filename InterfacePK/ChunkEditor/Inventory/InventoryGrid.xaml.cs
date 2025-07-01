@@ -191,6 +191,31 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                                 }
                             }
                             break;
+                        case 5: //General
+                            Dictionary<uint, List<uint>> Crop = menuInformation[type] as Dictionary<uint, List<uint>>;
+                            foreach (uint baseID in Crop.Keys)
+                            {
+                                if (fullBlockList.TryGetValue(baseID, out ObjectInfo item5))
+                                {
+                                    List<ObjectInfo> values = new List<ObjectInfo>();
+                                    foreach (var index in Crop[baseID])
+                                    {
+                                        if (index == 0) values.Add(null);  
+                                        else if (fullBlockList.TryGetValue(index, out ObjectInfo subItem))
+                                        {
+                                            values.Add(subItem);
+                                        }
+                                    }
+                                    var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                                    {
+                                        InventoryContainer inventoryItem = new InventoryContainer(item5, ObjectClicked, ObjectRightClicked);
+                                        inventoryItem.createSubMenu(false, 4, values);
+                                        inventoryItemsAll.Add((ushort)baseID, inventoryItem);
+                                    }));
+                                    sendingBlocks.Add(send);
+                                }
+                            }
+                            break;
                     }
                 }
                 //Wait for the async

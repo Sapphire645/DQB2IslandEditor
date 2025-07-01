@@ -35,8 +35,10 @@
     <None Remove="Images\Inventory\B-0001.png" />
     <None Remove="Images\Inventory\BlockSheetOne.png" />
     <None Remove="Images\Inventory\BlockSheetTwo.png" />
+    <None Remove="Images\Inventory\CropMenu.png" />
     <None Remove="Images\Inventory\icon0.png" />
     <None Remove="Images\Inventory\icon1.png" />
+    <None Remove="Images\Inventory\icon4.png" />
     <None Remove="Images\Inventory\ItemSheetOne.png" />
     <None Remove="Images\Inventory\ItemSheetThree.png" />
     <None Remove="Images\Inventory\ItemSheetTwo.png" />
@@ -98,9 +100,11 @@
     <Content Include="Info\BlockExtra.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\Inventory\CropMenu.png" />
     <Resource Include="Images\Inventory\icon0.png" />
     <Resource Include="Images\Inventory\icon1.png" />
     <Resource Include="Images\Inventory\icon3.png" />
+    <Resource Include="Images\Inventory\icon4.png" />
     <Resource Include="Images\Inventory\ItemSheetOne.png" />
     <Resource Include="Images\Inventory\ItemSheetThree.png" />
     <Resource Include="Images\Inventory\ItemSheetTwo.png" />

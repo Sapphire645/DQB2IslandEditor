@@ -416,10 +416,12 @@ namespace DQB2IslandEditor.ObjectPK
             var NoSubmenuList = new List<uint>();
             var ColourSubmenu = new Dictionary<uint, List<uint>>();
             var GeneralSubmenu = new Dictionary<uint, List<uint>>();
+            var CropSubmenu = new Dictionary<uint, List<uint>>();
 
             blockList.Add(0, NoSubmenuList);
             blockList.Add(1, ColourSubmenu);
             blockList.Add(4, GeneralSubmenu);
+            blockList.Add(5, CropSubmenu);
 
             String[] blockLines = ReadEmbeddedResource(ITEM_ARTIFICIAL_MENU_PATH).Split("\n");
             foreach (String line in blockLines)
@@ -450,6 +452,15 @@ namespace DQB2IslandEditor.ObjectPK
                             lisGeneral.Add(uint.Parse(gen));
                         }
                         GeneralSubmenu.Add(uint.Parse(values[1]), lisGeneral);
+                        break;
+                    case 5:
+                        String[] crop = values[2].Split(',');
+                        var lisCrop = new List<uint>();
+                        foreach (String gen in crop)
+                        {
+                            lisCrop.Add(uint.Parse(gen));
+                        }
+                        CropSubmenu.Add(uint.Parse(values[1]), lisCrop);
                         break;
                 }
             }

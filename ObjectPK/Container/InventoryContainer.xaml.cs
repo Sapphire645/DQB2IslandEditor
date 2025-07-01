@@ -80,6 +80,10 @@ namespace DQB2IslandEditor.ObjectPK.Container
                     //Shells
                     _submenu = new GeneralGroupPopup(SelectedItem, _favouriteBlock, subInfos);
                     break;
+                case 4:
+                    //Shells
+                    _submenu = new CropPopup(SelectedItem, _favouriteBlock, subInfos);
+                    break;
             }
         }
         private void ColourPopup()
