@@ -1,4 +1,4 @@
-#ID	IMAGE	X-Y-Z	0	0	NAME
+#ID	IMAGE	X-Y-Z	0	COLOR	NAME
 0	0	1x1x1	0	0	Null
 1	1	1x1x1	0	0	Grass
 2	2	1x1x1	0	0	Stalwort
@@ -3082,4 +3082,4 @@
 3080	0	1x1x1	0	0	Classy Canopy
 3081	0	1x3x1	0	1	Chic Sunbrella 
 3082	0	1x3x1	0	2	Chic Sunbrella 
-3083	0	1x3x1	0	3	Chic Sunbrella 
+3083	0	1x3x1	0	3	Chic Sunbrella

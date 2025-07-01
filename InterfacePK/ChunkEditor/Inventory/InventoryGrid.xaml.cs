@@ -89,41 +89,55 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                 }));
                 var sendingBlocks = new List<DispatcherOperation>();
 
-                foreach (var itemFull in fullBlockList)
-                {
-                    var item = itemFull.Value;
-                    if (!isItem && ((BlockInfo)item).liquid == liquidCompare)
+                if (!isItem)
+                    foreach (var itemFull in fullBlockList)
                     {
-                        if (item.colour == 0) //For all plain.
+                        var item = itemFull.Value;
+                        if (((BlockInfo)item).liquid == liquidCompare)
                         {
-                            var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                            if (item.colour == 0) //For all plain.
                             {
-                                InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
-                                inventoryItemsAll.Add(item.objectId, inventoryItem);
-                            }));
-                            sendingBlocks.Add(send);
+                                var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                                {
+                                    InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
+                                    inventoryItemsAll.Add(item.objectId, inventoryItem);
+                                }));
+                                sendingBlocks.Add(send);
+                            }
                         }
                     }
-                }
+                else
+                    foreach (var itemFull in fullBlockList)
+                    {
+                        var item = itemFull.Value;
+                        var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                        {
+                            InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
+                            inventoryItemsAll.Add(item.objectId, inventoryItem);
+                        }));
+                        sendingBlocks.Add(send);
+                    }
+
                 //Wait for the async
                 foreach (var send in sendingBlocks)
-                {
-                    send.Wait();
-                }
-
-                //Nos create the colour submenus
-                foreach (var parityMerge in parity.Keys)
-                {
-                    if (!inventoryItemsAll.ContainsKey((ushort)parityMerge)) continue;
-                    List<ObjectInfo> values = new List<ObjectInfo>();
-                    foreach (var index in parity[parityMerge])
-                        values.Add(fullBlockList[index]);
-
-                    Application.Current.Dispatcher.Invoke(new Action(() =>
                     {
-                        inventoryItemsAll[(ushort)parityMerge].createSubMenu(true, 0, values);
-                    }));
-                }
+                        send.Wait();
+                    }
+
+                if(parity != null) 
+                //Nos create the colour submenus
+                    foreach (var parityMerge in parity.Keys)
+                    {
+                        if (!inventoryItemsAll.ContainsKey((ushort)parityMerge)) continue;
+                        List<ObjectInfo> values = new List<ObjectInfo>();
+                        foreach (var index in parity[parityMerge])
+                            values.Add(fullBlockList[index]);
+
+                        Application.Current.Dispatcher.Invoke(new Action(() =>
+                        {
+                            inventoryItemsAll[(ushort)parityMerge].createSubMenu(true, 0, values);
+                        }));
+                    }
                 _loaded = true;
                 Application.Current.Dispatcher.Invoke(new Action(() =>
                 {

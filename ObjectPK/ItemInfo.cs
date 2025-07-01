@@ -9,9 +9,22 @@ namespace DQB2IslandEditor.ObjectPK
 {
     public class ItemInfo : ObjectInfo
     {
-        public ItemInfo(ushort objectId, short imageId, byte tab, Colour colour, string name)
+
+        private byte witdh;
+        private byte height;
+        private byte depth;
+        public byte Witdh=>witdh;
+        public byte Height => height;
+        public byte Depth => depth;
+
+        //Idk how you write dimension in english whateveeerrrrrrrrr
+        public ItemInfo(ushort objectId, short imageId,string dimension, byte tab, Colour colour, string name)
             : base(objectId, imageId, tab, colour, name)
         {
+            var parts = dimension.Split('x');
+            witdh = byte.Parse(parts[0]);
+            height = byte.Parse(parts[1]);
+            depth = byte.Parse(parts[2]);
         }
     }
 }

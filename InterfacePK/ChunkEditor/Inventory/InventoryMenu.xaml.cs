@@ -34,7 +34,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
             inventoryGridItem.shareViewModel(viewModel);
         }
 
-        public async void CreateInventory(IDictionary<uint, ObjectInfo> fullBlockList, ChunkEditorWindow chunkEditorWindow)
+        public async void CreateInventory(IDictionary<uint, ObjectInfo> fullBlockList, IDictionary<uint, ObjectInfo> fullItemList, ChunkEditorWindow chunkEditorWindow)
         {
             Task<IDictionary<uint, List<uint>>> parityBlocks = Task.Run(() => DataBaseReading.BlockParity());
 
@@ -46,9 +46,11 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
             //try to thread
             Task inv1 = Task.Run(() => inventoryGridBlock.CreateInventory(fullBlockList, false, false, blockParity));
             Task inv2 = Task.Run(() => inventoryGridLiquid.CreateInventory(fullBlockList, false, true, blockParity));
+            Task inv3 = Task.Run(() => inventoryGridItem.CreateInventory(fullItemList, true, false, null));
 
             await inv1;
             await inv2;
+            await inv3;
 
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {

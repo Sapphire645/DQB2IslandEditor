@@ -44,12 +44,13 @@ namespace DQB2IslandEditor.ObjectPK.Container
         {
             //Set.
             itemInstance = itemI;
+            itemInfo.Value = itemI.itemInfo;
             //From corner.
             this.HorizontalAlignment = HorizontalAlignment.Left;
             this.VerticalAlignment = VerticalAlignment.Top;
             //Size of the item (use the dimensions from item info)
-            this.Width = TILE_SIZE; //Placeholder
-            this.Height = TILE_SIZE;
+            this.Width = TILE_SIZE* itemInfo.Value.Witdh; //Placeholder (look at rotation)
+            this.Height = TILE_SIZE* itemInfo.Value.Depth;
             //Get the position from the instance
             this.Margin = itemInstance.CoordinateMargin(TILE_SIZE);
 

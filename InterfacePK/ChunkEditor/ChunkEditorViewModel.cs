@@ -242,7 +242,8 @@ namespace DQB2IslandEditor.InterfacePK
         public void CreateInventory()
         {
             IDictionary<uint, ObjectInfo> objectDic = DataBaseReading.BLOCK_INFO_DICTIONARY.ToDictionary(kvp => kvp.Key, kvp => (ObjectInfo)kvp.Value);
-            chunkEditorWindow.inventoryMenu.CreateInventory(objectDic, chunkEditorWindow);
+            IDictionary<uint, ObjectInfo> itemDic = DataBaseReading.ITEM_INFO_DICTIONARY.ToDictionary(kvp => kvp.Key, kvp => (ObjectInfo)kvp.Value);
+            chunkEditorWindow.inventoryMenu.CreateInventory(objectDic, itemDic, chunkEditorWindow);
 
             chunkEditorWindow.selectedObject.SelButton.Click += (_, _) => { UpdateSelectedObject(_selectedObject); };
             chunkEditorWindow.selectedObject.SelButton.MouseRightButtonDown += (_, _) => { UpdateFavouriteObject(_selectedObject); };

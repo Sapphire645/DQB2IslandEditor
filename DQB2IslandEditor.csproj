@@ -36,6 +36,8 @@
     <None Remove="Images\Inventory\BlockSheetOne.png" />
     <None Remove="Images\Inventory\BlockSheetTwo.png" />
     <None Remove="Images\Inventory\icon0.png" />
+    <None Remove="Images\Inventory\ItemSheetOne.png" />
+    <None Remove="Images\Inventory\ItemSheetTwo.png" />
     <None Remove="Images\Inventory\placeholder.png" />
     <None Remove="Images\Inventory\SheetChunky.png" />
     <None Remove="Images\Inventory\SheetRetro.png" />
@@ -72,6 +74,7 @@
     <None Remove="Info\BlockParity.txt" />
     <None Remove="Info\Blocks.txt" />
     <None Remove="info\islands.txt" />
+    <None Remove="Info\Items.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -79,6 +82,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Images\Inventory\icon0.png" />
+    <Resource Include="Images\Inventory\ItemSheetOne.png" />
+    <Resource Include="Images\Inventory\ItemSheetTwo.png" />
     <Resource Include="Images\Inventory\placeholder.png" />
     <Resource Include="Images\Inventory\SheetChunky.png" />
     <Resource Include="Images\Inventory\SheetRetro.png" />
@@ -137,10 +142,10 @@
     <Resource Include="Images\UI\toolsheet.png" />
     <Resource Include="Images\UI\YLayer.png" />
     <Resource Include="Info\BlockParity.txt" />
+    <Resource Include="Info\Items.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="InterfacePK\ChunkEditor\Tool\EditValues\" />
     <Folder Include="ObjectPK\Container\InventoryMenus\" />
   </ItemGroup>
 
