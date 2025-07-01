@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.Information
+namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ItemPanel
 {
     /// <summary>
-    /// Interaction logic for BlockInformation.xaml
+    /// Interaction logic for InstanceInformation.xaml
     /// </summary>
-    public partial class BlockInformation : UserControl
+    public partial class InstanceInformation : UserControl
     {
-        public BlockInformation()
+        public InstanceInformation()
         {
             InitializeComponent();
         }

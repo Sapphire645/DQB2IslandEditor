@@ -188,5 +188,14 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
             }
             return null;
         }
+
+        public BlockInstance GetBlockInstance(ushort offset, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if (chunkViews[i].ChunkIndex == chunk) return chunkViews[i].GetBlockInstanceInOffset(offset);
+            }
+            return null;
+        }
     }
 }

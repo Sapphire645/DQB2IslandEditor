@@ -17,11 +17,18 @@ namespace DQB2IslandEditor.ObjectPK
         private const string BLOCK_EXTRA_PATH = "Info/BlockExtra.txt";
 
         private const string BLOCK_PARITY_PATH = "Info/BlockParity.txt";
+        private const string LIQUID_PARITY_PATH = "Info/Liquid.txt";
+        private const string ITEM_PARITY_PATH = "Info/ItemParity.txt";
+
+        private const string ITEM_PATH = "Info/Items.txt";
 
         private const string SHEET_BLOCK_ONE_PATH = "Images/Inventory/BlockSheetOne.png";
         private const string SHEET_BLOCK_TWO_PATH = "Images/Inventory/BlockSheetTwo.png";
         private const string SHEET_TILE_ONE_PATH = "Images/Inventory/TileSheetOne.png";
         private const string SHEET_TILE_TWO_PATH = "Images/Inventory/TileSheetTwo.png";
+
+        private const string SHEET_ITEM_ONE_PATH = "Images/Inventory/ItemSheetOne.png";
+        private const string SHEET_ITEM_TWO_PATH = "Images/Inventory/ItemSheetTwo.png";
 
         private const string BLOCK_ERR_PATH = "Images/Inventory/B-0001.png";
         private const string TILE_ERR_PATH = "Images/Inventory/T-0001.png";
@@ -57,6 +64,9 @@ namespace DQB2IslandEditor.ObjectPK
         private static BitmapImage _sheetTwoBlock;
         private static BitmapImage _sheetOneTile;
         private static BitmapImage _sheetTwoTile;
+
+        private static BitmapImage _sheetOneItem;
+        private static BitmapImage _sheetTwoItem;
 
         private static BitmapImage _toolSheet;
         private static BitmapImage _minimapSheetChunky;
@@ -112,14 +122,23 @@ namespace DQB2IslandEditor.ObjectPK
             _sheetOneTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_ONE_PATH));
             _sheetTwoTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_TWO_PATH));
 
+            _sheetOneItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_ONE_PATH));
+            _sheetTwoItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_TWO_PATH));
+
             //Helps performance
             _sheetOneBlock.Freeze();
             _sheetTwoBlock.Freeze();
             _sheetOneTile.Freeze();
             _sheetTwoTile.Freeze();
 
-            ImageDatabase[0] = new DataBaseImageHandler(_sheetOneBlock, _sheetTwoBlock,BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
+            _sheetOneItem.Freeze();
+            _sheetTwoItem.Freeze();
+
+            ImageDatabase[0] = new DataBaseImageHandler(_sheetOneBlock, _sheetTwoBlock, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             ImageDatabase[1] = new DataBaseImageHandler(_sheetOneTile, _sheetTwoTile, TILE_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
+            ImageDatabase[2] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
+            //Placeholder.
+            ImageDatabase[3] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, BLOCK_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
         }
         public static CroppedBitmap toolImage(byte tool, bool active)
         {
@@ -239,11 +258,8 @@ namespace DQB2IslandEditor.ObjectPK
             if (parent is BlockInfo)
                 ImageDatabase[0].GetObjectImage(parent);
             else
-                Application.Current.Dispatcher.Invoke(new Action(() =>
-                {
-                    parent.objectInventoryImage = new BitmapImage(new Uri("pack://application:,,,/Images/Inventory/placeholder.png"));
-                }));
-            
+                ImageDatabase[2].GetObjectImage(parent);
+
         }
         public static async void GetObjectMapImage(ObjectInfo parent)
         {
@@ -251,10 +267,7 @@ namespace DQB2IslandEditor.ObjectPK
             if (parent is BlockInfo)
                 ImageDatabase[1].GetObjectImage(parent);
             else
-                Application.Current.Dispatcher.Invoke(new Action(() =>
-                {
-                    parent.objectMapImage = new BitmapImage(new Uri("pack://application:,,,/Images/Inventory/placeholder.png"));
-                }));
+                ImageDatabase[3].GetObjectImage(parent); 
         }
 
         public static void ReadBlockFile()
@@ -304,9 +317,27 @@ namespace DQB2IslandEditor.ObjectPK
         public static void ReadItemFile()
         {
             var itemList = new Dictionary<uint, ItemInfo>();
-            //I'll do a placeholder item for now.
-            itemList.Add(0, new ItemInfo(0,0,0,Colour.Plain,"Placeholder")
-                );
+            
+            if (!System.IO.File.Exists(BLOCK_EXTRA_PATH)) return; //Change
+
+            String[] itemLines = ReadEmbeddedResource(ITEM_PATH).Split("\n");
+
+            foreach (String line in itemLines)
+            {
+                if (line[0] == '#') continue; //This is comment (python comment go brrr)
+                                              //FORMAT:
+
+                //ID      Image Id       Dimension     Tab      Color     Name
+
+                String[] values = line.Split('\t');
+                if (values.Length < 6) continue;
+
+                var ImageID = short.Parse(values[1]);
+
+                itemList.Add(ushort.Parse(values[0]), new ItemInfo(
+                    ushort.Parse(values[0]), ImageID, values[2], byte.Parse(values[3]),
+                    (Colour)byte.Parse(values[4]), values[5].Trim()));
+            }
             ITEM_INFO_DICTIONARY = itemList;
         }
 
@@ -314,6 +345,45 @@ namespace DQB2IslandEditor.ObjectPK
         {
             var blockList = new Dictionary<uint, List<uint>>();
             String[] blockLines = ReadEmbeddedResource(BLOCK_PARITY_PATH).Split("\n");
+            foreach (String line in blockLines)
+            {
+                if (line.Length < 1 || line[0] == '#') continue;
+                String[] values = line.Split('\t');
+                if (values.Length < 2) continue;
+                uint ID = uint.Parse(values[0]);
+                var lis = new List<uint>();
+                foreach (String id in values[1].Split(','))
+                {
+                    lis.Add(uint.Parse(id));
+                }
+                blockList.Add(ID, lis);
+            }
+            return blockList;
+        }
+
+        public static IDictionary<uint, List<uint>> LiquidParity()
+        {
+            var blockList = new Dictionary<uint, List<uint>>();
+            String[] blockLines = ReadEmbeddedResource(LIQUID_PARITY_PATH).Split("\n");
+            foreach (String line in blockLines)
+            {
+                if (line.Length < 1 || line[0] == '#') continue;
+                String[] values = line.Split('\t');
+                if (values.Length < 2) continue;
+                uint ID = uint.Parse(values[0]);
+                var lis = new List<uint>();
+                foreach (String id in values[1].Split(','))
+                {
+                    lis.Add(uint.Parse(id));
+                }
+                blockList.Add(ID, lis);
+            }
+            return blockList;
+        }
+        public static IDictionary<uint, List<uint>> ItemParity()
+        {
+            var blockList = new Dictionary<uint, List<uint>>();
+            String[] blockLines = ReadEmbeddedResource(ITEM_PARITY_PATH).Split("\n");
             foreach (String line in blockLines)
             {
                 if (line.Length < 1 || line[0] == '#') continue;

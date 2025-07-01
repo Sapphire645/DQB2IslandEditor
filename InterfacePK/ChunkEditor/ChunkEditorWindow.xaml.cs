@@ -24,6 +24,9 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
     {
         private ChunkEditorViewModel viewModel;
         private SaveData saveData;
+
+        readonly double WINDOW_WIDTH = 1600;
+        readonly double WINDOW_HEIGHT = 900;
         public ChunkEditorWindow(SaveData saveData, byte island)
         {
             Task<ushort> readFileTask = Task.Run(() => ReadFile(saveData, island));
@@ -39,6 +42,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             Console.WriteLine("CREATING WINDOW\n");
 
             InitializeComponent();
+
             inventoryMenu.shareViewModel(viewModel);
             favouriteList.shareViewModel(viewModel);
             chunkBlockGrid.ShareViewModel(viewModel);
@@ -66,12 +70,39 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             Console.WriteLine("THREAD - ASYNC END\n");
             return await loadFirstChunk;
         }
-
         private void RecalculateSize(object sender, SizeChangedEventArgs e)
         {
-            if(inventoryMenu != null)
-            { 
-                Console.WriteLine("RESIZE:"+ e.NewSize + "\n");
+            double width = e.NewSize.Width;
+            double height = e.NewSize.Height;
+
+            if (Math.Abs(e.PreviousSize.Width - e.NewSize.Width) > 1e-5)
+                this.Height = (WINDOW_HEIGHT * width) / WINDOW_WIDTH;
+            else if (Math.Abs(e.PreviousSize.Height - e.NewSize.Height) > 1e-5)
+                this.Width = (WINDOW_WIDTH * height) / WINDOW_HEIGHT;
+
+            if (width < WINDOW_WIDTH || height < WINDOW_HEIGHT)
+            {
+                double ratio = width / height;
+                if (ratio < WINDOW_WIDTH / WINDOW_HEIGHT)
+                {
+                    WindowScale.ScaleX = width / WINDOW_WIDTH;
+                    WindowScale.ScaleY = width / WINDOW_WIDTH;
+                }
+                else
+                {
+                    WindowScale.ScaleX = height / WINDOW_HEIGHT;
+                    WindowScale.ScaleY = height / WINDOW_HEIGHT;
+                }
+               
+            }
+            else
+            {
+                WindowScale.ScaleX = 1;
+                WindowScale.ScaleY = 1;
+            }
+            if (inventoryMenu != null)
+            {
+                Console.WriteLine("RESIZE:" + e.NewSize + "\n");
                 inventoryMenu.Resize(inventoryMenu.ActualHeight, inventoryMenu.ActualWidth);
                 LayerBar.Resize();
             }

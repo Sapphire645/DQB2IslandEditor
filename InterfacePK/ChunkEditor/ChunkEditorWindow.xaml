@@ -11,9 +11,8 @@
         xmlns:tools="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Tool"
         mc:Ignorable="d" 
         SnapsToDevicePixels="True"
-        Title="DQB2 Island Editor: Chunk Editor" Height="800" Width="1500" SizeChanged="RecalculateSize" MinHeight="800" MinWidth="1500">
+        Title="DQB2 Island Editor: Chunk Editor" Height="800" Width="1500" SizeChanged="RecalculateSize" >
     <Window.Resources>
-
         <Style TargetType="TabItem" x:Key="InventoryHeader">
             <Setter Property="Template">
                 <Setter.Value>
@@ -78,7 +77,10 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <DockPanel Background="#202020">
+    <DockPanel Background="#202020" MinHeight="800" MinWidth="1500">
+        <DockPanel.LayoutTransform >
+            <ScaleTransform x:Name="WindowScale" ScaleX="1" ScaleY="1"/>
+        </DockPanel.LayoutTransform>
         <DockPanel DockPanel.Dock="Right">
             <Viewbox  DockPanel.Dock="Left" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Column="0">
                 <chunkMap:ChunkBlockGrid x:Name="chunkBlockGrid"/>
@@ -163,12 +165,12 @@
                                     <layer:VirtualGridView x:Name="virtualGridView">
                                         <layer:VirtualGridView.LayoutTransform >
                                             <ScaleTransform ScaleX="{Binding Value, ElementName=ZoomSlider}"
-                                                            ScaleY="{Binding Value, ElementName=ZoomSlider}"/>
+                                                                ScaleY="{Binding Value, ElementName=ZoomSlider}"/>
                                         </layer:VirtualGridView.LayoutTransform>
                                     </layer:VirtualGridView>
                                 </ScrollViewer>
                                 <Slider x:Name="ZoomSlider" Minimum="0.5" Maximum="3" Value="1" TickFrequency="0.1" Orientation="Vertical" Width="20"
-                                        HorizontalAlignment="Left" Margin="0,0,0,20" ValueChanged="UpdateMapSize"/>
+                                            HorizontalAlignment="Left" Margin="0,0,0,20" ValueChanged="UpdateMapSize"/>
                             </Grid>
                         </TabItem>
                     </TabControl>
@@ -219,14 +221,14 @@
                             </Button>
                         </UniformGrid>
                         <Popup Name="PaintPopup" PlacementTarget="{Binding ElementName=Paint_tool}"
-                           Placement="Bottom"
-                           IsOpen="{Binding IsChecked, ElementName=Paint_tool}"
-                           StaysOpen="False">
+                               Placement="Bottom"
+                               IsOpen="{Binding IsChecked, ElementName=Paint_tool}"
+                               StaysOpen="False">
                             <Border Background="Black" BorderBrush="#232337" BorderThickness="1" Padding="5">
                                 <StackPanel Orientation="Vertical">
-                                <Button Background="Transparent" BorderThickness="0" Content="1x1"  Foreground="White" Padding="5" Click="ToolChange1"/>
-                                <Button Background="Transparent" BorderThickness="0" Content="3x3 ⬤"  Foreground="White" Padding="5" Click="ToolChange2"/>
-                                <Button Background="Transparent" BorderThickness="0" Content="3x3 ■"  Foreground="White" Padding="5" Click="ToolChange3"/>
+                                    <Button Background="Transparent" BorderThickness="0" Content="1x1"  Foreground="White" Padding="5" Click="ToolChange1"/>
+                                    <Button Background="Transparent" BorderThickness="0" Content="3x3 ⬤"  Foreground="White" Padding="5" Click="ToolChange2"/>
+                                    <Button Background="Transparent" BorderThickness="0" Content="3x3 ■"  Foreground="White" Padding="5" Click="ToolChange3"/>
                                 </StackPanel>
                             </Border>
                         </Popup>

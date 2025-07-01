@@ -15,14 +15,18 @@ namespace DQB2IslandEditor.DataPK
     {
 
         private byte[] bytes;
+        private bool validEntry = false; //If an entry exists.
+
+        private bool updated = false; //If data was changed in the program.
 
         public ushort publicItemId => itemId;
         private ushort itemId;
         private byte x;
         private byte y;
         private byte z;
-
         private byte rotation;
+
+        private uint entryOffset;
 
         public ItemInfo itemInfo => DataBaseReading.ITEM_INFO_DICTIONARY[itemId]; //I need this for the margins.
         public ushort worldOffset => (ushort)(x + z * 32);
@@ -37,6 +41,9 @@ namespace DQB2IslandEditor.DataPK
             return false;
         }
         public ItemInstance(byte[] bytes) {
+            this.entryOffset = entryOffset;
+            validEntry = true;
+
             this.bytes = new byte[24]; 
             Array.Copy(bytes, this.bytes, bytes.Length);
 
@@ -55,8 +62,13 @@ namespace DQB2IslandEditor.DataPK
             z = (byte)(bytes[11] & 0x3E);
             z >>= 1;
             rotation = (byte)(bytes[11] >> 6);
+
+            entryOffset = (byte)(bytes[12] >> 4);
+            entryOffset += (ushort)(bytes[13] * 256);
+            entryOffset += (ushort)(bytes[14] * 256 * 256);
         }
 
+        public uint GetEntryOffset() { return entryOffset; }
         public byte[] GetByteFormat()
         {
             byte[] itemIdBytes = BitConverter.GetBytes(itemId);
@@ -69,6 +81,15 @@ namespace DQB2IslandEditor.DataPK
             bytes[11] = (byte)((byte)(y >> 6) + (byte)(z << 1) + (byte)(rotation << 6));
 
             return bytes;
+        }
+        public bool HasBeenChanged()
+        {
+            return updated;
+        }
+
+        public bool IsValidEntry()
+        {
+            return validEntry;
         }
 
         //Used to calculate if the item is in a contiguous chunk.
@@ -93,5 +114,8 @@ namespace DQB2IslandEditor.DataPK
             foreach(byte b in bytes) a += b.ToString("X2") + " ";
             return $"ID: {itemId} - Y:{y},X:{x},Z:{z} - {rotation} |"+ a+"\n";
         }
+
+        public uint tempEntryOff;
+        public uint tempDataOff;
     }
 }

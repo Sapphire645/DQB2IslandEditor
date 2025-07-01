@@ -37,6 +37,7 @@ namespace DQB2IslandEditor.ObjectPK
         public async void GetObjectImage(ObjectInfo parent)
         {
             int ImageID = parent.imageId;
+            Console.WriteLine("Loading image for " + parent.name + " with ID: " + ImageID);
             object currentLock;
             //Stop from loading two at the same time. hopefully does not slow down too much since its just 1 lock
             //Get if the image is loading somewhere else
@@ -75,12 +76,14 @@ namespace DQB2IslandEditor.ObjectPK
                 try
                 {
                     var _sheet = _sheetOne;
+                    var CalcImageID = ImageID;
                     if (ImageID >= SHEET_DIMENSION * SHEET_DIMENSION)
                     {
-                        ImageID = ImageID % (SHEET_DIMENSION * SHEET_DIMENSION);
+                        CalcImageID = ImageID % (SHEET_DIMENSION * SHEET_DIMENSION);
                         _sheet = _sheetTwo;
                     }
-                    Icon = new CroppedBitmap(_sheet, new Int32Rect((ImageID % SHEET_DIMENSION) * SIZE, (ImageID / SHEET_DIMENSION) * SIZE, SIZE, SIZE));
+                   
+                    Icon = new CroppedBitmap(_sheet, new Int32Rect((CalcImageID % SHEET_DIMENSION) * SIZE, (CalcImageID / SHEET_DIMENSION) * SIZE, SIZE, SIZE));
                 }
                 catch (Exception e)
                 {

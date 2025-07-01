@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.Information
+namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
 {
     /// <summary>
     /// Interaction logic for BlockValues.xaml
     /// </summary>
-    public partial class BlockValues : UserControl
+    public partial class OverflowEdit : UserControl
     {
-        public BlockValues()
+        public OverflowEdit()
         {
             InitializeComponent();
         }

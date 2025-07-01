@@ -91,6 +91,10 @@ namespace DQB2IslandEditor.DataPK
         {
             itemInstances.Add(item);
         }
+        public List<ItemInstance> GetAllItems()
+        {
+            return itemInstances;
+        }
         public void SetBlockFromCoords(BlockInstance blockInstance, byte x, byte z, byte layer)
         {
             if (blockBytes == null) return;

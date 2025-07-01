@@ -6,12 +6,15 @@
              xmlns:local="clr-namespace:DQB2IslandEditor.ObjectPK.Container"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Border Name="ItemBorder">
+    <Border Name="ItemBorder" IsHitTestVisible="False">
         <Border.ToolTip>
             <ToolTip Background="Transparent" BorderThickness="0">
                 <local:InventoryInfo x:Name="IInfo" objectInfoPanel="{Binding itemInfo.Value}"/>
             </ToolTip>
         </Border.ToolTip>
-        <Image Name="Image" Source="{Binding itemInfo.Value.objectMapImage}" Stretch="Fill"/>
+        <Grid>
+            <Image Name="Image" Source="{Binding itemInfo.Value.objectMapImage}" Stretch="Fill"/>
+            <TextBlock Text="{Binding itemInstance.publicItemId}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        </Grid>
     </Border>
 </UserControl>

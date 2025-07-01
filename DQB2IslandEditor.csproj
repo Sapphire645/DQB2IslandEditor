@@ -36,9 +36,23 @@
     <None Remove="Images\Inventory\BlockSheetOne.png" />
     <None Remove="Images\Inventory\BlockSheetTwo.png" />
     <None Remove="Images\Inventory\icon0.png" />
+    <None Remove="Images\Inventory\icon1.png" />
+    <None Remove="Images\Inventory\ItemSheetOne.png" />
+    <None Remove="Images\Inventory\ItemSheetTwo.png" />
+    <None Remove="Images\Inventory\LiquidMenu.png" />
     <None Remove="Images\Inventory\placeholder.png" />
     <None Remove="Images\Inventory\SheetChunky.png" />
     <None Remove="Images\Inventory\SheetRetro.png" />
+    <None Remove="Images\Inventory\shellIcon\00.png" />
+    <None Remove="Images\Inventory\shellIcon\01.png" />
+    <None Remove="Images\Inventory\shellIcon\02.png" />
+    <None Remove="Images\Inventory\shellIcon\03.png" />
+    <None Remove="Images\Inventory\shellIcon\04.png" />
+    <None Remove="Images\Inventory\shellIcon\05.png" />
+    <None Remove="Images\Inventory\shellIcon\06.png" />
+    <None Remove="Images\Inventory\shellIcon\07.png" />
+    <None Remove="Images\Inventory\shellIcon\08.png" />
+    <None Remove="Images\Inventory\shellIcon\09.png" />
     <None Remove="Images\Inventory\T-0001.png" />
     <None Remove="Images\Inventory\TileSheetOne.png" />
     <None Remove="Images\Inventory\TileSheetTwo.png" />
@@ -72,6 +86,9 @@
     <None Remove="Info\BlockParity.txt" />
     <None Remove="Info\Blocks.txt" />
     <None Remove="info\islands.txt" />
+    <None Remove="Info\ItemParity.txt" />
+    <None Remove="Info\Items.txt" />
+    <None Remove="Info\Liquid.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -79,9 +96,23 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Images\Inventory\icon0.png" />
+    <Resource Include="Images\Inventory\icon1.png" />
+    <Resource Include="Images\Inventory\ItemSheetOne.png" />
+    <Resource Include="Images\Inventory\ItemSheetTwo.png" />
+    <Resource Include="Images\Inventory\LiquidMenu.png" />
     <Resource Include="Images\Inventory\placeholder.png" />
     <Resource Include="Images\Inventory\SheetChunky.png" />
     <Resource Include="Images\Inventory\SheetRetro.png" />
+    <Resource Include="Images\Inventory\shellIcon\00.png" />
+    <Resource Include="Images\Inventory\shellIcon\01.png" />
+    <Resource Include="Images\Inventory\shellIcon\02.png" />
+    <Resource Include="Images\Inventory\shellIcon\03.png" />
+    <Resource Include="Images\Inventory\shellIcon\04.png" />
+    <Resource Include="Images\Inventory\shellIcon\05.png" />
+    <Resource Include="Images\Inventory\shellIcon\06.png" />
+    <Resource Include="Images\Inventory\shellIcon\07.png" />
+    <Resource Include="Images\Inventory\shellIcon\08.png" />
+    <Resource Include="Images\Inventory\shellIcon\09.png" />
     <Resource Include="Images\Islands\01.png" />
     <Resource Include="Images\Islands\02.png" />
     <Resource Include="Images\Islands\03.png" />
@@ -137,6 +168,9 @@
     <Resource Include="Images\UI\toolsheet.png" />
     <Resource Include="Images\UI\YLayer.png" />
     <Resource Include="Info\BlockParity.txt" />
+    <Resource Include="Info\ItemParity.txt" />
+    <Resource Include="Info\Items.txt" />
+    <Resource Include="Info\Liquid.txt" />
   </ItemGroup>
 
   <ItemGroup>

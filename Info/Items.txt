@@ -1,4 +1,4 @@
-#ID	IMAGE	X-Y-Z	0	0	NAME
+#ID	IMAGE	X-Y-Z	0	COLOR	NAME
 0	0	1x1x1	0	0	Null
 1	1	1x1x1	0	0	Grass
 2	2	1x1x1	0	0	Stalwort
@@ -156,7 +156,7 @@
 154	154	1x1x1	0	0	Stickler’s Sifter
 155	155	1x1x1	0	0	Sewing Station
 156	0	1x1x1	0	1	Wooden Fortification 
-157	157	3x2x3	0	0	Metalist Workbench
+157	157	3x2x3	0	0	Machinist’s Workbench
 158	158	2x1x2	0	0	Welder’s Workbench
 159	159	1x1x1	0	0	¿Dead Plant
 160	160	1x1x1	0	0	¿Dead Plant on Pole
@@ -1360,7 +1360,7 @@
 1358	1358	3x3x2	0	0	Disfigured Throne
 1359	1359	1x1x1	0	0	Broken Citadel Wall
 1360	1360	1x1x1	0	0	Broken Stone Wall
-1361	1361	1x1x1	0	0	Wooden Foundation
+1361	1361	1x1x1	0	0	Wooden Fortification
 1362	1362	1x2x1	0	0	Target Dummy
 1363	1363	1x1x2	0	0	Coffin
 1364	1364	1x1x1	0	0	Crock Pot
@@ -1401,7 +1401,7 @@
 1399	1399	1x1x1	0	0	Fiendish Face
 1400	1400	1x3x1	0	0	Peculiar Pillar
 1401	1401	5x4x2	0	0	Citadel Spear Symbol
-1402	1402	3x3x1	0	0	Citadeñ Cross Carving
+1402	1402	3x3x1	0	0	Citadel Cross Carving
 1403	1403	1x3x1	0	0	¿Minimedal
 1404	1404	1x3x1	0	0	¿Minimedal
 1405	0	1x1x1	1	0	0
@@ -1623,30 +1623,30 @@
 1621	0	1x1x1	0	6	Connecting Couch Corner 
 1622	0	1x1x1	0	7	Connecting Couch Corner 
 1623	0	1x1x1	0	8	Connecting Couch Corner 
-1624	0	1x1x1	0	1	Carpented Steps Midsection 
-1625	0	1x1x1	0	2	Carpented Steps Midsection 
-1626	0	1x1x1	0	3	Carpented Steps Midsection 
-1627	0	1x1x1	0	4	Carpented Steps Midsection 
-1628	0	1x1x1	0	5	Carpented Steps Midsection 
-1629	0	1x1x1	0	6	Carpented Steps Midsection 
-1630	0	1x1x1	0	7	Carpented Steps Midsection 
-1631	0	1x1x1	0	8	Carpented Steps Midsection 
-1632	0	1x1x1	0	1	Carpented Steps Right 
-1633	0	1x1x1	0	2	Carpented Steps Right 
-1634	0	1x1x1	0	3	Carpented Steps Right 
-1635	0	1x1x1	0	4	Carpented Steps Right 
-1636	0	1x1x1	0	5	Carpented Steps Right 
-1637	0	1x1x1	0	6	Carpented Steps Right 
-1638	0	1x1x1	0	7	Carpented Steps Right 
-1639	0	1x1x1	0	8	Carpented Steps Right 
-1640	0	1x1x1	0	1	Carpented Steps Left 
-1641	0	1x1x1	0	2	Carpented Steps Left 
-1642	0	1x1x1	0	3	Carpented Steps Left 
-1643	0	1x1x1	0	4	Carpented Steps Left 
-1644	0	1x1x1	0	5	Carpented Steps Left 
-1645	0	1x1x1	0	6	Carpented Steps Left 
-1646	0	1x1x1	0	7	Carpented Steps Left 
-1647	0	1x1x1	0	8	Carpented Steps Left 
+1624	0	1x1x1	0	1	Carpeted Steps Midsection 
+1625	0	1x1x1	0	2	Carpeted Steps Midsection 
+1626	0	1x1x1	0	3	Carpeted Steps Midsection 
+1627	0	1x1x1	0	4	Carpeted Steps Midsection 
+1628	0	1x1x1	0	5	Carpeted Steps Midsection 
+1629	0	1x1x1	0	6	Carpeted Steps Midsection 
+1630	0	1x1x1	0	7	Carpeted Steps Midsection 
+1631	0	1x1x1	0	8	Carpeted Steps Midsection 
+1632	0	1x1x1	0	1	Carpeted Steps Right 
+1633	0	1x1x1	0	2	Carpeted Steps Right 
+1634	0	1x1x1	0	3	Carpeted Steps Right 
+1635	0	1x1x1	0	4	Carpeted Steps Right 
+1636	0	1x1x1	0	5	Carpeted Steps Right 
+1637	0	1x1x1	0	6	Carpeted Steps Right 
+1638	0	1x1x1	0	7	Carpeted Steps Right 
+1639	0	1x1x1	0	8	Carpeted Steps Right 
+1640	0	1x1x1	0	1	Carpeted Steps Left 
+1641	0	1x1x1	0	2	Carpeted Steps Left 
+1642	0	1x1x1	0	3	Carpeted Steps Left 
+1643	0	1x1x1	0	4	Carpeted Steps Left 
+1644	0	1x1x1	0	5	Carpeted Steps Left 
+1645	0	1x1x1	0	6	Carpeted Steps Left 
+1646	0	1x1x1	0	7	Carpeted Steps Left 
+1647	0	1x1x1	0	8	Carpeted Steps Left 
 1648	1345	1x1x1	0	1	Stage Curtain Left 
 1649	1345	1x1x1	0	2	Stage Curtain Left 
 1650	1345	1x1x1	0	3	Stage Curtain Left 
@@ -2156,13 +2156,13 @@
 2154	0	1x1x1	0	0	¿
 2155	0	1x1x1	0	0	Floating Fragments
 2156	0	1x1x1	0	0	Ramp
-2157	0	1x2x1	0	0	Blooming Poxyglove
-2158	0	1x1x1	0	0	Budding Poxyglove
+2157	0	1x2x1	0	0	Blooming Poxglove
+2158	0	1x1x1	0	0	Budding Poxglove
 2159	0	1x1x1	0	0	Wide Vile Vines
 2160	0	1x1x1	0	0	Small Vile Vines
 2161	0	1x1x1	0	0	Long Vile Vines
 2162	0	1x1x1	0	0	¿Gold Erdrick Trophee
-2163	0	1x1x1	0	0	Snizz Snare
+2163	0	1x1x1	0	0	Sizz  Snare
 2164	0	2x2x2	0	0	Woosh Widget
 2165	0	1x1x1	0	0	Vertical Log Cap
 2166	2166	1x1x1	0	0	¿Gold Star Trophy
@@ -2336,8 +2336,8 @@
 2334	0	1x1x1	0	0	¿Dead Plant on pole
 2335	0	1x1x1	0	0	¿Dead Plant on pole
 2336	0	1x1x1	0	0	Goldinoggin
-2337	0	2x1x1	0	0	Downward-Pointing Vine Vines
-2338	0	2x1x1	0	0	Upward-Pointing Vine Vines
+2337	0	2x1x1	0	0	Downward-Pointing Vile Vines
+2338	0	2x1x1	0	0	Upward-Pointing Vile Vines
 2339	0	1x1x1	0	0	Vertical Vile Vines
 2340	0	1x1x1	0	0	¿Dead Plant
 2341	0	1x1x1	0	0	¿Dead Plant on pole
@@ -3082,4 +3082,4 @@
 3080	0	1x1x1	0	0	Classy Canopy
 3081	0	1x3x1	0	1	Chic Sunbrella 
 3082	0	1x3x1	0	2	Chic Sunbrella 
-3083	0	1x3x1	0	3	Chic Sunbrella 
+3083	0	1x3x1	0	3	Chic Sunbrella

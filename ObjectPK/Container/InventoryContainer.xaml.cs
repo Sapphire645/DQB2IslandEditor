@@ -55,7 +55,7 @@ namespace DQB2IslandEditor.ObjectPK.Container
         }
         // 0 = Colour
 
-        public void createSubMenu(bool colour, byte type, List<ObjectInfo> subInfos)
+        public void createSubMenu(bool colour, byte type, List<ObjectInfo> subInfos, byte other = 0)
         {
             Image icon = new Image()
             {
@@ -73,6 +73,9 @@ namespace DQB2IslandEditor.ObjectPK.Container
                     if (colour)
                         _submenu = new ColourPopup(SelectedItem, _favouriteBlock, _currentObject, subInfos);
                     break;
+                case 1: //Liquids
+                    _submenu = new LiquidPopup(SelectedItem, _favouriteBlock, subInfos, other);
+                    break;
 
             }
         }
@@ -83,8 +86,8 @@ namespace DQB2IslandEditor.ObjectPK.Container
                 colourPopup = new Popup
                 {
                     PlacementTarget = this,
-                    Placement = PlacementMode.Center,
-                    VerticalOffset = this.ActualHeight,
+                    Placement = PlacementMode.Bottom,
+                    HorizontalOffset=-this.ActualWidth,
                     StaysOpen = false
                 };
                 colourPopup.Child = _submenu;
