@@ -78,5 +78,10 @@ namespace DQB2IslandEditor.ObjectPK.Container
         {
             shellIndex = 20;
         }
+
+        private void FeckYou(object sender, RoutedEventArgs e)
+        {
+            CheckMe.IsChecked = true;
+        }
     }
 }

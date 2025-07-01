@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
              xmlns:local="clr-namespace:DQB2IslandEditor.ObjectPK.Container"  
              mc:Ignorable="d"   
-             d:DesignHeight="350" d:DesignWidth="800">  
+             d:DesignHeight="350" d:DesignWidth="800" Loaded="FeckYou">  
     <UserControl.Resources>  
         <Style x:Key="WaterButtonStyle" TargetType="Button">  
             <Setter Property="Template">  
@@ -37,6 +37,7 @@
                             BorderThickness="1"
                             CornerRadius="12"
                             Padding="5"
+                            Visibility="{TemplateBinding Visibility}"
                             >
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
@@ -78,7 +79,10 @@
                 <Button Tag="9"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
                 <Button Tag="10" PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem"  Style="{StaticResource WaterButtonStyle}"/>  
             </UniformGrid>  
-            <UniformGrid Rows="1" Columns="10" Grid.Row="2" MinHeight="15">
+            <UniformGrid Rows="1" Columns="11" Grid.Row="2" MinHeight="15">
+                <RadioButton Tag="20" Visibility="Collapsed" Name="CheckMe" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    
+                </RadioButton>
                 <RadioButton Tag="0" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
                     <Image Source="/Images/Inventory/shellIcon/00.png"/>
                 </RadioButton>

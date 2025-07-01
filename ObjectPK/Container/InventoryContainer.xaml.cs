@@ -76,7 +76,10 @@ namespace DQB2IslandEditor.ObjectPK.Container
                 case 1: //Liquids
                     _submenu = new LiquidPopup(SelectedItem, _favouriteBlock, subInfos, other);
                     break;
-
+                case 3:
+                    //Shells
+                    _submenu = new GeneralGroupPopup(SelectedItem, _favouriteBlock, subInfos);
+                    break;
             }
         }
         private void ColourPopup()

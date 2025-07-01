@@ -29,6 +29,7 @@ namespace DQB2IslandEditor.ObjectPK
 
         private const string SHEET_ITEM_ONE_PATH = "Images/Inventory/ItemSheetOne.png";
         private const string SHEET_ITEM_TWO_PATH = "Images/Inventory/ItemSheetTwo.png";
+        private const string SHEET_ITEM_THREE_PATH = "Images/Inventory/ItemSheetThree.png";
 
         private const string BLOCK_ERR_PATH = "Images/Inventory/B-0001.png";
         private const string TILE_ERR_PATH = "Images/Inventory/T-0001.png";
@@ -67,6 +68,7 @@ namespace DQB2IslandEditor.ObjectPK
 
         private static BitmapImage _sheetOneItem;
         private static BitmapImage _sheetTwoItem;
+        private static BitmapImage _sheetThreeItem;
 
         private static BitmapImage _toolSheet;
         private static BitmapImage _minimapSheetChunky;
@@ -124,6 +126,7 @@ namespace DQB2IslandEditor.ObjectPK
 
             _sheetOneItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_ONE_PATH));
             _sheetTwoItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_TWO_PATH));
+            _sheetThreeItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_THREE_PATH));
 
             //Helps performance
             _sheetOneBlock.Freeze();
@@ -133,12 +136,13 @@ namespace DQB2IslandEditor.ObjectPK
 
             _sheetOneItem.Freeze();
             _sheetTwoItem.Freeze();
+            _sheetThreeItem.Freeze();
 
             ImageDatabase[0] = new DataBaseImageHandler(_sheetOneBlock, _sheetTwoBlock, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             ImageDatabase[1] = new DataBaseImageHandler(_sheetOneTile, _sheetTwoTile, TILE_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
-            ImageDatabase[2] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
+            ImageDatabase[2] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, _sheetThreeItem, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             //Placeholder.
-            ImageDatabase[3] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, BLOCK_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
+            ImageDatabase[3] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, _sheetThreeItem, BLOCK_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
         }
         public static CroppedBitmap toolImage(byte tool, bool active)
         {
@@ -348,11 +352,13 @@ namespace DQB2IslandEditor.ObjectPK
             var ColourSubmenu = new Dictionary<uint, List<uint>>();
             var LiquidSubmenu = new Dictionary<uint, List<uint>>();
             var AirSubmenu = new List<uint>();
+            var GeneralSubmenu = new Dictionary<uint, List<uint>>();
 
             blockList.Add(0, NoSubmenuList);
             blockList.Add(1, ColourSubmenu);
             blockList.Add(2, LiquidSubmenu);
             blockList.Add(3, AirSubmenu);
+            blockList.Add(4, GeneralSubmenu);
 
             String[] blockLines = ReadEmbeddedResource(BLOCK_MENU_PATH).Split("\n");
             foreach (String line in blockLines)
@@ -390,6 +396,15 @@ namespace DQB2IslandEditor.ObjectPK
                             AirSubmenu.Add(uint.Parse(air));
                         }
                         break;
+                    case 4:
+                        String[] general = values[2].Split(',');
+                        var lisGeneral = new List<uint>();
+                        foreach (String gen in general)
+                        {
+                            lisGeneral.Add(uint.Parse(gen));
+                        }
+                        GeneralSubmenu.Add(uint.Parse(values[1]), lisGeneral);
+                        break;
                 }
             }
             return blockList;
@@ -400,11 +415,11 @@ namespace DQB2IslandEditor.ObjectPK
 
             var NoSubmenuList = new List<uint>();
             var ColourSubmenu = new Dictionary<uint, List<uint>>();
-            var LiquidSubmenu = new Dictionary<uint, List<uint>>();
-            var AirSubmenu = new List<uint>();
+            var GeneralSubmenu = new Dictionary<uint, List<uint>>();
 
             blockList.Add(0, NoSubmenuList);
             blockList.Add(1, ColourSubmenu);
+            blockList.Add(4, GeneralSubmenu);
 
             String[] blockLines = ReadEmbeddedResource(ITEM_ARTIFICIAL_MENU_PATH).Split("\n");
             foreach (String line in blockLines)
@@ -426,6 +441,15 @@ namespace DQB2IslandEditor.ObjectPK
                             lis.Add(uint.Parse(colour));
                         }
                         ColourSubmenu.Add(uint.Parse(values[1]), lis);
+                        break;
+                    case 4:
+                        String[] general = values[2].Split(',');
+                        var lisGeneral = new List<uint>();
+                        foreach (String gen in general)
+                        {
+                            lisGeneral.Add(uint.Parse(gen));
+                        }
+                        GeneralSubmenu.Add(uint.Parse(values[1]), lisGeneral);
                         break;
                 }
             }
