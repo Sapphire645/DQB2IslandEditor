@@ -1,0 +1,115 @@
+﻿<UserControl x:Class="DQB2IslandEditor.ObjectPK.Container.LiquidPopup"  
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
+             xmlns:local="clr-namespace:DQB2IslandEditor.ObjectPK.Container"  
+             mc:Ignorable="d"   
+             d:DesignHeight="350" d:DesignWidth="800">  
+    <UserControl.Resources>  
+        <Style x:Key="WaterButtonStyle" TargetType="Button">  
+            <Setter Property="Template">  
+                <Setter.Value>  
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="Border" Background="Transparent" BorderBrush="LightGray" BorderThickness="2" CornerRadius="4" Padding="2,2">
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#50FFFFFF" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="Orange" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#50FFAA00" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="Gold" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>  
+                </Setter.Value>  
+            </Setter>  
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border x:Name="border" 
+                            Background="Transparent" 
+                            BorderBrush="White" 
+                            BorderThickness="1"
+                            CornerRadius="12"
+                            Padding="5"
+                            >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="Orange"/>
+                                <Setter TargetName="border" Property="BorderBrush" Value="Orange"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="Gold"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </UserControl.Resources>  
+    <Border BorderBrush="#232337" BorderThickness="2" CornerRadius="5" Padding="20,10" Width="400">  
+        <Grid Margin="5">  
+            <Grid.RowDefinitions>  
+                <RowDefinition Height="2*"/>  
+                <RowDefinition Height="10"/>  
+                <RowDefinition Height="*"/>  
+            </Grid.RowDefinitions>
+            <Image Source="/Images/Inventory/LiquidMenu.png"/>
+            <UniformGrid Rows="2" Columns="7">
+                <Button Tag="0"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="1"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="2"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="3"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="4" PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem"  Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="5"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="6"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="7" PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem"  Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="8"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="9"  PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem" Style="{StaticResource WaterButtonStyle}"/>
+                <Button Tag="10" PreviewMouseLeftButtonDown="SelectedItem" PreviewMouseRightButtonDown="SelectedRightItem"  Style="{StaticResource WaterButtonStyle}"/>  
+            </UniformGrid>  
+            <UniformGrid Rows="1" Columns="10" Grid.Row="2" MinHeight="15">
+                <RadioButton Tag="0" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/00.png"/>
+                </RadioButton>
+                <RadioButton Tag="1" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/01.png"/>
+                </RadioButton>
+                <RadioButton Tag="2" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/02.png"/>
+                </RadioButton>
+                <RadioButton Tag="3" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/03.png"/>
+                </RadioButton>
+                <RadioButton Tag="4" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/04.png"/>
+                </RadioButton>
+                <RadioButton Tag="5" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/05.png"/>
+                </RadioButton>
+                <RadioButton Tag="6" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/06.png"/>
+                </RadioButton>
+                <RadioButton Tag="7" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/07.png"/>
+                </RadioButton>
+                <RadioButton Tag="8" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/08.png"/>
+                </RadioButton>
+                <RadioButton Tag="9" GroupName="Shell" Checked="ShellCheck" Unchecked="ShellUncheck">
+                    <Image Source="/Images/Inventory/shellIcon/09.png"/>
+                </RadioButton>
+            </UniformGrid>  
+        </Grid>  
+    </Border>  
+</UserControl>

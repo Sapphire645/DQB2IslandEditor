@@ -55,7 +55,7 @@ namespace DQB2IslandEditor.ObjectPK.Container
         }
         // 0 = Colour
 
-        public void createSubMenu(bool colour, byte type, List<ObjectInfo> subInfos)
+        public void createSubMenu(bool colour, byte type, List<ObjectInfo> subInfos, byte other = 0)
         {
             Image icon = new Image()
             {
@@ -72,6 +72,9 @@ namespace DQB2IslandEditor.ObjectPK.Container
                 case 0: //Colour menu
                     if (colour)
                         _submenu = new ColourPopup(SelectedItem, _favouriteBlock, _currentObject, subInfos);
+                    break;
+                case 1: //Liquids
+                    _submenu = new LiquidPopup(SelectedItem, _favouriteBlock, subInfos, other);
                     break;
 
             }

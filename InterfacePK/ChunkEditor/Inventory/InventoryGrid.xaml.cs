@@ -89,42 +89,64 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                 }));
                 var sendingBlocks = new List<DispatcherOperation>();
 
-                if (!isItem)
-                    foreach (var itemFull in fullBlockList)
+                if (liquidCompare)
+                {
+                    //Something something, should have used herency or however u wanna call it in english
+                    foreach (var liquidItem in parity)
                     {
-                        var item = itemFull.Value;
-                        if (((BlockInfo)item).liquid == liquidCompare)
-                        {
-                            if (item.colour == 0) //For all plain.
-                            {
-                                var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
-                                {
-                                    InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
-                                    inventoryItemsAll.Add(item.objectId, inventoryItem);
-                                }));
-                                sendingBlocks.Add(send);
-                            }
-                        }
-                    }
-                else
-                    foreach (var itemFull in fullBlockList)
-                    {
-                        var item = itemFull.Value;
+                        var liquidValues = liquidItem.Value;
+                        var representative = fullBlockList[liquidValues[0]];
+
+                        List<ObjectInfo> values = new List<ObjectInfo>();
+                        foreach (var index in liquidValues)
+                            values.Add(fullBlockList[index]);
+
                         var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
                         {
-                            InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
-                            inventoryItemsAll.Add(item.objectId, inventoryItem);
+                            InventoryContainer inventoryItem = new InventoryContainer(representative, ObjectClicked, ObjectRightClicked);
+                            inventoryItem.createSubMenu(false, 1, values, (byte)liquidItem.Key);
+                            inventoryItemsAll.Add(representative.objectId, inventoryItem);
                         }));
-                        sendingBlocks.Add(send);
                     }
-
+                }
+                else
+                {
+                    if (!isItem)
+                        foreach (var itemFull in fullBlockList)
+                        {
+                            var item = itemFull.Value;
+                            if (((BlockInfo)item).liquid == liquidCompare)
+                            {
+                                if (item.colour == 0) //For all plain.
+                                {
+                                    var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                                    {
+                                        InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
+                                        inventoryItemsAll.Add(item.objectId, inventoryItem);
+                                    }));
+                                    sendingBlocks.Add(send);
+                                }
+                            }
+                        }
+                    else
+                        foreach (var itemFull in fullBlockList)
+                        {
+                            var item = itemFull.Value;
+                            var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                            {
+                                InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
+                                inventoryItemsAll.Add(item.objectId, inventoryItem);
+                            }));
+                            sendingBlocks.Add(send);
+                        }
+                }
                 //Wait for the async
                 foreach (var send in sendingBlocks)
                     {
                         send.Wait();
                     }
 
-                if(parity != null) 
+                if(parity != null && !liquidCompare) 
                 //Nos create the colour submenus
                     foreach (var parityMerge in parity.Keys)
                     {

@@ -12,7 +12,7 @@
                     <Grid Margin="0,4,0,0" DockPanel.Dock="Top">
                         <StackPanel Grid.Column="3" Orientation="Horizontal">
                             <Border Name="b1" Background="#232337" CornerRadius="10" Margin="4" Height="64" Width="64">
-                                <Image Source="{Binding SelectedBlock.objectInventoryImage}" IsHitTestVisible="False" Margin="4"/>
+                                <Image Name="ImageBlock" Source="{Binding SelectedBlock.objectInventoryImage}" IsHitTestVisible="False" Margin="4"/>
                             </Border>
                             <Border Background="#232337" CornerRadius="10" Margin="4" Grid.Column="1" Height="64" Width="64">
                                 <Image Source="{Binding SelectedBlock.objectMapImage}" IsHitTestVisible="False" Margin="8" />
