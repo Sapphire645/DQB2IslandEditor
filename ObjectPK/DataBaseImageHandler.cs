@@ -37,7 +37,6 @@ namespace DQB2IslandEditor.ObjectPK
         public async void GetObjectImage(ObjectInfo parent)
         {
             int ImageID = parent.imageId;
-            Console.WriteLine("Loading image for " + parent.name + " with ID: " + ImageID);
             object currentLock;
             //Stop from loading two at the same time. hopefully does not slow down too much since its just 1 lock
             //Get if the image is loading somewhere else
