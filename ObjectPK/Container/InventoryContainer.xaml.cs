@@ -86,8 +86,8 @@ namespace DQB2IslandEditor.ObjectPK.Container
                 colourPopup = new Popup
                 {
                     PlacementTarget = this,
-                    Placement = PlacementMode.Center,
-                    VerticalOffset = this.ActualHeight,
+                    Placement = PlacementMode.Bottom,
+                    HorizontalOffset= this.Width,
                     StaysOpen = false
                 };
                 colourPopup.Child = _submenu;

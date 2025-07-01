@@ -50,6 +50,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
                 else
                 {
                     this.Visibility = Visibility.Visible;
+                    ImageBlock.Source = ViewModel.SelectedObject.objectInventoryImage;
                     ViewModel.SelectedObject.InventoryImageChanged += updateImage;
                 }
             }

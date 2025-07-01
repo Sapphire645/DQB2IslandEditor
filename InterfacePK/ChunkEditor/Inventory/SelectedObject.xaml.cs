@@ -40,6 +40,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
             if (e.PropertyName == nameof(viewModel.SelectedObject))  // BLOCKINFO CHANGE
             {
                 if (viewModel.SelectedObject != null)
+                    Im.Source = viewModel.SelectedObject.objectInventoryImage;
                     viewModel.SelectedObject.InventoryImageChanged += updateImage;
             }
         }

@@ -107,6 +107,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                             inventoryItem.createSubMenu(false, 1, values, (byte)liquidItem.Key);
                             inventoryItemsAll.Add(representative.objectId, inventoryItem);
                         }));
+                        sendingBlocks.Add(send);
                     }
                 }
                 else
