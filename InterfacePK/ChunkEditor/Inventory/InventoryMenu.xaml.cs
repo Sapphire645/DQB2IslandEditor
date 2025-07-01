@@ -36,24 +36,24 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
 
         public async void CreateInventory(IDictionary<uint, ObjectInfo> fullBlockList, IDictionary<uint, ObjectInfo> fullItemList, ChunkEditorWindow chunkEditorWindow)
         {
-            Task<IDictionary<uint, List<uint>>> parityBlocks = Task.Run(() => DataBaseReading.BlockParity());
-            Task<IDictionary<uint, List<uint>>> parityLiquid = Task.Run(() => DataBaseReading.LiquidParity());
-            Task<IDictionary<uint, List<uint>>> parityItem = Task.Run(() => DataBaseReading.ItemParity());
+            Task<IDictionary<byte, object>> parityBlocks = Task.Run(() => DataBaseReading.BlockMenuData());
+            Task<IDictionary<byte, object>> parityItemsA = Task.Run(() => DataBaseReading.ItemAMenuData());
+            //Task<IDictionary<uint, List<uint>>> parityItem = Task.Run(() => DataBaseReading.ItemParity());
 
-            inventoryGridBlock.CreateFilterButtons(new List<string> { "Used", "Unused", "Indestructible", "Item shells", "NULL" },new byte[3] { 0, 1, 2 });
+            inventoryGridBlock.CreateFilterButtons(new List<string> { "Used", "Unused", "Indestructible", "Liquid", "NULL" },new byte[3] { 0, 1, 3 });
             inventoryGridLiquid.CreateFilterButtons(new List<string> { "Scoopable", "Unscoopable" }, new byte[2] { 0, 1 });
             inventoryGridItem.CreateFilterButtons(new List<string> { "Used", "Unused", "NULL" }, new byte[1] { 0 });
 
             var blockParity = parityBlocks.Result;
-            var liquidParity = parityLiquid.Result;
-            var itemParity = parityItem.Result;
+            var itemsAParity = parityItemsA.Result;
+            //var itemParity = parityItem.Result;
             //try to thread
-            Task inv1 = Task.Run(() => inventoryGridBlock.CreateInventory(fullBlockList, false, false, blockParity));
-            Task inv2 = Task.Run(() => inventoryGridLiquid.CreateInventory(fullBlockList, false, true, liquidParity));
-            Task inv3 = Task.Run(() => inventoryGridItem.CreateInventory(fullItemList, true, false, itemParity));
+            Task inv1 = Task.Run(() => inventoryGridBlock.CreateInventory(fullBlockList, blockParity));
+            //Task inv2 = Task.Run(() => inventoryGridLiquid.CreateInventory(fullBlockList, false, true, liquidParity));
+            Task inv3 = Task.Run(() => inventoryGridItem.CreateInventory(fullItemList, itemsAParity));
 
             await inv1;
-            await inv2;
+            //await inv2;
             await inv3;
 
             Application.Current.Dispatcher.Invoke(new Action(() =>

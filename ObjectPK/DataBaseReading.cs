@@ -16,9 +16,9 @@ namespace DQB2IslandEditor.ObjectPK
         private const string BLOCK_PATH = "Info/Blocks.txt";
         private const string BLOCK_EXTRA_PATH = "Info/BlockExtra.txt";
 
-        private const string BLOCK_PARITY_PATH = "Info/BlockParity.txt";
-        private const string LIQUID_PARITY_PATH = "Info/Liquid.txt";
-        private const string ITEM_PARITY_PATH = "Info/ItemParity.txt";
+        private const string BLOCK_MENU_PATH = "Info/MenuData/TabBlock.txt";
+        private const string ITEM_NATURE_MENU_PATH = "Info/MenuData/TabItemN.txt";
+        private const string ITEM_ARTIFICIAL_MENU_PATH = "Info/MenuData/TabItemA.txt";
 
         private const string ITEM_PATH = "Info/Items.txt";
 
@@ -285,14 +285,13 @@ namespace DQB2IslandEditor.ObjectPK
                 //ID      Image Id       LiquidTab?     Tab      Color     Name
 
                 String[] values = line.Split('\t');
-                if (values.Length < 6) continue;
+                if (values.Length < 5) continue;
 
                 var ImageID = short.Parse(values[1]);
 
                 blockList.Add(ushort.Parse(values[0]), new BlockInfo(
-                    ushort.Parse(values[0]), ImageID,
-                    values[2] == "1", byte.Parse(values[3]),
-                    (Colour)byte.Parse(values[4]), values[5].Trim()));
+                    ushort.Parse(values[0]), ImageID, byte.Parse(values[2]),
+                    (Colour)byte.Parse(values[3]), values[4].Trim()));
 
             }
 
@@ -335,67 +334,100 @@ namespace DQB2IslandEditor.ObjectPK
                 var ImageID = short.Parse(values[1]);
 
                 itemList.Add(ushort.Parse(values[0]), new ItemInfo(
-                    ushort.Parse(values[0]), ImageID, values[2], byte.Parse(values[3]),
-                    (Colour)byte.Parse(values[4]), values[5].Trim()));
+                    ushort.Parse(values[0]), ImageID, values[2], values[3] == "1", byte.Parse(values[4]),
+                    (Colour)byte.Parse(values[5]), values[6].Trim()));
             }
             ITEM_INFO_DICTIONARY = itemList;
         }
 
-        public static IDictionary<uint, List<uint>> BlockParity()
+        public static IDictionary<byte, object> BlockMenuData()
         {
-            var blockList = new Dictionary<uint, List<uint>>();
-            String[] blockLines = ReadEmbeddedResource(BLOCK_PARITY_PATH).Split("\n");
-            foreach (String line in blockLines)
-            {
-                if (line.Length < 1 || line[0] == '#') continue;
-                String[] values = line.Split('\t');
-                if (values.Length < 2) continue;
-                uint ID = uint.Parse(values[0]);
-                var lis = new List<uint>();
-                foreach (String id in values[1].Split(','))
-                {
-                    lis.Add(uint.Parse(id));
-                }
-                blockList.Add(ID, lis);
-            }
-            return blockList;
-        }
+            var blockList = new Dictionary<byte, object>();
 
-        public static IDictionary<uint, List<uint>> LiquidParity()
-        {
-            var blockList = new Dictionary<uint, List<uint>>();
-            String[] blockLines = ReadEmbeddedResource(LIQUID_PARITY_PATH).Split("\n");
+            var NoSubmenuList = new List<uint>();
+            var ColourSubmenu = new Dictionary<uint, List<uint>>();
+            var LiquidSubmenu = new Dictionary<uint, List<uint>>();
+            var AirSubmenu = new List<uint>();
+
+            blockList.Add(0, NoSubmenuList);
+            blockList.Add(1, ColourSubmenu);
+            blockList.Add(2, LiquidSubmenu);
+            blockList.Add(3, AirSubmenu);
+
+            String[] blockLines = ReadEmbeddedResource(BLOCK_MENU_PATH).Split("\n");
             foreach (String line in blockLines)
             {
                 if (line.Length < 1 || line[0] == '#') continue;
                 String[] values = line.Split('\t');
                 if (values.Length < 2) continue;
-                uint ID = uint.Parse(values[0]);
-                var lis = new List<uint>();
-                foreach (String id in values[1].Split(','))
+                byte typeOfSubmenu = byte.Parse(values[0]);
+                switch (typeOfSubmenu)
                 {
-                    lis.Add(uint.Parse(id));
+                    case 0:
+                        NoSubmenuList.Add(uint.Parse(values[1]));
+                        break;
+                    case 1:
+                        String[] colours = values[2].Split(',');
+                        var lis = new List<uint>();
+                        foreach (String colour in colours)
+                        {
+                            lis.Add(uint.Parse(colour));
+                        }
+                        ColourSubmenu.Add(uint.Parse(values[1]), lis);
+                        break;
+                    case 2:
+                        String[] liquid = values[2].Split(',');
+                        var lisT = new List<uint>();
+                        foreach (String liqui in liquid)
+                        {
+                            lisT.Add(uint.Parse(liqui));
+                        }
+                        LiquidSubmenu.Add(uint.Parse(values[1]), lisT);
+                        break;
+                    case 3:
+                        foreach (String air in values[1].Split(','))
+                        {
+                            AirSubmenu.Add(uint.Parse(air));
+                        }
+                        break;
                 }
-                blockList.Add(ID, lis);
             }
             return blockList;
         }
-        public static IDictionary<uint, List<uint>> ItemParity()
+        public static IDictionary<byte, object> ItemAMenuData()
         {
-            var blockList = new Dictionary<uint, List<uint>>();
-            String[] blockLines = ReadEmbeddedResource(ITEM_PARITY_PATH).Split("\n");
+            var blockList = new Dictionary<byte, object>();
+
+            var NoSubmenuList = new List<uint>();
+            var ColourSubmenu = new Dictionary<uint, List<uint>>();
+            var LiquidSubmenu = new Dictionary<uint, List<uint>>();
+            var AirSubmenu = new List<uint>();
+
+            blockList.Add(0, NoSubmenuList);
+            blockList.Add(1, ColourSubmenu);
+
+            String[] blockLines = ReadEmbeddedResource(ITEM_ARTIFICIAL_MENU_PATH).Split("\n");
             foreach (String line in blockLines)
             {
                 if (line.Length < 1 || line[0] == '#') continue;
                 String[] values = line.Split('\t');
                 if (values.Length < 2) continue;
-                uint ID = uint.Parse(values[0]);
-                var lis = new List<uint>();
-                foreach (String id in values[1].Split(','))
+                byte typeOfSubmenu = byte.Parse(values[0]);
+                switch (typeOfSubmenu)
                 {
-                    lis.Add(uint.Parse(id));
+                    case 0:
+                        NoSubmenuList.Add(uint.Parse(values[1]));
+                        break;
+                    case 1:
+                        String[] colours = values[2].Split(',');
+                        var lis = new List<uint>();
+                        foreach (String colour in colours)
+                        {
+                            lis.Add(uint.Parse(colour));
+                        }
+                        ColourSubmenu.Add(uint.Parse(values[1]), lis);
+                        break;
                 }
-                blockList.Add(ID, lis);
             }
             return blockList;
         }

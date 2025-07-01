@@ -89,6 +89,8 @@
     <None Remove="Info\ItemParity.txt" />
     <None Remove="Info\Items.txt" />
     <None Remove="Info\Liquid.txt" />
+    <None Remove="Info\MenuData\TabBlock.txt" />
+    <None Remove="Info\MenuData\TabItemA.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -167,10 +169,12 @@
     <Resource Include="Images\UI\SmallGrid.png" />
     <Resource Include="Images\UI\toolsheet.png" />
     <Resource Include="Images\UI\YLayer.png" />
-    <Resource Include="Info\BlockParity.txt" />
-    <Resource Include="Info\ItemParity.txt" />
+    <Resource Include="Info\MenuData\TabBlock.txt" />
+    <Resource Include="Info\MenuData\TabItemA.txt" />
+    <Resource Include="Info\Submenu\BlockParity.txt" />
+    <Resource Include="Info\Submenu\ItemParity.txt" />
     <Resource Include="Info\Items.txt" />
-    <Resource Include="Info\Liquid.txt" />
+    <Resource Include="Info\Submenu\Liquid.txt" />
   </ItemGroup>
 
   <ItemGroup>
