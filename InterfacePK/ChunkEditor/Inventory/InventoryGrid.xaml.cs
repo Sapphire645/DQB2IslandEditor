@@ -133,12 +133,15 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                         foreach (var itemFull in fullBlockList)
                         {
                             var item = itemFull.Value;
-                            var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                            if (item.colour == 0) //For all plain.
                             {
-                                InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
-                                inventoryItemsAll.Add(item.objectId, inventoryItem);
-                            }));
-                            sendingBlocks.Add(send);
+                                var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                                {
+                                    InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
+                                    inventoryItemsAll.Add(item.objectId, inventoryItem);
+                                }));
+                                sendingBlocks.Add(send);
+                            }
                         }
                 }
                 //Wait for the async

@@ -1623,7 +1623,7 @@
 1621	0	1x1x1	0	6	Connecting Couch Corner 
 1622	0	1x1x1	0	7	Connecting Couch Corner 
 1623	0	1x1x1	0	8	Connecting Couch Corner 
-1624	0	1x1x1	0	1	Carpeted  Steps Midsection 
+1624	0	1x1x1	0	1	Carpeted Steps Midsection 
 1625	0	1x1x1	0	2	Carpeted Steps Midsection 
 1626	0	1x1x1	0	3	Carpeted Steps Midsection 
 1627	0	1x1x1	0	4	Carpeted Steps Midsection 

@@ -18,6 +18,7 @@ namespace DQB2IslandEditor.ObjectPK
 
         private const string BLOCK_PARITY_PATH = "Info/BlockParity.txt";
         private const string LIQUID_PARITY_PATH = "Info/Liquid.txt";
+        private const string ITEM_PARITY_PATH = "Info/ItemParity.txt";
 
         private const string ITEM_PATH = "Info/Items.txt";
 
@@ -364,6 +365,25 @@ namespace DQB2IslandEditor.ObjectPK
         {
             var blockList = new Dictionary<uint, List<uint>>();
             String[] blockLines = ReadEmbeddedResource(LIQUID_PARITY_PATH).Split("\n");
+            foreach (String line in blockLines)
+            {
+                if (line.Length < 1 || line[0] == '#') continue;
+                String[] values = line.Split('\t');
+                if (values.Length < 2) continue;
+                uint ID = uint.Parse(values[0]);
+                var lis = new List<uint>();
+                foreach (String id in values[1].Split(','))
+                {
+                    lis.Add(uint.Parse(id));
+                }
+                blockList.Add(ID, lis);
+            }
+            return blockList;
+        }
+        public static IDictionary<uint, List<uint>> ItemParity()
+        {
+            var blockList = new Dictionary<uint, List<uint>>();
+            String[] blockLines = ReadEmbeddedResource(ITEM_PARITY_PATH).Split("\n");
             foreach (String line in blockLines)
             {
                 if (line.Length < 1 || line[0] == '#') continue;

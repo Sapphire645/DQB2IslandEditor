@@ -38,7 +38,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
         {
             Task<IDictionary<uint, List<uint>>> parityBlocks = Task.Run(() => DataBaseReading.BlockParity());
             Task<IDictionary<uint, List<uint>>> parityLiquid = Task.Run(() => DataBaseReading.LiquidParity());
-            
+            Task<IDictionary<uint, List<uint>>> parityItem = Task.Run(() => DataBaseReading.ItemParity());
 
             inventoryGridBlock.CreateFilterButtons(new List<string> { "Used", "Unused", "Indestructible", "Item shells", "NULL" },new byte[3] { 0, 1, 2 });
             inventoryGridLiquid.CreateFilterButtons(new List<string> { "Scoopable", "Unscoopable" }, new byte[2] { 0, 1 });
@@ -46,10 +46,11 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
 
             var blockParity = parityBlocks.Result;
             var liquidParity = parityLiquid.Result;
+            var itemParity = parityItem.Result;
             //try to thread
             Task inv1 = Task.Run(() => inventoryGridBlock.CreateInventory(fullBlockList, false, false, blockParity));
             Task inv2 = Task.Run(() => inventoryGridLiquid.CreateInventory(fullBlockList, false, true, liquidParity));
-            Task inv3 = Task.Run(() => inventoryGridItem.CreateInventory(fullItemList, true, false, null));
+            Task inv3 = Task.Run(() => inventoryGridItem.CreateInventory(fullItemList, true, false, itemParity));
 
             await inv1;
             await inv2;

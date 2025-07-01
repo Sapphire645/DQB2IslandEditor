@@ -86,6 +86,7 @@
     <None Remove="Info\BlockParity.txt" />
     <None Remove="Info\Blocks.txt" />
     <None Remove="info\islands.txt" />
+    <None Remove="Info\ItemParity.txt" />
     <None Remove="Info\Items.txt" />
     <None Remove="Info\Liquid.txt" />
   </ItemGroup>
@@ -167,6 +168,7 @@
     <Resource Include="Images\UI\toolsheet.png" />
     <Resource Include="Images\UI\YLayer.png" />
     <Resource Include="Info\BlockParity.txt" />
+    <Resource Include="Info\ItemParity.txt" />
     <Resource Include="Info\Items.txt" />
     <Resource Include="Info\Liquid.txt" />
   </ItemGroup>
