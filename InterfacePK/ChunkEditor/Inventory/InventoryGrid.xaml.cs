@@ -1,6 +1,7 @@
 ﻿using DQB2IslandEditor.ObjectPK;
 using DQB2IslandEditor.ObjectPK.Container;
 using System;
+using System.Buffers.Text;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -157,14 +158,19 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
                             }
                             break;
                         case 3: //Air submenu. Not coded yet.
-                            if (fullBlockList.TryGetValue(0, out ObjectInfo item))
+                            List<uint> Air = menuInformation[type] as List<uint>;
+                            foreach (var id in Air)
                             {
-                                var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                                if (fullBlockList.TryGetValue(id, out ObjectInfo item0))
                                 {
-                                    InventoryContainer inventoryItem = new InventoryContainer(item, ObjectClicked, ObjectRightClicked);
-                                    inventoryItemsAll.Add(item.objectId, inventoryItem);
-                                }));
-                                sendingBlocks.Add(send);
+                                    var send = Application.Current.Dispatcher.BeginInvoke(new Action(() =>
+                                    {
+                                        InventoryContainer inventoryItem = new InventoryContainer(item0, ObjectClicked, ObjectRightClicked);
+                                        inventoryItem.createSubMenu(false, 2, null);
+                                        inventoryItemsAll.Add(item0.objectId, inventoryItem);
+                                    }));
+                                    sendingBlocks.Add(send);
+                                }
                             }
                             break;
                         case 4: //General

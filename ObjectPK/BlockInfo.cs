@@ -9,8 +9,8 @@ namespace DQB2IslandEditor.ObjectPK
 {
     public class BlockInfo : ObjectInfo
     {
-        public BlockInfo(ushort objectId, short imageId, byte tab, Colour colour, string name)
-            : base(objectId, imageId,tab, colour, name)
+        public BlockInfo(ushort objectId, short imageId, byte tab, Colour colour, byte hardness, string name)
+            : base(objectId, imageId, tab, colour, hardness, name)
         {
         }
     }

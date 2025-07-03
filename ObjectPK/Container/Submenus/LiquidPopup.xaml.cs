@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DQB2IslandEditor.ObjectPK.Container
+namespace DQB2IslandEditor.ObjectPK.Container.Submenus
 {
     /// <summary>
     /// Interaction logic for LiquidPopup.xaml

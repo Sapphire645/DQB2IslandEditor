@@ -13,8 +13,10 @@ namespace DQB2IslandEditor.ObjectPK
     public static class DataBaseReading
     {
         private const string ISLAND_PATH = "Info/Islands.txt";
+        private const string HARDNESS_PATH = "Info/Hardness.txt";
+
         private const string BLOCK_PATH = "Info/Blocks.txt";
-        private const string BLOCK_EXTRA_PATH = "Info/BlockExtra.txt";
+        private const string BLOCK_EXTRA_PATH = "Info/BlockInfo.txt";
 
         private const string BLOCK_MENU_PATH = "Info/MenuData/TabBlock.txt";
         private const string ITEM_NATURE_MENU_PATH = "Info/MenuData/TabItemN.txt";
@@ -86,6 +88,15 @@ namespace DQB2IslandEditor.ObjectPK
         private const int TOOL_SIZE = 80;
 
         private static DataBaseImageHandler[] ImageDatabase = new DataBaseImageHandler[4];
+
+        //Hardness
+        private static Dictionary<byte, string> Hardness = new Dictionary<byte, string>();
+
+        public static string getHardness(byte key)
+        {
+            return Hardness.ContainsKey(key) ? Hardness[key] : key.ToString();
+        }
+        
         public static void InitStaticElements()
         {
             _toolSheet = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TOOLS));
@@ -143,6 +154,7 @@ namespace DQB2IslandEditor.ObjectPK
             ImageDatabase[2] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, _sheetThreeItem, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             //Placeholder.
             ImageDatabase[3] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, _sheetThreeItem, BLOCK_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
+            ReadHardness();
         }
         public static CroppedBitmap toolImage(byte tool, bool active)
         {
@@ -158,6 +170,23 @@ namespace DQB2IslandEditor.ObjectPK
                 String[] values = Line.Split('\t');
                 if (values.Length < 2) continue;
                 _islands[short.Parse(values[0])] = values[1];
+            }
+        }
+
+        private static void ReadHardness()
+        {
+            if (!System.IO.File.Exists(HARDNESS_PATH)) return;
+
+            var blockLines = System.IO.File.ReadAllLines(HARDNESS_PATH);
+            foreach (String line in blockLines)
+            {
+                if (line[0] == '#') continue;
+                //ID      hardness
+
+                String[] values = line.Split('\t');
+                if (values.Length < 2) continue;
+
+                Hardness.Add(byte.Parse(values[0]), values[1]);
             }
         }
         public static string GetIslandName(byte island)
@@ -289,13 +318,13 @@ namespace DQB2IslandEditor.ObjectPK
                 //ID      Image Id       LiquidTab?     Tab      Color     Name
 
                 String[] values = line.Split('\t');
-                if (values.Length < 5) continue;
+                if (values.Length < 6) continue;
 
                 var ImageID = short.Parse(values[1]);
 
                 blockList.Add(ushort.Parse(values[0]), new BlockInfo(
                     ushort.Parse(values[0]), ImageID, byte.Parse(values[2]),
-                    (Colour)byte.Parse(values[3]), values[4].Trim()));
+                    (Colour)byte.Parse(values[3]), byte.Parse(values[4]), values[5].Trim()));
 
             }
 
@@ -310,9 +339,9 @@ namespace DQB2IslandEditor.ObjectPK
                     //ID      hardness      normaldrop    ultdrop      desc
 
                     String[] values = line.Split('\t');
-                    if (values.Length < 5) continue;
+                    if (values.Length < 6) continue;
 
-                    blockList[uint.Parse(values[0])].UpdateExtraData(values[1], values[2], values[3], "This is a block, holy shit.", values[4]);
+                    blockList[uint.Parse(values[0])].UpdateExtraData(values[1], values[2], values[3], values[4], values[5]);
                 }
             }
             BLOCK_INFO_DICTIONARY =  blockList;

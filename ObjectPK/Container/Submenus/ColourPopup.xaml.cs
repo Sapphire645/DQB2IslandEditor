@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 
 
-namespace DQB2IslandEditor.ObjectPK.Container
+namespace DQB2IslandEditor.ObjectPK.Container.Submenus
 {
     /// <summary>
     /// Interaction logic for ColourPopup.xaml

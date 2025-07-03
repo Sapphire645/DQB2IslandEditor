@@ -6,7 +6,7 @@ using System.IO;
 using System.Windows.Media;
 using System.Windows.Input;
 using System.ComponentModel;
-
+using DQB2IslandEditor.ObjectPK.Container.Submenus;
 
 namespace DQB2IslandEditor.ObjectPK.Container
 {
@@ -75,6 +75,9 @@ namespace DQB2IslandEditor.ObjectPK.Container
                     break;
                 case 1: //Liquids
                     _submenu = new LiquidPopup(SelectedItem, _favouriteBlock, subInfos, other);
+                    break;
+                case 2: //Liquids
+                    _submenu = new AirPopup(SelectedItem, _favouriteBlock);
                     break;
                 case 3:
                     //Shells

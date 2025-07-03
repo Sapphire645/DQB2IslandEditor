@@ -1,0 +1,12 @@
+0	Unknown
+1	Cypress Stick
+2	Giant Mallet
+3	Sledgehammer
+4	War Hammer
+5	Ultimallet
+6	Indestructible
+7	Blue Aura Indestructible
+8	Intangible
+9	Pot [UNKOWN THE POT LEVEL]
+10	Pot [UNKOWN THE POT LEVEL]
+11	Unscoopable

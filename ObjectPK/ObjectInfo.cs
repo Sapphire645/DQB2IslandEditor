@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -95,14 +96,15 @@ namespace DQB2IslandEditor.ObjectPK
             Task databaseTask = Task.Run(() => DataBaseReading.GetObjectInventoryImage(this));
         }
 
-        public string name { get; }
+        public string name { get; private set; }
         public Colour colour { get; }
 
         public readonly byte tab; //Filter
         public readonly short imageId; //For future dymanic coding image stuff 
 
         public string normalDrop { get; private set; }
-        public string hardness { get; private set; }
+        public string hardness => DataBaseReading.getHardness(_hardness);
+        private byte _hardness;
         public string ultimalletDrop { get; private set; }
         public string gameDescription { get; private set; }
         public string description { get; private set; }
@@ -115,18 +117,19 @@ namespace DQB2IslandEditor.ObjectPK
         protected WeakReference<ImageSource> _weakReferenceImageInventory = null;
 
         public ObjectInfo(ushort objectId, short imageId, 
-            byte tab, Colour colour, string name)
+            byte tab, Colour colour, byte hardness, string name)
         {
             this.objectId = objectId;
             this.imageId = imageId;
             this.tab = tab;
             this.colour = colour;
             this.name = name;
+            _hardness = hardness;
         }
 
-        public void UpdateExtraData(string hardness, string normalDrop, string ultimalletDrop, string gameDescription, string description)
+        public void UpdateExtraData(string name, string normalDrop, string ultimalletDrop, string gameDescription, string description)
         {
-            this.hardness = hardness;
+            this.name = name;
             this.normalDrop = normalDrop;
             this.ultimalletDrop = ultimalletDrop;
             this.gameDescription = gameDescription;

@@ -38,6 +38,7 @@
     <None Remove="Images\Inventory\CropMenu.png" />
     <None Remove="Images\Inventory\icon0.png" />
     <None Remove="Images\Inventory\icon1.png" />
+    <None Remove="Images\Inventory\icon2.png" />
     <None Remove="Images\Inventory\icon4.png" />
     <None Remove="Images\Inventory\ItemSheetOne.png" />
     <None Remove="Images\Inventory\ItemSheetThree.png" />
@@ -86,8 +87,10 @@
     <None Remove="Images\UI\YLayer.png" />
     <None Remove="info\0002.png" />
     <None Remove="Info\BlockExtra.txt" />
+    <None Remove="Info\BlockInfo.txt" />
     <None Remove="Info\BlockParity.txt" />
     <None Remove="Info\Blocks.txt" />
+    <None Remove="Info\Hardness.txt" />
     <None Remove="info\islands.txt" />
     <None Remove="Info\ItemParity.txt" />
     <None Remove="Info\Items.txt" />
@@ -100,9 +103,16 @@
     <Content Include="Info\BlockExtra.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Info\BlockInfo.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Info\Hardness.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Images\Inventory\CropMenu.png" />
     <Resource Include="Images\Inventory\icon0.png" />
     <Resource Include="Images\Inventory\icon1.png" />
+    <Resource Include="Images\Inventory\icon2.png" />
     <Resource Include="Images\Inventory\icon3.png" />
     <Resource Include="Images\Inventory\icon4.png" />
     <Resource Include="Images\Inventory\ItemSheetOne.png" />

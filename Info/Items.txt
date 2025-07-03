@@ -38,8 +38,8 @@
 36	36	1x1x1	0	0	0	Cedar Seedling
 37	37	1x1x1	0	0	0	Cedar Sapling
 38	38	1x1x1	0	0	0	Cedar Tree
-39	39	1x1x1	0	0	0	Cedar Stump
-40	40	1x5x1	0	0	0	Snowy Cedar
+39	40	1x1x1	0	0	0	Cedar Stump
+40	39	1x5x1	0	0	0	Snowy Cedar
 41	41	1x1x1	0	0	0	Pumice
 42	42	1x1x1	0	0	0	Dead Tree
 43	43	1x2x1	0	0	0	Metal Memorial
@@ -155,7 +155,7 @@
 153	153	1x1x1	0	0	0	Brick Barbecue
 154	154	1x1x1	0	0	0	Stickler’s Sifter
 155	155	1x1x1	0	0	0	Sewing Station
-156	0	1x1x1	0	0	1	Wooden Fortification 
+156	1361	1x1x1	0	0	1	Wooden Fortification 
 157	157	3x2x3	0	0	0	Machinist’s Workbench
 158	158	2x1x2	0	0	0	Welder’s Workbench
 159	159	1x1x1	0	0	0	¿Dead Plant
@@ -166,7 +166,7 @@
 164	164	1x2x3	0	0	0	¿Buggy Buggy
 165	165	1x1x1	0	0	0	Cantlin Shield
 166	166	1x1x1	0	0	0	Holyhock Seedling
-167	0	1x1x1	0	0	2	Wooden Fortification 
+167	1361	1x1x1	0	0	2	Wooden Fortification 
 168	168	1x1x1	0	0	0	¿Infernal Ivy
 169	169	2x2x2	0	0	0	Cannon
 170	170	1x1x1	0	0	0	Piston
@@ -188,22 +188,22 @@
 186	186	1x1x1	0	0	0	Stop Sign
 187	187	1x1x1	0	0	0	Wooden Minecart
 188	188	1x1x1	0	0	0	Spiked Metal Minecart
-189	0	1x1x1	0	0	1	Criss-Cross Leadlight 
-190	0	1x1x1	0	0	2	Criss-Cross Leadlight 
-191	0	1x1x1	0	0	3	Criss-Cross Leadlight 
-192	0	1x1x1	0	0	4	Criss-Cross Leadlight 
-193	0	1x1x1	0	0	5	Criss-Cross Leadlight 
-194	0	1x1x1	0	0	6	Criss-Cross Leadlight 
-195	0	1x1x1	0	0	7	Criss-Cross Leadlight 
-196	0	1x1x1	0	0	8	Criss-Cross Leadlight 
+189	1350	1x1x1	0	0	1	Criss-Cross Leadlight 
+190	1350	1x1x1	0	0	2	Criss-Cross Leadlight 
+191	1350	1x1x1	0	0	3	Criss-Cross Leadlight 
+192	1350	1x1x1	0	0	4	Criss-Cross Leadlight 
+193	1350	1x1x1	0	0	5	Criss-Cross Leadlight 
+194	1350	1x1x1	0	0	6	Criss-Cross Leadlight 
+195	1350	1x1x1	0	0	7	Criss-Cross Leadlight 
+196	1350	1x1x1	0	0	8	Criss-Cross Leadlight 
 197	197	1x1x1	0	0	0	Wrecking Ball
 198	198	1x1x1	0	0	0	Portrait of a Lady
 199	199	1x1x1	0	0	0	Fountain
 200	200	1x1x1	0	0	0	¿Water block
 201	201	1x1x1	0	0	0	¿Ht Water block
-202	0	1x1x1	0	0	3	Wooden Fortification 
-203	0	1x1x1	0	0	4	Wooden Fortification 
-204	0	1x1x1	0	0	5	Wooden Fortification 
+202	1361	1x1x1	0	0	3	Wooden Fortification 
+203	1361	1x1x1	0	0	4	Wooden Fortification 
+204	1361	1x1x1	0	0	5	Wooden Fortification 
 205	205	1x1x1	0	0	0	¿Yellow banner
 206	206	2x1x1	0	0	0	Straw Door
 207	207	1x1x1	0	0	0	Wooden Steps
@@ -211,8 +211,8 @@
 209	209	1x1x1	0	0	0	Stone Stool
 210	0	1x1x1	0	1	0	0
 211	211	1x1x1	0	0	0	Window
-212	0	1x1x1	0	0	7	Wooden Fortification 
-213	0	1x1x1	0	0	8	Wooden Fortification 
+212	1361	1x1x1	0	0	7	Wooden Fortification 
+213	1361	1x1x1	0	0	8	Wooden Fortification 
 214	214	1x1x1	0	0	0	Filter Fountain
 215	215	1x1x1	0	0	0	¿Locked Chest
 216	216	4x1x4	0	0	0	¿Teleportal
@@ -222,7 +222,7 @@
 220	220	1x1x1	0	0	0	Tiled Window
 221	221	1x1x2	0	0	0	Branch
 222	222	1x1x1	0	0	0	Mini Merlon
-223	0	1x1x1	0	0	1	Emblematic Clock 
+223	223	1x1x1	0	0	1	Emblematic Clock 
 224	224	1x1x1	0	0	0	Gentleman Sign
 225	225	1x1x1	0	0	0	Lady Sign
 226	226	1x1x1	0	0	0	Bench
@@ -250,8 +250,8 @@
 248	248	3x1x3	0	0	0	Powie Yowie Rug
 249	249	1x6x1	0	0	0	Cherry Blossom Tree
 250	250	1x1x1	0	0	0	Healix The Hero
-251	0	1x1x1	0	0	0	(Lock)
-252	0	1x1x1	0	0	0	¿Tattered Banner of Erdrick
+251	74	1x1x1	0	0	0	(Lock)
+252	49	1x1x1	0	0	0	¿Tattered Banner of Erdrick
 253	253	1x1x1	0	0	0	Blighted Branch
 254	254	1x1x1	0	0	0	Dragonlord’s Throne
 255	1351	1x1x1	0	0	1	Four-Square Leadlight 
@@ -264,89 +264,89 @@
 262	1351	1x1x1	0	0	8	Four-Square Leadlight 
 263	1352	1x1x1	0	0	1	Plain-Pane Leadlight 
 264	1352	1x1x1	0	0	2	Plain-Pane Leadlight 
-265	0	1x1x1	0	0	0	Anvil
-266	0	1x1x1	0	0	0	¿Water block
+265	255	1x1x1	0	0	0	Anvil
+266	200	1x1x1	0	0	0	¿Water block
 267	1352	1x1x1	0	0	3	Plain-Pane Leadlight 
 268	1352	1x1x1	0	0	4	Plain-Pane Leadlight 
 269	1352	1x1x1	0	0	5	Plain-Pane Leadlight 
 270	1352	1x1x1	0	0	6	Plain-Pane Leadlight 
 271	1352	1x1x1	0	0	7	Plain-Pane Leadlight 
 272	1352	1x1x1	0	0	8	Plain-Pane Leadlight 
-273	0	1x1x1	0	0	1	Classy Couch 
-274	0	1x1x1	0	0	2	Classy Couch 
-275	0	3x2x1	0	0	3	Classy Couch 
-276	0	3x2x1	0	0	4	Classy Couch 
-277	0	3x2x2	0	0	5	Classy Couch 
-278	0	3x2x2	0	0	6	Classy Couch 
-279	0	3x2x2	0	0	7	Classy Couch 
-280	0	3x2x2	0	0	8	Classy Couch 
-281	0	1x1x1	0	0	1	Tartan Bed 
-282	0	1x1x1	0	0	2	Tartan Bed 
-283	0	1x1x1	0	0	3	Tartan Bed 
-284	0	1x1x1	0	0	4	Tartan Bed 
-285	0	1x1x1	0	0	5	Tartan Bed 
-286	0	1x1x1	0	0	6	Tartan Bed 
-287	0	1x1x1	0	0	7	Tartan Bed 
-288	0	1x1x1	0	0	8	Tartan Bed 
-289	0	1x1x1	0	0	1	Cooking Pot 
-290	0	1x1x1	0	0	2	Cooking Pot 
-291	0	1x1x1	0	0	3	Cooking Pot 
-292	0	1x1x1	0	0	4	Cooking Pot 
-293	0	1x1x1	0	0	5	Cooking Pot 
-294	0	1x1x1	0	0	6	Cooking Pot 
-295	0	1x1x1	0	0	7	Cooking Pot 
-296	0	1x1x1	0	0	8	Cooking Pot 
-297	0	1x1x1	0	0	0	¿TextTablet
-298	0	1x1x1	0	0	0	¿TextTablet
-299	0	1x1x1	0	0	0	¿TextTablet
-300	0	1x1x1	0	0	0	¿TextTablet
-301	0	1x1x1	0	0	0	¿TextTablet
-302	0	1x1x1	0	0	0	¿TextTablet
-303	0	1x1x1	0	0	0	¿TextTablet
-304	0	1x1x1	0	0	0	Old Note
-305	0	1x1x1	0	0	0	¿TextTablet
-306	0	1x1x1	0	0	0	¿TextTablet
-307	0	1x1x1	0	0	0	¿TextTablet
-308	0	1x1x1	0	0	0	¿TextTablet
-309	0	1x1x1	0	0	0	¿TextTablet
-310	0	1x1x1	0	0	0	¿TextTablet
-311	0	1x1x1	0	0	0	Gravestone
-312	0	1x1x1	0	0	0	Grandfather Clock
-313	0	1x1x1	0	0	0	¿TextTablet
-314	0	1x1x1	0	0	0	¿TextTablet
-315	0	1x1x1	0	0	0	Old Note
+273	273	1x1x1	0	0	1	Classy Couch 
+274	273	1x1x1	0	0	2	Classy Couch 
+275	273	3x2x1	0	0	3	Classy Couch 
+276	273	3x2x1	0	0	4	Classy Couch 
+277	273	3x2x2	0	0	5	Classy Couch 
+278	273	3x2x2	0	0	6	Classy Couch 
+279	273	3x2x2	0	0	7	Classy Couch 
+280	273	3x2x2	0	0	8	Classy Couch 
+281	281	1x1x1	0	0	1	Tartan Bed 
+282	281	1x1x1	0	0	2	Tartan Bed 
+283	281	1x1x1	0	0	3	Tartan Bed 
+284	281	1x1x1	0	0	4	Tartan Bed 
+285	281	1x1x1	0	0	5	Tartan Bed 
+286	281	1x1x1	0	0	6	Tartan Bed 
+287	281	1x1x1	0	0	7	Tartan Bed 
+288	281	1x1x1	0	0	8	Tartan Bed 
+289	289	1x1x1	0	0	1	Cooking Pot 
+290	289	1x1x1	0	0	2	Cooking Pot 
+291	289	1x1x1	0	0	3	Cooking Pot 
+292	289	1x1x1	0	0	4	Cooking Pot 
+293	289	1x1x1	0	0	5	Cooking Pot 
+294	289	1x1x1	0	0	6	Cooking Pot 
+295	289	1x1x1	0	0	7	Cooking Pot 
+296	289	1x1x1	0	0	8	Cooking Pot 
+297	297	1x1x1	0	0	0	¿TextTablet
+298	297	1x1x1	0	0	0	¿TextTablet
+299	297	1x1x1	0	0	0	¿TextTablet
+300	297	1x1x1	0	0	0	¿TextTablet
+301	297	1x1x1	0	0	0	¿TextTablet
+302	297	1x1x1	0	0	0	¿TextTablet
+303	297	1x1x1	0	0	0	¿TextTablet
+304	163	1x1x1	0	0	0	Old Note
+305	297	1x1x1	0	0	0	¿TextTablet
+306	297	1x1x1	0	0	0	¿TextTablet
+307	297	1x1x1	0	0	0	¿TextTablet
+308	297	1x1x1	0	0	0	¿TextTablet
+309	297	1x1x1	0	0	0	¿TextTablet
+310	297	1x1x1	0	0	0	¿TextTablet
+311	46	1x1x1	0	0	0	Gravestone
+312	104	1x1x1	0	0	0	Grandfather Clock
+313	297	1x1x1	0	0	0	¿TextTablet
+314	297	1x1x1	0	0	0	¿TextTablet
+315	163	1x1x1	0	0	0	Old Note
 316	316	1x1x1	0	0	0	Malroth’s Oaken Club
-317	0	1x1x1	0	0	0	¿TextTablet
-318	0	1x1x1	0	0	0	¿TextTablet
-319	0	1x1x1	0	0	0	¿TextTablet
-320	0	1x1x1	0	0	0	¿TextTablet
-321	0	1x1x1	0	0	0	¿TextTablet
-322	0	1x1x1	0	0	0	¿TextTablet
-323	0	1x1x1	0	0	0	¿TextTablet
-324	0	1x1x1	0	0	0	¿TextTablet
-325	0	1x1x1	0	0	0	¿TextTablet
-326	0	1x1x1	0	0	0	¿TextTablet
-327	0	1x1x1	0	0	2	Emblematic Clock 
+317	297	1x1x1	0	0	0	¿TextTablet
+318	297	1x1x1	0	0	0	¿TextTablet
+319	297	1x1x1	0	0	0	¿TextTablet
+320	297	1x1x1	0	0	0	¿TextTablet
+321	297	1x1x1	0	0	0	¿TextTablet
+322	297	1x1x1	0	0	0	¿TextTablet
+323	297	1x1x1	0	0	0	¿TextTablet
+324	297	1x1x1	0	0	0	¿TextTablet
+325	297	1x1x1	0	0	0	¿TextTablet
+326	297	1x1x1	0	0	0	¿TextTablet
+327	223	1x1x1	0	0	2	Emblematic Clock 
 328	328	1x1x1	0	0	0	Scallywinkle
-329	0	1x1x1	0	0	3	Emblematic Clock 
+329	223	1x1x1	0	0	3	Emblematic Clock 
 330	330	1x1x1	0	0	0	Driftlumber
 331	331	1x1x1	0	0	0	Driftwood
 332	332	1x1x1	0	0	0	Seaside Seaweed
-333	0	1x1x1	0	0	4	Emblematic Clock 
+333	223	1x1x1	0	0	4	Emblematic Clock 
 334	334	1x1x1	0	0	0	Broken Barrel
 335	335	1x1x1	0	0	0	Starfish
 336	336	1x1x1	0	0	0	Seaslime Shell
-337	0	1x1x1	0	0	5	Emblematic Clock 
-338	0	1x1x1	0	0	6	Emblematic Clock 
-339	0	1x1x1	0	0	7	Emblematic Clock 
+337	223	1x1x1	0	0	5	Emblematic Clock 
+338	223	1x1x1	0	0	6	Emblematic Clock 
+339	223	1x1x1	0	0	7	Emblematic Clock 
 340	340	1x1x1	0	0	0	Pebble Pile
 341	341	1x1x1	0	0	0	Toppled Column
 342	342	1x1x1	0	0	0	Dry Ivy
-343	0	1x1x1	0	0	8	Emblematic Clock 
-344	0	1x1x1	0	0	0	Pampas Grass
-345	0	1x1x1	0	0	1	Pot and Shot Set 
-346	0	1x1x1	0	0	2	Pot and Shot Set 
-347	0	1x1x1	0	0	3	Pot and Shot Set 
+343	223	1x1x1	0	0	8	Emblematic Clock 
+344	343	1x1x1	0	0	0	Pampas Grass
+345	345	1x1x1	0	0	1	Pot and Shot Set 
+346	345	1x1x1	0	0	2	Pot and Shot Set 
+347	345	1x1x1	0	0	3	Pot and Shot Set 
 348	348	1x1x1	0	0	0	Broken Masonry
 349	349	1x1x1	0	0	0	Classical Column Midsection
 350	350	1x1x1	0	0	0	Classical Column Pedestal
@@ -360,165 +360,165 @@
 358	552	1x1x1	0	0	6	Glass Floor 
 359	552	1x1x1	0	0	7	Glass Floor 
 360	552	1x1x1	0	0	8	Glass Floor 
-361	0	1x1x1	0	0	4	Pot and Shot Set 
-362	0	1x1x1	0	0	5	Pot and Shot Set 
-363	0	1x1x1	0	0	6	Pot and Shot Set 
+361	345	1x1x1	0	0	4	Pot and Shot Set 
+362	345	1x1x1	0	0	5	Pot and Shot Set 
+363	345	1x1x1	0	0	6	Pot and Shot Set 
 364	364	1x1x1	0	0	0	Water Lily Flower
 365	365	1x1x1	0	0	0	Lily Pad
-366	0	1x1x1	0	0	7	Pot and Shot Set 
-367	0	1x1x1	0	0	8	Pot and Shot Set 
+366	345	1x1x1	0	0	7	Pot and Shot Set 
+367	345	1x1x1	0	0	8	Pot and Shot Set 
 368	368	1x1x1	0	0	0	She-Slimespawn
 369	89	1x1x1	0	0	1	Dressing Table 
 370	89	1x1x1	0	0	2	Dressing Table 
-371	0	1x1x1	0	0	4	Chic Sunbrella 
-372	0	1x1x1	0	0	5	Chic Sunbrella 
-373	0	1x1x1	0	0	6	Chic Sunbrella 
-374	0	1x1x1	0	0	7	Chic Sunbrella 
-375	0	1x1x1	0	0	8	Chic Sunbrella 
-376	0	1x1x1	0	0	0	¿Deitree
-377	0	1x1x1	0	0	0	¿Deitree
-378	0	1x1x1	0	0	0	¿Deitree blue
-379	0	1x1x1	0	0	0	¿Deitree Dead
-380	0	1x1x1	0	0	0	¿Deitree smol
-381	0	1x1x1	0	0	0	¿Deitree
+371	371	1x1x1	0	0	4	Chic Sunbrella 
+372	371	1x1x1	0	0	5	Chic Sunbrella 
+373	371	1x1x1	0	0	6	Chic Sunbrella 
+374	371	1x1x1	0	0	7	Chic Sunbrella 
+375	371	1x1x1	0	0	8	Chic Sunbrella 
+376	376	1x1x1	0	0	0	¿Deitree
+377	376	1x1x1	0	0	0	¿Deitree
+378	378	1x1x1	0	0	0	¿Deitree blue
+379	379	1x1x1	0	0	0	¿Deitree Dead
+380	380	1x1x1	0	0	0	¿Deitree smol
+381	381	1x1x1	0	0	0	¿Deitree
 382	0	1x1x1	0	1	0	0
 383	383	1x1x1	0	0	0	Planting Pole
 384	89	1x1x1	0	0	3	Dressing Table 
 385	89	1x1x1	0	0	4	Dressing Table 
 386	386	1x1x1	0	0	0	Worm Food
-387	0	1x1x1	0	0	0	¿Wheat 0
-388	0	1x1x1	0	0	0	¿Wheat 1
-389	0	1x1x1	0	0	0	¿Wheat 2
+387	390	1x1x1	0	0	0	¿Wheat 0
+388	390	1x1x1	0	0	0	¿Wheat 1
+389	390	1x1x1	0	0	0	¿Wheat 2
 390	390	1x1x1	0	0	0	Wheat
-391	0	1x1x1	0	0	0	¿Butterbeans 0
-392	0	1x1x1	0	0	0	¿Butterbeans 1
-393	0	1x1x1	0	0	0	¿Butterbeans 2
+391	394	1x1x1	0	0	0	¿Butterbeans 0
+392	394	1x1x1	0	0	0	¿Butterbeans 1
+393	394	1x1x1	0	0	0	¿Butterbeans 2
 394	394	1x1x1	0	0	0	Butterbeans
-395	0	1x1x1	0	0	0	¿Cabbage 0
-396	0	1x1x1	0	0	0	¿Cabbage 1
-397	0	1x1x1	0	0	0	¿Cabbage 2
+395	398	1x1x1	0	0	0	¿Cabbage 0
+396	398	1x1x1	0	0	0	¿Cabbage 1
+397	398	1x1x1	0	0	0	¿Cabbage 2
 398	398	1x1x1	0	0	0	Cabbage
 399	399	1x1x1	0	0	0	Red Cabbage
-400	0	1x1x1	0	0	0	¿Buckwheat 0
-401	0	1x1x1	0	0	0	¿Buckwheat 1
-402	0	1x1x1	0	0	0	¿Buckwheat 2
+400	403	1x1x1	0	0	0	¿Buckwheat 0
+401	403	1x1x1	0	0	0	¿Buckwheat 1
+402	403	1x1x1	0	0	0	¿Buckwheat 2
 403	403	1x1x1	0	0	0	Buckwheat
-404	0	1x1x1	0	0	0	¿Sweetcorn 0
-405	0	1x2x1	0	0	0	¿Sweetcorn 1
-406	0	1x1x1	0	0	0	¿Sweetcorn 2
+404	407	1x1x1	0	0	0	¿Sweetcorn 0
+405	407	1x2x1	0	0	0	¿Sweetcorn 1
+406	407	1x1x1	0	0	0	¿Sweetcorn 2
 407	407	1x1x1	0	0	0	Sweetcorn
-408	0	1x1x1	0	0	0	¿Chilli Pepper 0
-409	0	1x1x1	0	0	0	¿Chilli Pepper 1
-410	0	1x1x1	0	0	0	¿Chilli Pepper 2
+408	411	1x1x1	0	0	0	¿Chilli Pepper 0
+409	411	1x1x1	0	0	0	¿Chilli Pepper 1
+410	411	1x1x1	0	0	0	¿Chilli Pepper 2
 411	411	1x2x1	0	0	0	Chilli Pepper
 412	412	1x2x1	0	0	0	Red-Hot Chilli Pepper
-413	0	1x1x1	0	0	0	¿Sugar Cane 0
-414	0	1x1x1	0	0	0	¿Sugar Cane 1
-415	0	1x1x1	0	0	0	¿Sugar Cane 2
+413	416	1x1x1	0	0	0	¿Sugar Cane 0
+414	416	1x1x1	0	0	0	¿Sugar Cane 1
+415	416	1x1x1	0	0	0	¿Sugar Cane 2
 416	416	1x1x1	0	0	0	Sugar Cane
-417	0	1x1x1	0	0	0	¿Strawberry 0
-418	0	1x1x1	0	0	0	¿Strawberry 1
-419	0	1x1x1	0	0	0	¿Strawberry 2
+417	420	1x1x1	0	0	0	¿Strawberry 0
+418	420	1x1x1	0	0	0	¿Strawberry 1
+419	420	1x1x1	0	0	0	¿Strawberry 2
 420	420	1x1x1	0	0	0	Strawberry
 421	421	1x1x1	0	0	0	Moreberry
-422	0	1x1x1	0	0	0	¿Coffee Beans 0
-423	0	1x1x1	0	0	0	¿Coffee Beans 1
-424	0	1x1x1	0	0	0	¿Coffee Beans 2
+422	425	1x1x1	0	0	0	¿Coffee Beans 0
+423	425	1x1x1	0	0	0	¿Coffee Beans 1
+424	425	1x1x1	0	0	0	¿Coffee Beans 2
 425	425	1x1x1	0	0	0	Coffee Beans
-426	0	1x1x1	0	0	0	¿Leek 0
-427	0	1x1x1	0	0	0	¿Leek 1
+426	429	1x1x1	0	0	0	¿Leek 0
+427	429	1x1x1	0	0	0	¿Leek 1
 428	89	1x1x1	0	0	5	Dressing Table 
 429	429	1x1x1	0	0	0	Leek
-430	0	1x1x1	0	0	0	¿Potato 0
-431	0	1x1x1	0	0	0	¿Potato 1
-432	0	1x1x1	0	0	0	¿Potato 2
+430	433	1x1x1	0	0	0	¿Potato 0
+431	433	1x1x1	0	0	0	¿Potato 1
+432	433	1x1x1	0	0	0	¿Potato 2
 433	433	1x1x1	0	0	0	Potato
-434	0	1x1x1	0	0	0	¿Pumpkin 0
-435	0	1x1x1	0	0	0	¿Pumpkin 1
-436	0	1x1x1	0	0	0	¿Pumpkin 2
+434	437	1x1x1	0	0	0	¿Pumpkin 0
+435	437	1x1x1	0	0	0	¿Pumpkin 1
+436	437	1x1x1	0	0	0	¿Pumpkin 2
 437	437	1x1x1	0	0	0	Pumpkin
 438	438	1x1x1	0	0	0	Plumpkin
-439	0	1x1x1	0	0	0	¿Tomato 0
-440	0	1x1x1	0	0	0	¿Tomato 1
-441	0	1x1x1	0	0	0	¿Tomato 2
+439	442	1x1x1	0	0	0	¿Tomato 0
+440	442	1x1x1	0	0	0	¿Tomato 1
+441	442	1x1x1	0	0	0	¿Tomato 2
 442	442	1x2x1	0	0	0	Tomato
 443	443	1x1x1	0	0	0	Killer Tomato
-444	0	1x1x1	0	0	0	¿Aubergette 0
-445	0	1x1x1	0	0	0	¿Aubergette 1
-446	0	1x1x1	0	0	0	¿Aubergette 2
+444	447	1x1x1	0	0	0	¿Aubergette 0
+445	447	1x1x1	0	0	0	¿Aubergette 1
+446	447	1x1x1	0	0	0	¿Aubergette 2
 447	447	1x1x1	0	0	0	Aubergette
 448	89	1x1x1	0	0	6	Dressing Table 
 449	89	1x1x1	0	0	7	Dressing Table 
 450	89	1x1x1	0	0	8	Dressing Table 
 451	100	1x1x1	0	0	1	Towel Rail 
-452	0	1x1x1	0	0	0	¿Melon 0
-453	0	1x1x1	0	0	0	¿Melon 1
-454	0	1x1x1	0	0	0	¿Melon 2
+452	455	1x1x1	0	0	0	¿Melon 0
+453	455	1x1x1	0	0	0	¿Melon 1
+454	455	1x1x1	0	0	0	¿Melon 2
 455	455	1x1x1	0	0	0	Melon
 456	456	1x1x1	0	0	0	Sunny-Hued Melon
-457	0	1x1x1	0	0	0	¿Rice 0
-458	0	1x1x1	0	0	0	¿Rice 1
-459	0	1x1x1	0	0	0	¿Rice 2
+457	460	1x1x1	0	0	0	¿Rice 0
+458	460	1x1x1	0	0	0	¿Rice 1
+459	460	1x1x1	0	0	0	¿Rice 2
 460	460	1x1x1	0	0	0	Rice
-461	0	1x1x1	0	0	0	¿Heartroot 0
-462	0	1x1x1	0	0	0	¿Heartroot 1
-463	0	1x1x1	0	0	0	¿Heartroot 2
+461	464	1x1x1	0	0	0	¿Heartroot 0
+462	464	1x1x1	0	0	0	¿Heartroot 1
+463	464	1x1x1	0	0	0	¿Heartroot 2
 464	464	1x1x1	0	0	0	Heartroot
 465	465	1x1x1	0	0	0	White-Hot Heartroot
-466	0	1x1x1	0	0	0	¿Dead Plant
-467	0	1x1x1	0	0	1	Basic Bunk 
-468	0	1x1x1	0	0	2	Basic Bunk 
-469	0	1x1x1	0	0	3	Basic Bunk 
-470	0	1x1x1	0	0	4	Basic Bunk 
-471	0	1x1x2	0	0	5	Basic Bunk 
-472	0	1x1x2	0	0	6	Basic Bunk 
-473	0	1x1x2	0	0	7	Basic Bunk 
-474	0	1x1x2	0	0	8	Basic Bunk 
-475	0	1x1x1	0	0	1	Gift-Wrapped Gift 
-476	0	1x1x1	0	0	2	Gift-Wrapped Gift 
-477	0	1x1x1	0	0	3	Gift-Wrapped Gift 
-478	0	1x1x1	0	0	4	Gift-Wrapped Gift 
-479	0	1x1x1	0	0	5	Gift-Wrapped Gift 
-480	0	1x1x1	0	0	6	Gift-Wrapped Gift 
-481	0	1x1x1	0	0	7	Gift-Wrapped Gift 
-482	0	1x1x1	0	0	8	Gift-Wrapped Gift 
-483	0	1x1x1	0	0	1	Wooden Pillar 
-484	0	1x1x1	0	0	2	Wooden Pillar 
-485	0	1x1x1	0	0	3	Wooden Pillar 
-486	0	1x1x1	0	0	4	Wooden Pillar 
-487	0	1x1x1	0	0	5	Wooden Pillar 
-488	0	1x1x1	0	0	6	Wooden Pillar 
-489	0	1x1x1	0	0	7	Wooden Pillar 
-490	0	1x1x1	0	0	8	Wooden Pillar 
-491	0	1x1x1	0	0	1	Sliding Glass Door 
-492	0	1x1x1	0	0	2	Sliding Glass Door 
-493	0	1x1x1	0	0	3	Sliding Glass Door 
-494	0	1x1x1	0	0	4	Sliding Glass Door 
+466	159	1x1x1	0	0	0	¿Dead Plant
+467	467	1x1x1	0	0	1	Basic Bunk 
+468	467	1x1x1	0	0	2	Basic Bunk 
+469	467	1x1x1	0	0	3	Basic Bunk 
+470	467	1x1x1	0	0	4	Basic Bunk 
+471	467	1x1x2	0	0	5	Basic Bunk 
+472	467	1x1x2	0	0	6	Basic Bunk 
+473	467	1x1x2	0	0	7	Basic Bunk 
+474	467	1x1x2	0	0	8	Basic Bunk 
+475	475	1x1x1	0	0	1	Gift-Wrapped Gift 
+476	475	1x1x1	0	0	2	Gift-Wrapped Gift 
+477	475	1x1x1	0	0	3	Gift-Wrapped Gift 
+478	475	1x1x1	0	0	4	Gift-Wrapped Gift 
+479	475	1x1x1	0	0	5	Gift-Wrapped Gift 
+480	475	1x1x1	0	0	6	Gift-Wrapped Gift 
+481	475	1x1x1	0	0	7	Gift-Wrapped Gift 
+482	475	1x1x1	0	0	8	Gift-Wrapped Gift 
+483	483	1x1x1	0	0	1	Wooden Pillar 
+484	483	1x1x1	0	0	2	Wooden Pillar 
+485	483	1x1x1	0	0	3	Wooden Pillar 
+486	483	1x1x1	0	0	4	Wooden Pillar 
+487	483	1x1x1	0	0	5	Wooden Pillar 
+488	483	1x1x1	0	0	6	Wooden Pillar 
+489	483	1x1x1	0	0	7	Wooden Pillar 
+490	483	1x1x1	0	0	8	Wooden Pillar 
+491	491	1x1x1	0	0	1	Sliding Glass Door 
+492	491	1x1x1	0	0	2	Sliding Glass Door 
+493	491	1x1x1	0	0	3	Sliding Glass Door 
+494	491	1x1x1	0	0	4	Sliding Glass Door 
 495	495	1x1x1	0	0	0	Banana
-496	0	1x2x1	0	0	5	Sliding Glass Door 
-497	0	1x2x1	0	0	6	Sliding Glass Door 
-498	0	1x2x1	0	0	7	Sliding Glass Door 
-499	0	1x2x1	0	0	8	Sliding Glass Door 
-500	0	1x1x1	0	0	1	Angled Window 
+496	491	1x2x1	0	0	5	Sliding Glass Door 
+497	491	1x2x1	0	0	6	Sliding Glass Door 
+498	491	1x2x1	0	0	7	Sliding Glass Door 
+499	491	1x2x1	0	0	8	Sliding Glass Door 
+500	500	1x1x1	0	0	1	Angled Window 
 501	501	1x1x1	0	0	0	Pet Bowl
 502	502	1x1x1	0	0	0	Pet Bedding
-503	0	1x1x1	0	0	2	Angled Window 
-504	0	1x1x1	0	0	3	Angled Window 
-505	0	1x1x1	0	0	4	Angled Window 
-506	0	1x1x1	0	0	5	Angled Window 
-507	0	1x1x1	0	0	6	Angled Window 
-508	0	1x1x1	0	0	7	Angled Window 
-509	0	1x1x1	0	0	8	Angled Window 
-510	0	1x1x1	0	0	1	Rigid Rope 
-511	0	1x1x1	0	0	2	Rigid Rope 
-512	0	1x1x1	0	0	3	Rigid Rope 
-513	0	1x1x1	0	0	0	¿Deitree Dead
-514	0	1x1x1	0	0	4	Rigid Rope 
-515	0	1x1x1	0	0	5	Rigid Rope 
-516	0	1x1x1	0	0	6	Rigid Rope 
-517	0	1x1x1	0	0	7	Rigid Rope 
-518	0	1x1x1	0	0	8	Rigid Rope 
-519	0	1x1x1	0	0	0	¿Boat
+503	500	1x1x1	0	0	2	Angled Window 
+504	500	1x1x1	0	0	3	Angled Window 
+505	500	1x1x1	0	0	4	Angled Window 
+506	500	1x1x1	0	0	5	Angled Window 
+507	500	1x1x1	0	0	6	Angled Window 
+508	500	1x1x1	0	0	7	Angled Window 
+509	500	1x1x1	0	0	8	Angled Window 
+510	510	1x1x1	0	0	1	Rigid Rope 
+511	510	1x1x1	0	0	2	Rigid Rope 
+512	510	1x1x1	0	0	3	Rigid Rope 
+513	379	1x1x1	0	0	0	¿Deitree Dead
+514	510	1x1x1	0	0	4	Rigid Rope 
+515	510	1x1x1	0	0	5	Rigid Rope 
+516	510	1x1x1	0	0	6	Rigid Rope 
+517	510	1x1x1	0	0	7	Rigid Rope 
+518	510	1x1x1	0	0	8	Rigid Rope 
+519	519	1x1x1	0	0	0	¿Boat
 520	520	1x1x1	0	0	0	¿Planter 0
 521	521	1x1x1	0	0	0	¿Planter 1
 522	522	1x1x1	0	0	0	¿Pencil
@@ -526,8 +526,8 @@
 524	524	1x1x1	0	0	0	¿seed
 525	525	1x1x1	0	0	0	Unidentified Dung
 526	526	2x1x2	0	0	0	¿Worn-Out Workbench
-527	0	1x1x1	0	0	0	Big Plumberry Tree
-528	0	1x1x1	0	0	0	¿Coneconut Tree
+527	31	1x1x1	0	0	0	Big Plumberry Tree
+528	528	1x1x1	0	0	0	¿Weird Dessert Tree
 529	100	1x1x1	0	0	2	Towel Rail 
 530	100	1x1x1	0	0	3	Towel Rail 
 531	100	1x1x1	0	0	4	Towel Rail 
@@ -536,38 +536,38 @@
 534	100	1x1x1	0	0	6	Towel Rail 
 535	100	1x1x1	0	0	7	Towel Rail 
 536	100	1x1x1	0	0	8	Towel Rail 
-537	0	1x1x1	0	0	0	¿Wooden Workbench
-538	0	1x1x1	0	0	0	¿Wooden Workbench
-539	0	2x2x2	0	0	0	¿Wooden Workbench
+537	537	2x2x2	0	0	0	Wooden Workbench
+538	537	2x2x2	0	0	0	Wooden Workbench
+539	539	2x2x2	0	0	0	Wooden Workbench
 540	540	2x1x2	0	0	0	Carpenter’s Workstation
-541	0	1x1x1	0	0	0	¿seed
-542	0	1x1x1	0	0	0	¿seed
-543	0	1x1x1	0	0	0	¿Deitree
+541	523	1x1x1	0	0	0	¿seed
+542	524	1x1x1	0	0	0	¿seed
+543	543	1x1x1	0	0	0	¿Deitree
 544	101	1x1x1	0	0	1	Bookcase 
 545	545	2x4x1	0	0	0	¿Builder’s Bell
-546	0	1x1x1	0	0	0	¿Builder’s Bell
-547	0	1x1x1	0	0	0	¿Builder’s Bell
-548	0	2x4x1	0	0	0	¿Builder’s Bell
-549	0	2x4x1	0	0	0	¿Builder’s Bell
+546	545	1x1x1	0	0	0	¿Builder’s Bell
+547	545	1x1x1	0	0	0	¿Builder’s Bell
+548	545	2x4x1	0	0	0	¿Builder’s Bell
+549	545	2x4x1	0	0	0	¿Builder’s Bell
 550	101	1x1x1	0	0	2	Bookcase 
 551	101	1x1x1	0	0	3	Bookcase 
 552	552	1x1x1	0	0	0	Glass Floor
 553	553	1x1x1	0	0	0	Glass Door
-554	0	1x8x1	0	0	0	Big Cedar Tree
+554	554	1x8x1	0	0	0	Big Cedar Tree
 555	555	1x8x1	0	0	0	Big Palm Tree
-556	0	1x1x1	0	0	0	¿Seedling
-557	0	1x1x1	0	0	0	Brazier
+556	556	1x1x1	0	0	0	¿Seedling
+557	85	1x1x1	0	0	0	Brazier
 558	101	1x1x1	0	0	4	Bookcase 
 559	101	1x1x1	0	0	5	Bookcase 
 560	560	1x1x1	0	0	0	¿Cloth Rack
 561	561	1x2x2	0	0	0	Postbox
-562	0	1x3x1	0	0	0	¿Plant
+562	0	1x3x1	0	0	0	¿Cocoa stage?
 563	101	1x1x1	0	0	6	Bookcase 
 564	101	1x1x1	0	0	7	Bookcase 
 565	101	1x1x1	0	0	8	Bookcase 
 566	102	1x1x1	0	0	1	Chest Of Drawers 
 567	102	1x1x1	0	0	2	Chest Of Drawers 
-568	0	1x1x1	0	0	0	¿Plant
+568	0	1x1x1	0	0	0	¿Plats stage?
 569	0	1x1x1	0	0	0	¿Aubergette
 570	0	1x1x1	0	0	0	¿Wheat
 571	102	1x1x1	0	0	3	Chest Of Drawers 
@@ -586,20 +586,20 @@
 584	584	2x4x1	0	0	0	Rocky Column
 585	585	1x1x1	0	0	0	Mossy Rock
 586	102	1x1x1	0	0	8	Chest Of Drawers 
-587	0	1x1x1	0	0	1	Grandfather Clock 
-588	0	1x1x1	0	0	2	Grandfather Clock 
-589	0	1x1x1	0	0	3	Grandfather Clock 
+587	104	1x1x1	0	0	1	Grandfather Clock 
+588	104	1x1x1	0	0	2	Grandfather Clock 
+589	104	1x1x1	0	0	3	Grandfather Clock 
 590	590	1x1x1	0	0	0	Frying Pan
-591	0	1x1x1	0	0	4	Grandfather Clock 
+591	104	1x1x1	0	0	4	Grandfather Clock 
 592	592	1x1x1	0	0	0	Banana Basket
-593	0	1x1x1	0	0	5	Grandfather Clock 
+593	104	1x1x1	0	0	5	Grandfather Clock 
 594	594	1x1x1	0	0	0	Wooden Fencing
 595	595	1x1x1	0	0	0	Enormous Table
 596	596	1x1x1	0	0	0	Simple Stool
 597	597	1x1x1	0	0	0	Simple Small Table
-598	0	1x1x1	0	0	0	¿Pink
-599	0	1x1x1	0	0	0	¿pink
-600	0	1x1x1	0	0	6	Grandfather Clock 
+598	0	1x1x1	0	0	0	Spoilspore Sprout
+599	0	1x1x1	0	0	0	Spoilspore
+600	104	1x1x1	0	0	6	Grandfather Clock 
 601	601	1x1x1	0	0	0	Simple Table
 602	602	2x1x1	0	0	0	Simple Bench
 603	603	1x1x1	0	0	0	Woody Goody
@@ -608,14 +608,14 @@
 606	606	2x2x2	0	0	0	¿Kilrn
 607	607	1x1x1	0	0	0	Fan Fern
 608	608	1x1x1	0	0	0	Gladiolus
-609	0	1x1x1	0	0	7	Grandfather Clock 
-610	0	1x1x1	0	0	8	Grandfather Clock 
+609	104	1x1x1	0	0	7	Grandfather Clock 
+610	104	1x1x1	0	0	8	Grandfather Clock 
 611	111	1x1x1	0	0	1	Clover Carving 
-612	0	1x1x1	0	0	0	Book of Blue Prints
+612	612	1x1x1	0	0	0	Book of Blue Prints
 613	111	1x1x1	0	0	2	Clover Carving 
 614	111	1x1x1	0	0	3	Clover Carving 
 615	615	1x1x1	0	0	0	Curtain
-616	0	1x1x1	0	0	0	¿Plant
+616	0	1x1x1	0	0	0	¿Corn
 617	0	1x1x1	0	0	0	¿Plant
 618	0	1x1x1	0	0	0	¿Plant
 619	0	1x1x1	0	0	0	¿Plant
@@ -624,10 +624,10 @@
 622	622	1x1x1	0	0	0	Broken Track
 623	623	1x1x1	0	0	0	Spider Web
 624	111	1x1x1	0	0	4	Clover Carving 
-625	0	1x1x1	0	0	0	Vault Bracket
+625	625	1x1x1	0	0	0	Vault Bracket
 626	626	1x1x1	0	0	0	Community Chest
 627	0	1x1x1	0	1	0	0
-628	0	1x1x1	0	0	0	Colossal Chest
+628	179	1x1x1	0	0	0	Colossal Coffer
 629	629	2x2x1	0	0	0	Haystack
 630	630	1x1x1	0	0	0	Stained-Glass Window Arch
 631	631	1x1x1	0	0	0	Stained-Glass Window Midsection
@@ -643,20 +643,20 @@
 641	111	1x1x1	0	0	8	Clover Carving 
 642	642	1x1x1	0	0	0	Sliding Door
 643	643	1x2x1	0	0	0	Watchfire
-644	0	1x1x1	0	0	6	Wooden Fortification 
+644	1361	1x1x1	0	0	6	Wooden Fortification 
 645	111	1x1x1	0	0	5	Clover Carving 
 646	646	1x1x1	0	0	0	Paper Window
-647	0	1x2x1	0	0	0	Curtain
-648	0	1x1x1	0	0	0	¿seed
-649	0	1x1x1	0	0	0	¿seed
-650	0	1x1x1	0	0	0	¿seed
-651	0	1x1x1	0	0	0	¿seed
-652	0	1x1x1	0	0	0	¿Dead Plant
-653	0	1x1x1	0	0	1	Sleek Shelf 
-654	0	1x1x1	0	0	1	Picket Fencing 
-655	0	1x1x1	0	0	2	Sleek Shelf 
-656	0	1x1x1	0	0	3	Sleek Shelf 
-657	0	1x1x1	0	0	4	Sleek Shelf 
+647	615	1x2x1	0	0	0	Curtain
+648	520	1x1x1	0	0	0	¿seed
+649	520	1x1x1	0	0	0	¿seed
+650	521	1x1x1	0	0	0	¿seed
+651	521	1x1x1	0	0	0	¿seed
+652	160	1x1x1	0	0	0	¿Dead Plant
+653	653	1x1x1	0	0	1	Sleek Shelf 
+654	654	1x1x1	0	0	1	Picket Fencing 
+655	653	1x1x1	0	0	2	Sleek Shelf 
+656	653	1x1x1	0	0	3	Sleek Shelf 
+657	653	1x1x1	0	0	4	Sleek Shelf 
 658	0	1x1x1	0	1	0	0
 659	1262	1x1x1	0	0	1	Wooden Toilet 
 660	660	1x1x1	0	0	0	Mud-Brick Wall Rubble
@@ -667,12 +667,12 @@
 665	1262	1x1x1	0	0	6	Wooden Toilet 
 666	1262	1x1x1	0	0	7	Wooden Toilet 
 667	1262	1x1x1	0	0	8	Wooden Toilet 
-668	0	1x1x1	0	0	0	¿Wheatgrass
-669	0	1x1x1	0	0	0	Wheatgrass
-670	0	1x1x1	0	0	5	Sleek Shelf 
-671	0	1x1x1	0	0	6	Sleek Shelf 
-672	0	1x1x1	0	0	7	Sleek Shelf 
-673	0	1x1x1	0	0	8	Sleek Shelf 
+668	668	1x1x1	0	0	0	Wheatgrass Sprout
+669	668	1x1x1	0	0	0	Wheatgrass
+670	653	1x1x1	0	0	5	Sleek Shelf 
+671	653	1x1x1	0	0	6	Sleek Shelf 
+672	653	1x1x1	0	0	7	Sleek Shelf 
+673	653	1x1x1	0	0	8	Sleek Shelf 
 674	674	1x1x1	0	0	0	Täbel Lâmpe
 675	98	1x1x1	0	0	1	Simple Bed 
 676	98	1x1x1	0	0	2	Simple Bed 
@@ -722,14 +722,14 @@
 720	220	1x1x1	0	0	6	Tiled Window 
 721	220	1x1x1	0	0	7	Tiled Window 
 722	220	1x1x1	0	0	8	Tiled Window 
-723	70	2x2x1	0	0	1	Magic Door 
-724	70	2x2x1	0	0	2	Magic Door 
-725	70	2x2x1	0	0	3	Magic Door 
-726	70	2x2x1	0	0	4	Magic Door 
-727	70	2x2x1	0	0	5	Magic Door 
-728	70	2x2x1	0	0	6	Magic Door 
-729	70	2x2x1	0	0	7	Magic Door 
-730	70	2x2x1	0	0	8	Magic Door 
+723	69	2x2x1	0	0	1	Wooden Door 
+724	69	2x2x1	0	0	2	Wooden Door 
+725	69	2x2x1	0	0	3	Wooden Door 
+726	69	2x2x1	0	0	4	Wooden Door 
+727	69	2x2x1	0	0	5	Wooden Door 
+728	69	2x2x1	0	0	6	Wooden Door 
+729	69	2x2x1	0	0	7	Wooden Door 
+730	69	2x2x1	0	0	8	Wooden Door 
 731	91	1x1x1	0	0	1	Big Table 
 732	91	1x1x1	0	0	2	Big Table 
 733	91	1x1x1	0	0	3	Big Table 
@@ -778,35 +778,35 @@
 776	1080	1x1x1	0	0	6	Rose 
 777	1080	1x1x1	0	0	7	Rose 
 778	1080	1x1x1	0	0	8	Rose 
-779	0	1x1x1	0	0	1	Curtain (open) 
-780	0	1x1x1	0	0	2	Curtain (open) 
-781	0	1x1x1	0	0	3	Curtain (open) 
-782	0	1x1x1	0	0	4	Curtain (open) 
-783	0	1x1x1	0	0	5	Curtain (open) 
-784	0	1x1x1	0	0	6	Curtain (open) 
-785	0	1x1x1	0	0	7	Curtain (open) 
-786	0	1x1x1	0	0	8	Curtain (open) 
-787	0	1x2x1	0	0	1	Curtain (tied) 
-788	0	1x2x1	0	0	2	Curtain (tied) 
-789	0	1x2x1	0	0	3	Curtain (tied) 
-790	0	1x2x1	0	0	4	Curtain (tied) 
-791	0	1x2x1	0	0	5	Curtain (tied) 
-792	0	1x2x1	0	0	6	Curtain (tied) 
-793	0	1x2x1	0	0	7	Curtain (tied) 
-794	0	1x2x1	0	0	8	Curtain (tied) 
-795	0	1x1x1	0	0	0	¿Coralily
-796	0	1x1x1	0	0	0	Daffodaisy
-797	0	1x1x1	0	0	0	¿Milkblossom
+779	615	1x1x1	0	0	1	Curtain (open) 
+780	615	1x1x1	0	0	2	Curtain (open) 
+781	615	1x1x1	0	0	3	Curtain (open) 
+782	615	1x1x1	0	0	4	Curtain (open) 
+783	615	1x1x1	0	0	5	Curtain (open) 
+784	615	1x1x1	0	0	6	Curtain (open) 
+785	615	1x1x1	0	0	7	Curtain (open) 
+786	615	1x1x1	0	0	8	Curtain (open) 
+787	615	1x2x1	0	0	1	Curtain (tied) 
+788	615	1x2x1	0	0	2	Curtain (tied) 
+789	615	1x2x1	0	0	3	Curtain (tied) 
+790	615	1x2x1	0	0	4	Curtain (tied) 
+791	615	1x2x1	0	0	5	Curtain (tied) 
+792	615	1x2x1	0	0	6	Curtain (tied) 
+793	615	1x2x1	0	0	7	Curtain (tied) 
+794	615	1x2x1	0	0	8	Curtain (tied) 
+795	4	1x1x1	0	0	0	¿Coralily
+796	5	1x1x1	0	0	0	Daffodaisy
+797	6	1x1x1	0	0	0	¿Milkblossom
 798	0	1x1x1	0	1	0	0
 799	0	1x1x1	0	1	0	0
 800	800	1x1x1	0	0	0	Classical Column Capital
-801	0	1x7x2	0	0	0	¿Deitree
-802	0	1x1x1	0	0	0	¿Deitree
+801	801	1x7x2	0	0	0	¿Deitree
+802	801	1x1x1	0	0	0	¿Deitree
 803	803	1x1x1	0	0	0	¿Deitree Blue
 804	804	1x2x2	0	0	0	Basic Bathtub
 805	0	1x1x1	0	1	0	0
 806	0	1x1x1	0	1	0	0
-807	0	1x1x1	0	0	0	¿Deitree
+807	801	1x1x1	0	0	0	¿Deitree
 808	808	1x1x1	0	0	0	Tinting Tun
 809	809	3x1x3	0	0	0	Grand Piano
 810	0	1x1x1	0	1	0	0
@@ -819,11 +819,11 @@
 817	817	1x1x1	0	0	0	Ultramarose
 818	0	1x1x1	0	1	0	0
 819	0	1x1x1	0	1	0	0
-820	0	1x1x1	0	0	0	Big Rock
-821	0	1x1x1	0	0	0	Big Plumberry Tree
+820	123	1x1x1	0	0	0	Big Rock
+821	31	1x1x1	0	0	0	Big Plumberry Tree
 822	0	1x1x1	0	1	0	0
 823	823	1x1x1	0	0	0	Simple Door
-824	0	2x1x1	0	0	0	Picket Gate
+824	824	2x1x1	0	0	0	Picket Gate
 825	825	1x1x1	0	0	0	Saloon Door
 826	826	1x1x1	0	0	0	Cocktail Shaker
 827	827	2x1x1	0	0	0	Keg Counter
@@ -831,14 +831,14 @@
 829	829	1x1x1	0	0	0	¿Activator
 830	830	1x1x1	0	0	0	Crash Cart
 831	831	1x1x1	0	0	0	Metal Minecart
-832	0	1x1x1	0	0	0	¿Ball
+832	832	1x1x1	0	0	0	¿Ball
 833	0	1x1x1	0	1	0	0
 834	0	1x1x1	0	1	0	0
 835	0	1x1x1	0	0	0	¿Null
 836	836	1x1x1	0	0	0	Basic Bridge
 837	0	1x1x1	0	1	0	0
 838	0	1x1x1	0	1	0	0
-839	0	3x1x3	0	0	0	¿Deitree Planter
+839	839	3x1x3	0	0	0	¿Deitree Planter
 840	1102	1x1x1	0	0	1	Drapery Door 
 841	1102	1x1x1	0	0	2	Drapery Door 
 842	1102	1x1x1	0	0	3	Drapery Door 
@@ -879,14 +879,14 @@
 877	1248	1x1x1	0	0	6	Awning 
 878	1248	1x1x1	0	0	7	Awning 
 879	1248	1x1x1	0	0	8	Awning 
-880	0	1x1x1	0	0	1	Diagonal Fencing 
-881	0	1x1x1	0	0	2	Diagonal Fencing 
-882	0	1x1x1	0	0	3	Diagonal Fencing 
-883	0	1x1x1	0	0	4	Diagonal Fencing 
-884	0	1x1x1	0	0	5	Diagonal Fencing 
-885	0	1x1x1	0	0	6	Diagonal Fencing 
-886	0	1x1x1	0	0	7	Diagonal Fencing 
-887	0	1x1x1	0	0	8	Diagonal Fencing 
+880	58	1x1x1	0	0	1	Diagonal Fencing 
+881	58	1x1x1	0	0	2	Diagonal Fencing 
+882	58	1x1x1	0	0	3	Diagonal Fencing 
+883	58	1x1x1	0	0	4	Diagonal Fencing 
+884	58	1x1x1	0	0	5	Diagonal Fencing 
+885	58	1x1x1	0	0	6	Diagonal Fencing 
+886	58	1x1x1	0	0	7	Diagonal Fencing 
+887	58	1x1x1	0	0	8	Diagonal Fencing 
 888	1062	1x1x1	0	0	1	Sunbrella 
 889	1062	1x1x1	0	0	2	Sunbrella 
 890	1062	1x1x1	0	0	3	Sunbrella 
@@ -928,7 +928,7 @@
 926	90	1x1x1	0	0	7	Small Table 
 927	90	1x1x1	0	0	8	Small Table 
 928	928	1x1x1	0	0	0	Nameplate
-929	0	1x1x1	0	0	0	¿Minimedal
+929	1403	1x1x1	0	0	0	¿Minimedal
 930	930	2x1x1	0	0	0	Wooden Doormat
 931	931	2x1x1	0	0	0	Stone Doormat
 932	932	1x1x1	0	0	0	Coral
@@ -981,12 +981,12 @@
 979	0	1x1x1	0	1	0	0
 980	0	1x1x2	0	0	0	¿Null
 981	0	3x2x1	0	0	0	¿Null
-982	0	2x2x1	0	0	0	Cell Doors
-983	0	1x1x1	0	0	0	Simple Doors
+982	71	2x2x1	0	0	0	Cell Doors
+983	823	1x1x1	0	0	0	Simple Door Double
 984	984	1x2x1	0	0	0	¿bag
-985	0	1x1x1	0	0	0	Big Palm Tree
-986	0	1x1x1	0	0	0	Cotton Plant
-987	0	1x1x1	0	0	0	Fibrous Fern
+985	555	1x1x1	0	0	0	Big Palm Tree
+986	9	1x1x1	0	0	0	Cotton Plant
+987	12	1x1x1	0	0	0	Fibrous Fern
 988	988	1x1x1	0	0	0	¿deitree bulb
 989	0	1x1x1	0	0	0	¿Null
 990	0	1x1x1	0	1	0	0
@@ -1003,8 +1003,8 @@
 1001	1001	1x1x1	0	0	0	Wooden Handrail
 1002	1002	2x1x2	0	0	0	¿Wooden Workbench
 1003	1003	1x1x1	0	0	0	Smashing Sign
-1004	0	1x1x1	0	0	0	Slime Balloons
-1005	0	1x1x1	0	0	0	¿deitree bulb
+1004	146	1x1x1	0	0	0	Slime Balloons
+1005	988	1x1x1	0	0	0	¿deitree bulb
 1006	1006	1x1x1	0	0	0	Sideways-Pointing Puller
 1007	1007	1x1x1	0	0	0	Upwards-Pointing Puller
 1008	1008	1x1x1	0	0	0	Downwards-Pointing Puller
@@ -1034,7 +1034,7 @@
 1032	0	1x1x1	0	1	0	0
 1033	1033	1x1x2	0	0	0	Deckchair
 1034	0	1x1x1	0	1	0	0
-1035	0	1x1x1	0	0	0	Tattered Standard
+1035	1035	1x1x1	0	0	0	Tattered Standard
 1036	0	1x1x1	0	1	0	0
 1037	1037	1x3x1	0	0	0	Banner of Hargon
 1038	0	1x1x1	0	1	0	0
@@ -1047,7 +1047,7 @@
 1045	1045	1x6x1	0	0	0	Silver Birch Tree
 1046	0	1x1x1	0	1	0	0
 1047	0	1x1x1	0	1	0	0
-1048	0	1x1x1	0	0	0	Scarecrow
+1048	621	1x1x1	0	0	0	Scarecrow
 1049	0	1x1x1	0	1	0	0
 1050	0	1x1x1	0	1	0	0
 1051	1435	1x1x1	0	0	1	Simple Supper Set 
@@ -1059,25 +1059,25 @@
 1057	1435	1x1x1	0	0	7	Simple Supper Set 
 1058	1435	1x1x1	0	0	8	Simple Supper Set 
 1059	0	1x1x1	0	0	0	¿Null
-1060	0	1x1x1	0	0	0	¿Pink bulb
+1060	0	1x1x1	0	0	0	Spoilspore
 1061	0	1x1x1	0	1	0	0
 1062	1062	1x3x1	0	0	0	Sunbrella
-1063	1063	1x1x1	0	0	0	Connecting Couch Left
-1064	0	1x1x1	0	0	0	Connecting Couch Midsection
-1065	0	1x1x1	0	0	0	Connecting Couch Right
-1066	0	1x1x1	0	0	0	Connecting Couch Corner
-1067	0	1x1x1	0	0	1	Woöden Lampe 
-1068	0	1x1x1	0	0	2	Woöden Lampe 
-1069	0	1x1x1	0	0	3	Woöden Lampe 
-1070	0	1x1x1	0	0	4	Woöden Lampe 
-1071	0	1x1x1	0	0	5	Woöden Lampe 
-1072	0	1x1x1	0	0	6	Woöden Lampe 
-1073	0	1x1x1	0	0	7	Woöden Lampe 
-1074	0	1x1x1	0	0	8	Woöden Lampe 
-1075	0	2x2x2	0	0	0	¿Stone Workbench
+1063	1064	1x1x1	0	0	0	Connecting Couch Left
+1064	1063	1x1x1	0	0	0	Connecting Couch Midsection
+1065	1065	1x1x1	0	0	0	Connecting Couch Right
+1066	1066	1x1x1	0	0	0	Connecting Couch Corner
+1067	1067	1x1x1	0	0	1	Woöden Lampe 
+1068	1067	1x1x1	0	0	2	Woöden Lampe 
+1069	1067	1x1x1	0	0	3	Woöden Lampe 
+1070	1067	1x1x1	0	0	4	Woöden Lampe 
+1071	1067	1x1x1	0	0	5	Woöden Lampe 
+1072	1067	1x1x1	0	0	6	Woöden Lampe 
+1073	1067	1x1x1	0	0	7	Woöden Lampe 
+1074	1067	1x1x1	0	0	8	Woöden Lampe 
+1075	1068	2x2x2	0	0	0	¿Stone Workbench
 1076	0	1x1x1	0	1	0	0
 1077	0	1x1x1	0	1	0	0
-1078	0	1x1x1	0	0	0	¿deitree bulb
+1078	1078	1x1x1	0	0	0	¿deitree bulb
 1079	1079	1x1x1	0	0	0	Rose Leaves
 1080	1080	1x1x1	0	0	0	Rose
 1081	1081	1x1x1	0	0	0	Blossoming Shrub
@@ -1097,7 +1097,7 @@
 1095	1095	1x1x1	0	0	0	Horizontal Log
 1096	1096	1x1x1	0	0	0	Vertical Log
 1097	1097	1x1x1	0	0	0	Log Wall Corner
-1098	0	1x1x1	0	0	0	Vertical Log
+1098	1096	1x1x1	0	0	0	Vertical Log
 1099	1099	1x1x1	0	0	0	Flat Wooden Roofing
 1100	1100	1x1x1	0	0	0	Column Crown
 1101	1101	2x2x1	0	0	0	Rustic Door
@@ -1386,7 +1386,7 @@
 1384	0	1x1x1	0	1	0	0
 1385	0	1x1x1	0	1	0	0
 1386	1386	1x1x1	0	0	0	Banner of Erdrick
-1387	1387	1x3x1	0	0	0	Tattered Banner of Erdrick
+1387	49	1x3x1	0	0	0	Tattered Banner of Erdrick
 1388	1388	1x1x1	0	0	0	Burnt Branch
 1389	1389	1x1x1	0	0	0	Singed Shrub
 1390	1390	1x2x1	0	0	0	Torched Tree
@@ -1413,10 +1413,10 @@
 1411	0	1x1x1	0	0	0	Wooden Door
 1412	0	1x1x1	0	0	0	Pot
 1413	0	1x1x1	0	1	0	0
-1414	0	1x1x1	0	0	0	Colossal Coffer
-1415	0	1x1x1	0	0	0	Grandfather Clock
+1414	179	1x1x1	0	0	0	Colossal Coffer
+1415	104	1x1x1	0	0	0	Grandfather Clock
 1416	0	1x1x1	0	0	0	Filter Fountain
-1417	0	1x1x1	0	0	0	¿Tattered Banner of Erdrick
+1417	49	1x1x1	0	0	0	¿Tattered Banner of Erdrick
 1418	1418	1x1x1	0	0	0	Salutation Station
 1419	0	1x1x1	0	0	0	Connecting Counter
 1420	0	1x1x1	0	0	1	Long-Stemmed Rose 
@@ -1466,8 +1466,8 @@
 1464	0	1x1x1	0	0	0	¿Yellow Ball
 1465	0	1x1x1	0	0	0	¿Green Ball
 1466	0	1x1x1	0	0	0	¿Red Ball
-1467	1467	1x1x1	0	0	0	Left Carpeted Steps
-1468	0	1x1x1	0	0	0	Right Carpeted Steps
+1467	1467	1x1x1	0	0	0	Left-Bordered Carpeted Steps
+1468	1338	1x1x1	0	0	0	Right-Bordered Carpeted Steps
 1469	1469	1x1x1	0	0	0	Brick Border Corner
 1470	0	1x1x1	0	1	0	0
 1471	0	1x1x1	0	0	0	Stackable Dracky
@@ -1489,20 +1489,20 @@
 1487	211	2x2x1	0	0	8	Window 
 1488	1488	1x3x1	0	0	0	Banner of Builder
 1489	0	1x1x1	0	0	0	Reeds
-1490	0	1x1x1	0	0	0	Old Note
+1490	163	1x1x1	0	0	0	Old Note
 1491	0	1x1x1	0	0	0	¿Lock
 1492	0	2x2x2	0	0	0	Sewing Station
 1493	0	1x1x1	0	0	0	Horizontal Log Cap
 1494	0	1x1x1	0	0	0	Vertical Log Cap
 1495	0	3x1x3	0	0	0	Builder’s Workbench Lv0
-1496	0	2x1x1	0	0	1	Picket Gate 
-1497	0	2x1x1	0	0	2	Picket Gate 
-1498	0	2x1x1	0	0	3	Picket Gate 
-1499	0	2x1x1	0	0	4	Picket Gate 
-1500	0	2x1x1	0	0	5	Picket Gate 
-1501	0	2x1x1	0	0	6	Picket Gate 
-1502	0	2x1x1	0	0	7	Picket Gate 
-1503	0	2x1x1	0	0	8	Picket Gate 
+1496	824	2x1x1	0	0	1	Picket Gate 
+1497	824	2x1x1	0	0	2	Picket Gate 
+1498	824	2x1x1	0	0	3	Picket Gate 
+1499	824	2x1x1	0	0	4	Picket Gate 
+1500	824	2x1x1	0	0	5	Picket Gate 
+1501	824	2x1x1	0	0	6	Picket Gate 
+1502	824	2x1x1	0	0	7	Picket Gate 
+1503	824	2x1x1	0	0	8	Picket Gate 
 1504	0	1x1x1	0	0	0	Diagonal Fencing
 1505	0	1x1x1	0	0	0	Diagonal Fencing
 1506	0	1x1x1	0	0	0	Diagonal Fencing
@@ -1519,14 +1519,14 @@
 1517	594	1x1x1	0	0	6	Wooden Fencing 
 1518	594	1x1x1	0	0	7	Wooden Fencing 
 1519	594	1x1x1	0	0	8	Wooden Fencing 
-1520	0	1x1x1	0	0	1	Picket Fencing 
-1521	0	1x1x1	0	0	2	Picket Fencing 
-1522	0	1x1x1	0	0	3	Picket Fencing 
-1523	0	1x1x1	0	0	4	Picket Fencing 
-1524	0	1x1x1	0	0	5	Picket Fencing 
-1525	0	1x1x1	0	0	6	Picket Fencing 
-1526	0	1x1x1	0	0	7	Picket Fencing 
-1527	0	1x1x1	0	0	8	Picket Fencing 
+1520	654	1x1x1	0	0	1	Picket Fencing 
+1521	654	1x1x1	0	0	2	Picket Fencing 
+1522	654	1x1x1	0	0	3	Picket Fencing 
+1523	654	1x1x1	0	0	4	Picket Fencing 
+1524	654	1x1x1	0	0	5	Picket Fencing 
+1525	654	1x1x1	0	0	6	Picket Fencing 
+1526	654	1x1x1	0	0	7	Picket Fencing 
+1527	654	1x1x1	0	0	8	Picket Fencing 
 1528	1001	1x1x1	0	0	1	Wooden Handrail 
 1529	1001	1x1x1	0	0	2	Wooden Handrail 
 1530	1001	1x1x1	0	0	3	Wooden Handrail 
@@ -1591,62 +1591,62 @@
 1589	1115	1x1x2	0	0	6	Rustic Bed 
 1590	1115	1x1x2	0	0	7	Rustic Bed 
 1591	1115	1x1x1	0	0	8	Rustic Bed 
-1592	0	1x1x1	0	0	1	Connecting Couch Midsection 
-1593	0	1x1x1	0	0	2	Connecting Couch Midsection 
-1594	0	1x1x1	0	0	3	Connecting Couch Midsection 
-1595	0	1x1x1	0	0	4	Connecting Couch Midsection 
-1596	0	1x1x1	0	0	5	Connecting Couch Midsection 
-1597	0	1x1x1	0	0	6	Connecting Couch Midsection 
-1598	0	1x1x1	0	0	7	Connecting Couch Midsection 
-1599	0	1x1x1	0	0	8	Connecting Couch Midsection 
-1600	1063	1x1x1	0	0	1	Connecting Couch Left 
-1601	1063	1x1x1	0	0	2	Connecting Couch Left 
-1602	1063	1x1x1	0	0	3	Connecting Couch Left 
-1603	1063	1x1x1	0	0	4	Connecting Couch Left 
-1604	1063	1x1x1	0	0	5	Connecting Couch Left 
-1605	1063	1x1x1	0	0	6	Connecting Couch Left 
-1606	1063	1x1x1	0	0	7	Connecting Couch Left 
-1607	1063	1x1x1	0	0	8	Connecting Couch Left 
-1608	0	1x1x1	0	0	1	Connecting Couch Right 
-1609	0	1x1x1	0	0	2	Connecting Couch Right 
-1610	0	1x1x1	0	0	3	Connecting Couch Right 
-1611	0	1x1x1	0	0	4	Connecting Couch Right 
-1612	0	1x1x1	0	0	5	Connecting Couch Right 
-1613	0	1x1x1	0	0	6	Connecting Couch Right 
-1614	0	1x1x1	0	0	7	Connecting Couch Right 
-1615	0	1x1x1	0	0	8	Connecting Couch Right 
-1616	0	1x1x1	0	0	1	Connecting Couch Corner 
-1617	0	1x1x1	0	0	2	Connecting Couch Corner 
-1618	0	1x1x1	0	0	3	Connecting Couch Corner 
-1619	0	1x1x1	0	0	4	Connecting Couch Corner 
-1620	0	1x1x1	0	0	5	Connecting Couch Corner 
-1621	0	1x1x1	0	0	6	Connecting Couch Corner 
-1622	0	1x1x1	0	0	7	Connecting Couch Corner 
-1623	0	1x1x1	0	0	8	Connecting Couch Corner 
-1624	0	1x1x1	0	0	1	Carpeted Steps Midsection 
-1625	0	1x1x1	0	0	2	Carpeted Steps Midsection 
-1626	0	1x1x1	0	0	3	Carpeted Steps Midsection 
-1627	0	1x1x1	0	0	4	Carpeted Steps Midsection 
-1628	0	1x1x1	0	0	5	Carpeted Steps Midsection 
-1629	0	1x1x1	0	0	6	Carpeted Steps Midsection 
-1630	0	1x1x1	0	0	7	Carpeted Steps Midsection 
-1631	0	1x1x1	0	0	8	Carpeted Steps Midsection 
-1632	0	1x1x1	0	0	1	Carpeted Steps Right 
-1633	0	1x1x1	0	0	2	Carpeted Steps Right 
-1634	0	1x1x1	0	0	3	Carpeted Steps Right 
-1635	0	1x1x1	0	0	4	Carpeted Steps Right 
-1636	0	1x1x1	0	0	5	Carpeted Steps Right 
-1637	0	1x1x1	0	0	6	Carpeted Steps Right 
-1638	0	1x1x1	0	0	7	Carpeted Steps Right 
-1639	0	1x1x1	0	0	8	Carpeted Steps Right 
-1640	0	1x1x1	0	0	1	Carpeted Steps Left 
-1641	0	1x1x1	0	0	2	Carpeted Steps Left 
-1642	0	1x1x1	0	0	3	Carpeted Steps Left 
-1643	0	1x1x1	0	0	4	Carpeted Steps Left 
-1644	0	1x1x1	0	0	5	Carpeted Steps Left 
-1645	0	1x1x1	0	0	6	Carpeted Steps Left 
-1646	0	1x1x1	0	0	7	Carpeted Steps Left 
-1647	0	1x1x1	0	0	8	Carpeted Steps Left 
+1592	1063	1x1x1	0	0	1	Connecting Couch Midsection 
+1593	1063	1x1x1	0	0	2	Connecting Couch Midsection 
+1594	1063	1x1x1	0	0	3	Connecting Couch Midsection 
+1595	1063	1x1x1	0	0	4	Connecting Couch Midsection 
+1596	1063	1x1x1	0	0	5	Connecting Couch Midsection 
+1597	1063	1x1x1	0	0	6	Connecting Couch Midsection 
+1598	1063	1x1x1	0	0	7	Connecting Couch Midsection 
+1599	1063	1x1x1	0	0	8	Connecting Couch Midsection 
+1600	1064	1x1x1	0	0	1	Connecting Couch Left 
+1601	1064	1x1x1	0	0	2	Connecting Couch Left 
+1602	1064	1x1x1	0	0	3	Connecting Couch Left 
+1603	1064	1x1x1	0	0	4	Connecting Couch Left 
+1604	1064	1x1x1	0	0	5	Connecting Couch Left 
+1605	1064	1x1x1	0	0	6	Connecting Couch Left 
+1606	1064	1x1x1	0	0	7	Connecting Couch Left 
+1607	1064	1x1x1	0	0	8	Connecting Couch Left 
+1608	1065	1x1x1	0	0	1	Connecting Couch Right 
+1609	1065	1x1x1	0	0	2	Connecting Couch Right 
+1610	1065	1x1x1	0	0	3	Connecting Couch Right 
+1611	1065	1x1x1	0	0	4	Connecting Couch Right 
+1612	1065	1x1x1	0	0	5	Connecting Couch Right 
+1613	1065	1x1x1	0	0	6	Connecting Couch Right 
+1614	1065	1x1x1	0	0	7	Connecting Couch Right 
+1615	1065	1x1x1	0	0	8	Connecting Couch Right 
+1616	1066	1x1x1	0	0	1	Connecting Couch Corner 
+1617	1066	1x1x1	0	0	2	Connecting Couch Corner 
+1618	1066	1x1x1	0	0	3	Connecting Couch Corner 
+1619	1066	1x1x1	0	0	4	Connecting Couch Corner 
+1620	1066	1x1x1	0	0	5	Connecting Couch Corner 
+1621	1066	1x1x1	0	0	6	Connecting Couch Corner 
+1622	1066	1x1x1	0	0	7	Connecting Couch Corner 
+1623	1066	1x1x1	0	0	8	Connecting Couch Corner 
+1624	1337	1x1x1	0	0	1	Carpeted Steps Midsection 
+1625	1337	1x1x1	0	0	2	Carpeted Steps Midsection 
+1626	1337	1x1x1	0	0	3	Carpeted Steps Midsection 
+1627	1337	1x1x1	0	0	4	Carpeted Steps Midsection 
+1628	1337	1x1x1	0	0	5	Carpeted Steps Midsection 
+1629	1337	1x1x1	0	0	6	Carpeted Steps Midsection 
+1630	1337	1x1x1	0	0	7	Carpeted Steps Midsection 
+1631	1337	1x1x1	0	0	8	Carpeted Steps Midsection 
+1632	1338	1x1x1	0	0	1	Right-Bordered Carpeted Steps 
+1633	1338	1x1x1	0	0	2	Right-Bordered Carpeted Steps 
+1634	1338	1x1x1	0	0	3	Right-Bordered Carpeted Steps 
+1635	1338	1x1x1	0	0	4	Right-Bordered Carpeted Steps 
+1636	1338	1x1x1	0	0	5	Right-Bordered Carpeted Steps 
+1637	1338	1x1x1	0	0	6	Right-Bordered Carpeted Steps 
+1638	1338	1x1x1	0	0	7	Right-Bordered Carpeted Steps 
+1639	1338	1x1x1	0	0	8	Right-Bordered Carpeted Steps 
+1640	1467	1x1x1	0	0	1	Left-Bordered Carpeted Steps 
+1641	1467	1x1x1	0	0	2	Left-Bordered Carpeted Steps 
+1642	1467	1x1x1	0	0	3	Left-Bordered Carpeted Steps 
+1643	1467	1x1x1	0	0	4	Left-Bordered Carpeted Steps 
+1644	1467	1x1x1	0	0	5	Left-Bordered Carpeted Steps 
+1645	1467	1x1x1	0	0	6	Left-Bordered Carpeted Steps 
+1646	1467	1x1x1	0	0	7	Left-Bordered Carpeted Steps 
+1647	1467	1x1x1	0	0	8	Left-Bordered Carpeted Steps 
 1648	1345	1x1x1	0	0	1	Stage Curtain Left 
 1649	1345	1x1x1	0	0	2	Stage Curtain Left 
 1650	1345	1x1x1	0	0	3	Stage Curtain Left 
@@ -2034,14 +2034,14 @@
 2032	823	1x2x1	0	0	6	Simple Door 
 2033	823	1x2x1	0	0	7	Simple Door 
 2034	823	1x2x1	0	0	8	Simple Door 
-2035	0	1x1x1	0	0	1	Simple Door Double 
-2036	0	1x1x1	0	0	2	Simple Door Double 
-2037	0	1x1x1	0	0	3	Simple Door Double 
-2038	0	1x1x1	0	0	4	Simple Door Double 
-2039	0	1x1x1	0	0	5	Simple Door Double 
-2040	0	1x1x1	0	0	6	Simple Door Double 
-2041	0	1x1x1	0	0	7	Simple Door Double 
-2042	0	1x1x1	0	0	8	Simple Door Double 
+2035	823	1x1x1	0	0	1	Simple Door Double 
+2036	823	1x1x1	0	0	2	Simple Door Double 
+2037	823	1x1x1	0	0	3	Simple Door Double 
+2038	823	1x1x1	0	0	4	Simple Door Double 
+2039	823	1x1x1	0	0	5	Simple Door Double 
+2040	823	1x1x1	0	0	6	Simple Door Double 
+2041	823	1x1x1	0	0	7	Simple Door Double 
+2042	823	1x1x1	0	0	8	Simple Door Double 
 2043	0	1x1x1	0	0	0	Supersized Skull
 2044	0	1x2x1	0	0	0	Terrible Talon
 2045	0	2x2x2	0	0	0	Enormous Eyeball
@@ -2348,11 +2348,11 @@
 2346	0	1x1x1	0	0	0	Cactiball
 2347	0	2x1x1	0	0	0	Framed Flowers
 2348	0	1x1x1	0	0	0	Treasure Pile
-2349	0	1x1x1	0	0	0	Emblematic Clock
+2349	223	1x1x1	0	0	0	Emblematic Clock
 2350	0	1x1x1	0	0	0	Supersized Steak Set
 2351	0	1x1x1	0	0	0	Fruity Parfait
 2352	0	1x1x1	0	0	0	Soup and Salad Set
-2353	0	1x1x1	0	0	0	Pot and Shot Set
+2353	345	1x1x1	0	0	0	Pot and Shot Set
 2354	0	3x1x3	0	0	0	Rockbomb Bed
 2355	0	1x1x1	0	0	0	Stuffed Spiked Hare
 2356	0	2x2x2	0	0	0	Fat Rat Signpost
@@ -2489,8 +2489,8 @@
 2487	0	1x1x1	0	0	0	¿
 2488	0	1x1x1	0	0	0	¿
 2489	0	1x1x1	0	0	0	¿
-2490	0	2x2x1	0	0	0	Builder’s Bell
-2491	0	1x1x1	0	0	0	Brazier
+2490	545	2x2x1	0	0	0	Builder’s Bell
+2491	85	1x1x1	0	0	0	Brazier
 2492	0	1x1x1	0	0	0	Candlestick
 2493	0	1x1x1	0	0	0	Ice Lolly
 2494	0	1x1x1	0	0	0	Plumberry Tree
@@ -2925,7 +2925,7 @@
 2923	0	1x1x1	0	0	0	Plumberry Tree
 2924	0	1x1x1	0	0	0	Kaffe Tabel
 2925	0	1x1x1	0	0	0	Trendy Triptych
-2926	0	1x1x1	0	0	0	Wooden Lampe
+2926	1067	1x1x1	0	0	0	Woöden Lampe
 2927	0	1x1x1	0	0	0	Chopping Board
 2928	0	1x1x1	0	0	0	Plate Of Pancakes
 2929	0	1x1x1	0	0	0	Coloured Cup
@@ -2934,7 +2934,7 @@
 2932	0	1x1x1	0	0	0	¿Dead Plant
 2933	0	1x1x1	0	0	0	¿Dead Plant on pole
 2934	0	1x1x1	0	0	0	Chaer
-2935	0	1x1x1	0	0	0	Gift-Wrapped Gift
+2935	475	1x1x1	0	0	0	Gift-Wrapped Gift
 2936	0	3x2x2	0	0	0	Sofa
 2937	0	2x1x3	0	0	0	Double Bed
 2938	0	2x2x1	0	0	1	Fansi Dor 
@@ -2993,7 +2993,7 @@
 2991	0	2x1x1	0	0	6	Wooden Blind Body 
 2992	0	2x1x1	0	0	7	Wooden Blind Body 
 2993	0	2x1x1	0	0	8	Wooden Blind Body 
-2994	0	1x1x1	0	0	0	Classy Couch
+2994	273	1x1x1	0	0	0	Classy Couch
 2995	0	3x1x2	0	0	0	Bubbly Bath
 2996	0	2x2x2	0	0	1	Sofa 
 2997	0	2x2x2	0	0	2	Sofa 
@@ -3004,14 +3004,14 @@
 3002	0	3x2x2	0	0	7	Sofa 
 3003	0	3x2x2	0	0	8	Sofa 
 3004	0	1x1x1	0	0	0	Long-Stemmed Rose
-3005	0	1x1x1	0	0	0	Basic Bunk
+3005	467	1x1x1	0	0	0	Basic Bunk
 3006	0	1x1x1	0	0	0	Alarm Clock
 3007	0	1x1x1	0	0	0	Tower of Towels
 3008	0	1x1x1	0	0	0	Omletti Spaghetti
 3009	0	1x1x1	0	0	0	Iron Pillar
-3010	0	1x1x1	0	0	0	Angled Window
-3011	0	1x1x1	0	0	0	Tartan Bed
-3012	0	1x1x1	0	0	0	Cooking Pot
+3010	500	1x1x1	0	0	0	Angled Window
+3011	281	1x1x1	0	0	0	Tartan Bed
+3012	289	1x1x1	0	0	0	Cooking Pot
 3013	0	1x1x1	0	0	1	Alarm Clock 
 3014	0	1x1x1	0	0	2	Alarm Clock 
 3015	0	1x1x1	0	0	3	Alarm Clock 
@@ -3022,11 +3022,11 @@
 3020	0	1x1x1	0	0	8	Alarm Clock 
 3021	3021	3x1x2	0	0	0	Kitchen Counter
 3022	0	1x1x1	0	0	0	Anthurium
-3023	0	1x2x1	0	0	0	Sliding Glass Door
-3024	0	1x1x1	0	0	0	Rigid Rope
+3023	491	1x2x1	0	0	0	Sliding Glass Door
+3024	510	1x1x1	0	0	0	Rigid Rope
 3025	0	2x3x1	0	0	0	Modern Art
 3026	0	1x1x1	0	0	0	Gramophone
-3027	0	1x1x1	0	0	0	Sleek Shelf
+3027	653	1x1x1	0	0	0	Sleek Shelf
 3028	0	1x1x1	0	0	0	Display Hook
 3029	0	1x1x1	0	0	0	Display Frame
 3030	0	1x1x1	0	0	0	Stylish Staircase
@@ -3055,7 +3055,7 @@
 3053	0	1x1x1	0	0	6	Stylish Staircase 
 3054	0	1x1x1	0	0	7	Stylish Staircase 
 3055	0	1x1x1	0	0	8	Stylish Staircase 
-3056	0	1x1x1	0	0	0	Wooden Pillar
+3056	483	1x1x1	0	0	0	Wooden Pillar
 3057	0	1x1x1	0	0	0	Trendy Triptych
 3058	0	1x1x1	0	0	0	Trendy Triptych
 3059	0	1x1x1	0	0	0	Trendy Triptych
@@ -3077,9 +3077,9 @@
 3075	0	1x1x1	0	0	0	Modern Art
 3076	0	1x1x1	0	0	0	Modern Art
 3077	0	3x3x1	0	0	0	Cast Iron Door
-3078	0	1x3x1	0	0	0	Chic Sunbrella
+3078	371	1x3x1	0	0	0	Chic Sunbrella
 3079	0	1x1x2	0	0	0	Distinguished Deckchair
 3080	0	1x1x1	0	0	0	Classy Canopy
-3081	0	1x3x1	0	0	1	Chic Sunbrella 
-3082	0	1x3x1	0	0	2	Chic Sunbrella 
-3083	0	1x3x1	0	0	3	Chic Sunbrella
+3081	371	1x3x1	0	0	1	Chic Sunbrella 
+3082	371	1x3x1	0	0	2	Chic Sunbrella 
+3083	371	1x3x1	0	0	3	Chic Sunbrella

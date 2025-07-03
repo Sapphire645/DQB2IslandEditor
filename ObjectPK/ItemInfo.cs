@@ -21,7 +21,7 @@ namespace DQB2IslandEditor.ObjectPK
 
         //Idk how you write dimension in english whateveeerrrrrrrrr
         public ItemInfo(ushort objectId, short imageId,string dimension,bool isArtificial, byte tab, Colour colour, string name)
-            : base(objectId, imageId, tab, colour, name)
+            : base(objectId, imageId, tab, colour,0 , name)
         {
             this.isArtificial = isArtificial;
             var parts = dimension.Split('x');
