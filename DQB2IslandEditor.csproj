@@ -97,6 +97,7 @@
     <None Remove="Info\Liquid.txt" />
     <None Remove="Info\MenuData\TabBlock.txt" />
     <None Remove="Info\MenuData\TabItemA.txt" />
+    <None Remove="Info\MenuData\TabItemN.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -188,6 +189,7 @@
     <Resource Include="Images\UI\YLayer.png" />
     <Resource Include="Info\MenuData\TabBlock.txt" />
     <Resource Include="Info\MenuData\TabItemA.txt" />
+    <Resource Include="Info\MenuData\TabItemN.txt" />
     <Resource Include="Info\Submenu\BlockParity.txt" />
     <Resource Include="Info\Submenu\ItemParity.txt" />
     <Resource Include="Info\Items.txt" />

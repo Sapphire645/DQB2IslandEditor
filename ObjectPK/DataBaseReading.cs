@@ -438,7 +438,16 @@ namespace DQB2IslandEditor.ObjectPK
             }
             return blockList;
         }
+
         public static IDictionary<byte, object> ItemAMenuData()
+        {
+            return ItemMenuData(ITEM_ARTIFICIAL_MENU_PATH);
+        }
+        public static IDictionary<byte, object> ItemNMenuData()
+        {
+            return ItemMenuData(ITEM_NATURE_MENU_PATH);
+        }
+        public static IDictionary<byte, object> ItemMenuData(string path)
         {
             var blockList = new Dictionary<byte, object>();
 
@@ -452,7 +461,7 @@ namespace DQB2IslandEditor.ObjectPK
             blockList.Add(4, GeneralSubmenu);
             blockList.Add(5, CropSubmenu);
 
-            String[] blockLines = ReadEmbeddedResource(ITEM_ARTIFICIAL_MENU_PATH).Split("\n");
+            String[] blockLines = ReadEmbeddedResource(path).Split("\n");
             foreach (String line in blockLines)
             {
                 if (line.Length < 1 || line[0] == '#') continue;
