@@ -41,8 +41,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory
             Task<IDictionary<byte, object>> parityItemsN = Task.Run(() => DataBaseReading.ItemNMenuData());
 
             inventoryGridBlock.CreateFilterButtons(new List<string> { "Used", "Unused", "Indestructible", "Liquid", "NULL" },new byte[3] { 0, 1, 3 });
-            inventoryGridLiquid.CreateFilterButtons(new List<string> { "Used", "Unused", "NULL" }, new byte[1] { 0 });
-            inventoryGridItem.CreateFilterButtons(new List<string> { "Used", "Unused", "NULL" }, new byte[1] { 0 });
+            inventoryGridLiquid.CreateFilterButtons(new List<string> { "Obtainable", "Unobtainable", "Unused", "NULL" }, new byte[1] { 0 });
+            inventoryGridItem.CreateFilterButtons(new List<string> { "Obtainable", "Unobtainable", "Unused", "NULL" }, new byte[1] { 0 });
 
             var blockParity = parityBlocks.Result;
             var itemsAParity = parityItemsA.Result;

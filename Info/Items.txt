@@ -61,7 +61,7 @@
 59	59	1x2x1	0	0	0	Barricade
 60	60	1x1x1	0	0	0	Ladder
 61	61	1x1x1	0	0	0	Stone Steps
-62	62	1x1x1	0	0	0	Armourer’s Sign
+62	62	1x1x1	0	0	0	Armourer€™s Sign
 63	63	1x1x1	0	0	0	Shop Sign
 64	64	1x1x1	0	0	0	Inn Sign
 65	1348	1x1x1	0	0	1	Wall-Mounted Banner 
@@ -126,7 +126,7 @@
 124	124	1x1x1	0	0	0	Bones
 125	125	3x1x3	0	0	0	Dragon Bones
 126	126	1x1x1	0	0	0	Chains
-127	127	1x1x1	0	0	0	Dragonlord’s Standard
+127	127	1x1x1	0	0	0	Dragonlord€™s Standard
 128	128	2x1x2	0	0	0	Vile Tile
 129	129	1x1x1	0	0	0	Seal of Erdrick
 130	130	1x1x1	0	0	0	Draconic Column
@@ -151,13 +151,13 @@
 149	149	3x2x3	0	0	0	(Multipurpose Workbench)
 150	150	1x1x1	0	0	0	Colour Wheel
 151	151	3x2x3	0	0	0	Forge
-152	152	1x1x1	0	0	0	Hela’s Hammer Sign
+152	152	1x1x1	0	0	0	Hela€™s Hammer Sign
 153	153	1x1x1	0	0	0	Brick Barbecue
-154	154	1x1x1	0	0	0	Stickler’s Sifter
+154	154	1x1x1	0	0	0	Stickler€™s Sifter
 155	155	1x1x1	0	0	0	Sewing Station
 156	1361	1x1x1	0	0	1	Wooden Fortification 
-157	157	3x2x3	0	0	0	Machinist’s Workbench
-158	158	2x1x2	0	0	0	Welder’s Workbench
+157	157	3x2x3	0	0	0	Machinist€™s Workbench
+158	158	2x1x2	0	0	0	Welder€™s Workbench
 159	159	1x1x1	0	0	0	¿Dead Plant
 160	160	1x1x1	0	0	0	¿Dead Plant on Pole
 161	161	1x2x1	0	0	0	Furnace
@@ -245,7 +245,7 @@
 243	243	1x1x1	0	0	0	Fish Dish
 244	244	1x1x1	0	0	0	Bread Basket
 245	245	1x1x1	0	0	0	Meat Feast
-246	246	1x1x1	0	0	0	Treasures ‘n’ Trapdoors
+246	246	1x1x1	0	0	0	Treasures €˜n€™ Trapdoors
 247	247	1x1x1	0	0	0	Stuffed Hammerhood
 248	248	3x1x3	0	0	0	Powie Yowie Rug
 249	249	1x6x1	0	0	0	Cherry Blossom Tree
@@ -253,7 +253,7 @@
 251	74	1x1x1	0	0	0	(Lock)
 252	49	1x1x1	0	0	0	¿Tattered Banner of Erdrick
 253	253	1x1x1	0	0	0	Blighted Branch
-254	254	1x1x1	0	0	0	Dragonlord’s Throne
+254	254	1x1x1	0	0	0	Dragonlord€™s Throne
 255	1351	1x1x1	0	0	1	Four-Square Leadlight 
 256	1351	1x1x1	0	0	2	Four-Square Leadlight 
 257	1351	1x1x1	0	0	3	Four-Square Leadlight 
@@ -315,7 +315,7 @@
 313	297	1x1x1	0	0	0	¿TextTablet
 314	297	1x1x1	0	0	0	¿TextTablet
 315	163	1x1x1	0	0	0	Old Note
-316	316	1x1x1	0	0	0	Malroth’s Oaken Club
+316	316	1x1x1	0	0	0	Malroth€™s Oaken Club
 317	297	1x1x1	0	0	0	¿TextTablet
 318	297	1x1x1	0	0	0	¿TextTablet
 319	297	1x1x1	0	0	0	¿TextTablet
@@ -539,16 +539,16 @@
 537	537	2x2x2	0	0	0	Wooden Workbench
 538	537	2x2x2	0	0	0	Wooden Workbench
 539	539	2x2x2	0	0	0	Wooden Workbench
-540	540	2x1x2	0	0	0	Carpenter’s Workstation
+540	540	2x1x2	0	0	0	Carpenter€™s Workstation
 541	523	1x1x1	0	0	0	¿seed
 542	524	1x1x1	0	0	0	¿seed
 543	543	1x1x1	0	0	0	¿Deitree
 544	101	1x1x1	0	0	1	Bookcase 
-545	545	2x4x1	0	0	0	¿Builder’s Bell
-546	545	1x1x1	0	0	0	¿Builder’s Bell
-547	545	1x1x1	0	0	0	¿Builder’s Bell
-548	545	2x4x1	0	0	0	¿Builder’s Bell
-549	545	2x4x1	0	0	0	¿Builder’s Bell
+545	545	2x4x1	0	0	0	Furrowfield & Khrumbul-dun Builder's Bell
+546	545	1x1x1	0	0	0	Unknown Builder's Bell
+547	545	1x1x1	0	0	0	Unknown Builder's Bell
+548	545	2x4x1	0	0	0	Moonbrooke Builder's Bell
+549	545	2x4x1	0	0	0	Malhalla Builder's Bell
 550	101	1x1x1	0	0	2	Bookcase 
 551	101	1x1x1	0	0	3	Bookcase 
 552	552	1x1x1	0	0	0	Glass Floor
@@ -581,7 +581,7 @@
 579	579	1x1x1	0	0	0	Withered Stump
 580	102	1x1x1	0	0	6	Chest Of Drawers 
 581	102	1x1x1	0	0	7	Chest Of Drawers 
-582	582	2x1x1	0	0	0	Residents’ Register
+582	582	2x1x1	0	0	0	Residents€™ Register
 583	583	1x1x1	0	0	0	Withered Tree
 584	584	2x4x1	0	0	0	Rocky Column
 585	585	1x1x1	0	0	0	Mossy Rock
@@ -604,7 +604,7 @@
 602	602	2x1x1	0	0	0	Simple Bench
 603	603	1x1x1	0	0	0	Woody Goody
 604	604	1x1x1	0	0	0	Stain Extractor
-605	605	1x1x1	0	0	0	Jack-o’-Lantern
+605	605	1x1x1	0	0	0	Jack-o€™-Lantern
 606	606	2x2x2	0	0	0	¿Kilrn
 607	607	1x1x1	0	0	0	Fan Fern
 608	608	1x1x1	0	0	0	Gladiolus
@@ -653,7 +653,7 @@
 651	521	1x1x1	0	0	0	¿seed
 652	160	1x1x1	0	0	0	¿Dead Plant
 653	653	1x1x1	0	0	1	Sleek Shelf 
-654	654	1x1x1	0	0	1	Picket Fencing 
+654	654	1x1x1	0	0	0	Picket Fencing 
 655	653	1x1x1	0	0	2	Sleek Shelf 
 656	653	1x1x1	0	0	3	Sleek Shelf 
 657	653	1x1x1	0	0	4	Sleek Shelf 
@@ -673,7 +673,7 @@
 671	653	1x1x1	0	0	6	Sleek Shelf 
 672	653	1x1x1	0	0	7	Sleek Shelf 
 673	653	1x1x1	0	0	8	Sleek Shelf 
-674	674	1x1x1	0	0	0	Täbel Lâmpe
+674	674	1x1x1	0	0	0	TÃ¤bel LÃ¢mpe
 675	98	1x1x1	0	0	1	Simple Bed 
 676	98	1x1x1	0	0	2	Simple Bed 
 677	98	1x1x1	0	0	3	Simple Bed 
@@ -1066,14 +1066,14 @@
 1064	1063	1x1x1	0	0	0	Connecting Couch Midsection
 1065	1065	1x1x1	0	0	0	Connecting Couch Right
 1066	1066	1x1x1	0	0	0	Connecting Couch Corner
-1067	1067	1x1x1	0	0	1	Woöden Lampe 
-1068	1067	1x1x1	0	0	2	Woöden Lampe 
-1069	1067	1x1x1	0	0	3	Woöden Lampe 
-1070	1067	1x1x1	0	0	4	Woöden Lampe 
-1071	1067	1x1x1	0	0	5	Woöden Lampe 
-1072	1067	1x1x1	0	0	6	Woöden Lampe 
-1073	1067	1x1x1	0	0	7	Woöden Lampe 
-1074	1067	1x1x1	0	0	8	Woöden Lampe 
+1067	1067	1x1x1	0	0	1	WoÃ¶den Lampe 
+1068	1067	1x1x1	0	0	2	WoÃ¶den Lampe 
+1069	1067	1x1x1	0	0	3	WoÃ¶den Lampe 
+1070	1067	1x1x1	0	0	4	WoÃ¶den Lampe 
+1071	1067	1x1x1	0	0	5	WoÃ¶den Lampe 
+1072	1067	1x1x1	0	0	6	WoÃ¶den Lampe 
+1073	1067	1x1x1	0	0	7	WoÃ¶den Lampe 
+1074	1067	1x1x1	0	0	8	WoÃ¶den Lampe 
 1075	1068	2x2x2	0	0	0	¿Stone Workbench
 1076	0	1x1x1	0	1	0	0
 1077	0	1x1x1	0	1	0	0
@@ -1117,14 +1117,14 @@
 1115	1115	1x1x2	0	0	0	Rustic Bed
 1116	1116	1x1x1	0	0	0	Coffer
 1117	1117	1x1x1	0	0	0	Planter
-1118	0	1x1x1	0	0	0	Planter
+1118	1117	1x1x1	0	0	0	Planter
 1119	1119	1x1x1	0	0	0	Potage Pot
 1120	1120	1x1x1	0	0	0	Medicinal Mortar
 1121	1121	1x3x1	0	0	0	Swing
 1122	1122	1x1x1	0	0	0	Firewood
 1123	1123	1x1x1	0	0	0	Farming Tools
 1124	1124	1x1x1	0	0	0	Sack of Wheat
-1125	0	1x1x1	0	0	0	Haystack
+1125	629	1x1x1	0	0	0	Haystack
 1126	1126	1x1x1	0	0	0	Stackable Drackyma
 1127	0	1x1x1	0	1	0	0
 1128	0	1x1x1	0	1	0	0
@@ -1143,13 +1143,13 @@
 1141	1141	1x2x1	0	0	0	Swabbing Tools
 1142	1142	1x1x1	0	0	0	Porthole
 1143	0	1x1x1	0	1	0	0
-1144	1144	1x1x1	0	0	0	¿Builder’s Workbench
-1145	0	3x1x3	0	0	0	¿Builder’s Workbench
-1146	0	1x1x1	0	0	0	¿Builder’s Workbench
-1147	0	1x1x1	0	0	0	¿Wooden Workbench
-1148	0	1x1x1	0	0	0	¿Stone Workbench
+1144	1144	1x1x1	0	0	0	¿Builder€™s Workbench
+1145	1144	3x1x3	0	0	0	¿Builder€™s Workbench
+1146	1144	1x1x1	0	0	0	¿Builder€™s Workbench
+1147	1002	1x1x1	0	0	0	¿Wooden Workbench
+1148	1068	1x1x1	0	0	0	¿Stone Workbench
 1149	0	1x1x1	0	1	0	0
-1150	1150	2x2x2	0	0	0	Wizard’s Workbench
+1150	1150	2x2x2	0	0	0	Wizard€™s Workbench
 1151	0	1x1x1	0	0	0	¿Null
 1152	0	1x1x1	0	0	0	¿Null
 1153	0	1x1x1	0	0	0	Terraforma Tiles
@@ -1167,22 +1167,22 @@
 1165	0	1x1x1	0	0	0	¿Null
 1166	0	1x1x1	0	1	0	0
 1167	0	1x1x1	0	1	0	0
-1168	0	1x1x1	0	0	0	¿Boat
+1168	519	1x1x1	0	0	0	¿Boat
 1169	1169	1x1x1	0	0	0	¿Naviglobe
 1170	0	1x1x1	0	1	0	0
 1171	0	1x1x1	0	1	0	0
 1172	0	1x1x1	0	1	0	0
 1173	0	1x1x1	0	1	0	0
 1174	1174	1x1x1	0	0	0	Clam Shell
-1175	0	1x1x1	0	0	0	Plumberry Tree
-1176	0	1x1x1	0	0	0	Plumberry Tree
-1177	0	1x1x1	0	0	0	Plumberry Tree
-1178	0	1x1x1	0	0	0	Plumberry Tree
-1179	0	1x1x1	0	0	0	Plumberry Tree
-1180	0	1x1x1	0	0	0	Plumberry Tree
-1181	0	1x1x1	0	0	0	Plumberry Tree
-1182	0	1x1x1	0	0	0	Plumberry Tree
-1183	0	1x1x1	0	0	0	Plumberry Tree
+1175	29	1x1x1	0	0	0	Plumberry Tree
+1176	29	1x1x1	0	0	0	Plumberry Tree
+1177	29	1x1x1	0	0	0	Plumberry Tree
+1178	29	1x1x1	0	0	0	Plumberry Tree
+1179	29	1x1x1	0	0	0	Plumberry Tree
+1180	29	1x1x1	0	0	0	Plumberry Tree
+1181	29	1x1x1	0	0	0	Plumberry Tree
+1182	29	1x1x1	0	0	0	Plumberry Tree
+1183	29	1x1x1	0	0	0	Plumberry Tree
 1184	1184	1x1x1	0	0	0	Picture Frame
 1185	1184	1x1x1	0	0	0	Picture Frame
 1186	1184	1x1x1	0	0	0	Picture Frame
@@ -1262,7 +1262,7 @@
 1260	1260	1x1x1	0	0	0	Stone Pot
 1261	0	1x1x1	0	1	0	0
 1262	1262	1x1x1	0	0	0	Wooden Toilet
-1263	1263	4x2x1	0	0	0	Babs’s Billboard
+1263	1263	4x2x1	0	0	0	Babs€™s Billboard
 1264	1264	1x1x1	0	0	0	Drum Kit
 1265	1265	1x1x1	0	0	0	Cello
 1266	1266	1x1x1	0	0	0	Price Tag
@@ -1288,15 +1288,15 @@
 1286	1286	1x1x1	0	0	0	Sizeable Stalagmite
 1287	1287	1x1x1	0	0	0	Stalagmites
 1288	1288	1x1x1	0	0	0	Adobe Window
-1289	0	1x1x1	0	0	0	Iron Stanchion
+1289	1247	1x1x1	0	0	0	Iron Stanchion
 1290	0	1x1x1	0	0	0	Iron Stanchion ·-
 1291	0	1x1x1	0	0	0	Iron Stanchion -·-
 1292	0	1x1x1	0	0	0	Beastly Burrow Broken
 1293	0	1x1x1	0	0	0	¿Null
-1294	0	2x1x2	0	0	0	Stickler’s Sifter
+1294	154	2x1x2	0	0	0	Stickler€™s Sifter
 1295	0	1x1x1	0	0	0	¿Arrow
-1296	0	1x1x1	0	0	0	Sconce
-1297	0	1x1x1	0	0	0	Steel Doors
+1296	79	1x1x1	0	0	0	Sconce
+1297	72	1x1x1	0	0	0	Steel Doors
 1298	0	1x1x1	0	1	0	0
 1299	0	1x1x1	0	1	0	0
 1300	1300	1x1x1	0	0	0	(Golden Lock)
@@ -1305,7 +1305,7 @@
 1303	0	1x1x1	0	1	0	0
 1304	0	1x1x1	0	1	0	0
 1305	1305	1x1x1	0	0	0	Sharpened Log
-1306	0	1x1x1	0	0	0	Sharpened Log
+1306	1305	1x1x1	0	0	0	Sharpened Log
 1307	0	1x1x1	0	0	0	Pestilential Nest
 1308	0	1x1x1	0	0	0	Pestilential Nest Broken
 1309	0	1x1x1	0	1	0	0
@@ -1327,7 +1327,7 @@
 1325	0	1x1x1	0	1	0	0
 1326	0	1x1x1	0	1	0	0
 1327	0	1x1x2	0	0	0	¿Null
-1328	1328	3x2x1	0	0	0	Hargon’s Standard
+1328	1328	3x2x1	0	0	0	Hargon€™s Standard
 1329	1329	1x1x1	0	0	0	Big Bolt
 1330	1330	1x1x1	0	0	0	Wooden Bracket
 1331	0	1x1x1	0	1	0	0
@@ -1395,7 +1395,7 @@
 1393	0	1x1x1	0	1	0	0
 1394	1394	1x1x1	0	0	0	False Idol
 1395	1395	2x3x2	0	0	0	Guillotine
-1396	1396	3x2x2	0	0	0	Hargon’s Throne
+1396	1396	3x2x2	0	0	0	Hargon€™s Throne
 1397	1397	1x1x1	0	0	0	Pyramid Merlon
 1398	1398	1x1x1	0	0	0	Citadel Creature Carving
 1399	1399	1x1x1	0	0	0	Fiendish Face
@@ -1410,12 +1410,12 @@
 1408	1408	1x1x1	0	0	0	¿Water Sigil
 1409	1409	1x1x1	0	0	0	¿Star Sigil
 1410	1410	3x1x3	0	0	0	¿Hammer Icon
-1411	0	1x1x1	0	0	0	Wooden Door
-1412	0	1x1x1	0	0	0	Pot
+1411	69	1x1x1	0	0	0	Wooden Door
+1412	54	1x1x1	0	0	0	Pot
 1413	0	1x1x1	0	1	0	0
 1414	179	1x1x1	0	0	0	Colossal Coffer
 1415	104	1x1x1	0	0	0	Grandfather Clock
-1416	0	1x1x1	0	0	0	Filter Fountain
+1416	214	1x1x1	0	0	0	Filter Fountain
 1417	49	1x1x1	0	0	0	¿Tattered Banner of Erdrick
 1418	1418	1x1x1	0	0	0	Salutation Station
 1419	0	1x1x1	0	0	0	Connecting Counter
@@ -1435,18 +1435,18 @@
 1433	1433	2x2x2	0	0	0	Capsized Crate
 1434	0	1x1x1	0	1	0	0
 1435	1435	1x1x1	0	0	0	Simple Supper Set
-1436	0	1x1x1	0	0	0	¿Milkblossom
+1436	6	1x1x1	0	0	0	¿Milkblossom
 1437	1437	1x1x1	0	0	0	Ropy Vertical Log
 1438	1438	1x1x1	0	0	0	Ropy Horizontal Log
 1439	0	1x1x1	0	1	0	0
 1440	0	1x1x1	0	1	0	0
 1441	0	1x1x1	0	1	0	0
 1442	0	1x1x1	0	1	0	0
-1443	0	1x1x1	0	0	0	Blackbell
-1444	0	1x1x1	0	0	0	Purplotus
-1445	0	1x1x1	0	0	0	Scarletulip
-1446	0	1x1x1	0	0	0	Emeraldahlia
-1447	0	1x1x1	0	0	0	Ultramarose
+1443	813	1x1x1	0	0	0	Blackbell
+1444	814	1x1x1	0	0	0	Purplotus
+1445	815	1x1x1	0	0	0	Scarletulip
+1446	816	1x1x1	0	0	0	Emeraldahlia
+1447	817	1x1x1	0	0	0	Ultramarose
 1448	1353	1x1x1	0	0	1	Light Box 
 1449	1353	1x1x1	0	0	2	Light Box 
 1450	1353	1x1x1	0	0	3	Light Box 
@@ -1455,8 +1455,8 @@
 1453	1353	1x1x1	0	0	6	Light Box 
 1454	1353	1x1x1	0	0	7	Light Box 
 1455	1353	1x1x1	0	0	8	Light Box 
-1456	0	1x1x1	0	0	0	¿Stone Workbench
-1457	0	2x2x2	0	0	0	¿Stone Workbench
+1456	1068	1x1x1	0	0	0	¿Stone Workbench
+1457	1068	2x2x2	0	0	0	¿Stone Workbench
 1458	0	1x1x1	0	1	0	0
 1459	0	1x1x1	0	1	0	0
 1460	0	1x1x1	0	1	0	0
@@ -1488,13 +1488,13 @@
 1486	211	2x2x1	0	0	7	Window 
 1487	211	2x2x1	0	0	8	Window 
 1488	1488	1x3x1	0	0	0	Banner of Builder
-1489	0	1x1x1	0	0	0	Reeds
+1489	1083	1x1x1	0	0	0	Reeds
 1490	163	1x1x1	0	0	0	Old Note
 1491	0	1x1x1	0	0	0	¿Lock
-1492	0	2x2x2	0	0	0	Sewing Station
+1492	155	2x2x2	0	0	0	Sewing Station
 1493	0	1x1x1	0	0	0	Horizontal Log Cap
 1494	0	1x1x1	0	0	0	Vertical Log Cap
-1495	0	3x1x3	0	0	0	Builder’s Workbench Lv0
+1495	0	3x1x3	0	0	0	Builder€™s Workbench Lv0
 1496	824	2x1x1	0	0	1	Picket Gate 
 1497	824	2x1x1	0	0	2	Picket Gate 
 1498	824	2x1x1	0	0	3	Picket Gate 
@@ -1503,14 +1503,14 @@
 1501	824	2x1x1	0	0	6	Picket Gate 
 1502	824	2x1x1	0	0	7	Picket Gate 
 1503	824	2x1x1	0	0	8	Picket Gate 
-1504	0	1x1x1	0	0	0	Diagonal Fencing
-1505	0	1x1x1	0	0	0	Diagonal Fencing
-1506	0	1x1x1	0	0	0	Diagonal Fencing
-1507	0	1x1x1	0	0	0	Diagonal Fencing
-1508	0	1x1x1	0	0	0	Diagonal Fencing
-1509	0	1x1x1	0	0	0	Diagonal Fencing
-1510	0	1x1x1	0	0	0	Diagonal Fencing
-1511	0	1x1x1	0	0	0	Diagonal Fencing
+1504	58	1x1x1	0	0	0	Diagonal Fencing
+1505	58	1x1x1	0	0	0	Diagonal Fencing
+1506	58	1x1x1	0	0	0	Diagonal Fencing
+1507	58	1x1x1	0	0	0	Diagonal Fencing
+1508	58	1x1x1	0	0	0	Diagonal Fencing
+1509	58	1x1x1	0	0	0	Diagonal Fencing
+1510	58	1x1x1	0	0	0	Diagonal Fencing
+1511	58	1x1x1	0	0	0	Diagonal Fencing
 1512	594	1x1x1	0	0	1	Wooden Fencing 
 1513	594	1x1x1	0	0	2	Wooden Fencing 
 1514	594	1x1x1	0	0	3	Wooden Fencing 
@@ -1703,86 +1703,86 @@
 1701	928	1x1x1	0	0	6	Nameplate 
 1702	928	1x1x1	0	0	7	Nameplate 
 1703	928	1x1x1	0	0	8	Nameplate 
-1704	0	2x2x1	0	0	1	Picture Frame 
-1705	0	2x2x1	0	0	2	Picture Frame 
-1706	0	2x2x1	0	0	3	Picture Frame 
-1707	0	2x2x1	0	0	4	Picture Frame 
-1708	0	2x2x1	0	0	5	Picture Frame 
-1709	0	2x2x1	0	0	6	Picture Frame 
-1710	0	2x2x1	0	0	7	Picture Frame 
-1711	0	2x2x1	0	0	8	Picture Frame 
-1712	0	2x2x1	0	0	1	Picture Frame 
-1713	0	2x2x1	0	0	2	Picture Frame 
-1714	0	2x2x1	0	0	3	Picture Frame 
-1715	0	2x2x1	0	0	4	Picture Frame 
-1716	0	2x2x1	0	0	5	Picture Frame 
-1717	0	2x2x1	0	0	6	Picture Frame 
-1718	0	2x2x1	0	0	7	Picture Frame 
-1719	0	2x2x1	0	0	8	Picture Frame 
-1720	0	2x2x1	0	0	1	Picture Frame 
-1721	0	2x2x1	0	0	2	Picture Frame 
-1722	0	2x2x1	0	0	3	Picture Frame 
-1723	0	2x2x1	0	0	4	Picture Frame 
-1724	0	2x2x1	0	0	5	Picture Frame 
-1725	0	2x2x1	0	0	6	Picture Frame 
-1726	0	2x2x1	0	0	7	Picture Frame 
-1727	0	2x2x1	0	0	8	Picture Frame 
-1728	0	2x2x1	0	0	1	Picture Frame 
-1729	0	2x2x1	0	0	2	Picture Frame 
-1730	0	2x2x1	0	0	3	Picture Frame 
-1731	0	2x2x1	0	0	4	Picture Frame 
-1732	0	2x2x1	0	0	5	Picture Frame 
-1733	0	2x2x1	0	0	6	Picture Frame 
-1734	0	2x2x1	0	0	7	Picture Frame 
-1735	0	2x2x1	0	0	8	Picture Frame 
-1736	0	2x2x1	0	0	1	Picture Frame 
-1737	0	2x2x1	0	0	2	Picture Frame 
-1738	0	2x2x1	0	0	3	Picture Frame 
-1739	0	2x2x1	0	0	4	Picture Frame 
-1740	0	2x2x1	0	0	5	Picture Frame 
-1741	0	2x2x1	0	0	6	Picture Frame 
-1742	0	2x2x1	0	0	7	Picture Frame 
-1743	0	2x2x1	0	0	8	Picture Frame 
-1744	0	2x2x1	0	0	1	Picture Frame 
-1745	0	2x2x1	0	0	2	Picture Frame 
-1746	0	2x2x1	0	0	3	Picture Frame 
-1747	0	2x2x1	0	0	4	Picture Frame 
-1748	0	2x2x1	0	0	5	Picture Frame 
-1749	0	2x2x1	0	0	6	Picture Frame 
-1750	0	2x2x1	0	0	7	Picture Frame 
-1751	0	2x2x1	0	0	8	Picture Frame 
-1752	0	2x2x1	0	0	1	Picture Frame 
-1753	0	2x2x1	0	0	2	Picture Frame 
-1754	0	2x2x1	0	0	3	Picture Frame 
-1755	0	2x2x1	0	0	4	Picture Frame 
-1756	0	2x2x1	0	0	5	Picture Frame 
-1757	0	2x2x1	0	0	6	Picture Frame 
-1758	0	2x2x1	0	0	7	Picture Frame 
-1759	0	2x2x1	0	0	8	Picture Frame 
-1760	0	2x2x1	0	0	1	Picture Frame 
-1761	0	2x2x1	0	0	2	Picture Frame 
-1762	0	2x2x1	0	0	3	Picture Frame 
-1763	0	2x2x1	0	0	4	Picture Frame 
-1764	0	2x2x1	0	0	5	Picture Frame 
-1765	0	2x2x1	0	0	6	Picture Frame 
-1766	0	2x2x1	0	0	7	Picture Frame 
-1767	0	2x2x1	0	0	8	Picture Frame 
-1768	0	2x2x1	0	0	1	Picture Frame 
-1769	0	2x2x1	0	0	2	Picture Frame 
-1770	0	2x2x1	0	0	3	Picture Frame 
-1771	0	2x2x1	0	0	4	Picture Frame 
-1772	0	2x2x1	0	0	5	Picture Frame 
-1773	0	2x2x1	0	0	6	Picture Frame 
-1774	0	2x2x1	0	0	7	Picture Frame 
-1775	0	2x2x1	0	0	8	Picture Frame 
-1776	0	2x2x1	0	0	1	Picture Frame 
-1777	0	2x2x1	0	0	2	Picture Frame 
-1778	0	2x2x1	0	0	3	Picture Frame 
-1779	0	2x2x1	0	0	4	Picture Frame 
-1780	0	2x2x1	0	0	5	Picture Frame 
-1781	0	2x2x1	0	0	6	Picture Frame 
-1782	0	2x2x1	0	0	7	Picture Frame 
-1783	0	2x2x1	0	0	8	Picture Frame 
+1704	1184	2x2x1	0	0	1	Picture Frame 
+1705	1184	2x2x1	0	0	2	Picture Frame 
+1706	1184	2x2x1	0	0	3	Picture Frame 
+1707	1184	2x2x1	0	0	4	Picture Frame 
+1708	1184	2x2x1	0	0	5	Picture Frame 
+1709	1184	2x2x1	0	0	6	Picture Frame 
+1710	1184	2x2x1	0	0	7	Picture Frame 
+1711	1184	2x2x1	0	0	8	Picture Frame 
+1712	1184	2x2x1	0	0	1	Picture Frame 
+1713	1184	2x2x1	0	0	2	Picture Frame 
+1714	1184	2x2x1	0	0	3	Picture Frame 
+1715	1184	2x2x1	0	0	4	Picture Frame 
+1716	1184	2x2x1	0	0	5	Picture Frame 
+1717	1184	2x2x1	0	0	6	Picture Frame 
+1718	1184	2x2x1	0	0	7	Picture Frame 
+1719	1184	2x2x1	0	0	8	Picture Frame 
+1720	1184	2x2x1	0	0	1	Picture Frame 
+1721	1184	2x2x1	0	0	2	Picture Frame 
+1722	1184	2x2x1	0	0	3	Picture Frame 
+1723	1184	2x2x1	0	0	4	Picture Frame 
+1724	1184	2x2x1	0	0	5	Picture Frame 
+1725	1184	2x2x1	0	0	6	Picture Frame 
+1726	1184	2x2x1	0	0	7	Picture Frame 
+1727	1184	2x2x1	0	0	8	Picture Frame 
+1728	1184	2x2x1	0	0	1	Picture Frame 
+1729	1184	2x2x1	0	0	2	Picture Frame 
+1730	1184	2x2x1	0	0	3	Picture Frame 
+1731	1184	2x2x1	0	0	4	Picture Frame 
+1732	1184	2x2x1	0	0	5	Picture Frame 
+1733	1184	2x2x1	0	0	6	Picture Frame 
+1734	1184	2x2x1	0	0	7	Picture Frame 
+1735	1184	2x2x1	0	0	8	Picture Frame 
+1736	1184	2x2x1	0	0	1	Picture Frame 
+1737	1184	2x2x1	0	0	2	Picture Frame 
+1738	1184	2x2x1	0	0	3	Picture Frame 
+1739	1184	2x2x1	0	0	4	Picture Frame 
+1740	1184	2x2x1	0	0	5	Picture Frame 
+1741	1184	2x2x1	0	0	6	Picture Frame 
+1742	1184	2x2x1	0	0	7	Picture Frame 
+1743	1184	2x2x1	0	0	8	Picture Frame 
+1744	1184	2x2x1	0	0	1	Picture Frame 
+1745	1184	2x2x1	0	0	2	Picture Frame 
+1746	1184	2x2x1	0	0	3	Picture Frame 
+1747	1184	2x2x1	0	0	4	Picture Frame 
+1748	1184	2x2x1	0	0	5	Picture Frame 
+1749	1184	2x2x1	0	0	6	Picture Frame 
+1750	1184	2x2x1	0	0	7	Picture Frame 
+1751	1184	2x2x1	0	0	8	Picture Frame 
+1752	1184	2x2x1	0	0	1	Picture Frame 
+1753	1184	2x2x1	0	0	2	Picture Frame 
+1754	1184	2x2x1	0	0	3	Picture Frame 
+1755	1184	2x2x1	0	0	4	Picture Frame 
+1756	1184	2x2x1	0	0	5	Picture Frame 
+1757	1184	2x2x1	0	0	6	Picture Frame 
+1758	1184	2x2x1	0	0	7	Picture Frame 
+1759	1184	2x2x1	0	0	8	Picture Frame 
+1760	1184	2x2x1	0	0	1	Picture Frame 
+1761	1184	2x2x1	0	0	2	Picture Frame 
+1762	1184	2x2x1	0	0	3	Picture Frame 
+1763	1184	2x2x1	0	0	4	Picture Frame 
+1764	1184	2x2x1	0	0	5	Picture Frame 
+1765	1184	2x2x1	0	0	6	Picture Frame 
+1766	1184	2x2x1	0	0	7	Picture Frame 
+1767	1184	2x2x1	0	0	8	Picture Frame 
+1768	1184	2x2x1	0	0	1	Picture Frame 
+1769	1184	2x2x1	0	0	2	Picture Frame 
+1770	1184	2x2x1	0	0	3	Picture Frame 
+1771	1184	2x2x1	0	0	4	Picture Frame 
+1772	1184	2x2x1	0	0	5	Picture Frame 
+1773	1184	2x2x1	0	0	6	Picture Frame 
+1774	1184	2x2x1	0	0	7	Picture Frame 
+1775	1184	2x2x1	0	0	8	Picture Frame 
+1776	1184	2x2x1	0	0	1	Picture Frame 
+1777	1184	2x2x1	0	0	2	Picture Frame 
+1778	1184	2x2x1	0	0	3	Picture Frame 
+1779	1184	2x2x1	0	0	4	Picture Frame 
+1780	1184	2x2x1	0	0	5	Picture Frame 
+1781	1184	2x2x1	0	0	6	Picture Frame 
+1782	1184	2x2x1	0	0	7	Picture Frame 
+1783	1184	2x2x1	0	0	8	Picture Frame 
 1784	809	3x1x3	0	0	1	Grand Piano 
 1785	809	3x1x3	0	0	2	Grand Piano 
 1786	809	3x1x3	0	0	3	Grand Piano 
@@ -1826,7 +1826,7 @@
 1824	0	1x1x1	0	0	0	White Coral Colony
 1825	0	1x1x1	0	0	0	Black Coral Colony
 1826	0	1x1x1	0	0	0	Purple Coral Colony
-1827	0	1x1x1	0	0	0	Colossal Coral
+1827	933	1x1x1	0	0	0	Colossal Coral
 1828	0	1x1x1	0	0	0	Red Coral Colony
 1829	0	1x1x1	0	0	0	Green Coral Colony
 1830	0	1x1x1	0	0	0	Yellow Coral Colony
@@ -1834,7 +1834,7 @@
 1832	0	1x1x1	0	0	0	White Coral
 1833	0	1x1x1	0	0	0	Black Coral
 1834	0	1x1x1	0	0	0	Purple Coral
-1835	0	1x1x1	0	0	0	Coral
+1835	932	1x1x1	0	0	0	Coral
 1836	0	1x1x1	0	0	0	Red Coral
 1837	0	1x1x1	0	0	0	Green Coral
 1838	0	1x1x1	0	0	0	Yellow Coral
@@ -1974,7 +1974,7 @@
 1972	1972	1x1x1	0	0	0	Ornamental Medicinal Herb
 1973	1973	1x1x1	0	0	0	Stackable Slime
 1974	0	1x1x1	0	0	0	¿White Block
-1975	0	1x1x1	0	0	0	Bigonia
+1975	13	1x1x1	0	0	0	Bigonia
 1976	1976	1x1x1	0	0	0	Ornamental Chimaera Wing
 1977	0	3x4x3	0	0	0	Stationary Statue
 1978	1973	1x1x1	0	0	1	Stackable Slime 
@@ -2012,7 +2012,7 @@
 2010	0	1x2x2	0	0	0	Iron Workbench Lv4
 2011	0	1x1x1	0	0	0	¿Deitree Planter ZERO
 2012	0	1x1x1	0	1	0	0
-2013	0	1x1x1	0	0	0	Magic Cannon
+2013	174	1x1x1	0	0	0	Magic Cannon
 2014	0	1x1x1	0	1	0	0
 2015	0	1x1x1	0	0	0	Crack Contraption
 2016	0	1x1x1	0	0	0	¿Deitree Remains
@@ -2050,9 +2050,9 @@
 2048	0	2x6x2	0	0	0	Humongous Horn
 2049	0	2x1x1	0	0	0	Titanic Top Teeth
 2050	0	3x1x1	0	0	0	Big Bad Bottom Teeth
-2051	0	1x1x1	0	0	0	Plumberry Tree
-2052	0	1x1x1	0	0	0	Plumberry Tree
-2053	0	1x1x1	0	0	0	Plumberry Tree
+2051	29	1x1x1	0	0	0	Plumberry Tree
+2052	29	1x1x1	0	0	0	Plumberry Tree
+2053	29	1x1x1	0	0	0	Plumberry Tree
 2054	0	1x1x1	0	0	1	Flat Fancy Roofing 
 2055	0	1x1x1	0	0	2	Flat Fancy Roofing 
 2056	0	1x1x1	0	0	3	Flat Fancy Roofing 
@@ -2175,7 +2175,7 @@
 2173	0	1x1x1	0	0	0	¿
 2174	0	2x1x1	0	0	0	¿
 2175	2175	5x7x2	0	0	0	Goldinoggin
-2176	316	1x2x3	0	0	0	Malroth’s Oaken Club
+2176	316	1x2x3	0	0	0	Malroth€™s Oaken Club
 2177	0	3x3x3	0	0	0	Orb of Heroes
 2178	0	2x2x2	0	0	0	Orb of Magic
 2179	0	2x2x2	0	0	0	Orb of Power
@@ -2190,9 +2190,9 @@
 2188	76	1x1x1	0	0	7	Ridge Tiling 
 2189	76	1x1x1	0	0	8	Ridge Tiling 
 2190	0	1x1x1	0	0	0	Question
-2191	0	1x1x1	0	0	0	Big Cedar Tree
+2191	554	1x1x1	0	0	0	Big Cedar Tree
 2192	0	1x1x1	0	0	0	Big Snowy Cedar
-2193	0	1x1x1	0	0	0	Big Silver Birch Tree
+2193	1157	1x1x1	0	0	0	Big Silver Birch Tree
 2194	1139	1x1x1	0	0	1	Wooden Grating 
 2195	1139	1x1x1	0	0	2	Wooden Grating 
 2196	1139	1x1x1	0	0	3	Wooden Grating 
@@ -2256,29 +2256,29 @@
 2254	0	3x4x1	0	0	0	¿Cerulean Steppe Tablet
 2255	0	1x1x1	0	0	0	¿Sun Sigil Tablet
 2256	0	1x1x1	0	0	0	¿Soul Sigil Tablet
-2257	0	1x1x1	0	0	0	Ra’s Mirror
+2257	0	1x1x1	0	0	0	Ra€™s Mirror
 2258	0	1x1x1	0	0	0	¿
-2259	0	1x1x1	0	0	0	¿Dead Plant
-2260	0	1x1x1	0	0	0	¿Dead Plant
-2261	0	1x1x1	0	0	0	¿Dead Plant
-2262	0	1x1x1	0	0	0	¿Dead Plant
-2263	0	1x1x1	0	0	0	¿Dead Plant
-2264	0	1x1x1	0	0	0	¿Dead Plant
-2265	0	1x1x1	0	0	0	¿Dead Plant on pole
-2266	0	1x1x1	0	0	0	¿Dead Plant
-2267	0	1x1x1	0	0	0	¿Dead Plant on pole
-2268	0	1x1x1	0	0	0	¿Dead Plant
-2269	0	1x1x1	0	0	0	¿Dead Plant
-2270	0	1x1x1	0	1	0	0
+2259	159	1x1x1	0	0	0	¿Dead Plant
+2260	159	1x1x1	0	0	0	¿Dead Plant
+2261	159	1x1x1	0	0	0	¿Dead Plant
+2262	159	1x1x1	0	0	0	¿Dead Plant
+2263	159	1x1x1	0	0	0	¿Dead Plant
+2264	159	1x1x1	0	0	0	¿Dead Plant
+2265	160	1x1x1	0	0	0	¿Dead Plant on pole
+2266	159	1x1x1	0	0	0	¿Dead Plant
+2267	160	1x1x1	0	0	0	¿Dead Plant on pole
+2268	159	1x1x1	0	0	0	¿Dead Plant
+2269	159	1x1x1	0	0	0	¿Dead Plant
+2270	159	1x1x1	0	1	0	0
 2271	0	1x1x1	0	0	0	Forbidden Altar
-2272	0	1x1x1	0	0	0	¿Dead Plant
-2273	0	1x1x1	0	0	0	¿Dead Plant
-2274	0	1x1x1	0	0	0	¿Dead Plant
-2275	0	1x1x1	0	0	0	¿Dead Plant
-2276	0	1x1x1	0	0	0	¿Dead Plant
-2277	0	1x1x1	0	0	0	¿Dead Plant
-2278	0	1x1x1	0	0	0	¿Dead Plant
-2279	0	1x1x1	0	0	0	¿Dead Plant
+2272	159	1x1x1	0	0	0	¿Dead Plant
+2273	159	1x1x1	0	0	0	¿Dead Plant
+2274	159	1x1x1	0	0	0	¿Dead Plant
+2275	159	1x1x1	0	0	0	¿Dead Plant
+2276	159	1x1x1	0	0	0	¿Dead Plant
+2277	159	1x1x1	0	0	0	¿Dead Plant
+2278	159	1x1x1	0	0	0	¿Dead Plant
+2279	159	1x1x1	0	0	0	¿Dead Plant
 2280	2280	1x1x1	0	0	0	¿Gold Erdrick Trophee Red
 2281	2281	1x1x1	0	0	0	¿Gold Erdrick Trophee Gold
 2282	2282	1x1x1	0	0	0	¿Gold Erdrick Trophee Green
@@ -2290,57 +2290,57 @@
 2288	2288	1x1x1	0	0	0	¿Gold Erdrick Trophee Pink
 2289	2289	1x1x1	0	0	0	¿Gold Erdrick Trophee White
 2290	2290	1x1x1	0	0	0	¿Gold Erdrick Trophee Dark Red
-2291	0	1x1x1	0	0	0	¿Dead Plant
-2292	0	1x1x1	0	0	0	¿Dead Plant
-2293	0	1x1x1	0	0	0	¿Dead Plant
-2294	0	1x1x1	0	0	0	¿Dead Plant
-2295	0	1x1x1	0	0	0	¿Dead Plant
-2296	0	1x1x1	0	0	0	¿Dead Plant
-2297	0	1x1x1	0	0	0	¿Dead Plant
-2298	0	1x1x1	0	0	0	¿Dead Plant
-2299	0	1x1x1	0	0	0	¿Dead Plant
-2300	0	1x1x1	0	0	0	¿Dead Plant on pole
-2301	0	1x1x1	0	0	0	¿Dead Plant on pole
-2302	0	1x1x1	0	0	0	¿Dead Plant on pole
-2303	0	1x1x1	0	0	0	¿Dead Plant on pole
-2304	0	1x1x1	0	0	0	¿Dead Plant on pole
-2305	0	1x1x1	0	0	0	¿Dead Plant on pole
-2306	0	1x1x1	0	0	0	¿Dead Plant on pole
-2307	0	1x1x1	0	0	0	¿Dead Plant on pole
-2308	0	1x1x1	0	0	0	¿Dead Plant on pole
-2309	0	1x1x1	0	0	0	¿Dead Plant on pole
-2310	0	1x1x1	0	0	0	¿Dead Plant on pole
-2311	0	1x1x1	0	0	0	¿Dead Plant on pole
-2312	0	1x1x1	0	0	0	¿Dead Plant on pole
-2313	0	1x1x1	0	0	0	¿Dead Plant on pole
-2314	0	1x1x1	0	0	0	¿Dead Plant on pole
-2315	0	1x1x1	0	0	0	¿Dead Plant on pole
-2316	0	1x1x1	0	0	0	¿Dead Plant on pole
-2317	0	1x1x1	0	0	0	¿Dead Plant on pole
-2318	0	1x1x1	0	0	0	¿Dead Plant on pole
-2319	0	1x1x1	0	0	0	¿Dead Plant on pole
-2320	0	1x1x1	0	0	0	¿Dead Plant on pole
-2321	0	1x1x1	0	0	0	¿Dead Plant on pole
-2322	0	1x1x1	0	0	0	¿Dead Plant on pole
-2323	0	1x1x1	0	0	0	¿Dead Plant on pole
-2324	0	1x1x1	0	0	0	¿Dead Plant
-2325	0	1x1x1	0	0	0	¿Dead Plant
-2326	0	1x1x1	0	0	0	¿Dead Plant
-2327	0	1x1x1	0	0	0	¿Dead Plant
-2328	0	1x1x1	0	0	0	¿Dead Plant
-2329	0	1x1x1	0	0	0	¿Dead Plant
-2330	0	1x1x1	0	0	0	¿Dead Plant on pole
-2331	0	1x1x1	0	0	0	¿Dead Plant on pole
-2332	0	1x1x1	0	0	0	¿Dead Plant on pole
-2333	0	1x1x1	0	0	0	¿Dead Plant on pole
-2334	0	1x1x1	0	0	0	¿Dead Plant on pole
-2335	0	1x1x1	0	0	0	¿Dead Plant on pole
-2336	0	1x1x1	0	0	0	Goldinoggin
+2291	159	1x1x1	0	0	0	¿Dead Plant
+2292	159	1x1x1	0	0	0	¿Dead Plant
+2293	159	1x1x1	0	0	0	¿Dead Plant
+2294	159	1x1x1	0	0	0	¿Dead Plant
+2295	159	1x1x1	0	0	0	¿Dead Plant
+2296	159	1x1x1	0	0	0	¿Dead Plant
+2297	159	1x1x1	0	0	0	¿Dead Plant
+2298	159	1x1x1	0	0	0	¿Dead Plant
+2299	159	1x1x1	0	0	0	¿Dead Plant
+2300	160	1x1x1	0	0	0	¿Dead Plant on pole
+2301	160	1x1x1	0	0	0	¿Dead Plant on pole
+2302	160	1x1x1	0	0	0	¿Dead Plant on pole
+2303	160	1x1x1	0	0	0	¿Dead Plant on pole
+2304	160	1x1x1	0	0	0	¿Dead Plant on pole
+2305	160	1x1x1	0	0	0	¿Dead Plant on pole
+2306	160	1x1x1	0	0	0	¿Dead Plant on pole
+2307	160	1x1x1	0	0	0	¿Dead Plant on pole
+2308	160	1x1x1	0	0	0	¿Dead Plant on pole
+2309	160	1x1x1	0	0	0	¿Dead Plant on pole
+2310	160	1x1x1	0	0	0	¿Dead Plant on pole
+2311	160	1x1x1	0	0	0	¿Dead Plant on pole
+2312	160	1x1x1	0	0	0	¿Dead Plant on pole
+2313	160	1x1x1	0	0	0	¿Dead Plant on pole
+2314	160	1x1x1	0	0	0	¿Dead Plant on pole
+2315	160	1x1x1	0	0	0	¿Dead Plant on pole
+2316	160	1x1x1	0	0	0	¿Dead Plant on pole
+2317	160	1x1x1	0	0	0	¿Dead Plant on pole
+2318	160	1x1x1	0	0	0	¿Dead Plant on pole
+2319	160	1x1x1	0	0	0	¿Dead Plant on pole
+2320	160	1x1x1	0	0	0	¿Dead Plant on pole
+2321	160	1x1x1	0	0	0	¿Dead Plant on pole
+2322	160	1x1x1	0	0	0	¿Dead Plant on pole
+2323	160	1x1x1	0	0	0	¿Dead Plant on pole
+2324	159	1x1x1	0	0	0	¿Dead Plant
+2325	159	1x1x1	0	0	0	¿Dead Plant
+2326	159	1x1x1	0	0	0	¿Dead Plant
+2327	159	1x1x1	0	0	0	¿Dead Plant
+2328	159	1x1x1	0	0	0	¿Dead Plant
+2329	159	1x1x1	0	0	0	¿Dead Plant
+2330	160	1x1x1	0	0	0	¿Dead Plant on pole
+2331	160	1x1x1	0	0	0	¿Dead Plant on pole
+2332	160	1x1x1	0	0	0	¿Dead Plant on pole
+2333	160	1x1x1	0	0	0	¿Dead Plant on pole
+2334	160	1x1x1	0	0	0	¿Dead Plant on pole
+2335	160	1x1x1	0	0	0	¿Dead Plant on pole
+2336	2175	1x1x1	0	0	0	Goldinoggin
 2337	0	2x1x1	0	0	0	Downward-Pointing Vile Vines
 2338	0	2x1x1	0	0	0	Upward-Pointing Vile Vines
 2339	0	1x1x1	0	0	0	Vertical Vile Vines
-2340	0	1x1x1	0	0	0	¿Dead Plant
-2341	0	1x1x1	0	0	0	¿Dead Plant on pole
+2340	159	1x1x1	0	0	0	¿Dead Plant
+2341	160	1x1x1	0	0	0	¿Dead Plant on pole
 2342	0	1x1x1	0	0	0	Babs Statue
 2343	0	1x1x1	0	0	0	¿
 2344	0	1x1x1	0	0	0	Fright Bulb
@@ -2357,7 +2357,7 @@
 2355	0	1x1x1	0	0	0	Stuffed Spiked Hare
 2356	0	2x2x2	0	0	0	Fat Rat Signpost
 2357	0	1x1x1	0	0	0	Crested Viper Fountain
-2358	0	1x1x1	0	0	0	¿Dead Plant
+2358	160	1x1x1	0	0	0	¿Dead Plant
 2359	0	1x1x1	0	0	0	¿Dead Plant on pole
 2360	0	1x1x1	0	0	0	Wisteria Crown
 2361	0	1x1x1	0	0	0	Wisteria Stem
@@ -2371,7 +2371,7 @@
 2369	0	1x1x1	0	0	0	Comfy Killerpillar Tail
 2370	0	1x1x1	0	0	0	Sunflowers
 2371	0	1x3x1	0	0	0	Doors of Doom
-2372	0	1x1x1	0	0	0	Plumberry Tree
+2372	29	1x1x1	0	0	0	Plumberry Tree
 2373	0	2x3x2	0	0	0	Meaty Marshy Mountain
 2374	0	2x2x2	0	0	0	Infernal Workbench
 2375	0	1x1x1	0	0	0	¿
@@ -2415,30 +2415,30 @@
 2413	0	1x1x1	0	0	0	¿
 2414	0	1x1x1	0	0	0	¿
 2415	0	1x1x1	0	1	0	0
-2416	0	1x1x1	0	0	0	¿Dead Plant
+2416	160	1x1x1	0	0	0	¿Dead Plant
 2417	0	1x1x1	0	0	0	¿Dead Plant on pole
 2418	0	1x1x1	0	0	0	¿Seed
 2419	0	1x1x1	0	0	0	¿Seed on pole
 2420	0	1x1x1	0	1	0	0
-2421	0	1x1x1	0	0	0	Beacon of Erdrick
+2421	2250	1x1x1	0	0	0	Beacon of Erdrick
 2422	2422	2x1x1	0	0	0	Spaceship Corner Capital
 2423	2423	1x1x1	0	0	0	Spaceship Corner Midsection
 2424	2424	2x1x1	0	0	0	Spaceship Corner Foundation
 2425	2425	1x1x1	0	0	0	Spaceship Capital
 2426	2426	3x1x2	0	0	0	Reinforced Iron Corner
 2427	2427	1x1x1	0	0	0	Spaceship Foundation
-2428	0	1x1x1	0	0	0	Plumberry Tree
-2429	0	1x1x1	0	0	0	Plumberry Tree
-2430	0	1x1x1	0	0	0	Plumberry Tree
-2431	0	1x1x1	0	0	0	Plumberry Tree
-2432	0	1x1x1	0	0	0	Broken Vault Wall
-2433	0	1x1x1	0	0	0	Broken Masonry
-2434	0	1x1x1	0	0	0	Vault Bracket
+2428	29	1x1x1	0	0	0	Plumberry Tree
+2429	29	1x1x1	0	0	0	Plumberry Tree
+2430	29	1x1x1	0	0	0	Plumberry Tree
+2431	29	1x1x1	0	0	0	Plumberry Tree
+2432	1240	1x1x1	0	0	0	Broken Vault Wall
+2433	348	1x1x1	0	0	0	Broken Masonry
+2434	625	1x1x1	0	0	0	Vault Bracket
 2435	0	1x1x1	0	0	0	¿
-2436	0	1x1x2	0	0	0	Coffin
-2437	0	1x1x1	0	0	0	Beacon of Erdrick
+2436	1363	1x1x2	0	0	0	Coffin
+2437	2250	1x1x1	0	0	0	Beacon of Erdrick
 2438	0	1x1x1	0	1	0	0
-2439	0	1x1x1	0	0	0	Plumberry Tree
+2439	29	1x1x1	0	0	0	Plumberry Tree
 2440	0	1x1x1	0	0	0	¿
 2441	0	1x1x1	0	0	0	¿
 2442	0	1x1x1	0	0	0	¿
@@ -2483,27 +2483,27 @@
 2481	2427	1x1x1	0	0	6	Spaceship Foundation 
 2482	2427	1x1x1	0	0	7	Spaceship Foundation 
 2483	2427	1x1x1	0	0	8	Spaceship Foundation 
-2484	0	1x1x1	0	0	0	Plumberry Tree
+2484	29	1x1x1	0	0	0	Plumberry Tree
 2485	0	1x1x1	0	0	0	¿
 2486	0	1x1x1	0	0	0	¿
 2487	0	1x1x1	0	0	0	¿
 2488	0	1x1x1	0	0	0	¿
 2489	0	1x1x1	0	0	0	¿
-2490	545	2x2x1	0	0	0	Builder’s Bell
+2490	545	2x2x1	0	0	0	Builder€™s Bell
 2491	85	1x1x1	0	0	0	Brazier
-2492	0	1x1x1	0	0	0	Candlestick
+2492	83	1x1x1	0	0	0	Candlestick
 2493	0	1x1x1	0	0	0	Ice Lolly
-2494	0	1x1x1	0	0	0	Plumberry Tree
-2495	0	1x1x1	0	0	0	Plumberry Tree
-2496	0	1x1x1	0	0	0	Plumberry Tree
-2497	0	1x1x1	0	0	0	Plumberry Tree
-2498	0	1x1x1	0	0	0	Plumberry Tree
+2494	29	1x1x1	0	0	0	Plumberry Tree
+2495	29	1x1x1	0	0	0	Plumberry Tree
+2496	29	1x1x1	0	0	0	Plumberry Tree
+2497	29	1x1x1	0	0	0	Plumberry Tree
+2498	29	1x1x1	0	0	0	Plumberry Tree
 2499	0	1x1x1	0	0	0	Great Sabrecat Statue
 2500	0	1x1x1	0	0	0	Knight Abhorrent Statue
 2501	0	1x1x1	0	0	0	Ghost Statue
 2502	0	1x1x1	0	0	0	Liquid Metal Soup
 2503	0	1x1x1	0	0	0	Merman Model
-2504	0	1x1x1	0	0	0	Medal King Slime’s Crown
+2504	0	1x1x1	0	0	0	Medal King Slime€™s Crown
 2505	0	1x1x1	0	0	0	Pocus Poppet Statue
 2506	0	1x1x1	0	0	0	Goodybag Statue
 2507	0	1x1x1	0	0	0	¿
@@ -2511,21 +2511,21 @@
 2509	0	1x1x1	0	0	0	Lush Leaves
 2510	0	1x1x1	0	0	0	¿Gold Lock
 2511	0	1x1x1	0	0	0	¿
-2512	0	1x1x1	0	0	0	Plumberry Tree
-2513	0	1x1x1	0	0	0	Plumberry Tree
+2512	29	1x1x1	0	0	0	Plumberry Tree
+2513	29	1x1x1	0	0	0	Plumberry Tree
 2514	0	1x1x1	0	0	0	¿
 2515	0	1x1x1	0	0	0	¿
 2516	0	1x1x1	0	0	0	¿
-2517	0	1x1x1	0	0	0	¿Ship
+2517	519	1x1x1	0	0	0	¿Ship
 2518	0	1x1x1	0	0	0	¿
 2519	0	1x2x5	0	0	0	¿
 2520	0	1x7x2	0	0	0	¿
 2521	0	3x3x7	0	0	0	¿
 2522	0	1x1x1	0	0	0	¿
 2523	0	1x2x1	0	0	0	Snowman
-2524	0	1x1x1	0	0	0	Plumberry Tree
-2525	0	1x1x1	0	0	0	Plumberry Tree
-2526	0	1x1x1	0	0	0	Plumberry Tree
+2524	29	1x1x1	0	0	0	Plumberry Tree
+2525	29	1x1x1	0	0	0	Plumberry Tree
+2526	29	1x1x1	0	0	0	Plumberry Tree
 2527	66	1x1x1	0	0	1	Porched Window 
 2528	66	1x1x1	0	0	2	Porched Window 
 2529	66	1x1x1	0	0	3	Porched Window 
@@ -2542,11 +2542,11 @@
 2540	67	1x1x1	0	0	6	Arched Window 
 2541	67	1x1x1	0	0	7	Arched Window 
 2542	67	1x1x1	0	0	8	Arched Window 
-2543	0	2x1x1	0	0	0	Builder’s Workbench LvMAX
-2544	0	1x1x1	0	0	0	Plumberry Tree
-2545	0	1x1x1	0	0	0	Plumberry Tree
-2546	0	1x1x1	0	0	0	Plumberry Tree
-2547	0	1x1x1	0	0	0	Plumberry Tree
+2543	0	2x1x1	0	0	0	Builder€™s Workbench LvMAX
+2544	29	1x1x1	0	0	0	Plumberry Tree
+2545	29	1x1x1	0	0	0	Plumberry Tree
+2546	29	1x1x1	0	0	0	Plumberry Tree
+2547	29	1x1x1	0	0	0	Plumberry Tree
 2548	0	1x1x1	0	0	1	Rubber Ring 
 2549	0	1x1x1	0	0	2	Rubber Ring 
 2550	0	1x1x1	0	0	3	Rubber Ring 
@@ -2556,13 +2556,13 @@
 2554	0	1x1x1	0	0	7	Rubber Ring 
 2555	0	1x1x1	0	0	8	Rubber Ring 
 2556	0	1x1x1	0	0	0	Slimespawn
-2557	0	1x1x1	0	0	0	Plumberry Tree
-2558	0	1x1x1	0	0	0	Plumberry Tree
-2559	0	1x1x1	0	0	0	Plumberry Tree
-2560	0	1x1x1	0	0	0	Plumberry Tree
-2561	0	1x1x1	0	0	0	Plumberry Tree
-2562	0	1x1x1	0	0	0	Plumberry Tree
-2563	0	2x1x2	0	0	0	Mason’s Workstation
+2557	29	1x1x1	0	0	0	Plumberry Tree
+2558	29	1x1x1	0	0	0	Plumberry Tree
+2559	29	1x1x1	0	0	0	Plumberry Tree
+2560	29	1x1x1	0	0	0	Plumberry Tree
+2561	29	1x1x1	0	0	0	Plumberry Tree
+2562	29	1x1x1	0	0	0	Plumberry Tree
+2563	0	2x1x2	0	0	0	Mason€™s Workstation
 2564	0	1x1x1	0	0	0	¿Green Garden Tablet Lv1
 2565	0	3x4x1	0	0	0	¿Green Garden Tablet Lv2
 2566	0	1x1x1	0	0	0	¿Cerulean Steppe Tablet Lv1
@@ -2572,11 +2572,11 @@
 2570	0	1x1x1	0	0	0	Holyhock Sprout 
 2571	0	1x1x1	0	0	0	Holyhock Bud
 2572	0	1x1x1	0	0	0	Holyhock
-2573	0	1x1x1	0	0	0	¿Dead Plant
+2573	160	1x1x1	0	0	0	¿Dead Plant
 2574	0	1x1x1	0	0	0	¿Dead Plant on pole
 2575	0	1x1x1	0	0	0	Leaves
 2576	0	1x1x1	0	0	0	¿
-2577	0	1x1x1	0	0	0	Plumberry Tree
+2577	29	1x1x1	0	0	0	Plumberry Tree
 2578	501	1x1x1	0	0	1	Pet Bowl 
 2579	501	1x1x1	0	0	2	Pet Bowl 
 2580	501	1x1x1	0	0	3	Pet Bowl 
@@ -2753,11 +2753,11 @@
 2751	116	1x3x1	0	0	6	Big Bold Banner 
 2752	116	1x3x1	0	0	7	Big Bold Banner 
 2753	116	1x3x1	0	0	8	Big Bold Banner 
-2754	0	1x1x1	0	0	0	Plumberry Tree
+2754	29	1x1x1	0	0	0	Plumberry Tree
 2755	0	1x1x1	0	0	0	Buggy Buggy LV1
 2756	0	1x1x1	0	0	0	Buggy Buggy LV2
 2757	0	1x1x1	0	0	0	N04H
-2758	0	1x1x1	0	0	0	Plumberry Tree
+2758	29	1x1x1	0	0	0	Plumberry Tree
 2759	0	1x1x1	0	0	0	¿
 2760	1336	1x1x1	0	0	1	Large Castle Tile 
 2761	1336	1x1x1	0	0	2	Large Castle Tile 
@@ -2767,24 +2767,24 @@
 2765	1336	1x1x1	0	0	6	Large Castle Tile 
 2766	1336	1x1x1	0	0	7	Large Castle Tile 
 2767	1336	1x1x1	0	0	8	Large Castle Tile 
-2768	0	1x1x1	0	0	0	Plumberry Tree
-2769	0	1x1x1	0	0	0	Pot
-2770	0	1x1x1	0	0	0	Plumberry Tree
-2771	0	1x1x1	0	0	0	Plumberry Tree
-2772	0	1x1x1	0	0	0	Plumberry Tree
-2773	0	1x1x1	0	0	0	Plumberry Tree
-2774	0	1x1x1	0	0	0	Plumberry Tree
+2768	29	1x1x1	0	0	0	Plumberry Tree
+2769	54	1x1x1	0	0	0	Pot
+2770	29	1x1x1	0	0	0	Plumberry Tree
+2771	29	1x1x1	0	0	0	Plumberry Tree
+2772	29	1x1x1	0	0	0	Plumberry Tree
+2773	29	1x1x1	0	0	0	Plumberry Tree
+2774	29	1x1x1	0	0	0	Plumberry Tree
 2775	2251	1x1x1	0	0	0	Magnetic Block
-2776	0	1x1x1	0	0	0	Medicinal Shrub
-2777	0	1x1x1	0	0	0	Community Chest
-2778	0	1x1x1	0	0	0	Plumberry Tree
-2779	0	1x1x1	0	0	0	Plumberry Tree
-2780	0	1x1x1	0	0	0	Plumberry Tree
-2781	0	1x1x1	0	0	0	Plumberry Tree
-2782	0	1x1x1	0	0	0	Plumberry Tree
-2783	0	1x1x1	0	0	0	Plumberry Tree
+2776	3	1x1x1	0	0	0	Medicinal Shrub
+2777	626	1x1x1	0	0	0	Community Chest
+2778	29	1x1x1	0	0	0	Plumberry Tree
+2779	29	1x1x1	0	0	0	Plumberry Tree
+2780	29	1x1x1	0	0	0	Plumberry Tree
+2781	29	1x1x1	0	0	0	Plumberry Tree
+2782	29	1x1x1	0	0	0	Plumberry Tree
+2783	29	1x1x1	0	0	0	Plumberry Tree
 2784	0	1x1x1	0	0	0	¿
-2785	0	1x1x1	0	0	0	Plumberry Tree
+2785	29	1x1x1	0	0	0	Plumberry Tree
 2786	0	1x1x1	0	0	0	Celebratory Soup
 2787	0	1x1x1	0	0	0	Ornate Adornment
 2788	0	1x1x1	0	0	0	Lattice Wall
@@ -2828,7 +2828,7 @@
 2826	0	1x1x1	0	0	0	Pine Tree
 2827	0	1x1x1	0	1	0	0
 2828	0	1x1x1	0	1	0	0
-2829	0	1x1x1	0	0	0	¿Dead Plant
+2829	160	1x1x1	0	0	0	¿Dead Plant
 2830	0	1x1x1	0	0	0	¿Dead Plant on pole
 2831	0	1x1x1	0	0	0	Paper Sliding Door
 2832	0	1x1x1	0	0	0	Monster Monument
@@ -2909,7 +2909,7 @@
 2907	0	1x1x1	0	0	0	Green Anemone
 2908	0	1x1x1	0	0	0	Yellow Anemone
 2909	0	1x1x1	0	0	0	Blue Anemone
-2910	0	1x1x1	0	0	0	Plumberry Tree
+2910	29	1x1x1	0	0	0	Plumberry Tree
 2911	0	1x1x1	0	0	0	Floor Lampe
 2912	0	2x2x1	0	0	0	Fansi Dor
 2913	0	1x1x1	0	0	0	Fansi Lait
@@ -2921,17 +2921,17 @@
 2919	0	2x1x1	0	0	0	Wooden Blind Headrail
 2920	0	1x1x1	0	0	0	Wooden Blind Body
 2921	0	1x1x1	0	0	0	Walle Lampe
-2922	0	1x1x1	0	0	0	Plumberry Tree
-2923	0	1x1x1	0	0	0	Plumberry Tree
+2922	29	1x1x1	0	0	0	Plumberry Tree
+2923	29	1x1x1	0	0	0	Plumberry Tree
 2924	0	1x1x1	0	0	0	Kaffe Tabel
 2925	0	1x1x1	0	0	0	Trendy Triptych
-2926	1067	1x1x1	0	0	0	Woöden Lampe
+2926	1067	1x1x1	0	0	0	WoÃ¶den Lampe
 2927	0	1x1x1	0	0	0	Chopping Board
 2928	0	1x1x1	0	0	0	Plate Of Pancakes
 2929	0	1x1x1	0	0	0	Coloured Cup
 2930	0	1x1x1	0	0	0	Fansi Tabel
 2931	0	1x1x1	0	0	0	Basic Basin
-2932	0	1x1x1	0	0	0	¿Dead Plant
+2932	160	1x1x1	0	0	0	¿Dead Plant
 2933	0	1x1x1	0	0	0	¿Dead Plant on pole
 2934	0	1x1x1	0	0	0	Chaer
 2935	475	1x1x1	0	0	0	Gift-Wrapped Gift
