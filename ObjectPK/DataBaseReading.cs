@@ -24,10 +24,8 @@ namespace DQB2IslandEditor.ObjectPK
 
         private const string ITEM_PATH = "Info/Items.txt";
 
-        private const string SHEET_BLOCK_ONE_PATH = "Images/Inventory/BlockSheetOne.png";
-        private const string SHEET_BLOCK_TWO_PATH = "Images/Inventory/BlockSheetTwo.png";
-        private const string SHEET_TILE_ONE_PATH = "Images/Inventory/TileSheetOne.png";
-        private const string SHEET_TILE_TWO_PATH = "Images/Inventory/TileSheetTwo.png";
+        private const string SHEET_BLOCK_ONE_PATH = "Images/Inventory/BlockSheet.png";
+        private const string SHEET_TILE_ONE_PATH = "Images/Inventory/TileSheet.png";
 
         private const string SHEET_ITEM_ONE_PATH = "Images/Inventory/ItemSheet.png";
 
@@ -62,9 +60,7 @@ namespace DQB2IslandEditor.ObjectPK
         private static string[] _islands = new string[32];
 
         private static BitmapImage _sheetOneBlock;
-        private static BitmapImage _sheetTwoBlock;
         private static BitmapImage _sheetOneTile;
-        private static BitmapImage _sheetTwoTile;
 
         private static BitmapImage _sheetOneItem;
 
@@ -127,22 +123,18 @@ namespace DQB2IslandEditor.ObjectPK
 
             //Loads sheets
             _sheetOneBlock = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_BLOCK_ONE_PATH));
-            _sheetTwoBlock = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_BLOCK_TWO_PATH));
             _sheetOneTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_ONE_PATH));
-            _sheetTwoTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_TWO_PATH));
 
             _sheetOneItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_ONE_PATH));
 
             //Helps performance
             _sheetOneBlock.Freeze();
-            _sheetTwoBlock.Freeze();
             _sheetOneTile.Freeze();
-            _sheetTwoTile.Freeze();
 
             _sheetOneItem.Freeze();
 
-            ImageDatabase[0] = new DataBaseImageHandler(_sheetOneBlock, _sheetTwoBlock, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
-            ImageDatabase[1] = new DataBaseImageHandler(_sheetOneTile, _sheetTwoTile, TILE_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
+            ImageDatabase[0] = new DataBaseImageHandler(_sheetOneBlock, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
+            ImageDatabase[1] = new DataBaseImageHandler(_sheetOneTile, TILE_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
             ImageDatabase[2] = new DataBaseImageHandler(_sheetOneItem, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             //Placeholder.
             ImageDatabase[3] = new DataBaseImageHandler(_sheetOneItem, BLOCK_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);

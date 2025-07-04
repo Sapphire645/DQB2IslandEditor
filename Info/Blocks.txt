@@ -25,2026 +25,2026 @@
 22	22	0	0	2	Crumbly Clodstone
 23	23	0	0	3	Basalt
 24	-1	1	0	8	Translucent Block
-25	25	0	0	2	Lava
-26	26	0	0	5	Vault Wall
-27	27	0	0	5	Viny Vault Wall
-28	28	0	0	3	Cracked Vault Wall
-29	29	0	0	2	Mud-Brick Wall
-30	30	0	0	2	Timbered Foundation
-31	31	0	0	2	Timbered Wall Midsection
-32	32	0	0	2	Timbered Capital
-33	33	0	0	2	Hardwood Pedestal
-34	34	0	0	2	Hardwood Column Midsection
-35	35	0	0	2	Hardwood Capital
-36	36	0	0	2	Stone Foundation
-37	37	0	0	2	Stone Wall Midsection
-38	38	4	0	8	Default Block
-39	39	0	0	2	Castle Foundation
-40	40	0	0	2	Castle Wall Midsection
-41	41	0	0	2	Castle Crenellation
-42	42	0	0	2	Castle Battlement
-43	43	0	0	2	Wooden Wall
-44	44	0	0	2	Plumberry Lumber
-45	45	0	0	2	Flagstone
-46	46	0	0	2	Straw Floor
-47	47	0	0	2	Wooden Floor
-48	48	0	0	2	Hardwood Tile
-49	49	0	0	2	Purple Flagstone
-50	50	0	0	2	Blue Flagstone
-51	51	0	0	2	Carpet Midsection
-52	52	0	0	2	Fancy Carpet
-53	53	0	0	2	Castle Tile
-54	54	0	0	2	Carved Castle Tile
-55	38	4	0	8	Default Block
-56	38	4	0	8	Default Block
-57	57	0	0	5	Bronze Temple Tile
-58	58	0	0	5	Blue Temple Tile
-59	38	4	0	8	Default Block
-60	38	4	0	8	Default Block
-61	73	1	0	2	Golemite*
-62	62	0	0	2	Coal Vein
-63	63	0	0	2	Copper Vein
-64	64	0	0	2	Iron Vein
-65	65	0	0	3	Silver Vein
-66	66	0	0	3	Gold Vein
-67	67	0	0	3	Zenithium Vein
-68	68	0	0	3	Ruby Vein
-69	69	0	0	3	Mythril Vein
-70	70	0	0	3	Orichalcum Vein
-71	38	4	0	8	Default Block
-72	38	4	0	8	Default Block
-73	73	0	0	2	Golemite
-74	74	0	0	2	Palm Lumber
-75	75	0	0	2	Cedar Lumber
-76	76	0	0	2	Time-Honoured Turf
-77	77	0	0	2	8-Bit Brick
-78	78	0	0	2	Olde Worlde Wall
-79	79	0	0	2	Eyewall
+25	24	0	0	2	Lava
+26	25	0	0	5	Vault Wall
+27	26	0	0	5	Viny Vault Wall
+28	27	0	0	3	Cracked Vault Wall
+29	28	0	0	2	Mud-Brick Wall
+30	29	0	0	2	Timbered Foundation
+31	30	0	0	2	Timbered Wall Midsection
+32	31	0	0	2	Timbered Capital
+33	32	0	0	2	Hardwood Pedestal
+34	33	0	0	2	Hardwood Column Midsection
+35	34	0	0	2	Hardwood Capital
+36	35	0	0	2	Stone Foundation
+37	36	0	0	2	Stone Wall Midsection
+38	37	4	0	8	Default Block
+39	38	0	0	2	Castle Foundation
+40	39	0	0	2	Castle Wall Midsection
+41	40	0	0	2	Castle Crenellation
+42	41	0	0	2	Castle Battlement
+43	42	0	0	2	Wooden Wall
+44	43	0	0	2	Plumberry Lumber
+45	44	0	0	2	Flagstone
+46	45	0	0	2	Straw Floor
+47	46	0	0	2	Wooden Floor
+48	47	0	0	2	Hardwood Tile
+49	48	0	0	2	Purple Flagstone
+50	49	0	0	2	Blue Flagstone
+51	50	0	0	2	Carpet Midsection
+52	51	0	0	2	Fancy Carpet
+53	52	0	0	2	Castle Tile
+54	53	0	0	2	Carved Castle Tile
+55	37	4	0	8	Default Block
+56	37	4	0	8	Default Block
+57	54	0	0	5	Bronze Temple Tile
+58	55	0	0	5	Blue Temple Tile
+59	37	4	0	8	Default Block
+60	37	4	0	8	Default Block
+61	56	1	0	2	Golemite*
+62	57	0	0	2	Coal Vein
+63	58	0	0	2	Copper Vein
+64	59	0	0	2	Iron Vein
+65	60	0	0	3	Silver Vein
+66	61	0	0	3	Gold Vein
+67	62	0	0	3	Zenithium Vein
+68	63	0	0	3	Ruby Vein
+69	64	0	0	3	Mythril Vein
+70	65	0	0	3	Orichalcum Vein
+71	37	4	0	8	Default Block
+72	37	4	0	8	Default Block
+73	56	0	0	2	Golemite
+74	66	0	0	2	Palm Lumber
+75	67	0	0	2	Cedar Lumber
+76	68	0	0	2	Time-Honoured Turf
+77	69	0	0	2	8-Bit Brick
+78	70	0	0	2	Olde Worlde Wall
+79	71	0	0	2	Eyewall
 80	-1	1	0	7	Dummy Block
 81	16	0	0	2	Witchgrassy Earth
-82	82	0	0	2	Lemongrassy Earth
-83	83	1	0	2	Sulphur Ore
-84	38	4	0	8	Default Block
-85	85	0	0	1	Strange Sand
-86	86	1	0	1	Unused Lava Block
-87	87	1	0	1	Unused Ice Block
-88	88	0	0	2	Bonestone
-89	89	0	0	2	Hargon Block
-90	90	0	0	2	Slimy Block
-91	91	0	0	2	Retro Roof
-92	92	0	0	2	Black Block
-93	93	0	0	2	Grey Block
-94	94	0	0	2	White Block
-95	95	0	0	2	Burgundy Block
-96	96	0	0	2	Red Block
-97	97	0	0	2	Purple Block
-98	98	0	0	2	Pink Block
-99	99	0	0	2	Green Block
-100	100	0	0	2	Lime-Green Block
-101	101	0	0	2	Orange Block
-102	102	0	0	2	Yellow Block
-103	103	0	0	2	Navy Block
-104	104	0	0	2	Blue Block
-105	105	0	0	2	Beige Block
-106	106	0	0	2	Cyan Block
-107	107	0	0	2	Silver Block
-108	108	0	0	2	Gold Block
-109	109	0	0	3	Fortress Foundation
-110	110	0	0	3	Fortress Wall Midsection
-111	111	0	0	3	Fortress Battlement
-112	38	4	0	8	Default Block
-113	38	4	0	8	Default Block
-114	38	4	0	8	Default Block
+82	72	0	0	2	Lemongrassy Earth
+83	73	1	0	2	Sulphur Ore
+84	37	4	0	8	Default Block
+85	74	0	0	1	Strange Sand
+86	75	1	0	1	Unused Lava Block
+87	76	1	0	1	Unused Ice Block
+88	77	0	0	2	Bonestone
+89	78	0	0	2	Hargon Block
+90	79	0	0	2	Slimy Block
+91	80	0	0	2	Retro Roof
+92	81	0	0	2	Black Block
+93	82	0	0	2	Grey Block
+94	83	0	0	2	White Block
+95	84	0	0	2	Burgundy Block
+96	85	0	0	2	Red Block
+97	86	0	0	2	Purple Block
+98	87	0	0	2	Pink Block
+99	88	0	0	2	Green Block
+100	89	0	0	2	Lime-Green Block
+101	90	0	0	2	Orange Block
+102	91	0	0	2	Yellow Block
+103	92	0	0	2	Navy Block
+104	93	0	0	2	Blue Block
+105	94	0	0	2	Beige Block
+106	95	0	0	2	Cyan Block
+107	96	0	0	2	Silver Block
+108	97	0	0	2	Gold Block
+109	98	0	0	3	Fortress Foundation
+110	99	0	0	3	Fortress Wall Midsection
+111	100	0	0	3	Fortress Battlement
+112	37	4	0	8	Default Block
+113	37	4	0	8	Default Block
+114	37	4	0	8	Default Block
 115	21	2	0	7	Clodstone*
-116	38	4	0	8	Default Block
-117	38	4	0	8	Default Block
+116	37	4	0	8	Default Block
+117	37	4	0	8	Default Block
 118	22	1	0	2	Crumbly Clodstone
 119	5	0	0	2	Tilled Soil
-120	120	0	0	9	Clear water full block
-121	120	0	0	9	Clear water surface block
-122	120	0	0	9	Clear water surface block
-123	120	0	0	9	Clear water surface block
-124	124	1	0	2	Witchgrassy Block*
-125	125	1	0	2	Lemongrassy Block*
-126	126	1	0	2	Grassy Block*
-127	127	1	0	2	Limegrassy Block*
-128	120	0	0	9	Clear water full block
-129	38	4	0	8	Default Block
-130	130	0	0	3	Light Dolomite
-131	131	0	0	3	Dark Dolomite
-132	132	0	0	2	Stony Sand
-133	38	4	0	8	Default Block
-134	134	0	0	5	Masonry Wall
-135	38	4	0	8	Default Block
-136	38	4	0	8	Default Block
-137	38	4	0	8	Default Block
-138	138	0	0	2	Mossy Bark
-139	139	0	0	2	Bark
-140	38	4	0	8	Default Block
-141	141	0	0	2	Stony Soil
-142	120	0	0	9	Clear water surface block
-143	120	0	0	9	Clear water surface block
-144	120	0	0	9	Clear water surface block
-145	120	0	0	9	Clear water shallow block
-146	146	0	0	1	Seaside Sand
-147	147	0	0	2	Arid Earth
-148	38	4	0	8	Default Block
-149	149	0	0	3	Chert
-150	38	4	0	8	Default Block
-151	38	4	0	8	Default Block
-152	38	4	0	8	Default Block
-153	153	0	0	3	Chunky Chert
-154	38	4	0	8	Default Block
-155	155	0	0	1	Leaves
-156	156	0	0	2	Spoiled Soil
-157	38	4	0	8	Default Block
-158	158	0	0	2	Moss
-159	38	4	0	8	Default Block
-160	38	4	0	8	Default Block
-161	161	0	0	2	Humus
-162	162	0	0	2	Tilled Humus
+120	101	0	0	9	Clear water full block
+121	101	0	0	9	Clear water surface block
+122	101	0	0	9	Clear water surface block
+123	101	0	0	9	Clear water surface block
+124	102	1	0	2	Witchgrassy Block*
+125	103	1	0	2	Lemongrassy Block*
+126	104	1	0	2	Grassy Block*
+127	105	1	0	2	Limegrassy Block*
+128	101	0	0	9	Clear water full block
+129	37	4	0	8	Default Block
+130	106	0	0	3	Light Dolomite
+131	107	0	0	3	Dark Dolomite
+132	108	0	0	2	Stony Sand
+133	37	4	0	8	Default Block
+134	109	0	0	5	Masonry Wall
+135	37	4	0	8	Default Block
+136	37	4	0	8	Default Block
+137	37	4	0	8	Default Block
+138	110	0	0	2	Mossy Bark
+139	111	0	0	2	Bark
+140	37	4	0	8	Default Block
+141	112	0	0	2	Stony Soil
+142	101	0	0	9	Clear water surface block
+143	101	0	0	9	Clear water surface block
+144	101	0	0	9	Clear water surface block
+145	101	0	0	9	Clear water shallow block
+146	113	0	0	1	Seaside Sand
+147	114	0	0	2	Arid Earth
+148	37	4	0	8	Default Block
+149	115	0	0	3	Chert
+150	37	4	0	8	Default Block
+151	37	4	0	8	Default Block
+152	37	4	0	8	Default Block
+153	116	0	0	3	Chunky Chert
+154	37	4	0	8	Default Block
+155	117	0	0	1	Leaves
+156	118	0	0	2	Spoiled Soil
+157	37	4	0	8	Default Block
+158	119	0	0	2	Moss
+159	37	4	0	8	Default Block
+160	37	4	0	8	Default Block
+161	120	0	0	2	Humus
+162	121	0	0	2	Tilled Humus
 163	10	2	0	6	Obsidian*
-164	58	2	0	6	Blue Temple Tile*
-165	149	2	0	6	Chert*
-166	405	2	0	6	Citadel Battlement*
-167	407	2	0	6	Golden Citadel Capital*
-168	408	2	0	6	Alcoved Citadel Wall*
-169	409	2	0	6	Golden Citadel Foundation*
-170	607	2	0	6	Sanguine Cinders*
-171	610	2	0	6	Scales*
+164	55	2	0	6	Blue Temple Tile*
+165	115	2	0	6	Chert*
+166	122	2	0	6	Citadel Battlement*
+167	123	2	0	6	Golden Citadel Capital*
+168	124	2	0	6	Alcoved Citadel Wall*
+169	125	2	0	6	Golden Citadel Foundation*
+170	126	2	0	6	Sanguine Cinders*
+171	127	2	0	6	Scales*
 172	5	0	0	2	Tilled Soil
-173	162	0	0	2	Tilled Humus
-174	149	0	0	4	Chert
-175	175	0	0	1	Bubbling Seaside Sand
-176	176	2	0	6	Patterned Citadel Wall*
-177	550	2	0	6	Citadel Capital*
-178	551	2	0	6	Citadel Foundation*
-179	552	2	0	6	Castle Wall Midsection*
-180	553	2	0	6	Citadel Floor*
-181	38	4	0	8	Default Block
-182	190	0	0	9	Poison shallow block
-183	190	0	0	9	Poison surface block
-184	190	0	0	9	Poison surface block
-185	190	0	0	9	Poison surface block
-186	190	0	0	9	Poison surface block
-187	190	0	0	9	Poison surface block
-188	190	0	0	9	Poison surface block
-189	190	0	0	9	Poison full block
-190	190	0	0	9	Poison full block
-191	199	0	0	11	Bottomless Swamp shallow block
-192	199	0	0	11	Bottomless Swamp surface block
-193	199	0	0	11	Bottomless Swamp surface block
-194	199	0	0	11	Bottomless Swamp surface block
-195	199	0	0	11	Bottomless Swamp surface block
-196	199	0	0	11	Bottomless Swamp surface block
-197	199	0	0	11	Bottomless Swamp surface block
-198	199	0	0	11	Bottomless Swamp full block
-199	199	0	0	11	Bottomless Swamp full block
-200	208	0	0	9	Muddy Water shallow block
-201	208	0	0	9	Muddy Water surface block
-202	208	0	0	9	Muddy Water surface block
-203	208	0	0	9	Muddy Water surface block
-204	208	0	0	9	Muddy Water surface block
-205	208	0	0	9	Muddy Water surface block
-206	208	0	0	9	Muddy Water surface block
-207	208	0	0	9	Muddy Water full block
-208	208	0	0	9	Muddy Water full block
-209	599	0	0	3	Umber
-210	210	1	0	3	Umber Sandstone Block*
-211	38	4	0	8	Default Block
-212	38	4	0	8	Default Block
-213	38	4	0	8	Default Block
-214	38	4	0	8	Default Block
-215	38	4	0	8	Default Block
-216	38	4	0	8	Default Block
-217	38	4	0	8	Default Block
-218	38	4	0	8	Default Block
-219	38	4	0	8	Default Block
-220	38	4	0	8	Default Block
-221	38	4	0	8	Default Block
-222	38	4	0	8	Default Block
-223	231	0	0	9	Hot Water shallow block
-224	231	0	0	9	Hot Water surface block
-225	231	0	0	9	Hot Water surface block
-226	231	0	0	9	Hot Water surface block
-227	231	0	0	9	Hot Water surface block
-228	231	0	0	9	Hot Water surface block
-229	231	0	0	9	Hot Water surface block
-230	231	0	0	9	Hot Water full block
-231	231	0	0	9	Hot Water full block
-232	232	0	0	2	Mossy Spoiled Soil
-233	38	4	0	8	Default Block
-234	234	0	0	2	Swampy Soil
-235	235	1	0	2	Seeded Spoiled Soil
-236	236	0	0	2	Seeded Spoiled Soil
-237	38	4	0	8	Default Block
-238	38	4	0	8	Default Block
-239	239	0	0	2	Seeded Spoiled Soil
-240	38	4	0	8	Default Block
-241	602	0	0	3	Lumpy Umber
-242	38	4	0	8	Default Block
-243	243	0	0	2	Softwood
-244	244	0	0	2	Floorboard
-245	38	4	0	8	Default Block
-246	38	4	0	8	Default Block
-247	247	1	0	1	Yellow frame block*
-248	38	4	0	8	Default Block
-249	38	4	0	8	Default Block
-250	38	4	0	8	Default Block
-251	38	4	0	8	Default Block
-252	38	4	0	8	Default Block
-253	38	4	0	8	Default Block
-254	38	4	0	8	Default Block
-255	38	4	0	8	Default Block
-256	158	0	0	2	Moss
-257	38	4	0	8	Default Block
-258	38	4	0	8	Default Block
-259	267	0	0	9	Lava shallow block
-260	267	0	0	9	Lava surface block
-261	267	0	0	9	Lava surface block
-262	267	0	0	9	Lava surface block
-263	267	0	0	9	Lava surface block
-264	267	0	0	9	Lava surface block
-265	267	0	0	9	Lava surface block
-266	267	0	0	9	Lava surface block
-267	267	0	0	9	Lava surface block
-268	268	0	0	5	Patterned Vault Wall
-269	52	0	1	2	Fancy Carpet 
-270	52	0	2	2	Fancy Carpet 
-271	52	0	3	2	Fancy Carpet 
-272	52	0	4	2	Fancy Carpet 
-273	52	0	6	2	Fancy Carpet 
-274	52	0	7	2	Fancy Carpet 
-275	52	0	8	2	Fancy Carpet 
-276	52	0	5	2	Fancy Carpet 
-277	30	0	1	2	Timbered Foundation 
-278	30	0	2	2	Timbered Foundation 
-279	30	0	3	2	Timbered Foundation 
-280	30	0	4	2	Timbered Foundation 
-281	30	0	5	2	Timbered Foundation 
-282	30	0	6	2	Timbered Foundation 
-283	30	0	7	2	Timbered Foundation 
-284	30	0	8	2	Timbered Foundation 
-285	31	0	1	2	Timbered Wall Midsection 
-286	31	0	2	2	Timbered Wall Midsection 
-287	31	0	3	2	Timbered Wall Midsection 
-288	31	0	4	2	Timbered Wall Midsection 
-289	31	0	5	2	Timbered Wall Midsection 
-290	31	0	6	2	Timbered Wall Midsection 
-291	31	0	7	2	Timbered Wall Midsection 
-292	31	0	8	2	Timbered Wall Midsection 
-293	32	0	1	2	Timbered Capital 
-294	32	0	2	2	Timbered Capital 
-295	32	0	3	2	Timbered Capital 
-296	32	0	4	2	Timbered Capital 
-297	32	0	5	2	Timbered Capital 
-298	32	0	6	2	Timbered Capital 
-299	32	0	7	2	Timbered Capital 
-300	32	0	8	2	Timbered Capital 
-301	43	0	1	2	Wooden Wall 
-302	43	0	2	2	Wooden Wall 
-303	43	0	3	2	Wooden Wall 
-304	43	0	4	2	Wooden Wall 
-305	43	0	5	2	Wooden Wall 
-306	43	0	6	2	Wooden Wall 
-307	43	0	7	2	Wooden Wall 
-308	43	0	8	2	Wooden Wall 
-309	544	0	1	2	Carpet 
-310	544	0	2	2	Carpet 
-311	544	0	3	2	Carpet 
-312	544	0	4	2	Carpet 
-313	544	0	5	2	Carpet 
-314	544	0	6	2	Carpet 
-315	544	0	7	2	Carpet 
-316	544	0	8	2	Carpet 
-317	47	0	1	2	Wooden Floor 
-318	47	0	2	2	Wooden Floor 
-319	47	0	3	2	Wooden Floor 
-320	47	0	4	2	Wooden Floor 
-321	47	0	5	2	Wooden Floor 
-322	47	0	6	2	Wooden Floor 
-323	47	0	7	2	Wooden Floor 
-324	47	0	8	2	Wooden Floor 
-325	38	4	0	8	Default Block
-326	38	4	0	8	Default Block
-327	38	4	0	8	Default Block
-328	38	4	0	8	Default Block
-329	38	4	0	8	Default Block
-330	38	4	0	8	Default Block
-331	331	0	0	1	Shifting Sand
-332	38	4	0	8	Default Block
-333	349	0	0	9	Sea water shallow block
-334	349	0	0	9	Sea water surface block
-335	349	0	0	9	Sea water surface block
-336	349	0	0	9	Sea water surface block
-337	349	0	0	9	Sea water surface block
-338	349	0	0	9	Sea water surface block
-339	349	0	0	9	Sea water surface block
-340	349	0	0	9	Sea water full block
-341	349	0	0	9	Sea water full block
-342	38	4	0	8	Default Block
-343	120	0	0	9	Clear water shallow block
-344	231	0	0	9	Hot water shallow block
-345	190	0	0	9	Poison shallow block
-346	267	0	0	9	Lava shallow block
-347	199	0	0	11	Bottomless Swamp shallow block
-348	208	0	0	9	Muddy Water shallow block
-349	349	0	0	9	Sea water shallow block
-350	38	4	0	8	Default Block
-351	34	0	1	2	Hardwood Column Midsection 
-352	34	0	2	2	Hardwood Column Midsection 
-353	34	0	3	2	Hardwood Column Midsection 
-354	34	0	4	2	Hardwood Column Midsection 
-355	34	0	5	2	Hardwood Column Midsection 
-356	34	0	6	2	Hardwood Column Midsection 
-357	34	0	7	2	Hardwood Column Midsection 
-358	34	0	8	2	Hardwood Column Midsection 
-359	33	0	1	2	Hardwood Pedestal 
-360	33	0	2	2	Hardwood Pedestal 
-361	33	0	3	2	Hardwood Pedestal 
-362	33	0	4	2	Hardwood Pedestal 
-363	33	0	5	2	Hardwood Pedestal 
-364	33	0	6	2	Hardwood Pedestal 
-365	33	0	7	2	Hardwood Pedestal 
-366	33	0	8	2	Hardwood Pedestal 
-367	35	0	1	2	Hardwood Capital 
-368	35	0	2	2	Hardwood Capital 
-369	35	0	3	2	Hardwood Capital 
-370	35	0	4	2	Hardwood Capital 
-371	35	0	5	2	Hardwood Capital 
-372	35	0	6	2	Hardwood Capital 
-373	35	0	7	2	Hardwood Capital 
-374	35	0	8	2	Hardwood Capital 
-375	51	0	1	2	Carpet Midsection 
-376	51	0	2	2	Carpet Midsection 
-377	51	0	3	2	Carpet Midsection 
-378	51	0	4	2	Carpet Midsection 
-379	51	0	5	2	Carpet Midsection 
-380	51	0	6	2	Carpet Midsection 
-381	51	0	7	2	Carpet Midsection 
-382	51	0	8	2	Carpet Midsection 
-383	120	0	0	9	Clear water surface block
-384	231	0	0	9	Hot water surface block
-385	190	0	0	9	Poison surface block
-386	267	0	0	9	Lava surface block
-387	199	0	0	11	Bottomless Swamp surface block
-388	208	0	0	9	Muddy Water surface block
-389	349	0	0	9	Sea water surface block
-390	390	0	0	9	Plasma shallow block
-391	390	0	0	9	Plasma surface block
-392	390	0	0	9	Plasma surface block
-393	390	0	0	9	Plasma surface block
-394	390	0	0	9	Plasma surface block
-395	390	0	0	9	Plasma surface block
-396	390	0	0	9	Plasma surface block
-397	390	0	0	9	Plasma full block
-398	390	0	0	9	Plasma full block
-399	390	0	0	9	Plasma shallow block
-400	390	0	0	9	Plasma surface block
-401	401	0	0	5	Vault Tile
-402	402	0	0	2	Gold Brick
-403	403	0	0	2	Spaceship Wall
-404	404	0	0	2	Shiny Spaceship Wall
-405	405	0	0	3	Citadel Battlement
-406	38	4	0	8	Default Block
-407	407	0	0	3	Golden Citadel Capital
-408	408	0	0	3	Alcoved Citadel Wall
-409	409	0	0	3	Golden Citadel Foundation
-410	176	0	0	3	Patterned Citadel Wall
-411	411	0	0	2	Golden Tile
-412	89	0	0	5	Hargon Block*
-413	413	2	0	8	Black Void
+173	121	0	0	2	Tilled Humus
+174	115	0	0	4	Chert
+175	128	0	0	1	Bubbling Seaside Sand
+176	129	2	0	6	Patterned Citadel Wall*
+177	130	2	0	6	Citadel Capital*
+178	131	2	0	6	Citadel Foundation*
+179	132	2	0	6	Castle Wall Midsection*
+180	133	2	0	6	Citadel Floor*
+181	37	4	0	8	Default Block
+182	134	0	0	9	Poison shallow block
+183	134	0	0	9	Poison surface block
+184	134	0	0	9	Poison surface block
+185	134	0	0	9	Poison surface block
+186	134	0	0	9	Poison surface block
+187	134	0	0	9	Poison surface block
+188	134	0	0	9	Poison surface block
+189	134	0	0	9	Poison full block
+190	134	0	0	9	Poison full block
+191	135	0	0	11	Bottomless Swamp shallow block
+192	135	0	0	11	Bottomless Swamp surface block
+193	135	0	0	11	Bottomless Swamp surface block
+194	135	0	0	11	Bottomless Swamp surface block
+195	135	0	0	11	Bottomless Swamp surface block
+196	135	0	0	11	Bottomless Swamp surface block
+197	135	0	0	11	Bottomless Swamp surface block
+198	135	0	0	11	Bottomless Swamp full block
+199	135	0	0	11	Bottomless Swamp full block
+200	136	0	0	9	Muddy Water shallow block
+201	136	0	0	9	Muddy Water surface block
+202	136	0	0	9	Muddy Water surface block
+203	136	0	0	9	Muddy Water surface block
+204	136	0	0	9	Muddy Water surface block
+205	136	0	0	9	Muddy Water surface block
+206	136	0	0	9	Muddy Water surface block
+207	136	0	0	9	Muddy Water full block
+208	136	0	0	9	Muddy Water full block
+209	137	0	0	3	Umber
+210	138	1	0	3	Umber Sandstone Block*
+211	37	4	0	8	Default Block
+212	37	4	0	8	Default Block
+213	37	4	0	8	Default Block
+214	37	4	0	8	Default Block
+215	37	4	0	8	Default Block
+216	37	4	0	8	Default Block
+217	37	4	0	8	Default Block
+218	37	4	0	8	Default Block
+219	37	4	0	8	Default Block
+220	37	4	0	8	Default Block
+221	37	4	0	8	Default Block
+222	37	4	0	8	Default Block
+223	139	0	0	9	Hot Water shallow block
+224	139	0	0	9	Hot Water surface block
+225	139	0	0	9	Hot Water surface block
+226	139	0	0	9	Hot Water surface block
+227	139	0	0	9	Hot Water surface block
+228	139	0	0	9	Hot Water surface block
+229	139	0	0	9	Hot Water surface block
+230	139	0	0	9	Hot Water full block
+231	139	0	0	9	Hot Water full block
+232	140	0	0	2	Mossy Spoiled Soil
+233	37	4	0	8	Default Block
+234	141	0	0	2	Swampy Soil
+235	142	1	0	2	Seeded Spoiled Soil
+236	143	0	0	2	Seeded Spoiled Soil
+237	37	4	0	8	Default Block
+238	37	4	0	8	Default Block
+239	144	0	0	2	Seeded Spoiled Soil
+240	37	4	0	8	Default Block
+241	145	0	0	3	Lumpy Umber
+242	37	4	0	8	Default Block
+243	146	0	0	2	Softwood
+244	147	0	0	2	Floorboard
+245	37	4	0	8	Default Block
+246	37	4	0	8	Default Block
+247	148	1	0	1	Yellow frame block*
+248	37	4	0	8	Default Block
+249	37	4	0	8	Default Block
+250	37	4	0	8	Default Block
+251	37	4	0	8	Default Block
+252	37	4	0	8	Default Block
+253	37	4	0	8	Default Block
+254	37	4	0	8	Default Block
+255	37	4	0	8	Default Block
+256	119	0	0	2	Moss
+257	37	4	0	8	Default Block
+258	37	4	0	8	Default Block
+259	149	0	0	9	Lava shallow block
+260	149	0	0	9	Lava surface block
+261	149	0	0	9	Lava surface block
+262	149	0	0	9	Lava surface block
+263	149	0	0	9	Lava surface block
+264	149	0	0	9	Lava surface block
+265	149	0	0	9	Lava surface block
+266	149	0	0	9	Lava surface block
+267	149	0	0	9	Lava surface block
+268	150	0	0	5	Patterned Vault Wall
+269	51	0	1	2	Fancy Carpet 
+270	51	0	2	2	Fancy Carpet 
+271	51	0	3	2	Fancy Carpet 
+272	51	0	4	2	Fancy Carpet 
+273	51	0	6	2	Fancy Carpet 
+274	51	0	7	2	Fancy Carpet 
+275	51	0	8	2	Fancy Carpet 
+276	51	0	5	2	Fancy Carpet 
+277	29	0	1	2	Timbered Foundation 
+278	29	0	2	2	Timbered Foundation 
+279	29	0	3	2	Timbered Foundation 
+280	29	0	4	2	Timbered Foundation 
+281	29	0	5	2	Timbered Foundation 
+282	29	0	6	2	Timbered Foundation 
+283	29	0	7	2	Timbered Foundation 
+284	29	0	8	2	Timbered Foundation 
+285	30	0	1	2	Timbered Wall Midsection 
+286	30	0	2	2	Timbered Wall Midsection 
+287	30	0	3	2	Timbered Wall Midsection 
+288	30	0	4	2	Timbered Wall Midsection 
+289	30	0	5	2	Timbered Wall Midsection 
+290	30	0	6	2	Timbered Wall Midsection 
+291	30	0	7	2	Timbered Wall Midsection 
+292	30	0	8	2	Timbered Wall Midsection 
+293	31	0	1	2	Timbered Capital 
+294	31	0	2	2	Timbered Capital 
+295	31	0	3	2	Timbered Capital 
+296	31	0	4	2	Timbered Capital 
+297	31	0	5	2	Timbered Capital 
+298	31	0	6	2	Timbered Capital 
+299	31	0	7	2	Timbered Capital 
+300	31	0	8	2	Timbered Capital 
+301	42	0	1	2	Wooden Wall 
+302	42	0	2	2	Wooden Wall 
+303	42	0	3	2	Wooden Wall 
+304	42	0	4	2	Wooden Wall 
+305	42	0	5	2	Wooden Wall 
+306	42	0	6	2	Wooden Wall 
+307	42	0	7	2	Wooden Wall 
+308	42	0	8	2	Wooden Wall 
+309	197	0	1	2	Carpet 
+310	197	0	2	2	Carpet 
+311	197	0	3	2	Carpet 
+312	197	0	4	2	Carpet 
+313	197	0	5	2	Carpet 
+314	197	0	6	2	Carpet 
+315	197	0	7	2	Carpet 
+316	197	0	8	2	Carpet 
+317	46	0	1	2	Wooden Floor 
+318	46	0	2	2	Wooden Floor 
+319	46	0	3	2	Wooden Floor 
+320	46	0	4	2	Wooden Floor 
+321	46	0	5	2	Wooden Floor 
+322	46	0	6	2	Wooden Floor 
+323	46	0	7	2	Wooden Floor 
+324	46	0	8	2	Wooden Floor 
+325	37	4	0	8	Default Block
+326	37	4	0	8	Default Block
+327	37	4	0	8	Default Block
+328	37	4	0	8	Default Block
+329	37	4	0	8	Default Block
+330	37	4	0	8	Default Block
+331	151	0	0	1	Shifting Sand
+332	37	4	0	8	Default Block
+333	152	0	0	9	Sea water shallow block
+334	152	0	0	9	Sea water surface block
+335	152	0	0	9	Sea water surface block
+336	152	0	0	9	Sea water surface block
+337	152	0	0	9	Sea water surface block
+338	152	0	0	9	Sea water surface block
+339	152	0	0	9	Sea water surface block
+340	152	0	0	9	Sea water full block
+341	152	0	0	9	Sea water full block
+342	37	4	0	8	Default Block
+343	101	0	0	9	Clear water shallow block
+344	139	0	0	9	Hot water shallow block
+345	134	0	0	9	Poison shallow block
+346	149	0	0	9	Lava shallow block
+347	135	0	0	11	Bottomless Swamp shallow block
+348	136	0	0	9	Muddy Water shallow block
+349	152	0	0	9	Sea water shallow block
+350	37	4	0	8	Default Block
+351	33	0	1	2	Hardwood Column Midsection 
+352	33	0	2	2	Hardwood Column Midsection 
+353	33	0	3	2	Hardwood Column Midsection 
+354	33	0	4	2	Hardwood Column Midsection 
+355	33	0	5	2	Hardwood Column Midsection 
+356	33	0	6	2	Hardwood Column Midsection 
+357	33	0	7	2	Hardwood Column Midsection 
+358	33	0	8	2	Hardwood Column Midsection 
+359	32	0	1	2	Hardwood Pedestal 
+360	32	0	2	2	Hardwood Pedestal 
+361	32	0	3	2	Hardwood Pedestal 
+362	32	0	4	2	Hardwood Pedestal 
+363	32	0	5	2	Hardwood Pedestal 
+364	32	0	6	2	Hardwood Pedestal 
+365	32	0	7	2	Hardwood Pedestal 
+366	32	0	8	2	Hardwood Pedestal 
+367	34	0	1	2	Hardwood Capital 
+368	34	0	2	2	Hardwood Capital 
+369	34	0	3	2	Hardwood Capital 
+370	34	0	4	2	Hardwood Capital 
+371	34	0	5	2	Hardwood Capital 
+372	34	0	6	2	Hardwood Capital 
+373	34	0	7	2	Hardwood Capital 
+374	34	0	8	2	Hardwood Capital 
+375	50	0	1	2	Carpet Midsection 
+376	50	0	2	2	Carpet Midsection 
+377	50	0	3	2	Carpet Midsection 
+378	50	0	4	2	Carpet Midsection 
+379	50	0	5	2	Carpet Midsection 
+380	50	0	6	2	Carpet Midsection 
+381	50	0	7	2	Carpet Midsection 
+382	50	0	8	2	Carpet Midsection 
+383	101	0	0	9	Clear water surface block
+384	139	0	0	9	Hot water surface block
+385	134	0	0	9	Poison surface block
+386	149	0	0	9	Lava surface block
+387	135	0	0	11	Bottomless Swamp surface block
+388	136	0	0	9	Muddy Water surface block
+389	152	0	0	9	Sea water surface block
+390	153	0	0	9	Plasma shallow block
+391	153	0	0	9	Plasma surface block
+392	153	0	0	9	Plasma surface block
+393	153	0	0	9	Plasma surface block
+394	153	0	0	9	Plasma surface block
+395	153	0	0	9	Plasma surface block
+396	153	0	0	9	Plasma surface block
+397	153	0	0	9	Plasma full block
+398	153	0	0	9	Plasma full block
+399	153	0	0	9	Plasma shallow block
+400	153	0	0	9	Plasma surface block
+401	154	0	0	5	Vault Tile
+402	155	0	0	2	Gold Brick
+403	156	0	0	2	Spaceship Wall
+404	157	0	0	2	Shiny Spaceship Wall
+405	122	0	0	3	Citadel Battlement
+406	37	4	0	8	Default Block
+407	123	0	0	3	Golden Citadel Capital
+408	124	0	0	3	Alcoved Citadel Wall
+409	125	0	0	3	Golden Citadel Foundation
+410	129	0	0	3	Patterned Citadel Wall
+411	158	0	0	2	Golden Tile
+412	78	0	0	5	Hargon Block*
+413	159	2	0	8	Black Void
 414	2	2	0	7	Earth*
 415	7	2	0	7	Mossy Earth*
 416	19	2	0	7	Snow*
 417	21	2	0	7	Clodstone*
 418	16	2	0	7	Witchgrassy Earth*
-419	607	2	0	7	Battlefield Earth
-420	349	0	0	9	Sea water shallow block
-421	403	0	1	2	Spaceship Wall 
-422	403	0	2	2	Spaceship Wall 
-423	403	0	3	2	Spaceship Wall 
-424	403	0	4	2	Spaceship Wall 
-425	403	0	5	2	Spaceship Wall 
-426	403	0	6	2	Spaceship Wall 
-427	403	0	7	2	Spaceship Wall 
-428	403	0	8	2	Spaceship Wall 
-429	404	0	1	2	Shiny Spaceship Wall 
-430	404	0	2	2	Shiny Spaceship Wall 
-431	404	0	3	2	Shiny Spaceship Wall 
-432	404	0	4	2	Shiny Spaceship Wall 
-433	404	0	5	2	Shiny Spaceship Wall 
-434	404	0	6	2	Shiny Spaceship Wall 
-435	404	0	7	2	Shiny Spaceship Wall 
-436	404	0	8	2	Shiny Spaceship Wall 
-437	437	0	0	2	Woodless Timbered Wall
-438	438	0	0	2	Banded Timbered Wall
-439	94	1	0	2	White Unused Block
-440	94	1	0	2	White Unused Block
-441	94	1	0	2	White Unused Block
-442	94	1	0	2	White Unused Block
-443	94	1	0	2	White Unused Block
-444	94	1	0	2	White Unused Block
-445	94	1	0	2	White Unused Block
-446	94	1	0	2	White Unused Block
-447	438	0	1	2	Banded Timbered Wall 
-448	438	0	2	2	Banded Timbered Wall 
-449	438	0	3	2	Banded Timbered Wall 
-450	438	0	4	2	Banded Timbered Wall 
-451	438	0	5	2	Banded Timbered Wall 
-452	438	0	6	2	Banded Timbered Wall 
-453	438	0	7	2	Banded Timbered Wall 
-454	438	0	8	2	Banded Timbered Wall 
-455	38	4	0	8	Default Block
-456	38	4	0	8	Default Block
-457	38	4	0	8	Default Block
-458	38	4	0	8	Default Block
-459	38	4	0	8	Default Block
-460	38	4	0	8	Default Block
-461	38	4	0	8	Default Block
-462	38	4	0	8	Default Block
-463	48	0	1	2	Hardwood Tile 
-464	48	0	2	2	Hardwood Tile 
-465	48	0	3	2	Hardwood Tile 
-466	48	0	4	2	Hardwood Tile 
-467	48	0	5	2	Hardwood Tile 
-468	48	0	6	2	Hardwood Tile 
-469	48	0	7	2	Hardwood Tile 
-470	48	0	8	2	Hardwood Tile 
-471	38	4	0	8	Default Block
-472	472	0	0	2	Red-Brick Wall
-473	473	0	0	3	Diamond Vein
-474	474	1	0	2	Chert (Red)*
-475	475	1	0	2	Citadel Floor (Red)*
-476	476	0	0	3	Magnetite Vein
-477	477	0	0	3	Siltstone
-478	38	4	0	8	Default Block
-479	38	4	0	8	Default Block
-480	38	4	0	8	Default Block
-481	90	1	0	2	Slimy Block
-482	38	4	0	8	Default Block
-483	38	4	0	8	Default Block
-484	484	0	0	2	Red-Brick Floor
-485	485	0	0	2	Crazing Paving
-486	486	0	0	2	Copper Wall
-487	487	0	0	2	Marble
-488	488	0	0	2	Silver Birch Lumber
-489	156	2	0	7	Spoiled Soil*
-490	38	4	0	8	Default Block
-491	491	0	0	2	Dark Bark
-492	492	0	0	1	Teal Leaves
-493	38	4	0	8	Default Block
-494	38	4	0	8	Default Block
-495	38	4	0	8	Default Block
-496	38	4	0	8	Default Block
-497	497	0	0	2	Bloodstained Soil
+419	126	2	0	7	Battlefield Earth
+420	152	0	0	9	Sea water shallow block
+421	156	0	1	2	Spaceship Wall 
+422	156	0	2	2	Spaceship Wall 
+423	156	0	3	2	Spaceship Wall 
+424	156	0	4	2	Spaceship Wall 
+425	156	0	5	2	Spaceship Wall 
+426	156	0	6	2	Spaceship Wall 
+427	156	0	7	2	Spaceship Wall 
+428	156	0	8	2	Spaceship Wall 
+429	157	0	1	2	Shiny Spaceship Wall 
+430	157	0	2	2	Shiny Spaceship Wall 
+431	157	0	3	2	Shiny Spaceship Wall 
+432	157	0	4	2	Shiny Spaceship Wall 
+433	157	0	5	2	Shiny Spaceship Wall 
+434	157	0	6	2	Shiny Spaceship Wall 
+435	157	0	7	2	Shiny Spaceship Wall 
+436	157	0	8	2	Shiny Spaceship Wall 
+437	160	0	0	2	Woodless Timbered Wall
+438	161	0	0	2	Banded Timbered Wall
+439	83	1	0	2	White Unused Block
+440	83	1	0	2	White Unused Block
+441	83	1	0	2	White Unused Block
+442	83	1	0	2	White Unused Block
+443	83	1	0	2	White Unused Block
+444	83	1	0	2	White Unused Block
+445	83	1	0	2	White Unused Block
+446	83	1	0	2	White Unused Block
+447	161	0	1	2	Banded Timbered Wall 
+448	161	0	2	2	Banded Timbered Wall 
+449	161	0	3	2	Banded Timbered Wall 
+450	161	0	4	2	Banded Timbered Wall 
+451	161	0	5	2	Banded Timbered Wall 
+452	161	0	6	2	Banded Timbered Wall 
+453	161	0	7	2	Banded Timbered Wall 
+454	161	0	8	2	Banded Timbered Wall 
+455	37	4	0	8	Default Block
+456	37	4	0	8	Default Block
+457	37	4	0	8	Default Block
+458	37	4	0	8	Default Block
+459	37	4	0	8	Default Block
+460	37	4	0	8	Default Block
+461	37	4	0	8	Default Block
+462	37	4	0	8	Default Block
+463	47	0	1	2	Hardwood Tile 
+464	47	0	2	2	Hardwood Tile 
+465	47	0	3	2	Hardwood Tile 
+466	47	0	4	2	Hardwood Tile 
+467	47	0	5	2	Hardwood Tile 
+468	47	0	6	2	Hardwood Tile 
+469	47	0	7	2	Hardwood Tile 
+470	47	0	8	2	Hardwood Tile 
+471	37	4	0	8	Default Block
+472	162	0	0	2	Red-Brick Wall
+473	163	0	0	3	Diamond Vein
+474	164	1	0	2	Chert (Red)*
+475	165	1	0	2	Citadel Floor (Red)*
+476	166	0	0	3	Magnetite Vein
+477	167	0	0	3	Siltstone
+478	37	4	0	8	Default Block
+479	37	4	0	8	Default Block
+480	37	4	0	8	Default Block
+481	79	1	0	2	Slimy Block
+482	37	4	0	8	Default Block
+483	37	4	0	8	Default Block
+484	168	0	0	2	Red-Brick Floor
+485	169	0	0	2	Crazing Paving
+486	170	0	0	2	Copper Wall
+487	171	0	0	2	Marble
+488	172	0	0	2	Silver Birch Lumber
+489	118	2	0	7	Spoiled Soil*
+490	37	4	0	8	Default Block
+491	173	0	0	2	Dark Bark
+492	174	0	0	1	Teal Leaves
+493	37	4	0	8	Default Block
+494	37	4	0	8	Default Block
+495	37	4	0	8	Default Block
+496	37	4	0	8	Default Block
+497	175	0	0	2	Bloodstained Soil
 498	-1	1	0	2	Bloodstained Soil full
-499	499	0	0	2	Padded Floor
-500	500	0	0	2	Leafy Spoiled Soil
-501	501	1	0	2	Leafy Spoiled Soil full
-502	38	4	0	8	Default Block
-503	38	4	0	8	Default Block
-504	38	4	0	8	Default Block
-505	38	4	0	8	Default Block
-506	38	4	0	8	Default Block
-507	38	4	0	8	Default Block
-508	38	4	0	8	Default Block
-509	38	4	0	8	Default Block
-510	38	4	0	8	Default Block
-511	38	4	0	8	Default Block
-512	38	4	0	8	Default Block
-513	38	4	0	8	Default Block
-514	38	4	0	8	Default Block
-515	38	4	0	8	Default Block
-516	38	4	0	8	Default Block
-517	38	4	0	8	Default Block
-518	38	4	0	8	Default Block
-519	519	0	0	1	Cracked Floorboard
-520	520	0	0	2	Blackened Bark
+499	176	0	0	2	Padded Floor
+500	177	0	0	2	Leafy Spoiled Soil
+501	178	1	0	2	Leafy Spoiled Soil full
+502	37	4	0	8	Default Block
+503	37	4	0	8	Default Block
+504	37	4	0	8	Default Block
+505	37	4	0	8	Default Block
+506	37	4	0	8	Default Block
+507	37	4	0	8	Default Block
+508	37	4	0	8	Default Block
+509	37	4	0	8	Default Block
+510	37	4	0	8	Default Block
+511	37	4	0	8	Default Block
+512	37	4	0	8	Default Block
+513	37	4	0	8	Default Block
+514	37	4	0	8	Default Block
+515	37	4	0	8	Default Block
+516	37	4	0	8	Default Block
+517	37	4	0	8	Default Block
+518	37	4	0	8	Default Block
+519	179	0	0	1	Cracked Floorboard
+520	180	0	0	2	Blackened Bark
 521	-1	1	0	2	Bloodstained Soil full
-522	522	0	0	2	Malachite
-523	268	0	0	5	Patterned Vault Wall*
-524	268	0	0	5	Patterned Vault Wall*
-525	525	0	0	2	Adobe Capital
-526	526	0	0	2	Adobe Wall (Midsection)
-527	527	0	0	2	Adobe Pedestal
-528	528	0	0	2	Alcoved Adobe Wall
-529	529	0	0	2	Copper Floor
-530	530	0	0	2	Sooty Softwood
-531	38	4	0	8	Default Block
-532	532	0	0	2	Heartwood
-533	44	2	0	7	Plumberry Lumber*
-534	534	0	0	3	White Dye Vein
-535	535	0	0	3	Black Dye Vein
-536	536	0	0	3	Purple Dye Vein
-537	537	0	0	3	Pink Dye Vein
-538	538	0	0	3	Red Dye Vein
-539	539	0	0	3	Green Dye Vein
-540	540	0	0	3	Yellow Dye Vein
-541	541	0	0	3	Blue Dye Vein
-542	38	4	0	8	Default Block
+522	181	0	0	2	Malachite
+523	150	0	0	5	Patterned Vault Wall*
+524	150	0	0	5	Patterned Vault Wall*
+525	182	0	0	2	Adobe Capital
+526	183	0	0	2	Adobe Wall (Midsection)
+527	184	0	0	2	Adobe Pedestal
+528	185	0	0	2	Alcoved Adobe Wall
+529	186	0	0	2	Copper Floor
+530	187	0	0	2	Sooty Softwood
+531	37	4	0	8	Default Block
+532	188	0	0	2	Heartwood
+533	43	2	0	7	Plumberry Lumber*
+534	189	0	0	3	White Dye Vein
+535	190	0	0	3	Black Dye Vein
+536	191	0	0	3	Purple Dye Vein
+537	192	0	0	3	Pink Dye Vein
+538	193	0	0	3	Red Dye Vein
+539	194	0	0	3	Green Dye Vein
+540	195	0	0	3	Yellow Dye Vein
+541	196	0	0	3	Blue Dye Vein
+542	37	4	0	8	Default Block
 543	-1	1	0	7	Blue Temple Tile Half Dummy
-544	544	0	0	2	Carpet
-545	545	0	0	2	Golden Castle Capital
-546	546	0	0	2	Alcoved Castle Wall
-547	547	0	0	2	Golden Castle Foundation
-548	548	0	0	2	Cracked Castle Tile
-549	549	0	0	2	Battlefield Earth
-550	550	0	0	3	Citadel Capital
-551	551	0	0	3	Citadel Foundation
-552	552	0	0	3	Citadel Wall Midsection
-553	553	0	0	3	Citadel Floor
-554	38	4	0	8	Default Block
-555	38	4	0	8	Default Block
-556	38	4	0	8	Default Block
-557	38	4	0	8	Default Block
-558	38	4	0	8	Default Block
-559	38	4	0	8	Default Block
+544	197	0	0	2	Carpet
+545	198	0	0	2	Golden Castle Capital
+546	199	0	0	2	Alcoved Castle Wall
+547	200	0	0	2	Golden Castle Foundation
+548	201	0	0	2	Cracked Castle Tile
+549	202	0	0	2	Battlefield Earth
+550	130	0	0	3	Citadel Capital
+551	131	0	0	3	Citadel Foundation
+552	132	0	0	3	Citadel Wall Midsection
+553	133	0	0	3	Citadel Floor
+554	37	4	0	8	Default Block
+555	37	4	0	8	Default Block
+556	37	4	0	8	Default Block
+557	37	4	0	8	Default Block
+558	37	4	0	8	Default Block
+559	37	4	0	8	Default Block
 560	-1	1	0	7	Ghost Block*
-561	561	0	0	2	Plaster
-562	561	0	1	2	Plaster 
-563	561	0	2	2	Plaster 
-564	561	0	3	2	Plaster 
-565	561	0	4	2	Plaster 
-566	561	0	5	2	Plaster 
-567	561	0	6	2	Plaster 
-568	561	0	7	2	Plaster 
-569	561	0	8	2	Plaster 
-570	244	0	1	2	Floorboard 
-571	244	0	2	2	Floorboard 
-572	244	0	3	2	Floorboard 
-573	244	0	4	2	Floorboard 
-574	244	0	5	2	Floorboard 
-575	244	0	6	2	Floorboard 
-576	244	0	7	2	Floorboard 
-577	244	0	8	2	Floorboard 
-578	499	0	1	2	Padded Floor 
-579	499	0	2	2	Padded Floor 
-580	499	0	3	2	Padded Floor 
-581	499	0	4	2	Padded Floor 
-582	499	0	5	2	Padded Floor 
-583	499	0	6	2	Padded Floor 
-584	499	0	7	2	Padded Floor 
-585	499	0	8	2	Padded Floor 
-586	586	1	0	2	Leafy Stony Soil
-587	587	1	0	2	Leafy Stony Soil Full
-588	588	0	0	2	Iron Block
-589	589	0	0	2	Concrete Block
-590	590	0	0	2	Sun Sigil Block
-591	591	0	0	2	Star Sigil Block
-592	592	0	0	2	Moon Sigil Block
-593	593	0	0	2	Water Sigil Block
-594	594	0	0	2	Soul Sigil Block
-595	595	0	0	2	Sandstone Brick
-596	596	0	0	1	Withered Leaves
-597	94	1	0	2	White Unused Block
-598	147	2	0	7	Arid Earth*
-599	599	2	0	7	Umber*
-600	232	2	0	7	Mossy Spoiled Soil*
-601	234	2	0	7	Swampy Soil*
-602	602	2	0	7	Lumpy Umber*
-603	497	2	0	7	Bloodstained Soil*
-604	497	2	0	7	Leafy Spoiled Soil
-605	94	1	0	8	White Unused Block
-606	606	0	0	2	Sanguine Sandstone
-607	607	0	0	2	Sanguine Cinders
-608	608	0	0	2	Sanguine Sand
-609	609	0	0	2	Sanguine Sandy Sandstone
-610	610	0	0	3	Scales
-611	96	1	0	7	Red Block*
-612	612	0	0	2	Silver Brick
-613	613	0	0	2	Sooty Silver Brick
-614	235	0	0	2	Seeded Spoiled Soil
-615	236	0	0	2	Seeded Spoiled Soil
-616	239	0	0	2	Seeded Spoiled Soil
-617	617	0	0	2	Seeded Spoiled Soil
-618	617	0	0	2	Seeded Spoiled Soil
+561	203	0	0	2	Plaster
+562	203	0	1	2	Plaster 
+563	203	0	2	2	Plaster 
+564	203	0	3	2	Plaster 
+565	203	0	4	2	Plaster 
+566	203	0	5	2	Plaster 
+567	203	0	6	2	Plaster 
+568	203	0	7	2	Plaster 
+569	203	0	8	2	Plaster 
+570	147	0	1	2	Floorboard 
+571	147	0	2	2	Floorboard 
+572	147	0	3	2	Floorboard 
+573	147	0	4	2	Floorboard 
+574	147	0	5	2	Floorboard 
+575	147	0	6	2	Floorboard 
+576	147	0	7	2	Floorboard 
+577	147	0	8	2	Floorboard 
+578	176	0	1	2	Padded Floor 
+579	176	0	2	2	Padded Floor 
+580	176	0	3	2	Padded Floor 
+581	176	0	4	2	Padded Floor 
+582	176	0	5	2	Padded Floor 
+583	176	0	6	2	Padded Floor 
+584	176	0	7	2	Padded Floor 
+585	176	0	8	2	Padded Floor 
+586	204	1	0	2	Leafy Stony Soil
+587	205	1	0	2	Leafy Stony Soil Full
+588	206	0	0	2	Iron Block
+589	207	0	0	2	Concrete Block
+590	208	0	0	2	Sun Sigil Block
+591	209	0	0	2	Star Sigil Block
+592	210	0	0	2	Moon Sigil Block
+593	211	0	0	2	Water Sigil Block
+594	212	0	0	2	Soul Sigil Block
+595	213	0	0	2	Sandstone Brick
+596	214	0	0	1	Withered Leaves
+597	83	1	0	2	White Unused Block
+598	114	2	0	7	Arid Earth*
+599	137	2	0	7	Umber*
+600	140	2	0	7	Mossy Spoiled Soil*
+601	141	2	0	7	Swampy Soil*
+602	145	2	0	7	Lumpy Umber*
+603	175	2	0	7	Bloodstained Soil*
+604	175	2	0	7	Leafy Spoiled Soil
+605	83	1	0	8	White Unused Block
+606	215	0	0	2	Sanguine Sandstone
+607	126	0	0	2	Sanguine Cinders
+608	216	0	0	2	Sanguine Sand
+609	217	0	0	2	Sanguine Sandy Sandstone
+610	127	0	0	3	Scales
+611	85	1	0	7	Red Block*
+612	218	0	0	2	Silver Brick
+613	219	0	0	2	Sooty Silver Brick
+614	142	0	0	2	Seeded Spoiled Soil
+615	143	0	0	2	Seeded Spoiled Soil
+616	144	0	0	2	Seeded Spoiled Soil
+617	220	0	0	2	Seeded Spoiled Soil
+618	220	0	0	2	Seeded Spoiled Soil
 619	10	2	0	7	Obsidian*
 620	11	2	0	7	Sand*
-621	25	2	0	7	Lava*
-622	210	2	0	7	Umber Sandstone Block*
+621	24	2	0	7	Lava*
+622	138	2	0	7	Umber Sandstone Block*
 623	8	2	0	7	Chalk
-624	624	0	0	2	Silver Tile
+624	221	0	0	2	Silver Tile
 625	10	0	0	4	Obsidian
-626	130	0	0	3	Light Dolomite
+626	106	0	0	3	Light Dolomite
 627	21	0	0	2	Clodstone
-628	38	4	0	8	Default Block
-629	38	4	0	8	Default Block
-630	134	0	0	2	Masonry Wall
-631	268	0	0	2	Patterned Vault Wall
-632	268	0	0	2	Patterned Vault Wall
-633	401	0	0	2	Vault Tile
-634	26	0	0	2	Vault Wall
-635	27	0	0	2	Viny Vault Wall
-636	28	0	0	2	Cracked Vault Wall
-637	413	2	0	8	Black Void
-638	588	0	1	2	Iron Block 
-639	588	0	2	2	Iron Block 
-640	588	0	3	2	Iron Block 
-641	588	0	4	2	Iron Block 
-642	588	0	5	2	Iron Block 
-643	588	0	6	2	Iron Block 
-644	588	0	7	2	Iron Block 
-645	588	0	8	2	Iron Block 
-646	595	0	1	2	Sandstone Brick 
-647	595	0	2	2	Sandstone Brick 
-648	595	0	3	2	Sandstone Brick 
-649	595	0	4	2	Sandstone Brick 
-650	595	0	5	2	Sandstone Brick 
-651	595	0	6	2	Sandstone Brick 
-652	595	0	7	2	Sandstone Brick 
-653	595	0	8	2	Sandstone Brick 
-654	53	0	1	2	Castle Tile 
-655	53	0	2	2	Castle Tile 
-656	53	0	3	2	Castle Tile 
-657	53	0	4	2	Castle Tile 
-658	53	0	5	2	Castle Tile 
-659	53	0	6	2	Castle Tile 
-660	53	0	7	2	Castle Tile 
-661	53	0	8	2	Castle Tile 
-662	54	0	1	2	Carved Castle Tile 
-663	54	0	2	2	Carved Castle Tile 
-664	54	0	3	2	Carved Castle Tile 
-665	54	0	4	2	Carved Castle Tile 
-666	54	0	5	2	Carved Castle Tile 
-667	54	0	6	2	Carved Castle Tile 
-668	54	0	7	2	Carved Castle Tile 
-669	54	0	8	2	Carved Castle Tile 
-670	106	1	0	8	Cyan Block*
-671	100	1	0	8	Green Block*
-672	97	1	0	8	Purple Block*
+628	37	4	0	8	Default Block
+629	37	4	0	8	Default Block
+630	109	0	0	2	Masonry Wall
+631	150	0	0	2	Patterned Vault Wall
+632	150	0	0	2	Patterned Vault Wall
+633	154	0	0	2	Vault Tile
+634	25	0	0	2	Vault Wall
+635	26	0	0	2	Viny Vault Wall
+636	27	0	0	2	Cracked Vault Wall
+637	159	2	0	8	Black Void
+638	206	0	1	2	Iron Block 
+639	206	0	2	2	Iron Block 
+640	206	0	3	2	Iron Block 
+641	206	0	4	2	Iron Block 
+642	206	0	5	2	Iron Block 
+643	206	0	6	2	Iron Block 
+644	206	0	7	2	Iron Block 
+645	206	0	8	2	Iron Block 
+646	213	0	1	2	Sandstone Brick 
+647	213	0	2	2	Sandstone Brick 
+648	213	0	3	2	Sandstone Brick 
+649	213	0	4	2	Sandstone Brick 
+650	213	0	5	2	Sandstone Brick 
+651	213	0	6	2	Sandstone Brick 
+652	213	0	7	2	Sandstone Brick 
+653	213	0	8	2	Sandstone Brick 
+654	52	0	1	2	Castle Tile 
+655	52	0	2	2	Castle Tile 
+656	52	0	3	2	Castle Tile 
+657	52	0	4	2	Castle Tile 
+658	52	0	5	2	Castle Tile 
+659	52	0	6	2	Castle Tile 
+660	52	0	7	2	Castle Tile 
+661	52	0	8	2	Castle Tile 
+662	53	0	1	2	Carved Castle Tile 
+663	53	0	2	2	Carved Castle Tile 
+664	53	0	3	2	Carved Castle Tile 
+665	53	0	4	2	Carved Castle Tile 
+666	53	0	5	2	Carved Castle Tile 
+667	53	0	6	2	Carved Castle Tile 
+668	53	0	7	2	Carved Castle Tile 
+669	53	0	8	2	Carved Castle Tile 
+670	95	1	0	8	Cyan Block*
+671	89	1	0	8	Green Block*
+672	86	1	0	8	Purple Block*
 673	-1	1	0	8	Translucent Block
-674	102	1	0	8	Yellow Block*
-675	101	1	0	8	Orange Block*
-676	104	1	0	8	Blue Block*
-677	106	1	0	8	Cyan Block*
-678	57	0	0	3	Bronze Temple Tile
-679	58	0	0	3	Blue Temple Tile
-680	680	0	0	2	Seeded Limegrassy Earth
-681	681	0	0	2	Seeded Mossy Spoiled Soil
-682	682	0	0	1	Seeded Sand
-683	683	0	0	2	Seeded Earth
-684	684	0	0	1	Seeded Snow
-685	685	0	0	2	Seeded Grassy Earth
-686	686	0	0	2	Gravel Block
-687	687	0	0	2	Scaled Wall Block
-688	688	0	0	2	Slatted Wall Block
-689	689	0	0	2	Woven Straw Block
-690	689	0	0	2	Woven Straw Block
-691	689	0	0	2	Woven Straw Block
-692	689	0	0	2	Woven Straw Block
-693	689	0	0	2	Woven Straw Block
-694	687	0	1	2	Scaled Wall Block 
-695	687	0	2	2	Scaled Wall Block 
-696	687	0	3	2	Scaled Wall Block 
-697	687	0	4	2	Scaled Wall Block 
-698	687	0	5	2	Scaled Wall Block 
-699	687	0	6	2	Scaled Wall Block 
-700	687	0	7	2	Scaled Wall Block 
-701	687	0	8	2	Scaled Wall Block 
-702	702	0	0	2	Polka-Dot Block
-703	702	0	1	2	Polka-Dot Block 
-704	702	0	2	2	Polka-Dot Block 
-705	702	0	3	2	Polka-Dot Block 
-706	702	0	4	2	Polka-Dot Block 
-707	702	0	5	2	Polka-Dot Block 
-708	702	0	6	2	Polka-Dot Block 
-709	702	0	7	2	Polka-Dot Block 
-710	702	0	8	2	Polka-Dot Block 
-711	711	0	0	2	Faux Floral Floor Block
-712	712	0	0	2	Palm-Patterned Block
-713	713	0	0	2	Fruity Fiend Block
-714	714	0	0	2	Chequered Block
-715	715	0	0	2	Sunset-Styled Block
-716	716	0	0	2	Seaweed-Styled Block
-717	717	0	0	2	Stylish Stripy Block
-718	718	0	0	2	Seaside Scene Block
-719	719	0	0	2	Abstract Floral Floor Block
-720	720	0	0	2	Herringbone Floorboard Block
-721	721	0	0	2	Night Sky Wall Block
-722	722	0	0	2	Granite Floor Block
-723	723	0	0	2	Stucco Wall Block
-724	723	0	1	2	Stucco Wall Block 
-725	723	0	2	2	Stucco Wall Block 
-726	723	0	3	2	Stucco Wall Block 
-727	723	0	4	2	Stucco Wall Block 
-728	723	0	5	2	Stucco Wall Block 
-729	723	0	6	2	Stucco Wall Block 
-730	723	0	7	2	Stucco Wall Block 
-731	723	0	8	2	Stucco Wall Block 
-732	712	0	1	2	Palm-Patterned Block 
-733	712	0	2	2	Palm-Patterned Block 
-734	712	0	3	2	Palm-Patterned Block 
-735	712	0	4	2	Palm-Patterned Block 
-736	712	0	5	2	Palm-Patterned Block 
-737	712	0	6	2	Palm-Patterned Block 
-738	712	0	7	2	Palm-Patterned Block 
-739	712	0	8	2	Palm-Patterned Block 
-740	714	0	1	2	Chequered Block 
-741	714	0	2	2	Chequered Block 
-742	714	0	3	2	Chequered Block 
-743	714	0	4	2	Chequered Block 
-744	714	0	5	2	Chequered Block 
-745	714	0	6	2	Chequered Block 
-746	714	0	7	2	Chequered Block 
-747	714	0	8	2	Chequered Block 
-748	717	0	1	2	Stylish Stripy Block 
-749	717	0	2	2	Stylish Stripy Block 
-750	717	0	3	2	Stylish Stripy Block 
-751	717	0	4	2	Stylish Stripy Block 
-752	717	0	5	2	Stylish Stripy Block 
-753	717	0	6	2	Stylish Stripy Block 
-754	717	0	7	2	Stylish Stripy Block 
-755	717	0	8	2	Stylish Stripy Block 
-756	720	0	1	2	Herringbone Floorboard Block 
-757	720	0	2	2	Herringbone Floorboard Block 
-758	720	0	3	2	Herringbone Floorboard Block 
-759	720	0	4	2	Herringbone Floorboard Block 
-760	720	0	5	2	Herringbone Floorboard Block 
-761	720	0	6	2	Herringbone Floorboard Block 
-762	720	0	7	2	Herringbone Floorboard Block 
-763	720	0	8	2	Herringbone Floorboard Block 
-764	721	0	1	2	Night Sky Wall Block 
-765	721	0	2	2	Night Sky Wall Block 
-766	721	0	3	2	Night Sky Wall Block 
-767	721	0	4	2	Night Sky Wall Block 
-768	721	0	5	2	Night Sky Wall Block 
-769	721	0	6	2	Night Sky Wall Block 
-770	721	0	7	2	Night Sky Wall Block 
-771	721	0	8	2	Night Sky Wall Block 
-772	772	0	0	2	Modern Masonry Block
-773	772	0	1	2	Modern Masonry Block 
-774	772	0	2	2	Modern Masonry Block 
-775	772	0	3	2	Modern Masonry Block 
-776	772	0	4	2	Modern Masonry Block 
-777	772	0	5	2	Modern Masonry Block 
-778	772	0	6	2	Modern Masonry Block 
-779	772	0	7	2	Modern Masonry Block 
-780	772	0	8	2	Modern Masonry Block 
-781	781	0	0	2	Chintzy Block
-782	781	0	1	2	Chintzy Block 
-783	781	0	2	2	Chintzy Block 
-784	781	0	3	2	Chintzy Block 
-785	781	0	4	2	Chintzy Block 
-786	781	0	5	2	Chintzy Block 
-787	781	0	6	2	Chintzy Block 
-788	781	0	7	2	Chintzy Block 
-789	781	0	8	2	Chintzy Block 
-790	790	0	0	2	Gingham Carpet
-791	790	0	1	2	Gingham Carpet 
-792	790	0	2	2	Gingham Carpet 
-793	790	0	3	2	Gingham Carpet 
-794	790	0	4	2	Gingham Carpet 
-795	790	0	5	2	Gingham Carpet 
-796	790	0	6	2	Gingham Carpet 
-797	790	0	7	2	Gingham Carpet 
-798	790	0	8	2	Gingham Carpet 
-799	799	0	0	2	Stripy Wall
-800	799	0	1	2	Stripy Wall 
-801	799	0	2	2	Stripy Wall 
-802	799	0	3	2	Stripy Wall 
-803	799	0	4	2	Stripy Wall 
-804	799	0	5	2	Stripy Wall 
-805	799	0	6	2	Stripy Wall 
-806	799	0	7	2	Stripy Wall 
-807	799	0	8	2	Stripy Wall 
-808	808	0	0	2	Mottled Wall
-809	808	0	1	2	Mottled Wall 
-810	808	0	2	2	Mottled Wall 
-811	808	0	3	2	Mottled Wall 
-812	808	0	4	2	Mottled Wall 
-813	808	0	5	2	Mottled Wall 
-814	808	0	6	2	Mottled Wall 
-815	808	0	7	2	Mottled Wall 
-816	808	0	8	2	Mottled Wall 
-817	817	0	0	2	Slimy Wall
-818	818	0	0	2	Diamond Design Block
-819	819	0	0	2	Old-Skool Wall Block
-820	820	0	0	2	Art Deco Block
-821	821	0	0	2	Jungle Wall
-822	822	0	0	2	Vintage Wall
-823	823	0	0	2	Damask Design Block
-824	823	0	1	2	Damask Design Block 
-825	823	0	2	2	Damask Design Block 
-826	823	0	3	2	Damask Design Block 
-827	823	0	4	2	Damask Design Block 
-828	823	0	5	2	Damask Design Block 
-829	823	0	6	2	Damask Design Block 
-830	823	0	7	2	Damask Design Block 
-831	823	0	8	2	Damask Design Block 
-832	832	0	0	2	Refined Design Block
-833	833	0	0	2	Classy Cross Block
-834	715	0	1	2	Sunset-Styled Block 
-835	715	0	2	2	Sunset-Styled Block 
-836	715	0	3	2	Sunset-Styled Block 
-837	715	0	4	2	Sunset-Styled Block 
-838	715	0	5	2	Sunset-Styled Block 
-839	715	0	6	2	Sunset-Styled Block 
-840	715	0	7	2	Sunset-Styled Block 
-841	715	0	8	2	Sunset-Styled Block 
-842	716	0	1	2	Seaweed-Styled Block 
-843	716	0	2	2	Seaweed-Styled Block 
-844	716	0	3	2	Seaweed-Styled Block 
-845	716	0	4	2	Seaweed-Styled Block 
-846	716	0	5	2	Seaweed-Styled Block 
-847	716	0	6	2	Seaweed-Styled Block 
-848	716	0	7	2	Seaweed-Styled Block 
-849	716	0	8	2	Seaweed-Styled Block 
-850	822	0	1	2	Vintage Wall 
-851	822	0	2	2	Vintage Wall 
-852	822	0	3	2	Vintage Wall 
-853	822	0	4	2	Vintage Wall 
-854	822	0	5	2	Vintage Wall 
-855	822	0	6	2	Vintage Wall 
-856	822	0	7	2	Vintage Wall 
-857	822	0	8	2	Vintage Wall 
-858	38	4	0	8	Default Block
-859	38	4	0	8	Default Block
-860	38	4	0	8	Default Block
-861	38	4	0	8	Default Block
-862	38	4	0	8	Default Block
-863	38	4	0	8	Default Block
-864	38	4	0	8	Default Block
-865	38	4	0	8	Default Block
-866	38	4	0	8	Default Block
-867	38	4	0	8	Default Block
-868	38	4	0	8	Default Block
-869	38	4	0	8	Default Block
-870	38	4	0	8	Default Block
-871	38	4	0	8	Default Block
-872	38	4	0	8	Default Block
-873	38	4	0	8	Default Block
-874	38	4	0	8	Default Block
-875	38	4	0	8	Default Block
-876	38	4	0	8	Default Block
-877	38	4	0	8	Default Block
-878	38	4	0	8	Default Block
-879	38	4	0	8	Default Block
-880	38	4	0	8	Default Block
-881	38	4	0	8	Default Block
-882	38	4	0	8	Default Block
-883	38	4	0	8	Default Block
-884	38	4	0	8	Default Block
-885	38	4	0	8	Default Block
-886	38	4	0	8	Default Block
-887	38	4	0	8	Default Block
-888	38	4	0	8	Default Block
-889	38	4	0	8	Default Block
-890	38	4	0	8	Default Block
-891	38	4	0	8	Default Block
-892	38	4	0	8	Default Block
-893	38	4	0	8	Default Block
-894	38	4	0	8	Default Block
-895	38	4	0	8	Default Block
-896	38	4	0	8	Default Block
-897	38	4	0	8	Default Block
-898	38	4	0	8	Default Block
-899	38	4	0	8	Default Block
-900	38	4	0	8	Default Block
-901	38	4	0	8	Default Block
-902	38	4	0	8	Default Block
-903	38	4	0	8	Default Block
-904	38	4	0	8	Default Block
-905	38	4	0	8	Default Block
-906	38	4	0	8	Default Block
-907	38	4	0	8	Default Block
-908	38	4	0	8	Default Block
-909	38	4	0	8	Default Block
-910	38	4	0	8	Default Block
-911	38	4	0	8	Default Block
-912	38	4	0	8	Default Block
-913	38	4	0	8	Default Block
-914	38	4	0	8	Default Block
-915	38	4	0	8	Default Block
-916	38	4	0	8	Default Block
-917	38	4	0	8	Default Block
-918	38	4	0	8	Default Block
-919	38	4	0	8	Default Block
-920	38	4	0	8	Default Block
-921	38	4	0	8	Default Block
-922	38	4	0	8	Default Block
-923	38	4	0	8	Default Block
-924	38	4	0	8	Default Block
-925	38	4	0	8	Default Block
-926	38	4	0	8	Default Block
-927	38	4	0	8	Default Block
-928	38	4	0	8	Default Block
-929	38	4	0	8	Default Block
-930	38	4	0	8	Default Block
-931	38	4	0	8	Default Block
-932	38	4	0	8	Default Block
-933	38	4	0	8	Default Block
-934	38	4	0	8	Default Block
-935	38	4	0	8	Default Block
-936	38	4	0	8	Default Block
-937	38	4	0	8	Default Block
-938	38	4	0	8	Default Block
-939	38	4	0	8	Default Block
-940	38	4	0	8	Default Block
-941	38	4	0	8	Default Block
-942	38	4	0	8	Default Block
-943	38	4	0	8	Default Block
-944	38	4	0	8	Default Block
-945	38	4	0	8	Default Block
-946	38	4	0	8	Default Block
-947	38	4	0	8	Default Block
-948	38	4	0	8	Default Block
-949	38	4	0	8	Default Block
-950	38	4	0	8	Default Block
-951	38	4	0	8	Default Block
-952	38	4	0	8	Default Block
-953	38	4	0	8	Default Block
-954	38	4	0	8	Default Block
-955	38	4	0	8	Default Block
-956	38	4	0	8	Default Block
-957	38	4	0	8	Default Block
-958	38	4	0	8	Default Block
-959	38	4	0	8	Default Block
-960	38	4	0	8	Default Block
-961	38	4	0	8	Default Block
-962	38	4	0	8	Default Block
-963	38	4	0	8	Default Block
-964	38	4	0	8	Default Block
-965	38	4	0	8	Default Block
-966	38	4	0	8	Default Block
-967	38	4	0	8	Default Block
-968	38	4	0	8	Default Block
-969	38	4	0	8	Default Block
-970	38	4	0	8	Default Block
-971	38	4	0	8	Default Block
-972	38	4	0	8	Default Block
-973	38	4	0	8	Default Block
-974	38	4	0	8	Default Block
-975	38	4	0	8	Default Block
-976	38	4	0	8	Default Block
-977	38	4	0	8	Default Block
-978	38	4	0	8	Default Block
-979	38	4	0	8	Default Block
-980	38	4	0	8	Default Block
-981	38	4	0	8	Default Block
-982	38	4	0	8	Default Block
-983	38	4	0	8	Default Block
-984	38	4	0	8	Default Block
-985	38	4	0	8	Default Block
-986	38	4	0	8	Default Block
-987	38	4	0	8	Default Block
-988	38	4	0	8	Default Block
-989	38	4	0	8	Default Block
-990	38	4	0	8	Default Block
-991	38	4	0	8	Default Block
-992	38	4	0	8	Default Block
-993	38	4	0	8	Default Block
-994	38	4	0	8	Default Block
-995	38	4	0	8	Default Block
-996	38	4	0	8	Default Block
-997	38	4	0	8	Default Block
-998	38	4	0	8	Default Block
-999	38	4	0	8	Default Block
-1000	38	4	0	8	Default Block
-1001	38	4	0	8	Default Block
-1002	38	4	0	8	Default Block
-1003	38	4	0	8	Default Block
-1004	38	4	0	8	Default Block
-1005	38	4	0	8	Default Block
-1006	38	4	0	8	Default Block
-1007	38	4	0	8	Default Block
-1008	38	4	0	8	Default Block
-1009	38	4	0	8	Default Block
-1010	38	4	0	8	Default Block
-1011	38	4	0	8	Default Block
+674	91	1	0	8	Yellow Block*
+675	90	1	0	8	Orange Block*
+676	93	1	0	8	Blue Block*
+677	95	1	0	8	Cyan Block*
+678	54	0	0	3	Bronze Temple Tile
+679	55	0	0	3	Blue Temple Tile
+680	222	0	0	2	Seeded Limegrassy Earth
+681	223	0	0	2	Seeded Mossy Spoiled Soil
+682	224	0	0	1	Seeded Sand
+683	225	0	0	2	Seeded Earth
+684	226	0	0	1	Seeded Snow
+685	227	0	0	2	Seeded Grassy Earth
+686	228	0	0	2	Gravel Block
+687	229	0	0	2	Scaled Wall Block
+688	230	0	0	2	Slatted Wall Block
+689	231	0	0	2	Woven Straw Block
+690	231	0	0	2	Woven Straw Block
+691	231	0	0	2	Woven Straw Block
+692	231	0	0	2	Woven Straw Block
+693	231	0	0	2	Woven Straw Block
+694	229	0	1	2	Scaled Wall Block 
+695	229	0	2	2	Scaled Wall Block 
+696	229	0	3	2	Scaled Wall Block 
+697	229	0	4	2	Scaled Wall Block 
+698	229	0	5	2	Scaled Wall Block 
+699	229	0	6	2	Scaled Wall Block 
+700	229	0	7	2	Scaled Wall Block 
+701	229	0	8	2	Scaled Wall Block 
+702	232	0	0	2	Polka-Dot Block
+703	232	0	1	2	Polka-Dot Block 
+704	232	0	2	2	Polka-Dot Block 
+705	232	0	3	2	Polka-Dot Block 
+706	232	0	4	2	Polka-Dot Block 
+707	232	0	5	2	Polka-Dot Block 
+708	232	0	6	2	Polka-Dot Block 
+709	232	0	7	2	Polka-Dot Block 
+710	232	0	8	2	Polka-Dot Block 
+711	233	0	0	2	Faux Floral Floor Block
+712	234	0	0	2	Palm-Patterned Block
+713	235	0	0	2	Fruity Fiend Block
+714	236	0	0	2	Chequered Block
+715	237	0	0	2	Sunset-Styled Block
+716	238	0	0	2	Seaweed-Styled Block
+717	239	0	0	2	Stylish Stripy Block
+718	240	0	0	2	Seaside Scene Block
+719	241	0	0	2	Abstract Floral Floor Block
+720	242	0	0	2	Herringbone Floorboard Block
+721	243	0	0	2	Night Sky Wall Block
+722	244	0	0	2	Granite Floor Block
+723	245	0	0	2	Stucco Wall Block
+724	245	0	1	2	Stucco Wall Block 
+725	245	0	2	2	Stucco Wall Block 
+726	245	0	3	2	Stucco Wall Block 
+727	245	0	4	2	Stucco Wall Block 
+728	245	0	5	2	Stucco Wall Block 
+729	245	0	6	2	Stucco Wall Block 
+730	245	0	7	2	Stucco Wall Block 
+731	245	0	8	2	Stucco Wall Block 
+732	234	0	1	2	Palm-Patterned Block 
+733	234	0	2	2	Palm-Patterned Block 
+734	234	0	3	2	Palm-Patterned Block 
+735	234	0	4	2	Palm-Patterned Block 
+736	234	0	5	2	Palm-Patterned Block 
+737	234	0	6	2	Palm-Patterned Block 
+738	234	0	7	2	Palm-Patterned Block 
+739	234	0	8	2	Palm-Patterned Block 
+740	236	0	1	2	Chequered Block 
+741	236	0	2	2	Chequered Block 
+742	236	0	3	2	Chequered Block 
+743	236	0	4	2	Chequered Block 
+744	236	0	5	2	Chequered Block 
+745	236	0	6	2	Chequered Block 
+746	236	0	7	2	Chequered Block 
+747	236	0	8	2	Chequered Block 
+748	239	0	1	2	Stylish Stripy Block 
+749	239	0	2	2	Stylish Stripy Block 
+750	239	0	3	2	Stylish Stripy Block 
+751	239	0	4	2	Stylish Stripy Block 
+752	239	0	5	2	Stylish Stripy Block 
+753	239	0	6	2	Stylish Stripy Block 
+754	239	0	7	2	Stylish Stripy Block 
+755	239	0	8	2	Stylish Stripy Block 
+756	242	0	1	2	Herringbone Floorboard Block 
+757	242	0	2	2	Herringbone Floorboard Block 
+758	242	0	3	2	Herringbone Floorboard Block 
+759	242	0	4	2	Herringbone Floorboard Block 
+760	242	0	5	2	Herringbone Floorboard Block 
+761	242	0	6	2	Herringbone Floorboard Block 
+762	242	0	7	2	Herringbone Floorboard Block 
+763	242	0	8	2	Herringbone Floorboard Block 
+764	243	0	1	2	Night Sky Wall Block 
+765	243	0	2	2	Night Sky Wall Block 
+766	243	0	3	2	Night Sky Wall Block 
+767	243	0	4	2	Night Sky Wall Block 
+768	243	0	5	2	Night Sky Wall Block 
+769	243	0	6	2	Night Sky Wall Block 
+770	243	0	7	2	Night Sky Wall Block 
+771	243	0	8	2	Night Sky Wall Block 
+772	246	0	0	2	Modern Masonry Block
+773	246	0	1	2	Modern Masonry Block 
+774	246	0	2	2	Modern Masonry Block 
+775	246	0	3	2	Modern Masonry Block 
+776	246	0	4	2	Modern Masonry Block 
+777	246	0	5	2	Modern Masonry Block 
+778	246	0	6	2	Modern Masonry Block 
+779	246	0	7	2	Modern Masonry Block 
+780	246	0	8	2	Modern Masonry Block 
+781	247	0	0	2	Chintzy Block
+782	247	0	1	2	Chintzy Block 
+783	247	0	2	2	Chintzy Block 
+784	247	0	3	2	Chintzy Block 
+785	247	0	4	2	Chintzy Block 
+786	247	0	5	2	Chintzy Block 
+787	247	0	6	2	Chintzy Block 
+788	247	0	7	2	Chintzy Block 
+789	247	0	8	2	Chintzy Block 
+790	248	0	0	2	Gingham Carpet
+791	248	0	1	2	Gingham Carpet 
+792	248	0	2	2	Gingham Carpet 
+793	248	0	3	2	Gingham Carpet 
+794	248	0	4	2	Gingham Carpet 
+795	248	0	5	2	Gingham Carpet 
+796	248	0	6	2	Gingham Carpet 
+797	248	0	7	2	Gingham Carpet 
+798	248	0	8	2	Gingham Carpet 
+799	249	0	0	2	Stripy Wall
+800	249	0	1	2	Stripy Wall 
+801	249	0	2	2	Stripy Wall 
+802	249	0	3	2	Stripy Wall 
+803	249	0	4	2	Stripy Wall 
+804	249	0	5	2	Stripy Wall 
+805	249	0	6	2	Stripy Wall 
+806	249	0	7	2	Stripy Wall 
+807	249	0	8	2	Stripy Wall 
+808	250	0	0	2	Mottled Wall
+809	250	0	1	2	Mottled Wall 
+810	250	0	2	2	Mottled Wall 
+811	250	0	3	2	Mottled Wall 
+812	250	0	4	2	Mottled Wall 
+813	250	0	5	2	Mottled Wall 
+814	250	0	6	2	Mottled Wall 
+815	250	0	7	2	Mottled Wall 
+816	250	0	8	2	Mottled Wall 
+817	251	0	0	2	Slimy Wall
+818	252	0	0	2	Diamond Design Block
+819	253	0	0	2	Old-Skool Wall Block
+820	254	0	0	2	Art Deco Block
+821	255	0	0	2	Jungle Wall
+822	256	0	0	2	Vintage Wall
+823	257	0	0	2	Damask Design Block
+824	257	0	1	2	Damask Design Block 
+825	257	0	2	2	Damask Design Block 
+826	257	0	3	2	Damask Design Block 
+827	257	0	4	2	Damask Design Block 
+828	257	0	5	2	Damask Design Block 
+829	257	0	6	2	Damask Design Block 
+830	257	0	7	2	Damask Design Block 
+831	257	0	8	2	Damask Design Block 
+832	258	0	0	2	Refined Design Block
+833	259	0	0	2	Classy Cross Block
+834	237	0	1	2	Sunset-Styled Block 
+835	237	0	2	2	Sunset-Styled Block 
+836	237	0	3	2	Sunset-Styled Block 
+837	237	0	4	2	Sunset-Styled Block 
+838	237	0	5	2	Sunset-Styled Block 
+839	237	0	6	2	Sunset-Styled Block 
+840	237	0	7	2	Sunset-Styled Block 
+841	237	0	8	2	Sunset-Styled Block 
+842	238	0	1	2	Seaweed-Styled Block 
+843	238	0	2	2	Seaweed-Styled Block 
+844	238	0	3	2	Seaweed-Styled Block 
+845	238	0	4	2	Seaweed-Styled Block 
+846	238	0	5	2	Seaweed-Styled Block 
+847	238	0	6	2	Seaweed-Styled Block 
+848	238	0	7	2	Seaweed-Styled Block 
+849	238	0	8	2	Seaweed-Styled Block 
+850	256	0	1	2	Vintage Wall 
+851	256	0	2	2	Vintage Wall 
+852	256	0	3	2	Vintage Wall 
+853	256	0	4	2	Vintage Wall 
+854	256	0	5	2	Vintage Wall 
+855	256	0	6	2	Vintage Wall 
+856	256	0	7	2	Vintage Wall 
+857	256	0	8	2	Vintage Wall 
+858	37	4	0	8	Default Block
+859	37	4	0	8	Default Block
+860	37	4	0	8	Default Block
+861	37	4	0	8	Default Block
+862	37	4	0	8	Default Block
+863	37	4	0	8	Default Block
+864	37	4	0	8	Default Block
+865	37	4	0	8	Default Block
+866	37	4	0	8	Default Block
+867	37	4	0	8	Default Block
+868	37	4	0	8	Default Block
+869	37	4	0	8	Default Block
+870	37	4	0	8	Default Block
+871	37	4	0	8	Default Block
+872	37	4	0	8	Default Block
+873	37	4	0	8	Default Block
+874	37	4	0	8	Default Block
+875	37	4	0	8	Default Block
+876	37	4	0	8	Default Block
+877	37	4	0	8	Default Block
+878	37	4	0	8	Default Block
+879	37	4	0	8	Default Block
+880	37	4	0	8	Default Block
+881	37	4	0	8	Default Block
+882	37	4	0	8	Default Block
+883	37	4	0	8	Default Block
+884	37	4	0	8	Default Block
+885	37	4	0	8	Default Block
+886	37	4	0	8	Default Block
+887	37	4	0	8	Default Block
+888	37	4	0	8	Default Block
+889	37	4	0	8	Default Block
+890	37	4	0	8	Default Block
+891	37	4	0	8	Default Block
+892	37	4	0	8	Default Block
+893	37	4	0	8	Default Block
+894	37	4	0	8	Default Block
+895	37	4	0	8	Default Block
+896	37	4	0	8	Default Block
+897	37	4	0	8	Default Block
+898	37	4	0	8	Default Block
+899	37	4	0	8	Default Block
+900	37	4	0	8	Default Block
+901	37	4	0	8	Default Block
+902	37	4	0	8	Default Block
+903	37	4	0	8	Default Block
+904	37	4	0	8	Default Block
+905	37	4	0	8	Default Block
+906	37	4	0	8	Default Block
+907	37	4	0	8	Default Block
+908	37	4	0	8	Default Block
+909	37	4	0	8	Default Block
+910	37	4	0	8	Default Block
+911	37	4	0	8	Default Block
+912	37	4	0	8	Default Block
+913	37	4	0	8	Default Block
+914	37	4	0	8	Default Block
+915	37	4	0	8	Default Block
+916	37	4	0	8	Default Block
+917	37	4	0	8	Default Block
+918	37	4	0	8	Default Block
+919	37	4	0	8	Default Block
+920	37	4	0	8	Default Block
+921	37	4	0	8	Default Block
+922	37	4	0	8	Default Block
+923	37	4	0	8	Default Block
+924	37	4	0	8	Default Block
+925	37	4	0	8	Default Block
+926	37	4	0	8	Default Block
+927	37	4	0	8	Default Block
+928	37	4	0	8	Default Block
+929	37	4	0	8	Default Block
+930	37	4	0	8	Default Block
+931	37	4	0	8	Default Block
+932	37	4	0	8	Default Block
+933	37	4	0	8	Default Block
+934	37	4	0	8	Default Block
+935	37	4	0	8	Default Block
+936	37	4	0	8	Default Block
+937	37	4	0	8	Default Block
+938	37	4	0	8	Default Block
+939	37	4	0	8	Default Block
+940	37	4	0	8	Default Block
+941	37	4	0	8	Default Block
+942	37	4	0	8	Default Block
+943	37	4	0	8	Default Block
+944	37	4	0	8	Default Block
+945	37	4	0	8	Default Block
+946	37	4	0	8	Default Block
+947	37	4	0	8	Default Block
+948	37	4	0	8	Default Block
+949	37	4	0	8	Default Block
+950	37	4	0	8	Default Block
+951	37	4	0	8	Default Block
+952	37	4	0	8	Default Block
+953	37	4	0	8	Default Block
+954	37	4	0	8	Default Block
+955	37	4	0	8	Default Block
+956	37	4	0	8	Default Block
+957	37	4	0	8	Default Block
+958	37	4	0	8	Default Block
+959	37	4	0	8	Default Block
+960	37	4	0	8	Default Block
+961	37	4	0	8	Default Block
+962	37	4	0	8	Default Block
+963	37	4	0	8	Default Block
+964	37	4	0	8	Default Block
+965	37	4	0	8	Default Block
+966	37	4	0	8	Default Block
+967	37	4	0	8	Default Block
+968	37	4	0	8	Default Block
+969	37	4	0	8	Default Block
+970	37	4	0	8	Default Block
+971	37	4	0	8	Default Block
+972	37	4	0	8	Default Block
+973	37	4	0	8	Default Block
+974	37	4	0	8	Default Block
+975	37	4	0	8	Default Block
+976	37	4	0	8	Default Block
+977	37	4	0	8	Default Block
+978	37	4	0	8	Default Block
+979	37	4	0	8	Default Block
+980	37	4	0	8	Default Block
+981	37	4	0	8	Default Block
+982	37	4	0	8	Default Block
+983	37	4	0	8	Default Block
+984	37	4	0	8	Default Block
+985	37	4	0	8	Default Block
+986	37	4	0	8	Default Block
+987	37	4	0	8	Default Block
+988	37	4	0	8	Default Block
+989	37	4	0	8	Default Block
+990	37	4	0	8	Default Block
+991	37	4	0	8	Default Block
+992	37	4	0	8	Default Block
+993	37	4	0	8	Default Block
+994	37	4	0	8	Default Block
+995	37	4	0	8	Default Block
+996	37	4	0	8	Default Block
+997	37	4	0	8	Default Block
+998	37	4	0	8	Default Block
+999	37	4	0	8	Default Block
+1000	37	4	0	8	Default Block
+1001	37	4	0	8	Default Block
+1002	37	4	0	8	Default Block
+1003	37	4	0	8	Default Block
+1004	37	4	0	8	Default Block
+1005	37	4	0	8	Default Block
+1006	37	4	0	8	Default Block
+1007	37	4	0	8	Default Block
+1008	37	4	0	8	Default Block
+1009	37	4	0	8	Default Block
+1010	37	4	0	8	Default Block
+1011	37	4	0	8	Default Block
 1012	-1	1	0	0	Black Void
-1013	38	4	0	8	Default Block
-1014	38	4	0	8	Default Block
-1015	38	4	0	8	Default Block
-1016	38	4	0	8	Default Block
-1017	38	4	0	8	Default Block
-1018	38	4	0	8	Default Block
-1019	38	4	0	8	Default Block
-1020	38	4	0	8	Default Block
-1021	38	4	0	8	Default Block
-1022	38	4	0	8	Default Block
-1023	38	4	0	8	Default Block
-1024	38	4	0	8	Default Block
-1025	38	4	0	8	Default Block
-1026	38	4	0	8	Default Block
-1027	38	4	0	8	Default Block
-1028	38	4	0	8	Default Block
-1029	38	4	0	8	Default Block
-1030	38	4	0	8	Default Block
-1031	38	4	0	8	Default Block
-1032	38	4	0	8	Default Block
-1033	38	4	0	8	Default Block
-1034	38	4	0	8	Default Block
-1035	38	4	0	8	Default Block
-1036	38	4	0	8	Default Block
-1037	38	4	0	8	Default Block
-1038	38	4	0	8	Default Block
-1039	38	4	0	8	Default Block
-1040	38	4	0	8	Default Block
-1041	38	4	0	8	Default Block
-1042	38	4	0	8	Default Block
-1043	38	4	0	8	Default Block
-1044	38	4	0	8	Default Block
-1045	38	4	0	8	Default Block
-1046	38	4	0	8	Default Block
-1047	38	4	0	8	Default Block
-1048	38	4	0	8	Default Block
-1049	38	4	0	8	Default Block
-1050	38	4	0	8	Default Block
-1051	38	4	0	8	Default Block
-1052	38	4	0	8	Default Block
-1053	38	4	0	8	Default Block
-1054	38	4	0	8	Default Block
-1055	38	4	0	8	Default Block
-1056	38	4	0	8	Default Block
-1057	38	4	0	8	Default Block
-1058	38	4	0	8	Default Block
-1059	38	4	0	8	Default Block
-1060	38	4	0	8	Default Block
-1061	38	4	0	8	Default Block
-1062	38	4	0	8	Default Block
-1063	38	4	0	8	Default Block
-1064	38	4	0	8	Default Block
-1065	38	4	0	8	Default Block
-1066	38	4	0	8	Default Block
-1067	38	4	0	8	Default Block
-1068	38	4	0	8	Default Block
-1069	38	4	0	8	Default Block
-1070	38	4	0	8	Default Block
-1071	38	4	0	8	Default Block
-1072	38	4	0	8	Default Block
-1073	38	4	0	8	Default Block
-1074	38	4	0	8	Default Block
-1075	38	4	0	8	Default Block
-1076	38	4	0	8	Default Block
-1077	38	4	0	8	Default Block
-1078	38	4	0	8	Default Block
-1079	38	4	0	8	Default Block
-1080	38	4	0	8	Default Block
-1081	38	4	0	8	Default Block
-1082	38	4	0	8	Default Block
-1083	38	4	0	8	Default Block
-1084	38	4	0	8	Default Block
-1085	38	4	0	8	Default Block
-1086	38	4	0	8	Default Block
-1087	38	4	0	8	Default Block
-1088	38	4	0	8	Default Block
-1089	38	4	0	8	Default Block
-1090	38	4	0	8	Default Block
-1091	38	4	0	8	Default Block
-1092	38	4	0	8	Default Block
-1093	38	4	0	8	Default Block
-1094	38	4	0	8	Default Block
-1095	38	4	0	8	Default Block
-1096	38	4	0	8	Default Block
-1097	38	4	0	8	Default Block
-1098	38	4	0	8	Default Block
-1099	38	4	0	8	Default Block
-1100	38	4	0	8	Default Block
-1101	38	4	0	8	Default Block
-1102	38	4	0	8	Default Block
-1103	38	4	0	8	Default Block
-1104	38	4	0	8	Default Block
-1105	38	4	0	8	Default Block
-1106	38	4	0	8	Default Block
-1107	38	4	0	8	Default Block
-1108	38	4	0	8	Default Block
-1109	38	4	0	8	Default Block
-1110	38	4	0	8	Default Block
-1111	38	4	0	8	Default Block
-1112	38	4	0	8	Default Block
-1113	38	4	0	8	Default Block
-1114	38	4	0	8	Default Block
-1115	38	4	0	8	Default Block
-1116	38	4	0	8	Default Block
-1117	38	4	0	8	Default Block
-1118	38	4	0	8	Default Block
-1119	38	4	0	8	Default Block
-1120	38	4	0	8	Default Block
-1121	38	4	0	8	Default Block
-1122	38	4	0	8	Default Block
-1123	38	4	0	8	Default Block
-1124	38	4	0	8	Default Block
-1125	38	4	0	8	Default Block
-1126	38	4	0	8	Default Block
-1127	38	4	0	8	Default Block
-1128	38	4	0	8	Default Block
-1129	38	4	0	8	Default Block
-1130	38	4	0	8	Default Block
-1131	38	4	0	8	Default Block
-1132	38	4	0	8	Default Block
-1133	38	4	0	8	Default Block
-1134	38	4	0	8	Default Block
-1135	38	4	0	8	Default Block
-1136	38	4	0	8	Default Block
-1137	38	4	0	8	Default Block
-1138	38	4	0	8	Default Block
-1139	38	4	0	8	Default Block
-1140	38	4	0	8	Default Block
-1141	38	4	0	8	Default Block
-1142	38	4	0	8	Default Block
-1143	38	4	0	8	Default Block
-1144	38	4	0	8	Default Block
-1145	38	4	0	8	Default Block
-1146	38	4	0	8	Default Block
-1147	38	4	0	8	Default Block
-1148	38	4	0	8	Default Block
-1149	38	4	0	8	Default Block
-1150	38	4	0	8	Default Block
-1151	38	4	0	8	Default Block
-1152	38	4	0	8	Default Block
-1153	38	4	0	8	Default Block
-1154	38	4	0	8	Default Block
-1155	38	4	0	8	Default Block
-1156	38	4	0	8	Default Block
-1157	38	4	0	8	Default Block
-1158	120	0	0	0	Clear Water Full Block (Fence)
-1159	120	0	0	0	Clear Water Shallow Block (Fence)
-1160	120	0	0	0	Clear Water Surface Block (Fence)
-1161	120	0	0	0	Clear Water Small Block (Fence)
-1162	120	0	0	0	Clear Water Surface Block (Fence)
-1163	120	0	0	0	Clear Water Surface Block (Fence)
-1164	120	0	0	0	Clear Water Surface Block (Fence)
-1165	120	0	0	0	Clear Water Surface Block (Fence)
-1166	120	0	0	0	Clear Water Surface Block (Fence)
-1167	120	0	0	0	Clear Water Surface Block (Fence)
-1168	120	0	0	0	Clear Water Full Block (Fence)
-1169	231	0	0	0	Hot Water Full Block (Fence)
-1170	231	0	0	0	Hot Water Shallow Block (Fence)
-1171	231	0	0	0	Hot Water Surface Block (Fence)
-1172	231	0	0	0	Hot Water Small Block (Fence)
-1173	231	0	0	0	Hot Water Surface Block (Fence)
-1174	231	0	0	0	Hot Water Surface Block (Fence)
-1175	231	0	0	0	Hot Water Surface Block (Fence)
-1176	231	0	0	0	Hot Water Surface Block (Fence)
-1177	231	0	0	0	Hot Water Surface Block (Fence)
-1178	231	0	0	0	Hot Water Surface Block (Fence)
-1179	231	0	0	0	Hot Water Full Block (Fence)
-1180	190	0	0	0	Poison Full Block (Fence)
-1181	190	0	0	0	Poison Shallow Block (Fence)
-1182	190	0	0	0	Poison Surface Block (Fence)
-1183	190	0	0	0	Poison Small Block (Fence)
-1184	190	0	0	0	Poison Surface Block (Fence)
-1185	190	0	0	0	Poison Surface Block (Fence)
-1186	190	0	0	0	Poison Surface Block (Fence)
-1187	190	0	0	0	Poison Surface Block (Fence)
-1188	190	0	0	0	Poison Surface Block (Fence)
-1189	190	0	0	0	Poison Surface Block (Fence)
-1190	190	0	0	0	Poison Full Block (Fence)
-1191	267	0	0	0	Liquid Lava Full Block (Fence)
-1192	267	0	0	0	Liquid Lava Shallow Block (Fence)
-1193	267	0	0	0	Liquid Lava Surface Block (Fence)
-1194	267	0	0	0	Liquid Lava Small Block (Fence)
-1195	267	0	0	0	Liquid Lava Surface Block (Fence)
-1196	267	0	0	0	Liquid Lava Surface Block (Fence)
-1197	267	0	0	0	Liquid Lava Surface Block (Fence)
-1198	267	0	0	0	Liquid Lava Surface Block (Fence)
-1199	267	0	0	0	Liquid Lava Surface Block (Fence)
-1200	267	0	0	0	Liquid Lava Surface Block (Fence)
-1201	267	0	0	0	Liquid Lava Full Block (Fence)
-1202	199	0	0	0	Bottomless Swamp Full Block (Fence)
-1203	199	0	0	0	Bottomless Swamp Shallow Block (Fence)
-1204	199	0	0	0	Bottomless Swamp Surface Block (Fence)
-1205	199	0	0	0	Bottomless Swamp Small Block (Fence)
-1206	199	0	0	0	Bottomless Swamp Surface Block (Fence)
-1207	199	0	0	0	Bottomless Swamp Surface Block (Fence)
-1208	199	0	0	0	Bottomless Swamp Surface Block (Fence)
-1209	199	0	0	0	Bottomless Swamp Surface Block (Fence)
-1210	199	0	0	0	Bottomless Swamp Surface Block (Fence)
-1211	199	0	0	0	Bottomless Swamp Surface Block (Fence)
-1212	199	0	0	0	Bottomless Swamp Full Block (Fence)
-1213	208	0	0	0	Filthy Water Full Block (Fence)
-1214	208	0	0	0	Filthy Water Shallow Block (Fence)
-1215	208	0	0	0	Filthy Water Surface Block (Fence)
-1216	208	0	0	0	Filthy Water Small Block (Fence)
-1217	208	0	0	0	Filthy Water Surface Block (Fence)
-1218	208	0	0	0	Filthy Water Surface Block (Fence)
-1219	208	0	0	0	Filthy Water Surface Block (Fence)
-1220	208	0	0	0	Filthy Water Surface Block (Fence)
-1221	208	0	0	0	Filthy Water Surface Block (Fence)
-1222	208	0	0	0	Filthy Water Surface Block (Fence)
-1223	208	0	0	0	Filthy Water Full Block (Fence)
-1224	349	0	0	0	Sea Water Full Block (Fence)
-1225	349	0	0	0	Sea Water Shallow Block (Fence)
-1226	349	0	0	0	Sea Water Surface Block (Fence)
-1227	349	0	0	0	Sea Water Small Block (Fence)
-1228	349	0	0	0	Sea Water Surface Block (Fence)
-1229	349	0	0	0	Sea Water Surface Block (Fence)
-1230	349	0	0	0	Sea Water Surface Block (Fence)
-1231	349	0	0	0	Sea Water Surface Block (Fence)
-1232	349	0	0	0	Sea Water Surface Block (Fence)
-1233	349	0	0	0	Sea Water Surface Block (Fence)
-1234	349	0	0	0	Sea Water Full Block (Fence)
-1235	390	0	0	0	Plasma Full Block (Fence)
-1236	390	0	0	0	Plasma Shallow Block (Fence)
-1237	390	0	0	0	Plasma Surface Block (Fence)
-1238	390	0	0	0	Plasma Small Block (Fence)
-1239	390	0	0	0	Plasma Surface Block (Fence)
-1240	390	0	0	0	Plasma Surface Block (Fence)
-1241	390	0	0	0	Plasma Surface Block (Fence)
-1242	390	0	0	0	Plasma Surface Block (Fence)
-1243	390	0	0	0	Plasma Surface Block (Fence)
-1244	390	0	0	0	Plasma Surface Block (Fence)
-1245	390	0	0	0	Plasma Full Block (Fence)
-1246	1246	3	0	0	Item (Fence)
-1247	120	0	0	0	Clear Water Full Block (<pan>)
-1248	120	0	0	0	Clear Water Shallow Block (<pan>)
-1249	120	0	0	0	Clear Water Surface Block (<pan>)
-1250	120	0	0	0	Clear Water Small Block (<pan>)
-1251	120	0	0	0	Clear Water Surface Block (<pan>)
-1252	120	0	0	0	Clear Water Surface Block (<pan>)
-1253	120	0	0	0	Clear Water Surface Block (<pan>)
-1254	120	0	0	0	Clear Water Surface Block (<pan>)
-1255	120	0	0	0	Clear Water Surface Block (<pan>)
-1256	120	0	0	0	Clear Water Surface Block (<pan>)
-1257	120	0	0	0	Clear Water Full Block (<pan>)
-1258	231	0	0	0	Hot Water Full Block (<pan>)
-1259	231	0	0	0	Hot Water Shallow Block (<pan>)
-1260	231	0	0	0	Hot Water Surface Block (<pan>)
-1261	231	0	0	0	Hot Water Small Block (<pan>)
-1262	231	0	0	0	Hot Water Surface Block (<pan>)
-1263	231	0	0	0	Hot Water Surface Block (<pan>)
-1264	231	0	0	0	Hot Water Surface Block (<pan>)
-1265	231	0	0	0	Hot Water Surface Block (<pan>)
-1266	231	0	0	0	Hot Water Surface Block (<pan>)
-1267	231	0	0	0	Hot Water Surface Block (<pan>)
-1268	231	0	0	0	Hot Water Full Block (<pan>)
-1269	190	0	0	0	Poison Full Block (<pan>)
-1270	190	0	0	0	Poison Shallow Block (<pan>)
-1271	190	0	0	0	Poison Surface Block (<pan>)
-1272	190	0	0	0	Poison Small Block (<pan>)
-1273	190	0	0	0	Poison Surface Block (<pan>)
-1274	190	0	0	0	Poison Surface Block (<pan>)
-1275	190	0	0	0	Poison Surface Block (<pan>)
-1276	190	0	0	0	Poison Surface Block (<pan>)
-1277	190	0	0	0	Poison Surface Block (<pan>)
-1278	190	0	0	0	Poison Surface Block (<pan>)
-1279	190	0	0	0	Poison Full Block (<pan>)
-1280	267	0	0	0	Liquid Lava Full Block (<pan>)
-1281	267	0	0	0	Liquid Lava Shallow Block (<pan>)
-1282	267	0	0	0	Liquid Lava Surface Block (<pan>)
-1283	267	0	0	0	Liquid Lava Small Block (<pan>)
-1284	267	0	0	0	Liquid Lava Surface Block (<pan>)
-1285	267	0	0	0	Liquid Lava Surface Block (<pan>)
-1286	267	0	0	0	Liquid Lava Surface Block (<pan>)
-1287	267	0	0	0	Liquid Lava Surface Block (<pan>)
-1288	267	0	0	0	Liquid Lava Surface Block (<pan>)
-1289	267	0	0	0	Liquid Lava Surface Block (<pan>)
-1290	267	0	0	0	Liquid Lava Full Block (<pan>)
-1291	199	0	0	0	Bottomless Swamp Full Block (<pan>)
-1292	199	0	0	0	Bottomless Swamp Shallow Block (<pan>)
-1293	199	0	0	0	Bottomless Swamp Surface Block (<pan>)
-1294	199	0	0	0	Bottomless Swamp Small Block (<pan>)
-1295	199	0	0	0	Bottomless Swamp Surface Block (<pan>)
-1296	199	0	0	0	Bottomless Swamp Surface Block (<pan>)
-1297	199	0	0	0	Bottomless Swamp Surface Block (<pan>)
-1298	199	0	0	0	Bottomless Swamp Surface Block (<pan>)
-1299	199	0	0	0	Bottomless Swamp Surface Block (<pan>)
-1300	199	0	0	0	Bottomless Swamp Surface Block (<pan>)
-1301	199	0	0	0	Bottomless Swamp Full Block (<pan>)
-1302	208	0	0	0	Filthy Water Full Block (<pan>)
-1303	208	0	0	0	Filthy Water Shallow Block (<pan>)
-1304	208	0	0	0	Filthy Water Surface Block (<pan>)
-1305	208	0	0	0	Filthy Water Small Block (<pan>)
-1306	208	0	0	0	Filthy Water Surface Block (<pan>)
-1307	208	0	0	0	Filthy Water Surface Block (<pan>)
-1308	208	0	0	0	Filthy Water Surface Block (<pan>)
-1309	208	0	0	0	Filthy Water Surface Block (<pan>)
-1310	208	0	0	0	Filthy Water Surface Block (<pan>)
-1311	208	0	0	0	Filthy Water Surface Block (<pan>)
-1312	208	0	0	0	Filthy Water Full Block (<pan>)
-1313	349	0	0	0	Sea Water Full Block (<pan>)
-1314	349	0	0	0	Sea Water Shallow Block (<pan>)
-1315	349	0	0	0	Sea Water Surface Block (<pan>)
-1316	349	0	0	0	Sea Water Small Block (<pan>)
-1317	349	0	0	0	Sea Water Surface Block (<pan>)
-1318	349	0	0	0	Sea Water Surface Block (<pan>)
-1319	349	0	0	0	Sea Water Surface Block (<pan>)
-1320	349	0	0	0	Sea Water Surface Block (<pan>)
-1321	349	0	0	0	Sea Water Surface Block (<pan>)
-1322	349	0	0	0	Sea Water Surface Block (<pan>)
-1323	349	0	0	0	Sea Water Full Block (<pan>)
-1324	390	0	0	0	Plasma Full Block (<pan>)
-1325	390	0	0	0	Plasma Shallow Block (<pan>)
-1326	390	0	0	0	Plasma Surface Block (<pan>)
-1327	390	0	0	0	Plasma Small Block (<pan>)
-1328	390	0	0	0	Plasma Surface Block (<pan>)
-1329	390	0	0	0	Plasma Surface Block (<pan>)
-1330	390	0	0	0	Plasma Surface Block (<pan>)
-1331	390	0	0	0	Plasma Surface Block (<pan>)
-1332	390	0	0	0	Plasma Surface Block (<pan>)
-1333	390	0	0	0	Plasma Surface Block (<pan>)
-1334	390	0	0	0	Plasma Full Block (<pan>)
-1335	2047	3	0	0	Item
-1336	120	0	0	0	Clear Water Full Block (<track>)
-1337	120	0	0	0	Clear Water Shallow Block (<track>)
-1338	120	0	0	0	Clear Water Surface Block (<track>)
-1339	120	0	0	0	Clear Water Small Block (<track>)
-1340	120	0	0	0	Clear Water Surface Block (<track>)
-1341	120	0	0	0	Clear Water Surface Block (<track>)
-1342	120	0	0	0	Clear Water Surface Block (<track>)
-1343	120	0	0	0	Clear Water Surface Block (<track>)
-1344	120	0	0	0	Clear Water Surface Block (<track>)
-1345	120	0	0	0	Clear Water Surface Block (<track>)
-1346	120	0	0	0	Clear Water Full Block (<track>)
-1347	231	0	0	0	Hot Water Full Block (<track>)
-1348	231	0	0	0	Hot Water Shallow Block (<track>)
-1349	231	0	0	0	Hot Water Surface Block (<track>)
-1350	231	0	0	0	Hot Water Small Block (<track>)
-1351	231	0	0	0	Hot Water Surface Block (<track>)
-1352	231	0	0	0	Hot Water Surface Block (<track>)
-1353	231	0	0	0	Hot Water Surface Block (<track>)
-1354	231	0	0	0	Hot Water Surface Block (<track>)
-1355	231	0	0	0	Hot Water Surface Block (<track>)
-1356	231	0	0	0	Hot Water Surface Block (<track>)
-1357	231	0	0	0	Hot Water Full Block (<track>)
-1358	190	0	0	0	Poison Full Block (<track>)
-1359	190	0	0	0	Poison Shallow Block (<track>)
-1360	190	0	0	0	Poison Surface Block (<track>)
-1361	190	0	0	0	Poison Small Block (<track>)
-1362	190	0	0	0	Poison Surface Block (<track>)
-1363	190	0	0	0	Poison Surface Block (<track>)
-1364	190	0	0	0	Poison Surface Block (<track>)
-1365	190	0	0	0	Poison Surface Block (<track>)
-1366	190	0	0	0	Poison Surface Block (<track>)
-1367	190	0	0	0	Poison Surface Block (<track>)
-1368	190	0	0	0	Poison Full Block (<track>)
-1369	267	0	0	0	Liquid Lava Full Block (<track>)
-1370	267	0	0	0	Liquid Lava Shallow Block (<track>)
-1371	267	0	0	0	Liquid Lava Surface Block (<track>)
-1372	267	0	0	0	Liquid Lava Small Block (<track>)
-1373	267	0	0	0	Liquid Lava Surface Block (<track>)
-1374	267	0	0	0	Liquid Lava Surface Block (<track>)
-1375	267	0	0	0	Liquid Lava Surface Block (<track>)
-1376	267	0	0	0	Liquid Lava Surface Block (<track>)
-1377	267	0	0	0	Liquid Lava Surface Block (<track>)
-1378	267	0	0	0	Liquid Lava Surface Block (<track>)
-1379	267	0	0	0	Liquid Lava Full Block (<track>)
-1380	199	0	0	0	Bottomless Swamp Full Block (<track>)
-1381	199	0	0	0	Bottomless Swamp Shallow Block (<track>)
-1382	199	0	0	0	Bottomless Swamp Surface Block (<track>)
-1383	199	0	0	0	Bottomless Swamp Small Block (<track>)
-1384	199	0	0	0	Bottomless Swamp Surface Block (<track>)
-1385	199	0	0	0	Bottomless Swamp Surface Block (<track>)
-1386	199	0	0	0	Bottomless Swamp Surface Block (<track>)
-1387	199	0	0	0	Bottomless Swamp Surface Block (<track>)
-1388	199	0	0	0	Bottomless Swamp Surface Block (<track>)
-1389	199	0	0	0	Bottomless Swamp Surface Block (<track>)
-1390	199	0	0	0	Bottomless Swamp Full Block (<track>)
-1391	208	0	0	0	Filthy Water Full Block (<track>)
-1392	208	0	0	0	Filthy Water Shallow Block (<track>)
-1393	208	0	0	0	Filthy Water Surface Block (<track>)
-1394	208	0	0	0	Filthy Water Small Block (<track>)
-1395	208	0	0	0	Filthy Water Surface Block (<track>)
-1396	208	0	0	0	Filthy Water Surface Block (<track>)
-1397	208	0	0	0	Filthy Water Surface Block (<track>)
-1398	208	0	0	0	Filthy Water Surface Block (<track>)
-1399	208	0	0	0	Filthy Water Surface Block (<track>)
-1400	208	0	0	0	Filthy Water Surface Block (<track>)
-1401	208	0	0	0	Filthy Water Full Block (<track>)
-1402	349	0	0	0	Sea Water Full Block (<track>)
-1403	349	0	0	0	Sea Water Shallow Block (<track>)
-1404	349	0	0	0	Sea Water Surface Block (<track>)
-1405	349	0	0	0	Sea Water Small Block (<track>)
-1406	349	0	0	0	Sea Water Surface Block (<track>)
-1407	349	0	0	0	Sea Water Surface Block (<track>)
-1408	349	0	0	0	Sea Water Surface Block (<track>)
-1409	349	0	0	0	Sea Water Surface Block (<track>)
-1410	349	0	0	0	Sea Water Surface Block (<track>)
-1411	349	0	0	0	Sea Water Surface Block (<track>)
-1412	349	0	0	0	Sea Water Full Block (<track>)
-1413	390	0	0	0	Plasma Full Block (<track>)
-1414	390	0	0	0	Plasma Shallow Block (<track>)
-1415	390	0	0	0	Plasma Surface Block (<track>)
-1416	390	0	0	0	Plasma Small Block (<track>)
-1417	390	0	0	0	Plasma Surface Block (<track>)
-1418	390	0	0	0	Plasma Surface Block (<track>)
-1419	390	0	0	0	Plasma Surface Block (<track>)
-1420	390	0	0	0	Plasma Surface Block (<track>)
-1421	390	0	0	0	Plasma Surface Block (<track>)
-1422	390	0	0	0	Plasma Surface Block (<track>)
-1423	390	0	0	0	Plasma Full Block (<track>)
-1424	2047	3	0	0	Item
-1425	120	0	0	0	Clear Water Full Block (<roof>)
-1426	120	0	0	0	Clear Water Shallow Block (<roof>)
-1427	120	0	0	0	Clear Water Surface Block (<roof>)
-1428	120	0	0	0	Clear Water Small Block (<roof>)
-1429	120	0	0	0	Clear Water Surface Block (<roof>)
-1430	120	0	0	0	Clear Water Surface Block (<roof>)
-1431	120	0	0	0	Clear Water Surface Block (<roof>)
-1432	120	0	0	0	Clear Water Surface Block (<roof>)
-1433	120	0	0	0	Clear Water Surface Block (<roof>)
-1434	120	0	0	0	Clear Water Surface Block (<roof>)
-1435	120	0	0	0	Clear Water Full Block (<roof>)
-1436	231	0	0	0	Hot Water Full Block (<roof>)
-1437	231	0	0	0	Hot Water Shallow Block (<roof>)
-1438	231	0	0	0	Hot Water Surface Block (<roof>)
-1439	231	0	0	0	Hot Water Small Block (<roof>)
-1440	231	0	0	0	Hot Water Surface Block (<roof>)
-1441	231	0	0	0	Hot Water Surface Block (<roof>)
-1442	231	0	0	0	Hot Water Surface Block (<roof>)
-1443	231	0	0	0	Hot Water Surface Block (<roof>)
-1444	231	0	0	0	Hot Water Surface Block (<roof>)
-1445	231	0	0	0	Hot Water Surface Block (<roof>)
-1446	231	0	0	0	Hot Water Full Block (<roof>)
-1447	190	0	0	0	Poison Full Block (<roof>)
-1448	190	0	0	0	Poison Shallow Block (<roof>)
-1449	190	0	0	0	Poison Surface Block (<roof>)
-1450	190	0	0	0	Poison Small Block (<roof>)
-1451	190	0	0	0	Poison Surface Block (<roof>)
-1452	190	0	0	0	Poison Surface Block (<roof>)
-1453	190	0	0	0	Poison Surface Block (<roof>)
-1454	190	0	0	0	Poison Surface Block (<roof>)
-1455	190	0	0	0	Poison Surface Block (<roof>)
-1456	190	0	0	0	Poison Surface Block (<roof>)
-1457	190	0	0	0	Poison Full Block (<roof>)
-1458	267	0	0	0	Liquid Lava Full Block (<roof>)
-1459	267	0	0	0	Liquid Lava Shallow Block (<roof>)
-1460	267	0	0	0	Liquid Lava Surface Block (<roof>)
-1461	267	0	0	0	Liquid Lava Small Block (<roof>)
-1462	267	0	0	0	Liquid Lava Surface Block (<roof>)
-1463	267	0	0	0	Liquid Lava Surface Block (<roof>)
-1464	267	0	0	0	Liquid Lava Surface Block (<roof>)
-1465	267	0	0	0	Liquid Lava Surface Block (<roof>)
-1466	267	0	0	0	Liquid Lava Surface Block (<roof>)
-1467	267	0	0	0	Liquid Lava Surface Block (<roof>)
-1468	267	0	0	0	Liquid Lava Full Block (<roof>)
-1469	199	0	0	0	Bottomless Swamp Full Block (<roof>)
-1470	199	0	0	0	Bottomless Swamp Shallow Block (<roof>)
-1471	199	0	0	0	Bottomless Swamp Surface Block (<roof>)
-1472	199	0	0	0	Bottomless Swamp Small Block (<roof>)
-1473	199	0	0	0	Bottomless Swamp Surface Block (<roof>)
-1474	199	0	0	0	Bottomless Swamp Surface Block (<roof>)
-1475	199	0	0	0	Bottomless Swamp Surface Block (<roof>)
-1476	199	0	0	0	Bottomless Swamp Surface Block (<roof>)
-1477	199	0	0	0	Bottomless Swamp Surface Block (<roof>)
-1478	199	0	0	0	Bottomless Swamp Surface Block (<roof>)
-1479	199	0	0	0	Bottomless Swamp Full Block (<roof>)
-1480	208	0	0	0	Filthy Water Full Block (<roof>)
-1481	208	0	0	0	Filthy Water Shallow Block (<roof>)
-1482	208	0	0	0	Filthy Water Surface Block (<roof>)
-1483	208	0	0	0	Filthy Water Small Block (<roof>)
-1484	208	0	0	0	Filthy Water Surface Block (<roof>)
-1485	208	0	0	0	Filthy Water Surface Block (<roof>)
-1486	208	0	0	0	Filthy Water Surface Block (<roof>)
-1487	208	0	0	0	Filthy Water Surface Block (<roof>)
-1488	208	0	0	0	Filthy Water Surface Block (<roof>)
-1489	208	0	0	0	Filthy Water Surface Block (<roof>)
-1490	208	0	0	0	Filthy Water Full Block (<roof>)
-1491	349	0	0	0	Sea Water Full Block (<roof>)
-1492	349	0	0	0	Sea Water Shallow Block (<roof>)
-1493	349	0	0	0	Sea Water Surface Block (<roof>)
-1494	349	0	0	0	Sea Water Small Block (<roof>)
-1495	349	0	0	0	Sea Water Surface Block (<roof>)
-1496	349	0	0	0	Sea Water Surface Block (<roof>)
-1497	349	0	0	0	Sea Water Surface Block (<roof>)
-1498	349	0	0	0	Sea Water Surface Block (<roof>)
-1499	349	0	0	0	Sea Water Surface Block (<roof>)
-1500	349	0	0	0	Sea Water Surface Block (<roof>)
-1501	349	0	0	0	Sea Water Full Block (<roof>)
-1502	390	0	0	0	Plasma Full Block (<roof>)
-1503	390	0	0	0	Plasma Shallow Block (<roof>)
-1504	390	0	0	0	Plasma Surface Block (<roof>)
-1505	390	0	0	0	Plasma Small Block (<roof>)
-1506	390	0	0	0	Plasma Surface Block (<roof>)
-1507	390	0	0	0	Plasma Surface Block (<roof>)
-1508	390	0	0	0	Plasma Surface Block (<roof>)
-1509	390	0	0	0	Plasma Surface Block (<roof>)
-1510	390	0	0	0	Plasma Surface Block (<roof>)
-1511	390	0	0	0	Plasma Surface Block (<roof>)
-1512	390	0	0	0	Plasma Full Block (<roof>)
-1513	2047	3	0	0	Item
-1514	120	0	0	0	Clear Water Full Block (<table>)
-1515	120	0	0	0	Clear Water Shallow Block (<table>)
-1516	120	0	0	0	Clear Water Surface Block (<table>)
-1517	120	0	0	0	Clear Water Small Block (<table>)
-1518	120	0	0	0	Clear Water Surface Block (<table>)
-1519	120	0	0	0	Clear Water Surface Block (<table>)
-1520	120	0	0	0	Clear Water Surface Block (<table>)
-1521	120	0	0	0	Clear Water Surface Block (<table>)
-1522	120	0	0	0	Clear Water Surface Block (<table>)
-1523	120	0	0	0	Clear Water Surface Block (<table>)
-1524	120	0	0	0	Clear Water Full Block (<table>)
-1525	231	0	0	0	Hot Water Full Block (<table>)
-1526	231	0	0	0	Hot Water Shallow Block (<table>)
-1527	231	0	0	0	Hot Water Surface Block (<table>)
-1528	231	0	0	0	Hot Water Small Block (<table>)
-1529	231	0	0	0	Hot Water Surface Block (<table>)
-1530	231	0	0	0	Hot Water Surface Block (<table>)
-1531	231	0	0	0	Hot Water Surface Block (<table>)
-1532	231	0	0	0	Hot Water Surface Block (<table>)
-1533	231	0	0	0	Hot Water Surface Block (<table>)
-1534	231	0	0	0	Hot Water Surface Block (<table>)
-1535	231	0	0	0	Hot Water Full Block (<table>)
-1536	190	0	0	0	Poison Full Block (<table>)
-1537	190	0	0	0	Poison Shallow Block (<table>)
-1538	190	0	0	0	Poison Surface Block (<table>)
-1539	190	0	0	0	Poison Small Block (<table>)
-1540	190	0	0	0	Poison Surface Block (<table>)
-1541	190	0	0	0	Poison Surface Block (<table>)
-1542	190	0	0	0	Poison Surface Block (<table>)
-1543	190	0	0	0	Poison Surface Block (<table>)
-1544	190	0	0	0	Poison Surface Block (<table>)
-1545	190	0	0	0	Poison Surface Block (<table>)
-1546	190	0	0	0	Poison Full Block (<table>)
-1547	267	0	0	0	Liquid Lava Full Block (<table>)
-1548	267	0	0	0	Liquid Lava Shallow Block (<table>)
-1549	267	0	0	0	Liquid Lava Surface Block (<table>)
-1550	267	0	0	0	Liquid Lava Small Block (<table>)
-1551	267	0	0	0	Liquid Lava Surface Block (<table>)
-1552	267	0	0	0	Liquid Lava Surface Block (<table>)
-1553	267	0	0	0	Liquid Lava Surface Block (<table>)
-1554	267	0	0	0	Liquid Lava Surface Block (<table>)
-1555	267	0	0	0	Liquid Lava Surface Block (<table>)
-1556	267	0	0	0	Liquid Lava Surface Block (<table>)
-1557	267	0	0	0	Liquid Lava Full Block (<table>)
-1558	199	0	0	0	Bottomless Swamp Full Block (<table>)
-1559	199	0	0	0	Bottomless Swamp Shallow Block (<table>)
-1560	199	0	0	0	Bottomless Swamp Surface Block (<table>)
-1561	199	0	0	0	Bottomless Swamp Small Block (<table>)
-1562	199	0	0	0	Bottomless Swamp Surface Block (<table>)
-1563	199	0	0	0	Bottomless Swamp Surface Block (<table>)
-1564	199	0	0	0	Bottomless Swamp Surface Block (<table>)
-1565	199	0	0	0	Bottomless Swamp Surface Block (<table>)
-1566	199	0	0	0	Bottomless Swamp Surface Block (<table>)
-1567	199	0	0	0	Bottomless Swamp Surface Block (<table>)
-1568	199	0	0	0	Bottomless Swamp Full Block (<table>)
-1569	208	0	0	0	Filthy Water Full Block (<table>)
-1570	208	0	0	0	Filthy Water Shallow Block (<table>)
-1571	208	0	0	0	Filthy Water Surface Block (<table>)
-1572	208	0	0	0	Filthy Water Small Block (<table>)
-1573	208	0	0	0	Filthy Water Surface Block (<table>)
-1574	208	0	0	0	Filthy Water Surface Block (<table>)
-1575	208	0	0	0	Filthy Water Surface Block (<table>)
-1576	208	0	0	0	Filthy Water Surface Block (<table>)
-1577	208	0	0	0	Filthy Water Surface Block (<table>)
-1578	208	0	0	0	Filthy Water Surface Block (<table>)
-1579	208	0	0	0	Filthy Water Full Block (<table>)
-1580	349	0	0	0	Sea Water Full Block (<table>)
-1581	349	0	0	0	Sea Water Shallow Block (<table>)
-1582	349	0	0	0	Sea Water Surface Block (<table>)
-1583	349	0	0	0	Sea Water Small Block (<table>)
-1584	349	0	0	0	Sea Water Surface Block (<table>)
-1585	349	0	0	0	Sea Water Surface Block (<table>)
-1586	349	0	0	0	Sea Water Surface Block (<table>)
-1587	349	0	0	0	Sea Water Surface Block (<table>)
-1588	349	0	0	0	Sea Water Surface Block (<table>)
-1589	349	0	0	0	Sea Water Surface Block (<table>)
-1590	349	0	0	0	Sea Water Full Block (<table>)
-1591	390	0	0	0	Plasma Full Block (<table>)
-1592	390	0	0	0	Plasma Shallow Block (<table>)
-1593	390	0	0	0	Plasma Surface Block (<table>)
-1594	390	0	0	0	Plasma Small Block (<table>)
-1595	390	0	0	0	Plasma Surface Block (<table>)
-1596	390	0	0	0	Plasma Surface Block (<table>)
-1597	390	0	0	0	Plasma Surface Block (<table>)
-1598	390	0	0	0	Plasma Surface Block (<table>)
-1599	390	0	0	0	Plasma Surface Block (<table>)
-1600	390	0	0	0	Plasma Surface Block (<table>)
-1601	390	0	0	0	Plasma Full Block (<table>)
-1602	1602	3	0	0	Item (Table)
-1603	120	0	0	0	Clear Water Full Block (<light>)
-1604	120	0	0	0	Clear Water Shallow Block (<light>)
-1605	120	0	0	0	Clear Water Surface Block (<light>)
-1606	120	0	0	0	Clear Water Small Block (<light>)
-1607	120	0	0	0	Clear Water Surface Block (<light>)
-1608	120	0	0	0	Clear Water Surface Block (<light>)
-1609	120	0	0	0	Clear Water Surface Block (<light>)
-1610	120	0	0	0	Clear Water Surface Block (<light>)
-1611	120	0	0	0	Clear Water Surface Block (<light>)
-1612	120	0	0	0	Clear Water Surface Block (<light>)
-1613	120	0	0	0	Clear Water Full Block (<light>)
-1614	231	0	0	0	Hot Water Full Block (<light>)
-1615	231	0	0	0	Hot Water Shallow Block (<light>)
-1616	231	0	0	0	Hot Water Surface Block (<light>)
-1617	231	0	0	0	Hot Water Small Block (<light>)
-1618	231	0	0	0	Hot Water Surface Block (<light>)
-1619	231	0	0	0	Hot Water Surface Block (<light>)
-1620	231	0	0	0	Hot Water Surface Block (<light>)
-1621	231	0	0	0	Hot Water Surface Block (<light>)
-1622	231	0	0	0	Hot Water Surface Block (<light>)
-1623	231	0	0	0	Hot Water Surface Block (<light>)
-1624	231	0	0	0	Hot Water Full Block (<light>)
-1625	190	0	0	0	Poison Full Block (<light>)
-1626	190	0	0	0	Poison Shallow Block (<light>)
-1627	190	0	0	0	Poison Surface Block (<light>)
-1628	190	0	0	0	Poison Small Block (<light>)
-1629	190	0	0	0	Poison Surface Block (<light>)
-1630	190	0	0	0	Poison Surface Block (<light>)
-1631	190	0	0	0	Poison Surface Block (<light>)
-1632	190	0	0	0	Poison Surface Block (<light>)
-1633	190	0	0	0	Poison Surface Block (<light>)
-1634	190	0	0	0	Poison Surface Block (<light>)
-1635	190	0	0	0	Poison Full Block (<light>)
-1636	267	0	0	0	Liquid Lava Full Block (<light>)
-1637	267	0	0	0	Liquid Lava Shallow Block (<light>)
-1638	267	0	0	0	Liquid Lava Surface Block (<light>)
-1639	267	0	0	0	Liquid Lava Small Block (<light>)
-1640	267	0	0	0	Liquid Lava Surface Block (<light>)
-1641	267	0	0	0	Liquid Lava Surface Block (<light>)
-1642	267	0	0	0	Liquid Lava Surface Block (<light>)
-1643	267	0	0	0	Liquid Lava Surface Block (<light>)
-1644	267	0	0	0	Liquid Lava Surface Block (<light>)
-1645	267	0	0	0	Liquid Lava Surface Block (<light>)
-1646	267	0	0	0	Liquid Lava Full Block (<light>)
-1647	199	0	0	0	Bottomless Swamp Full Block (<light>)
-1648	199	0	0	0	Bottomless Swamp Shallow Block (<light>)
-1649	199	0	0	0	Bottomless Swamp Surface Block (<light>)
-1650	199	0	0	0	Bottomless Swamp Small Block (<light>)
-1651	199	0	0	0	Bottomless Swamp Surface Block (<light>)
-1652	199	0	0	0	Bottomless Swamp Surface Block (<light>)
-1653	199	0	0	0	Bottomless Swamp Surface Block (<light>)
-1654	199	0	0	0	Bottomless Swamp Surface Block (<light>)
-1655	199	0	0	0	Bottomless Swamp Surface Block (<light>)
-1656	199	0	0	0	Bottomless Swamp Surface Block (<light>)
-1657	199	0	0	0	Bottomless Swamp Full Block (<light>)
-1658	208	0	0	0	Filthy Water Full Block (<light>)
-1659	208	0	0	0	Filthy Water Shallow Block (<light>)
-1660	208	0	0	0	Filthy Water Surface Block (<light>)
-1661	208	0	0	0	Filthy Water Small Block (<light>)
-1662	208	0	0	0	Filthy Water Surface Block (<light>)
-1663	208	0	0	0	Filthy Water Surface Block (<light>)
-1664	208	0	0	0	Filthy Water Surface Block (<light>)
-1665	208	0	0	0	Filthy Water Surface Block (<light>)
-1666	208	0	0	0	Filthy Water Surface Block (<light>)
-1667	208	0	0	0	Filthy Water Surface Block (<light>)
-1668	208	0	0	0	Filthy Water Full Block (<light>)
-1669	349	0	0	0	Sea Water Full Block (<light>)
-1670	349	0	0	0	Sea Water Shallow Block (<light>)
-1671	349	0	0	0	Sea Water Surface Block (<light>)
-1672	349	0	0	0	Sea Water Small Block (<light>)
-1673	349	0	0	0	Sea Water Surface Block (<light>)
-1674	349	0	0	0	Sea Water Surface Block (<light>)
-1675	349	0	0	0	Sea Water Surface Block (<light>)
-1676	349	0	0	0	Sea Water Surface Block (<light>)
-1677	349	0	0	0	Sea Water Surface Block (<light>)
-1678	349	0	0	0	Sea Water Surface Block (<light>)
-1679	349	0	0	0	Sea Water Full Block (<light>)
-1680	390	0	0	0	Plasma Full Block (<light>)
-1681	390	0	0	0	Plasma Shallow Block (<light>)
-1682	390	0	0	0	Plasma Surface Block (<light>)
-1683	390	0	0	0	Plasma Small Block (<light>)
-1684	390	0	0	0	Plasma Surface Block (<light>)
-1685	390	0	0	0	Plasma Surface Block (<light>)
-1686	390	0	0	0	Plasma Surface Block (<light>)
-1687	390	0	0	0	Plasma Surface Block (<light>)
-1688	390	0	0	0	Plasma Surface Block (<light>)
-1689	390	0	0	0	Plasma Surface Block (<light>)
-1690	390	0	0	0	Plasma Full Block (<light>)
-1691	1691	3	0	0	Item (Light)
-1692	120	3	0	0	Clear Water Full Block (<block>)
-1693	120	3	0	0	Clear Water Shallow Block (<block>)
-1694	120	3	0	0	Clear Water Surface Block (<block>)
-1695	120	3	0	0	Clear Water Small Block (<block>)
-1696	120	3	0	0	Clear Water Surface Block (<block>)
-1697	120	3	0	0	Clear Water Surface Block (<block>)
-1698	120	3	0	0	Clear Water Surface Block (<block>)
-1699	120	3	0	0	Clear Water Surface Block (<block>)
-1700	120	3	0	0	Clear Water Surface Block (<block>)
-1701	120	3	0	0	Clear Water Surface Block (<block>)
-1702	120	3	0	0	Clear Water Full Block (<block>)
-1703	231	3	0	0	Hot Water Full Block (<block>)
-1704	231	3	0	0	Hot Water Shallow Block (<block>)
-1705	231	3	0	0	Hot Water Surface Block (<block>)
-1706	231	3	0	0	Hot Water Small Block (<block>)
-1707	231	3	0	0	Hot Water Surface Block (<block>)
-1708	231	3	0	0	Hot Water Surface Block (<block>)
-1709	231	3	0	0	Hot Water Surface Block (<block>)
-1710	231	3	0	0	Hot Water Surface Block (<block>)
-1711	231	3	0	0	Hot Water Surface Block (<block>)
-1712	231	3	0	0	Hot Water Surface Block (<block>)
-1713	231	3	0	0	Hot Water Full Block (<block>)
-1714	190	3	0	0	Poison Full Block (<block>)
-1715	190	3	0	0	Poison Shallow Block (<block>)
-1716	190	3	0	0	Poison Surface Block (<block>)
-1717	190	3	0	0	Poison Small Block (<block>)
-1718	190	3	0	0	Poison Surface Block (<block>)
-1719	190	3	0	0	Poison Surface Block (<block>)
-1720	190	3	0	0	Poison Surface Block (<block>)
-1721	190	3	0	0	Poison Surface Block (<block>)
-1722	190	3	0	0	Poison Surface Block (<block>)
-1723	190	3	0	0	Poison Surface Block (<block>)
-1724	190	3	0	0	Poison Full Block (<block>)
-1725	267	3	0	0	Liquid Lava Full Block (<block>)
-1726	267	3	0	0	Liquid Lava Shallow Block (<block>)
-1727	267	3	0	0	Liquid Lava Surface Block (<block>)
-1728	267	3	0	0	Liquid Lava Small Block (<block>)
-1729	267	3	0	0	Liquid Lava Surface Block (<block>)
-1730	267	3	0	0	Liquid Lava Surface Block (<block>)
-1731	267	3	0	0	Liquid Lava Surface Block (<block>)
-1732	267	3	0	0	Liquid Lava Surface Block (<block>)
-1733	267	3	0	0	Liquid Lava Surface Block (<block>)
-1734	267	3	0	0	Liquid Lava Surface Block (<block>)
-1735	267	3	0	0	Liquid Lava Full Block (<block>)
-1736	199	3	0	0	Bottomless Swamp Full Block (<block>)
-1737	199	3	0	0	Bottomless Swamp Shallow Block (<block>)
-1738	199	3	0	0	Bottomless Swamp Surface Block (<block>)
-1739	199	3	0	0	Bottomless Swamp Small Block (<block>)
-1740	199	3	0	0	Bottomless Swamp Surface Block (<block>)
-1741	199	3	0	0	Bottomless Swamp Surface Block (<block>)
-1742	199	3	0	0	Bottomless Swamp Surface Block (<block>)
-1743	199	3	0	0	Bottomless Swamp Surface Block (<block>)
-1744	199	3	0	0	Bottomless Swamp Surface Block (<block>)
-1745	199	3	0	0	Bottomless Swamp Surface Block (<block>)
-1746	199	3	0	0	Bottomless Swamp Full Block (<block>)
-1747	208	3	0	0	Filthy Water Full Block (<block>)
-1748	208	3	0	0	Filthy Water Shallow Block (<block>)
-1749	208	3	0	0	Filthy Water Surface Block (<block>)
-1750	208	3	0	0	Filthy Water Small Block (<block>)
-1751	208	3	0	0	Filthy Water Surface Block (<block>)
-1752	208	3	0	0	Filthy Water Surface Block (<block>)
-1753	208	3	0	0	Filthy Water Surface Block (<block>)
-1754	208	3	0	0	Filthy Water Surface Block (<block>)
-1755	208	3	0	0	Filthy Water Surface Block (<block>)
-1756	208	3	0	0	Filthy Water Surface Block (<block>)
-1757	208	3	0	0	Filthy Water Full Block (<block>)
-1758	349	3	0	0	Sea Water Full Block (<block>)
-1759	349	3	0	0	Sea Water Shallow Block (<block>)
-1760	349	3	0	0	Sea Water Surface Block (<block>)
-1761	349	3	0	0	Sea Water Small Block (<block>)
-1762	349	3	0	0	Sea Water Surface Block (<block>)
-1763	349	3	0	0	Sea Water Surface Block (<block>)
-1764	349	3	0	0	Sea Water Surface Block (<block>)
-1765	349	3	0	0	Sea Water Surface Block (<block>)
-1766	349	3	0	0	Sea Water Surface Block (<block>)
-1767	349	3	0	0	Sea Water Surface Block (<block>)
-1768	349	3	0	0	Sea Water Full Block (<block>)
-1769	390	3	0	0	Plasma Full Block (<block>)
-1770	390	3	0	0	Plasma Shallow Block (<block>)
-1771	390	3	0	0	Plasma Surface Block (<block>)
-1772	390	3	0	0	Plasma Small Block (<block>)
-1773	390	3	0	0	Plasma Surface Block (<block>)
-1774	390	3	0	0	Plasma Surface Block (<block>)
-1775	390	3	0	0	Plasma Surface Block (<block>)
-1776	390	3	0	0	Plasma Surface Block (<block>)
-1777	390	3	0	0	Plasma Surface Block (<block>)
-1778	390	3	0	0	Plasma Surface Block (<block>)
-1779	390	3	0	0	Plasma Full Block (<block>)
-1780	1780	3	0	0	Item (Block)
-1781	120	3	0	0	Clear Water Full Block (<door>)
-1782	120	3	0	0	Clear Water Shallow Block (<door>)
-1783	120	3	0	0	Clear Water Surface Block (<door>)
-1784	120	3	0	0	Clear Water Small Block (<door>)
-1785	120	3	0	0	Clear Water Surface Block (<door>)
-1786	120	3	0	0	Clear Water Surface Block (<door>)
-1787	120	3	0	0	Clear Water Surface Block (<door>)
-1788	120	3	0	0	Clear Water Surface Block (<door>)
-1789	120	3	0	0	Clear Water Surface Block (<door>)
-1790	120	3	0	0	Clear Water Surface Block (<door>)
-1791	120	3	0	0	Clear Water Full Block (<door>)
-1792	231	3	0	0	Hot Water Full Block (<door>)
-1793	231	3	0	0	Hot Water Shallow Block (<door>)
-1794	231	3	0	0	Hot Water Surface Block (<door>)
-1795	231	3	0	0	Hot Water Small Block (<door>)
-1796	231	3	0	0	Hot Water Surface Block (<door>)
-1797	231	3	0	0	Hot Water Surface Block (<door>)
-1798	231	3	0	0	Hot Water Surface Block (<door>)
-1799	231	3	0	0	Hot Water Surface Block (<door>)
-1800	231	3	0	0	Hot Water Surface Block (<door>)
-1801	231	3	0	0	Hot Water Surface Block (<door>)
-1802	231	3	0	0	Hot Water Full Block (<door>)
-1803	190	3	0	0	Poison Full Block (<door>)
-1804	190	3	0	0	Poison Shallow Block (<door>)
-1805	190	3	0	0	Poison Surface Block (<door>)
-1806	190	3	0	0	Poison Small Block (<door>)
-1807	190	3	0	0	Poison Surface Block (<door>)
-1808	190	3	0	0	Poison Surface Block (<door>)
-1809	190	3	0	0	Poison Surface Block (<door>)
-1810	190	3	0	0	Poison Surface Block (<door>)
-1811	190	3	0	0	Poison Surface Block (<door>)
-1812	190	3	0	0	Poison Surface Block (<door>)
-1813	190	3	0	0	Poison Full Block (<door>)
-1814	267	3	0	0	Liquid Lava Full Block (<door>)
-1815	267	3	0	0	Liquid Lava Shallow Block (<door>)
-1816	267	3	0	0	Liquid Lava Surface Block (<door>)
-1817	267	3	0	0	Liquid Lava Small Block (<door>)
-1818	267	3	0	0	Liquid Lava Surface Block (<door>)
-1819	267	3	0	0	Liquid Lava Surface Block (<door>)
-1820	267	3	0	0	Liquid Lava Surface Block (<door>)
-1821	267	3	0	0	Liquid Lava Surface Block (<door>)
-1822	267	3	0	0	Liquid Lava Surface Block (<door>)
-1823	267	3	0	0	Liquid Lava Surface Block (<door>)
-1824	267	3	0	0	Liquid Lava Full Block (<door>)
-1825	199	3	0	0	Bottomless Swamp Full Block (<door>)
-1826	199	3	0	0	Bottomless Swamp Shallow Block (<door>)
-1827	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1828	199	3	0	0	Bottomless Swamp Small Block (<door>)
-1829	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1830	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1831	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1832	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1833	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1834	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1835	199	3	0	0	Bottomless Swamp Full Block (<door>)
-1836	208	3	0	0	Filthy Water Full Block (<door>)
-1837	208	3	0	0	Filthy Water Shallow Block (<door>)
-1838	208	3	0	0	Filthy Water Surface Block (<door>)
-1839	208	3	0	0	Filthy Water Small Block (<door>)
-1840	208	3	0	0	Filthy Water Surface Block (<door>)
-1841	208	3	0	0	Filthy Water Surface Block (<door>)
-1842	208	3	0	0	Filthy Water Surface Block (<door>)
-1843	208	3	0	0	Filthy Water Surface Block (<door>)
-1844	208	3	0	0	Filthy Water Surface Block (<door>)
-1845	208	3	0	0	Filthy Water Surface Block (<door>)
-1846	208	3	0	0	Filthy Water Full Block (<door>)
-1847	349	3	0	0	Sea Water Full Block (<door>)
-1848	349	3	0	0	Sea Water Shallow Block (<door>)
-1849	349	3	0	0	Sea Water Surface Block (<door>)
-1850	349	3	0	0	Sea Water Small Block (<door>)
-1851	349	3	0	0	Sea Water Surface Block (<door>)
-1852	349	3	0	0	Sea Water Surface Block (<door>)
-1853	349	3	0	0	Sea Water Surface Block (<door>)
-1854	349	3	0	0	Sea Water Surface Block (<door>)
-1855	349	3	0	0	Sea Water Surface Block (<door>)
-1856	349	3	0	0	Sea Water Surface Block (<door>)
-1857	349	3	0	0	Sea Water Full Block (<door>)
-1858	390	3	0	0	Plasma Full Block (<door>)
-1859	390	3	0	0	Plasma Shallow Block (<door>)
-1860	390	3	0	0	Plasma Surface Block (<door>)
-1861	390	3	0	0	Plasma Small Block (<door>)
-1862	390	3	0	0	Plasma Surface Block (<door>)
-1863	390	3	0	0	Plasma Surface Block (<door>)
-1864	390	3	0	0	Plasma Surface Block (<door>)
-1865	390	3	0	0	Plasma Surface Block (<door>)
-1866	390	3	0	0	Plasma Surface Block (<door>)
-1867	390	3	0	0	Plasma Surface Block (<door>)
-1868	390	3	0	0	Plasma Full Block (<door>)
-1869	1869	3	0	0	Item (Door)
-1870	120	3	0	0	Clear Water Full Block (<door>)
-1871	120	3	0	0	Clear Water Shallow Block (<door>)
-1872	120	3	0	0	Clear Water Surface Block (<door>)
-1873	120	3	0	0	Clear Water Small Block (<door>)
-1874	120	3	0	0	Clear Water Surface Block (<door>)
-1875	120	3	0	0	Clear Water Surface Block (<door>)
-1876	120	3	0	0	Clear Water Surface Block (<door>)
-1877	120	3	0	0	Clear Water Surface Block (<door>)
-1878	120	3	0	0	Clear Water Surface Block (<door>)
-1879	120	3	0	0	Clear Water Surface Block (<door>)
-1880	120	3	0	0	Clear Water Full Block (<door>)
-1881	231	3	0	0	Hot Water Full Block (<door>)
-1882	231	3	0	0	Hot Water Shallow Block (<door>)
-1883	231	3	0	0	Hot Water Surface Block (<door>)
-1884	231	3	0	0	Hot Water Small Block (<door>)
-1885	231	3	0	0	Hot Water Surface Block (<door>)
-1886	231	3	0	0	Hot Water Surface Block (<door>)
-1887	231	3	0	0	Hot Water Surface Block (<door>)
-1888	231	3	0	0	Hot Water Surface Block (<door>)
-1889	231	3	0	0	Hot Water Surface Block (<door>)
-1890	231	3	0	0	Hot Water Surface Block (<door>)
-1891	231	3	0	0	Hot Water Full Block (<door>)
-1892	190	3	0	0	Poison Full Block (<door>)
-1893	190	3	0	0	Poison Shallow Block (<door>)
-1894	190	3	0	0	Poison Surface Block (<door>)
-1895	190	3	0	0	Poison Small Block (<door>)
-1896	190	3	0	0	Poison Surface Block (<door>)
-1897	190	3	0	0	Poison Surface Block (<door>)
-1898	190	3	0	0	Poison Surface Block (<door>)
-1899	190	3	0	0	Poison Surface Block (<door>)
-1900	190	3	0	0	Poison Surface Block (<door>)
-1901	190	3	0	0	Poison Surface Block (<door>)
-1902	190	3	0	0	Poison Full Block (<door>)
-1903	267	3	0	0	Liquid Lava Full Block (<door>)
-1904	267	3	0	0	Liquid Lava Shallow Block (<door>)
-1905	267	3	0	0	Liquid Lava Surface Block (<door>)
-1906	267	3	0	0	Liquid Lava Small Block (<door>)
-1907	267	3	0	0	Liquid Lava Surface Block (<door>)
-1908	267	3	0	0	Liquid Lava Surface Block (<door>)
-1909	267	3	0	0	Liquid Lava Surface Block (<door>)
-1910	267	3	0	0	Liquid Lava Surface Block (<door>)
-1911	267	3	0	0	Liquid Lava Surface Block (<door>)
-1912	267	3	0	0	Liquid Lava Surface Block (<door>)
-1913	267	3	0	0	Liquid Lava Full Block (<door>)
-1914	199	3	0	0	Bottomless Swamp Full Block (<door>)
-1915	199	3	0	0	Bottomless Swamp Shallow Block (<door>)
-1916	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1917	199	3	0	0	Bottomless Swamp Small Block (<door>)
-1918	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1919	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1920	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1921	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1922	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1923	199	3	0	0	Bottomless Swamp Surface Block (<door>)
-1924	199	3	0	0	Bottomless Swamp Full Block (<door>)
-1925	208	3	0	0	Filthy Water Full Block (<door>)
-1926	208	3	0	0	Filthy Water Shallow Block (<door>)
-1927	208	3	0	0	Filthy Water Surface Block (<door>)
-1928	208	3	0	0	Filthy Water Small Block (<door>)
-1929	208	3	0	0	Filthy Water Surface Block (<door>)
-1930	208	3	0	0	Filthy Water Surface Block (<door>)
-1931	208	3	0	0	Filthy Water Surface Block (<door>)
-1932	208	3	0	0	Filthy Water Surface Block (<door>)
-1933	208	3	0	0	Filthy Water Surface Block (<door>)
-1934	208	3	0	0	Filthy Water Surface Block (<door>)
-1935	208	3	0	0	Filthy Water Full Block (<door>)
-1936	349	3	0	0	Sea Water Full Block (<door>)
-1937	349	3	0	0	Sea Water Shallow Block (<door>)
-1938	349	3	0	0	Sea Water Surface Block (<door>)
-1939	349	3	0	0	Sea Water Small Block (<door>)
-1940	349	3	0	0	Sea Water Surface Block (<door>)
-1941	349	3	0	0	Sea Water Surface Block (<door>)
-1942	349	3	0	0	Sea Water Surface Block (<door>)
-1943	349	3	0	0	Sea Water Surface Block (<door>)
-1944	349	3	0	0	Sea Water Surface Block (<door>)
-1945	349	3	0	0	Sea Water Surface Block (<door>)
-1946	349	3	0	0	Sea Water Full Block (<door>)
-1947	390	3	0	0	Plasma Full Block (<door>)
-1948	390	3	0	0	Plasma Shallow Block (<door>)
-1949	390	3	0	0	Plasma Surface Block (<door>)
-1950	390	3	0	0	Plasma Small Block (<door>)
-1951	390	3	0	0	Plasma Surface Block (<door>)
-1952	390	3	0	0	Plasma Surface Block (<door>)
-1953	390	3	0	0	Plasma Surface Block (<door>)
-1954	390	3	0	0	Plasma Surface Block (<door>)
-1955	390	3	0	0	Plasma Surface Block (<door>)
-1956	390	3	0	0	Plasma Surface Block (<door>)
-1957	390	3	0	0	Plasma Full Block (<door>)
-1958	2047	3	0	0	Item
-1959	120	0	0	0	Clear Water Full Block (<air>)
-1960	120	0	0	0	Clear Water Shallow Block (<air>)
-1961	120	0	0	0	Clear Water Surface Block (<air>)
-1962	120	0	0	0	Clear Water Small Block (<air>)
-1963	120	0	0	0	Clear Water Surface Block (<air>)
-1964	120	0	0	0	Clear Water Surface Block (<air>)
-1965	120	0	0	0	Clear Water Surface Block (<air>)
-1966	120	0	0	0	Clear Water Surface Block (<air>)
-1967	120	0	0	0	Clear Water Surface Block (<air>)
-1968	120	0	0	0	Clear Water Surface Block (<air>)
-1969	120	0	0	0	Clear Water Full Block (<air>)
-1970	231	0	0	0	Hot Water Full Block (<air>)
-1971	231	0	0	0	Hot Water Shallow Block (<air>)
-1972	231	0	0	0	Hot Water Surface Block (<air>)
-1973	231	0	0	0	Hot Water Small Block (<air>)
-1974	231	0	0	0	Hot Water Surface Block (<air>)
-1975	231	0	0	0	Hot Water Surface Block (<air>)
-1976	231	0	0	0	Hot Water Surface Block (<air>)
-1977	231	0	0	0	Hot Water Surface Block (<air>)
-1978	231	0	0	0	Hot Water Surface Block (<air>)
-1979	231	0	0	0	Hot Water Surface Block (<air>)
-1980	231	0	0	0	Hot Water Full Block (<air>)
-1981	190	0	0	0	Poison Full Block (<air>)
-1982	190	0	0	0	Poison Shallow Block (<air>)
-1983	190	0	0	0	Poison Surface Block (<air>)
-1984	190	0	0	0	Poison Small Block (<air>)
-1985	190	0	0	0	Poison Surface Block (<air>)
-1986	190	0	0	0	Poison Surface Block (<air>)
-1987	190	0	0	0	Poison Surface Block (<air>)
-1988	190	0	0	0	Poison Surface Block (<air>)
-1989	190	0	0	0	Poison Surface Block (<air>)
-1990	190	0	0	0	Poison Surface Block (<air>)
-1991	190	0	0	0	Poison Full Block (<air>)
-1992	267	0	0	0	Liquid Lava Full Block (<air>)
-1993	267	0	0	0	Liquid Lava Shallow Block (<air>)
-1994	267	0	0	0	Liquid Lava Surface Block (<air>)
-1995	267	0	0	0	Liquid Lava Small Block (<air>)
-1996	267	0	0	0	Liquid Lava Surface Block (<air>)
-1997	267	0	0	0	Liquid Lava Surface Block (<air>)
-1998	267	0	0	0	Liquid Lava Surface Block (<air>)
-1999	267	0	0	0	Liquid Lava Surface Block (<air>)
-2000	267	0	0	0	Liquid Lava Surface Block (<air>)
-2001	267	0	0	0	Liquid Lava Surface Block (<air>)
-2002	267	0	0	0	Liquid Lava Full Block (<air>)
-2003	199	0	0	0	Bottomless Swamp Full Block (<air>)
-2004	199	0	0	0	Bottomless Swamp Shallow Block (<air>)
-2005	199	0	0	0	Bottomless Swamp Surface Block (<air>)
-2006	199	0	0	0	Bottomless Swamp Small Block (<air>)
-2007	199	0	0	0	Bottomless Swamp Surface Block (<air>)
-2008	199	0	0	0	Bottomless Swamp Surface Block (<air>)
-2009	199	0	0	0	Bottomless Swamp Surface Block (<air>)
-2010	199	0	0	0	Bottomless Swamp Surface Block (<air>)
-2011	199	0	0	0	Bottomless Swamp Surface Block (<air>)
-2012	199	0	0	0	Bottomless Swamp Surface Block (<air>)
-2013	199	0	0	0	Bottomless Swamp Full Block (<air>)
-2014	208	0	0	0	Filthy Water Full Block (<air>)
-2015	208	0	0	0	Filthy Water Shallow Block (<air>)
-2016	208	0	0	0	Filthy Water Surface Block (<air>)
-2017	208	0	0	0	Filthy Water Small Block (<air>)
-2018	208	0	0	0	Filthy Water Surface Block (<air>)
-2019	208	0	0	0	Filthy Water Surface Block (<air>)
-2020	208	0	0	0	Filthy Water Surface Block (<air>)
-2021	208	0	0	0	Filthy Water Surface Block (<air>)
-2022	208	0	0	0	Filthy Water Surface Block (<air>)
-2023	208	0	0	0	Filthy Water Surface Block (<air>)
-2024	208	0	0	0	Filthy Water Full Block (<air>)
-2025	349	0	0	0	Sea Water Full Block (<air>)
-2026	349	0	0	0	Sea Water Shallow Block (<air>)
-2027	349	0	0	0	Sea Water Surface Block (<air>)
-2028	349	0	0	0	Sea Water Small Block (<air>)
-2029	349	0	0	0	Sea Water Surface Block (<air>)
-2030	349	0	0	0	Sea Water Surface Block (<air>)
-2031	349	0	0	0	Sea Water Surface Block (<air>)
-2032	349	0	0	0	Sea Water Surface Block (<air>)
-2033	349	0	0	0	Sea Water Surface Block (<air>)
-2034	349	0	0	0	Sea Water Surface Block (<air>)
-2035	349	0	0	0	Sea Water Full Block (<air>)
-2036	390	0	0	0	Plasma Full Block (<air>)
-2037	390	0	0	0	Plasma Shallow Block (<air>)
-2038	390	0	0	0	Plasma Surface Block (<air>)
-2039	390	0	0	0	Plasma Small Block (<air>)
-2040	390	0	0	0	Plasma Surface Block (<air>)
-2041	390	0	0	0	Plasma Surface Block (<air>)
-2042	390	0	0	0	Plasma Surface Block (<air>)
-2043	390	0	0	0	Plasma Surface Block (<air>)
-2044	390	0	0	0	Plasma Surface Block (<air>)
-2045	390	0	0	0	Plasma Surface Block (<air>)
-2046	390	0	0	0	Plasma Full Block (<air>)
-2047	2047	3	0	0	Item
+1013	37	4	0	8	Default Block
+1014	37	4	0	8	Default Block
+1015	37	4	0	8	Default Block
+1016	37	4	0	8	Default Block
+1017	37	4	0	8	Default Block
+1018	37	4	0	8	Default Block
+1019	37	4	0	8	Default Block
+1020	37	4	0	8	Default Block
+1021	37	4	0	8	Default Block
+1022	37	4	0	8	Default Block
+1023	37	4	0	8	Default Block
+1024	37	4	0	8	Default Block
+1025	37	4	0	8	Default Block
+1026	37	4	0	8	Default Block
+1027	37	4	0	8	Default Block
+1028	37	4	0	8	Default Block
+1029	37	4	0	8	Default Block
+1030	37	4	0	8	Default Block
+1031	37	4	0	8	Default Block
+1032	37	4	0	8	Default Block
+1033	37	4	0	8	Default Block
+1034	37	4	0	8	Default Block
+1035	37	4	0	8	Default Block
+1036	37	4	0	8	Default Block
+1037	37	4	0	8	Default Block
+1038	37	4	0	8	Default Block
+1039	37	4	0	8	Default Block
+1040	37	4	0	8	Default Block
+1041	37	4	0	8	Default Block
+1042	37	4	0	8	Default Block
+1043	37	4	0	8	Default Block
+1044	37	4	0	8	Default Block
+1045	37	4	0	8	Default Block
+1046	37	4	0	8	Default Block
+1047	37	4	0	8	Default Block
+1048	37	4	0	8	Default Block
+1049	37	4	0	8	Default Block
+1050	37	4	0	8	Default Block
+1051	37	4	0	8	Default Block
+1052	37	4	0	8	Default Block
+1053	37	4	0	8	Default Block
+1054	37	4	0	8	Default Block
+1055	37	4	0	8	Default Block
+1056	37	4	0	8	Default Block
+1057	37	4	0	8	Default Block
+1058	37	4	0	8	Default Block
+1059	37	4	0	8	Default Block
+1060	37	4	0	8	Default Block
+1061	37	4	0	8	Default Block
+1062	37	4	0	8	Default Block
+1063	37	4	0	8	Default Block
+1064	37	4	0	8	Default Block
+1065	37	4	0	8	Default Block
+1066	37	4	0	8	Default Block
+1067	37	4	0	8	Default Block
+1068	37	4	0	8	Default Block
+1069	37	4	0	8	Default Block
+1070	37	4	0	8	Default Block
+1071	37	4	0	8	Default Block
+1072	37	4	0	8	Default Block
+1073	37	4	0	8	Default Block
+1074	37	4	0	8	Default Block
+1075	37	4	0	8	Default Block
+1076	37	4	0	8	Default Block
+1077	37	4	0	8	Default Block
+1078	37	4	0	8	Default Block
+1079	37	4	0	8	Default Block
+1080	37	4	0	8	Default Block
+1081	37	4	0	8	Default Block
+1082	37	4	0	8	Default Block
+1083	37	4	0	8	Default Block
+1084	37	4	0	8	Default Block
+1085	37	4	0	8	Default Block
+1086	37	4	0	8	Default Block
+1087	37	4	0	8	Default Block
+1088	37	4	0	8	Default Block
+1089	37	4	0	8	Default Block
+1090	37	4	0	8	Default Block
+1091	37	4	0	8	Default Block
+1092	37	4	0	8	Default Block
+1093	37	4	0	8	Default Block
+1094	37	4	0	8	Default Block
+1095	37	4	0	8	Default Block
+1096	37	4	0	8	Default Block
+1097	37	4	0	8	Default Block
+1098	37	4	0	8	Default Block
+1099	37	4	0	8	Default Block
+1100	37	4	0	8	Default Block
+1101	37	4	0	8	Default Block
+1102	37	4	0	8	Default Block
+1103	37	4	0	8	Default Block
+1104	37	4	0	8	Default Block
+1105	37	4	0	8	Default Block
+1106	37	4	0	8	Default Block
+1107	37	4	0	8	Default Block
+1108	37	4	0	8	Default Block
+1109	37	4	0	8	Default Block
+1110	37	4	0	8	Default Block
+1111	37	4	0	8	Default Block
+1112	37	4	0	8	Default Block
+1113	37	4	0	8	Default Block
+1114	37	4	0	8	Default Block
+1115	37	4	0	8	Default Block
+1116	37	4	0	8	Default Block
+1117	37	4	0	8	Default Block
+1118	37	4	0	8	Default Block
+1119	37	4	0	8	Default Block
+1120	37	4	0	8	Default Block
+1121	37	4	0	8	Default Block
+1122	37	4	0	8	Default Block
+1123	37	4	0	8	Default Block
+1124	37	4	0	8	Default Block
+1125	37	4	0	8	Default Block
+1126	37	4	0	8	Default Block
+1127	37	4	0	8	Default Block
+1128	37	4	0	8	Default Block
+1129	37	4	0	8	Default Block
+1130	37	4	0	8	Default Block
+1131	37	4	0	8	Default Block
+1132	37	4	0	8	Default Block
+1133	37	4	0	8	Default Block
+1134	37	4	0	8	Default Block
+1135	37	4	0	8	Default Block
+1136	37	4	0	8	Default Block
+1137	37	4	0	8	Default Block
+1138	37	4	0	8	Default Block
+1139	37	4	0	8	Default Block
+1140	37	4	0	8	Default Block
+1141	37	4	0	8	Default Block
+1142	37	4	0	8	Default Block
+1143	37	4	0	8	Default Block
+1144	37	4	0	8	Default Block
+1145	37	4	0	8	Default Block
+1146	37	4	0	8	Default Block
+1147	37	4	0	8	Default Block
+1148	37	4	0	8	Default Block
+1149	37	4	0	8	Default Block
+1150	37	4	0	8	Default Block
+1151	37	4	0	8	Default Block
+1152	37	4	0	8	Default Block
+1153	37	4	0	8	Default Block
+1154	37	4	0	8	Default Block
+1155	37	4	0	8	Default Block
+1156	37	4	0	8	Default Block
+1157	37	4	0	8	Default Block
+1158	101	0	0	0	Clear Water Full Block (Fence)
+1159	101	0	0	0	Clear Water Shallow Block (Fence)
+1160	101	0	0	0	Clear Water Surface Block (Fence)
+1161	101	0	0	0	Clear Water Small Block (Fence)
+1162	101	0	0	0	Clear Water Surface Block (Fence)
+1163	101	0	0	0	Clear Water Surface Block (Fence)
+1164	101	0	0	0	Clear Water Surface Block (Fence)
+1165	101	0	0	0	Clear Water Surface Block (Fence)
+1166	101	0	0	0	Clear Water Surface Block (Fence)
+1167	101	0	0	0	Clear Water Surface Block (Fence)
+1168	101	0	0	0	Clear Water Full Block (Fence)
+1169	139	0	0	0	Hot Water Full Block (Fence)
+1170	139	0	0	0	Hot Water Shallow Block (Fence)
+1171	139	0	0	0	Hot Water Surface Block (Fence)
+1172	139	0	0	0	Hot Water Small Block (Fence)
+1173	139	0	0	0	Hot Water Surface Block (Fence)
+1174	139	0	0	0	Hot Water Surface Block (Fence)
+1175	139	0	0	0	Hot Water Surface Block (Fence)
+1176	139	0	0	0	Hot Water Surface Block (Fence)
+1177	139	0	0	0	Hot Water Surface Block (Fence)
+1178	139	0	0	0	Hot Water Surface Block (Fence)
+1179	139	0	0	0	Hot Water Full Block (Fence)
+1180	134	0	0	0	Poison Full Block (Fence)
+1181	134	0	0	0	Poison Shallow Block (Fence)
+1182	134	0	0	0	Poison Surface Block (Fence)
+1183	134	0	0	0	Poison Small Block (Fence)
+1184	134	0	0	0	Poison Surface Block (Fence)
+1185	134	0	0	0	Poison Surface Block (Fence)
+1186	134	0	0	0	Poison Surface Block (Fence)
+1187	134	0	0	0	Poison Surface Block (Fence)
+1188	134	0	0	0	Poison Surface Block (Fence)
+1189	134	0	0	0	Poison Surface Block (Fence)
+1190	134	0	0	0	Poison Full Block (Fence)
+1191	149	0	0	0	Liquid Lava Full Block (Fence)
+1192	149	0	0	0	Liquid Lava Shallow Block (Fence)
+1193	149	0	0	0	Liquid Lava Surface Block (Fence)
+1194	149	0	0	0	Liquid Lava Small Block (Fence)
+1195	149	0	0	0	Liquid Lava Surface Block (Fence)
+1196	149	0	0	0	Liquid Lava Surface Block (Fence)
+1197	149	0	0	0	Liquid Lava Surface Block (Fence)
+1198	149	0	0	0	Liquid Lava Surface Block (Fence)
+1199	149	0	0	0	Liquid Lava Surface Block (Fence)
+1200	149	0	0	0	Liquid Lava Surface Block (Fence)
+1201	149	0	0	0	Liquid Lava Full Block (Fence)
+1202	135	0	0	0	Bottomless Swamp Full Block (Fence)
+1203	135	0	0	0	Bottomless Swamp Shallow Block (Fence)
+1204	135	0	0	0	Bottomless Swamp Surface Block (Fence)
+1205	135	0	0	0	Bottomless Swamp Small Block (Fence)
+1206	135	0	0	0	Bottomless Swamp Surface Block (Fence)
+1207	135	0	0	0	Bottomless Swamp Surface Block (Fence)
+1208	135	0	0	0	Bottomless Swamp Surface Block (Fence)
+1209	135	0	0	0	Bottomless Swamp Surface Block (Fence)
+1210	135	0	0	0	Bottomless Swamp Surface Block (Fence)
+1211	135	0	0	0	Bottomless Swamp Surface Block (Fence)
+1212	135	0	0	0	Bottomless Swamp Full Block (Fence)
+1213	136	0	0	0	Filthy Water Full Block (Fence)
+1214	136	0	0	0	Filthy Water Shallow Block (Fence)
+1215	136	0	0	0	Filthy Water Surface Block (Fence)
+1216	136	0	0	0	Filthy Water Small Block (Fence)
+1217	136	0	0	0	Filthy Water Surface Block (Fence)
+1218	136	0	0	0	Filthy Water Surface Block (Fence)
+1219	136	0	0	0	Filthy Water Surface Block (Fence)
+1220	136	0	0	0	Filthy Water Surface Block (Fence)
+1221	136	0	0	0	Filthy Water Surface Block (Fence)
+1222	136	0	0	0	Filthy Water Surface Block (Fence)
+1223	136	0	0	0	Filthy Water Full Block (Fence)
+1224	152	0	0	0	Sea Water Full Block (Fence)
+1225	152	0	0	0	Sea Water Shallow Block (Fence)
+1226	152	0	0	0	Sea Water Surface Block (Fence)
+1227	152	0	0	0	Sea Water Small Block (Fence)
+1228	152	0	0	0	Sea Water Surface Block (Fence)
+1229	152	0	0	0	Sea Water Surface Block (Fence)
+1230	152	0	0	0	Sea Water Surface Block (Fence)
+1231	152	0	0	0	Sea Water Surface Block (Fence)
+1232	152	0	0	0	Sea Water Surface Block (Fence)
+1233	152	0	0	0	Sea Water Surface Block (Fence)
+1234	152	0	0	0	Sea Water Full Block (Fence)
+1235	153	0	0	0	Plasma Full Block (Fence)
+1236	153	0	0	0	Plasma Shallow Block (Fence)
+1237	153	0	0	0	Plasma Surface Block (Fence)
+1238	153	0	0	0	Plasma Small Block (Fence)
+1239	153	0	0	0	Plasma Surface Block (Fence)
+1240	153	0	0	0	Plasma Surface Block (Fence)
+1241	153	0	0	0	Plasma Surface Block (Fence)
+1242	153	0	0	0	Plasma Surface Block (Fence)
+1243	153	0	0	0	Plasma Surface Block (Fence)
+1244	153	0	0	0	Plasma Surface Block (Fence)
+1245	153	0	0	0	Plasma Full Block (Fence)
+1246	260	3	0	0	Item (Fence)
+1247	101	0	0	0	Clear Water Full Block (<pan>)
+1248	101	0	0	0	Clear Water Shallow Block (<pan>)
+1249	101	0	0	0	Clear Water Surface Block (<pan>)
+1250	101	0	0	0	Clear Water Small Block (<pan>)
+1251	101	0	0	0	Clear Water Surface Block (<pan>)
+1252	101	0	0	0	Clear Water Surface Block (<pan>)
+1253	101	0	0	0	Clear Water Surface Block (<pan>)
+1254	101	0	0	0	Clear Water Surface Block (<pan>)
+1255	101	0	0	0	Clear Water Surface Block (<pan>)
+1256	101	0	0	0	Clear Water Surface Block (<pan>)
+1257	101	0	0	0	Clear Water Full Block (<pan>)
+1258	139	0	0	0	Hot Water Full Block (<pan>)
+1259	139	0	0	0	Hot Water Shallow Block (<pan>)
+1260	139	0	0	0	Hot Water Surface Block (<pan>)
+1261	139	0	0	0	Hot Water Small Block (<pan>)
+1262	139	0	0	0	Hot Water Surface Block (<pan>)
+1263	139	0	0	0	Hot Water Surface Block (<pan>)
+1264	139	0	0	0	Hot Water Surface Block (<pan>)
+1265	139	0	0	0	Hot Water Surface Block (<pan>)
+1266	139	0	0	0	Hot Water Surface Block (<pan>)
+1267	139	0	0	0	Hot Water Surface Block (<pan>)
+1268	139	0	0	0	Hot Water Full Block (<pan>)
+1269	134	0	0	0	Poison Full Block (<pan>)
+1270	134	0	0	0	Poison Shallow Block (<pan>)
+1271	134	0	0	0	Poison Surface Block (<pan>)
+1272	134	0	0	0	Poison Small Block (<pan>)
+1273	134	0	0	0	Poison Surface Block (<pan>)
+1274	134	0	0	0	Poison Surface Block (<pan>)
+1275	134	0	0	0	Poison Surface Block (<pan>)
+1276	134	0	0	0	Poison Surface Block (<pan>)
+1277	134	0	0	0	Poison Surface Block (<pan>)
+1278	134	0	0	0	Poison Surface Block (<pan>)
+1279	134	0	0	0	Poison Full Block (<pan>)
+1280	149	0	0	0	Liquid Lava Full Block (<pan>)
+1281	149	0	0	0	Liquid Lava Shallow Block (<pan>)
+1282	149	0	0	0	Liquid Lava Surface Block (<pan>)
+1283	149	0	0	0	Liquid Lava Small Block (<pan>)
+1284	149	0	0	0	Liquid Lava Surface Block (<pan>)
+1285	149	0	0	0	Liquid Lava Surface Block (<pan>)
+1286	149	0	0	0	Liquid Lava Surface Block (<pan>)
+1287	149	0	0	0	Liquid Lava Surface Block (<pan>)
+1288	149	0	0	0	Liquid Lava Surface Block (<pan>)
+1289	149	0	0	0	Liquid Lava Surface Block (<pan>)
+1290	149	0	0	0	Liquid Lava Full Block (<pan>)
+1291	135	0	0	0	Bottomless Swamp Full Block (<pan>)
+1292	135	0	0	0	Bottomless Swamp Shallow Block (<pan>)
+1293	135	0	0	0	Bottomless Swamp Surface Block (<pan>)
+1294	135	0	0	0	Bottomless Swamp Small Block (<pan>)
+1295	135	0	0	0	Bottomless Swamp Surface Block (<pan>)
+1296	135	0	0	0	Bottomless Swamp Surface Block (<pan>)
+1297	135	0	0	0	Bottomless Swamp Surface Block (<pan>)
+1298	135	0	0	0	Bottomless Swamp Surface Block (<pan>)
+1299	135	0	0	0	Bottomless Swamp Surface Block (<pan>)
+1300	135	0	0	0	Bottomless Swamp Surface Block (<pan>)
+1301	135	0	0	0	Bottomless Swamp Full Block (<pan>)
+1302	136	0	0	0	Filthy Water Full Block (<pan>)
+1303	136	0	0	0	Filthy Water Shallow Block (<pan>)
+1304	136	0	0	0	Filthy Water Surface Block (<pan>)
+1305	136	0	0	0	Filthy Water Small Block (<pan>)
+1306	136	0	0	0	Filthy Water Surface Block (<pan>)
+1307	136	0	0	0	Filthy Water Surface Block (<pan>)
+1308	136	0	0	0	Filthy Water Surface Block (<pan>)
+1309	136	0	0	0	Filthy Water Surface Block (<pan>)
+1310	136	0	0	0	Filthy Water Surface Block (<pan>)
+1311	136	0	0	0	Filthy Water Surface Block (<pan>)
+1312	136	0	0	0	Filthy Water Full Block (<pan>)
+1313	152	0	0	0	Sea Water Full Block (<pan>)
+1314	152	0	0	0	Sea Water Shallow Block (<pan>)
+1315	152	0	0	0	Sea Water Surface Block (<pan>)
+1316	152	0	0	0	Sea Water Small Block (<pan>)
+1317	152	0	0	0	Sea Water Surface Block (<pan>)
+1318	152	0	0	0	Sea Water Surface Block (<pan>)
+1319	152	0	0	0	Sea Water Surface Block (<pan>)
+1320	152	0	0	0	Sea Water Surface Block (<pan>)
+1321	152	0	0	0	Sea Water Surface Block (<pan>)
+1322	152	0	0	0	Sea Water Surface Block (<pan>)
+1323	152	0	0	0	Sea Water Full Block (<pan>)
+1324	153	0	0	0	Plasma Full Block (<pan>)
+1325	153	0	0	0	Plasma Shallow Block (<pan>)
+1326	153	0	0	0	Plasma Surface Block (<pan>)
+1327	153	0	0	0	Plasma Small Block (<pan>)
+1328	153	0	0	0	Plasma Surface Block (<pan>)
+1329	153	0	0	0	Plasma Surface Block (<pan>)
+1330	153	0	0	0	Plasma Surface Block (<pan>)
+1331	153	0	0	0	Plasma Surface Block (<pan>)
+1332	153	0	0	0	Plasma Surface Block (<pan>)
+1333	153	0	0	0	Plasma Surface Block (<pan>)
+1334	153	0	0	0	Plasma Full Block (<pan>)
+1335	261	3	0	0	Item
+1336	101	0	0	0	Clear Water Full Block (<track>)
+1337	101	0	0	0	Clear Water Shallow Block (<track>)
+1338	101	0	0	0	Clear Water Surface Block (<track>)
+1339	101	0	0	0	Clear Water Small Block (<track>)
+1340	101	0	0	0	Clear Water Surface Block (<track>)
+1341	101	0	0	0	Clear Water Surface Block (<track>)
+1342	101	0	0	0	Clear Water Surface Block (<track>)
+1343	101	0	0	0	Clear Water Surface Block (<track>)
+1344	101	0	0	0	Clear Water Surface Block (<track>)
+1345	101	0	0	0	Clear Water Surface Block (<track>)
+1346	101	0	0	0	Clear Water Full Block (<track>)
+1347	139	0	0	0	Hot Water Full Block (<track>)
+1348	139	0	0	0	Hot Water Shallow Block (<track>)
+1349	139	0	0	0	Hot Water Surface Block (<track>)
+1350	139	0	0	0	Hot Water Small Block (<track>)
+1351	139	0	0	0	Hot Water Surface Block (<track>)
+1352	139	0	0	0	Hot Water Surface Block (<track>)
+1353	139	0	0	0	Hot Water Surface Block (<track>)
+1354	139	0	0	0	Hot Water Surface Block (<track>)
+1355	139	0	0	0	Hot Water Surface Block (<track>)
+1356	139	0	0	0	Hot Water Surface Block (<track>)
+1357	139	0	0	0	Hot Water Full Block (<track>)
+1358	134	0	0	0	Poison Full Block (<track>)
+1359	134	0	0	0	Poison Shallow Block (<track>)
+1360	134	0	0	0	Poison Surface Block (<track>)
+1361	134	0	0	0	Poison Small Block (<track>)
+1362	134	0	0	0	Poison Surface Block (<track>)
+1363	134	0	0	0	Poison Surface Block (<track>)
+1364	134	0	0	0	Poison Surface Block (<track>)
+1365	134	0	0	0	Poison Surface Block (<track>)
+1366	134	0	0	0	Poison Surface Block (<track>)
+1367	134	0	0	0	Poison Surface Block (<track>)
+1368	134	0	0	0	Poison Full Block (<track>)
+1369	149	0	0	0	Liquid Lava Full Block (<track>)
+1370	149	0	0	0	Liquid Lava Shallow Block (<track>)
+1371	149	0	0	0	Liquid Lava Surface Block (<track>)
+1372	149	0	0	0	Liquid Lava Small Block (<track>)
+1373	149	0	0	0	Liquid Lava Surface Block (<track>)
+1374	149	0	0	0	Liquid Lava Surface Block (<track>)
+1375	149	0	0	0	Liquid Lava Surface Block (<track>)
+1376	149	0	0	0	Liquid Lava Surface Block (<track>)
+1377	149	0	0	0	Liquid Lava Surface Block (<track>)
+1378	149	0	0	0	Liquid Lava Surface Block (<track>)
+1379	149	0	0	0	Liquid Lava Full Block (<track>)
+1380	135	0	0	0	Bottomless Swamp Full Block (<track>)
+1381	135	0	0	0	Bottomless Swamp Shallow Block (<track>)
+1382	135	0	0	0	Bottomless Swamp Surface Block (<track>)
+1383	135	0	0	0	Bottomless Swamp Small Block (<track>)
+1384	135	0	0	0	Bottomless Swamp Surface Block (<track>)
+1385	135	0	0	0	Bottomless Swamp Surface Block (<track>)
+1386	135	0	0	0	Bottomless Swamp Surface Block (<track>)
+1387	135	0	0	0	Bottomless Swamp Surface Block (<track>)
+1388	135	0	0	0	Bottomless Swamp Surface Block (<track>)
+1389	135	0	0	0	Bottomless Swamp Surface Block (<track>)
+1390	135	0	0	0	Bottomless Swamp Full Block (<track>)
+1391	136	0	0	0	Filthy Water Full Block (<track>)
+1392	136	0	0	0	Filthy Water Shallow Block (<track>)
+1393	136	0	0	0	Filthy Water Surface Block (<track>)
+1394	136	0	0	0	Filthy Water Small Block (<track>)
+1395	136	0	0	0	Filthy Water Surface Block (<track>)
+1396	136	0	0	0	Filthy Water Surface Block (<track>)
+1397	136	0	0	0	Filthy Water Surface Block (<track>)
+1398	136	0	0	0	Filthy Water Surface Block (<track>)
+1399	136	0	0	0	Filthy Water Surface Block (<track>)
+1400	136	0	0	0	Filthy Water Surface Block (<track>)
+1401	136	0	0	0	Filthy Water Full Block (<track>)
+1402	152	0	0	0	Sea Water Full Block (<track>)
+1403	152	0	0	0	Sea Water Shallow Block (<track>)
+1404	152	0	0	0	Sea Water Surface Block (<track>)
+1405	152	0	0	0	Sea Water Small Block (<track>)
+1406	152	0	0	0	Sea Water Surface Block (<track>)
+1407	152	0	0	0	Sea Water Surface Block (<track>)
+1408	152	0	0	0	Sea Water Surface Block (<track>)
+1409	152	0	0	0	Sea Water Surface Block (<track>)
+1410	152	0	0	0	Sea Water Surface Block (<track>)
+1411	152	0	0	0	Sea Water Surface Block (<track>)
+1412	152	0	0	0	Sea Water Full Block (<track>)
+1413	153	0	0	0	Plasma Full Block (<track>)
+1414	153	0	0	0	Plasma Shallow Block (<track>)
+1415	153	0	0	0	Plasma Surface Block (<track>)
+1416	153	0	0	0	Plasma Small Block (<track>)
+1417	153	0	0	0	Plasma Surface Block (<track>)
+1418	153	0	0	0	Plasma Surface Block (<track>)
+1419	153	0	0	0	Plasma Surface Block (<track>)
+1420	153	0	0	0	Plasma Surface Block (<track>)
+1421	153	0	0	0	Plasma Surface Block (<track>)
+1422	153	0	0	0	Plasma Surface Block (<track>)
+1423	153	0	0	0	Plasma Full Block (<track>)
+1424	261	3	0	0	Item
+1425	101	0	0	0	Clear Water Full Block (<roof>)
+1426	101	0	0	0	Clear Water Shallow Block (<roof>)
+1427	101	0	0	0	Clear Water Surface Block (<roof>)
+1428	101	0	0	0	Clear Water Small Block (<roof>)
+1429	101	0	0	0	Clear Water Surface Block (<roof>)
+1430	101	0	0	0	Clear Water Surface Block (<roof>)
+1431	101	0	0	0	Clear Water Surface Block (<roof>)
+1432	101	0	0	0	Clear Water Surface Block (<roof>)
+1433	101	0	0	0	Clear Water Surface Block (<roof>)
+1434	101	0	0	0	Clear Water Surface Block (<roof>)
+1435	101	0	0	0	Clear Water Full Block (<roof>)
+1436	139	0	0	0	Hot Water Full Block (<roof>)
+1437	139	0	0	0	Hot Water Shallow Block (<roof>)
+1438	139	0	0	0	Hot Water Surface Block (<roof>)
+1439	139	0	0	0	Hot Water Small Block (<roof>)
+1440	139	0	0	0	Hot Water Surface Block (<roof>)
+1441	139	0	0	0	Hot Water Surface Block (<roof>)
+1442	139	0	0	0	Hot Water Surface Block (<roof>)
+1443	139	0	0	0	Hot Water Surface Block (<roof>)
+1444	139	0	0	0	Hot Water Surface Block (<roof>)
+1445	139	0	0	0	Hot Water Surface Block (<roof>)
+1446	139	0	0	0	Hot Water Full Block (<roof>)
+1447	134	0	0	0	Poison Full Block (<roof>)
+1448	134	0	0	0	Poison Shallow Block (<roof>)
+1449	134	0	0	0	Poison Surface Block (<roof>)
+1450	134	0	0	0	Poison Small Block (<roof>)
+1451	134	0	0	0	Poison Surface Block (<roof>)
+1452	134	0	0	0	Poison Surface Block (<roof>)
+1453	134	0	0	0	Poison Surface Block (<roof>)
+1454	134	0	0	0	Poison Surface Block (<roof>)
+1455	134	0	0	0	Poison Surface Block (<roof>)
+1456	134	0	0	0	Poison Surface Block (<roof>)
+1457	134	0	0	0	Poison Full Block (<roof>)
+1458	149	0	0	0	Liquid Lava Full Block (<roof>)
+1459	149	0	0	0	Liquid Lava Shallow Block (<roof>)
+1460	149	0	0	0	Liquid Lava Surface Block (<roof>)
+1461	149	0	0	0	Liquid Lava Small Block (<roof>)
+1462	149	0	0	0	Liquid Lava Surface Block (<roof>)
+1463	149	0	0	0	Liquid Lava Surface Block (<roof>)
+1464	149	0	0	0	Liquid Lava Surface Block (<roof>)
+1465	149	0	0	0	Liquid Lava Surface Block (<roof>)
+1466	149	0	0	0	Liquid Lava Surface Block (<roof>)
+1467	149	0	0	0	Liquid Lava Surface Block (<roof>)
+1468	149	0	0	0	Liquid Lava Full Block (<roof>)
+1469	135	0	0	0	Bottomless Swamp Full Block (<roof>)
+1470	135	0	0	0	Bottomless Swamp Shallow Block (<roof>)
+1471	135	0	0	0	Bottomless Swamp Surface Block (<roof>)
+1472	135	0	0	0	Bottomless Swamp Small Block (<roof>)
+1473	135	0	0	0	Bottomless Swamp Surface Block (<roof>)
+1474	135	0	0	0	Bottomless Swamp Surface Block (<roof>)
+1475	135	0	0	0	Bottomless Swamp Surface Block (<roof>)
+1476	135	0	0	0	Bottomless Swamp Surface Block (<roof>)
+1477	135	0	0	0	Bottomless Swamp Surface Block (<roof>)
+1478	135	0	0	0	Bottomless Swamp Surface Block (<roof>)
+1479	135	0	0	0	Bottomless Swamp Full Block (<roof>)
+1480	136	0	0	0	Filthy Water Full Block (<roof>)
+1481	136	0	0	0	Filthy Water Shallow Block (<roof>)
+1482	136	0	0	0	Filthy Water Surface Block (<roof>)
+1483	136	0	0	0	Filthy Water Small Block (<roof>)
+1484	136	0	0	0	Filthy Water Surface Block (<roof>)
+1485	136	0	0	0	Filthy Water Surface Block (<roof>)
+1486	136	0	0	0	Filthy Water Surface Block (<roof>)
+1487	136	0	0	0	Filthy Water Surface Block (<roof>)
+1488	136	0	0	0	Filthy Water Surface Block (<roof>)
+1489	136	0	0	0	Filthy Water Surface Block (<roof>)
+1490	136	0	0	0	Filthy Water Full Block (<roof>)
+1491	152	0	0	0	Sea Water Full Block (<roof>)
+1492	152	0	0	0	Sea Water Shallow Block (<roof>)
+1493	152	0	0	0	Sea Water Surface Block (<roof>)
+1494	152	0	0	0	Sea Water Small Block (<roof>)
+1495	152	0	0	0	Sea Water Surface Block (<roof>)
+1496	152	0	0	0	Sea Water Surface Block (<roof>)
+1497	152	0	0	0	Sea Water Surface Block (<roof>)
+1498	152	0	0	0	Sea Water Surface Block (<roof>)
+1499	152	0	0	0	Sea Water Surface Block (<roof>)
+1500	152	0	0	0	Sea Water Surface Block (<roof>)
+1501	152	0	0	0	Sea Water Full Block (<roof>)
+1502	153	0	0	0	Plasma Full Block (<roof>)
+1503	153	0	0	0	Plasma Shallow Block (<roof>)
+1504	153	0	0	0	Plasma Surface Block (<roof>)
+1505	153	0	0	0	Plasma Small Block (<roof>)
+1506	153	0	0	0	Plasma Surface Block (<roof>)
+1507	153	0	0	0	Plasma Surface Block (<roof>)
+1508	153	0	0	0	Plasma Surface Block (<roof>)
+1509	153	0	0	0	Plasma Surface Block (<roof>)
+1510	153	0	0	0	Plasma Surface Block (<roof>)
+1511	153	0	0	0	Plasma Surface Block (<roof>)
+1512	153	0	0	0	Plasma Full Block (<roof>)
+1513	261	3	0	0	Item
+1514	101	0	0	0	Clear Water Full Block (<table>)
+1515	101	0	0	0	Clear Water Shallow Block (<table>)
+1516	101	0	0	0	Clear Water Surface Block (<table>)
+1517	101	0	0	0	Clear Water Small Block (<table>)
+1518	101	0	0	0	Clear Water Surface Block (<table>)
+1519	101	0	0	0	Clear Water Surface Block (<table>)
+1520	101	0	0	0	Clear Water Surface Block (<table>)
+1521	101	0	0	0	Clear Water Surface Block (<table>)
+1522	101	0	0	0	Clear Water Surface Block (<table>)
+1523	101	0	0	0	Clear Water Surface Block (<table>)
+1524	101	0	0	0	Clear Water Full Block (<table>)
+1525	139	0	0	0	Hot Water Full Block (<table>)
+1526	139	0	0	0	Hot Water Shallow Block (<table>)
+1527	139	0	0	0	Hot Water Surface Block (<table>)
+1528	139	0	0	0	Hot Water Small Block (<table>)
+1529	139	0	0	0	Hot Water Surface Block (<table>)
+1530	139	0	0	0	Hot Water Surface Block (<table>)
+1531	139	0	0	0	Hot Water Surface Block (<table>)
+1532	139	0	0	0	Hot Water Surface Block (<table>)
+1533	139	0	0	0	Hot Water Surface Block (<table>)
+1534	139	0	0	0	Hot Water Surface Block (<table>)
+1535	139	0	0	0	Hot Water Full Block (<table>)
+1536	134	0	0	0	Poison Full Block (<table>)
+1537	134	0	0	0	Poison Shallow Block (<table>)
+1538	134	0	0	0	Poison Surface Block (<table>)
+1539	134	0	0	0	Poison Small Block (<table>)
+1540	134	0	0	0	Poison Surface Block (<table>)
+1541	134	0	0	0	Poison Surface Block (<table>)
+1542	134	0	0	0	Poison Surface Block (<table>)
+1543	134	0	0	0	Poison Surface Block (<table>)
+1544	134	0	0	0	Poison Surface Block (<table>)
+1545	134	0	0	0	Poison Surface Block (<table>)
+1546	134	0	0	0	Poison Full Block (<table>)
+1547	149	0	0	0	Liquid Lava Full Block (<table>)
+1548	149	0	0	0	Liquid Lava Shallow Block (<table>)
+1549	149	0	0	0	Liquid Lava Surface Block (<table>)
+1550	149	0	0	0	Liquid Lava Small Block (<table>)
+1551	149	0	0	0	Liquid Lava Surface Block (<table>)
+1552	149	0	0	0	Liquid Lava Surface Block (<table>)
+1553	149	0	0	0	Liquid Lava Surface Block (<table>)
+1554	149	0	0	0	Liquid Lava Surface Block (<table>)
+1555	149	0	0	0	Liquid Lava Surface Block (<table>)
+1556	149	0	0	0	Liquid Lava Surface Block (<table>)
+1557	149	0	0	0	Liquid Lava Full Block (<table>)
+1558	135	0	0	0	Bottomless Swamp Full Block (<table>)
+1559	135	0	0	0	Bottomless Swamp Shallow Block (<table>)
+1560	135	0	0	0	Bottomless Swamp Surface Block (<table>)
+1561	135	0	0	0	Bottomless Swamp Small Block (<table>)
+1562	135	0	0	0	Bottomless Swamp Surface Block (<table>)
+1563	135	0	0	0	Bottomless Swamp Surface Block (<table>)
+1564	135	0	0	0	Bottomless Swamp Surface Block (<table>)
+1565	135	0	0	0	Bottomless Swamp Surface Block (<table>)
+1566	135	0	0	0	Bottomless Swamp Surface Block (<table>)
+1567	135	0	0	0	Bottomless Swamp Surface Block (<table>)
+1568	135	0	0	0	Bottomless Swamp Full Block (<table>)
+1569	136	0	0	0	Filthy Water Full Block (<table>)
+1570	136	0	0	0	Filthy Water Shallow Block (<table>)
+1571	136	0	0	0	Filthy Water Surface Block (<table>)
+1572	136	0	0	0	Filthy Water Small Block (<table>)
+1573	136	0	0	0	Filthy Water Surface Block (<table>)
+1574	136	0	0	0	Filthy Water Surface Block (<table>)
+1575	136	0	0	0	Filthy Water Surface Block (<table>)
+1576	136	0	0	0	Filthy Water Surface Block (<table>)
+1577	136	0	0	0	Filthy Water Surface Block (<table>)
+1578	136	0	0	0	Filthy Water Surface Block (<table>)
+1579	136	0	0	0	Filthy Water Full Block (<table>)
+1580	152	0	0	0	Sea Water Full Block (<table>)
+1581	152	0	0	0	Sea Water Shallow Block (<table>)
+1582	152	0	0	0	Sea Water Surface Block (<table>)
+1583	152	0	0	0	Sea Water Small Block (<table>)
+1584	152	0	0	0	Sea Water Surface Block (<table>)
+1585	152	0	0	0	Sea Water Surface Block (<table>)
+1586	152	0	0	0	Sea Water Surface Block (<table>)
+1587	152	0	0	0	Sea Water Surface Block (<table>)
+1588	152	0	0	0	Sea Water Surface Block (<table>)
+1589	152	0	0	0	Sea Water Surface Block (<table>)
+1590	152	0	0	0	Sea Water Full Block (<table>)
+1591	153	0	0	0	Plasma Full Block (<table>)
+1592	153	0	0	0	Plasma Shallow Block (<table>)
+1593	153	0	0	0	Plasma Surface Block (<table>)
+1594	153	0	0	0	Plasma Small Block (<table>)
+1595	153	0	0	0	Plasma Surface Block (<table>)
+1596	153	0	0	0	Plasma Surface Block (<table>)
+1597	153	0	0	0	Plasma Surface Block (<table>)
+1598	153	0	0	0	Plasma Surface Block (<table>)
+1599	153	0	0	0	Plasma Surface Block (<table>)
+1600	153	0	0	0	Plasma Surface Block (<table>)
+1601	153	0	0	0	Plasma Full Block (<table>)
+1602	262	3	0	0	Item (Table)
+1603	101	0	0	0	Clear Water Full Block (<light>)
+1604	101	0	0	0	Clear Water Shallow Block (<light>)
+1605	101	0	0	0	Clear Water Surface Block (<light>)
+1606	101	0	0	0	Clear Water Small Block (<light>)
+1607	101	0	0	0	Clear Water Surface Block (<light>)
+1608	101	0	0	0	Clear Water Surface Block (<light>)
+1609	101	0	0	0	Clear Water Surface Block (<light>)
+1610	101	0	0	0	Clear Water Surface Block (<light>)
+1611	101	0	0	0	Clear Water Surface Block (<light>)
+1612	101	0	0	0	Clear Water Surface Block (<light>)
+1613	101	0	0	0	Clear Water Full Block (<light>)
+1614	139	0	0	0	Hot Water Full Block (<light>)
+1615	139	0	0	0	Hot Water Shallow Block (<light>)
+1616	139	0	0	0	Hot Water Surface Block (<light>)
+1617	139	0	0	0	Hot Water Small Block (<light>)
+1618	139	0	0	0	Hot Water Surface Block (<light>)
+1619	139	0	0	0	Hot Water Surface Block (<light>)
+1620	139	0	0	0	Hot Water Surface Block (<light>)
+1621	139	0	0	0	Hot Water Surface Block (<light>)
+1622	139	0	0	0	Hot Water Surface Block (<light>)
+1623	139	0	0	0	Hot Water Surface Block (<light>)
+1624	139	0	0	0	Hot Water Full Block (<light>)
+1625	134	0	0	0	Poison Full Block (<light>)
+1626	134	0	0	0	Poison Shallow Block (<light>)
+1627	134	0	0	0	Poison Surface Block (<light>)
+1628	134	0	0	0	Poison Small Block (<light>)
+1629	134	0	0	0	Poison Surface Block (<light>)
+1630	134	0	0	0	Poison Surface Block (<light>)
+1631	134	0	0	0	Poison Surface Block (<light>)
+1632	134	0	0	0	Poison Surface Block (<light>)
+1633	134	0	0	0	Poison Surface Block (<light>)
+1634	134	0	0	0	Poison Surface Block (<light>)
+1635	134	0	0	0	Poison Full Block (<light>)
+1636	149	0	0	0	Liquid Lava Full Block (<light>)
+1637	149	0	0	0	Liquid Lava Shallow Block (<light>)
+1638	149	0	0	0	Liquid Lava Surface Block (<light>)
+1639	149	0	0	0	Liquid Lava Small Block (<light>)
+1640	149	0	0	0	Liquid Lava Surface Block (<light>)
+1641	149	0	0	0	Liquid Lava Surface Block (<light>)
+1642	149	0	0	0	Liquid Lava Surface Block (<light>)
+1643	149	0	0	0	Liquid Lava Surface Block (<light>)
+1644	149	0	0	0	Liquid Lava Surface Block (<light>)
+1645	149	0	0	0	Liquid Lava Surface Block (<light>)
+1646	149	0	0	0	Liquid Lava Full Block (<light>)
+1647	135	0	0	0	Bottomless Swamp Full Block (<light>)
+1648	135	0	0	0	Bottomless Swamp Shallow Block (<light>)
+1649	135	0	0	0	Bottomless Swamp Surface Block (<light>)
+1650	135	0	0	0	Bottomless Swamp Small Block (<light>)
+1651	135	0	0	0	Bottomless Swamp Surface Block (<light>)
+1652	135	0	0	0	Bottomless Swamp Surface Block (<light>)
+1653	135	0	0	0	Bottomless Swamp Surface Block (<light>)
+1654	135	0	0	0	Bottomless Swamp Surface Block (<light>)
+1655	135	0	0	0	Bottomless Swamp Surface Block (<light>)
+1656	135	0	0	0	Bottomless Swamp Surface Block (<light>)
+1657	135	0	0	0	Bottomless Swamp Full Block (<light>)
+1658	136	0	0	0	Filthy Water Full Block (<light>)
+1659	136	0	0	0	Filthy Water Shallow Block (<light>)
+1660	136	0	0	0	Filthy Water Surface Block (<light>)
+1661	136	0	0	0	Filthy Water Small Block (<light>)
+1662	136	0	0	0	Filthy Water Surface Block (<light>)
+1663	136	0	0	0	Filthy Water Surface Block (<light>)
+1664	136	0	0	0	Filthy Water Surface Block (<light>)
+1665	136	0	0	0	Filthy Water Surface Block (<light>)
+1666	136	0	0	0	Filthy Water Surface Block (<light>)
+1667	136	0	0	0	Filthy Water Surface Block (<light>)
+1668	136	0	0	0	Filthy Water Full Block (<light>)
+1669	152	0	0	0	Sea Water Full Block (<light>)
+1670	152	0	0	0	Sea Water Shallow Block (<light>)
+1671	152	0	0	0	Sea Water Surface Block (<light>)
+1672	152	0	0	0	Sea Water Small Block (<light>)
+1673	152	0	0	0	Sea Water Surface Block (<light>)
+1674	152	0	0	0	Sea Water Surface Block (<light>)
+1675	152	0	0	0	Sea Water Surface Block (<light>)
+1676	152	0	0	0	Sea Water Surface Block (<light>)
+1677	152	0	0	0	Sea Water Surface Block (<light>)
+1678	152	0	0	0	Sea Water Surface Block (<light>)
+1679	152	0	0	0	Sea Water Full Block (<light>)
+1680	153	0	0	0	Plasma Full Block (<light>)
+1681	153	0	0	0	Plasma Shallow Block (<light>)
+1682	153	0	0	0	Plasma Surface Block (<light>)
+1683	153	0	0	0	Plasma Small Block (<light>)
+1684	153	0	0	0	Plasma Surface Block (<light>)
+1685	153	0	0	0	Plasma Surface Block (<light>)
+1686	153	0	0	0	Plasma Surface Block (<light>)
+1687	153	0	0	0	Plasma Surface Block (<light>)
+1688	153	0	0	0	Plasma Surface Block (<light>)
+1689	153	0	0	0	Plasma Surface Block (<light>)
+1690	153	0	0	0	Plasma Full Block (<light>)
+1691	263	3	0	0	Item (Light)
+1692	101	3	0	0	Clear Water Full Block (<block>)
+1693	101	3	0	0	Clear Water Shallow Block (<block>)
+1694	101	3	0	0	Clear Water Surface Block (<block>)
+1695	101	3	0	0	Clear Water Small Block (<block>)
+1696	101	3	0	0	Clear Water Surface Block (<block>)
+1697	101	3	0	0	Clear Water Surface Block (<block>)
+1698	101	3	0	0	Clear Water Surface Block (<block>)
+1699	101	3	0	0	Clear Water Surface Block (<block>)
+1700	101	3	0	0	Clear Water Surface Block (<block>)
+1701	101	3	0	0	Clear Water Surface Block (<block>)
+1702	101	3	0	0	Clear Water Full Block (<block>)
+1703	139	3	0	0	Hot Water Full Block (<block>)
+1704	139	3	0	0	Hot Water Shallow Block (<block>)
+1705	139	3	0	0	Hot Water Surface Block (<block>)
+1706	139	3	0	0	Hot Water Small Block (<block>)
+1707	139	3	0	0	Hot Water Surface Block (<block>)
+1708	139	3	0	0	Hot Water Surface Block (<block>)
+1709	139	3	0	0	Hot Water Surface Block (<block>)
+1710	139	3	0	0	Hot Water Surface Block (<block>)
+1711	139	3	0	0	Hot Water Surface Block (<block>)
+1712	139	3	0	0	Hot Water Surface Block (<block>)
+1713	139	3	0	0	Hot Water Full Block (<block>)
+1714	134	3	0	0	Poison Full Block (<block>)
+1715	134	3	0	0	Poison Shallow Block (<block>)
+1716	134	3	0	0	Poison Surface Block (<block>)
+1717	134	3	0	0	Poison Small Block (<block>)
+1718	134	3	0	0	Poison Surface Block (<block>)
+1719	134	3	0	0	Poison Surface Block (<block>)
+1720	134	3	0	0	Poison Surface Block (<block>)
+1721	134	3	0	0	Poison Surface Block (<block>)
+1722	134	3	0	0	Poison Surface Block (<block>)
+1723	134	3	0	0	Poison Surface Block (<block>)
+1724	134	3	0	0	Poison Full Block (<block>)
+1725	149	3	0	0	Liquid Lava Full Block (<block>)
+1726	149	3	0	0	Liquid Lava Shallow Block (<block>)
+1727	149	3	0	0	Liquid Lava Surface Block (<block>)
+1728	149	3	0	0	Liquid Lava Small Block (<block>)
+1729	149	3	0	0	Liquid Lava Surface Block (<block>)
+1730	149	3	0	0	Liquid Lava Surface Block (<block>)
+1731	149	3	0	0	Liquid Lava Surface Block (<block>)
+1732	149	3	0	0	Liquid Lava Surface Block (<block>)
+1733	149	3	0	0	Liquid Lava Surface Block (<block>)
+1734	149	3	0	0	Liquid Lava Surface Block (<block>)
+1735	149	3	0	0	Liquid Lava Full Block (<block>)
+1736	135	3	0	0	Bottomless Swamp Full Block (<block>)
+1737	135	3	0	0	Bottomless Swamp Shallow Block (<block>)
+1738	135	3	0	0	Bottomless Swamp Surface Block (<block>)
+1739	135	3	0	0	Bottomless Swamp Small Block (<block>)
+1740	135	3	0	0	Bottomless Swamp Surface Block (<block>)
+1741	135	3	0	0	Bottomless Swamp Surface Block (<block>)
+1742	135	3	0	0	Bottomless Swamp Surface Block (<block>)
+1743	135	3	0	0	Bottomless Swamp Surface Block (<block>)
+1744	135	3	0	0	Bottomless Swamp Surface Block (<block>)
+1745	135	3	0	0	Bottomless Swamp Surface Block (<block>)
+1746	135	3	0	0	Bottomless Swamp Full Block (<block>)
+1747	136	3	0	0	Filthy Water Full Block (<block>)
+1748	136	3	0	0	Filthy Water Shallow Block (<block>)
+1749	136	3	0	0	Filthy Water Surface Block (<block>)
+1750	136	3	0	0	Filthy Water Small Block (<block>)
+1751	136	3	0	0	Filthy Water Surface Block (<block>)
+1752	136	3	0	0	Filthy Water Surface Block (<block>)
+1753	136	3	0	0	Filthy Water Surface Block (<block>)
+1754	136	3	0	0	Filthy Water Surface Block (<block>)
+1755	136	3	0	0	Filthy Water Surface Block (<block>)
+1756	136	3	0	0	Filthy Water Surface Block (<block>)
+1757	136	3	0	0	Filthy Water Full Block (<block>)
+1758	152	3	0	0	Sea Water Full Block (<block>)
+1759	152	3	0	0	Sea Water Shallow Block (<block>)
+1760	152	3	0	0	Sea Water Surface Block (<block>)
+1761	152	3	0	0	Sea Water Small Block (<block>)
+1762	152	3	0	0	Sea Water Surface Block (<block>)
+1763	152	3	0	0	Sea Water Surface Block (<block>)
+1764	152	3	0	0	Sea Water Surface Block (<block>)
+1765	152	3	0	0	Sea Water Surface Block (<block>)
+1766	152	3	0	0	Sea Water Surface Block (<block>)
+1767	152	3	0	0	Sea Water Surface Block (<block>)
+1768	152	3	0	0	Sea Water Full Block (<block>)
+1769	153	3	0	0	Plasma Full Block (<block>)
+1770	153	3	0	0	Plasma Shallow Block (<block>)
+1771	153	3	0	0	Plasma Surface Block (<block>)
+1772	153	3	0	0	Plasma Small Block (<block>)
+1773	153	3	0	0	Plasma Surface Block (<block>)
+1774	153	3	0	0	Plasma Surface Block (<block>)
+1775	153	3	0	0	Plasma Surface Block (<block>)
+1776	153	3	0	0	Plasma Surface Block (<block>)
+1777	153	3	0	0	Plasma Surface Block (<block>)
+1778	153	3	0	0	Plasma Surface Block (<block>)
+1779	153	3	0	0	Plasma Full Block (<block>)
+1780	264	3	0	0	Item (Block)
+1781	101	3	0	0	Clear Water Full Block (<door>)
+1782	101	3	0	0	Clear Water Shallow Block (<door>)
+1783	101	3	0	0	Clear Water Surface Block (<door>)
+1784	101	3	0	0	Clear Water Small Block (<door>)
+1785	101	3	0	0	Clear Water Surface Block (<door>)
+1786	101	3	0	0	Clear Water Surface Block (<door>)
+1787	101	3	0	0	Clear Water Surface Block (<door>)
+1788	101	3	0	0	Clear Water Surface Block (<door>)
+1789	101	3	0	0	Clear Water Surface Block (<door>)
+1790	101	3	0	0	Clear Water Surface Block (<door>)
+1791	101	3	0	0	Clear Water Full Block (<door>)
+1792	139	3	0	0	Hot Water Full Block (<door>)
+1793	139	3	0	0	Hot Water Shallow Block (<door>)
+1794	139	3	0	0	Hot Water Surface Block (<door>)
+1795	139	3	0	0	Hot Water Small Block (<door>)
+1796	139	3	0	0	Hot Water Surface Block (<door>)
+1797	139	3	0	0	Hot Water Surface Block (<door>)
+1798	139	3	0	0	Hot Water Surface Block (<door>)
+1799	139	3	0	0	Hot Water Surface Block (<door>)
+1800	139	3	0	0	Hot Water Surface Block (<door>)
+1801	139	3	0	0	Hot Water Surface Block (<door>)
+1802	139	3	0	0	Hot Water Full Block (<door>)
+1803	134	3	0	0	Poison Full Block (<door>)
+1804	134	3	0	0	Poison Shallow Block (<door>)
+1805	134	3	0	0	Poison Surface Block (<door>)
+1806	134	3	0	0	Poison Small Block (<door>)
+1807	134	3	0	0	Poison Surface Block (<door>)
+1808	134	3	0	0	Poison Surface Block (<door>)
+1809	134	3	0	0	Poison Surface Block (<door>)
+1810	134	3	0	0	Poison Surface Block (<door>)
+1811	134	3	0	0	Poison Surface Block (<door>)
+1812	134	3	0	0	Poison Surface Block (<door>)
+1813	134	3	0	0	Poison Full Block (<door>)
+1814	149	3	0	0	Liquid Lava Full Block (<door>)
+1815	149	3	0	0	Liquid Lava Shallow Block (<door>)
+1816	149	3	0	0	Liquid Lava Surface Block (<door>)
+1817	149	3	0	0	Liquid Lava Small Block (<door>)
+1818	149	3	0	0	Liquid Lava Surface Block (<door>)
+1819	149	3	0	0	Liquid Lava Surface Block (<door>)
+1820	149	3	0	0	Liquid Lava Surface Block (<door>)
+1821	149	3	0	0	Liquid Lava Surface Block (<door>)
+1822	149	3	0	0	Liquid Lava Surface Block (<door>)
+1823	149	3	0	0	Liquid Lava Surface Block (<door>)
+1824	149	3	0	0	Liquid Lava Full Block (<door>)
+1825	135	3	0	0	Bottomless Swamp Full Block (<door>)
+1826	135	3	0	0	Bottomless Swamp Shallow Block (<door>)
+1827	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1828	135	3	0	0	Bottomless Swamp Small Block (<door>)
+1829	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1830	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1831	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1832	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1833	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1834	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1835	135	3	0	0	Bottomless Swamp Full Block (<door>)
+1836	136	3	0	0	Filthy Water Full Block (<door>)
+1837	136	3	0	0	Filthy Water Shallow Block (<door>)
+1838	136	3	0	0	Filthy Water Surface Block (<door>)
+1839	136	3	0	0	Filthy Water Small Block (<door>)
+1840	136	3	0	0	Filthy Water Surface Block (<door>)
+1841	136	3	0	0	Filthy Water Surface Block (<door>)
+1842	136	3	0	0	Filthy Water Surface Block (<door>)
+1843	136	3	0	0	Filthy Water Surface Block (<door>)
+1844	136	3	0	0	Filthy Water Surface Block (<door>)
+1845	136	3	0	0	Filthy Water Surface Block (<door>)
+1846	136	3	0	0	Filthy Water Full Block (<door>)
+1847	152	3	0	0	Sea Water Full Block (<door>)
+1848	152	3	0	0	Sea Water Shallow Block (<door>)
+1849	152	3	0	0	Sea Water Surface Block (<door>)
+1850	152	3	0	0	Sea Water Small Block (<door>)
+1851	152	3	0	0	Sea Water Surface Block (<door>)
+1852	152	3	0	0	Sea Water Surface Block (<door>)
+1853	152	3	0	0	Sea Water Surface Block (<door>)
+1854	152	3	0	0	Sea Water Surface Block (<door>)
+1855	152	3	0	0	Sea Water Surface Block (<door>)
+1856	152	3	0	0	Sea Water Surface Block (<door>)
+1857	152	3	0	0	Sea Water Full Block (<door>)
+1858	153	3	0	0	Plasma Full Block (<door>)
+1859	153	3	0	0	Plasma Shallow Block (<door>)
+1860	153	3	0	0	Plasma Surface Block (<door>)
+1861	153	3	0	0	Plasma Small Block (<door>)
+1862	153	3	0	0	Plasma Surface Block (<door>)
+1863	153	3	0	0	Plasma Surface Block (<door>)
+1864	153	3	0	0	Plasma Surface Block (<door>)
+1865	153	3	0	0	Plasma Surface Block (<door>)
+1866	153	3	0	0	Plasma Surface Block (<door>)
+1867	153	3	0	0	Plasma Surface Block (<door>)
+1868	153	3	0	0	Plasma Full Block (<door>)
+1869	265	3	0	0	Item (Door)
+1870	101	3	0	0	Clear Water Full Block (<door>)
+1871	101	3	0	0	Clear Water Shallow Block (<door>)
+1872	101	3	0	0	Clear Water Surface Block (<door>)
+1873	101	3	0	0	Clear Water Small Block (<door>)
+1874	101	3	0	0	Clear Water Surface Block (<door>)
+1875	101	3	0	0	Clear Water Surface Block (<door>)
+1876	101	3	0	0	Clear Water Surface Block (<door>)
+1877	101	3	0	0	Clear Water Surface Block (<door>)
+1878	101	3	0	0	Clear Water Surface Block (<door>)
+1879	101	3	0	0	Clear Water Surface Block (<door>)
+1880	101	3	0	0	Clear Water Full Block (<door>)
+1881	139	3	0	0	Hot Water Full Block (<door>)
+1882	139	3	0	0	Hot Water Shallow Block (<door>)
+1883	139	3	0	0	Hot Water Surface Block (<door>)
+1884	139	3	0	0	Hot Water Small Block (<door>)
+1885	139	3	0	0	Hot Water Surface Block (<door>)
+1886	139	3	0	0	Hot Water Surface Block (<door>)
+1887	139	3	0	0	Hot Water Surface Block (<door>)
+1888	139	3	0	0	Hot Water Surface Block (<door>)
+1889	139	3	0	0	Hot Water Surface Block (<door>)
+1890	139	3	0	0	Hot Water Surface Block (<door>)
+1891	139	3	0	0	Hot Water Full Block (<door>)
+1892	134	3	0	0	Poison Full Block (<door>)
+1893	134	3	0	0	Poison Shallow Block (<door>)
+1894	134	3	0	0	Poison Surface Block (<door>)
+1895	134	3	0	0	Poison Small Block (<door>)
+1896	134	3	0	0	Poison Surface Block (<door>)
+1897	134	3	0	0	Poison Surface Block (<door>)
+1898	134	3	0	0	Poison Surface Block (<door>)
+1899	134	3	0	0	Poison Surface Block (<door>)
+1900	134	3	0	0	Poison Surface Block (<door>)
+1901	134	3	0	0	Poison Surface Block (<door>)
+1902	134	3	0	0	Poison Full Block (<door>)
+1903	149	3	0	0	Liquid Lava Full Block (<door>)
+1904	149	3	0	0	Liquid Lava Shallow Block (<door>)
+1905	149	3	0	0	Liquid Lava Surface Block (<door>)
+1906	149	3	0	0	Liquid Lava Small Block (<door>)
+1907	149	3	0	0	Liquid Lava Surface Block (<door>)
+1908	149	3	0	0	Liquid Lava Surface Block (<door>)
+1909	149	3	0	0	Liquid Lava Surface Block (<door>)
+1910	149	3	0	0	Liquid Lava Surface Block (<door>)
+1911	149	3	0	0	Liquid Lava Surface Block (<door>)
+1912	149	3	0	0	Liquid Lava Surface Block (<door>)
+1913	149	3	0	0	Liquid Lava Full Block (<door>)
+1914	135	3	0	0	Bottomless Swamp Full Block (<door>)
+1915	135	3	0	0	Bottomless Swamp Shallow Block (<door>)
+1916	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1917	135	3	0	0	Bottomless Swamp Small Block (<door>)
+1918	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1919	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1920	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1921	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1922	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1923	135	3	0	0	Bottomless Swamp Surface Block (<door>)
+1924	135	3	0	0	Bottomless Swamp Full Block (<door>)
+1925	136	3	0	0	Filthy Water Full Block (<door>)
+1926	136	3	0	0	Filthy Water Shallow Block (<door>)
+1927	136	3	0	0	Filthy Water Surface Block (<door>)
+1928	136	3	0	0	Filthy Water Small Block (<door>)
+1929	136	3	0	0	Filthy Water Surface Block (<door>)
+1930	136	3	0	0	Filthy Water Surface Block (<door>)
+1931	136	3	0	0	Filthy Water Surface Block (<door>)
+1932	136	3	0	0	Filthy Water Surface Block (<door>)
+1933	136	3	0	0	Filthy Water Surface Block (<door>)
+1934	136	3	0	0	Filthy Water Surface Block (<door>)
+1935	136	3	0	0	Filthy Water Full Block (<door>)
+1936	152	3	0	0	Sea Water Full Block (<door>)
+1937	152	3	0	0	Sea Water Shallow Block (<door>)
+1938	152	3	0	0	Sea Water Surface Block (<door>)
+1939	152	3	0	0	Sea Water Small Block (<door>)
+1940	152	3	0	0	Sea Water Surface Block (<door>)
+1941	152	3	0	0	Sea Water Surface Block (<door>)
+1942	152	3	0	0	Sea Water Surface Block (<door>)
+1943	152	3	0	0	Sea Water Surface Block (<door>)
+1944	152	3	0	0	Sea Water Surface Block (<door>)
+1945	152	3	0	0	Sea Water Surface Block (<door>)
+1946	152	3	0	0	Sea Water Full Block (<door>)
+1947	153	3	0	0	Plasma Full Block (<door>)
+1948	153	3	0	0	Plasma Shallow Block (<door>)
+1949	153	3	0	0	Plasma Surface Block (<door>)
+1950	153	3	0	0	Plasma Small Block (<door>)
+1951	153	3	0	0	Plasma Surface Block (<door>)
+1952	153	3	0	0	Plasma Surface Block (<door>)
+1953	153	3	0	0	Plasma Surface Block (<door>)
+1954	153	3	0	0	Plasma Surface Block (<door>)
+1955	153	3	0	0	Plasma Surface Block (<door>)
+1956	153	3	0	0	Plasma Surface Block (<door>)
+1957	153	3	0	0	Plasma Full Block (<door>)
+1958	261	3	0	0	Item
+1959	101	0	0	0	Clear Water Full Block (<air>)
+1960	101	0	0	0	Clear Water Shallow Block (<air>)
+1961	101	0	0	0	Clear Water Surface Block (<air>)
+1962	101	0	0	0	Clear Water Small Block (<air>)
+1963	101	0	0	0	Clear Water Surface Block (<air>)
+1964	101	0	0	0	Clear Water Surface Block (<air>)
+1965	101	0	0	0	Clear Water Surface Block (<air>)
+1966	101	0	0	0	Clear Water Surface Block (<air>)
+1967	101	0	0	0	Clear Water Surface Block (<air>)
+1968	101	0	0	0	Clear Water Surface Block (<air>)
+1969	101	0	0	0	Clear Water Full Block (<air>)
+1970	139	0	0	0	Hot Water Full Block (<air>)
+1971	139	0	0	0	Hot Water Shallow Block (<air>)
+1972	139	0	0	0	Hot Water Surface Block (<air>)
+1973	139	0	0	0	Hot Water Small Block (<air>)
+1974	139	0	0	0	Hot Water Surface Block (<air>)
+1975	139	0	0	0	Hot Water Surface Block (<air>)
+1976	139	0	0	0	Hot Water Surface Block (<air>)
+1977	139	0	0	0	Hot Water Surface Block (<air>)
+1978	139	0	0	0	Hot Water Surface Block (<air>)
+1979	139	0	0	0	Hot Water Surface Block (<air>)
+1980	139	0	0	0	Hot Water Full Block (<air>)
+1981	134	0	0	0	Poison Full Block (<air>)
+1982	134	0	0	0	Poison Shallow Block (<air>)
+1983	134	0	0	0	Poison Surface Block (<air>)
+1984	134	0	0	0	Poison Small Block (<air>)
+1985	134	0	0	0	Poison Surface Block (<air>)
+1986	134	0	0	0	Poison Surface Block (<air>)
+1987	134	0	0	0	Poison Surface Block (<air>)
+1988	134	0	0	0	Poison Surface Block (<air>)
+1989	134	0	0	0	Poison Surface Block (<air>)
+1990	134	0	0	0	Poison Surface Block (<air>)
+1991	134	0	0	0	Poison Full Block (<air>)
+1992	149	0	0	0	Liquid Lava Full Block (<air>)
+1993	149	0	0	0	Liquid Lava Shallow Block (<air>)
+1994	149	0	0	0	Liquid Lava Surface Block (<air>)
+1995	149	0	0	0	Liquid Lava Small Block (<air>)
+1996	149	0	0	0	Liquid Lava Surface Block (<air>)
+1997	149	0	0	0	Liquid Lava Surface Block (<air>)
+1998	149	0	0	0	Liquid Lava Surface Block (<air>)
+1999	149	0	0	0	Liquid Lava Surface Block (<air>)
+2000	149	0	0	0	Liquid Lava Surface Block (<air>)
+2001	149	0	0	0	Liquid Lava Surface Block (<air>)
+2002	149	0	0	0	Liquid Lava Full Block (<air>)
+2003	135	0	0	0	Bottomless Swamp Full Block (<air>)
+2004	135	0	0	0	Bottomless Swamp Shallow Block (<air>)
+2005	135	0	0	0	Bottomless Swamp Surface Block (<air>)
+2006	135	0	0	0	Bottomless Swamp Small Block (<air>)
+2007	135	0	0	0	Bottomless Swamp Surface Block (<air>)
+2008	135	0	0	0	Bottomless Swamp Surface Block (<air>)
+2009	135	0	0	0	Bottomless Swamp Surface Block (<air>)
+2010	135	0	0	0	Bottomless Swamp Surface Block (<air>)
+2011	135	0	0	0	Bottomless Swamp Surface Block (<air>)
+2012	135	0	0	0	Bottomless Swamp Surface Block (<air>)
+2013	135	0	0	0	Bottomless Swamp Full Block (<air>)
+2014	136	0	0	0	Filthy Water Full Block (<air>)
+2015	136	0	0	0	Filthy Water Shallow Block (<air>)
+2016	136	0	0	0	Filthy Water Surface Block (<air>)
+2017	136	0	0	0	Filthy Water Small Block (<air>)
+2018	136	0	0	0	Filthy Water Surface Block (<air>)
+2019	136	0	0	0	Filthy Water Surface Block (<air>)
+2020	136	0	0	0	Filthy Water Surface Block (<air>)
+2021	136	0	0	0	Filthy Water Surface Block (<air>)
+2022	136	0	0	0	Filthy Water Surface Block (<air>)
+2023	136	0	0	0	Filthy Water Surface Block (<air>)
+2024	136	0	0	0	Filthy Water Full Block (<air>)
+2025	152	0	0	0	Sea Water Full Block (<air>)
+2026	152	0	0	0	Sea Water Shallow Block (<air>)
+2027	152	0	0	0	Sea Water Surface Block (<air>)
+2028	152	0	0	0	Sea Water Small Block (<air>)
+2029	152	0	0	0	Sea Water Surface Block (<air>)
+2030	152	0	0	0	Sea Water Surface Block (<air>)
+2031	152	0	0	0	Sea Water Surface Block (<air>)
+2032	152	0	0	0	Sea Water Surface Block (<air>)
+2033	152	0	0	0	Sea Water Surface Block (<air>)
+2034	152	0	0	0	Sea Water Surface Block (<air>)
+2035	152	0	0	0	Sea Water Full Block (<air>)
+2036	153	0	0	0	Plasma Full Block (<air>)
+2037	153	0	0	0	Plasma Shallow Block (<air>)
+2038	153	0	0	0	Plasma Surface Block (<air>)
+2039	153	0	0	0	Plasma Small Block (<air>)
+2040	153	0	0	0	Plasma Surface Block (<air>)
+2041	153	0	0	0	Plasma Surface Block (<air>)
+2042	153	0	0	0	Plasma Surface Block (<air>)
+2043	153	0	0	0	Plasma Surface Block (<air>)
+2044	153	0	0	0	Plasma Surface Block (<air>)
+2045	153	0	0	0	Plasma Surface Block (<air>)
+2046	153	0	0	0	Plasma Full Block (<air>)
+2047	261	3	0	0	Item

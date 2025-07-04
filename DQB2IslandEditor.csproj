@@ -33,6 +33,7 @@
     <None Remove="Images\Chisel\13.png" />
     <None Remove="Images\Chisel\14.png" />
     <None Remove="Images\Inventory\B-0001.png" />
+    <None Remove="Images\Inventory\BlockSheet.png" />
     <None Remove="Images\Inventory\BlockSheetOne.png" />
     <None Remove="Images\Inventory\BlockSheetTwo.png" />
     <None Remove="Images\Inventory\CropMenu.png" />
@@ -59,6 +60,7 @@
     <None Remove="Images\Inventory\shellIcon\08.png" />
     <None Remove="Images\Inventory\shellIcon\09.png" />
     <None Remove="Images\Inventory\T-0001.png" />
+    <None Remove="Images\Inventory\TileSheet.png" />
     <None Remove="Images\Inventory\TileSheetOne.png" />
     <None Remove="Images\Inventory\TileSheetTwo.png" />
     <None Remove="Images\Islands\01.png" />
@@ -102,15 +104,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Info\BlockExtra.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Info\BlockInfo.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Info\Hardness.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\Inventory\BlockSheet.png" />
     <Resource Include="Images\Inventory\CropMenu.png" />
     <Resource Include="Images\Inventory\icon0.png" />
     <Resource Include="Images\Inventory\icon1.png" />
@@ -118,9 +118,6 @@
     <Resource Include="Images\Inventory\icon3.png" />
     <Resource Include="Images\Inventory\icon4.png" />
     <Resource Include="Images\Inventory\ItemSheet.png" />
-    <Resource Include="Images\Inventory\ItemSheetOne.png" />
-    <Resource Include="Images\Inventory\ItemSheetThree.png" />
-    <Resource Include="Images\Inventory\ItemSheetTwo.png" />
     <Resource Include="Images\Inventory\LiquidMenu.png" />
     <Resource Include="Images\Inventory\placeholder.png" />
     <Resource Include="Images\Inventory\SheetChunky.png" />
@@ -135,6 +132,7 @@
     <Resource Include="Images\Inventory\shellIcon\07.png" />
     <Resource Include="Images\Inventory\shellIcon\08.png" />
     <Resource Include="Images\Inventory\shellIcon\09.png" />
+    <Resource Include="Images\Inventory\TileSheet.png" />
     <Resource Include="Images\Islands\01.png" />
     <Resource Include="Images\Islands\02.png" />
     <Resource Include="Images\Islands\03.png" />
@@ -171,11 +169,7 @@
     <Resource Include="Images\Chisel\13.png" />
     <Resource Include="Images\Chisel\14.png" />
     <Resource Include="Images\Inventory\B-0001.png" />
-    <Resource Include="Images\Inventory\BlockSheetOne.png" />
-    <Resource Include="Images\Inventory\BlockSheetTwo.png" />
     <Resource Include="Images\Inventory\T-0001.png" />
-    <Resource Include="Images\Inventory\TileSheetOne.png" />
-    <Resource Include="Images\Inventory\TileSheetTwo.png" />
     <Resource Include="Images\UI\arrow.png" />
     <Resource Include="Images\UI\arrowD.png" />
     <Resource Include="Images\UI\ArrowY.png" />
