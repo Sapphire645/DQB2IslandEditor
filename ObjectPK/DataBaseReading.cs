@@ -29,9 +29,7 @@ namespace DQB2IslandEditor.ObjectPK
         private const string SHEET_TILE_ONE_PATH = "Images/Inventory/TileSheetOne.png";
         private const string SHEET_TILE_TWO_PATH = "Images/Inventory/TileSheetTwo.png";
 
-        private const string SHEET_ITEM_ONE_PATH = "Images/Inventory/ItemSheetOne.png";
-        private const string SHEET_ITEM_TWO_PATH = "Images/Inventory/ItemSheetTwo.png";
-        private const string SHEET_ITEM_THREE_PATH = "Images/Inventory/ItemSheetThree.png";
+        private const string SHEET_ITEM_ONE_PATH = "Images/Inventory/ItemSheet.png";
 
         private const string BLOCK_ERR_PATH = "Images/Inventory/B-0001.png";
         private const string TILE_ERR_PATH = "Images/Inventory/T-0001.png";
@@ -69,8 +67,6 @@ namespace DQB2IslandEditor.ObjectPK
         private static BitmapImage _sheetTwoTile;
 
         private static BitmapImage _sheetOneItem;
-        private static BitmapImage _sheetTwoItem;
-        private static BitmapImage _sheetThreeItem;
 
         private static BitmapImage _toolSheet;
         private static BitmapImage _minimapSheetChunky;
@@ -136,8 +132,6 @@ namespace DQB2IslandEditor.ObjectPK
             _sheetTwoTile = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_TILE_TWO_PATH));
 
             _sheetOneItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_ONE_PATH));
-            _sheetTwoItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_TWO_PATH));
-            _sheetThreeItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_THREE_PATH));
 
             //Helps performance
             _sheetOneBlock.Freeze();
@@ -146,14 +140,12 @@ namespace DQB2IslandEditor.ObjectPK
             _sheetTwoTile.Freeze();
 
             _sheetOneItem.Freeze();
-            _sheetTwoItem.Freeze();
-            _sheetThreeItem.Freeze();
 
             ImageDatabase[0] = new DataBaseImageHandler(_sheetOneBlock, _sheetTwoBlock, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             ImageDatabase[1] = new DataBaseImageHandler(_sheetOneTile, _sheetTwoTile, TILE_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
-            ImageDatabase[2] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, _sheetThreeItem, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
+            ImageDatabase[2] = new DataBaseImageHandler(_sheetOneItem, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             //Placeholder.
-            ImageDatabase[3] = new DataBaseImageHandler(_sheetOneItem, _sheetTwoItem, _sheetThreeItem, BLOCK_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
+            ImageDatabase[3] = new DataBaseImageHandler(_sheetOneItem, BLOCK_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
             ReadHardness();
         }
         public static CroppedBitmap toolImage(byte tool, bool active)
@@ -367,8 +359,8 @@ namespace DQB2IslandEditor.ObjectPK
                 var ImageID = short.Parse(values[1]);
 
                 itemList.Add(ushort.Parse(values[0]), new ItemInfo(
-                    ushort.Parse(values[0]), ImageID, values[2], values[3] == "1", byte.Parse(values[4]),
-                    (Colour)byte.Parse(values[5]), values[6].Trim()));
+                    ushort.Parse(values[0]), ImageID, values[2], byte.Parse(values[3]),
+                    (Colour)byte.Parse(values[4]), values[5].Trim()));
             }
             ITEM_INFO_DICTIONARY = itemList;
         }

@@ -14,7 +14,6 @@ namespace DQB2IslandEditor.ObjectPK
     {
         private BitmapImage _sheetOne;
         private BitmapImage _sheetTwo;
-        private BitmapImage _sheetThree;
         private byte SIZE;
         private String ERR_PATH;
         private byte SHEET_DIMENSION;
@@ -34,12 +33,9 @@ namespace DQB2IslandEditor.ObjectPK
             SHEET_DIMENSION = sHEET_DIMENSION;
             this.tile = tile;
         }
-        public DataBaseImageHandler(BitmapImage _sheetOne,
-    BitmapImage _sheetTwo, BitmapImage _sheetThree, byte SIZE, String ERR_PATH, byte sHEET_DIMENSION, bool tile)
+        public DataBaseImageHandler(BitmapImage _sheetOne, byte SIZE, String ERR_PATH, byte sHEET_DIMENSION, bool tile)
         {
             this._sheetOne = _sheetOne;
-            this._sheetTwo = _sheetTwo;
-            this._sheetThree = _sheetThree;
             this.SIZE = SIZE;
             this.ERR_PATH = ERR_PATH;
             SHEET_DIMENSION = sHEET_DIMENSION;
@@ -92,11 +88,6 @@ namespace DQB2IslandEditor.ObjectPK
                     {
                         CalcImageID = ImageID - (SHEET_DIMENSION * SHEET_DIMENSION);
                         _sheet = _sheetTwo;
-                        if (CalcImageID >= SHEET_DIMENSION * SHEET_DIMENSION)
-                        {
-                            CalcImageID = ImageID % (SHEET_DIMENSION * SHEET_DIMENSION);
-                            _sheet = _sheetThree;
-                        }
                     }
                     Icon = new CroppedBitmap(_sheet, new Int32Rect((CalcImageID % SHEET_DIMENSION) * SIZE, (CalcImageID / SHEET_DIMENSION) * SIZE, SIZE, SIZE));
                 }

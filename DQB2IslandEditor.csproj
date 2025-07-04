@@ -40,6 +40,7 @@
     <None Remove="Images\Inventory\icon1.png" />
     <None Remove="Images\Inventory\icon2.png" />
     <None Remove="Images\Inventory\icon4.png" />
+    <None Remove="Images\Inventory\ItemSheet.png" />
     <None Remove="Images\Inventory\ItemSheetOne.png" />
     <None Remove="Images\Inventory\ItemSheetThree.png" />
     <None Remove="Images\Inventory\ItemSheetTwo.png" />
@@ -116,6 +117,7 @@
     <Resource Include="Images\Inventory\icon2.png" />
     <Resource Include="Images\Inventory\icon3.png" />
     <Resource Include="Images\Inventory\icon4.png" />
+    <Resource Include="Images\Inventory\ItemSheet.png" />
     <Resource Include="Images\Inventory\ItemSheetOne.png" />
     <Resource Include="Images\Inventory\ItemSheetThree.png" />
     <Resource Include="Images\Inventory\ItemSheetTwo.png" />

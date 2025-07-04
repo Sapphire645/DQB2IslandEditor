@@ -17,13 +17,11 @@ namespace DQB2IslandEditor.ObjectPK
         public byte Height => height;
         public byte Depth => depth;
 
-        private bool isArtificial;
 
         //Idk how you write dimension in english whateveeerrrrrrrrr
-        public ItemInfo(ushort objectId, short imageId,string dimension,bool isArtificial, byte tab, Colour colour, string name)
+        public ItemInfo(ushort objectId, short imageId,string dimension, byte tab, Colour colour, string name)
             : base(objectId, imageId, tab, colour,0 , name)
         {
-            this.isArtificial = isArtificial;
             var parts = dimension.Split('x');
             witdh = byte.Parse(parts[0]);
             height = byte.Parse(parts[1]);
