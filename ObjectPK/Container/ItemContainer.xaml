@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:DQB2IslandEditor.ObjectPK.Container"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Border Name="ItemBorder" IsHitTestVisible="False">
+    <Border Name="ItemBorder">
         <Border.ToolTip>
             <ToolTip Background="Transparent" BorderThickness="0">
                 <local:InventoryInfo x:Name="IInfo" objectInfoPanel="{Binding itemInfo.Value}"/>

@@ -34,6 +34,5 @@
             </Button.Template>
             <Image Name="ImageObject" Height="38" Width="38" IsHitTestVisible="False"/>
         </Button>
-        
     </Grid>
 </UserControl>

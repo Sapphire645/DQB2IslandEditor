@@ -75,7 +75,7 @@ namespace DQB2IslandEditor.InterfacePK
         //Colective hud stuffs
         private bool _showMinimapGrid = true;
         private bool _showFullGrid = false;
-      
+        private bool _showItems = true;
         public bool ShowMinimapGrid { get { return _showMinimapGrid; } set {
                 _showMinimapGrid = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowMinimapGrid)));
@@ -91,14 +91,23 @@ namespace DQB2IslandEditor.InterfacePK
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowFullGridVisibility)));
             }
         }
+        public bool ShowItems
+        {
+            get { return _showItems; }
+            set
+            {
+                _showItems = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowItems)));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowItemsVisibility)));
+            }
+        }
         public Brush SeaBrush
         {
             get { return _currentLayer > 30 ? Brushes.Black : Brushes.DarkBlue; }
         }
-        public Visibility ShowMinimapGridVisibility { get { return ShowMinimapGrid ? Visibility.Visible : Visibility.Hidden; } }
-        public Visibility ShowFullGridVisibility { get { return ShowFullGrid ? Visibility.Visible : Visibility.Hidden; } }
-
-
+        public Visibility ShowMinimapGridVisibility { get { return _showMinimapGrid ? Visibility.Visible : Visibility.Hidden; } }
+        public Visibility ShowFullGridVisibility { get { return _showFullGrid ? Visibility.Visible : Visibility.Hidden; } }
+        public Visibility ShowItemsVisibility { get { return _showItems ? Visibility.Visible : Visibility.Collapsed; } }
         //----------------------------------------------------------------------------------------------------------------
         //TOOL HANDELING:
 

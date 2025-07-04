@@ -147,17 +147,28 @@
             <Image Source="/Images/UI/arrowD.png" Margin="6,6,0,0"/>
         </Button>
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="30,0" Height="25">
-            <ToggleButton Style="{StaticResource ToggleButtonGridOptions}" Margin="2,0" IsChecked="{Binding ShowMinimapGrid}" Background="Black" BorderThickness="1" BorderBrush="Yellow">
+            <ToggleButton Style="{StaticResource ToggleButtonGridOptions}"
+                          Margin="2,0" IsChecked="{Binding ShowMinimapGrid}" 
+                          Background="Black" BorderThickness="1" BorderBrush="Yellow"
+                          ToolTipService.ToolTip="Show/hide minimap grid">
                 <Image Source="/Images/UI/BigGrid.png" Margin="2.5,2.5,2,2"/>
             </ToggleButton>
-            <ToggleButton Style="{StaticResource ToggleButtonGridOptions}" Margin="2,0" IsChecked="{Binding ShowFullGrid}" Background="Black" BorderThickness="1" BorderBrush="Yellow">
+            <ToggleButton Style="{StaticResource ToggleButtonGridOptions}" Margin="2,0" IsChecked="{Binding ShowFullGrid}" 
+                          Background="Black" BorderThickness="1" BorderBrush="Yellow"
+                          ToolTipService.ToolTip="Show/hide complete grid">
                 <Image Source="/Images/UI/SmallGrid.png" Margin="2,2,2,2" >
                     <Image.Effect>
                         <DropShadowEffect BlurRadius="0" Direction="-45" ShadowDepth="0.5" Color="Black"/>
                     </Image.Effect>
                 </Image>
             </ToggleButton>
-            <ToggleButton Content="New" Margin="2,0"/>
+            <ToggleButton Style="{StaticResource ToggleButtonGridOptions}" 
+                          Margin="2,0" IsChecked="{Binding ShowItems}" 
+                          Background="Black" BorderThickness="1" BorderBrush="Yellow"
+                          ToolTipService.ToolTip="Show/hide items">
+                    <Image Source="/Images/UI/Liquid.png" Margin="2.5,2.5,2,2"/>
+                </ToggleButton>
+                <ToggleButton Content="New" Margin="2,0"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom" Margin="40,2" Height="21" HorizontalAlignment="Right">
             <Border BorderBrush="Yellow" BorderThickness="1" Padding="12,0" Margin="1,0"  CornerRadius="5" Background="Black">

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel"
              mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="800">
+             d:DesignHeight="200" d:DesignWidth="800" Loaded="OnLoad">
     <Viewbox>
         <Grid>
             <Border Background="Black" BorderBrush="LightBlue" BorderThickness="1.5" CornerRadius="5" Padding="8" Margin="0,12,0,0" MinWidth="550">
