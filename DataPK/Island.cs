@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Linq;
+using System.Printing.IndexedProperties;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,8 @@ namespace DQB2IslandEditor.DataPK
 
         private const uint OFF_VCHUNK_GRID = 0x24C7C1;
         private const uint SIZE_VCHUNK_GRID = 0x2000;
+        
+        private const uint OFF_ITEM_COUNT = 0x24E7CD;
 
         private const uint SIZE_ITEM_ALLOCATION = 0xC8000;
         private const uint OFF_ITEM_DATA = 0x24E7D1;
@@ -37,6 +40,7 @@ namespace DQB2IslandEditor.DataPK
         private ushort virtualChunkCount;
         private ushort realChunkCount;
         public IslandShell shell { get; private set; }
+        private PropHandlerClass PropHandeler;
         public byte[] STGDATHeader { get; private set; }
         public byte[] STGDATBody { get; private set; }
 
@@ -58,8 +62,8 @@ namespace DQB2IslandEditor.DataPK
             switch (TYPE)
             {
                 case 0: //The chunk editor reading
-                    ConstructChunkData(fileBytes);
                     ConstructItemData(fileBytes);
+                    ConstructChunkData(fileBytes);
                     break;
                 default:
                     break;
@@ -80,8 +84,8 @@ namespace DQB2IslandEditor.DataPK
             switch (TYPE)
             {
                 case 0: //The chunk editor reading
-                    ConstructChunkData(fileBytes);
                     ConstructItemData(fileBytes);
+                    ConstructChunkData(fileBytes);
                     break;
                 default:
                     break;
@@ -107,7 +111,7 @@ namespace DQB2IslandEditor.DataPK
                 short offset = (short)((chunkOffset[1] << 8) | chunkOffset[0]);
 
                 if (offset == -1) //If no block data
-                    chunks[i / 2] = new Chunk(null, (ushort)(i / 2));
+                    chunks[i / 2] = new Chunk(null, (ushort)(i / 2), PropHandeler);
                 else
                 {
                     //Get the block data for the chunk.
@@ -121,7 +125,7 @@ namespace DQB2IslandEditor.DataPK
                         Array.Copy(fileBytes, OFF_BLOCK_DATA + offset * SIZE_CHUNK, chunkData, 0, fileBytes.Length - (OFF_BLOCK_DATA + offset * SIZE_CHUNK));
                     }
 
-                    chunks[i / 2] = new Chunk(chunkData, (ushort)(i / 2));
+                    chunks[i / 2] = new Chunk(chunkData, (ushort)(i / 2), PropHandeler);
                 }
             }
 
@@ -134,7 +138,11 @@ namespace DQB2IslandEditor.DataPK
         private void ConstructItemData(byte[] fileBytes)
         {
             byte[] bufferItemData = new byte[SIZE_ITEM_DATA];
+            //I made this to handle all the prop logic.
             ushort itemCount = 0;
+            List<ItemInstance> itemInstances = new List<ItemInstance>();
+            List<ushort> chunkList = new List<ushort>();
+            var itemCountReal = BitConverter.ToUInt32(fileBytes, (int)OFF_ITEM_COUNT);
             //Lets iterate through all of the item entries.
             //The format for the entry is CC OC OO OO where C is chunk and O is the offset to the item data.
             //With this, we'll place the item instance inside its chunk.
@@ -153,7 +161,12 @@ namespace DQB2IslandEditor.DataPK
                 Array.Copy(fileBytes, dataPointer, bufferItemData, 0, 24);
 
                 //First lets see what the item class thinks of this entry, is it empty?
-                if (ItemInstance.IsThisEntryEmpty(bufferItemData)) continue;
+                if (ItemInstance.IsThisEntryEmpty(bufferItemData))
+                {
+                    itemInstances.Add(null);
+                    chunkList.Add(0);
+                    continue;
+                }
                 itemCount++;
 
                 //Since it is now, We can now create the item instance inside of the chunk.
@@ -161,9 +174,14 @@ namespace DQB2IslandEditor.DataPK
                 var item = new ItemInstance(bufferItemData);
                 item.tempDataOff = dataPointer;
                 item.tempEntryOff = entryPointer;
-                chunks[chunk].AddItem(item);
+
+                //Console.WriteLine(i);
+                itemInstances.Add(item);
+                chunkList.Add(chunk);
+                //chunks[chunk].AddItem(item);
                 //Yay.
             }
+            PropHandeler = new PropHandlerClass(this, itemCountReal, itemInstances, chunkList);
             Console.WriteLine("!! ITEM COUNT:" + itemCount);
         }
         private void CommitChunkDataToFile()
@@ -207,39 +225,35 @@ namespace DQB2IslandEditor.DataPK
 
         private void CommitItemDataToFile()
         {
-            //Iterate through all chunks.
-            for (int i = 0; i < chunks.Length; i++)
+            //First I ask the prop item for the edited items
+            var toEdit = PropHandeler.GetAllEditedItems();
+            //Now I iterate through all and edit them appropiately.
+            foreach(var e in toEdit)
             {
-                var chunk = chunks[i].chunkPosition;
-                var items = chunks[i].GetAllItems();
-                //Iterate through all items in the chunk.
-                foreach(ItemInstance item in items)
-                {
-                    if (item.HasBeenChanged())
-                    {
-                        if (item.IsValidEntry())
-                        {
-                            var offset = item.GetEntryOffset();
-                            //Pointer
-                            uint entryPointer = (uint)(OFF_ITEM_ENTRY + (offset * SIZE_ITEM_ENTRY));
-                            //Edit the chunk:
-                            STGDATBody[entryPointer] = (byte)(chunk & 0xFF);
-                            STGDATBody[entryPointer + 1] &= 0xF0;
-                            STGDATBody[entryPointer + 1] |= (byte)((chunk >> 8) & 0x0F);
+                var entry = e.Item1;
+                var item = e.Item2;
+                var chunk = e.Item3;
 
-                            uint relativeDataPointer = (uint)(((STGDATBody[entryPointer + 1] & 0xF0) >> 4) + (STGDATBody[entryPointer + 2] << 4) + (STGDATBody[entryPointer + 3] << 12));
+                if (item == null)
+                    chunk = 0;
+                uint entryPointer = (uint)(OFF_ITEM_ENTRY + (entry * SIZE_ITEM_ENTRY));
 
-                            uint dataPointer = (uint)(OFF_ITEM_DATA + (relativeDataPointer * SIZE_ITEM_DATA));
-                            Array.Copy(item.GetByteFormat(), 0, STGDATBody, dataPointer, 24);
-                            Console.WriteLine("Saved item "+ entryPointer.ToString("X") + " / " + dataPointer.ToString("X") + " OLD -> " +
-                                 item.tempEntryOff.ToString("X") + " / " + item.tempDataOff.ToString("X"));
+                STGDATBody[entryPointer] = (byte)(chunk & 0xFF);
+                STGDATBody[entryPointer + 1] &= 0xF0;
+                STGDATBody[entryPointer + 1] |= (byte)((chunk >> 8) & 0x0F);
 
-                        }
-                        
-                    }
-                }
-
-
+                uint relativeDataPointer = (uint)(((STGDATBody[entryPointer + 1] & 0xF0) >> 4) + (STGDATBody[entryPointer + 2] << 4) + (STGDATBody[entryPointer + 3] << 12));
+                uint dataPointer = (uint)(OFF_ITEM_DATA + (relativeDataPointer * SIZE_ITEM_DATA));
+                //Delete the entry if non existent
+                if (item == null)
+                    for(int i = 0; i < 9; i++)
+                        STGDATBody[dataPointer + i] = 0;
+                else
+                    Array.Copy(item.GetByteFormat(), 0, STGDATBody, dataPointer, 24);
+                
+                
+                //Console.WriteLine("Saved item " + entryPointer.ToString("X") + " / " + dataPointer.ToString("X") + " OLD -> " +
+                     //item.tempEntryOff.ToString("X") + " / " + item.tempDataOff.ToString("X"));
             }
         }
 

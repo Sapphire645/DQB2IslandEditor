@@ -219,6 +219,9 @@
                             <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
                                 <Image Name="Tool_Chisel_3" Source="{Binding ToolImageThree}"/>
                             </Button>
+                            <Button Background="Transparent" BorderThickness="0" Height="40" Click="ToolClick">
+                                <Image Name="Tool_Delete_4" Source="{Binding ToolImageFour}"/>
+                            </Button>
                         </UniformGrid>
                         <Popup Name="PaintPopup" PlacementTarget="{Binding ElementName=Paint_tool}"
                                Placement="Bottom"

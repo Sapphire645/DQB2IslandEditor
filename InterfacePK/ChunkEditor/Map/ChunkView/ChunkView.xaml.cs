@@ -92,10 +92,10 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
                 Console.WriteLine(item.ToString());
                 ItemContainer itemContainer = new ItemContainer(item, 32); //  1024/32
 
-                itemContainer.ItemBorder.PreviewMouseDown += (_, _) => { viewModel.ItemTile_LeftClick(itemContainer); };
-                itemContainer.ItemBorder.MouseEnter += (_, _) => { viewModel.ItemTile_TileEnter(itemContainer); };
-                itemContainer.ItemBorder.MouseLeave += (_, _) => { viewModel.ItemTile_TileLeave(itemContainer); };
-                itemContainer.ItemBorder.MouseLeftButtonUp += (_, _) => { viewModel.ItemTile_Release(itemContainer); };
+                itemContainer.ItemBorder.PreviewMouseDown += (_, _) => { viewModel.ItemTile_LeftClick(itemContainer, chunkIndex); };
+                itemContainer.ItemBorder.MouseEnter += (_, _) => { viewModel.ItemTile_TileEnter(itemContainer, chunkIndex); };
+                itemContainer.ItemBorder.MouseLeave += (_, _) => { viewModel.ItemTile_TileLeave(itemContainer, chunkIndex); };
+                itemContainer.ItemBorder.MouseLeftButtonUp += (_, _) => { viewModel.ItemTile_Release(itemContainer, chunkIndex); };
 
                 ItemGrid.Children.Add(itemContainer);
                 //Alright, here comes the funky stuff
@@ -137,6 +137,19 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
         public void AddItemToOffset(ushort offset, ItemInfo Item)
         {
             //Not implemented yet.
+        }
+
+        public void DeleteItem(ItemInstance itemInstance)
+        {
+            displayedChunk.RemoveItem(itemInstance);
+            foreach (var item in ItemGrid.Children)
+            {
+                if (item is ItemContainer ic && ic.itemInstance == itemInstance)
+                {
+                    ItemGrid.Children.Remove(ic);
+                    break;
+                }
+            }
         }
 
 

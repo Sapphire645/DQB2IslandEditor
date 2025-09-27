@@ -63,7 +63,7 @@
     <Grid Width="800" Height="800">
         <Border BorderBrush="#232337" BorderThickness="4" Background="Black" Padding="8" CornerRadius="15">
             <Border BorderBrush="Yellow" BorderThickness="2" Padding="12" CornerRadius="10">
-                <UniformGrid Name="ChunkDisplay">
+                <UniformGrid Name="ChunkDisplay" MouseLeave="MouseLeaveChunkView">
                 </UniformGrid>
             </Border>
         </Border>

@@ -34,14 +34,13 @@ namespace DQB2IslandEditor.DataPK
         public static bool IsThisEntryEmpty(byte[] bytes)
         {
             //This is placeholder for now
-            if (bytes[0] == 0 && bytes[1] == 0 && bytes[2] == 0 && bytes[3] == 0 && bytes[4] == 0 && bytes[5] == 0)
-            {
-                return true;
-            }
+            //if (bytes[0] == 0 && bytes[1] == 0 && bytes[2] == 0 && bytes[3] == 0 && bytes[4] == 0 && bytes[5] == 0)
+            //{
+            //    return true;
+            //}
             return false;
         }
         public ItemInstance(byte[] bytes) {
-            this.entryOffset = entryOffset;
             validEntry = true;
 
             this.bytes = new byte[24]; 
@@ -80,6 +79,10 @@ namespace DQB2IslandEditor.DataPK
 
             bytes[11] = (byte)((byte)(y >> 6) + (byte)(z << 1) + (byte)(rotation << 6));
 
+            bytes[12] = (byte)((bytes[12] & 0x0F) | ((entryOffset & 0x0F) << 4));
+            bytes[13] = (byte)((entryOffset >> 8) & 0xFF);    
+            bytes[14] = (byte)((entryOffset >> 16) & 0xFF);   
+
             return bytes;
         }
         public bool HasBeenChanged()
@@ -102,17 +105,32 @@ namespace DQB2IslandEditor.DataPK
             return false;
         }
 
+        public int GetWidth(byte tileSize)
+        {
+            return rotation % 2 == 0 ? tileSize * itemInfo.Witdh : tileSize * itemInfo.Depth;
+        }
+        public int GetDepth(byte tileSize)
+        {
+            return rotation % 2 == 0 ? tileSize * itemInfo.Depth : tileSize * itemInfo.Witdh;
+        }
         public Thickness CoordinateMargin(byte tileSize)
         {
             //This will tell the UI where to place the item.
-            return new Thickness(x * tileSize, z * tileSize, 0, 0);
+            if(rotation == 0)
+                return new Thickness(x * tileSize, (z - (itemInfo.Depth - 1)) * tileSize, 0, 0);
+            if(rotation == 1)
+                return new Thickness((x - (itemInfo.Depth-1)) * tileSize , (z - (itemInfo.Witdh - 1)) * tileSize, 0, 0);
+            if (rotation == 2)
+                return new Thickness((x - (itemInfo.Witdh - 1)) * tileSize, z * tileSize, 0, 0);
+            else
+                return new Thickness(x * tileSize, z * tileSize, 0, 0);
         }
 
         public override string ToString()
         {
             string a = "";
             foreach(byte b in bytes) a += b.ToString("X2") + " ";
-            return $"ID: {itemId} - Y:{y},X:{x},Z:{z} - {rotation} |"+ a+"\n";
+            return $"ID: {itemId} - Y:{y},X:{x},Z:{z} - BYTE 15 {bytes[15].ToString("X2")} - {rotation} |"+ a+"\n";
         }
 
         public uint tempEntryOff;

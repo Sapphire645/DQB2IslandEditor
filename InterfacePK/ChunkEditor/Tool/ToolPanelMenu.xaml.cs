@@ -1,4 +1,5 @@
 ﻿using DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel;
+using DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ItemPanel;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Reflection;
@@ -38,6 +39,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool
             CreateBlockBasics.Add(new ChiselEdit(viewModelGive));
             CreateBlockBasics.Add(new OverflowEdit());
             //CreateBlockBasics.Add(new ChiselEdit(nameof(viewModel.ValueChisel), viewModelGive));
+
+            CreateItemBasics.Add(new PropInformation(viewModelGive));
             BlockPanel(null, null);
         }
 
@@ -55,6 +58,8 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool
         {
             _currentTab = 1;
             PanelsToDisplay.Clear();
+            foreach (var panel in CreateItemBasics)
+                PanelsToDisplay.Add(panel);
         }
 
         private void AreaPanel(object sender, RoutedEventArgs e)

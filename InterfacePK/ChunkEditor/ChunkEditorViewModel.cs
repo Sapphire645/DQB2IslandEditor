@@ -130,6 +130,9 @@ namespace DQB2IslandEditor.InterfacePK
                         case 2:
                             _currentTool = new TrowelTool(this, chunkEditorWindow.chunkBlockGrid);
                             break;
+                        case 4:
+                            _currentTool = new DeleteTool(this, chunkEditorWindow.chunkBlockGrid);
+                            break;
                     }
                 }
                 _selectedTool = value;
@@ -160,6 +163,9 @@ namespace DQB2IslandEditor.InterfacePK
         private Chisel _currentChisel;
         private bool _currentBuilderPlaced;
 
+
+        private ItemInfo _selectedItem;
+
         public ObjectInfo SelectedObject
         {
             set
@@ -169,6 +175,11 @@ namespace DQB2IslandEditor.InterfacePK
                 if (value is BlockInfo blockInfo)
                 {
                     SelectedBlock = blockInfo;
+                }
+                else
+                {
+                    if(value is ItemInfo itemInfo)
+                        SelectedItem = itemInfo;
                 }
             }
             get
@@ -191,7 +202,19 @@ namespace DQB2IslandEditor.InterfacePK
                 return _selectedBlock;
             }
         }
+        public ItemInfo SelectedItem
+        {
+            set
+            {
+                _selectedItem = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
+            }
+            get
+            {
 
+                return _selectedItem;
+            }
+        }
         public Chisel Chisel
         {
             set
@@ -235,6 +258,11 @@ namespace DQB2IslandEditor.InterfacePK
             BuilderPlaced = selectedBlock.publicBuilderPlaced;
         }
 
+        public void UpdateSelectedItemInfo(ItemInfo selectedObject)
+        {
+            SelectedItem = selectedObject;
+        }
+
         //Update favourite -> Right clicking anything on the inventory, right click dropicking a chunk tile 
         public void UpdateFavouriteObject(ObjectInfo selectedObject)
         {
@@ -265,88 +293,26 @@ namespace DQB2IslandEditor.InterfacePK
         public void BlockTile_LeftClick(ushort offset, ushort chunk)
         {
             _currentTool.BlockInstance_MouseLeftClick(offset, chunk);
-            /*
-            chunkLayer[offset].IsClicked();
-            switch (SelectedTool)
-            {
-                case 0: //Select
-                    //This is what happens when you click a block.
-                    SelectedObject = DataBaseReading.BLOCK_INFO_DICTIONARY[blockID];
-                    SelectedTileOffset = offset;
-                    //Block
-                    ValueChisel = chunkLayer[offset].blockInstance.publicChiselID;
-                    ValueBuilderPlaced = chunkLayer[offset].blockInstance.publicBuilderPlaced;
-                    break;
-                case 1: //Area
-                    //Do area calculation (for future...)
-                    break;
-                case 2: //Paint (change for size stuff)
-                    //Update tile
-                    TileAura_SetBlock(offset);
-                    break;
-                case 3: //Chisel
-                    chunkLayer[offset].blockInstance.UpdateBlock(ValueChisel);
-                    saveData.Island.SetBlock(_currentChunk, _currentLayer, (byte)(offset % Chunk.X_DIMENSION), (byte)(offset / Chunk.Z_DIMENSION), chunkLayer[offset].blockInstance);
-                    break;
-
-            }
-                        */
         }
 
         public void BlockTile_TileEnter(ushort offset, ushort chunk)
         {
             _currentTool.BlockInstance_MouseEnter(offset, chunk);
-            /*
-            switch (SelectedTool)
-            {
-                case 2: //Paint (change for size stuff)
-                        //Handle bigger pencil
-                    TileAura_Create(offset);
-                    if (Mouse.LeftButton != System.Windows.Input.MouseButtonState.Pressed)
-                    {
-                        chunkLayer[offset].IsHovered();
-                        return;
-                    }
-                    chunkLayer[offset].IsClicked();
-                    TileAura_SetBlock(offset);
-                    
-                    break;
-                default:
-                    if (Mouse.LeftButton != System.Windows.Input.MouseButtonState.Pressed)
-                        chunkLayer[offset].IsHovered();
-                    else
-                        chunkLayer[offset].IsClicked();
-                    break;
-            }
-            */
         }
 
         public void BlockTile_TileLeave(ushort offset, ushort chunk)
         {
             _currentTool.BlockInstance_MouseLeave(offset, chunk);
-            /*
-            switch (SelectedTool)
-            {
-                case 2:
-                    TileAura_Destroy(offset);
-                    chunkLayer[offset].IsUnHovered();
-                    break;
-                default:
-                    chunkLayer[offset].IsUnHovered();
-                    break;
-            }
-            */
         }
 
         public void BlockTile_Release(ushort offset, ushort chunk)
         {
             _currentTool.BlockInstance_MouseRelease(offset, chunk);
-            /*
-             chunkLayer[offset].IsHovered();
-            */
         }
-        public void ItemTile_TileEnter(ItemContainer target)
+        public void ItemTile_TileEnter(ItemContainer target, ushort chunk)
         {
+            _currentTool.ItemInstance_MouseEnter(target, chunk);
+            /*This confuses me what am I talking about
             //This will actually be a problem for compatibility between paint block and paint item
             //Oh no, what do you mean I should have used the state pattern oh noo
             //If you dont say anything then I wont say anything either wink wink
@@ -359,40 +325,27 @@ namespace DQB2IslandEditor.InterfacePK
                         target.IsClicked();
                     break;
             }
-        }
-        public void ItemTile_TileLeave(ItemContainer target)
-        {
-            switch (SelectedTool)
-            {
-                default:
-                    target.IsUnHovered();
-                    break;
-            }
-        }
-
-        public void ItemTile_LeftClick(ItemContainer target)
-        {
-            /*
-            target.IsClicked();
-            switch (SelectedTool)
-            {
-                default:
-                case 0: //Select
-                    //When the items are hoverable, this is when the block underneath will always be selected to the xyz.
-                    //Or, at least the xz
-                    SelectedObject = DataBaseReading.ITEM_INFO_DICTIONARY[0];
-                    SelectedTileOffset = target.offset;
-                    //Block (Hmmmmm)
-                    ValueChisel = chunkLayer[target.offset].blockInstance.publicChiselID;
-                    ValueBuilderPlaced = chunkLayer[target.offset].blockInstance.publicBuilderPlaced;
-                    break;
-            }
             */
         }
-        public void ItemTile_Release(ItemContainer target)
+        public void ItemTile_TileLeave(ItemContainer target, ushort chunk)
         {
-            target.IsHovered();
+            _currentTool.ItemInstance_MouseLeave(target, chunk);
         }
-        
+
+        public void ItemTile_LeftClick(ItemContainer target, ushort chunk)
+        {
+            _currentTool.ItemInstance_MouseLeftClick(target, chunk);
+        }
+        public void ItemTile_Release(ItemContainer target, ushort chunk)
+        {
+            _currentTool.ItemInstance_MouseRelease(target, chunk);
+        }
+
+        public void ChunkViewLostFocus()
+        {
+            _currentTool.ChunkViewLostFocus();
+        }
+
+
     }
 }

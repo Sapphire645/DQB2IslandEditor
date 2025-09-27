@@ -49,8 +49,8 @@ namespace DQB2IslandEditor.ObjectPK.Container
             this.HorizontalAlignment = HorizontalAlignment.Left;
             this.VerticalAlignment = VerticalAlignment.Top;
             //Size of the item (use the dimensions from item info)
-            this.Width = TILE_SIZE* itemInfo.Value.Witdh; //Placeholder (look at rotation)
-            this.Height = TILE_SIZE* itemInfo.Value.Depth;
+            this.Width = itemInstance.GetWidth(TILE_SIZE);
+            this.Height = itemInstance.GetDepth(TILE_SIZE);
             //Get the position from the instance
             this.Margin = itemInstance.CoordinateMargin(TILE_SIZE);
 
@@ -62,11 +62,13 @@ namespace DQB2IslandEditor.ObjectPK.Container
         {
             ItemBorder.Background = Brushes.DarkOrange;
             Image.Opacity = 0.5;
+            Console.WriteLine(itemInstance.ToString());
         }
         public void IsUnHovered()
         {
             ItemBorder.Background = Brushes.Transparent;
             Image.Opacity = 1;
+            
         }
         public void IsClicked()
         {

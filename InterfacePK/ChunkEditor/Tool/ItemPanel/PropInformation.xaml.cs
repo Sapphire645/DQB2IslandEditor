@@ -14,22 +14,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
+namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ItemPanel
 {
     /// <summary>
-    /// Interaction logic for BlockInformation.xaml
+    /// Interaction logic for InstanceInformation.xaml
     /// </summary>
-    public partial class BlockInformation : UserControl
+    public partial class PropInformation : UserControl
     {
-
         ChunkEditorViewModel ViewModel;
-        public BlockInformation(ChunkEditorViewModel viewModelGive)
+        public PropInformation(ChunkEditorViewModel viewModelGive)
         {
             InitializeComponent();
             ViewModel = viewModelGive;
             ViewModel.PropertyChanged += PropertyChanged;
 
-            if (ViewModel.SelectedBlock == null)
+            if (ViewModel.SelectedItem == null)
             {
                 this.Visibility = Visibility.Collapsed;
             }
@@ -41,25 +40,25 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
 
         private void PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            if (e.PropertyName == nameof(ViewModel.SelectedBlock))  // BLOCKINFO CHANGE
+            if (e.PropertyName == nameof(ViewModel.SelectedItem))  // BLOCKINFO CHANGE
             {
-                if (ViewModel.SelectedBlock == null)
+                if (ViewModel.SelectedItem == null)
                 {
                     this.Visibility = Visibility.Collapsed;
                 }
                 else
                 {
                     this.Visibility = Visibility.Visible;
-                    ImageBlock.Source = ViewModel.SelectedBlock.objectInventoryImage;
-                    ViewModel.SelectedBlock.InventoryImageChanged += updateImage;
+                    ImageBlock.Source = ViewModel.SelectedItem.objectInventoryImage;
+                    ViewModel.SelectedItem.InventoryImageChanged += updateImage;
                 }
             }
         }
         private void updateImage(object sender, PropertyChangedEventArgs e)
         {
             if (IsLoaded)
-                ImageBlock.Source = ViewModel.SelectedBlock.objectInventoryImage;
-            ViewModel.SelectedBlock.InventoryImageChanged -= updateImage;
+                ImageBlock.Source = ViewModel.SelectedItem.objectInventoryImage;
+            ViewModel.SelectedItem.InventoryImageChanged -= updateImage;
         }
     }
 }

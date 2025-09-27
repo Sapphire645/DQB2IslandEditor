@@ -31,11 +31,15 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass
                 chunkDisplays.TileAura_SetBlock(Aura(offset), viewModel.currentBlockInstance, chunk);
                 base.BlockInstance_MouseLeftClick(offset, chunk);
             }
-
         }
         public override void BlockInstance_MouseRelease(ushort offset, ushort chunk)
         {
             base.BlockInstance_MouseRelease(offset, chunk);
+            isPainting = false;
+        }
+
+        public override void ChunkViewLostFocus()
+        {
             isPainting = false;
         }
     }

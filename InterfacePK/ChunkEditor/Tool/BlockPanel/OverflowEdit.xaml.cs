@@ -27,12 +27,14 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
             InitializeComponent();
 
         }
+        private ChunkEditorViewModel _DataContext;
 
         private bool load = false;
         private void OnLoad(object sender, RoutedEventArgs e)
         {
             if (load) return;
-            if (((ChunkEditorViewModel)DataContext).SelectedBlock == null)
+            _DataContext = ((ChunkEditorViewModel)DataContext);
+            if (_DataContext.SelectedBlock == null)
             {
                 this.Visibility = Visibility.Collapsed;
             }
@@ -41,14 +43,13 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
                 this.Visibility = Visibility.Visible;
             }
             load = true;
-            ((ChunkEditorViewModel)DataContext).PropertyChanged += PropertyChanged;
+            _DataContext.PropertyChanged += PropertyChanged;
         }
         private void PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            var viewModel = (ChunkEditorViewModel)DataContext;
-            if (e.PropertyName == nameof(viewModel.SelectedBlock))  // BLOCKINFO CHANGE
+            if (e.PropertyName == nameof(_DataContext.SelectedBlock))  // BLOCKINFO CHANGE
             {
-                if (viewModel.SelectedBlock == null)
+                if (_DataContext.SelectedBlock == null)
                 {
                     this.Visibility = Visibility.Collapsed;
                 }

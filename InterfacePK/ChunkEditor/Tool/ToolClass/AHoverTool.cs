@@ -1,5 +1,6 @@
 ﻿using DQB2IslandEditor.DataPK;
 using DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView;
+using DQB2IslandEditor.ObjectPK.Container;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,7 +64,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass
         {
             chunkDisplays.TileAura_Create(Aura(offset), chunk);
         }
-        public void BlockInstance_MouseLeave(ushort offset, ushort chunk)
+        public virtual void BlockInstance_MouseLeave(ushort offset, ushort chunk)
         {
             chunkDisplays.TileAura_Destroy(Aura(offset), chunk);
         }
@@ -75,22 +76,30 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass
         {
             chunkDisplays.Tile_Unclick(offset, chunk);
         }
-        public void ItemInstance_MouseEnter(ushort offset, ushort chunk, byte itemLocationInArray)
+        
+        public virtual void ChunkViewLostFocus()
         {
-            // Default hover behavior for item instance
-        }
-        public void ItemInstance_MouseLeave(ushort offset, ushort chunk, byte itemLocationInArray)
-        {
-            // Default leave behavior for item instance
-        }
-        public void ItemInstance_MouseLeftClick(ushort offset, ushort chunk, byte itemLocationInArray)
-        {
-            // Default left click behavior for item instance
-        }
-        public void ItemInstance_MouseRelease(ushort offset, ushort chunk, byte itemLocationInArray)
-        {
-            // Default release behavior for item instance
 
+        }
+
+        public virtual void ItemInstance_MouseEnter(ItemContainer item, ushort chunk)
+        {
+            item.IsHovered();
+        }
+
+        public virtual void ItemInstance_MouseLeave(ItemContainer item, ushort chunk)
+        {
+            item.IsUnHovered();
+        }
+
+        public virtual void ItemInstance_MouseLeftClick(ItemContainer item, ushort chunk)
+        {
+            item.IsClicked();
+        }
+
+        public virtual void ItemInstance_MouseRelease(ItemContainer item, ushort chunk)
+        {
+            item.IsUnHovered();
         }
     }
 }

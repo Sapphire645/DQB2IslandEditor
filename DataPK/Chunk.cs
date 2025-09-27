@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,12 +19,15 @@ namespace DQB2IslandEditor.DataPK
 
         public ushort chunkPosition { private set; get; }
         private byte[] blockBytes;
-        private List<ItemInstance> itemInstances;
+        private PropHandlerClass propHandler;
+        private List<ItemInstance> itemInstances => propHandler != null ? propHandler.getItemsChunk(chunkPosition) : null;
+
+
 
         public byte chunkXPosition => (byte)(chunkPosition % Island.GRID_DIMENSION);
         public byte chunkYPosition => (byte)(chunkPosition / Island.GRID_DIMENSION);
 
-        public Chunk(byte[] blockBytes, ushort chunkPosition) { 
+        public Chunk(byte[] blockBytes, ushort chunkPosition, PropHandlerClass propHandlerClass) { 
             //This is for fixing Moonbrooke Corruption and similar.
             if(blockBytes != null && blockBytes.Length < (SIZE_LAYER* Y_DIMENSION))
             {
@@ -32,14 +36,10 @@ namespace DQB2IslandEditor.DataPK
             }
             this.blockBytes = blockBytes;
             this.chunkPosition = chunkPosition;
-            itemInstances = new List<ItemInstance>();
+            this.propHandler = propHandlerClass;
         }
 
         public bool IsEmpty() { return blockBytes == null; }
-        public void SetItemArray(List<ItemInstance> itemInstances) {
-            this.itemInstances = itemInstances;
-        }
-
         public BlockInstance GetBlockFromCoords(byte x, byte z, byte layer)
         {
             var offset = layer * SIZE_LAYER + z * X_DIMENSION * 2 + x * 2;
@@ -85,7 +85,7 @@ namespace DQB2IslandEditor.DataPK
         }
         public void RemoveItem(ItemInstance item)
         {
-            itemInstances.Remove(item);
+            propHandler.RemoveItem(item);
         }
         public void AddItem(ItemInstance item)
         {

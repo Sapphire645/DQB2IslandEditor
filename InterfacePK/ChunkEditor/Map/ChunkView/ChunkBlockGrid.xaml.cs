@@ -138,10 +138,6 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
                         ChangeChunk("d");
             }
         }
-
-
-
-
         public void TileAura_Create(ushort[] offsets, ushort chunk)
         {
             for (byte i = 0; i < chunkViews.Count; i++)
@@ -196,6 +192,19 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
                 if (chunkViews[i].ChunkIndex == chunk) return chunkViews[i].GetBlockInstanceInOffset(offset);
             }
             return null;
+        }
+
+
+        public void DeleteItem(ItemInstance itemInstance, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if (chunkViews[i].ChunkIndex == chunk) chunkViews[i].DeleteItem(itemInstance);
+            }
+        }
+        private void MouseLeaveChunkView(object sender, MouseEventArgs e)
+        {
+            viewModel.ChunkViewLostFocus();
         }
     }
 }
