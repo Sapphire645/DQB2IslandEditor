@@ -36,6 +36,10 @@ namespace DQB2IslandEditor.DataPK
         private const uint OFF_BLOCK_DATA = 0x183FEF0;
         private const uint SIZE_CHUNK = 0x30000;
 
+        private const uint OFF_BLUEPRINT_DATA = 0x2CA3C;
+        private const uint SIZE_BLUEPRINT_DATA = 12;
+        public static readonly byte BLUEPRINT_COUNT = 5;
+
         public byte islandNumber { get; private set; }
         private ushort virtualChunkCount;
         private ushort realChunkCount;
@@ -64,6 +68,7 @@ namespace DQB2IslandEditor.DataPK
                 case 0: //The chunk editor reading
                     ConstructItemData(fileBytes);
                     ConstructChunkData(fileBytes);
+                    GetBlueprintData();
                     break;
                 default:
                     break;
@@ -86,6 +91,7 @@ namespace DQB2IslandEditor.DataPK
                 case 0: //The chunk editor reading
                     ConstructItemData(fileBytes);
                     ConstructChunkData(fileBytes);
+                    GetBlueprintData();
                     break;
                 default:
                     break;
@@ -310,6 +316,20 @@ namespace DQB2IslandEditor.DataPK
             foreach (var chunk in chunks) { 
                 if(chunk.IsEmpty()) continue;
                 chunk.CoverGroundWith(source, newindex);
+            }
+        }
+
+        public void GetBlueprintData()
+        {
+            for (int i = 0; i < BLUEPRINT_COUNT; i++)
+            {
+                byte[] buffer = new byte[SIZE_BLUEPRINT_DATA];
+                Array.Copy(STGDATBody, OFF_BLUEPRINT_DATA + (i * SIZE_BLUEPRINT_DATA), buffer, 0, SIZE_BLUEPRINT_DATA);
+                Console.WriteLine($"Blueprint {i} - ID: " +
+                    BitConverter.ToUInt16(buffer, 0)+
+                    " X: " + BitConverter.ToUInt16(buffer, 2) +
+                    " Y: " + BitConverter.ToUInt16(buffer, 6) +
+                    " Z: " + BitConverter.ToUInt16(buffer, 4));
             }
         }
 
