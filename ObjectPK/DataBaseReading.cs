@@ -37,6 +37,9 @@ namespace DQB2IslandEditor.ObjectPK
         private const string SHEET_MINIMAP_RETRO = "Images/Inventory/SheetRetro.png";
         private const string SHEET_MINIMAP_CHUNKY = "Images/Inventory/SheetChunky.png";
 
+
+        private const string BLOCK_MINIMAP_CORRESPONDANCE = "Info/MinimapBlockCorrespondance.txt";
+
         private const byte BLOCK_SIZE = 112;
         private const byte TILE_SIZE = 64;
         private const byte SHEET_DIMENSION = 32;
@@ -48,6 +51,10 @@ namespace DQB2IslandEditor.ObjectPK
         public static Dictionary<uint, BlockInfo> BLOCK_INFO_DICTIONARY;
 
         public static Dictionary<uint, ItemInfo> ITEM_INFO_DICTIONARY;
+
+        private static Dictionary<ushort, int> _BLOCK_MINIMAP_DICTIONARY;
+
+        public static Dictionary<ushort, int> BLOCK_MINIMAP_DICTIONARY => _BLOCK_MINIMAP_DICTIONARY == null ? ReadBlockMinimapInfo(): _BLOCK_MINIMAP_DICTIONARY;
 
         private static readonly Dictionary<byte,byte> _mountain = new Dictionary<byte, byte>()
         {
@@ -329,6 +336,26 @@ namespace DQB2IslandEditor.ObjectPK
                 }
             }
             BLOCK_INFO_DICTIONARY =  blockList;
+        }
+
+        private static Dictionary<ushort, int> ReadBlockMinimapInfo()
+        {
+            var blockList = new Dictionary<ushort, int>();
+
+            String[] blockLines = ReadEmbeddedResource(BLOCK_MINIMAP_CORRESPONDANCE).Split("\n");
+
+            foreach (String line in blockLines)
+            {
+                if (line[0] == '#') continue; 
+                String[] values = line.Split('\t');
+                if (values.Length < 2) continue;
+
+                blockList[ushort.Parse(values[0])] = int.Parse(values[1]);
+                    
+
+            }
+            _BLOCK_MINIMAP_DICTIONARY = blockList;
+            return blockList;
         }
         public static void ReadItemFile()
         {

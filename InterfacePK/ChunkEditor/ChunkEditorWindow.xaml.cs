@@ -120,7 +120,9 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
                 if (openFileDialog.ShowDialog() == false) return;
 
                 saveData.OpenSTGDATCompressedFile(openFileDialog.FileName);
+                virtualGridView.Init(saveData.Island, viewModel);
                 viewModel.ChangeChunk(saveData.Island.GetFirstChunk());
+
 
             }
             catch (Exception ex)

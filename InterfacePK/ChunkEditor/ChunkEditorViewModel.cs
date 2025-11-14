@@ -1,6 +1,7 @@
 ﻿using DQB2IslandEditor.DataPK;
 using DQB2IslandEditor.InterfacePK.ChunkEditor;
 using DQB2IslandEditor.InterfacePK.ChunkEditor.Inventory;
+using DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView;
 using DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass;
 using DQB2IslandEditor.ObjectPK;
 using DQB2IslandEditor.ObjectPK.Container;
@@ -76,6 +77,7 @@ namespace DQB2IslandEditor.InterfacePK
         private bool _showMinimapGrid = true;
         private bool _showFullGrid = false;
         private bool _showItems = true;
+        private bool _TopView = false;
         public bool ShowMinimapGrid { get { return _showMinimapGrid; } set {
                 _showMinimapGrid = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowMinimapGrid)));
@@ -101,6 +103,18 @@ namespace DQB2IslandEditor.InterfacePK
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowItemsVisibility)));
             }
         }
+        public bool TopView
+        {
+            get { return _TopView; }
+            set
+            {
+                _TopView = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TopView)));
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TopViewVisibility)));
+                chunkEditorWindow.chunkBlockGrid.UpdateChunks();
+            }
+        }
+        
         public Brush SeaBrush
         {
             get { return _currentLayer > 30 ? Brushes.Black : Brushes.DarkBlue; }
@@ -108,6 +122,8 @@ namespace DQB2IslandEditor.InterfacePK
         public Visibility ShowMinimapGridVisibility { get { return _showMinimapGrid ? Visibility.Visible : Visibility.Hidden; } }
         public Visibility ShowFullGridVisibility { get { return _showFullGrid ? Visibility.Visible : Visibility.Hidden; } }
         public Visibility ShowItemsVisibility { get { return _showItems ? Visibility.Visible : Visibility.Collapsed; } }
+
+        public Visibility TopViewVisibility { get { return _TopView ? Visibility.Visible : Visibility.Collapsed; } }
         //----------------------------------------------------------------------------------------------------------------
         //TOOL HANDELING:
 

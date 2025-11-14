@@ -70,5 +70,19 @@ namespace DQB2IslandEditor.DataPK
             _height = ((byteTwo & 0x40) == 0x40);
         }
 
+        public MinimapTile(ushort type, byte decorator, bool explored, bool height)
+        {
+            _type = type;
+            _decorator = decorator;
+            _explored = explored;
+            _height = height;
+        }
+        public MinimapTile(ushort type, bool height)
+        {
+            _type = type;
+            _decorator = 0;
+            _explored = true;
+            _height = height;
+        }
     }
 }

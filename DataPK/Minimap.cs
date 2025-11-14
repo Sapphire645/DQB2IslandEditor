@@ -17,23 +17,47 @@ namespace DQB2IslandEditor.DataPK
         public static readonly ushort MINIMAP_DIMENSION = 256;
         public static readonly byte MINIMAP_DIMENSION_IN_CHUNK = 4;
         public static readonly byte TILE_SIZE = 2;
-        private MinimapTile[] tiles = new MinimapTile[MINIMAP_DIMENSION* MINIMAP_DIMENSION];
-        public Minimap(byte[] minimapBytes) { 
-            for(int i = 0; i < MINIMAP_DIMENSION*MINIMAP_DIMENSION; i++)
+        private MinimapTile[] tiles = new MinimapTile[MINIMAP_DIMENSION * MINIMAP_DIMENSION];
+        public Minimap(byte[] minimapBytes)
+        {
+
+            for (int i = 0; i < MINIMAP_DIMENSION * MINIMAP_DIMENSION; i++)
             {
-                tiles[i] = new MinimapTile(minimapBytes[i*2], minimapBytes[i * 2 +1]);
+                tiles[i] = new MinimapTile(minimapBytes[i * 2], minimapBytes[i * 2 + 1]);
+
             }
+        }
+
+        public Minimap(Island islandUsedToGenerate)
+        {
+            //Every chunk is 8x8 tiles. every chunk ask for an int[8][8] of tile ID.
+            for (int i = 0; i < Island.GRID_DIMENSION * Island.GRID_DIMENSION; i++)
+            {
+                var res = islandUsedToGenerate.GetTileMinimapID(i);
+                var IDs = res.Item1;
+                var Heights = res.Item2;
+                int chunkX = i % (Island.GRID_DIMENSION);
+                int chunkY = i / (Island.GRID_DIMENSION);
+                int start = chunkX * 4 + chunkY * MINIMAP_DIMENSION * 4;
+                for (int x = 0; x < 4; x++)
+                    for (int z = 0; z < 4; z++)
+                    {
+                        tiles[start + x + (z * MINIMAP_DIMENSION)] = new MinimapTile((ushort)IDs[x][z], Heights[x][z]);
+                        //Console.WriteLine("Tile at " + (start + x + (z * MINIMAP_DIMENSION)) + " set to " + IDs[x][z]);
+                    }
+            }
+            Console.WriteLine(ToString());
         }
 
         private CoordinateFrame CalculateLimit()
         {
             ushort ChunkUpCoord = 252, chunkDownCoord = 0, chunkLeftCoord = 252, chunkRightCoord = 0;
-            for (int i = MINIMAP_DIMENSION_IN_CHUNK; i < MINIMAP_DIMENSION; i+= MINIMAP_DIMENSION_IN_CHUNK) //Skip this because it has garbage data somatimes.
+            for (int i = MINIMAP_DIMENSION_IN_CHUNK; i < MINIMAP_DIMENSION; i += MINIMAP_DIMENSION_IN_CHUNK) //Skip this because it has garbage data somatimes.
             {
-                for (int j = 0; j < MINIMAP_DIMENSION; j+= MINIMAP_DIMENSION_IN_CHUNK)
+                for (int j = 0; j < MINIMAP_DIMENSION; j += MINIMAP_DIMENSION_IN_CHUNK)
                 {
                     //Per chunk.
-                    for(byte x = 0; x < MINIMAP_DIMENSION_IN_CHUNK; x++)
+                    for (byte x = 0; x < MINIMAP_DIMENSION_IN_CHUNK; x++)
                     {
                         for (byte y = 0; y < MINIMAP_DIMENSION_IN_CHUNK; y++)
                         {
@@ -51,15 +75,15 @@ namespace DQB2IslandEditor.DataPK
                 }
             }
             var frame = new CoordinateFrame(chunkLeftCoord, (ushort)(chunkRightCoord + 8), ChunkUpCoord, (ushort)(chunkDownCoord + 8));
-            if (frame.X1 >= MINIMAP_DIMENSION) frame.X1 =(ushort)(MINIMAP_DIMENSION-1); //Shit's wack
-            if (frame.Y1 >= MINIMAP_DIMENSION) frame.Y1 =(ushort)(MINIMAP_DIMENSION-1);
+            if (frame.X1 >= MINIMAP_DIMENSION) frame.X1 = (ushort)(MINIMAP_DIMENSION - 1); //Shit's wack
+            if (frame.Y1 >= MINIMAP_DIMENSION) frame.Y1 = (ushort)(MINIMAP_DIMENSION - 1);
             return frame;
         }
         public RenderTargetBitmap MinimapImage(byte explored, bool chunky, bool limit = true) //0 covered, 1 half seen, 2 invisible
         {
             CoordinateFrame tileLimits = new CoordinateFrame(0, 256, 0, 256);
             if (limit) tileLimits = CalculateLimit();
-            
+
             return MinimapImageConstruct(explored, chunky, tileLimits);
         }
         public RenderTargetBitmap MinimapImage(byte explored, bool chunky, CoordinateFrame tileLimits) //0 covered, 1 half seen, 2 invisible
@@ -70,7 +94,7 @@ namespace DQB2IslandEditor.DataPK
         {
             float size = DataBaseReading.GetTileSize(chunky);
 
-            Console.WriteLine(tileLimits.X0 + ", " + tileLimits.X1 + ", " + tileLimits.Y0+", "+tileLimits.Y1);
+            Console.WriteLine(tileLimits.X0 + ", " + tileLimits.X1 + ", " + tileLimits.Y0 + ", " + tileLimits.Y1);
 
             DrawingVisual drawingVisual = new DrawingVisual();
             using (DrawingContext context = drawingVisual.RenderOpen())
@@ -100,7 +124,10 @@ namespace DQB2IslandEditor.DataPK
             {
                 for (int j = 0; j < MINIMAP_DIMENSION; j++)
                 {
-                    str.Append(tiles[i* MINIMAP_DIMENSION + j ].Type + "|" + tiles[i * MINIMAP_DIMENSION + j].Decorator + (tiles[i * MINIMAP_DIMENSION + j].Height ? "^" : "_") + (tiles[i * MINIMAP_DIMENSION + j].Explored ? " " : "X" ) +" ");
+                    if (tiles[i * MINIMAP_DIMENSION + j] != null)
+                        str.Append(tiles[i * MINIMAP_DIMENSION + j].Type + "|" + tiles[i * MINIMAP_DIMENSION + j].Decorator + (tiles[i * MINIMAP_DIMENSION + j].Height ? "^" : "_") + (tiles[i * MINIMAP_DIMENSION + j].Explored ? " " : "X") + " ");
+                    else
+                        str.Append("ERROR" + i.ToString() + j.ToString());
                 }
                 str.Append("\n");
             }

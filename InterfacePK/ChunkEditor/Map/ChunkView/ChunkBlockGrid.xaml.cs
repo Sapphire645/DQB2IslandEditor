@@ -72,6 +72,13 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
         {
             ChunkList = ChunkChangeProcess((short)(vChunk - chunkViews[0].ChunkIndex), ChunkList);
         }
+        public void UpdateChunks()
+        {
+            foreach(ChunkView i in chunkViews)
+            {
+                i.UpdateView(null,null);
+            }
+        }
         private void ChangeChunk(object sender, RoutedEventArgs e)
         {
             string command = (sender as Button).Tag.ToString();

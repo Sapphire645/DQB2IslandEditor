@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DQB2IslandEditor.ObjectPK;
+using System;
 using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace DQB2IslandEditor.DataPK
 {
@@ -50,13 +52,58 @@ namespace DQB2IslandEditor.DataPK
         public BlockInstance[] GetBlocksFromLayer(byte layer)
         {
             BlockInstance[] layerBlocks = new BlockInstance[X_DIMENSION * Z_DIMENSION];
-            if (blockBytes == null) {
+            if (blockBytes == null || layer > 95) {
                 //Set water when gottrn
                     for (int i = 0; i < Chunk.X_DIMENSION * Chunk.Z_DIMENSION; i++) layerBlocks[i] = new BlockInstance(0, 0);
                     return layerBlocks;
             }
             var offset = layer * SIZE_LAYER;
             for (var i = 0; i < X_DIMENSION * Z_DIMENSION; i ++) layerBlocks[i] = new BlockInstance(blockBytes[offset + i * 2], blockBytes[offset + i * 2 + 1]);
+
+            return layerBlocks;
+        }
+        public BlockInstance[] GetBlocksFromTopView()
+        {
+            BlockInstance[] layerBlocks = new BlockInstance[X_DIMENSION * Z_DIMENSION];
+
+            int[][] IDs = new int[8][];
+            for (int i = 0; i < 8; i++) IDs[i] = new int[8];
+            for (int x = 0; x < 8; x++)
+                for (int z = 0; z < 8; z++)
+                    IDs[x][z] = 0;
+
+            byte size = (byte)(X_DIMENSION / 8);
+
+            Dictionary<int, byte> Count = new Dictionary<int, byte>();
+
+            for (byte X_DIM = 0; X_DIM < 8; X_DIM++)
+                for (byte Z_DIM = 0; Z_DIM < 8; Z_DIM++)
+                //Per 8 tiles.
+                {
+                    Count.Clear();
+                    for (byte x = (byte)(X_DIM * size); x < (X_DIM + 1) * size; x++)
+                        for (byte z = (byte)(Z_DIM * size); z < (Z_DIM + 1) * size; z++)
+                            for (byte y = (byte)(Y_DIMENSION - 1); y < 255; y--)
+                            {
+                                BlockInstance curr = GetBlockFromCoords(x, z, y);
+
+                                if (curr.publicBlockID != 0) //Not air.
+                                {
+                                    layerBlocks[x + (z * 32)] = curr;
+                                    break;
+                                }
+                                else if (y == 0)
+                                {
+                                    //If reached bottom. if Air, set water.
+                                    layerBlocks[x + (z* 32)] = new BlockInstance(0, Chisel.Full, false);
+                                }
+                            }
+                }
+            for (int i = 0; i < 1024; i++)
+            {
+                if (layerBlocks[i] == null)
+                    layerBlocks[i] = new BlockInstance(0, Chisel.Full, false);
+            }
             return layerBlocks;
         }
 
@@ -72,6 +119,7 @@ namespace DQB2IslandEditor.DataPK
                 }
             }
             return layerItems;
+            
         }
         public List<ItemInstance> GetItemsForOverflowChunk(bool north, bool south, bool east, bool west, byte layer)
         {
@@ -119,6 +167,80 @@ namespace DQB2IslandEditor.DataPK
                             SetBlockFromCoords(newindex, x,z,y);
                         if (curr.publicBlockID != 0) break;
                     }
+        }
+
+        public (int[][],bool[][]) GetTileMinimapID()
+        {
+            int[][] IDs = new int[4][];
+            bool[][] heights = new bool[4][];
+            for (int i = 0; i < 4; i++)
+            {
+                IDs[i] = new int[4];
+                heights[i] = new bool[4];
+            }
+            for (int x = 0; x < 4; x++)
+                for (int z = 0; z < 4; z++)
+                    IDs[x][z] = 0;
+            //Empty chunk
+            if (blockBytes == null)
+            {
+                return (IDs,heights);
+            }
+            byte size = (byte)(X_DIMENSION / 4);
+
+            Dictionary<int, byte> Count = new Dictionary<int, byte>();
+            for (byte X_DIM = 0; X_DIM < 4; X_DIM++)
+                for (byte Z_DIM = 0; Z_DIM < 4; Z_DIM++)
+                    //Per 8 tiles.
+                {
+                    byte heightMin = 255;
+                    byte heightMax = 0;
+                    Count.Clear();
+                    for (byte x = (byte)(X_DIM * size); x < (X_DIM+1) * size; x++)
+                        for (byte z = (byte)(Z_DIM * size); z < (Z_DIM + 1) * size; z++)
+                            for (byte y = (byte)(Y_DIMENSION - 1); y < 255; y--)
+                            {
+                                BlockInstance curr = GetBlockFromCoords(x, z, y);
+
+                                if (curr.publicBlockID != 0) //Not air.
+                                {
+                                    if (heightMax < y) heightMax = y;
+                                    if (heightMin > y) heightMin = y;
+                                    //get tile it belongs to.
+                                    var t = DataBaseReading.BLOCK_MINIMAP_DICTIONARY[(ushort)curr.publicBlockID];
+                                    //Count up
+                                    if (Count.ContainsKey(t))
+                                        Count[t]++;
+                                    else
+                                        Count[t] = 0;
+                                    break;
+                                }
+                                else if(y == 0)
+                                {
+                                    //If reached bottom. if Air, set water.
+                                    var t = DataBaseReading.BLOCK_MINIMAP_DICTIONARY[0];
+                                    if (Count.ContainsKey(t))
+                                        Count[t]++;
+                                    else
+                                        Count[t] = 0;
+                                    break;
+                                }
+                            }
+                    int TileID = 0;
+                    int c = 0;
+                    foreach(int key in Count.Keys)
+                    {
+                        if (Count[key] > c && key >= 0)
+                        {
+                            c = Count[key];
+                            TileID = key;
+                        }
+                    }
+                    IDs[X_DIM][Z_DIM] = TileID;
+                    heights[X_DIM][Z_DIM] = heightMax > 49; //- heightMin > 8;
+                }
+            return (IDs, heights);
+
         }
 
         override public string ToString()

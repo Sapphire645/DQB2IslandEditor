@@ -35,14 +35,14 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
             {
                 if (value >= Island.GRID_DIMENSION * Island.GRID_DIMENSION) return;
                 this.chunkIndex = value;
-                UpdateView(null,null);
+                UpdateView(null, null);
             }
         }
         private byte layer => viewModel.CurrentLayer;
         private Chunk displayedChunk => viewModel.CurrentIsland.GetChunk(chunkIndex);
 
         public Dictionary<ushort, List<ItemContainer>> itemContainerGrid = new Dictionary<ushort, List<ItemContainer>>();
-        public TileContainer[] tiles = new TileContainer[Chunk.X_DIMENSION*Chunk.Z_DIMENSION];
+        public TileContainer[] tiles = new TileContainer[Chunk.X_DIMENSION * Chunk.Z_DIMENSION];
         public ChunkView(ChunkEditorViewModel viewModel)
         {
             InitializeComponent();
@@ -70,9 +70,14 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
         private void Release(ushort offset) { viewModel.BlockTile_Release(offset, chunkIndex); }
 
         //Update the display.
-        private void UpdateView(object sender, PropertyChangedEventArgs e)
+        public void UpdateView(object sender, PropertyChangedEventArgs e)
         {
-            var blockInstances = displayedChunk.GetBlocksFromLayer(layer);
+            BlockInstance[] blockInstances;
+            if (viewModel.TopView)
+
+                blockInstances = displayedChunk.GetBlocksFromTopView();
+            else
+                blockInstances = displayedChunk.GetBlocksFromLayer(layer);
             for (int i = 0; i < 1024; i++)
             {
                 tiles[i].blockInstance = blockInstances[i];
@@ -81,6 +86,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
             //should have delegated the block one to the chunk block grid as well but ah.
             UpdateItemsOnGrid(itemInstances);
         }
+
 
 
         private void UpdateItemsOnGrid(List<ItemInstance> items)
@@ -162,7 +168,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
                 tiles[offset].IsHovered();
             }
         }
-        public void TileAura_SetBlock(ushort[] offsets,BlockInstance bi)
+        public void TileAura_SetBlock(ushort[] offsets, BlockInstance bi)
         {
             foreach (var offset in offsets)
             {

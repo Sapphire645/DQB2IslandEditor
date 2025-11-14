@@ -84,7 +84,14 @@ namespace DQB2IslandEditor.DataPK
             this.STGDATPath = STGDATPath;
             //Island Number:
             islandNumber = fileBytes[OFF_ISLAND_NUMBER];
-            this.shell = shell[islandNumber];
+            try
+            {
+                this.shell = shell[islandNumber];
+            }
+            catch
+            {
+                Console.WriteLine("error on shell.");
+            }
             //
             switch (TYPE)
             {
@@ -310,6 +317,10 @@ namespace DQB2IslandEditor.DataPK
             return (STGDATHeader, STGDATBody);
         }
 
+        public (int[][],bool[][]) GetTileMinimapID(int VirtualID)
+        {
+            return chunks[VirtualID].GetTileMinimapID();
+        }
 
         public void CoverGroundWith(BlockInstance source, BlockInstance newindex)
         {
