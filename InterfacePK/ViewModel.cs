@@ -119,12 +119,13 @@ namespace DQB2IslandEditor.InterfacePK
             Task<RenderTargetBitmap> TaskCreate = null;
             if (!minimapGeneratedImages.ContainsKey(_selectedIsland))
             {
-                TaskCreate = Task.Run(() =>
-                {
-                    var a = saveData.islandCMNDATdata[_selectedIsland].pMinimap.MinimapImage(2, false);
-                    a.Freeze();
-                    return a;
-                }); 
+                if (saveData.islandCMNDATdata == null) return;
+                    TaskCreate = Task.Run(() =>
+                    {
+                        var a = saveData.islandCMNDATdata[_selectedIsland].pMinimap.MinimapImage(2, false);
+                        a.Freeze();
+                        return a;
+                    }); 
             }
             if (!minimapGeneratedImages.ContainsKey(_selectedIsland))
             {
