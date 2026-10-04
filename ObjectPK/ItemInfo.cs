@@ -13,19 +13,23 @@ namespace DQB2IslandEditor.ObjectPK
         private byte witdh;
         private byte height;
         private byte depth;
+        private bool fullBlock;
         public byte Witdh=>witdh;
         public byte Height => height;
         public byte Depth => depth;
 
+        public bool FullBlock => fullBlock;
+
 
         //Idk how you write dimension in english whateveeerrrrrrrrr
-        public ItemInfo(ushort objectId, short imageId,string dimension, byte tab, Colour colour, string name)
+        public ItemInfo(ushort objectId, short imageId,string dimension, byte tab, Colour colour, bool fullBlock, string name)
             : base(objectId, imageId, tab, colour,0 , name)
         {
             var parts = dimension.Split('x');
             witdh = byte.Parse(parts[0]);
             height = byte.Parse(parts[1]);
             depth = byte.Parse(parts[2]);
+            this.fullBlock = fullBlock;
         }
     }
 }

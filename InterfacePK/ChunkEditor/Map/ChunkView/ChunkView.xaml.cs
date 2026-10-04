@@ -88,32 +88,36 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
         }
 
 
+        private void AddItemToView(ItemInstance item)
+        {
+            if (item == null) return;
+            //Console.WriteLine(item.ToString());
+            ItemContainer itemContainer = new ItemContainer(item, 32); //  1024/32
 
+            itemContainer.ItemBorder.PreviewMouseDown += (_, _) => { viewModel.ItemTile_LeftClick(itemContainer, chunkIndex); };
+            itemContainer.ItemBorder.MouseEnter += (_, _) => { viewModel.ItemTile_TileEnter(itemContainer, chunkIndex); };
+            itemContainer.ItemBorder.MouseLeave += (_, _) => { viewModel.ItemTile_TileLeave(itemContainer, chunkIndex); };
+            itemContainer.ItemBorder.MouseLeftButtonUp += (_, _) => { viewModel.ItemTile_Release(itemContainer, chunkIndex); };
+
+            ItemGrid.Children.Add(itemContainer);
+            //Alright, here comes the funky stuff
+            //You can have multiple items in the same tile, meaning, chaos
+            //This will create the need to have multiple item panels for each item in that tile
+            //I will also have to keep track of every item in the tile
+            //So, the dictionary holds the offset (x + z*32), with a list of all the items on the offset
+            //That is all.
+            if (!itemContainerGrid.ContainsKey(item.worldOffset))
+                itemContainerGrid[item.worldOffset] = new List<ItemContainer>();
+            itemContainerGrid[item.worldOffset].Append(itemContainer);
+            //Hope this doesnt tank the performance tbh
+        }
         private void UpdateItemsOnGrid(List<ItemInstance> items)
         {
             ItemGrid.Children.Clear();
             itemContainerGrid.Clear();
             foreach (var item in items)
             {
-                Console.WriteLine(item.ToString());
-                ItemContainer itemContainer = new ItemContainer(item, 32); //  1024/32
-
-                itemContainer.ItemBorder.PreviewMouseDown += (_, _) => { viewModel.ItemTile_LeftClick(itemContainer, chunkIndex); };
-                itemContainer.ItemBorder.MouseEnter += (_, _) => { viewModel.ItemTile_TileEnter(itemContainer, chunkIndex); };
-                itemContainer.ItemBorder.MouseLeave += (_, _) => { viewModel.ItemTile_TileLeave(itemContainer, chunkIndex); };
-                itemContainer.ItemBorder.MouseLeftButtonUp += (_, _) => { viewModel.ItemTile_Release(itemContainer, chunkIndex); };
-
-                ItemGrid.Children.Add(itemContainer);
-                //Alright, here comes the funky stuff
-                //You can have multiple items in the same tile, meaning, chaos
-                //This will create the need to have multiple item panels for each item in that tile
-                //I will also have to keep track of every item in the tile
-                //So, the dictionary holds the offset (x + z*32), with a list of all the items on the offset
-                //That is all.
-                if (!itemContainerGrid.ContainsKey(item.worldOffset))
-                    itemContainerGrid[item.worldOffset] = new List<ItemContainer>();
-                itemContainerGrid[item.worldOffset].Append(itemContainer);
-                //Hope this doesnt tank the performance tbh
+                AddItemToView(item);
             }
         }
 
@@ -175,6 +179,13 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
                 Offset_SetBlock(offset, bi);
             }
         }
+        public void TileAura_SetItem(ushort[] offsets, ItemInfo bi, byte rotation)
+        {
+            foreach (var offset in offsets)
+            {
+                Offset_SetItem(offset, bi, rotation);
+            }
+        }
 
         public void TileAura_Destroy(ushort[] offsets)
         {
@@ -197,6 +208,15 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
         {
             displayedChunk.SetBlockFromCoords(bi, (byte)(offset % Chunk.X_DIMENSION), (byte)(offset / Chunk.Z_DIMENSION), viewModel.CurrentLayer);
             tiles[offset].blockInstance = bi;
+        }
+
+        private void Offset_SetItem(ushort offset, ItemInfo bi, byte rotation)
+        {
+            var item = displayedChunk.SetItemFromCoords(bi,
+                (byte)(offset % Chunk.X_DIMENSION), 
+                (byte)(offset / Chunk.Z_DIMENSION), 
+                viewModel.CurrentLayer, rotation);
+            AddItemToView(item);
         }
 
     }

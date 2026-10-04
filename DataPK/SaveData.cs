@@ -201,6 +201,28 @@ namespace DQB2IslandEditor.DataPK
             System.IO.File.WriteAllBytes(path, file);
         }
 
+        public void SaveSTGDATUncompressedFile(string path)
+        {
+            //no backup
+            var fileBytes = Island.CommitChangesToFile();
+
+            var file = new byte[fileBytes.Item1.Length + fileBytes.Item2.Length];
+            Array.Copy(fileBytes.Item1, 0, file, 0, STGDAT_SIZE_HEADER);
+            Array.Copy(fileBytes.Item2, 0, file, STGDAT_SIZE_HEADER, fileBytes.Item2.Length);
+
+            System.IO.File.WriteAllBytes(path, file);
+        }
+
+        public void ImportSTGDAT(string path)
+        {
+            //This will open the file.
+            var compressedFileBytes = OpenSTGDATFile(path);
+            //Return if failed.
+            if (compressedFileBytes == (null, null)) return;
+            //Now we load in the data
+            Island = new Island(compressedFileBytes.Item1, compressedFileBytes.Item2, 0, islandCMNDATdata, path);
+        }
+
         private byte[] UncompressBytes(byte[] compressedFileBytes)
         {
             byte[] _uncompressedBytes;

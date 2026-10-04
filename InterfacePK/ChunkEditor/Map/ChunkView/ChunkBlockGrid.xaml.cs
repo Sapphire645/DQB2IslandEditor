@@ -102,6 +102,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
                 chunkIdList = ChunkChangeProcess(Island.GRID_DIMENSION, chunkIdList);
 
             ChunkList = chunkIdList;
+            
         }
 
         //This is to check, if one is invalid then the next one gets porcessed.
@@ -157,6 +158,13 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Map.ChunkView
             for (byte i = 0; i < chunkViews.Count; i++)
             {
                 if (chunkViews[i].ChunkIndex == chunk) chunkViews[i].TileAura_SetBlock(offsets, bi);
+            }
+        }
+        public void TileAura_SetItem(ushort[] offsets, ItemInfo bi, ushort chunk)
+        {
+            for (byte i = 0; i < chunkViews.Count; i++)
+            {
+                if (chunkViews[i].ChunkIndex == chunk) chunkViews[i].TileAura_SetItem(offsets, bi, 0);
             }
         }
 

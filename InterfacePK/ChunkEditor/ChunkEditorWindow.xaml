@@ -98,8 +98,8 @@
                     <Rectangle Fill="LightGray" VerticalAlignment="Center" Height="1" />
                     <Ellipse Fill="LightGray"  Width="2.5" Height="2.5" HorizontalAlignment="Right"/>
                 </Grid>
-                <MenuItem Header="x Import STGDAT.bin" Padding="18,2" FontWeight="Normal"/>
-                <MenuItem Header="x Export STGDAT.bin" Padding="18,2" FontWeight="Normal"/>
+                <MenuItem Header="Import STGDAT.bin" Padding="18,2" FontWeight="Normal" Click="ImportSTGDATAs"/>
+                <MenuItem Header="Export STGDAT.bin" Padding="18,2" FontWeight="Normal"  Click="ExportSTGDATAs"/>
             </MenuItem>
             <MenuItem Header="Map tools" Background="Black"  Padding="4,0" FontWeight="Bold">
                 <MenuItem Header="x Use 'Top View Map' in 'Map' tab" Padding="18,2" FontWeight="Normal"/>

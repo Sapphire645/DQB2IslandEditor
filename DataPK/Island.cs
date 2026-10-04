@@ -1,4 +1,5 @@
 ﻿using DQB2IslandEditor.InterfacePK;
+using DQB2IslandEditor.ObjectPK;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
@@ -174,7 +175,8 @@ namespace DQB2IslandEditor.DataPK
                 Array.Copy(fileBytes, dataPointer, bufferItemData, 0, 24);
 
                 //First lets see what the item class thinks of this entry, is it empty?
-                if (ItemInstance.IsThisEntryEmpty(bufferItemData))
+                //if ())
+                if (chunk == 0 || ItemInstance.IsThisEntryEmpty(bufferItemData))
                 {
                     itemInstances.Add(null);
                     chunkList.Add(0);
@@ -185,8 +187,6 @@ namespace DQB2IslandEditor.DataPK
                 //Since it is now, We can now create the item instance inside of the chunk.
                 //Console.WriteLine($"Item Entry: {i} {entryPointer} Chunk: {chunk} Offset: {relativeDataPointer}");
                 var item = new ItemInstance(bufferItemData);
-                item.tempDataOff = dataPointer;
-                item.tempEntryOff = entryPointer;
 
                 //Console.WriteLine(i);
                 itemInstances.Add(item);
@@ -196,6 +196,8 @@ namespace DQB2IslandEditor.DataPK
             }
             PropHandeler = new PropHandlerClass(this, itemCountReal, itemInstances, chunkList);
             Console.WriteLine("!! ITEM COUNT:" + itemCount);
+            Console.WriteLine("!! ITEM COUNT GAME:" + itemCountReal);
+            //Array.Copy(BitConverter.GetBytes(itemCount), 0, STGDATBody, OFF_ITEM_COUNT, BitConverter.GetBytes(itemCount).Length);
         }
         private void CommitChunkDataToFile()
         {
@@ -247,6 +249,7 @@ namespace DQB2IslandEditor.DataPK
                 var item = e.Item2;
                 var chunk = e.Item3;
 
+
                 if (item == null)
                     chunk = 0;
                 uint entryPointer = (uint)(OFF_ITEM_ENTRY + (entry * SIZE_ITEM_ENTRY));
@@ -257,22 +260,60 @@ namespace DQB2IslandEditor.DataPK
 
                 uint relativeDataPointer = (uint)(((STGDATBody[entryPointer + 1] & 0xF0) >> 4) + (STGDATBody[entryPointer + 2] << 4) + (STGDATBody[entryPointer + 3] << 12));
                 uint dataPointer = (uint)(OFF_ITEM_DATA + (relativeDataPointer * SIZE_ITEM_DATA));
+
+                byte[] Base = new byte[24];
+                Array.Copy(STGDATBody, dataPointer, Base, 0, 24);
                 //Delete the entry if non existent
                 if (item == null)
-                    for(int i = 0; i < 9; i++)
+                    for(int i = 8; i < 12; i++)
                         STGDATBody[dataPointer + i] = 0;
                 else
-                    Array.Copy(item.GetByteFormat(), 0, STGDATBody, dataPointer, 24);
+                    Array.Copy(item.GetByteFormat(entry, Base), 0, STGDATBody, dataPointer, 24);
                 
                 
                 //Console.WriteLine("Saved item " + entryPointer.ToString("X") + " / " + dataPointer.ToString("X") + " OLD -> " +
                      //item.tempEntryOff.ToString("X") + " / " + item.tempDataOff.ToString("X"));
             }
+            Console.WriteLine("ItemCountChange: " + PropHandeler.itemDelta.ToString());
+            Console.WriteLine("!! ITEM COUNT:" + BitConverter.ToUInt32(STGDATBody, (int)OFF_ITEM_COUNT));
+            var itemCountReal = BitConverter.ToUInt32(STGDATBody, (int)OFF_ITEM_COUNT) + PropHandeler.itemDelta;
+            Array.Copy(BitConverter.GetBytes(itemCountReal), 0, STGDATBody, OFF_ITEM_COUNT, BitConverter.GetBytes(itemCountReal).Length);
+            Console.WriteLine("!! ITEM COUNT NEW:" + BitConverter.ToUInt32(STGDATBody, (int)OFF_ITEM_COUNT));
+            PropHandeler.itemDelta = 0;
         }
 
         public Chunk GetChunk(ushort vChunk)
         {
+            FullMapCreator.fullMapCreator.CreateChunkMapLines(chunks[vChunk],
+                    chunks[vChunk - 1].GetHeightsFromTopView(3),
+                    chunks[vChunk + 1].GetHeightsFromTopView(2),
+                    chunks[vChunk - GRID_DIMENSION].GetHeightsFromTopView(1),
+                    chunks[vChunk + GRID_DIMENSION].GetHeightsFromTopView(0),
+                    chunks[vChunk - 1].GetHeightsFromTopView(3, true),
+                    chunks[vChunk + 1].GetHeightsFromTopView(2, true),
+                    chunks[vChunk - GRID_DIMENSION].GetHeightsFromTopView(1, true),
+                    chunks[vChunk + GRID_DIMENSION].GetHeightsFromTopView(0, true),
+                    31);
             return chunks[vChunk];
+        }
+
+        public void createMaps()
+        {
+            for (ushort vChunk = 1490; vChunk < 2669; vChunk++) {
+                //vers 0 = north, 1 = south, 2 = west, 3 = east
+                FullMapCreator.fullMapCreator.CreateChunkMapLines(chunks[vChunk],
+                    chunks[vChunk - 1].GetHeightsFromTopView(3),
+                    chunks[vChunk + 1].GetHeightsFromTopView(2),
+                    chunks[vChunk - GRID_DIMENSION].GetHeightsFromTopView(1),
+                    chunks[vChunk + GRID_DIMENSION].GetHeightsFromTopView(0),
+                    chunks[vChunk - 1].GetHeightsFromTopView(3, true),
+                    chunks[vChunk + 1].GetHeightsFromTopView(2, true),
+                    chunks[vChunk - GRID_DIMENSION].GetHeightsFromTopView(1, true),
+                    chunks[vChunk + GRID_DIMENSION].GetHeightsFromTopView(0, true),
+                    31);
+                if (vChunk % GRID_DIMENSION == 44) vChunk = (ushort)(vChunk + GRID_DIMENSION - 27);
+                    }
+
         }
 
         //For loading in the island for the first time.

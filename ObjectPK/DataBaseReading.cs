@@ -29,6 +29,12 @@ namespace DQB2IslandEditor.ObjectPK
 
         private const string SHEET_ITEM_ONE_PATH = "Images/Inventory/ItemSheet.png";
 
+
+        private const string SHEET_MAP_PLAIN_PATH = "Images/Inventory/MapSheet0.png";
+        private const string SHEET_MAP_WHITE_PATH = "Images/Inventory/MapSheet1.png";
+        private const string SHEET_MAP_BLACK_PATH = "Images/Inventory/MapSheet2.png";
+        private const string SHEET_MAP_PURPLE_PATH = "Images/Inventory/MapSheet3.png";
+
         private const string BLOCK_ERR_PATH = "Images/Inventory/B-0001.png";
         private const string TILE_ERR_PATH = "Images/Inventory/T-0001.png";
 
@@ -134,21 +140,27 @@ namespace DQB2IslandEditor.ObjectPK
 
             _sheetOneItem = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_ITEM_ONE_PATH));
 
+            var sheetMapPlain = new BitmapImage(new Uri("pack://application:,,,/" + SHEET_MAP_PLAIN_PATH));
+            
             //Helps performance
             _sheetOneBlock.Freeze();
             _sheetOneTile.Freeze();
 
             _sheetOneItem.Freeze();
+            sheetMapPlain.Freeze();
 
             ImageDatabase[0] = new DataBaseImageHandler(_sheetOneBlock, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             ImageDatabase[1] = new DataBaseImageHandler(_sheetOneTile, TILE_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
             ImageDatabase[2] = new DataBaseImageHandler(_sheetOneItem, BLOCK_SIZE, BLOCK_ERR_PATH, SHEET_DIMENSION, false);
             //Placeholder.
             ImageDatabase[3] = new DataBaseImageHandler(_sheetOneItem, BLOCK_SIZE, TILE_ERR_PATH, SHEET_DIMENSION, true);
+
+            new FullMapCreator(sheetMapPlain);
             ReadHardness();
         }
         public static CroppedBitmap toolImage(byte tool, bool active)
         {
+            if(tool == 5) tool = 2;
             return new CroppedBitmap(_toolSheet,
                 new Int32Rect(TOOL_SIZE * tool, active ? TOOL_SIZE : 0, TOOL_SIZE, TOOL_SIZE));
         }
@@ -367,6 +379,7 @@ namespace DQB2IslandEditor.ObjectPK
 
             foreach (String line in itemLines)
             {
+                if (line.Length == 0) continue;
                 if (line[0] == '#') continue; //This is comment (python comment go brrr)
                                               //FORMAT:
 
@@ -378,8 +391,8 @@ namespace DQB2IslandEditor.ObjectPK
                 var ImageID = short.Parse(values[1]);
 
                 itemList.Add(ushort.Parse(values[0]), new ItemInfo(
-                    ushort.Parse(values[0]), ImageID, values[2], byte.Parse(values[3]),
-                    (Colour)byte.Parse(values[4]), values[5].Trim()));
+                    ushort.Parse(values[0]), ImageID, values[2], byte.Parse(values[3]), (Colour)byte.Parse(values[4]),
+                    values[5].Equals("1"), values[6].Trim()));
             }
             ITEM_INFO_DICTIONARY = itemList;
         }

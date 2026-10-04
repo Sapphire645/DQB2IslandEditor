@@ -90,6 +90,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.ToolClass
         public virtual void ItemInstance_MouseLeave(ItemContainer item, ushort chunk)
         {
             item.IsUnHovered();
+            chunkDisplays.TileAura_Destroy(Aura(item.offset), chunk);
         }
 
         public virtual void ItemInstance_MouseLeftClick(ItemContainer item, ushort chunk)

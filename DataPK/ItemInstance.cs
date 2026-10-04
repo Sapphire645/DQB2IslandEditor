@@ -31,6 +31,12 @@ namespace DQB2IslandEditor.DataPK
         public ItemInfo itemInfo => DataBaseReading.ITEM_INFO_DICTIONARY[itemId]; //I need this for the margins.
         public ushort worldOffset => (ushort)(x + z * 32);
 
+        public byte X => x;
+        public byte Y => y;
+        public byte Z => z;
+        public byte Rotation => rotation;
+
+
         public static bool IsThisEntryEmpty(byte[] bytes)
         {
             //This is placeholder for now
@@ -38,6 +44,10 @@ namespace DQB2IslandEditor.DataPK
             //{
             //    return true;
             //}
+            if (bytes[8] == 0 && bytes[9] == 0 && bytes[10] == 0 && bytes[11] == 0)
+            {
+                return true;
+            }
             return false;
         }
         public ItemInstance(byte[] bytes) {
@@ -67,8 +77,19 @@ namespace DQB2IslandEditor.DataPK
             entryOffset += (ushort)(bytes[14] * 256 * 256);
         }
 
+        public ItemInstance(byte x, byte y, byte z, byte rotation, uint ItemID)
+        {
+            validEntry = true;
+            this.bytes = new byte[24];
+            this.itemId = (ushort)ItemID;
+            this.x = x;
+            this.y = y;
+            this.z = z;
+            this.rotation = rotation;
+        }
+
         public uint GetEntryOffset() { return entryOffset; }
-        public byte[] GetByteFormat()
+        public byte[] GetByteFormat(uint entryId)
         {
             byte[] itemIdBytes = BitConverter.GetBytes(itemId);
 
@@ -79,9 +100,29 @@ namespace DQB2IslandEditor.DataPK
 
             bytes[11] = (byte)((byte)(y >> 6) + (byte)(z << 1) + (byte)(rotation << 6));
 
+            entryOffset = entryId;
             bytes[12] = (byte)((bytes[12] & 0x0F) | ((entryOffset & 0x0F) << 4));
             bytes[13] = (byte)((entryOffset >> 8) & 0xFF);    
             bytes[14] = (byte)((entryOffset >> 16) & 0xFF);   
+
+            return bytes;
+        }
+        public byte[] GetByteFormat(uint entryId, byte[] Base)
+        {
+            bytes = Base;
+            byte[] itemIdBytes = BitConverter.GetBytes(itemId);
+
+            bytes[8] = itemIdBytes[0];
+            bytes[9] = (byte)(itemIdBytes[1] + (byte)(x << 5));
+
+            bytes[10] = (byte)((byte)(x >> 3) + (byte)(y << 2));
+
+            bytes[11] = (byte)((byte)(y >> 6) + (byte)(z << 1) + (byte)(rotation << 6));
+
+            entryOffset = entryId;
+            bytes[12] = (byte)((bytes[12] & 0x0F) | ((entryOffset & 0x0F) << 4));
+            bytes[13] = (byte)((entryOffset >> 8) & 0xFF);
+            bytes[14] = (byte)((entryOffset >> 16) & 0xFF);
 
             return bytes;
         }
@@ -133,7 +174,13 @@ namespace DQB2IslandEditor.DataPK
             return $"ID: {itemId} - Y:{y},X:{x},Z:{z} - BYTE 15 {bytes[15].ToString("X2")} - {rotation} |"+ a+"\n";
         }
 
-        public uint tempEntryOff;
-        public uint tempDataOff;
+        public bool equalsItem(int id, byte x, byte layer, byte z, byte rotation)
+        {
+            if(id == itemId && x == this.x && layer == this.y && z == this.z && rotation == this.rotation)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

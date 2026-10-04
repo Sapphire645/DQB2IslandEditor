@@ -171,15 +171,63 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             }
         }
 
+        private void ExportSTGDATAs(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var saveFileDialog = new SaveFileDialog
+                {
+                    Filter = "",
+                    FileName = "STGDAT" + saveData.Island.islandNumber.ToString("D2") + ".BINE",
+
+                };
+
+                if (saveFileDialog.ShowDialog() == false) return;
+                SavedText.Opacity = 1;
+                SavedText.Text = "Exporting...";
+                SavedText.Foreground = Brushes.Gold;
+                Task save = Task.Run(() => ExportSTGDATAsync(saveFileDialog.FileName));
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                MessageBox.Show(ex.Message, "Failed to save file", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
         private async void SaveSTGDATAsync(string path)
         {
             //I think this should wooork....
             saveData.SaveSTGDATCompressedFile(path);
-
+            
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
                 SavedText.Text = "Island Saved!";
                 SavedText.Foreground = Brushes.Lime;
+                SavedText.Opacity = 1;
+                var fadeIn = new DoubleAnimation
+                {
+                    From = 1,
+                    To = 0,
+                    BeginTime = TimeSpan.FromSeconds(2),
+                    Duration = TimeSpan.FromSeconds(2),
+                    EasingFunction = new QuadraticEase { EasingMode = EasingMode.EaseInOut }
+                };
+                SavedText.BeginAnimation(UIElement.OpacityProperty, fadeIn);
+            }));
+        }
+
+        private async void ExportSTGDATAsync(string path)
+        {
+            //I think this should wooork....
+            saveData.SaveSTGDATUncompressedFile(path);
+
+            Application.Current.Dispatcher.Invoke(new Action(() =>
+            {
+                SavedText.Text = "Island Exported!";
+                SavedText.Foreground = Brushes.Lime;
+                SavedText.Opacity = 1;
                 var fadeIn = new DoubleAnimation
                 {
                     From = 1,
@@ -269,6 +317,30 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             request.Children.Add(infoPanel);
         }
 
-        
+
+        private void ImportSTGDATAs(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var openFileDialog = new OpenFileDialog
+                {
+                    Filter = "",
+                    FileName = "STGDAT" + saveData.Island.islandNumber.ToString("D2") + ".BINE",
+                };
+
+                if (openFileDialog.ShowDialog() == false) return;
+
+                saveData.ImportSTGDAT(openFileDialog.FileName);
+                virtualGridView.Init(saveData.Island, viewModel);
+                viewModel.ChangeChunk(saveData.Island.GetFirstChunk());
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                MessageBox.Show(ex.Message, "Failed to open file", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

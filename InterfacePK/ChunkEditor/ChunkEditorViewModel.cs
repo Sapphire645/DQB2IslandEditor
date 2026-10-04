@@ -64,6 +64,7 @@ namespace DQB2IslandEditor.InterfacePK
                 LayerUpdateNotification?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentLayer)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentLayer)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SeaBrush)));
+                chunkEditorWindow.LayerBar.LayerChange(value);
             }
         }
         public ushort[] CurrentChunks => chunkEditorWindow.chunkBlockGrid.ChunkList;
@@ -159,7 +160,7 @@ namespace DQB2IslandEditor.InterfacePK
         }
 
         //Tool display.
-        public string SelectedToolName => _selectedTool == 0 ? "Select" : _selectedTool == 1 ? "Area" : _selectedTool == 2 ? "Paint" : "Chisel";
+        public string SelectedToolName => _selectedTool == 0 ? "Select" : _selectedTool == 1 ? "Area" : _selectedTool == 2 ? "Paint" : _selectedTool == 3 ? "Chisel" : "Delete Item";
         public ImageSource SelectedToolImage => DataBaseReading.toolImage(SelectedTool, true);
         public ImageSource ToolImageZero => DataBaseReading.toolImage(0, false);
         public ImageSource ToolImageOne => DataBaseReading.toolImage(1, false);
