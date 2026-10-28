@@ -72,7 +72,7 @@ namespace DQB2IslandEditor.DataPK
         {
             STGDATHeader = headerBytes;
             STGDATBody = fileBytes;
-            this.STGDATPath = STGDATPath;
+            this.STGDATPath = sTGDATPath;
             //Island Number:
             islandNumber = fileBytes[OFF_ISLAND_NUMBER];
             this.shell = shell[islandNumber];

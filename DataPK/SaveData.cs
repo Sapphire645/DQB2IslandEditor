@@ -233,8 +233,8 @@ namespace DQB2IslandEditor.DataPK
                     {
                         input.CopyTo(zlib);
                         zlib.Flush();
-                        _compressedBytes = output.ToArray();
                     }
+                    _compressedBytes = output.ToArray();
                     
                 }
             }

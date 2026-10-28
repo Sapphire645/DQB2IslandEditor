@@ -22,9 +22,10 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor.Tool.BlockPanel
     /// </summary>
     public partial class OverflowEdit : UserControl
     {
-        public OverflowEdit()
+        public OverflowEdit(ChunkEditorViewModel viewModel)
         {
             InitializeComponent();
+            DataContext = viewModel;
 
         }
 
