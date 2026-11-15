@@ -46,7 +46,7 @@ namespace DQB2IslandEditor.DataPK
         {
             var bytes = new byte[2];
             bytes[0] = (byte)(blockID & 0xFF);
-            bytes[1] = (byte)(((blockID & 0xFF00) >> 8) + (builderPlaced ? 0x0800 : 0) + ((byte)chiselID << 4));
+            bytes[1] = (byte)(((blockID & 0xFF00) >> 8) + (builderPlaced ? 0x08 : 0) + ((byte)chiselID << 4));
             return bytes;
         }
 

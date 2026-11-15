@@ -30,7 +30,8 @@ namespace DQB2IslandEditor.DataPK
                 this.blockBytes = new byte[SIZE_LAYER * Y_DIMENSION];
                 Array.Copy(blockBytes, 0, this.blockBytes, 0, blockBytes.Length);
             }
-            this.blockBytes = blockBytes;
+            else
+                this.blockBytes = blockBytes;
             this.chunkPosition = chunkPosition;
             itemInstances = new List<ItemInstance>();
         }

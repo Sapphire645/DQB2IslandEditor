@@ -58,7 +58,7 @@ namespace DQB2IslandEditor.InterfacePK
             }
             set
             {
-                if (value > 96) return;
+                if (value > 95) return;
                 _currentLayer = value;
                 LayerUpdateNotification?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentLayer)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentLayer)));

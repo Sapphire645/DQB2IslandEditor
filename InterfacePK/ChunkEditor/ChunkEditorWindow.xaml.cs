@@ -60,6 +60,7 @@ namespace DQB2IslandEditor.InterfacePK.ChunkEditor
             virtualGridView.Init(saveData.Island, viewModel);
 
             LayerBar.UpdateSeaLevel(30); //Change
+            viewModel.LayerUpdateNotification += (_, _) => LayerBar.LayerChange(viewModel.CurrentLayer);
         }
         public async Task<ushort> ReadFile(SaveData saveData, byte island)
         {
